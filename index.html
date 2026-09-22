@@ -3376,6 +3376,14 @@ button{ font-family:inherit; cursor:pointer; }
 }
 .pantheon-breakdown span{ white-space:nowrap; }
 .pantheon-breakdown b{ color:var(--text-dim); font-weight:700; }
+.pantheon-path{
+  font-family:var(--sans);
+  font-size:10.5px;
+  color:var(--text-dim);
+  margin-top:4px;
+  line-height:1.6;
+}
+.pantheon-arrow{ color:var(--text-faint); margin:0 1px; }
 .pantheon-score{
   font-family:var(--bn-bold);
   font-size:20px;
@@ -15979,6 +15987,18 @@ function countTrophies(history){
   return history.reduce((n,r)=> n + (r.is_champion?1:0) + (r.cup_won?1:0) + (r.domestic_super_cup_won?1:0) + (r.euro_result && r.euro_result.won?1:0) + (r.euro_result && r.euro_result.superCupWon?1:0), 0);
 }
 
+// Chemin de clubs traversés au cours d'une carrière, dans l'ordre des
+// saisons (ex: Rennes -> Lille -> Arsenal -> Real Madrid -> Rennes). Les
+// saisons consécutives passées dans le même club sont fusionnées en une
+// seule étape - un retour ultérieur dans ce club, après être passé
+// ailleurs, réapparaît bien comme une étape distincte.
+function careerClubPath(rows){
+  const sorted = rows.slice().sort((a,b)=>a.season_number-b.season_number);
+  const path = [];
+  sorted.forEach(r=>{ if(path[path.length-1] !== r.club) path.push(r.club); });
+  return path;
+}
+
 // Ligne de détail "Championnat X · Coupe Y · Europe Z" affichée sous chaque
 // entrée du Panthéon, pour expliquer la composition du score total (même
 // principe que le détail déjà affiché dans le Palmarès personnel). Accepte
@@ -16015,7 +16035,7 @@ async function renderPantheonScreen(){
 
   const { data, error } = await sbClient
     .from('career_history')
-    .select('user_id, player_name, club, league, season_number, score')
+    .select('user_id, player_name, club, league, season_number, score, career_number, is_champion, cup_won, domestic_super_cup_won, euro_result')
     .limit(2000);
 
   if(error){
@@ -16046,28 +16066,35 @@ async function renderPantheonScreen(){
       </div>
     `).join('');
   } else {
-    const byUser = {};
+    // Vue "Carrière" : une entrée par carrière (et non par utilisateur) -
+    // un joueur ayant recommencé plusieurs carrières apparaît donc
+    // potentiellement plusieurs fois, une fois par carrière distincte.
+    const byCareer = {};
     rows.forEach(r=>{
-      const entry = byUser[r.user_id] || (byUser[r.user_id] = { user_id:r.user_id, player_name:r.player_name, total:0, league:0, cup:0, euro:0, seasons:0 });
+      const key = `${r.user_id}::${r.career_number || 1}`;
+      const entry = byCareer[key] || (byCareer[key] = { user_id:r.user_id, player_name:r.player_name, total:0, rows:[] });
       entry.total += r.score.total;
-      entry.league += Number(r.score.league) || 0;
-      entry.cup += Number(r.score.cup) || 0;
-      entry.euro += Number(r.score.euro) || 0;
-      entry.seasons += 1;
+      entry.rows.push(r);
       if(r.player_name) entry.player_name = r.player_name;
     });
-    const ranked = Object.values(byUser).sort((a,b)=> b.total - a.total).slice(0, 50);
-    listEl.innerHTML = ranked.map((r,i)=>`
+    const ranked = Object.values(byCareer).sort((a,b)=> b.total - a.total).slice(0, 50);
+    listEl.innerHTML = ranked.map((r,i)=>{
+      const seasons = r.rows.length;
+      const clubs = new Set(r.rows.map(x=>x.club)).size;
+      const trophies = countTrophies(r.rows);
+      const path = careerClubPath(r.rows);
+      return `
       <div class="pantheon-row ${r.user_id===myId ? 'pantheon-me' : ''}">
         <div class="pantheon-rank">${i+1}</div>
         <div>
           <div class="pantheon-name">${r.player_name || 'Manager anonyme'}</div>
-          <div class="pantheon-sub">${r.seasons} saison${r.seasons>1?'s':''} jouée${r.seasons>1?'s':''}</div>
-          ${pantheonScoreBreakdownHtml(r)}
+          <div class="pantheon-sub">${clubs} club${clubs>1?'s':''} · ${seasons} saison${seasons>1?'s':''} jouée${seasons>1?'s':''} · ${trophies} trophée${trophies>1?'s':''}</div>
+          <div class="pantheon-path">${path.join(' <span class="pantheon-arrow">&#8594;</span> ')}</div>
         </div>
         <div class="pantheon-score">${r.total}<span class="l">pts</span></div>
       </div>
-    `).join('');
+    `;
+    }).join('');
   }
 }
 
