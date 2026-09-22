@@ -1518,24 +1518,41 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
 .live-scorer-row .l-minute{ color:var(--text-faint); font-variant-numeric:tabular-nums; margin-right:8px; }
 .live-scorer-row .l-assist{ color:var(--text-faint); font-size:11.5px; }
 
+/* Même famille visuelle que .gm-btn-primary/secondary (typo condensée
+   des cartes, coin en écusson) appliquée aux boutons d'action de
+   l'écran de saison. */
 .season-btn{
-  font-family:var(--bn-regular);
-  font-size:14px;
-  letter-spacing:0;
-  padding:12px 20px;
-  border-radius:var(--r-md);
+  font-family:var(--card-font-bold);
+  font-size:13px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  padding:12px 22px 12px 18px;
+  border-radius:4px;
   border:1px solid var(--border-2);
   background:var(--surface-2);
   color:var(--text-dim);
+  position:relative;
+  overflow:hidden;
   transition:all .15s ease;
 }
+.season-btn::before{
+  content:'';
+  position:absolute;
+  top:-1px; right:-1px;
+  border-style:solid;
+  border-width:0 10px 10px 0;
+  border-color:transparent var(--border-2) transparent transparent;
+  transition:border-color .3s ease;
+}
 .season-btn:hover:not(:disabled){ color:var(--text); border-color:var(--club-accent); }
+.season-btn:hover:not(:disabled)::before{ border-color:transparent var(--club-accent) transparent transparent; }
 .season-btn:disabled{ opacity:.4; cursor:not-allowed; }
 .season-btn-primary{
   background:var(--club-primary);
   border-color:var(--club-primary);
   color:#fff;
 }
+.season-btn-primary::before{ border-color:transparent var(--club-accent) transparent transparent; }
 .season-btn-primary:hover:not(:disabled){ filter:brightness(1.15); border-color:var(--club-primary); color:#fff; }
 .season-btn-ghost{ background:transparent; }
 .euro-tab-group{ margin-top:10px; }
@@ -2108,13 +2125,14 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
 .col-left-spacer{ flex:1; min-height:0; }
 .btn-end-mercato{
   width:100%;
-  font-family:var(--bn-regular);
-  font-size:13px;
-  letter-spacing:0;
+  font-family:var(--card-font-bold);
+  font-size:14px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
   color:#fff;
   background:var(--danger);
   border:1px solid transparent;
-  border-radius:var(--r-md);
+  border-radius:4px;
   padding:15px;
   transition:filter .15s ease;
 }
@@ -2485,34 +2503,58 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
 /* ---- draft panel ---- */
 .draft-btn{
   width:100%;
-  font-family:var(--bn-regular);
-  font-size:16px;
-  letter-spacing:0;
+  font-family:var(--card-font-bold);
+  font-size:17px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
   color:#fff;
   background:var(--club-primary);
   border:none;
   padding:22px;
-  border-radius:var(--r-md);
+  border-radius:4px;
+  position:relative;
+  overflow:hidden;
   transition:filter .15s ease, transform .15s ease;
   margin-bottom:14px;
+}
+.draft-btn::before{
+  content:'';
+  position:absolute;
+  top:0; right:0;
+  border-style:solid;
+  border-width:0 16px 16px 0;
+  border-color:transparent var(--club-accent) transparent transparent;
 }
 .draft-btn:hover:not(:disabled){ filter:brightness(1.12); transform:translateY(-1px); }
 .draft-btn:disabled{ opacity:.4; cursor:not-allowed; }
 
 .relance-btn{
   width:100%;
-  font-family:var(--bn-regular);
-  font-size:15px;
-  letter-spacing:0;
+  font-family:var(--card-font-bold);
+  font-size:16px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
   color:var(--text-dim);
   background:transparent;
   border:1px solid var(--border-2);
   padding:20px;
-  border-radius:var(--r-md);
+  border-radius:4px;
+  position:relative;
+  overflow:hidden;
   transition:all .15s ease;
   margin-bottom:14px;
 }
+.relance-btn::before{
+  content:'';
+  position:absolute;
+  top:-1px; right:-1px;
+  border-style:solid;
+  border-width:0 14px 14px 0;
+  border-color:transparent var(--border-2) transparent transparent;
+  transition:border-color .3s ease;
+}
 .relance-btn:hover:not(:disabled){ color:var(--text); border-color:var(--club-accent); }
+.relance-btn:hover:not(:disabled)::before{ border-color:transparent var(--club-accent) transparent transparent; }
 .relance-btn:disabled{ opacity:.35; cursor:not-allowed; }
 
 .reroll-count{
@@ -2887,7 +2929,8 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
   .modal-tab{ font-size:12px; }
 
   .season-controls{ gap:8px; }
-  .season-btn{ font-size:12px; padding:9px 14px; letter-spacing:0; }
+  .season-btn{ font-size:11px; padding:9px 14px; }
+  .season-btn::before{ border-width:0 8px 8px 0; }
   /* Pause/x1/x2/x4/Changement passaient sur 2 lignes sur mobile (317px de
      contenu pour ~295px disponibles) - resserré pour tenir sur une seule
      ligne, scopé à cet écran pour ne pas réduire les boutons de la page de
