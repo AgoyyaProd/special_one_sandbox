@@ -556,6 +556,47 @@ button{ font-family:inherit; cursor:pointer; }
   transform:translateY(-2px);
 }
 .gm-account-btn:hover::before{ border-color:transparent var(--club-primary) transparent transparent; }
+/* Sélecteur de langue : un simple bouton qui affichait la langue CIBLE
+   ("EN" quand on est en français, et inversement) était ambigu - rien
+   n'indiquait la langue actuellement active. Remplacé par un
+   commutateur à deux options toujours visibles, l'active mise en
+   évidence (couleur du club + soulignée), à la manière d'un vrai
+   sélecteur plutôt que d'un simple bouton d'action. */
+.lang-toggle{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-family:var(--card-font-bold);
+  font-size:12.5px;
+  letter-spacing:.04em;
+  border:1.5px solid var(--border-2);
+  border-radius:4px;
+  padding:9px 14px;
+  transition:border-color .3s ease;
+}
+.lang-toggle:hover{ border-color:var(--club-accent); }
+.lang-toggle-sep{ color:var(--border-2); font-family:var(--sans); font-size:11px; }
+.lang-toggle-opt{
+  font:inherit;
+  letter-spacing:inherit;
+  color:var(--text-faint);
+  background:transparent;
+  border:none;
+  padding:0;
+  position:relative;
+  transition:color .2s ease;
+}
+.lang-toggle-opt:hover{ color:var(--text); }
+.lang-toggle-opt.is-active{
+  color:var(--club-accent);
+}
+.lang-toggle-opt.is-active::after{
+  content:'';
+  position:absolute;
+  left:0; right:0; bottom:-4px;
+  height:2px;
+  background:var(--club-accent);
+}
 .gm-account-menu{ position:relative; }
 .gm-header-actions{ display:flex; align-items:center; gap:10px; min-width:0; flex-shrink:1; }
 .gm-account-menu .gm-account-btn{ max-width:180px; }
@@ -2910,6 +2951,7 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
 
   .gm-header-inner{ padding:0; }
   .gm-account-btn{ font-size:11px; padding:7px 12px; white-space:nowrap; flex-shrink:0; }
+  .lang-toggle{ font-size:11px; padding:7px 10px; flex-shrink:0; }
   .gm-account-btn::before{ border-width:0 8px 8px 0; }
   /* Filet de sécurité pour les téléphones les plus étroits (~320-360px) où
      même le logo réduit à sa seule icône + les 3 boutons compactés ne
@@ -3790,7 +3832,11 @@ select.modal-input option{ color:#111; background:#fff; }
     <div class="gm-header-inner">
     <div class="gm-logo" id="btn-home" role="button" tabindex="0"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAzMC42LjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA5LjAzIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FscXVlXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMTAwMCAxMDAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDAwIDEwMDA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLk9tYnJlX3gwMDIwX3BvcnTDqWV7ZmlsbDpub25lO30NCgkuQXJyb25kaXNfeDAwMjBfMsKgcHR7ZmlsbDojRkZGRkZGO3N0cm9rZTojMDAwMDAwO3N0cm9rZS1taXRlcmxpbWl0OjEwO30NCgkuTWlyb2lyX3gwMDIwX2R5bmFtaXF1ZcKgWHtmaWxsOm5vbmU7fQ0KCS5CaXNlYXVfeDAwMjBfYWRvdWNpe2ZpbGw6dXJsKCNTVkdJRF8xXyk7fQ0KCS5DcsOpcHVzY3VsZXtmaWxsOiNGRkZGRkY7fQ0KCS5GZXVpbGxhZ2VfR1N7ZmlsbDojRkZERDAwO30NCgkuUG9tcGFkb3VyX0dTe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6IzUxQUVFMjt9DQo8L3N0eWxlPg0KPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwIiB5MT0iMCIgeDI9IjAuNzA3MSIgeTI9IjAuNzA3MSI+DQoJPHN0b3AgIG9mZnNldD0iMCIgc3R5bGU9InN0b3AtY29sb3I6I0U2RTZFQiIvPg0KCTxzdG9wICBvZmZzZXQ9IjAuMTczOCIgc3R5bGU9InN0b3AtY29sb3I6I0UyRTJFNiIvPg0KCTxzdG9wICBvZmZzZXQ9IjAuMzUyIiBzdHlsZT0ic3RvcC1jb2xvcjojRDVENEQ4Ii8+DQoJPHN0b3AgIG9mZnNldD0iMC41MzIzIiBzdHlsZT0ic3RvcC1jb2xvcjojQzBCRkMyIi8+DQoJPHN0b3AgIG9mZnNldD0iMC43MTM5IiBzdHlsZT0ic3RvcC1jb2xvcjojQTRBMkE0Ii8+DQoJPHN0b3AgIG9mZnNldD0iMC44OTQ5IiBzdHlsZT0ic3RvcC1jb2xvcjojODI4MjgyIi8+DQoJPHN0b3AgIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6IzZCNkU2RSIvPg0KPC9saW5lYXJHcmFkaWVudD4NCjxnPg0KCTxwYXRoIGQ9Ik0xNDIuMSwwdjcxNy4wMWMwLDQ3LjcsMjUuNDksOTEuNzcsNjYuODcsMTE1LjYyYzk2LjgxLDU1Ljc5LDE5My42MSwxMTEuNTgsMjkwLjQyLDE2Ny4zN2wyOTEuNjQtMTY4LjA4DQoJCUM4MzIuNDEsODA4LjA3LDg1Ny45LDc2NCw4NTcuOSw3MTYuM1YwSDE0Mi4xeiBNODIzLjAzLDY5Ni4yYzAsNDcuNy0yNS40OSw5MS43Ny02Ni44NywxMTUuNjJMNDk5LjM5LDk1OS44TDI0My44NSw4MTIuNTMNCgkJYy00MS4zOC0yMy44NS02Ni44Ny02Ny45Mi02Ni44Ny0xMTUuNjJWMzQuODJoNjQ2LjA1VjY5Ni4yeiIvPg0KCTxwYXRoIGQ9Ik0zODkuMjksODIzLjQ2bDkzLjAxLDUzLjZWNTA1LjY1bC05My4wMS01My41OWwtNDcuNTMtMjcuNFYyMTBoNDcuNTN2MTY2LjU2aDkzLjAxVjE1Mi40NA0KCQljMC0xOS40OC0xNS44Mi0zNS4yOC0zNS4zNC0zNS4yOEgyODQuMWMtMTkuNTIsMC0zNS4zNCwxNS44LTM1LjM0LDM1LjI4djMyNS44NGw5My4wMSw1My41OWw0Ny41MywyNy40djE1Ny42OGwtNDcuNTMtMjcuMzkNCgkJdi04Mi40NmwtOTMuMDEtNTMuNnYxODguOTdsOTMuMDEsNTMuNkwzODkuMjksODIzLjQ2eiIvPg0KCTxwYXRoIGQ9Ik02NjMuMzIsNzk2Ljc3bDkzLjAxLTUzLjZWMTUyLjQ0YzAtMTkuNDgtMTUuODItMzUuMjgtMzUuMzQtMzUuMjhINTU4LjEzYy0xOS41MiwwLTM1LjM0LDE1LjgtMzUuMzQsMzUuMjh2NzI1LjMzDQoJCWw5My4wMS01My42TDY2My4zMiw3OTYuNzd6IE02MTUuNzksMjEwaDQ3LjUzdjQ3OS41N2wtNDcuNTMsMjcuMzlWMjEweiIvPg0KPC9nPg0KPC9zdmc+DQo=" class="gm-logo-img" alt="The Special One"> <span class="gm-logo-text">THE SPECIAL ONE</span></div>
     <div class="gm-header-actions">
-      <button class="gm-account-btn" id="btn-lang-toggle" title="Français / English" aria-label="Français / English">EN</button>
+      <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Français / English">
+        <button type="button" class="lang-toggle-opt" id="lang-opt-fr" data-lang="fr">FR</button>
+        <span class="lang-toggle-sep">/</span>
+        <button type="button" class="lang-toggle-opt" id="lang-opt-en" data-lang="en">EN</button>
+      </div>
       <button class="gm-account-btn" id="btn-pantheon" data-i18n="nav.pantheon">Panthéon</button>
       <button class="gm-account-btn" id="btn-coach-quiz" data-i18n="nav.coach-quiz">Profil coach</button>
       <div class="gm-account-menu" id="account-menu">
@@ -5616,8 +5662,12 @@ function applyStaticI18n(){
   document.querySelectorAll('[data-i18n-title]').forEach(el=>{
     el.setAttribute('title', t(el.getAttribute('data-i18n-title')));
   });
-  const toggle = document.getElementById('btn-lang-toggle');
-  if(toggle) toggle.textContent = state.lang === 'fr' ? 'EN' : 'FR';
+  const langFrOpt = document.getElementById('lang-opt-fr');
+  const langEnOpt = document.getElementById('lang-opt-en');
+  if(langFrOpt && langEnOpt){
+    langFrOpt.classList.toggle('is-active', state.lang === 'fr');
+    langEnOpt.classList.toggle('is-active', state.lang === 'en');
+  }
   // Le libellé du bouton compte (pseudo si connecté) est piloté par l'état
   // de session, pas juste la langue - on le refait passer après le
   // data-i18n générique ci-dessus, qui vient de le réinitialiser au texte
@@ -16823,7 +16873,8 @@ document.getElementById('tab-signin').addEventListener('click', ()=> setAuthMode
 document.getElementById('tab-signup').addEventListener('click', ()=> setAuthMode('signup'));
 document.getElementById('profile-confirm').addEventListener('click', submitAuthForm);
 document.getElementById('btn-google-auth').addEventListener('click', signInWithGoogle);
-document.getElementById('btn-lang-toggle').addEventListener('click', ()=> setLang(state.lang === 'fr' ? 'en' : 'fr'));
+document.getElementById('lang-opt-fr').addEventListener('click', ()=> setLang('fr'));
+document.getElementById('lang-opt-en').addEventListener('click', ()=> setLang('en'));
 applyStaticI18n();
 document.getElementById('profile-modal-close').addEventListener('click', closeProfileModal);
 document.getElementById('profile-skip').addEventListener('click', closeProfileModal);
