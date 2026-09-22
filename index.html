@@ -555,7 +555,7 @@ button{ font-family:inherit; cursor:pointer; }
   border-color:#fff;
   transform:translateY(-2px);
 }
-.gm-account-btn:hover::before{ border-color:transparent var(--club-accent) transparent transparent; }
+.gm-account-btn:hover::before{ border-color:transparent var(--club-primary) transparent transparent; }
 .gm-account-menu{ position:relative; }
 .gm-header-actions{ display:flex; align-items:center; gap:10px; min-width:0; flex-shrink:1; }
 .gm-account-menu .gm-account-btn{ max-width:180px; }
@@ -679,22 +679,32 @@ button{ font-family:inherit; cursor:pointer; }
   box-shadow:0 10px 26px -12px rgba(0,0,0,.6);
   transition:transform .22s cubic-bezier(.22,.85,.32,1.2), box-shadow .25s ease, background .3s ease, color .2s ease;
 }
+/* --club-accent vaut #ffffff FIXE dès qu'un club est actif (voir
+   applyClubTheme) - ce n'est PAS la couleur du club (ça, c'est
+   --club-primary/--club-secondary), juste un blanc de surbrillance.
+   Un texte blanc sur ce fond au survol le rendait donc invisible (blanc
+   sur blanc) partout en jeu, alors que ça semblait correct sur la page
+   d'accueil où --club-accent vaut encore le bleu par défaut. Texte
+   toujours sombre au survol (comme .live-speed-btn.is-active/
+   .league-switch-btn.active le font déjà ailleurs pour la même raison)
+   et écusson coloré avec la vraie couleur du club (--club-primary)
+   plutôt que --club-accent, pour rester visible dans les deux cas. */
 .gm-btn-primary::before{
   content:'';
   position:absolute;
   top:0; right:0;
   border-style:solid;
   border-width:0 22px 22px 0;
-  border-color:transparent var(--club-accent) transparent transparent;
+  border-color:transparent #0a0d13 transparent transparent;
   transition:border-color .3s ease;
 }
 .gm-btn-primary:hover{
   transform:translateY(-3px);
   background:var(--club-accent);
-  color:#fff;
+  color:#0a0d13;
   box-shadow:0 16px 34px -12px color-mix(in srgb, var(--club-accent) 55%, transparent);
 }
-.gm-btn-primary:hover::before{ border-color:transparent var(--text) transparent transparent; }
+.gm-btn-primary:hover::before{ border-color:transparent var(--club-primary) transparent transparent; }
 .gm-btn-primary:disabled{
   opacity:.35; cursor:not-allowed; transform:none;
   background:var(--text);
@@ -741,7 +751,7 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
   transition:border-color .3s ease;
 }
 .gm-btn-secondary:hover{ color:#0a0d13; background:#fff; border-color:#fff; transform:translateY(-3px); }
-.gm-btn-secondary:hover::before{ border-color:transparent var(--club-accent) transparent transparent; }
+.gm-btn-secondary:hover::before{ border-color:transparent var(--club-primary) transparent transparent; }
 #btn-resume-save-desc{ display:block; font-family:var(--bn-regular); font-size:11px; letter-spacing:0; text-transform:none; opacity:.65; font-weight:400; margin-top:1px; line-height:1.2; }
 #btn-resume-save{ padding-top:clamp(10px,1.4vw,13px); padding-bottom:clamp(10px,1.4vw,13px); }
 
