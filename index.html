@@ -5954,8 +5954,8 @@ const SITE_FOOTER_HTML = `
 
 const INFO_PAGES = {
   'comment-jouer': {
-    title:'Comment jouer',
-    html:`
+    title:{fr:'Comment jouer', en:'How to play'},
+    html:{fr:`
       <h2>1. Choisissez votre club</h2>
       <p>Sélectionnez l'un des 5 grands championnats européens (D1 France, D1 Angleterre, D1 Espagne, D1 Allemagne, D1 Italie), puis un club parmi ceux marqués comme jouables. Les clubs affichés en grisé avec la mention "Bientôt disponible" n'ont pas encore leur base de données de joueurs constituée - ils arriveront progressivement.</p>
 
@@ -5976,11 +5976,32 @@ const INFO_PAGES = {
 
       <h2>7. Construisez votre carrière</h2>
       <p>Chaque saison jouée alimente votre Palmarès (trophées, statistiques de carrière) et débloque des succès. Le Panthéon vous permet de comparer votre parcours à celui des autres joueurs.</p>
-    `
+    `, en:`
+      <h2>1. Choose your club</h2>
+      <p>Select one of the 5 major European leagues (D1 France, D1 England, D1 Spain, D1 Germany, D1 Italy), then a club among those marked as playable. Clubs shown greyed out with "Coming soon" don't have their player database ready yet - they'll be added progressively.</p>
+
+      <h2>2. Set up your system</h2>
+      <p>Before the draft, choose your tactical formation among several classic shapes (4-3-3, 4-4-2, 4-2-3-1, 3-5-2...). The pitch redraws instantly with the matching positions.</p>
+
+      <h2>3. Draft your squad</h2>
+      <p>Each round, 5 players are randomly drawn from the club's real history, across every era (22 seasons, from 2004-2005 to 2025-2026). Click a card to see where it can play, then drop it on a compatible position. You can reroll your hand if it doesn't suit you, and reorganize your starters/substitutes at any time.</p>
+
+      <h2>4. Play the season</h2>
+      <p>Once your squad is complete, the season starts: a home-and-away league, a national cup with direct elimination (16 clubs), a pre-season trophy against the previous cup winner. Each match can be played live (with real tactical decisions during the game: substitutions, score management, card management...) or simulated instantly.</p>
+
+      <h2>5. Qualify for Europe</h2>
+      <p>Depending on your final league standing, you can aim for the Champions Cup, the Europe Cup or the Conference Cup the following year. Some spots go through a home-and-away qualifying round (playable live) even before the league phase begins. Check the <a class="site-footer-link" style="display:inline;margin:0" href="/info/clubs-europeens/" data-info="clubs-europeens">European clubs</a> page for the full details of the system.</p>
+
+      <h2>6. Manage the transfer window</h2>
+      <p>Between each season, a transfer window lets you swap up to 3 players in your squad (4 after very good results). An exceptional winter transfer window (1 player only) can also open mid-season if the board is worried about your results. After several good consecutive seasons, a slightly bigger club than yours may even come looking for you as a coach - it's up to you to accept or stay loyal to your club.</p>
+
+      <h2>7. Build your career</h2>
+      <p>Every season played feeds your Trophy Room (trophies, career stats) and unlocks achievements. The Pantheon lets you compare your journey to other players'.</p>
+    `}
   },
   'database-joueurs': {
-    title:'Base de données des joueurs',
-    html:`
+    title:{fr:'Base de données des joueurs', en:'Player database'},
+    html:{fr:`
       <p class="info-meta">Méthodologie de construction des effectifs historiques.</p>
       <h2>Une base 100% réelle</h2>
       <p>Chaque club jouable dispose d'un effectif reconstitué à partir de données réelles couvrant <strong>22 saisons</strong>, de 2004-2005 à 2025-2026. Pour chaque saison, les joueurs réellement présents dans l'effectif du club sont recensés avec leur poste et leur note de l'époque, permettant de piocher aussi bien une légende des années 2000 qu'un titulaire de la saison en cours.</p>
@@ -5993,11 +6014,24 @@ const INFO_PAGES = {
 
       <h2>Clubs de complément européens</h2>
       <p>Pour peupler les coupes d'Europe au-delà des 5 championnats couverts, une liste de clubs "reste de l'Europe" (Portugal, Pays-Bas, Belgique, Turquie, Écosse, pays nordiques et d'Europe de l'Est...) sert d'adversaires, avec une force approximative calibrée sur leur niveau réel récent.</p>
-    `
+    `, en:`
+      <p class="info-meta">Methodology behind the historical squad database.</p>
+      <h2>A 100% real database</h2>
+      <p>Every playable club has a squad rebuilt from real data covering <strong>22 seasons</strong>, from 2004-2005 to 2025-2026. For each season, the players actually in the club's squad are recorded with their position and their rating at the time, allowing you to draft anything from a 2000s legend to a current-season starter.</p>
+
+      <h2>Multi-position system</h2>
+      <p>A player who held several different positions during his career at the club (with a rating of at least 75 each time) is flagged as versatile and can be fielded in any of those positions once drafted - for example a winger able to cover up front, or a full-back pushed further forward in certain seasons.</p>
+
+      <h2>Available clubs</h2>
+      <p>Building a full database for a club is a substantial amount of work (season-by-season research, cleaning, position harmonization). Clubs are therefore added progressively. A club without a ready database appears greyed out with "Coming soon" on the selection screen rather than being offered with an incomplete squad.</p>
+
+      <h2>European filler clubs</h2>
+      <p>To fill out the European cups beyond the 5 covered leagues, a "rest of Europe" list of clubs (Portugal, Netherlands, Belgium, Turkey, Scotland, Nordic and Eastern European countries...) serves as opponents, with an approximate strength calibrated on their recent real-world level.</p>
+    `}
   },
   'clubs-europeens': {
-    title:'Clubs européens',
-    html:`
+    title:{fr:'Clubs européens', en:'European clubs'},
+    html:{fr:`
       <p class="info-meta">Fonctionnement des qualifications et compétitions européennes.</p>
       <h2>Qualification par le classement</h2>
       <p>À la fin de chaque saison, le classement final du championnat détermine les qualifiés européens de la saison suivante : les premières places donnent accès à la Coupe des Champions (phase de ligue directe, ou tour de qualification pour certains championnats selon leur niveau), les places suivantes à la Coupe d'Europe, puis à la Coupe Conférence.</p>
@@ -6013,22 +6047,45 @@ const INFO_PAGES = {
 
       <h2>Format des compétitions</h2>
       <p>Une fois qualifiées, les 3 coupes suivent un format inspiré des grandes compétitions européennes de clubs : phase de ligue à 36 clubs, barrage pour les places 9 à 24, puis 8es, quarts, demies et finale à élimination directe (aller-retour, prolongation et tirs au but en cas d'égalité).</p>
-    `
+    `, en:`
+      <p class="info-meta">How European qualification and competitions work.</p>
+      <h2>Qualification by league standing</h2>
+      <p>At the end of each season, the final league standings determine the following season's European qualifiers: the top spots grant access to the Champions Cup (direct league phase, or a qualifying round for certain leagues depending on their level), the next spots to the Europe Cup, then to the Conference Cup.</p>
+
+      <h2>Cup winners</h2>
+      <p>The national cup winner earns a spot in the Europe Cup. The previous season's European cup winners (Champions Cup, Europe Cup) are guaranteed a spot in the Champions Cup league phase the following season; the Conference Cup winner earns a spot in the Europe Cup. In case of double qualification, only the best spot is kept and the other is redistributed to the next eligible club.</p>
+
+      <h2>European Performance Spot (EPS)</h2>
+      <p>A performance coefficient is calculated each season for every league, based on the real results of its clubs competing in Europe (win, draw, loss, league-phase ranking bonus, knockout-phase progress bonus). The two top-ranked leagues on this coefficient earn an extra spot in the Champions Cup the following season.</p>
+
+      <h2>Qualifying rounds</h2>
+      <p>Some spots go through a home-and-away qualifying round before the league phase (a Champions Cup round for lower-coefficient leagues, a systematic play-off for the Conference Cup). If your club is involved, each leg is played live like a real match. On elimination, a loss in the Champions Cup qualifying round drops down to the Europe Cup; a loss in the Conference Cup play-off means a season without European football.</p>
+
+      <h2>Competition format</h2>
+      <p>Once qualified, the 3 cups follow a format inspired by major European club competitions: a 36-club league phase, a play-off for spots 9 to 24, then a round of 16, quarter-finals, semi-finals and final with direct elimination (home-and-away, extra time and penalty shootouts in case of a tie).</p>
+    `}
   },
   'a-propos': {
-    title:'À propos du projet',
-    html:`
+    title:{fr:'À propos du projet', en:'About the project'},
+    html:{fr:`
       <p><strong>The Special One</strong> est un projet personnel, développé par passion pour le football et les jeux de gestion. L'idée : composer une équipe de légende en piochant des joueurs à travers toute l'histoire récente d'un club, puis vivre une carrière de A à Z - de la draft jusqu'au sommet de l'Europe.</p>
       <p>Le projet s'inspire de jeux communautaires comme onze-de-reve.fr, en y ajoutant une simulation de saison complète (championnat, coupes nationales, coupes d'Europe, mercatos, progression de carrière).</p>
       <h2>Avertissement</h2>
       <p>Ce site est un projet personnel, non-officiel, non affilié et non approuvé par l'UEFA, la FIFA, EA Sports, ni par aucune des instances, championnats ou clubs réels dont il s'inspire. Les noms des championnats, clubs et coupes présents dans le jeu sont des créations originales. Les effectifs de joueurs proposés à la draft s'inspirent de compositions réelles, recensées manuellement à partir de sources publiques, à titre purement informatif et non commercial, dans un cadre de fan-projet. Aucune donnée de jeu (FIFA/FC) n'est extraite ou redistribuée.</p>
       <h2>Pas de publicité</h2>
       <p>Ce site ne diffuse aucune publicité et ne vend aucune donnée à des tiers.</p>
-    `
+    `, en:`
+      <p><strong>The Special One</strong> is a personal project, built out of a passion for football and management games. The idea: build a dream team by drafting players across a club's recent history, then live out a career from A to Z - from the draft to the top of Europe.</p>
+      <p>The project is inspired by community games such as onze-de-reve.fr, adding a full season simulation (league, national cups, European cups, transfer windows, career progression).</p>
+      <h2>Disclaimer</h2>
+      <p>This site is a personal, unofficial project, not affiliated with and not endorsed by UEFA, FIFA, EA Sports, or any of the real governing bodies, leagues or clubs it draws inspiration from. The names of the leagues, clubs and cups in the game are original creations. The player squads offered at the draft are inspired by real-world lineups, manually compiled from public sources, for purely informational and non-commercial purposes, as a fan project. No game data (FIFA/FC) is extracted or redistributed.</p>
+      <h2>No advertising</h2>
+      <p>This site does not carry any advertising and does not sell any data to third parties.</p>
+    `}
   },
   'nouveautes': {
-    title:'Nouveautés',
-    html:`
+    title:{fr:'Nouveautés', en:"What's new"},
+    html:{fr:`
       <p class="info-meta">Historique des évolutions du jeu, version par version.</p>
 
       <h2>v1.2.0 - "Nouvelle identité"</h2>
@@ -6153,11 +6210,136 @@ const INFO_PAGES = {
         <li>Premier moteur de jeu : formations, logique de draft, simulation de match, calendrier, classement.</li>
         <li>Constitution des premières données de joueurs réels.</li>
       </ul>
-    `
+    `, en:`
+      <p class="info-meta">History of the game's updates, version by version.</p>
+
+      <h2>v1.2.0 - "New identity"</h2>
+      <p>All leagues, clubs and cups in the game now carry original names, plus a few substantive fixes to the site's pages.</p>
+      <h3>Names and identity</h3>
+      <ul>
+        <li>The 5 leagues now carry generic names (D1 France, D1 England, D1 Spain, D1 Germany, D1 Italy) rather than the real competition names.</li>
+        <li>The 3 European cups are renamed Champions Cup, Europe Cup and Conference Cup, and all 5 national super cups now carry the name "Country Super Cup".</li>
+        <li>The European opening trophy becomes the Continental Super Cup.</li>
+        <li>Updated the "Disclaimer" text (About page) and the terms of use to reflect this new naming.</li>
+      </ul>
+      <h3>Fixes</h3>
+      <ul>
+        <li>Footer pages (About, FAQ, Contact...) sometimes showed stale content after a reload (F5), regardless of browser cache - fixed.</li>
+      </ul>
+      <h3>Interface</h3>
+      <ul>
+        <li>Larger club logos on the selection screen.</li>
+      </ul>
+
+      <h2>v1.1.0 - "Fix pack"</h2>
+      <p>A critical fix that could permanently block an ongoing season, a switch to clean URLs, and most of the remaining mobile pain points.</p>
+      <h3>Critical fixes</h3>
+      <ul>
+        <li>Fixed a case where resolving a European cup final could fail silently and block the season's progress with no visible error message.</li>
+        <li>Season action buttons no longer disabled themselves by mistake when a final still had to be played after the league ended.</li>
+      </ul>
+      <h3>Match events</h3>
+      <ul>
+        <li>Events tied to a specific position (winger, defender, striker...) can no longer land on a goalkeeper by mistake.</li>
+        <li>Added new positive and negative events specific to each position line (defense, midfield, attack).</li>
+        <li>Two new hidden achievements, and the "Remontada" condition revised to better match a real reversed-qualification scenario.</li>
+      </ul>
+      <h3>Site addresses</h3>
+      <ul>
+        <li>Every page's address is now readable (e.g. "/season") rather than a generic redirect.</li>
+      </ul>
+      <h3>Interface & mobile</h3>
+      <ul>
+        <li>Fixed several overflow cases on mobile: long team names and competition labels on the live match screen, standings tab groups.</li>
+        <li>Live match block backgrounds no longer take on the selected club's color; European cup matches have their own, lighter and more consistent tint.</li>
+        <li>Layout adjustments on the profile page (date of birth, career stats).</li>
+        <li>The achievements counter no longer reveals in advance how many hidden achievements remain to be discovered.</li>
+      </ul>
+
+      <h2>v1.0.0 - "Kick-off"</h2>
+      <p>First milestone considered genuinely ready: cross-device account reliability, an end-to-end mobile experience, and finally exhaustive achievement tracking.</p>
+      <h3>Saves & accounts</h3>
+      <ul>
+        <li>Fixed a case where signing in from a new device could overwrite the account's save by mistake.</li>
+        <li>Strengthened the sync logic: a save containing a real game now always wins over an empty save.</li>
+        <li>Fixed the reliability of the "Continue" button for signed-in accounts.</li>
+        <li>Returning to the home screen no longer erases the ongoing save; only a voluntary end of career archives the game.</li>
+        <li>Added a confirmation before overwriting an ongoing career via "Start".</li>
+      </ul>
+      <h3>Achievements</h3>
+      <ul>
+        <li>The France Super Cup and the Continental Super Cup now count toward achievement progress (this wasn't the case before).</li>
+        <li>Decisions made live during a European qualifying leg now correctly trigger live-related achievements.</li>
+        <li>Retroactive achievement catch-up based on already-recorded career history.</li>
+        <li>Fixed the achievements layout on mobile (unlock popup and list on the account page).</li>
+      </ul>
+      <h3>Mobile</h3>
+      <ul>
+        <li>Near-complete responsive overhaul: draft pitch, card hand, home and season buttons, club/league selection, Pantheon, account page, live match.</li>
+        <li>Footer position made consistent across all pages.</li>
+        <li>Live match controls grouped onto a single row.</li>
+      </ul>
+      <h3>Desktop interface</h3>
+      <ul>
+        <li>Proportional interface scaling based on screen size, for a consistent look at any resolution.</li>
+        <li>Larger header, home text, featured cards and footer on big screens.</li>
+        <li>Larger draft cards and player text for readability.</li>
+      </ul>
+      <h3>Other</h3>
+      <ul>
+        <li>Added a free-will support button (donations).</li>
+        <li>Adaptive light/dark favicon based on the browser theme.</li>
+        <li>Single welcome popup on first visit.</li>
+        <li>Removed "verdict" indications after a season decision.</li>
+      </ul>
+
+      <h2>v0.6.0 - Career depth</h2>
+      <ul>
+        <li>Career longevity with a season cap, forced retirement and a possible return to the youth club.</li>
+        <li>Live half-time decisions (9 dedicated events).</li>
+        <li>Extra time and penalty shootouts actually played live.</li>
+        <li>Dynamic and realistic added time.</li>
+        <li>Grouping of multiple careers in the Trophy Room.</li>
+        <li>Numerous reliability and display fixes.</li>
+      </ul>
+
+      <h2>v0.5.0 - European competitions & achievements</h2>
+      <ul>
+        <li>Full European cups: play-offs, round of 16, quarter-finals, semi-finals home-and-away, extra time and penalty shootouts.</li>
+        <li>National opening trophies (France Super Cup, England Super Cup, Super Cups...).</li>
+        <li>First achievement system, with unlock popups.</li>
+      </ul>
+
+      <h2>v0.4.0 - Draft & pitch overhaul</h2>
+      <ul>
+        <li>Complete redesign of the draft/transfer window screen.</li>
+        <li>Customizable pitch system (choice of pitch background).</li>
+      </ul>
+
+      <h2>v0.3.0 - The complete game</h2>
+      <ul>
+        <li>Move to a multi-league game: 5 major European leagues.</li>
+        <li>European competition format matching the current system.</li>
+        <li>Transfer window between seasons.</li>
+        <li>User accounts (email and social sign-in).</li>
+      </ul>
+
+      <h2>v0.2.0 - Visual identity</h2>
+      <ul>
+        <li>Player card with dynamic per-club recoloring.</li>
+        <li>Move to a simpler, self-contained architecture.</li>
+      </ul>
+
+      <h2>v0.1.0 - Genesis</h2>
+      <ul>
+        <li>First game engine: formations, draft logic, match simulation, schedule, standings.</li>
+        <li>Compilation of the first real player data.</li>
+      </ul>
+    `}
   },
   'faq': {
-    title:'FAQ',
-    html:`
+    title:{fr:'FAQ', en:'FAQ'},
+    html:{fr:`
       <h3>Pourquoi certains clubs ne sont pas disponibles ?</h3>
       <p>Construire la base de données d'un club (22 saisons de composition d'effectif) demande un vrai travail de recherche. Les clubs sont ajoutés progressivement ; ceux pas encore prêts apparaissent grisés avec la mention "Bientôt disponible".</p>
 
@@ -6178,11 +6360,32 @@ const INFO_PAGES = {
 
       <h3>Un bug ou une suggestion ?</h3>
       <p>Écrivez-nous via la page <a class="site-footer-link" style="display:inline;margin:0" href="/info/contact/" data-info="contact">Contact</a>.</p>
-    `
+    `, en:`
+      <h3>Why are some clubs not available?</h3>
+      <p>Building a club's database (22 seasons of squad composition) requires real research work. Clubs are added progressively; those not yet ready appear greyed out with "Coming soon".</p>
+
+      <h3>How does the multi-position system work?</h3>
+      <p>A player who held several positions with a rating of at least 75 during his career at the club can be fielded in any of those positions.</p>
+
+      <h3>Is my progress saved?</h3>
+      <p>Yes, if you create an account. Your career (current club, squad, season history, achievements) is then saved automatically.</p>
+
+      <h3>I don't have an account, can I still play?</h3>
+      <p>Yes, but your progress stays local to your browser and won't appear in the online Pantheon or Trophy Room.</p>
+
+      <h3>How does the winter transfer window work?</h3>
+      <p>If your standing during the season falls outside the results window tolerated by your club's board (which varies with its standing), an exceptional single-player transfer window can open between matchday 17 and 20.</p>
+
+      <h3>Can another club recruit me as a coach?</h3>
+      <p>Yes, after several good consecutive seasons, a club slightly above yours may approach you before the transfer window. If you accept, you inherit its real squad and then get a transfer window to improve it.</p>
+
+      <h3>Found a bug or have a suggestion?</h3>
+      <p>Write to us via the <a class="site-footer-link" style="display:inline;margin:0" href="/info/contact/" data-info="contact">Contact</a> page.</p>
+    `}
   },
   'contact': {
-    title:'Contact',
-    html:`
+    title:{fr:'Contact', en:'Contact'},
+    html:{fr:`
       <p>Une question, un bug à signaler, une note de joueur qui vous semble fausse, une suggestion, une proposition de partenariat ? Remplissez le formulaire ci-dessous - on y jette un œil dès que possible.</p>
 
       <form id="contact-form" class="contact-form">
@@ -6214,11 +6417,43 @@ const INFO_PAGES = {
       </form>
 
       <p class="info-meta" style="margin-top:32px">Vous préférez l'email direct ? <a href="mailto:contact@specialone.fr">contact@specialone.fr</a></p>
-    `
+    `, en:`
+      <p>A question, a bug to report, a player rating that looks wrong, a suggestion, a partnership proposal? Fill in the form below - we'll take a look as soon as possible.</p>
+
+      <form id="contact-form" class="contact-form">
+        <div class="contact-field">
+          <label for="contact-category">Message type</label>
+          <select id="contact-category" class="modal-input" required>
+            <option value="" disabled selected>Choose a category</option>
+            <option value="bug">Report a bug</option>
+            <option value="note">A player/club rating looks wrong</option>
+            <option value="suggestion">Suggestion / improvement idea</option>
+            <option value="partenariat">Partnership</option>
+            <option value="autre">Other</option>
+          </select>
+        </div>
+        <div class="contact-field">
+          <label for="contact-email">Your email</label>
+          <input type="email" id="contact-email" class="modal-input" required placeholder="you@example.com">
+        </div>
+        <div class="contact-field">
+          <label for="contact-subject">Subject (optional)</label>
+          <input type="text" id="contact-subject" class="modal-input" placeholder="E.g.: Chelsea 2019-2020 season, Kanté's rating">
+        </div>
+        <div class="contact-field">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" class="modal-input contact-textarea" required rows="6" placeholder="Describe your bug, suggestion, idea..."></textarea>
+        </div>
+        <button type="submit" class="gm-btn-primary" id="contact-submit-btn">Send</button>
+        <div id="contact-form-status" class="contact-form-status"></div>
+      </form>
+
+      <p class="info-meta" style="margin-top:32px">Prefer direct email? <a href="mailto:contact@specialone.fr">contact@specialone.fr</a></p>
+    `}
   },
   'conditions': {
-    title:"Conditions d'utilisation",
-    html:`
+    title:{fr:"Conditions d'utilisation", en:'Terms of use'},
+    html:{fr:`
       <p class="info-meta">Dernière mise à jour : 2026.</p>
       <h2>Objet</h2>
       <p>The Special One est un jeu de gestion sportive gratuit, mis à disposition tel quel ("as is"). En utilisant ce site, vous acceptez les présentes conditions.</p>
@@ -6238,11 +6473,31 @@ const INFO_PAGES = {
       <p>Ces conditions peuvent être mises à jour à tout moment. L'utilisation continue du site après modification vaut acceptation des nouvelles conditions.</p>
       <h2>Contact</h2>
       <p>Pour toute question : <a href="mailto:contact@specialone.fr">contact@specialone.fr</a></p>
-    `
+    `, en:`
+      <p class="info-meta">Last updated: 2026.</p>
+      <h2>Purpose</h2>
+      <p>The Special One is a free sports management game, made available "as is". By using this site, you accept these terms.</p>
+      <h2>Use of the service</h2>
+      <p>The site is intended for personal, leisure use. Any attempt at mass data extraction, abusive automation or disruption of the service is prohibited.</p>
+      <h2>User accounts</h2>
+      <p>Creating an account lets you save your progress. You are responsible for keeping your credentials confidential. An account may be suspended in case of abusive use.</p>
+      <h2>Supporting the project (donations)</h2>
+      <p>The Special One remains entirely free and requires no payment to use. A voluntary donation link to the third-party platform Ko-fi is offered for those who wish to support the project's development. These donations are optional, non-refundable, and grant no in-game advantage, exclusive content or special access - they only fund the project's continuation. Payment processing is handled entirely by Ko-fi and its payment provider, under their own terms of use; no payment information passes through or is stored on The Special One.</p>
+      <h2>Content and intellectual property</h2>
+      <p>The names of the leagues, clubs and cups in the game are original creations. The player squads offered at the draft are inspired by real-world lineups, used for informational purposes as part of a non-commercial fan project. The code, visuals and text specific to the site remain the property of their author. No guarantee is given as to the accuracy of the historical data used.</p>
+      <h2>Availability</h2>
+      <p>The service is provided without any guarantee of continuous availability. Interruptions, data loss or changes may occur without notice.</p>
+      <h2>Limitation of liability</h2>
+      <p>The publisher cannot be held liable for service interruptions, data loss or indirect damages related to the use of the site.</p>
+      <h2>Changes to these terms</h2>
+      <p>These terms may be updated at any time. Continued use of the site after a change constitutes acceptance of the new terms.</p>
+      <h2>Contact</h2>
+      <p>For any question: <a href="mailto:contact@specialone.fr">contact@specialone.fr</a></p>
+    `}
   },
   'confidentialite': {
-    title:'Confidentialité',
-    html:`
+    title:{fr:'Confidentialité', en:'Privacy'},
+    html:{fr:`
       <p class="info-meta">Dernière mise à jour : 2026.</p>
       <h2>Données collectées</h2>
       <p>Si vous créez un compte, nous collectons votre adresse email (authentification), un nom d'affichage optionnel (visible au Palmarès et au Panthéon), ainsi que l'historique de vos saisons jouées (club, résultats, trophées, statistiques). Aucune information sensible n'est demandée.</p>
@@ -6260,16 +6515,37 @@ const INFO_PAGES = {
       <p>Vous pouvez demander l'accès, la correction ou la suppression de vos données à tout moment en nous contactant à <a href="mailto:contact@specialone.fr">contact@specialone.fr</a>.</p>
       <h2>Sécurité</h2>
       <p>Les données de compte sont hébergées via un prestataire tiers sécurisé (Supabase). Des mesures raisonnables sont mises en œuvre pour protéger vos informations, sans garantie absolue de sécurité inhérente à tout service en ligne.</p>
-    `
+    `, en:`
+      <p class="info-meta">Last updated: 2026.</p>
+      <h2>Data collected</h2>
+      <p>If you create an account, we collect your email address (authentication), an optional display name (visible in the Trophy Room and the Pantheon), and the history of your played seasons (club, results, trophies, statistics). No sensitive information is requested.</p>
+      <h2>Use of data</h2>
+      <p>This data is used exclusively to run the game: authentication, saving your progress, displaying your history and your ranking in the Pantheon. It is neither sold nor shared with third parties for commercial purposes.</p>
+      <h2>Local storage</h2>
+      <p>If you play without an account, your progress is kept locally in your browser (local storage) and is never sent to our servers.</p>
+      <h2>Audience measurement</h2>
+      <p>This site uses Google Analytics to measure its traffic and understand which parts of the game are used, in order to improve it. This measurement is subject to your consent: no measurement cookie is set and no data is sent until you have accepted via the banner shown on your first visit.</p>
+      <p>The information sent is limited to game usage: screens viewed, club selected, current season, achievements unlocked. It cannot personally identify you and is never cross-referenced with your account.</p>
+      <p>You can change your choice at any time by clearing your browser's site data: the banner will then be shown to you again.</p>
+      <h2>Advertising</h2>
+      <p>This site does not carry any advertising and does not use any third-party advertising tracker. Google Analytics' advertising settings are explicitly disabled, even if you accept audience measurement.</p>
+      <h2>Your rights</h2>
+      <p>You can request access to, correction of, or deletion of your data at any time by contacting us at <a href="mailto:contact@specialone.fr">contact@specialone.fr</a>.</p>
+      <h2>Security</h2>
+      <p>Account data is hosted through a secure third-party provider (Supabase). Reasonable measures are implemented to protect your information, with no absolute guarantee of security inherent to any online service.</p>
+    `}
   }
 };
 
 function renderInfoPage(){
   const page = INFO_PAGES[state.infoPage];
   if(!page) return;
-  document.getElementById('info-title').textContent = page.title;
+  const lang = (typeof state !== 'undefined' && state.lang === 'en') ? 'en' : 'fr';
+  const pageTitle = (page.title && typeof page.title === 'object') ? (page.title[lang] || page.title.fr) : page.title;
+  const pageHtml = (page.html && typeof page.html === 'object') ? (page.html[lang] || page.html.fr) : page.html;
+  document.getElementById('info-title').textContent = pageTitle;
   const contentEl = document.getElementById('info-content');
-  contentEl.innerHTML = page.html;
+  contentEl.innerHTML = pageHtml;
   contentEl.querySelectorAll('[data-info]').forEach(btn=>{
     btn.addEventListener('click', (e)=>{ e.preventDefault(); showInfoPage(btn.dataset.info); });
   });
