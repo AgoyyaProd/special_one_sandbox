@@ -4857,7 +4857,7 @@ function renderPlayerCard(club, player){
 
       <div class="pc-crest" style="${flagStyle}"></div>
 
-      <div class="pc-season">        <div class="l">SAISON</div>
+      <div class="pc-season">        <div class="l">${tt('SAISON','SEASON')}</div>
         <div class="v">${formatSaisonShort(player.saison)}</div>
       </div>
 
@@ -5476,6 +5476,11 @@ const TRANSLATIONS = {
     'auth.password-placeholder': 'Mot de passe',
     'auth.google': 'Continuer avec Google',
     'auth.skip': 'Continuer sans compte',
+    'cookies.title': "Cookies de mesure d'audience",
+    'cookies.body': "Ce site utilise Google Analytics pour comprendre comment le jeu est utilisé et l'améliorer. Aucune donnée n'est collectée tant que vous n'avez pas accepté.",
+    'cookies.more': 'En savoir plus',
+    'cookies.refuse': 'Refuser',
+    'cookies.accept': 'Accepter',
     'euro-recap.title': 'Qualifications européennes de la saison prochaine',
     'euro-recap.ok': 'Compris',
     'onboarding.title': 'Complète ton profil',
@@ -5607,6 +5612,11 @@ const TRANSLATIONS = {
     'auth.password-placeholder': 'Password',
     'auth.google': 'Continue with Google',
     'auth.skip': 'Continue without an account',
+    'cookies.title': 'Audience measurement cookies',
+    'cookies.body': "This site uses Google Analytics to understand how the game is used and improve it. No data is collected until you've accepted.",
+    'cookies.more': 'Learn more',
+    'cookies.refuse': 'Decline',
+    'cookies.accept': 'Accept',
     'euro-recap.title': "Next season's European qualifications",
     'euro-recap.ok': 'Got it',
     'onboarding.title': 'Complete your profile',
@@ -5636,6 +5646,74 @@ function t(key){
   const lang = (typeof state !== 'undefined' && state.lang) || 'fr';
   const dict = TRANSLATIONS[lang] || TRANSLATIONS.fr;
   return (dict[key] !== undefined ? dict[key] : (TRANSLATIONS.fr[key] !== undefined ? TRANSLATIONS.fr[key] : key));
+}
+// Raccourci pour le contenu dynamique généré par le jeu (classement,
+// effectif, match en direct, succès...) : plutôt que de multiplier les
+// clés TRANSLATIONS pour des chaînes utilisées à un seul endroit, souvent
+// mélangées à des données (nombres, noms de joueurs), on donne directement
+// les deux versions à l'appel. Le contenu statique du DOM (nav, footer,
+// pages fixes) continue lui d'utiliser t()+data-i18n.
+function tt(fr, en){
+  const lang = (typeof state !== 'undefined' && state.lang) || 'fr';
+  return lang === 'en' ? en : fr;
+}
+// Les noms de championnats/coupes restent en français comme clés internes
+// (state.league, historique Supabase déjà enregistré avec ces valeurs) -
+// seul l'affichage change en anglais, via ces tables de correspondance.
+const LEAGUE_NAME_EN = {
+  'D1 France': 'D1 France',
+  'D1 Angleterre': 'D1 England',
+  'D1 Espagne': 'D1 Spain',
+  'D1 Allemagne': 'D1 Germany',
+  'D1 Italie': 'D1 Italy'
+};
+function leagueLabel(lg){
+  if(!lg) return lg;
+  return ((typeof state !== 'undefined' && state.lang === 'en')) ? (LEAGUE_NAME_EN[lg] || lg) : lg;
+}
+const EURO_CUP_NAME_EN = {
+  "Coupe des Champions": "Champions Cup",
+  "Coupe d'Europe": "Europe Cup",
+  "Coupe Conférence": "Conference Cup",
+  "Supercoupe Continentale": "Continental Super Cup"
+};
+function euroCupLabel(name){
+  if(!name) return name;
+  return ((typeof state !== 'undefined' && state.lang === 'en')) ? (EURO_CUP_NAME_EN[name] || name) : name;
+}
+// Libellés d'étapes de compétition réutilisés dans plusieurs endroits
+// (CUP_STAGE_LABEL, EURO_KNOCKOUT_STAGE_LABEL, EURO_STAGE_LABEL...) -
+// centralisés ici plutôt que dupliqués table par table.
+const STAGE_LABEL_EN = {
+  'Aller': 'First leg', 'Retour': 'Second leg', 'Finale': 'Final', 'Demi-finales': 'Semi-finals',
+  'Quarts de finale': 'Quarter-finals', 'Huitièmes de finale': 'Round of 16', 'Barrages': 'Play-offs',
+  'Phase de ligue': 'League phase', 'Terminé': 'Done',
+  'Coupe - 8èmes de finale': 'Cup - Round of 16', 'Coupe - Quarts de finale': 'Cup - Quarter-finals',
+  'Coupe - Demi-finales': 'Cup - Semi-finals', 'Coupe - Finale': 'Cup - Final',
+  'Barrage Coupe Conférence': 'Conference Cup play-off',
+  'Barrage': 'Play-off', 'Tour 3': 'Round 3', 'Tour 2': 'Round 2'
+};
+function stageLabel(fr){
+  if(!fr) return fr;
+  return ((typeof state !== 'undefined' && state.lang === 'en')) ? (STAGE_LABEL_EN[fr] || fr) : fr;
+}
+function matchday(n){ return tt(`Journée ${n}`, `Matchday ${n}`); }
+// Suffixe ordinal anglais (1st/2nd/3rd/4th...) - la version française
+// utilise déjà son propre système ('er'/'e') géré au cas par cas.
+function nthSuffix(n){
+  const j = n % 10, k = n % 100;
+  if(j===1 && k!==11) return 'st';
+  if(j===2 && k!==12) return 'nd';
+  if(j===3 && k!==13) return 'rd';
+  return 'th';
+}
+const DOMESTIC_SUPER_CUP_NAME_EN = {
+  'D1 France': 'France Super Cup', 'D1 Angleterre': 'England Super Cup', 'D1 Allemagne': 'Germany Super Cup',
+  'D1 Italie': 'Italy Super Cup', 'D1 Espagne': 'Spain Super Cup'
+};
+function superCupName(lg){
+  if(typeof DOMESTIC_SUPER_CUP_NAME === 'undefined') return lg;
+  return ((typeof state !== 'undefined' && state.lang === 'en')) ? (DOMESTIC_SUPER_CUP_NAME_EN[lg] || DOMESTIC_SUPER_CUP_NAME[lg]) : DOMESTIC_SUPER_CUP_NAME[lg];
 }
 function getInitialLang(){
   try {
@@ -5679,12 +5757,14 @@ function setLang(lang){
   state.lang = lang;
   try { localStorage.setItem(I18N_LANG_KEY, lang); } catch(e){ /* ignore */ }
   applyStaticI18n();
-  // Re-rendu du contenu dynamique de l'écran courant (classement, effectif,
-  // succès...) si le jeu est déjà démarré - sans ça, seule la coquille
-  // statique changerait de langue tant qu'aucune autre action ne
-  // redéclenche un rendu.
-  if(typeof renderGame === 'function' && (state.club || state.season)){
-    try { renderGame(); } catch(e){ /* ignore */ }
+  // Re-rendu du contenu dynamique de l'écran actuellement affiché
+  // (classement, effectif, succès, palmarès...) - sans ça, seule la
+  // coquille statique changerait de langue tant qu'aucune autre action
+  // ne redéclenche un rendu. On utilise la même table que le routeur
+  // (SCREEN_RENDERERS) pour rester synchronisé avec les écrans existants.
+  const renderFn = typeof SCREEN_RENDERERS !== 'undefined' ? SCREEN_RENDERERS[state.screen] : null;
+  if(renderFn){
+    try { renderFn(); } catch(e){ /* ignore */ }
   }
 }
 
@@ -6286,15 +6366,77 @@ Object.assign(COACH_QUIZ_DATA.coachRefs, coachQuizRecentProfiles);
 const coachQuizStyleDims = ["control","verticality","pressing","transitions","defense","risk","creativity","identity"];
 const coachQuizManagementDims = ["man_management","development","discipline","mentality","ambition","adaptability","pragmatism","game_management"];
 
+// Traductions du quiz coach (questions/réponses/labels/archetypes) - le
+// jeu de données de scoring (COACH_QUIZ_DATA) reste la seule source de
+// vérité pour les poids de calcul ; seul le texte affiché change de
+// langue, via ces tables parallèles et les fonctions quizQuestionText/
+// quizAnswerText/quizLabel/archetypeLabel ci-dessous.
+const COACH_QUIZ_QUESTIONS_EN = [
+  {q:'Your team wins back the ball. You first want to…', answers:['Keep possession.','Attack quickly.','Look for the best pass.','Secure it before attacking.']},
+  {q:'Against a low block, you prefer to…', answers:['Circulate the ball.','Play balls in behind.','Take players on 1v1.','Be patient.']},
+  {q:'When you lose the ball, your team should…', answers:['Press immediately.','Get back into shape quickly.','Cut off the short passes.','Drop back and wait.']},
+  {q:"You're leading 1-0 in the 80th minute. You ask your team to…", answers:['Keep doing the same thing.','Go for the second goal.','Shut the game down.','Adapt to the opponent.']},
+  {q:"You're facing a stronger team. You…", answers:['Impose your own game.','Press very high.','Defend and counter.','Change your plan.']},
+  {q:'Your system should be…', answers:['Very structured.','Very aggressive.','Very solid.','Easy to change.']},
+  {q:"A player keeps losing the ball. You'd rather…", answers:['Ask him to simplify his game.','Let him keep trying.','Change his role.','Replace him.']},
+  {q:'A young player joins your squad. You…', answers:['Ease him in gradually.',"Start him if he's good.",'Give him responsibility quickly.',"Wait until he's ready."]},
+  {q:'In the locker room, what matters most to you is…', answers:['Discipline.','Trust.','Competition.','Autonomy.']},
+  {q:'After two defeats, you…', answers:['Go back to basics.','Raise the intensity.','Change several things.','Protect the group.']},
+  {q:'Late in a match, the first thing you look at is…', answers:['Ball control.','Space to attack.','Space to close down.',"The opponent's behaviour."]},
+  {q:'Your team must win at all costs. You accept…', answers:['Taking more risks.','A closed-down game.','Changing your style completely.','Staying true to your identity.']},
+  {q:'When recruiting, you prioritize…', answers:['Technical level.','Physicality and intensity.','Mentality.','Versatility.']},
+  {q:"Your team's identity should be…", answers:['Very strong.','Clear but flexible.','Secondary to the result.','Built around the players.']},
+  {q:'A match becomes very tense. You ask your team to…', answers:['Stay calm.','Win the duels.','Speed things up.','Control the tempo.']},
+  {q:'Your assistant suggests a tactical change. You…', answers:['Follow it if it makes sense.','Try it right away.','Stick to your original plan.','Wait for more information.']},
+  {q:'The stats say one thing, your gut says another. You…', answers:['Follow the stats.','Follow your gut.','Look into why they disagree.','Decide based on context.']},
+  {q:'Which goal suits you best?', answers:['Dominate matches.','Win trophies.','Build a strong team.','Be able to beat anyone.']},
+  {q:'After conceding in the 88th minute, you…', answers:['Attack immediately.','Stay organized.','Change your setup.','Let your senior players handle it.']},
+  {q:'What compliment do you want to hear from your players?', answers:['"We always knew what to do."','"We never gave up."','"He gets us."','"He always finds a solution."']}
+];
+const COACH_QUIZ_LABELS_EN = {
+  control:'Control', verticality:'Verticality', pressing:'Pressing', transitions:'Transitions',
+  defense:'Defensive solidity', risk:'Risk-taking', adaptability:'Adaptability', discipline:'Tactical discipline',
+  creativity:'Creativity', man_management:'Man-management', development:'Youth development', pragmatism:'Pragmatism',
+  ambition:'Ambition', mentality:'Mentality', game_management:'Game management', analysis:'Analysis',
+  intelligence:'Game reading', tactical:'Tactical mastery', identity:'Playing identity', authority:'Authority',
+  meritocracy:'Meritocracy'
+};
+const COACH_ARCHETYPE_EN = {
+  'Le Contrôleur':'The Controller', 'Le Vertical':'The Verticalist', 'Le Pressing Machine':'The Pressing Machine',
+  'Le Pragmatique':'The Pragmatist', 'Le Stratège':'The Strategist', 'Le Gestionnaire':'The Man-Manager',
+  'Le Bâtisseur':'The Builder', 'Le Meneur':'The Leader', 'Le Risk-Taker':'The Risk-Taker',
+  'Le Caméléon':'The Chameleon', 'Le Dogmatique':'The Dogmatist', 'Le Créatif':'The Creative',
+  'Le Défensif':'The Defensive Mind', 'Le Développeur':'The Developer', 'Le Compétiteur':'The Competitor',
+  'Le Méthodique':'The Methodical One', 'Le Transformateur':'The Transformer', 'Le Manager de stars':'The Star Manager'
+};
+function quizQuestionText(i){
+  const en = COACH_QUIZ_QUESTIONS_EN[i];
+  return (state.lang === 'en' && en) ? en.q : COACH_QUIZ_DATA.questions[i].q;
+}
+function quizAnswerText(i, j){
+  const en = COACH_QUIZ_QUESTIONS_EN[i];
+  return (state.lang === 'en' && en) ? en.answers[j] : COACH_QUIZ_DATA.questions[i].answers[j][0];
+}
+function quizLabel(d){
+  return (state.lang === 'en') ? (COACH_QUIZ_LABELS_EN[d] || COACH_QUIZ_DATA.labels[d]) : COACH_QUIZ_DATA.labels[d];
+}
+function archetypeLabel(name){
+  return (state.lang === 'en') ? (COACH_ARCHETYPE_EN[name] || name) : name;
+}
+
 function renderCoachQuizQuestions(){
   const container = document.getElementById('coach-quiz-questions');
-  if(!container || container.childElementCount) return; // déjà rendu une fois, pas besoin de reconstruire
+  // Reconstruit si jamais rendu, ou si rendu dans l'autre langue (voir
+  // data-lang posé plus bas) - sinon, inutile de reconstruire à chaque appel.
+  if(!container || (container.childElementCount && container.dataset.lang === state.lang)) return;
+  container.innerHTML = '';
+  container.dataset.lang = state.lang;
   COACH_QUIZ_DATA.questions.forEach((q, i) => {
     const fieldset = document.createElement('fieldset');
-    fieldset.innerHTML = '<legend><b>' + (i+1) + '. ' + q.q + '</b></legend>';
+    fieldset.innerHTML = '<legend><b>' + (i+1) + '. ' + quizQuestionText(i) + '</b></legend>';
     q.answers.forEach((answer, j) => {
       const label = document.createElement('label');
-      label.innerHTML = '<input type="radio" name="cq' + i + '" value="' + j + '"> ' + answer[0];
+      label.innerHTML = '<input type="radio" name="cq' + i + '" value="' + j + '"> ' + quizAnswerText(i, j);
       fieldset.appendChild(label);
     });
     container.appendChild(fieldset);
@@ -6307,7 +6449,7 @@ function calculateCoachProfile(){
   for(let i=0; i<COACH_QUIZ_DATA.questions.length; i++){
     const selected = document.querySelector('input[name="cq'+i+'"]:checked');
     if(!selected){
-      toast('Réponds à la question ' + (i+1) + '.');
+      toast(tt('Réponds à la question ' + (i+1) + '.', 'Answer question ' + (i+1) + '.'));
       return null;
     }
     const values = COACH_QUIZ_DATA.questions[i].answers[Number(selected.value)][1];
@@ -6345,7 +6487,7 @@ function renderCoachScoreBars(profile, dimensions){
     .sort((a,b)=> profile[b]-profile[a])
     .map(d=>`
       <div class="coach-quiz-score">
-        <b>${COACH_QUIZ_DATA.labels[d]}</b> : ${profile[d]}/100
+        <b>${quizLabel(d)}</b> : ${profile[d]}/100
         <div class="coach-quiz-bar"><div class="coach-quiz-bar-fill" style="width:${profile[d]}%"></div></div>
       </div>
     `).join('');
@@ -6366,14 +6508,16 @@ function buildCoachQuizResult(profile){
 }
 
 function renderCoachQuizResultDOM(result){
-  document.getElementById('coach-quiz-archetype').textContent = result.archetype;
-  document.getElementById('coach-quiz-intro').textContent =
-    'Ce profil est calculé à partir de tes choix. Les coachs connus servent uniquement de comparaison.';
+  document.getElementById('coach-quiz-archetype').textContent = archetypeLabel(result.archetype);
+  document.getElementById('coach-quiz-intro').textContent = tt(
+    'Ce profil est calculé à partir de tes choix. Les coachs connus servent uniquement de comparaison.',
+    'This profile is calculated from your answers. Well-known coaches are shown only for comparison.'
+  );
   document.getElementById('coach-quiz-scores').innerHTML = renderCoachScoreBars(result.profile, [...COACH_QUIZ_DATA.dimensions]);
   document.getElementById('coach-quiz-style').innerHTML = renderCoachScoreBars(result.profile, [...coachQuizStyleDims]);
   document.getElementById('coach-quiz-management').innerHTML = renderCoachScoreBars(result.profile, [...coachQuizManagementDims]);
   document.getElementById('coach-quiz-coaches').innerHTML = result.coaches
-    .map(c => `<li><b>${c.name}</b> — ${c.score}% de proximité</li>`).join('');
+    .map(c => `<li><b>${c.name}</b> — ${c.score}% ${tt('de proximité','match')}</li>`).join('');
   document.getElementById('coach-quiz-result').hidden = false;
 }
 
@@ -6414,15 +6558,15 @@ function renderCoachProfileSummary(){
   const result = state.coachProfile || (state.session && state.session.user.user_metadata && state.session.user.user_metadata.coach_profile) || null;
   if(!result){
     el.innerHTML = `
-      <p style="font-family:var(--sans);font-size:13px;color:var(--text-dim);line-height:1.6;margin:0 0 16px">Découvre ton profil tactique et managérial en 20 questions, et compare-toi aux plus grands entraîneurs.</p>
-      <button class="season-btn season-btn-primary" id="btn-goto-coach-quiz-from-account">Passer le test</button>
+      <p style="font-family:var(--sans);font-size:13px;color:var(--text-dim);line-height:1.6;margin:0 0 16px">${tt('Découvre ton profil tactique et managérial en 20 questions, et compare-toi aux plus grands entraîneurs.','Discover your tactical and managerial profile in 20 questions, and compare yourself to the greatest coaches.')}</p>
+      <button class="season-btn season-btn-primary" id="btn-goto-coach-quiz-from-account">${tt('Passer le test','Take the test')}</button>
     `;
   } else {
     state.coachProfile = result;
     el.innerHTML = `
-      <div class="coach-profile-archetype">${result.archetype}</div>
+      <div class="coach-profile-archetype">${archetypeLabel(result.archetype)}</div>
       <div class="coach-profile-coaches">${result.coaches.slice(0,3).map(c=>`${c.name} (${c.score}%)`).join(' · ')}</div>
-      <button class="season-btn season-btn-ghost" id="btn-goto-coach-quiz-from-account">Refaire le test</button>
+      <button class="season-btn season-btn-ghost" id="btn-goto-coach-quiz-from-account">${tt('Refaire le test','Retake the test')}</button>
     `;
   }
   const btn = document.getElementById('btn-goto-coach-quiz-from-account');
@@ -6432,6 +6576,10 @@ function renderCoachProfileSummary(){
 const CONTACT_CATEGORY_LABELS = {
   bug:'Bug', note:'Note incorrecte', suggestion:'Suggestion',
   partenariat:'Partenariat', autre:'Autre'
+};
+const CONTACT_CATEGORY_LABELS_EN = {
+  bug:'Bug', note:'Incorrect rating', suggestion:'Suggestion',
+  partenariat:'Partnership', autre:'Other'
 };
 
 async function submitContactForm(e){
@@ -6444,13 +6592,13 @@ async function submitContactForm(e){
   const btn = document.getElementById('contact-submit-btn');
 
   if(!category || !email || !message){
-    statusEl.textContent = 'Merci de remplir au moins la catégorie, votre email et le message.';
+    statusEl.textContent = tt('Merci de remplir au moins la catégorie, votre email et le message.','Please fill in at least the category, your email and the message.');
     statusEl.className = 'contact-form-status is-error';
     return;
   }
 
   btn.disabled = true;
-  btn.textContent = 'Envoi...';
+  btn.textContent = tt('Envoi...','Sending...');
   statusEl.textContent = '';
   statusEl.className = 'contact-form-status';
 
@@ -6461,22 +6609,22 @@ async function submitContactForm(e){
       user_id: state.session ? state.session.user.id : null
     });
     if(error) throw error;
-    statusEl.textContent = 'Message envoyé, merci ! Nous reviendrons vers vous si besoin.';
+    statusEl.textContent = tt('Message envoyé, merci ! Nous reviendrons vers vous si besoin.','Message sent, thank you! We will get back to you if needed.');
     statusEl.className = 'contact-form-status is-success';
     document.getElementById('contact-form').reset();
   } catch(err){
     // Repli : si l'enregistrement en base échoue (hors-ligne, Supabase
     // indisponible...), on ouvre le client mail avec le message pré-rempli
     // plutôt que de perdre silencieusement la demande.
-    const catLabel = CONTACT_CATEGORY_LABELS[category] || category;
+    const catLabel = (state.lang === 'en' ? CONTACT_CATEGORY_LABELS_EN : CONTACT_CATEGORY_LABELS)[category] || category;
     const mailSubject = encodeURIComponent(`[${catLabel}] ${subject || 'Contact The Special One'}`);
     const mailBody = encodeURIComponent(`${message}\n\n---\nEmail : ${email}`);
     window.location.href = `mailto:contact@specialone.fr?subject=${mailSubject}&body=${mailBody}`;
-    statusEl.textContent = "Envoi impossible pour le moment - ouverture de votre messagerie en repli.";
+    statusEl.textContent = tt("Envoi impossible pour le moment - ouverture de votre messagerie en repli.","Couldn't send right now - opening your mail client as a fallback.");
     statusEl.className = 'contact-form-status is-error';
   } finally {
     btn.disabled = false;
-    btn.textContent = 'Envoyer';
+    btn.textContent = tt('Envoyer','Send');
   }
 }
 
@@ -6825,7 +6973,7 @@ function renderSelect(){
   leagueGrid.innerHTML = Object.keys(LEAGUES).map(lg=>`
     <button class="league-pill ${state.league===lg?'is-active':''}" data-league="${lg}">
       ${LEAGUE_LOGOS[lg] ? `<div class="league-logo-wrap"><img src="${LEAGUE_LOGOS[lg]}" class="league-logo" alt=""></div>` : ''}
-      <span>${lg}</span>
+      <span>${leagueLabel(lg)}</span>
     </button>
   `).join('');
   leagueGrid.querySelectorAll('.league-pill').forEach(btn=>{
@@ -6868,8 +7016,8 @@ function renderSelect(){
       <div class="club-crest" style="background:${c.logo?'transparent':'color-mix(in srgb, '+c.primary+' 55%, #000 45%)'}">
         ${c.logo ? `<img src="${(crestBlobCache[c.logo] && typeof crestBlobCache[c.logo]==='string')?crestBlobCache[c.logo]:c.logo}" referrerpolicy="no-referrer" onerror="this.style.display='none'">` : c.trigram}
       </div>
-      <div class="club-name">${!selectable ? 'Bientôt disponible' : c.name}</div>
-      ${tooStrong ? '<div class="club-unplayable-tag">Hors de portée</div>' : ''}
+      <div class="club-name">${!selectable ? tt('Bientôt disponible','Coming soon') : c.name}</div>
+      ${tooStrong ? `<div class="club-unplayable-tag">${tt('Hors de portée','Out of reach')}</div>` : ''}
     </button>
   `;
   }).join('');
@@ -6980,10 +7128,10 @@ function renderRemainingPicks(){
   let remaining, label;
   if(state.transfer){
     remaining = Math.max(0, state.transfer.maxPicks - state.transfer.count);
-    label = remaining === 0 ? 'Effectif validé' : `${remaining} choix restant${remaining>1?'s':''}`;
+    label = remaining === 0 ? tt('Effectif validé','Squad complete') : tt(`${remaining} choix restant${remaining>1?'s':''}`, `${remaining} pick${remaining>1?'s':''} left`);
   } else {
     remaining = state.rerollsLeft;
-    label = remaining === 0 ? 'Plus de relance disponible' : `${remaining} relance${remaining>1?'s':''} restante${remaining>1?'s':''}`;
+    label = remaining === 0 ? tt('Plus de relance disponible','No rerolls left') : tt(`${remaining} relance${remaining>1?'s':''} restante${remaining>1?'s':''}`, `${remaining} reroll${remaining>1?'s':''} left`);
   }
   const filled = Math.min(5, remaining);
   const dots = Array.from({length:5}, (_, i) => `<span class="picks-dot ${i < filled ? 'is-filled' : ''}"></span>`).join('');
@@ -7230,7 +7378,7 @@ function placeSelected(slotId){
   bumpTieredCounter('draftPicksTotal');
 
   if(phase()==='complete'){
-    toast('Effectif complet ! Prêt à lancer la saison.');
+    toast(tt('Effectif complet ! Prêt à lancer la saison.','Squad complete! Ready to start the season.'));
     bumpTieredCounter('completeSquadsBuilt');
     checkSquadBuildAchievements();
   }
@@ -7281,10 +7429,10 @@ function computeTeamStats(){
 
 function renderTeamStatsHTML(stats){
   return `
-    <div class="stat-tile"><div class="v">${stats.overall ?? '-'}</div><div class="l">Global</div></div>
-    <div class="stat-tile"><div class="v">${stats.def ?? '-'}</div><div class="l">Défense</div></div>
-    <div class="stat-tile"><div class="v">${stats.mid ?? '-'}</div><div class="l">Milieu</div></div>
-    <div class="stat-tile"><div class="v">${stats.att ?? '-'}</div><div class="l">Attaque</div></div>
+    <div class="stat-tile"><div class="v">${stats.overall ?? '-'}</div><div class="l">${tt('Global','Overall')}</div></div>
+    <div class="stat-tile"><div class="v">${stats.def ?? '-'}</div><div class="l">${tt('Défense','Defense')}</div></div>
+    <div class="stat-tile"><div class="v">${stats.mid ?? '-'}</div><div class="l">${tt('Milieu','Midfield')}</div></div>
+    <div class="stat-tile"><div class="v">${stats.att ?? '-'}</div><div class="l">${tt('Attaque','Attack')}</div></div>
   `;
 }
 
@@ -7298,14 +7446,14 @@ function renderMatchsheetHTML(){
   `;
   const header = `
     <div class="ms-row ms-header">
-      <div class="ms-pos">Poste</div>
-      <div class="ms-name">Joueur</div>
-      <div class="ms-note">Note</div>
+      <div class="ms-pos">${tt('Poste','Pos')}</div>
+      <div class="ms-name">${tt('Joueur','Player')}</div>
+      <div class="ms-note">${tt('Note','Rating')}</div>
     </div>
   `;
   return header
     + state.slots.map(s=>row(s.label, s)).join('')
-    + `<div class="ms-subhead">Remplaçants</div>`
+    + `<div class="ms-subhead">${tt('Remplaçants','Substitutes')}</div>`
     + state.subs.map((s,i)=>row('R'+(i+1), s)).join('');
 }
 
@@ -7343,7 +7491,7 @@ function renderGame(){
   // club box
   renderClubCrest('game-club-crest', state.club);
   document.getElementById('game-club-name').textContent = state.club.name;
-  document.getElementById('game-club-league').textContent = state.league;
+  document.getElementById('game-club-league').textContent = leagueLabel(state.league);
   renderRemainingPicks();
 
   // formation buttons
@@ -7354,7 +7502,7 @@ function renderGame(){
   `).join('');
   const fToggle = document.getElementById('formation-toggle');
   fToggle.disabled = state.locked;
-  fToggle.title = state.locked ? 'Verrouillé (draft en cours)' : '';
+  fToggle.title = state.locked ? tt('Verrouillé (draft en cours)','Locked (draft in progress)') : '';
 
   // team stats
   document.getElementById('team-stats').innerHTML = renderTeamStatsHTML(computeTeamStats());
@@ -7387,25 +7535,25 @@ function renderGame(){
   const dead = handIsDead();
   const midSeasonView = !!state.season; // on consulte l'effectif en cours de saison, pas en train de le composer
   if(midSeasonView){
-    draftBtn.textContent = 'Retour à la saison';
+    draftBtn.textContent = tt('Retour à la saison','Back to season');
     draftBtn.disabled = false;
     relanceBtn.disabled = true;
-    relanceBtn.textContent = 'Relancer la main';
+    relanceBtn.textContent = t('game.reroll');
   } else if(ph==='complete'){
-    draftBtn.textContent = 'Lancer la saison';
+    draftBtn.textContent = tt('Lancer la saison','Start the season');
     draftBtn.disabled = false;
     relanceBtn.disabled = true;
-    relanceBtn.textContent = 'Relancer la main';
+    relanceBtn.textContent = t('game.reroll');
   } else if(state.hand.length){
-    draftBtn.textContent = dead ? 'Aucun poste disponible…' : 'Choisissez un poste…';
+    draftBtn.textContent = dead ? tt('Aucun poste disponible…','No position available…') : tt('Choisissez un poste…','Choose a position…');
     draftBtn.disabled = true;
     relanceBtn.disabled = dead ? false : state.rerollsLeft<=0;
-    relanceBtn.textContent = dead ? 'Relancer (offert)' : 'Relancer la main';
+    relanceBtn.textContent = dead ? tt('Relancer (offert)','Reroll (free)') : t('game.reroll');
   } else {
-    draftBtn.textContent = 'Lancer la draft';
+    draftBtn.textContent = t('game.launch-draft');
     draftBtn.disabled = false;
     relanceBtn.disabled = true;
-    relanceBtn.textContent = 'Relancer la main';
+    relanceBtn.textContent = t('game.reroll');
   }
 
   // rerolls (compteur retiré à la demande)
@@ -7557,13 +7705,13 @@ function resolveTransferPick(uid){
   const card = state.hand.find(c=>c.uid===uid);
   if(!card || !tr) return;
   const slot = findSlot(tr.activeSlotId);
-  const posLabel = isBenchSlot(tr.activeSlotId) ? 'Remplaçant' : slot.label;
+  const posLabel = isBenchSlot(tr.activeSlotId) ? tt('Remplaçant','Substitute') : slot.label;
   if(card.player !== slot.player){
     state.usedNames.add(playerKey(card.player));
-    toast(`${card.player.prenom} ${card.player.nom} rejoint l'effectif (${posLabel}) !`);
+    toast(tt(`${card.player.prenom} ${card.player.nom} rejoint l'effectif (${posLabel}) !`, `${card.player.prenom} ${card.player.nom} joins the squad (${posLabel})!`));
     slot.player = card.player;
   } else {
-    toast(`${card.player.prenom} ${card.player.nom} reste dans l'effectif.`);
+    toast(tt(`${card.player.prenom} ${card.player.nom} reste dans l'effectif.`, `${card.player.prenom} ${card.player.nom} stays in the squad.`));
   }
   tr.count++;
   state.hand = [];
@@ -7598,11 +7746,11 @@ function renderTransferGame(){
   document.querySelector('.pitch-block').classList.toggle('pelouse-pending', !state.pelouseId);
   renderClubCrest('game-club-crest', state.club);
   document.getElementById('game-club-name').textContent = state.club.name;
-  document.getElementById('game-club-league').textContent = `${state.league} - Mercato`;
+  document.getElementById('game-club-league').textContent = `${leagueLabel(state.league)} - ${tt('Mercato','Transfer window')}`;
 
   document.getElementById('formation-label').textContent = state.formationKey;
   document.getElementById('formation-toggle').disabled = true;
-  document.getElementById('formation-toggle').title = 'Formation verrouillée pendant le mercato.';
+  document.getElementById('formation-toggle').title = tt('Formation verrouillée pendant le mercato.','Formation locked during the transfer window.');
   renderRemainingPicks();
 
   document.getElementById('team-stats').innerHTML = renderTeamStatsHTML(computeTeamStats());
@@ -8089,15 +8237,17 @@ function showPoachingOfferPopup(){
   state.poachingOffersHistory = [...(state.poachingOffersHistory||[]), pick.id];
 
   const titleEl = document.getElementById('season-event-title');
-  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>Un club s'intéresse à vous`;
+  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>${tt("Un club s'intéresse à vous","A club is interested in you")}`;
   titleEl.classList.add('is-rare');
   document.getElementById('season-event-context').style.display = 'none';
-  document.getElementById('season-event-text').textContent =
-    `Après vos bons résultats à ${state.club.name}, ${pick.name} souhaite vous recruter comme entraîneur, avant même l'ouverture du mercato. Rejoindre ce club maintenant ?`;
+  document.getElementById('season-event-text').textContent = tt(
+    `Après vos bons résultats à ${state.club.name}, ${pick.name} souhaite vous recruter comme entraîneur, avant même l'ouverture du mercato. Rejoindre ce club maintenant ?`,
+    `After your good results at ${state.club.name}, ${pick.name} want to hire you as their coach, even before the transfer window opens. Join this club now?`
+  );
   const optsEl = document.getElementById('season-event-options');
   optsEl.innerHTML = `
-    <button class="live-decision-option" data-key="accept">Rejoindre ${pick.name}</button>
-    <button class="live-decision-option" data-key="refuse">Rester à ${state.club.name}</button>
+    <button class="live-decision-option" data-key="accept">${tt('Rejoindre','Join')} ${pick.name}</button>
+    <button class="live-decision-option" data-key="refuse">${tt('Rester à','Stay at')} ${state.club.name}</button>
   `;
   optsEl.querySelector('[data-key="accept"]').addEventListener('click', ()=>{
     document.getElementById('season-event-overlay').style.display = 'none';
@@ -8118,7 +8268,7 @@ function acceptPoachingOffer(newClub){
   autoFillSquadFromClub(newClub);
   state.pendingPoachingOffer = null;
   if(state.career) state.career.clubTenure = 0; // nouveau chapitre au nouveau club
-  toast(`Vous rejoignez ${newClub.name} ! Un mercato s'ouvre pour composer votre nouvel effectif.`);
+  toast(tt(`Vous rejoignez ${newClub.name} ! Un mercato s'ouvre pour composer votre nouvel effectif.`, `You're joining ${newClub.name}! A transfer window opens to build your new squad.`));
   startTransferWindow(3, false);
 }
 
@@ -8140,13 +8290,15 @@ function checkSackingEligible(){
 function showSackingPopup(){
   state.pendingSackingEvent = true;
   const titleEl = document.getElementById('season-event-title');
-  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>Fin de collaboration`;
+  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>${tt('Fin de collaboration','End of contract')}`;
   titleEl.classList.add('is-rare');
   document.getElementById('season-event-context').style.display = 'none';
-  document.getElementById('season-event-text').textContent =
-    `Après plusieurs saisons de déclin, ${state.club.name} met fin à votre contrat. Il est temps de retrouver un banc de touche.`;
+  document.getElementById('season-event-text').textContent = tt(
+    `Après plusieurs saisons de déclin, ${state.club.name} met fin à votre contrat. Il est temps de retrouver un banc de touche.`,
+    `After several seasons of decline, ${state.club.name} is ending your contract. It's time to find a new dugout.`
+  );
   const optsEl = document.getElementById('season-event-options');
-  optsEl.innerHTML = `<button class="live-decision-option" data-key="ok">Chercher un nouveau club</button>`;
+  optsEl.innerHTML = `<button class="live-decision-option" data-key="ok">${tt('Chercher un nouveau club','Look for a new club')}</button>`;
   optsEl.querySelector('.live-decision-option').addEventListener('click', ()=>{
     document.getElementById('season-event-overlay').style.display = 'none';
     startFreeAgentClubSearch();
@@ -8171,7 +8323,7 @@ function startFreeAgentClubSearch(){
   state.club = null;
   showScreen('select');
   renderSelect();
-  toast("Vous êtes libre - choisissez votre prochain club pour continuer votre carrière.");
+  toast(tt("Vous êtes libre - choisissez votre prochain club pour continuer votre carrière.","You're a free agent - choose your next club to continue your career."));
 }
 
 // ---------------------------- FIN DE CARRIÈRE (longévité épuisée) ----------------------------
@@ -8186,13 +8338,15 @@ function checkTwilightWarningEligible(){
 function showTwilightWarningPopup(){
   state.career.twilightWarningShown = true;
   const titleEl = document.getElementById('season-event-title');
-  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>Fin de carrière en approche`;
+  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>${tt('Fin de carrière en approche','Retirement approaching')}`;
   titleEl.classList.add('is-rare');
   document.getElementById('season-event-context').style.display = 'none';
-  document.getElementById('season-event-text').textContent =
-    `Après ${state.career.yearsInCareer} saison${state.career.yearsInCareer>1?'s':''} sur les bancs, votre carrière entre dans sa dernière ligne droite. Il est temps de penser à l'héritage que vous allez laisser.`;
+  document.getElementById('season-event-text').textContent = tt(
+    `Après ${state.career.yearsInCareer} saison${state.career.yearsInCareer>1?'s':''} sur les bancs, votre carrière entre dans sa dernière ligne droite. Il est temps de penser à l'héritage que vous allez laisser.`,
+    `After ${state.career.yearsInCareer} season${state.career.yearsInCareer>1?'s':''} in the dugout, your career is entering its final stretch. It's time to think about the legacy you'll leave behind.`
+  );
   const optsEl = document.getElementById('season-event-options');
-  optsEl.innerHTML = `<button class="live-decision-option" data-key="ok">Continuer</button>`;
+  optsEl.innerHTML = `<button class="live-decision-option" data-key="ok">${t('live.continue')}</button>`;
   optsEl.querySelector('.live-decision-option').addEventListener('click', ()=>{
     document.getElementById('season-event-overlay').style.display = 'none';
     proceedToRegularMercatoFlow();
@@ -8218,14 +8372,16 @@ function checkForcedRetirementEligible(){
 }
 function showForcedRetirementPopup(){
   const titleEl = document.getElementById('season-event-title');
-  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>Fin de carrière`;
+  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>${tt('Fin de carrière','End of career')}`;
   titleEl.classList.add('is-rare');
   document.getElementById('season-event-context').style.display = 'none';
   const years = state.career.yearsInCareer || 0;
-  document.getElementById('season-event-text').textContent =
-    `Après ${years} saison${years>1?'s':''} sur les bancs, vous décidez de raccrocher. Votre carrière (dernier club ${state.club.name}) reste gravée dans votre Palmarès.`;
+  document.getElementById('season-event-text').textContent = tt(
+    `Après ${years} saison${years>1?'s':''} sur les bancs, vous décidez de raccrocher. Votre carrière (dernier club ${state.club.name}) reste gravée dans votre Palmarès.`,
+    `After ${years} season${years>1?'s':''} in the dugout, you decide to hang up your coat. Your career (last club ${state.club.name}) remains recorded in your trophy cabinet.`
+  );
   const optsEl = document.getElementById('season-event-options');
-  optsEl.innerHTML = `<button class="live-decision-option" data-key="ok">Prendre sa retraite</button>`;
+  optsEl.innerHTML = `<button class="live-decision-option" data-key="ok">${tt('Prendre sa retraite','Retire')}</button>`;
   optsEl.querySelector('.live-decision-option').addEventListener('click', ()=>{
     document.getElementById('season-event-overlay').style.display = 'none';
     endCurrentCareer();
@@ -8262,15 +8418,17 @@ function showFullCircleOfferPopup(){
   state.pendingFullCircleOffer = originalClub;
 
   const titleEl = document.getElementById('season-event-title');
-  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>Boucler la boucle ?`;
+  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>${tt('Boucler la boucle ?','Come full circle?')}`;
   titleEl.classList.add('is-rare');
   document.getElementById('season-event-context').style.display = 'none';
-  document.getElementById('season-event-text').textContent =
-    `${originalClub.name}, le club où tout a commencé, vous propose de revenir terminer votre carrière chez eux. Boucler la boucle ?`;
+  document.getElementById('season-event-text').textContent = tt(
+    `${originalClub.name}, le club où tout a commencé, vous propose de revenir terminer votre carrière chez eux. Boucler la boucle ?`,
+    `${originalClub.name}, the club where it all began, is offering you the chance to return and finish your career there. Come full circle?`
+  );
   const optsEl = document.getElementById('season-event-options');
   optsEl.innerHTML = `
-    <button class="live-decision-option" data-key="accept">Revenir à ${originalClub.name}</button>
-    <button class="live-decision-option" data-key="refuse">Rester à ${state.club.name}</button>
+    <button class="live-decision-option" data-key="accept">${tt('Revenir à','Return to')} ${originalClub.name}</button>
+    <button class="live-decision-option" data-key="refuse">${tt('Rester à','Stay at')} ${state.club.name}</button>
   `;
   optsEl.querySelector('[data-key="accept"]').addEventListener('click', ()=>{
     document.getElementById('season-event-overlay').style.display = 'none';
@@ -8307,19 +8465,21 @@ function proceedToRegularMercatoFlow(){
 function confirmEndCareer(){
   if(!state.club) return;
   const titleEl = document.getElementById('season-event-title');
-  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>Mettre un terme à la carrière ?`;
+  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>${t('season.end-career')}`;
   titleEl.classList.add('is-rare');
   document.getElementById('season-event-context').style.display = 'none';
   // state.career peut encore être vide (toute première saison, jamais
   // encore terminée) - le bouton doit fonctionner dès la saison 1, pas
   // seulement une fois le système de carrière initialisé.
   const years = state.career ? (state.career.yearsInCareer || 0) : 0;
-  document.getElementById('season-event-text').textContent =
-    `Cette action est définitive : votre carrière actuelle (${years} saison${years>1?'s':''} enregistrée${years>1?'s':''}, dernier club ${state.club.name}) restera dans votre Palmarès, et vous repartirez de zéro avec un nouveau coach.`;
+  document.getElementById('season-event-text').textContent = tt(
+    `Cette action est définitive : votre carrière actuelle (${years} saison${years>1?'s':''} enregistrée${years>1?'s':''}, dernier club ${state.club.name}) restera dans votre Palmarès, et vous repartirez de zéro avec un nouveau coach.`,
+    `This action is permanent: your current career (${years} season${years>1?'s':''} recorded, last club ${state.club.name}) will remain in your trophy cabinet, and you'll start over with a new coach.`
+  );
   const optsEl = document.getElementById('season-event-options');
   optsEl.innerHTML = `
-    <button class="live-decision-option" data-key="confirm">Mettre un terme à la carrière</button>
-    <button class="live-decision-option" data-key="cancel">Annuler</button>
+    <button class="live-decision-option" data-key="confirm">${t('season.end-career')}</button>
+    <button class="live-decision-option" data-key="cancel">${tt('Annuler','Cancel')}</button>
   `;
   optsEl.querySelector('[data-key="confirm"]').addEventListener('click', ()=>{
     document.getElementById('season-event-overlay').style.display = 'none';
@@ -8418,7 +8578,7 @@ function endCurrentCareer(){
   resetToFreshCareer();
   showScreen('landing');
   renderLanding();
-  toast('Votre carrière a été archivée - à vous de commencer une nouvelle histoire !');
+  toast(tt('Votre carrière a été archivée - à vous de commencer une nouvelle histoire !','Your career has been archived - time to start a new story!'));
 }
 
 // ---------------------------- MERCATOS SPÉCIAUX ----------------------------
@@ -8458,13 +8618,15 @@ function checkWinterMercatoTrigger(roundIdx){
 
 function showWinterMercatoPopup(myRank){
   const titleEl = document.getElementById('season-event-title');
-  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>Le conseil d'administration s'inquiète`;
+  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>${tt("Le conseil d'administration s'inquiète","The board is getting worried")}`;
   titleEl.classList.add('is-rare');
   document.getElementById('season-event-context').style.display = 'none';
-  document.getElementById('season-event-text').textContent =
-    `Votre ${myRank}e place ne correspond pas aux attentes du club à ce stade de la saison. Le conseil d'administration vous accorde un renfort exceptionnel pour le mercato d'hiver - un seul joueur, pour ne pas déséquilibrer l'effectif.`;
+  document.getElementById('season-event-text').textContent = tt(
+    `Votre ${myRank}e place ne correspond pas aux attentes du club à ce stade de la saison. Le conseil d'administration vous accorde un renfort exceptionnel pour le mercato d'hiver - un seul joueur, pour ne pas déséquilibrer l'effectif.`,
+    `Your ${myRank}${myRank===1?'st':myRank===2?'nd':myRank===3?'rd':'th'} place doesn't match the club's expectations at this stage of the season. The board is granting you an exceptional reinforcement for the winter transfer window - a single player, to avoid unbalancing the squad.`
+  );
   const optsEl = document.getElementById('season-event-options');
-  optsEl.innerHTML = `<button class="live-decision-option" data-key="ok">Recruter un renfort</button>`;
+  optsEl.innerHTML = `<button class="live-decision-option" data-key="ok">${tt('Recruter un renfort','Sign a reinforcement')}</button>`;
   optsEl.querySelector('.live-decision-option').addEventListener('click', ()=>{
     document.getElementById('season-event-overlay').style.display = 'none';
     startTransferWindow(1, true);
@@ -8490,13 +8652,15 @@ function checkBonusMercatoEligible(){
 
 function showBonusMercatoPopup(){
   const titleEl = document.getElementById('season-event-title');
-  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>Le conseil d'administration est ravi`;
+  titleEl.innerHTML = `<span class="rare-star">&#9733;</span>${tt("Le conseil d'administration est ravi","The board is delighted")}`;
   titleEl.classList.add('is-rare');
   document.getElementById('season-event-context').style.display = 'none';
-  document.getElementById('season-event-text').textContent =
-    "Au vu de vos excellents résultats cette saison, le conseil d'administration vous accorde un renfort supplémentaire pour le mercato à venir.";
+  document.getElementById('season-event-text').textContent = tt(
+    "Au vu de vos excellents résultats cette saison, le conseil d'administration vous accorde un renfort supplémentaire pour le mercato à venir.",
+    "Given your excellent results this season, the board is granting you an extra reinforcement for the upcoming transfer window."
+  );
   const optsEl = document.getElementById('season-event-options');
-  optsEl.innerHTML = `<button class="live-decision-option" data-key="ok">Très bien !</button>`;
+  optsEl.innerHTML = `<button class="live-decision-option" data-key="ok">${tt('Très bien !','Great!')}</button>`;
   optsEl.querySelector('.live-decision-option').addEventListener('click', ()=>{
     document.getElementById('season-event-overlay').style.display = 'none';
     startTransferWindow(4, false);
@@ -8647,7 +8811,7 @@ function euroEntriesForLeague(leagueName){
     euro.resultsByRound.forEach(er=>{
       const matches = er.matches.filter(m => clubIds.has(m.home) || clubIds.has(m.away));
       if(matches.length){
-        entries.push({ type:`euro-${euro.tier}`, roundIdx:er.roundIdx, label:`${EURO_LABELS[euro.tier]} - ${er.label}`, matches });
+        entries.push({ type:`euro-${euro.tier}`, roundIdx:er.roundIdx, label:`${euroCupLabel(EURO_LABELS[euro.tier])} - ${er.label}`, matches });
       }
     });
   }
@@ -11184,7 +11348,7 @@ function showInjuryAlert(ev, fx, roundIdx){
   if(fx && fx.hg !== undefined && fx.hg !== null){
     const homeName = clubNameById(fx.home);
     const awayName = clubNameById(fx.away);
-    ctxEl.innerHTML = `<span class="l">Journée ${roundIdx+1}</span><span class="score">${homeName} ${fx.hg} - ${fx.ag} ${awayName}</span>`;
+    ctxEl.innerHTML = `<span class="l">${matchday(roundIdx+1)}</span><span class="score">${homeName} ${fx.hg} - ${fx.ag} ${awayName}</span>`;
     ctxEl.style.display = 'flex';
   } else {
     ctxEl.style.display = 'none';
@@ -11250,7 +11414,7 @@ function renderSeasonEventModal(){
   if(myFx){
     const homeName = clubNameById(myFx.home);
     const awayName = clubNameById(myFx.away);
-    ctxEl.innerHTML = `<span class="l">Journée ${ctxRoundIdx+1}</span><span class="score">${homeName} - ${awayName}</span>`;
+    ctxEl.innerHTML = `<span class="l">${matchday(ctxRoundIdx+1)}</span><span class="score">${homeName} - ${awayName}</span>`;
     ctxEl.style.display = 'flex';
   } else {
     ctxEl.style.display = 'none';
@@ -11293,7 +11457,7 @@ function resolveSeasonEvent(optionKey){
     if(myFx && myFx.hg !== undefined && myFx.hg !== null){
       const homeName = clubNameById(myFx.home);
       const awayName = clubNameById(myFx.away);
-      resumeCtxEl.innerHTML = `<span class="l">Journée ${pending.roundIdx+1}</span><span class="score">${homeName} ${myFx.hg} - ${myFx.ag} ${awayName}</span>`;
+      resumeCtxEl.innerHTML = `<span class="l">${matchday(pending.roundIdx+1)}</span><span class="score">${homeName} ${myFx.hg} - ${myFx.ag} ${awayName}</span>`;
       resumeCtxEl.style.display = 'flex';
     } else {
       resumeCtxEl.style.display = 'none';
@@ -11928,11 +12092,11 @@ function renderLiveSubsPanel(){
 
   if(!state.liveSubsOutSlotId){
     subtitleEl.textContent = remaining > 0
-      ? `Choisissez le joueur à sortir (${remaining} changement${remaining>1?'s':''} restant${remaining>1?'s':''}).`
-      : `Vous avez utilisé vos 5 changements pour ce match.`;
+      ? tt(`Choisissez le joueur à sortir (${remaining} changement${remaining>1?'s':''} restant${remaining>1?'s':''}).`, `Choose the player to substitute (${remaining} substitution${remaining>1?'s':''} left).`)
+      : tt(`Vous avez utilisé vos 5 changements pour ce match.`, `You've used all 5 substitutions for this match.`);
     listEl.innerHTML = state.slots.filter(s=>s.player && !lm.sentOffPlayers.includes(s.player)).map(s=>{
       const hurt = lm.injuredPlayers.includes(s.player);
-      return `<div class="live-subs-row ${remaining<=0?'is-disabled':''}" data-slot="${s.id}"><span><span class="pos">${s.label}</span>${s.player.nom}${hurt ? ' <span class="live-subs-flag" title="Joue avec une gêne physique">🩹</span>' : ''}</span><span>&#8594;</span></div>`;
+      return `<div class="live-subs-row ${remaining<=0?'is-disabled':''}" data-slot="${s.id}"><span><span class="pos">${s.label}</span>${s.player.nom}${hurt ? ` <span class="live-subs-flag" title="${tt('Joue avec une gêne physique','Playing carrying a knock')}">🩹</span>` : ''}</span><span>&#8594;</span></div>`;
     }).join('');
     listEl.querySelectorAll('.live-subs-row[data-slot]').forEach(row=>{
       row.addEventListener('click', ()=>{
@@ -11943,11 +12107,11 @@ function renderLiveSubsPanel(){
   } else {
     const outSlot = findSlot(state.liveSubsOutSlotId);
     const benchSlots = state.subs.filter(s=>s.player && !(lm.substitutedOffPlayers||[]).includes(s.player));
-    subtitleEl.textContent = outSlot && outSlot.player ? `${outSlot.player.nom} sort. Choisissez son remplaçant.` : 'Choisissez son remplaçant.';
-    const backRow = `<div class="live-subs-row" id="live-subs-back"><span>&#8592; Retour</span></div>`;
+    subtitleEl.textContent = outSlot && outSlot.player ? tt(`${outSlot.player.nom} sort. Choisissez son remplaçant.`, `${outSlot.player.nom} is coming off. Choose their replacement.`) : t('live.subs-subtitle');
+    const backRow = `<div class="live-subs-row" id="live-subs-back"><span>&#8592; ${tt('Retour','Back')}</span></div>`;
     listEl.innerHTML = (benchSlots.length
       ? benchSlots.map(s=>`<div class="live-subs-row" data-slot="${s.id}"><span><span class="pos">${s.player.poste||''}</span>${s.player.nom}</span><span>&#8594;</span></div>`).join('')
-      : `<div class="hand-empty">Aucun remplaçant disponible sur le banc.</div>`
+      : `<div class="hand-empty">${tt('Aucun remplaçant disponible sur le banc.','No substitute available on the bench.')}</div>`
     ) + backRow;
     listEl.querySelectorAll('.live-subs-row[data-slot]').forEach(row=>{
       row.addEventListener('click', ()=>{
@@ -11983,21 +12147,21 @@ function renderLiveMatch(){
     : lm.penaltyShootout
       ? 'Tirs au but'
       : lm.inExtraTime
-        ? `${lm.minute}' (prolongation)`
+        ? `${lm.minute}' (${tt('prolongation','extra time')})`
         : formatLiveMatchMinute(lm);
   document.getElementById('live-competition-label').textContent = lm.isQualifying
-    ? `${lm.euroTier==='cl' ? `Coupe des Champions - ${EURO_ENTRY_ROUND_LABEL[lm.qualifyingTie.stage]}` : 'Barrage Coupe Conférence'} - ${lm.qualifyingLeg === 'leg1' ? 'Aller' : 'Retour'}`
+    ? `${lm.euroTier==='cl' ? `${euroCupLabel('Coupe des Champions')} - ${stageLabel(EURO_ENTRY_ROUND_LABEL[lm.qualifyingTie.stage])}` : tt('Barrage Coupe Conférence','Conference Cup play-off')} - ${lm.qualifyingLeg === 'leg1' ? stageLabel('Aller') : stageLabel('Retour')}`
     : lm.isDomesticSuperCup
-      ? `${state.domesticSuperCup.name}${lm.domesticSuperCupStage === 'semis' ? ' - Demi-finales' : ' - Finale'}`
+      ? `${state.domesticSuperCup.name}${lm.domesticSuperCupStage === 'semis' ? ' - ' + stageLabel('Demi-finales') : ' - ' + stageLabel('Finale')}`
       : lm.isUefaSuperCup
-        ? "Supercoupe Continentale"
+        ? tt("Supercoupe Continentale","Continental Super Cup")
         : lm.isCup
-          ? CUP_STAGE_LABEL[lm.cupStage] || lm.cupStage
+          ? stageLabel(CUP_STAGE_LABEL[lm.cupStage] || lm.cupStage)
           : lm.isEuroKnockout
-            ? `${EURO_LABELS[lm.euroTier]} - ${EURO_KNOCKOUT_STAGE_LABEL[lm.euroKnockoutStage] || (lm.euroKnockoutStage==='final'?'Finale':lm.euroKnockoutStage)}${lm.euroKnockoutLeg ? (lm.euroKnockoutLeg==='leg1' ? ' - Aller' : ' - Retour') : ''}`
+            ? `${euroCupLabel(EURO_LABELS[lm.euroTier])} - ${stageLabel(EURO_KNOCKOUT_STAGE_LABEL[lm.euroKnockoutStage] || (lm.euroKnockoutStage==='final'?'Finale':lm.euroKnockoutStage))}${lm.euroKnockoutLeg ? (lm.euroKnockoutLeg==='leg1' ? ' - ' + stageLabel('Aller') : ' - ' + stageLabel('Retour')) : ''}`
             : lm.isEuro
-              ? `${EURO_LABELS[lm.euroTier]} - Phase de ligue`
-              : `${state.league} - Journée ${lm.roundIdx+1}`;
+              ? `${euroCupLabel(EURO_LABELS[lm.euroTier])} - ${stageLabel('Phase de ligue')}`
+              : `${leagueLabel(state.league)} - ${matchday(lm.roundIdx+1)}`;
 
   const subsBtn = document.getElementById('btn-live-subs');
   const remaining = 5 - (lm.subsUsed || 0);
@@ -12685,16 +12849,16 @@ function finalizeEuroQualifyingAndEnterEuro(){
 
   if(state.myClQualifyingResult){
     const q = state.myClQualifyingResult;
-    const roundLabel = EURO_ENTRY_ROUND_LABEL[q.stage];
-    const aggTxt = `${q.aggClub}-${q.aggOpp}${q.wentToPenalties ? ` (tab ${q.penaltyScore})` : ''}`;
-    if(q.won) toast(`Qualification LDC (${roundLabel}) : victoire ${aggTxt} sur l'ensemble des 2 manches contre ${q.opponentName} - vous rejoignez la phase de ligue !`);
-    else toast(`Qualification LDC (${roundLabel}) : défaite ${aggTxt} sur l'ensemble des 2 manches contre ${q.opponentName} - vous êtes reversé en Coupe d'Europe.`);
+    const roundLabel = stageLabel(EURO_ENTRY_ROUND_LABEL[q.stage]);
+    const aggTxt = `${q.aggClub}-${q.aggOpp}${q.wentToPenalties ? ` (${tt('tab','pens')} ${q.penaltyScore})` : ''}`;
+    if(q.won) toast(tt(`Qualification LDC (${roundLabel}) : victoire ${aggTxt} sur l'ensemble des 2 manches contre ${q.opponentName} - vous rejoignez la phase de ligue !`, `Champions Cup qualifying (${roundLabel}): won ${aggTxt} on aggregate against ${q.opponentName} - you join the league phase!`));
+    else toast(tt(`Qualification LDC (${roundLabel}) : défaite ${aggTxt} sur l'ensemble des 2 manches contre ${q.opponentName} - vous êtes reversé en Coupe d'Europe.`, `Champions Cup qualifying (${roundLabel}): lost ${aggTxt} on aggregate against ${q.opponentName} - you drop down to the Europe Cup.`));
   }
   if(state.myEclQualifyingResult){
     const q = state.myEclQualifyingResult;
-    const aggTxt = `${q.aggClub}-${q.aggOpp}${q.wentToPenalties ? ` (tab ${q.penaltyScore})` : ''}`;
-    if(q.won) toast(`Barrage Coupe Conférence : victoire ${aggTxt} sur l'ensemble des 2 manches contre ${q.opponentName} - vous rejoignez la phase de championnat !`);
-    else toast(`Barrage Coupe Conférence : défaite ${aggTxt} sur l'ensemble des 2 manches contre ${q.opponentName} - vous ne disputerez aucune coupe d'Europe cette saison.`);
+    const aggTxt = `${q.aggClub}-${q.aggOpp}${q.wentToPenalties ? ` (${tt('tab','pens')} ${q.penaltyScore})` : ''}`;
+    if(q.won) toast(tt(`Barrage Coupe Conférence : victoire ${aggTxt} sur l'ensemble des 2 manches contre ${q.opponentName} - vous rejoignez la phase de championnat !`, `Conference Cup play-off: won ${aggTxt} on aggregate against ${q.opponentName} - you join the league phase!`));
+    else toast(tt(`Barrage Coupe Conférence : défaite ${aggTxt} sur l'ensemble des 2 manches contre ${q.opponentName} - vous ne disputerez aucune coupe d'Europe cette saison.`, `Conference Cup play-off: lost ${aggTxt} on aggregate against ${q.opponentName} - you won't play any European cup this season.`));
   }
 }
 
@@ -12708,13 +12872,13 @@ function qualifyingTimelineEntriesForClub(clubId){
   const clubTies = state.euroQualifying.ties.filter(t=>t.clubId===clubId);
   clubTies.forEach((tie, stageIdx)=>{
     const label = tie.competition === 'cl'
-      ? `Coupe des Champions - ${EURO_ENTRY_ROUND_LABEL[tie.stage]}`
-      : 'Barrage Coupe Conférence';
+      ? `${euroCupLabel('Coupe des Champions')} - ${stageLabel(EURO_ENTRY_ROUND_LABEL[tie.stage])}`
+      : tt('Barrage Coupe Conférence','Conference Cup play-off');
     const baseIdx = -10 + stageIdx*2; // 2 crans par tour (aller/retour), toujours avant le reste du fil
     if(tie.leg1){
-      entries.push({ type:'euro-quali', roundIdx:baseIdx, label:`${label} - Aller`, matches:[tie.leg1] });
+      entries.push({ type:'euro-quali', roundIdx:baseIdx, label:`${label} - ${stageLabel('Aller')}`, matches:[tie.leg1] });
     } else {
-      entries.push({ type:'euro-quali', roundIdx:baseIdx, label:`${label} - Aller`, matches:[{ home:tie.clubId, away:tie.opponentId }], upcoming:true });
+      entries.push({ type:'euro-quali', roundIdx:baseIdx, label:`${label} - ${stageLabel('Aller')}`, matches:[{ home:tie.clubId, away:tie.opponentId }], upcoming:true });
     }
     if(tie.leg2){
       const leg2Display = {
@@ -12724,9 +12888,9 @@ function qualifyingTimelineEntriesForClub(clubId){
         penaltyScore: flipScorePair(tie.penaltyScore),
         extraTimeScore: flipScorePair(tie.extraTimeScore)
       };
-      entries.push({ type:'euro-quali', roundIdx:baseIdx+1, label:`${label} - Retour`, matches:[leg2Display] });
+      entries.push({ type:'euro-quali', roundIdx:baseIdx+1, label:`${label} - ${stageLabel('Retour')}`, matches:[leg2Display] });
     } else if(tie.leg1){
-      entries.push({ type:'euro-quali', roundIdx:baseIdx+1, label:`${label} - Retour`, matches:[{ home:tie.opponentId, away:tie.clubId }], upcoming:true });
+      entries.push({ type:'euro-quali', roundIdx:baseIdx+1, label:`${label} - ${stageLabel('Retour')}`, matches:[{ home:tie.opponentId, away:tie.clubId }], upcoming:true });
     }
   });
   return entries;
@@ -13219,7 +13383,7 @@ function resolveSuperCupFixturesInstantly(sc){
 function computeDomesticSuperCup(leagueName, standing, cupWinner, cupFinalist){
   if(!standing || !standing.length) return null;
   const format = DOMESTIC_SUPER_CUP_FORMAT[leagueName] || 'duel';
-  const name = DOMESTIC_SUPER_CUP_NAME[leagueName] || 'Supercoupe de France';
+  const name = superCupName(leagueName) || DOMESTIC_SUPER_CUP_NAME[leagueName] || 'Supercoupe de France';
   const badge = DOMESTIC_SUPER_CUP_BADGE[leagueName] || 'TC';
   const champion = standing[0].id;
   const runnerUp = standing[1] ? standing[1].id : null;
@@ -13748,11 +13912,11 @@ function simulateEuroKnockoutLeg(euro, stage, nextStage, label){
   const ties = euro[key];
   if(euro.legPending === 'leg1'){
     playKnockoutLeg1(euro, ties);
-    euro.resultsByRound.push({ label:`${label} - Aller`, matches: ties.map(t=>({...t.leg1})), roundIdx: state.season ? state.season.currentRound-1 : Infinity });
+    euro.resultsByRound.push({ label:`${label} - ${stageLabel('Aller')}`, matches: ties.map(t=>({...t.leg1})), roundIdx: state.season ? state.season.currentRound-1 : Infinity });
     euro.legPending = 'leg2';
   } else {
     playKnockoutLeg2(euro, ties);
-    euro.resultsByRound.push({ label:`${label} - Retour`, matches: ties.map(t=>({...t.leg2, aggHome:t.aggB, aggAway:t.aggA, wentToPenalties:t.wentToPenalties, penaltyScore:flipScorePair(t.penaltyScore), extraTimeScore:flipScorePair(t.extraTimeScore)})), roundIdx: state.season ? state.season.currentRound-1 : Infinity });
+    euro.resultsByRound.push({ label:`${label} - ${stageLabel('Retour')}`, matches: ties.map(t=>({...t.leg2, aggHome:t.aggB, aggAway:t.aggA, wentToPenalties:t.wentToPenalties, penaltyScore:flipScorePair(t.penaltyScore), extraTimeScore:flipScorePair(t.extraTimeScore)})), roundIdx: state.season ? state.season.currentRound-1 : Infinity });
     let winners = ties.map(t=>t.winner);
     if(stage === 'playoff') winners = [...euro.directQualifiers, ...winners];
     // Idem qu'en sortie de phase de ligue : marquer explicitement
@@ -13981,7 +14145,7 @@ function resolveDueEuroKnockoutStep(){
   if(euro.stage === 'final'){
     simulateEuroFinalMatch(euro);
   } else {
-    simulateEuroKnockoutLeg(euro, euro.stage, EURO_KNOCKOUT_NEXT_STAGE[euro.stage], EURO_KNOCKOUT_STAGE_LABEL[euro.stage]);
+    simulateEuroKnockoutLeg(euro, euro.stage, EURO_KNOCKOUT_NEXT_STAGE[euro.stage], stageLabel(EURO_KNOCKOUT_STAGE_LABEL[euro.stage]));
   }
   renderSeason();
 }
@@ -14080,7 +14244,7 @@ function commitLiveEuroKnockoutLegResult(){
       // Les autres confrontations du même tour jouent aussi leur aller,
       // instantanément.
       ties.forEach(t=>{ if(t !== tie && !t.leg1) playKnockoutLeg1(euro, [t]); });
-      euro.resultsByRound.push({ label:`${EURO_KNOCKOUT_STAGE_LABEL[stage]} - Aller`, matches: ties.map(t=>({...t.leg1})), roundIdx: state.season.currentRound-1 });
+      euro.resultsByRound.push({ label:`${stageLabel(EURO_KNOCKOUT_STAGE_LABEL[stage])} - Aller`, matches: ties.map(t=>({...t.leg1})), roundIdx: state.season.currentRound-1 });
       euro.legPending = 'leg2';
     } else {
       // Cumul + départage pour VOTRE confrontation - reprend le résultat
@@ -14119,7 +14283,7 @@ function commitLiveEuroKnockoutLegResult(){
       // instantanément (cumul/prolongation/tirs au but compris pour elles).
       ties.forEach(t=>{ if(t !== tie && !t.leg2) playKnockoutLeg2(euro, [t]); });
       euro.resultsByRound.push({
-        label:`${EURO_KNOCKOUT_STAGE_LABEL[stage]} - Retour`,
+        label:`${stageLabel(EURO_KNOCKOUT_STAGE_LABEL[stage])} - Retour`,
         matches: ties.map(t=>({ ...t.leg2, aggHome:t.aggB, aggAway:t.aggA, wentToPenalties:t.wentToPenalties, penaltyScore:flipScorePair(t.penaltyScore), extraTimeScore:flipScorePair(t.extraTimeScore) })),
         roundIdx: state.season.currentRound-1
       });
@@ -14192,7 +14356,7 @@ function renderLeagueSwitchRow(){
   const switchEl = document.getElementById('league-switch');
   const viewLeague = state.standingsLeagueView || state.league;
   switchEl.innerHTML = Object.keys(LEAGUES).map(lg => `
-    <button class="league-switch-btn ${(state.seasonView!=='euro' && lg===viewLeague)?'active':''}" data-league="${lg}">${lg}${lg===state.league?' ★':''}</button>
+    <button class="league-switch-btn ${(state.seasonView!=='euro' && lg===viewLeague)?'active':''}" data-league="${lg}">${leagueLabel(lg)}${lg===state.league?' ★':''}</button>
   `).join('');
   switchEl.querySelectorAll('.league-switch-btn[data-league]').forEach(btn=>{
     btn.addEventListener('click', ()=>{
@@ -14312,16 +14476,16 @@ function renderLeaguePanels(){
     }
     const timeline = [];
     lg.resultsByRound.forEach((round, ri)=>{
-      timeline.push({ type:'league', roundIdx:ri, label:`Journée ${ri+1}`, matches:round });
+      timeline.push({ type:'league', roundIdx:ri, label:`${matchday(ri+1)}`, matches:round });
     });
     // Journées pas encore jouées : le calendrier complet est déjà connu
     // (aller-retour), donc affichable dès le début, comme pour votre ligue.
     for(let ri=lg.currentRound; ri<lg.calendar.length; ri++){
-      timeline.push({ type:'league', roundIdx:ri, label:`Journée ${ri+1}`, matches:lg.calendar[ri], upcoming:true });
+      timeline.push({ type:'league', roundIdx:ri, label:`${matchday(ri+1)}`, matches:lg.calendar[ri], upcoming:true });
     }
     if(lg.cup){
       lg.cup.results.forEach(cr=>{
-        timeline.push({ type:'cup', roundIdx:cr.roundIdx, label:CUP_STAGE_LABEL[cr.stage], matches:cr.fixtures });
+        timeline.push({ type:'cup', roundIdx:cr.roundIdx, label:stageLabel(CUP_STAGE_LABEL[cr.stage]), matches:cr.fixtures });
       });
       const r16Played = lg.cup.results.some(cr=>cr.stage==='r16');
       if(!r16Played){
@@ -14374,19 +14538,19 @@ function renderLeaguePanels(){
       // Une décision est en attente à propos de cette journée - on ne
       // révèle son résultat qu'une fois le choix fait, pas avant.
       const hiddenRound = round.map(fx => ({ ...fx, hg:undefined, ag:undefined }));
-      timeline.push({ type:'league', roundIdx:ri, label:`Journée ${ri+1}`, matches:hiddenRound, upcoming:true });
+      timeline.push({ type:'league', roundIdx:ri, label:`${matchday(ri+1)}`, matches:hiddenRound, upcoming:true });
     } else {
-      timeline.push({ type:'league', roundIdx:ri, label:`Journée ${ri+1}`, matches:round });
+      timeline.push({ type:'league', roundIdx:ri, label:`${matchday(ri+1)}`, matches:round });
     }
   });
   // Journées de championnat pas encore jouées : le calendrier complet est
   // déjà connu (aller-retour), donc on peut l'afficher dès le début.
   for(let ri=season.currentRound; ri<season.calendar.length; ri++){
-    timeline.push({ type:'league', roundIdx:ri, label:`Journée ${ri+1}`, matches:season.calendar[ri], upcoming:true });
+    timeline.push({ type:'league', roundIdx:ri, label:`${matchday(ri+1)}`, matches:season.calendar[ri], upcoming:true });
   }
   if(season.cup){
     season.cup.results.forEach(cr=>{
-      timeline.push({ type:'cup', roundIdx:cr.roundIdx, label:CUP_STAGE_LABEL[cr.stage], matches:cr.fixtures });
+      timeline.push({ type:'cup', roundIdx:cr.roundIdx, label:stageLabel(CUP_STAGE_LABEL[cr.stage]), matches:cr.fixtures });
     });
     // Seul le premier tour (32e/16e) est tiré au sort dès le début de
     // saison - les tours suivants dépendent des vainqueurs. MAIS dès qu'un
@@ -14398,7 +14562,7 @@ function renderLeaguePanels(){
     const pendingCupFixtures = pendingCupStage ? season.cup.bracket[pendingCupStage] : null;
     const pendingCupPlayed = pendingCupStage && season.cup.results.some(cr=>cr.stage===pendingCupStage);
     if(pendingCupFixtures && pendingCupFixtures.length && !pendingCupPlayed){
-      timeline.push({ type:'cup', roundIdx:season.cup.matchdayFor[pendingCupStage], label:CUP_STAGE_LABEL[pendingCupStage], matches:pendingCupFixtures, upcoming:true });
+      timeline.push({ type:'cup', roundIdx:season.cup.matchdayFor[pendingCupStage], label:stageLabel(CUP_STAGE_LABEL[pendingCupStage]), matches:pendingCupFixtures, upcoming:true });
     }
   }
   // Confrontations de qualification européenne (Tour LDC / Barrage
@@ -14412,14 +14576,14 @@ function renderLeaguePanels(){
   }
   if(state.euro){
     state.euro.resultsByRound.forEach(er=>{
-      timeline.push({ type:`euro-${state.euro.tier}`, roundIdx:er.roundIdx, label:`${EURO_LABELS[state.euro.tier]} - ${er.label}`, matches:er.matches });
+      timeline.push({ type:`euro-${state.euro.tier}`, roundIdx:er.roundIdx, label:`${euroCupLabel(EURO_LABELS[state.euro.tier])} - ${er.label}`, matches:er.matches });
     });
     // Seule la phase de ligue a un calendrier connu à l'avance - les
     // barrages et la suite dépendent du classement final de cette phase.
     if(state.euro.stage === 'league'){
       for(let ei=state.euro.currentRound; ei<state.euro.calendar.length; ei++){
         const domesticRoundIdx = state.euro.schedule.leaguePhase[ei];
-        timeline.push({ type:`euro-${state.euro.tier}`, roundIdx:domesticRoundIdx, label:`${EURO_LABELS[state.euro.tier]} - Phase de ligue - J${ei+1}`, matches:state.euro.calendar[ei], upcoming:true });
+        timeline.push({ type:`euro-${state.euro.tier}`, roundIdx:domesticRoundIdx, label:`${euroCupLabel(EURO_LABELS[state.euro.tier])} - Phase de ligue - J${ei+1}`, matches:state.euro.calendar[ei], upcoming:true });
       }
     } else {
       // Une fois en tours à élimination, l'affiche du tour en cours est
@@ -14434,10 +14598,10 @@ function renderLeaguePanels(){
         const isLeg1 = euro.legPending === 'leg1';
         // Le retour se joue chez l'équipe B : on inverse domicile/extérieur.
         const matches = ties.map(t => isLeg1 ? { home:t.teamA, away:t.teamB } : { home:t.teamB, away:t.teamA });
-        timeline.push({ type:`euro-${euro.tier}`, roundIdx:anchors[isLeg1?0:1], label:`${EURO_LABELS[euro.tier]} - ${EURO_STAGE_LABEL[euro.stage]} - ${isLeg1?'Aller':'Retour'}`, matches, upcoming:true });
+        timeline.push({ type:`euro-${euro.tier}`, roundIdx:anchors[isLeg1?0:1], label:`${euroCupLabel(EURO_LABELS[euro.tier])} - ${stageLabel(EURO_STAGE_LABEL[euro.stage])} - ${isLeg1?'Aller':'Retour'}`, matches, upcoming:true });
       }
       if(euro.stage === 'final' && euro.finalFixture && euro.finalFixture.home && euro.finalFixture.away && !euro.finalFixture.played){
-        timeline.push({ type:`euro-${euro.tier}`, roundIdx:(euro.tier==='el' ? sch.elFinal : Number.MAX_SAFE_INTEGER), label:`${EURO_LABELS[euro.tier]} - Finale`, matches:[euro.finalFixture], upcoming:true });
+        timeline.push({ type:`euro-${euro.tier}`, roundIdx:(euro.tier==='el' ? sch.elFinal : Number.MAX_SAFE_INTEGER), label:`${euroCupLabel(EURO_LABELS[euro.tier])} - Finale`, matches:[euro.finalFixture], upcoming:true });
       }
     }
   }
@@ -14533,7 +14697,7 @@ function renderEuroCompetitionBlock(euro, tierClass, isPlayed){
     </div>
   ` + rows + `
     <div class="st-legend">
-      <span class="st-legend-item"><i class="st-dot ${tierClass}"></i>${EURO_LABELS[euro.tier]} - ${EURO_STAGE_LABEL[euro.stage]}${euro.calendar.length ? ` (${Math.min(euro.currentRound, euro.calendar.length)}/${euro.calendar.length} journées de ligue jouées)` : ''}${isPlayed ? '' : ' - simulée en parallèle'}</span>
+      <span class="st-legend-item"><i class="st-dot ${tierClass}"></i>${euroCupLabel(EURO_LABELS[euro.tier])} - ${stageLabel(EURO_STAGE_LABEL[euro.stage])}${euro.calendar.length ? ` (${Math.min(euro.currentRound, euro.calendar.length)}/${euro.calendar.length} ${tt('journées de ligue jouées','league phase matchdays played')})` : ''}${isPlayed ? '' : ' - ' + tt('simulée en parallèle','simulated in parallel')}</span>
     </div>
   `;
 
@@ -14607,7 +14771,7 @@ function renderEuroPanels(){
       resultsEl.innerHTML = supercupResultHTML + resultsEl.innerHTML;
       roundCount = shadow.resultsByRound.length;
     } else {
-      table.innerHTML = `<div class="hand-empty">Vous ne disputez pas la ${EURO_LABELS[viewTier]} cette saison.</div>`;
+      table.innerHTML = `<div class="hand-empty">${tt(`Vous ne disputez pas la ${euroCupLabel(EURO_LABELS[viewTier])} cette saison.`, `You're not playing in the ${euroCupLabel(EURO_LABELS[viewTier])} this season.`)}</div>`;
       resultsEl.innerHTML = supercupResultHTML || `<div class="hand-empty">Compétition non disputée par votre club cette saison.</div>`;
     }
   }
@@ -14670,7 +14834,7 @@ function renderSeason(){
 
   renderClubCrest('season-club-crest', state.club);
   document.getElementById('season-club-name').textContent = state.club.name;
-  document.getElementById('season-league-name').textContent = state.league;
+  document.getElementById('season-league-name').textContent = leagueLabel(state.league);
   renderUnavailabilityBanner();
 
   const seasonDone = season.currentRound >= season.calendar.length;
@@ -14722,37 +14886,39 @@ function renderSeason(){
   nextBtn.disabled = trulyDone;
   if(getDueDomesticSuperCupStep()){
     const sc = state.domesticSuperCup;
-    const compTxt = sc.stage === 'semis' ? `${sc.name} - Demi-finales` : `${sc.name} - Finale`;
+    const compTxt = sc.stage === 'semis' ? `${sc.name} - ${stageLabel('Demi-finales')}` : `${sc.name} - ${stageLabel('Finale')}`;
     nextBtn.textContent = compTxt;
-    liveBtn.textContent = `Jouer en direct (${compTxt})`;
+    liveBtn.textContent = `${tt('Jouer en direct','Play live')} (${compTxt})`;
   } else if(getDueUefaSuperCupStep()){
-    const compTxt = "Supercoupe Continentale";
+    const compTxt = tt("Supercoupe Continentale","Continental Super Cup");
     nextBtn.textContent = compTxt;
-    liveBtn.textContent = `Jouer en direct (${compTxt})`;
+    liveBtn.textContent = `${tt('Jouer en direct','Play live')} (${compTxt})`;
   } else if(hasPendingEuroQualifying()){
     const myTie = myPendingQualifyingTie();
-    const legTxt = myTie ? (!myTie.leg1 ? 'Aller' : 'Retour') : '';
+    const legTxt = myTie ? (!myTie.leg1 ? stageLabel('Aller') : stageLabel('Retour')) : '';
     const compTxt = myTie
-      ? (myTie.competition === 'cl' ? `${EURO_ENTRY_ROUND_LABEL[myTie.stage]} - ${legTxt}` : `Barrage Conférence - ${legTxt}`)
-      : 'Qualifs Europe';
+      ? (myTie.competition === 'cl' ? `${stageLabel(EURO_ENTRY_ROUND_LABEL[myTie.stage])} - ${legTxt}` : `${tt('Barrage Conférence','Conference play-off')} - ${legTxt}`)
+      : tt('Qualifs Europe','Europe qualifying');
     nextBtn.textContent = compTxt;
-    liveBtn.textContent = myTie ? `Jouer en direct (${compTxt})` : 'Résoudre les qualifs';
+    liveBtn.textContent = myTie ? `${tt('Jouer en direct','Play live')} (${compTxt})` : tt('Résoudre les qualifs','Resolve qualifying');
   } else if(getDueEuroKnockoutStep()){
     const stageLabelOf = { playoff:'Barrages', ro16:'8es de finale', qf:'Quarts de finale', sf:'Demi-finales', final:'Finale' };
-    const legTxt = euro.stage !== 'final' ? (euro.legPending === 'leg1' ? ' - Aller' : ' - Retour') : '';
-    const compTxt = `${EURO_LABELS[euro.tier]} - ${stageLabelOf[euro.stage] || euro.stage}${legTxt}`;
+    const stageLabelOfEn = { playoff:'Play-offs', ro16:'Round of 16', qf:'Quarter-finals', sf:'Semi-finals', final:'Final' };
+    const legTxt = euro.stage !== 'final' ? (euro.legPending === 'leg1' ? ' - ' + stageLabel('Aller') : ' - ' + stageLabel('Retour')) : '';
+    const stageTxt = state.lang === 'en' ? (stageLabelOfEn[euro.stage] || euro.stage) : (stageLabelOf[euro.stage] || euro.stage);
+    const compTxt = `${euroCupLabel(EURO_LABELS[euro.tier])} - ${stageTxt}${legTxt}`;
     nextBtn.textContent = compTxt;
     liveBtn.textContent = myEuroKnockoutTie(euro) || (euro.stage==='final' && euro.finalFixture && (euro.finalFixture.home===state.club.id || euro.finalFixture.away===state.club.id))
-      ? `Jouer en direct (${compTxt})`
+      ? `${tt('Jouer en direct','Play live')} (${compTxt})`
       : compTxt; // plus en lice à ce tour : rien à jouer, résolution instantanée
   } else if(getDueCupStep()){
-    const compTxt = CUP_STAGE_LABEL[season.cup.stage] || season.cup.stage;
+    const compTxt = stageLabel(CUP_STAGE_LABEL[season.cup.stage]) || season.cup.stage;
     nextBtn.textContent = compTxt;
-    liveBtn.textContent = `Jouer en direct (${compTxt})`;
+    liveBtn.textContent = `${tt('Jouer en direct','Play live')} (${compTxt})`;
   } else if(getDueEuroLeaguePhaseStep()){
-    const compTxt = `${EURO_LABELS[euro.tier]} - Phase de ligue - J${euro.currentRound+1}`;
+    const compTxt = `${euroCupLabel(EURO_LABELS[euro.tier])} - ${stageLabel('Phase de ligue')} - J${euro.currentRound+1}`;
     nextBtn.textContent = compTxt;
-    liveBtn.textContent = `Jouer en direct (${compTxt})`;
+    liveBtn.textContent = `${tt('Jouer en direct','Play live')} (${compTxt})`;
   } else {
     nextBtn.textContent = seasonDone ? 'Saison terminée' : `Match suivant (${season.currentRound+1}/${season.calendar.length})`;
     liveBtn.textContent = 'Jouer en direct';
@@ -14800,7 +14966,7 @@ function currentUserLabel(){
 // currentUserLabel(), ne retombe jamais sur l'email - celui-ci ne doit
 // jamais être exposé publiquement - mais sur un pseudo anonyme stable.
 function pantheonDisplayName(){
-  if(!state.session) return 'Invité';
+  if(!state.session) return tt('Invité','Guest');
   const u = state.session.user;
   const meta = u.user_metadata && (u.user_metadata.pseudo || u.user_metadata.full_name || u.user_metadata.name);
   if(meta) return meta;
@@ -14909,11 +15075,11 @@ async function saveOnboarding(){
   const pseudo = document.getElementById('onboarding-pseudo').value.trim();
   const hint = document.getElementById('onboarding-hint');
   const btn = document.getElementById('btn-onboarding-save');
-  if(!pseudo){ hint.textContent = 'Choisis un pseudo avant de continuer.'; return; }
-  if(pseudo.length > 24){ hint.textContent = 'Le pseudo doit faire 24 caractères maximum.'; return; }
+  if(!pseudo){ hint.textContent = tt('Choisis un pseudo avant de continuer.','Choose a username before continuing.'); return; }
+  if(pseudo.length > 24){ hint.textContent = tt('Le pseudo doit faire 24 caractères maximum.','Username must be 24 characters maximum.'); return; }
 
   btn.disabled = true;
-  hint.textContent = 'Enregistrement…';
+  hint.textContent = tt('Enregistrement…','Saving…');
   try {
     const { data, error } = await sbClient.auth.updateUser({ data:{
       pseudo,
@@ -14922,7 +15088,7 @@ async function saveOnboarding(){
       favorite_club: getDropdownValue('onboarding-favorite-club-toggle') || null,
       profile_completed: true
     }});
-    if(error){ hint.textContent = `Erreur : ${error.message}`; return; }
+    if(error){ hint.textContent = tt(`Erreur : ${error.message}`, `Error: ${error.message}`); return; }
     state.session.user = data.user;
     updateAccountMenuLabel();
     closeOnboardingModal();
@@ -14938,11 +15104,11 @@ async function saveProfile(){
   const btn = document.getElementById('btn-save-profile');
 
   const pseudo = pseudoInput.value.trim();
-  if(!pseudo){ hint.textContent = 'Choisis un pseudo avant d\'enregistrer.'; return; }
-  if(pseudo.length > 24){ hint.textContent = 'Le pseudo doit faire 24 caractères maximum.'; return; }
+  if(!pseudo){ hint.textContent = tt('Choisis un pseudo avant d\'enregistrer.','Choose a username before saving.'); return; }
+  if(pseudo.length > 24){ hint.textContent = tt('Le pseudo doit faire 24 caractères maximum.','Username must be 24 characters maximum.'); return; }
 
   btn.disabled = true;
-  hint.textContent = 'Enregistrement…';
+  hint.textContent = tt('Enregistrement…','Saving…');
   try {
     const { data, error: updErr } = await sbClient.auth.updateUser({ data:{
       pseudo,
@@ -14951,7 +15117,7 @@ async function saveProfile(){
       favorite_club: getDropdownValue('profile-favorite-club-toggle') || null,
       profile_completed: true
     }});
-    if(updErr){ hint.textContent = `Erreur : ${updErr.message}`; return; }
+    if(updErr){ hint.textContent = tt(`Erreur : ${updErr.message}`, `Error: ${updErr.message}`); return; }
     state.session.user = data.user;
     updateAccountMenuLabel();
     document.getElementById('account-profile-name').textContent = pantheonDisplayName();
@@ -14963,8 +15129,8 @@ async function saveProfile(){
       .update({ player_name: pseudo })
       .eq('user_id', state.session.user.id);
     hint.textContent = histErr
-      ? `Profil enregistré, mais l'historique n'a pas pu être mis à jour : ${histErr.message}`
-      : 'Profil enregistré !';
+      ? tt(`Profil enregistré, mais l'historique n'a pas pu être mis à jour : ${histErr.message}`, `Profile saved, but the history couldn't be updated: ${histErr.message}`)
+      : tt('Profil enregistré !','Profile saved!');
   } finally {
     btn.disabled = false;
   }
@@ -15044,9 +15210,9 @@ function setAuthMode(mode){
   document.getElementById('tab-signin').classList.toggle('active', mode==='signin');
   document.getElementById('tab-signup').classList.toggle('active', mode==='signup');
   document.getElementById('modal-subtitle').textContent = mode==='signin'
-    ? 'Connecte-toi pour sauvegarder ton historique de carrière.'
-    : 'Crée un compte pour sauvegarder ton historique de carrière.';
-  document.getElementById('profile-confirm').textContent = mode==='signin' ? 'Se connecter' : 'Créer le compte';
+    ? t('auth.signin-subtitle')
+    : tt('Crée un compte pour sauvegarder ton historique de carrière.','Create an account to save your career history.');
+  document.getElementById('profile-confirm').textContent = mode==='signin' ? t('auth.signin') : t('auth.signup');
 }
 
 async function submitAuthForm(){
@@ -15054,7 +15220,7 @@ async function submitAuthForm(){
   clearAuthError();
   const email = document.getElementById('profile-input').value.trim();
   const password = document.getElementById('profile-password').value;
-  if(!email || !password){ showAuthError('Adresse email et mot de passe requis.'); return; }
+  if(!email || !password){ showAuthError(tt('Adresse email et mot de passe requis.','Email address and password required.')); return; }
 
   const btn = document.getElementById('profile-confirm');
   btn.disabled = true;
@@ -15063,7 +15229,7 @@ async function submitAuthForm(){
       const { data, error } = await sbClient.auth.signUp({ email, password });
       if(error){ showAuthError(error.message); return; }
       if(!data.session){
-        showAuthError("Compte créé - vérifie ta boîte mail pour confirmer ton adresse, puis connecte-toi.");
+        showAuthError(tt("Compte créé - vérifie ta boîte mail pour confirmer ton adresse, puis connecte-toi.","Account created - check your inbox to confirm your address, then sign in."));
         return;
       }
       state.session = data.session;
@@ -15771,7 +15937,7 @@ function buildCoefficientsRecapHTML(){
           <span class="europe-recap-coeff-value">${coeffs[leagueName].toFixed(3)}</span>
           ${isEps ? '<span class="europe-recap-eps-badge">EPS</span>' : ''}
         </div>
-        ${beneficiaryName ? `<div class="europe-recap-coeff-beneficiary">Place EPS attribuée à <strong>${beneficiaryName}</strong></div>` : ''}
+        ${beneficiaryName ? `<div class="europe-recap-coeff-beneficiary">${tt('Place EPS attribuée à','Extra European place awarded to')} <strong>${beneficiaryName}</strong></div>` : ''}
       </div>
     `;
   }).join('');
@@ -15793,6 +15959,10 @@ function showEuropeRecapPopup(){
 // ============================================================
 let ACHIEVEMENT_DEFS = [];
 let ACHIEVEMENT_TIERS = ['Apprenti','Confirmé','Expert','Élite','Légendaire'];
+const ACHIEVEMENT_TIER_LABELS_EN = { 'Apprenti':'Apprentice', 'Confirmé':'Established', 'Expert':'Expert', 'Élite':'Elite', 'Légendaire':'Legendary' };
+function tierLabel(name){
+  return (typeof state !== 'undefined' && state.lang === 'en') ? (ACHIEVEMENT_TIER_LABELS_EN[name] || name) : name;
+}
 let ACHIEVEMENT_TIER_ASSETS = {};
 
 async function loadAchievementDefs(){
@@ -15847,7 +16017,7 @@ function unlockAchievement(id){
   if(prog && prog.unlocked) return;
   state.achievementProgress[id] = { unlocked:true, unlockedAt: Date.now() };
   trackEvent('achievement_unlocked', { achievement_id:id, achievement_name:def.name || id });
-  showAchievementPopup(id, 'Succès débloqué');
+  showAchievementPopup(id, tt('Succès débloqué','Achievement unlocked'));
   scheduleSaveSnapshot();
 }
 
@@ -15880,7 +16050,7 @@ function checkTieredThresholds(counterKey){
     }
     if(newTier > (prog.tier||0)){
       state.achievementProgress[def.id] = { tier:newTier, unlockedAt: Date.now() };
-      showAchievementPopup(def.id, `Palier ${ACHIEVEMENT_TIERS[newTier-1]} atteint`);
+      showAchievementPopup(def.id, tt(`Palier ${ACHIEVEMENT_TIERS[newTier-1]} atteint`, `${tierLabel(ACHIEVEMENT_TIERS[newTier-1])} tier reached`));
       scheduleSaveSnapshot();
       checkCoachTotalAndSpecialOne();
     }
@@ -15889,7 +16059,7 @@ function checkTieredThresholds(counterKey){
 
 function achievementTierLabel(id){
   const prog = state.achievementProgress[id];
-  return prog && prog.tier ? ACHIEVEMENT_TIERS[prog.tier-1] : null;
+  return prog && prog.tier ? tierLabel(ACHIEVEMENT_TIERS[prog.tier-1]) : null;
 }
 function isAchievementMaxed(def){
   if(def.kind === 'tiered'){
@@ -15998,10 +16168,10 @@ function renderAchievementsGrid(){
     document.getElementById('achv-count').textContent = '…';
     document.getElementById('achv-total').textContent = '…';
     if(achievementDefsLoading){
-      grid.innerHTML = `<div class="hand-empty">Chargement des succès…</div>`;
+      grid.innerHTML = `<div class="hand-empty">${tt('Chargement des succès…','Loading achievements…')}</div>`;
     } else {
       grid.innerHTML = `<div class="achv-load-error">
-        ⚠️ Impossible de charger la liste des succès (achievements.json)${achievementLoadError ? ' — ' + achievementLoadError : ''}.<br>
+        ⚠️ ${tt('Impossible de charger la liste des succès (achievements.json)','Could not load the achievements list (achievements.json)')}${achievementLoadError ? ' — ' + achievementLoadError : ''}.<br>
         Vérifiez que <code>achievements.json</code> et le dossier <code>assets/tiers/</code> sont bien déposés au même endroit qu'<code>index.html</code>.
       </div>`;
     }
@@ -16043,7 +16213,7 @@ function renderAchievementCardHTML(def){
   if(def.kind === 'tiered'){
     const tier = prog.tier || 0;
     const started = tier > 0;
-    const tierName = started ? ACHIEVEMENT_TIERS[tier-1] : null;
+    const tierName = started ? tierLabel(ACHIEVEMENT_TIERS[tier-1]) : null;
     const bgUrl = started ? ACHIEVEMENT_TIER_ASSETS[tierName] : null;
     const nextThreshold = def.thresholds[tier] !== undefined ? def.thresholds[tier] : null;
     const value = state.careerStats[def.counter] || 0;
@@ -16058,7 +16228,7 @@ function renderAchievementCardHTML(def){
           <div class="achv-sub">${def.category}${started ? ' - Palier ' + tierName : ''}</div>
         </div>
         <div class="achv-divider"></div>
-        <div class="achv-condition">${started ? def.condition + ` (${progressLabel})` : 'Succès verrouillé'}</div>
+        <div class="achv-condition">${started ? def.condition + ` (${progressLabel})` : tt('Succès verrouillé','Achievement locked')}</div>
       </div>
     `;
   }
@@ -16067,14 +16237,14 @@ function renderAchievementCardHTML(def){
   const dateLabel = unlocked ? new Date(prog.unlockedAt).toLocaleDateString('fr-FR') : '';
   if(def.hidden && !unlocked){
     return `
-      <div class="achv-card is-locked is-hidden" title="Succès caché">
+      <div class="achv-card is-locked is-hidden" title="${tt('Succès caché','Hidden achievement')}">
         <div class="achv-icon">🔒</div>
         <div class="achv-body">
           <div class="achv-name">???</div>
           <div class="achv-sub">${def.category}</div>
         </div>
         <div class="achv-divider"></div>
-        <div class="achv-condition">Succès caché</div>
+        <div class="achv-condition">${tt('Succès caché','Hidden achievement')}</div>
       </div>
     `;
   }
@@ -16086,7 +16256,7 @@ function renderAchievementCardHTML(def){
         <div class="achv-sub">${def.category}${unlocked ? ' - ' + dateLabel : ''}</div>
       </div>
       <div class="achv-divider"></div>
-      <div class="achv-condition">${unlocked ? def.condition : 'Succès verrouillé'}</div>
+      <div class="achv-condition">${unlocked ? def.condition : tt('Succès verrouillé','Achievement locked')}</div>
     </div>
   `;
 }
@@ -16230,10 +16400,10 @@ async function renderPantheonScreen(){
 
   const listEl = document.getElementById('pantheon-list');
   if(!sbClient){
-    listEl.innerHTML = `<div class="hand-empty">Le Palmarès nécessite une connexion au service de comptes.</div>`;
+    listEl.innerHTML = `<div class="hand-empty">${tt('Le Panthéon nécessite une connexion au service de comptes.','The Hall of Fame requires a connection to the account service.')}</div>`;
     return;
   }
-  listEl.innerHTML = `<div class="hand-empty">Chargement…</div>`;
+  listEl.innerHTML = `<div class="hand-empty">${tt('Chargement…','Loading…')}</div>`;
 
   const { data, error } = await sbClient
     .from('career_history')
@@ -16241,14 +16411,14 @@ async function renderPantheonScreen(){
     .limit(2000);
 
   if(error){
-    listEl.innerHTML = `<div class="hand-empty">Impossible de charger le Palmarès : ${error.message}</div>`;
+    listEl.innerHTML = `<div class="hand-empty">${tt(`Impossible de charger le Panthéon : ${error.message}`, `Could not load the Hall of Fame: ${error.message}`)}</div>`;
     return;
   }
   let rows = (data || []).filter(r => r.score && typeof r.score.total === 'number');
   if(state.pantheonFilterLeague) rows = rows.filter(r => r.league === state.pantheonFilterLeague);
   if(state.pantheonFilterClub) rows = rows.filter(r => r.club === state.pantheonFilterClub);
   if(!rows.length){
-    listEl.innerHTML = `<div class="hand-empty">Aucune saison enregistrée pour ces filtres.</div>`;
+    listEl.innerHTML = `<div class="hand-empty">${tt('Aucune saison enregistrée pour ces filtres.','No season recorded for these filters.')}</div>`;
     return;
   }
 
@@ -16423,17 +16593,18 @@ async function renderPalmaresScreen(){
       const clubsInCareer = new Set(rows.map(r=>r.club));
       const trophiesInCareer = countTrophies(rows);
       const seasonCardsHtml = rows.slice().sort((a,b)=>b.season_number-a.season_number).map(r=>{
-        const posLabel = r.position===1 ? '1er' : `${r.position}e`;
+        const posLabel = tt(r.position===1 ? '1er' : `${r.position}e`, `${r.position}${nthSuffix(r.position)}`);
         const euroLine = r.euro_result
-          ? `${EURO_LABELS[r.euro_result.tier]} : ${r.euro_result.won ? 'Vainqueur 🏆' : (r.euro_result.stage==='done' ? 'Non remportée' : 'Interrompue')}${r.euro_result.superCupWon ? " · Supercoupe Continentale remportée 🏆" : ''}`
-          : "Pas d'Europe cette saison-là";
+          ? `${euroCupLabel(EURO_LABELS[r.euro_result.tier])} : ${r.euro_result.won ? tt('Vainqueur','Winner') + ' 🏆' : (r.euro_result.stage==='done' ? tt('Non remportée','Not won') : tt('Interrompue','Interrupted'))}${r.euro_result.superCupWon ? " · " + tt('Supercoupe Continentale remportée','Continental Super Cup won') + " 🏆" : ''}`
+          : tt("Pas d'Europe cette saison-là","No Europe that season");
         const scoreLine = r.score
-          ? `Score de la saison : <strong>${r.score.total} pts</strong> (Championnat ${r.score.league} · Coupe ${r.score.cup} · Europe ${r.score.euro})`
+          ? tt(`Score de la saison : <strong>${r.score.total} pts</strong> (Championnat ${r.score.league} · Coupe ${r.score.cup} · Europe ${r.score.euro})`,
+               `Season score: <strong>${r.score.total} pts</strong> (League ${r.score.league} · Cup ${r.score.cup} · Europe ${r.score.euro})`)
           : '';
         return `
           <div class="account-season-card">
             <div class="account-season-head">
-              <div class="account-season-title">Saison ${r.season_number} - ${r.club} (${r.league})</div>
+              <div class="account-season-title">${tt('Saison','Season')} ${r.season_number} - ${r.club} (${leagueLabel(r.league)})</div>
               ${r.is_champion ? '<span class="st-badge st-badge-champ">C</span>' : ''}
               ${r.cup_won ? '<span class="st-badge st-badge-cup">CN</span>' : ''}
               ${r.domestic_super_cup_won ? `<span class="st-badge st-badge-tc">${DOMESTIC_SUPER_CUP_BADGE[r.league] || 'TC'}</span>` : ''}
@@ -16441,9 +16612,9 @@ async function renderPalmaresScreen(){
               ${r.euro_result && r.euro_result.superCupWon ? '<span class="st-badge st-badge-sc">SC</span>' : ''}
             </div>
             <div class="account-season-body">
-              <div>Classement : ${posLabel} / ${r.total_clubs} (${r.points ?? '-'} pts)</div>
-              <div>Coupe Nationale : ${r.cup_won ? 'Remportée 🏆' : 'Non remportée'}</div>
-              ${r.domestic_super_cup_won ? `<div>${DOMESTIC_SUPER_CUP_NAME[r.league] || 'Supercoupe de France'} : Remporté 🏆</div>` : ''}
+              <div>${tt('Classement','Ranking')} : ${posLabel} / ${r.total_clubs} (${r.points ?? '-'} pts)</div>
+              <div>${tt('Coupe Nationale','National Cup')} : ${r.cup_won ? tt('Remportée','Won') + ' 🏆' : tt('Non remportée','Not won')}</div>
+              ${r.domestic_super_cup_won ? `<div>${superCupName(r.league) || DOMESTIC_SUPER_CUP_NAME[r.league] || 'Supercoupe de France'} : ${tt('Remporté','Won')} 🏆</div>` : ''}
               <div>${euroLine}</div>
               ${scoreLine ? `<div>${scoreLine}</div>` : ''}
             </div>
@@ -16453,11 +16624,11 @@ async function renderPalmaresScreen(){
       return `
         <details class="career-group" ${cn === careerNumbers[0] ? 'open' : ''}>
           <summary class="career-group-header">
-            <div class="career-group-title">Carrière ${cn}</div>
+            <div class="career-group-title">${tt('Carrière','Career')} ${cn}</div>
             <div class="career-group-stats">
-              <span>${rows.length} saison${rows.length>1?'s':''}</span>
+              <span>${rows.length} ${tt(`saison${rows.length>1?'s':''}`, `season${rows.length>1?'s':''}`)}</span>
               <span>${clubsInCareer.size} club${clubsInCareer.size>1?'s':''}</span>
-              <span>${trophiesInCareer} trophée${trophiesInCareer>1?'s':''}</span>
+              <span>${trophiesInCareer} ${tt(`trophée${trophiesInCareer>1?'s':''}`, `troph${trophiesInCareer>1?'ies':'y'}`)}</span>
             </div>
             <span class="career-group-toggle">&#9662;</span>
           </summary>
@@ -16785,17 +16956,17 @@ function renderSeasonTrophiesHTML(){
 
   const rows = [];
   rows.push({
-    label:'Championnat',
+    label:tt('Championnat','League'),
     value: myPos === 1
-      ? `Champion ! (${standing[0].pts} pts)`
-      : `${myPos}${myPos===1?'er':'e'} - ${champion.name} champion (${champion.pts} pts)`
+      ? tt(`Champion ! (${standing[0].pts} pts)`, `Champions! (${standing[0].pts} pts)`)
+      : tt(`${myPos}${myPos===1?'er':'e'} - ${champion.name} champion (${champion.pts} pts)`, `${myPos}${nthSuffix(myPos)} - ${champion.name} champions (${champion.pts} pts)`)
   });
   if(season.cup){
     rows.push({
-      label:'Coupe Nationale',
+      label:tt('Coupe Nationale','National Cup'),
       value: season.cup.champion === state.club.id
-        ? 'Vainqueur \uD83C\uDFC6'
-        : (season.cup.champion ? `Remportée par ${season.clubsById[season.cup.champion] ? season.clubsById[season.cup.champion].name : ''}` : 'En cours')
+        ? tt('Vainqueur','Winner') + ' 🏆'
+        : (season.cup.champion ? tt(`Remportée par ${season.clubsById[season.cup.champion] ? season.clubsById[season.cup.champion].name : ''}`, `Won by ${season.clubsById[season.cup.champion] ? season.clubsById[season.cup.champion].name : ''}`) : tt('En cours','In progress'))
     });
   }
   if(euro){
@@ -16803,13 +16974,13 @@ function renderSeasonTrophiesHTML(){
     // phase de ligue directe (barrage, tour 3, tour 2) - jamais pour
     // Europa/Conférence, qui n'ont qu'un seul tour d'entrée pour l'instant.
     const entryLabel = (euro.tier === 'cl' && state.myEuroEntryRound && state.myEuroEntryRound !== 'leaguePhase')
-      ? ` — ${EURO_ENTRY_ROUND_LABEL[state.myEuroEntryRound]}`
+      ? ` — ${stageLabel(EURO_ENTRY_ROUND_LABEL[state.myEuroEntryRound])}`
       : '';
     rows.push({
-      label: EURO_LABELS[euro.tier] + entryLabel,
+      label: euroCupLabel(EURO_LABELS[euro.tier]) + entryLabel,
       value: euro.stage === 'done'
-        ? (euro.champion === state.club.id ? 'Vainqueur \uD83C\uDFC6' : `Éliminé - ${EURO_STAGE_LABEL[euro.stage]}`)
-        : `En cours (${EURO_STAGE_LABEL[euro.stage]})`
+        ? (euro.champion === state.club.id ? tt('Vainqueur','Winner') + ' 🏆' : `${tt('Éliminé','Eliminated')} - ${stageLabel(EURO_STAGE_LABEL[euro.stage])}`)
+        : `${tt('En cours','In progress')} (${stageLabel(EURO_STAGE_LABEL[euro.stage])})`
     });
   } else if(state.euroQualifying && state.euroQualifying.ties.some(t=>t.isMine)){
     // Le barrage/tour de qualification n'est pas encore résolu : la
@@ -16820,19 +16991,19 @@ function renderSeasonTrophiesHTML(){
     const myTies = state.euroQualifying.ties.filter(t=>t.isMine);
     const myTie = myTies.find(t=>!t.resolved) || myTies[myTies.length-1];
     const label = myTie.competition === 'cl'
-      ? `Coupe des Champions - ${EURO_ENTRY_ROUND_LABEL[myTie.stage]}`
-      : 'Barrage Coupe Conférence';
-    rows.push({ label, value: myTie.leg2 ? 'Résultat en cours de traitement' : (myTie.leg1 ? 'Retour à jouer' : 'Aller à jouer') });
+      ? `${euroCupLabel('Coupe des Champions')} - ${stageLabel(EURO_ENTRY_ROUND_LABEL[myTie.stage])}`
+      : tt('Barrage Coupe Conférence','Conference Cup play-off');
+    rows.push({ label, value: myTie.leg2 ? tt('Résultat en cours de traitement','Result being processed') : (myTie.leg1 ? tt('Retour à jouer','Second leg to play') : tt('Aller à jouer','First leg to play')) });
   } else {
-    rows.push({ label:"Coupes d'Europe", value:'Non disputées cette saison' });
+    rows.push({ label:tt("Coupes d'Europe","European cups"), value:tt('Non disputées cette saison','Not played this season') });
   }
   if(winners.superCupWinner){
     const isMe = winners.superCupClId === state.club.id || winners.superCupElId === state.club.id;
     rows.push({
-      label:"Supercoupe Continentale",
+      label:tt("Supercoupe Continentale","Continental Super Cup"),
       value: winners.superCupWinner === state.club.id
-        ? 'Vainqueur \uD83C\uDFC6'
-        : (isMe ? 'Finaliste' : `${clubNameForAnyId(winners.superCupWinner)} vainqueur`)
+        ? tt('Vainqueur','Winner') + ' 🏆'
+        : (isMe ? tt('Finaliste','Runner-up') : tt(`${clubNameForAnyId(winners.superCupWinner)} vainqueur`, `${clubNameForAnyId(winners.superCupWinner)} winner`))
     });
   }
 
@@ -16936,16 +17107,18 @@ document.getElementById('btn-resume-save').addEventListener('click', ()=>{
 // élément global, pas propre à l'écran de saison.
 function confirmStartNewCareer(onConfirm){
   const titleEl = document.getElementById('season-event-title');
-  titleEl.textContent = 'Commencer une nouvelle carrière ?';
+  titleEl.textContent = tt('Commencer une nouvelle carrière ?','Start a new career?');
   titleEl.classList.remove('is-rare');
   document.getElementById('season-event-context').style.display = 'none';
-  const clubLabel = state.club ? state.club.name : 'votre carrière actuelle';
-  document.getElementById('season-event-text').textContent =
-    `Une carrière est déjà en cours (${clubLabel}). En commencer une nouvelle archivera celle-ci dans votre Palmarès (les saisons déjà terminées restent enregistrées), et vous repartirez de zéro avec un nouveau coach - le choix de pelouse et la draft complète compris.`;
+  const clubLabel = state.club ? state.club.name : tt('votre carrière actuelle','your current career');
+  document.getElementById('season-event-text').textContent = tt(
+    `Une carrière est déjà en cours (${clubLabel}). En commencer une nouvelle archivera celle-ci dans votre Palmarès (les saisons déjà terminées restent enregistrées), et vous repartirez de zéro avec un nouveau coach - le choix de pelouse et la draft complète compris.`,
+    `A career is already in progress (${clubLabel}). Starting a new one will archive it in your trophy cabinet (seasons already completed stay recorded), and you'll start over with a new coach - including pitch choice and a full draft.`
+  );
   const optsEl = document.getElementById('season-event-options');
   optsEl.innerHTML = `
-    <button class="live-decision-option" data-key="confirm">Commencer une nouvelle carrière</button>
-    <button class="live-decision-option" data-key="cancel">Annuler</button>
+    <button class="live-decision-option" data-key="confirm">${tt('Commencer une nouvelle carrière','Start a new career')}</button>
+    <button class="live-decision-option" data-key="cancel">${tt('Annuler','Cancel')}</button>
   `;
   optsEl.querySelector('[data-key="confirm"]').addEventListener('click', ()=>{
     document.getElementById('season-event-overlay').style.display = 'none';
@@ -17150,12 +17323,12 @@ Promise.all([loadAllClubRosters(), loadEuroFillerClubs()]).finally(()=>{
 
 <div id="consent-banner" role="dialog" aria-live="polite" aria-label="Consentement aux cookies de mesure">
   <div class="cb-text">
-    <strong>Cookies de mesure d'audience</strong>
-    Ce site utilise Google Analytics pour comprendre comment le jeu est utilisé et l'améliorer. Aucune donnée n'est collectée tant que vous n'avez pas accepté. <a href="#" id="cb-more">En savoir plus</a>
+    <strong data-i18n="cookies.title">Cookies de mesure d'audience</strong>
+    <span data-i18n="cookies.body">Ce site utilise Google Analytics pour comprendre comment le jeu est utilisé et l'améliorer. Aucune donnée n'est collectée tant que vous n'avez pas accepté.</span> <a href="#" id="cb-more" data-i18n="cookies.more">En savoir plus</a>
   </div>
   <div class="cb-actions">
-    <button type="button" id="cb-refuse">Refuser</button>
-    <button type="button" class="cb-accept" id="cb-accept">Accepter</button>
+    <button type="button" id="cb-refuse" data-i18n="cookies.refuse">Refuser</button>
+    <button type="button" class="cb-accept" id="cb-accept" data-i18n="cookies.accept">Accepter</button>
   </div>
 </div>
 </body>
