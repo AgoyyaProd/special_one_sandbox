@@ -1,0 +1,338 @@
+Club,Saison,Numero,Joueur,Nom d'usage,Nationalite,Postes,Note
+Chelsea,2005-2006,1,Petr Cech,,Czechia,G,94
+Chelsea,2004-2005,23,Carlo Cudicini,,Italy,G,91
+Chelsea,2004-2005,4,Claude Makelele,,France,MC|MDC,91
+Chelsea,2005-2006,5,Michael Essien,,Ghana,MC|MDC,91
+Chelsea,2018-2019,17,Eden Hazard,,Belgium,AG|MG|MOC|AD|MD|BU,91
+Chelsea,2004-2005,8,Frank Lampard,,England,MC|MOC|MDC,90
+Chelsea,2005-2006,16,Arjen Robben,,Netherlands,MG|MD|AD,90
+Chelsea,2005-2006,26,John Terry,,England,DC|DD|MDC,90
+Chelsea,2006-2007,26,John Terry,,England,DC|DD|MDC,90
+Chelsea,2007-2008,26,John Terry,,England,DC|DD|MDC,90
+Chelsea,2017-2018,17,Eden Hazard,,Belgium,AG|MG|MOC|AD|MD|BU,90
+Chelsea,2004-2005,26,John Terry,,England,DC|DD|MDC,89
+Chelsea,2006-2007,8,Frank Lampard,,England,MC|MOC|MDC,89
+Chelsea,2006-2007,1,Petr Cech,,Czechia,G,89
+Chelsea,2007-2008,1,Petr Cech,,Czechia,G,89
+Chelsea,2017-2018,13,Thibaut Courtois,,Belgium,G,89
+Chelsea,2017-2018,6,N'Golo Kante,,France,MDC|MC,89
+Chelsea,2018-2019,6,N'Golo Kante,,France,MDC|MC,89
+Chelsea,2021-2022,11,Romelu Lukaku,,Belgium,BU|AG|MOC,89
+Chelsea,2004-2005,6,Ricardo Carvalho,,Portugal,DC|DD,88
+Chelsea,2004-2005,15,Didier Drogba,,Ivory Coast,BU|AG|MOC|AD,88
+Chelsea,2005-2006,4,Claude Makelele,,France,MC|MDC,88
+Chelsea,2005-2006,9,Hernan Crespo,,Argentina,BU|MOC,88
+Chelsea,2006-2007,7,Andriy Shevchenko,,Ukraine,BU|MOC|AG,88
+Chelsea,2007-2008,5,Michael Essien,,Ghana,MC|MDC,88
+Chelsea,2008-2009,26,John Terry,,England,DC|DD|MDC,88
+Chelsea,2008-2009,1,Petr Cech,,Czechia,G,88
+Chelsea,2010-2011,11,Didier Drogba,,Ivory Coast,BU|AG|MOC|AD,88
+Chelsea,2013-2014,17,Eden Hazard,,Belgium,AG|MG|MOC|AD|MD|BU,88
+Chelsea,2014-2015,17,Eden Hazard,,Belgium,AG|MG|MOC|AD|MD|BU,88
+Chelsea,2015-2016,17,Eden Hazard,,Belgium,AG|MG|MOC|AD|MD|BU,88
+Chelsea,2016-2017,17,Eden Hazard,,Belgium,AG|MG|MOC|AD|MD|BU,88
+Chelsea,2020-2021,7,N'Golo Kante,,France,MDC|MC,88
+Chelsea,2021-2022,7,N'Golo Kante,,France,MDC|MC,88
+Chelsea,2004-2005,22,Eidur Gudjohnsen,,Iceland,BU|MOC|AG,87
+Chelsea,2004-2005,13,William Gallas,,France,DC|DG|DD,87
+Chelsea,2006-2007,13,Michael Ballack,,Germany,MD|MC|MOC,87
+Chelsea,2006-2007,16,Arjen Robben,,Netherlands,MG|MD|AD,87
+Chelsea,2007-2008,11,Didier Drogba,,Ivory Coast,BU|AG|MOC|AD,87
+Chelsea,2007-2008,15,Florent Malouda,,France,MG|AG,87
+Chelsea,2008-2009,11,Didier Drogba,,Ivory Coast,BU|AG|MOC|AD,87
+Chelsea,2009-2010,8,Frank Lampard,,England,MC|MOC|MDC,87
+Chelsea,2009-2010,26,John Terry,,England,DC|DD|MDC,87
+Chelsea,2010-2011,8,Frank Lampard,,England,MC|MOC|MDC,87
+Chelsea,2013-2014,10,Juan Mata,,Spain,AG|MOC|MD,87
+Chelsea,2016-2017,13,Thibaut Courtois,,Belgium,G,87
+Chelsea,2019-2020,6,N'Golo Kante,,France,MDC|MC,87
+Chelsea,2021-2022,5,Jorginho,Jorginho,Italy,MDC|MC|MOC,87
+Chelsea,2021-2022,2,Antonio Rudiger,,Germany,DC|DG|DD|MDC,87
+Chelsea,2004-2005,9,Mateja Kezman,,Serbia,BU|MOC|AG,86
+Chelsea,2004-2005,7,Adrian Mutu,,Romania,BU|MOC|AG|AD,86
+Chelsea,2004-2005,1,Petr Cech,,Czechia,G,86
+Chelsea,2004-2005,11,Damien Duff,,Republic of Ireland,MG|AD|AG|MD|MOC,86
+Chelsea,2005-2006,23,Carlo Cudicini,,Italy,G,86
+Chelsea,2005-2006,24,Shaun Wright-Phillips,,England,MD|AD|AG|MG,86
+Chelsea,2005-2006,6,Ricardo Carvalho,,Portugal,DC|DD,86
+Chelsea,2005-2006,13,William Gallas,,France,DC|DG|DD,86
+Chelsea,2006-2007,10,Joe Cole,,England,MD|MG|AG|AD|MOC,86
+Chelsea,2006-2007,5,Michael Essien,,Ghana,MC|MDC,86
+Chelsea,2007-2008,6,Ricardo Carvalho,,Portugal,DC|DD,86
+Chelsea,2007-2008,33,Alex,Alex,Brazil,DC|DD|MDC,86
+Chelsea,2008-2009,13,Michael Ballack,,Germany,MD|MC|MOC,86
+Chelsea,2008-2009,8,Frank Lampard,,England,MC|MOC|MDC,86
+Chelsea,2008-2009,5,Michael Essien,,Ghana,MC|MDC,86
+Chelsea,2009-2010,5,Michael Essien,,Ghana,MC|MDC,86
+Chelsea,2010-2011,26,John Terry,,England,DC|DD|MDC,86
+Chelsea,2011-2012,11,Didier Drogba,,Ivory Coast,BU|AG|MOC|AD,86
+Chelsea,2011-2012,10,Juan Mata,,Spain,AG|MOC|MD,86
+Chelsea,2012-2013,10,Juan Mata,,Spain,AG|MOC|MD,86
+Chelsea,2014-2015,13,Thibaut Courtois,,Belgium,G,86
+Chelsea,2016-2017,6,N'Golo Kante,,France,MDC|MC,86
+Chelsea,2022-2023,7,N'Golo Kante,,France,MDC|MC,86
+Chelsea,2025-2026,10,Cole Palmer,,England,MOC|AD|MD|BU,86
+Chelsea,2025-2026,5,Enzo Fernandez,,Argentina,MDC|MC|MOC,86
+Chelsea,2004-2005,10,Joe Cole,,England,MD|MG|AG|AD|MOC,85
+Chelsea,2004-2005,18,Wayne Bridge,,England,DG|MG|DC,85
+Chelsea,2004-2005,16,Arjen Robben,,Netherlands,MG|MD|AD,85
+Chelsea,2005-2006,8,Frank Lampard,,England,MC|MOC|MDC,85
+Chelsea,2005-2006,22,Eidur Gudjohnsen,,Iceland,BU|MOC|AG,85
+Chelsea,2005-2006,11,Damien Duff,,Republic of Ireland,MG|AD|AG|MD|MOC,85
+Chelsea,2006-2007,3,William Gallas,,France,DC|DG|DD,85
+Chelsea,2007-2008,10,Joe Cole,,England,MD|MG|AG|AD|MOC,85
+Chelsea,2007-2008,8,Frank Lampard,,England,MC|MOC|MDC,85
+Chelsea,2008-2009,6,Ricardo Carvalho,,Portugal,DC|DD,85
+Chelsea,2008-2009,20,Deco,Deco,Portugal,MG|MC|MOC|MDC|MD,85
+Chelsea,2009-2010,39,Nicolas Anelka,,France,BU|AD|AG|MOC,85
+Chelsea,2009-2010,11,Didier Drogba,,Ivory Coast,BU|AG|MOC|AD,85
+Chelsea,2009-2010,1,Petr Cech,,Czechia,G,85
+Chelsea,2010-2011,39,Nicolas Anelka,,France,BU|AD|AG|MOC,85
+Chelsea,2010-2011,5,Michael Essien,,Ghana,MC|MDC,85
+Chelsea,2011-2012,26,John Terry,,England,DC|DD|MDC,85
+Chelsea,2011-2012,3,Ashley Cole,,England,DG|MG|DC,85
+Chelsea,2012-2013,17,Eden Hazard,,Belgium,AG|MG|MOC|AD|MD|BU,85
+Chelsea,2013-2014,1,Petr Cech,,Czechia,G,85
+Chelsea,2014-2015,4,Cesc Fabregas,,Spain,MDC|MC|MOC,85
+Chelsea,2014-2015,19,Diego Costa,,Spain,BU|MOC|AG,85
+Chelsea,2015-2016,19,Diego Costa,,Spain,BU|MOC|AG,85
+Chelsea,2015-2016,13,Thibaut Courtois,,Belgium,G,85
+Chelsea,2016-2017,19,Diego Costa,,Spain,BU|MOC|AG,85
+Chelsea,2017-2018,28,Cesar Azpilicueta,,Spain,DD|DG|DC|MD,85
+Chelsea,2022-2023,15,Kalidou Koulibaly,,Senegal,DC|DG|MDC,85
+Chelsea,2004-2005,14,Geremi,Geremi,Cameroon,MD|DD|MC|AD,84
+Chelsea,2004-2005,5,Alexei Smertin,,Russia,MC|MDC|DD,84
+Chelsea,2004-2005,20,Paulo Ferreira,,Portugal,DD|DG|MD,84
+Chelsea,2006-2007,11,Didier Drogba,,Ivory Coast,BU|AG|MOC|AD,84
+Chelsea,2006-2007,21,Salomon Kalou,,Ivory Coast,BU|AG|MG|AD|MOC,84
+Chelsea,2007-2008,13,Michael Ballack,,Germany,MD|MC|MOC,84
+Chelsea,2008-2009,10,Joe Cole,,England,MD|MG|AG|AD|MOC,84
+Chelsea,2009-2010,6,Ricardo Carvalho,,Portugal,DC|DD,84
+Chelsea,2009-2010,13,Michael Ballack,,Germany,MD|MC|MOC,84
+Chelsea,2010-2011,15,Florent Malouda,,France,MG|AG,84
+Chelsea,2010-2011,1,Petr Cech,,Czechia,G,84
+Chelsea,2011-2012,8,Frank Lampard,,England,MC|MOC|MDC,84
+Chelsea,2011-2012,1,Petr Cech,,Czechia,G,84
+Chelsea,2011-2012,9,Fernando Torres,,Spain,BU|MOC|AG,84
+Chelsea,2012-2013,3,Ashley Cole,,England,DG|MG|DC,84
+Chelsea,2012-2013,1,Petr Cech,,Czechia,G,84
+Chelsea,2013-2014,11,Oscar,Oscar,Brazil,MOC|MC|MG|MD,84
+Chelsea,2014-2015,11,Oscar,Oscar,Brazil,MOC|MC|MG|MD,84
+Chelsea,2018-2019,28,Cesar Azpilicueta,,Spain,DD|DG|DC|MD,84
+Chelsea,2018-2019,5,Jorginho,Jorginho,Italy,MDC|MC|MOC,84
+Chelsea,2018-2019,2,Antonio Rudiger,,Germany,DC|DG|DD|MDC,84
+Chelsea,2019-2020,28,Cesar Azpilicueta,,Spain,DD|DG|DC|MD,84
+Chelsea,2019-2020,5,Jorginho,Jorginho,Italy,MDC|MC|MOC,84
+Chelsea,2020-2021,11,Timo Werner,,Germany,BU|AG|AD|MOC,84
+Chelsea,2020-2021,8,Mateo Kovacic,,Croatia,MC|MDC|MOC,84
+Chelsea,2020-2021,6,Thiago Silva,,Brazil,DC|DD|MDC,84
+Chelsea,2021-2022,8,Mateo Kovacic,,Croatia,MC|MDC|MOC,84
+Chelsea,2021-2022,6,Thiago Silva,,Brazil,DC|DD|MDC,84
+Chelsea,2022-2023,5,Jorginho,Jorginho,Italy,MDC|MC|MOC,84
+Chelsea,2022-2023,24,Reece James,,England,DD|MD|DC|MDC,84
+Chelsea,2022-2023,19,Mason Mount,,England,MOC|MC|MG|MD,84
+Chelsea,2023-2024,24,Reece James,,England,DD|MD|DC|MDC,84
+Chelsea,2024-2025,5,Enzo Fernandez,,Argentina,MDC|MC|MOC,84
+Chelsea,2024-2025,10,Cole Palmer,,England,MOC|AD|MD|BU,84
+Chelsea,2025-2026,22,Moises Caicedo,,Ecuador,MDC|MC|DC,84
+Chelsea,2005-2006,3,Asier Del Horno,,Spain,DG|MG|DC,83
+Chelsea,2005-2006,20,Paulo Ferreira,,Portugal,DD|DG|MD,83
+Chelsea,2006-2007,24,Shaun Wright-Phillips,,England,MD|AD|AG|MG,83
+Chelsea,2006-2007,6,Ricardo Carvalho,,Portugal,DC|DD,83
+Chelsea,2008-2009,39,Nicolas Anelka,,France,BU|AD|AG|MOC,83
+Chelsea,2008-2009,3,Ashley Cole,,England,DG|MG|DC,83
+Chelsea,2008-2009,15,Florent Malouda,,France,MG|AG,83
+Chelsea,2009-2010,10,Joe Cole,,England,MD|MG|AG|AD|MOC,83
+Chelsea,2009-2010,3,Ashley Cole,,England,DG|MG|DC,83
+Chelsea,2009-2010,18,Yuriy Zhirkov,,Russia,MG|DG|AG|MOC,83
+Chelsea,2010-2011,3,Ashley Cole,,England,DG|MG|DC,83
+Chelsea,2010-2011,33,Alex,Alex,Brazil,DC|DD|MDC,83
+Chelsea,2011-2012,39,Nicolas Anelka,,France,BU|AD|AG|MOC,83
+Chelsea,2011-2012,5,Michael Essien,,Ghana,MC|MDC,83
+Chelsea,2011-2012,2,Branislav Ivanovic,,Serbia,DC|DD|DG|MDC,83
+Chelsea,2012-2013,26,John Terry,,England,DC|DD|MDC,83
+Chelsea,2012-2013,2,Branislav Ivanovic,,Serbia,DC|DD|DG|MDC,83
+Chelsea,2013-2014,26,John Terry,,England,DC|DD|MDC,83
+Chelsea,2013-2014,3,Ashley Cole,,England,DG|MG|DC,83
+Chelsea,2013-2014,22,Willian,Willian,Brazil,MD|AD|AG|MG|MOC,83
+Chelsea,2014-2015,21,Nemanja Matic,,Serbia,MDC|MC|DC,83
+Chelsea,2014-2015,26,John Terry,,England,DC|DD|MDC,83
+Chelsea,2015-2016,22,Willian,Willian,Brazil,MD|AD|AG|MG|MOC,83
+Chelsea,2015-2016,21,Nemanja Matic,,Serbia,MDC|MC|DC,83
+Chelsea,2015-2016,4,Cesc Fabregas,,Spain,MDC|MC|MOC,83
+Chelsea,2015-2016,22,Pedro,Pedro,Spain,MG|MD|AD|AG|MOC|BU,83
+Chelsea,2016-2017,28,Cesar Azpilicueta,,Spain,DD|DG|DC|MD,83
+Chelsea,2016-2017,4,Cesc Fabregas,,Spain,MDC|MC|MOC,83
+Chelsea,2016-2017,22,Willian,Willian,Brazil,MD|AD|AG|MG|MOC,83
+Chelsea,2017-2018,22,Willian,Willian,Brazil,MD|AD|AG|MG|MOC,83
+Chelsea,2017-2018,8,Cesc Fabregas,,Spain,MDC|MC|MOC,83
+Chelsea,2018-2019,22,Willian,Willian,Brazil,MD|AD|AG|MG|MOC,83
+Chelsea,2018-2019,19,Mateo Kovacic,,Croatia,MC|MDC|MOC,83
+Chelsea,2018-2019,30,David Luiz,,Brazil,DC|MDC|DD,83
+Chelsea,2019-2020,13,Kepa Arrizabalaga,,Spain,G,83
+Chelsea,2019-2020,8,Mateo Kovacic,,Croatia,MC|MDC|MOC,83
+Chelsea,2020-2021,5,Jorginho,Jorginho,Italy,MDC|MC|MOC,83
+Chelsea,2021-2022,13,Edouard Mendy,,Senegal,G,83
+Chelsea,2021-2022,19,Mason Mount,,England,MOC|MC|MG|MD,83
+Chelsea,2022-2023,13,Edouard Mendy,,Senegal,G,83
+Chelsea,2022-2023,8,Mateo Kovacic,,Croatia,MC|MDC|MOC,83
+Chelsea,2005-2006,15,Didier Drogba,,Ivory Coast,BU|AG|MOC|AD,82
+Chelsea,2006-2007,20,Paulo Ferreira,,Portugal,DD|DG|MD,82
+Chelsea,2007-2008,12,John Obi Mikel,,Nigeria,MC|MDC,82
+Chelsea,2008-2009,17,Bosingwa,Bosingwa,Portugal,DD|MD|DG,82
+Chelsea,2008-2009,33,Alex,Alex,Brazil,DC|DD|MDC,82
+Chelsea,2009-2010,17,Bosingwa,Bosingwa,Portugal,DD|MD|DG,82
+Chelsea,2009-2010,15,Florent Malouda,,France,MG|AG,82
+Chelsea,2009-2010,20,Deco,Deco,Portugal,MG|MC|MOC|MDC|MD,82
+Chelsea,2009-2010,33,Alex,Alex,Brazil,DC|DD|MDC,82
+Chelsea,2010-2011,12,John Obi Mikel,,Nigeria,MC|MDC,82
+Chelsea,2010-2011,2,Branislav Ivanovic,,Serbia,DC|DD|DG|MDC,82
+Chelsea,2011-2012,15,Florent Malouda,,France,MG|AG,82
+Chelsea,2011-2012,33,Alex,Alex,Brazil,DC|DD|MDC,82
+Chelsea,2012-2013,9,Fernando Torres,,Spain,BU|MOC|AG,82
+Chelsea,2012-2013,29,Demba Ba,,Senegal,BU|MOC|AG,82
+Chelsea,2012-2013,11,Oscar,Oscar,Brazil,MOC|MC|MG|MD,82
+Chelsea,2013-2014,29,Samuel Etoo,,Cameroon,BU|AD|AG|MOC,82
+Chelsea,2013-2014,9,Fernando Torres,,Spain,BU|MOC|AG,82
+Chelsea,2013-2014,4,David Luiz,,Brazil,DC|MDC|DD,82
+Chelsea,2014-2015,22,Willian,Willian,Brazil,MD|AD|AG|MG|MOC,82
+Chelsea,2014-2015,21,Juan Cuadrado,,Colombia,MD|AD|DD|MG,82
+Chelsea,2014-2015,3,Filipe Luis,,Brazil,DG|MG|DC,82
+Chelsea,2015-2016,11,Oscar,Oscar,Brazil,MOC|MC|MG|MD,82
+Chelsea,2016-2017,24,Gary Cahill,,England,DC|DD|MDC,82
+Chelsea,2016-2017,18,David Luiz,,Brazil,DC|MDC|DD,82
+Chelsea,2016-2017,11,Pedro,Pedro,Spain,MG|MD|AD|AG|MOC|BU,82
+Chelsea,2017-2018,9,Alvaro Morata,,Spain,BU|MOC|AG,82
+Chelsea,2017-2018,24,Gary Cahill,,England,DC|DD|MDC,82
+Chelsea,2018-2019,13,Kepa Arrizabalaga,,Spain,G,82
+Chelsea,2018-2019,3,Marcos Alonso,,Spain,DG|MG|DC,82
+Chelsea,2019-2020,2,Antonio Rudiger,,Germany,DC|DG|DD|MDC,82
+Chelsea,2019-2020,22,Willian,Willian,Brazil,MD|AD|AG|MG|MOC,82
+Chelsea,2020-2021,28,Cesar Azpilicueta,,Spain,DD|DG|DC|MD,82
+Chelsea,2020-2021,2,Antonio Rudiger,,Germany,DC|DG|DD|MDC,82
+Chelsea,2020-2021,22,Hakim Ziyech,,Morocco,MD|AD|MOC|AG,82
+Chelsea,2021-2022,28,Cesar Azpilicueta,,Spain,DD|DG|DC|MD,82
+Chelsea,2021-2022,21,Ben Chilwell,,England,DG|MG|DC,82
+Chelsea,2021-2022,24,Reece James,,England,DD|MD|DC|MDC,82
+Chelsea,2022-2023,28,Cesar Azpilicueta,,Spain,DD|DG|DC|MD,82
+Chelsea,2022-2023,6,Thiago Silva,,Brazil,DC|DD|MDC,82
+Chelsea,2022-2023,9,Pierre-Emerick Aubameyang,,Gabon,BU|AD|AG|MG|MOC,82
+Chelsea,2023-2024,5,Enzo Fernandez,,Argentina,MDC|MC|MOC,82
+Chelsea,2023-2024,20,Christopher Nkunku,,France,BU|MOC|AG|AD,82
+Chelsea,2023-2024,7,Raheem Sterling,,England,MG|AD|AG|BU|MD|MOC,82
+Chelsea,2024-2025,20,Christopher Nkunku,,France,BU|MOC|AG|AD,82
+Chelsea,2024-2025,22,Moises Caicedo,,Ecuador,MDC|MC|DC,82
+Chelsea,2025-2026,21,Marc Cucurella,,Spain,DG|MG|DC,82
+Chelsea,2004-2005,19,Scott Parker,,England,MC|MDC|MOC,81
+Chelsea,2006-2007,4,Claude Makelele,,France,MC|MDC,81
+Chelsea,2007-2008,7,Andriy Shevchenko,,Ukraine,BU|MOC|AG,81
+Chelsea,2008-2009,12,John Obi Mikel,,Nigeria,MC|MDC,81
+Chelsea,2009-2010,12,John Obi Mikel,,Nigeria,MC|MDC,81
+Chelsea,2010-2011,17,Bosingwa,Bosingwa,Portugal,DD|MD|DG,81
+Chelsea,2010-2011,18,Yuriy Zhirkov,,Russia,MG|DG|AG|MOC,81
+Chelsea,2011-2012,16,Raul Meireles,,Portugal,MDC|MC|MOC|MD,81
+Chelsea,2012-2013,8,Frank Lampard,,England,MC|MOC|MDC,81
+Chelsea,2012-2013,7,Ramires,Ramires,Brazil,MC|MD|MDC,81
+Chelsea,2013-2014,2,Branislav Ivanovic,,Serbia,DC|DD|DG|MDC,81
+Chelsea,2013-2014,7,Ramires,Ramires,Brazil,MC|MD|MDC,81
+Chelsea,2013-2014,21,Nemanja Matic,,Serbia,MDC|MC|DC,81
+Chelsea,2013-2014,15,Kevin De Bruyne,,Belgium,MOC|MC|MD|MDC|AD,81
+Chelsea,2014-2015,24,Gary Cahill,,England,DC|DD|MDC,81
+Chelsea,2014-2015,2,Branislav Ivanovic,,Serbia,DC|DD|DG|MDC,81
+Chelsea,2015-2016,2,Branislav Ivanovic,,Serbia,DC|DD|DG|MDC,81
+Chelsea,2015-2016,24,Gary Cahill,,England,DC|DD|MDC,81
+Chelsea,2015-2016,26,John Terry,,England,DC|DD|MDC,81
+Chelsea,2015-2016,28,Cesar Azpilicueta,,Spain,DD|DG|DC|MD,81
+Chelsea,2017-2018,3,Marcos Alonso,,Spain,DG|MG|DC,81
+Chelsea,2017-2018,2,Antonio Rudiger,,Germany,DC|DG|DD|MDC,81
+Chelsea,2018-2019,9,Alvaro Morata,,Spain,BU|MOC|AG,81
+Chelsea,2020-2021,10,Christian Pulisic,,United States,MG|AG|AD|MD|MOC,81
+Chelsea,2020-2021,13,Kepa Arrizabalaga,,Spain,G,81
+Chelsea,2021-2022,22,Hakim Ziyech,,Morocco,MD|AD|MOC|AG,81
+Chelsea,2024-2025,24,Reece James,,England,DD|MD|DC|MDC,81
+Chelsea,2025-2026,24,Reece James,,England,DD|MD|DC|MDC,81
+Chelsea,2025-2026,7,Pedro Neto,,Portugal,MD|AD|AG|MG,81
+Chelsea,2005-2006,18,Wayne Bridge,,England,DG|MG|DC,80
+Chelsea,2007-2008,24,Shaun Wright-Phillips,,England,MD|AD|AG|MG,80
+Chelsea,2009-2010,21,Salomon Kalou,,Ivory Coast,BU|AG|MG|AD|MOC,80
+Chelsea,2010-2011,21,Salomon Kalou,,Ivory Coast,BU|AG|MG|AD|MOC,80
+Chelsea,2011-2012,12,John Obi Mikel,,Nigeria,MC|MDC,80
+Chelsea,2011-2012,23,Daniel Sturridge,,England,AD|BU|MOC|AG,80
+Chelsea,2011-2012,4,David Luiz,,Brazil,DC|MDC|DD,80
+Chelsea,2012-2013,15,Florent Malouda,,France,MG|AG,80
+Chelsea,2012-2013,16,Raul Meireles,,Portugal,MDC|MC|MOC|MD,80
+Chelsea,2012-2013,24,Gary Cahill,,England,DC|DD|MDC,80
+Chelsea,2012-2013,23,Daniel Sturridge,,England,AD|BU|MOC|AG,80
+Chelsea,2012-2013,4,David Luiz,,Brazil,DC|MDC|DD,80
+Chelsea,2013-2014,8,Frank Lampard,,England,MC|MOC|MDC,80
+Chelsea,2013-2014,24,Gary Cahill,,England,DC|DD|MDC,80
+Chelsea,2014-2015,18,Loic Remy,,France,BU|AD|AG,80
+Chelsea,2015-2016,18,Loic Remy,,France,BU|AD|AG,80
+Chelsea,2017-2018,15,Victor Moses,,Nigeria,MD|AD|DD|AG,80
+Chelsea,2018-2019,24,Gary Cahill,,England,DC|DD|MDC,80
+Chelsea,2018-2019,27,Ross Barkley,,England,MOC|MC|MDC,80
+Chelsea,2019-2020,11,Christian Pulisic,,United States,MG|AG|AD|MD|MOC,80
+Chelsea,2019-2020,3,Marcos Alonso,,Spain,DG|MG|DC,80
+Chelsea,2020-2021,21,Ben Chilwell,,England,DG|MG|DC,80
+Chelsea,2021-2022,10,Christian Pulisic,,United States,MG|AG|AD|MD|MOC,80
+Chelsea,2022-2023,21,Ben Chilwell,,England,DG|MG|DC,80
+Chelsea,2023-2024,6,Thiago Silva,,Brazil,DC|DD|MDC,80
+Chelsea,2024-2025,7,Pedro Neto,,Portugal,MD|AD|AG|MG,80
+Chelsea,2025-2026,15,Nicolas Jackson,,Senegal,BU|AG|MOC,80
+Chelsea,2025-2026,6,Levi Colwill,,England,DC|DG|MDC,80
+Chelsea,2008-2009,21,Salomon Kalou,,Ivory Coast,BU|AG|MG|AD|MOC,79
+Chelsea,2010-2011,10,Yossi Benayoun,,Israel,MOC|MD|MG|MC,79
+Chelsea,2010-2011,7,Ramires,Ramires,Brazil,MC|MD|MDC,79
+Chelsea,2014-2015,28,Cesar Azpilicueta,,Spain,DD|DG|DC|MD,79
+Chelsea,2016-2017,3,Marcos Alonso,,Spain,DG|MG|DC,79
+Chelsea,2016-2017,5,Jorginho,Jorginho,Italy,MDC|MC|MOC,79
+Chelsea,2016-2017,15,Victor Moses,,Nigeria,MD|AD|DD|AG,79
+Chelsea,2016-2017,26,John Terry,,England,DC|DD|MDC,79
+Chelsea,2017-2018,12,Tiemoue Bakayoko,,France,MDC|MC,79
+Chelsea,2018-2019,15,Victor Moses,,Nigeria,MD|AD|DD|AG,79
+Chelsea,2020-2021,3,Marcos Alonso,,Spain,DG|MG|DC,79
+Chelsea,2020-2021,19,Mason Mount,,England,MOC|MC|MG|MD,79
+Chelsea,2022-2023,3,Marc Cucurella,,Spain,DG|MG|DC,79
+Chelsea,2022-2023,4,Wesley Fofana,,France,DC|DD|MDC,79
+Chelsea,2023-2024,4,Wesley Fofana,,France,DC|DD|MDC,79
+Chelsea,2023-2024,21,Ben Chilwell,,England,DG|MG|DC,79
+Chelsea,2023-2024,17,Moises Caicedo,,Ecuador,MDC|MC|DC,79
+Chelsea,2024-2025,4,Wesley Fofana,,France,DC|DD|MDC,79
+Chelsea,2024-2025,21,Marc Cucurella,,Spain,DG|MG|DC,79
+Chelsea,2024-2025,15,Nicolas Jackson,,Senegal,BU|AG|MOC,79
+Chelsea,2025-2026,11,Noni Madueke,,England,MD|AD|AG|MG,79
+Chelsea,2025-2026,16,Wesley Fofana,,France,DC|DD|MDC,79
+Chelsea,2025-2026,30,Robert Sanchez,,Spain,G,79
+Chelsea,2004-2005,30,Tiago,Tiago,Portugal,MC|MDC|MOC,78
+Chelsea,2004-2005,3,Celestine Babayaro,,Nigeria,DG|MG|DC,78
+Chelsea,2007-2008,3,Ashley Cole,,England,DG|MG|DC,78
+Chelsea,2008-2009,2,Branislav Ivanovic,,Serbia,DC|DD|DG|MDC,78
+Chelsea,2019-2020,29,Kurt Zouma,,France,DC|DD|MDC,78
+Chelsea,2021-2022,3,Marcos Alonso,,Spain,DG|MG|DC,78
+Chelsea,2022-2023,20,Christian Pulisic,,United States,MG|AG|AD|MD|MOC,78
+Chelsea,2023-2024,8,Mykhailo Mudryk,,Ukraine,AG|MG|AD|MOC,78
+Chelsea,2023-2024,3,Marc Cucurella,,Spain,DG|MG|DC,78
+Chelsea,2023-2024,13,Robert Sanchez,,Spain,G,78
+Chelsea,2023-2024,28,Cesar Azpilicueta,,Spain,DD|DG|DC|MD,78
+Chelsea,2024-2025,11,Noni Madueke,,England,MD|AD|AG|MG,78
+Chelsea,2024-2025,6,Levi Colwill,,England,DC|DG|MDC,78
+Chelsea,2024-2025,12,Robert Sanchez,,Spain,G,78
+Chelsea,2025-2026,26,Malo Gusto,,France,DD|MD|DG,78
+Chelsea,2004-2005,2,Glen Johnson,,England,DD,77
+Chelsea,2007-2008,21,Salomon Kalou,,Ivory Coast,BU|AG|MG|AD|MOC,77
+Chelsea,2017-2018,1,Willy Caballero,,Argentina,G,77
+Chelsea,2025-2026,4,Benoit Badiashile,,France,DC,77
+Chelsea,2004-2005,29,Robert Huth,,Germany,DC,76
+Chelsea,2007-2008,18,Wayne Bridge,,England,DG|MG|DC,76
+Chelsea,2007-2008,20,Paulo Ferreira,,Portugal,DD|DG|MD,76
+Chelsea,2017-2018,21,Davide Zappacosta,,Italy,DD,76
+Chelsea,2019-2020,9,Tammy Abraham,,England,BU,76
+Chelsea,2019-2020,21,Emerson,Emerson,Italy,DG,76
+Chelsea,2020-2021,15,Reece James,,England,DD|MD|DC|MDC,76
+Chelsea,2023-2024,15,Nicolas Jackson,,Senegal,BU|AG|MOC,76
+Chelsea,2025-2026,20,Liam Delap,,England,BU,76
+Chelsea,2019-2020,4,Fikayo Tomori,,England,DC,75
+Chelsea,2024-2025,26,Malo Gusto,,France,DD|MD|DG,74
+Chelsea,2015-2016,27,Kenedy,Kenedy,Brazil,DG,72
+Chelsea,2023-2024,26,Malo Gusto,,France,DD|MD|DG,71
+Chelsea,2019-2020,15,Reece James,,England,DD|MD|DC|MDC,68

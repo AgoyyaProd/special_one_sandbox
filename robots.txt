@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Écrans applicatifs : ce sont des états du jeu, pas du contenu. Les
+# indexer produirait des résultats vides (tout est rendu côté client).
+Disallow: /game
+Disallow: /season
+Disallow: /select
+Disallow: /live-match
+Disallow: /account
+Disallow: /coach-quiz
+Disallow: /palmares
+
+Sitemap: https://www.specialone.fr/sitemap.xml

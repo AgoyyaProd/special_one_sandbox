@@ -1,0 +1,658 @@
+{
+    "tiers": [
+        "Apprenti",
+        "Confirmé",
+        "Expert",
+        "Élite",
+        "Légendaire"
+    ],
+    "tierAssets": {
+        "Apprenti": "apprenti.svg",
+        "Confirmé": "confirme.svg",
+        "Expert": "expert.svg",
+        "Élite": "elite.svg",
+        "Légendaire": "legendaire.svg"
+    },
+    "achievements": [
+        {
+            "id": "stratege",
+            "name": "Stratège",
+            "category": "Coaching",
+            "kind": "tiered",
+            "counter": "decisionsTotal",
+            "thresholds": [
+                50,
+                250,
+                750,
+                2000,
+                5000
+            ],
+            "condition": "Prendre des décisions de coaching",
+            "icon": "🧠"
+        },
+        {
+            "id": "decideur",
+            "name": "Décideur",
+            "category": "Coaching",
+            "kind": "tiered",
+            "counter": "positiveImpactDecisions",
+            "thresholds": [
+                10,
+                50,
+                150,
+                400,
+                1000
+            ],
+            "condition": "Prendre une décision ayant un impact positif sur le résultat d'un match",
+            "icon": "🎯"
+        },
+        {
+            "id": "tacticien",
+            "name": "Tacticien",
+            "category": "Coaching",
+            "kind": "tiered",
+            "counter": "successfulAdaptations",
+            "thresholds": [
+                10,
+                50,
+                150,
+                400,
+                1000
+            ],
+            "condition": "Réussir une adaptation tactique (Adaptation adverse)",
+            "icon": "♟️"
+        },
+        {
+            "id": "finisseur",
+            "name": "Finisseur",
+            "category": "Coaching",
+            "kind": "tiered",
+            "counter": "lateDecisionWins",
+            "thresholds": [
+                5,
+                20,
+                50,
+                100,
+                250
+            ],
+            "condition": "Gagner un match après une décision prise après la 75e minute",
+            "icon": "⏱️"
+        },
+        {
+            "id": "coup_de_poker",
+            "name": "Coup de poker",
+            "category": "Coaching",
+            "kind": "tiered",
+            "counter": "riskyChoiceWins",
+            "thresholds": [
+                5,
+                20,
+                50,
+                100,
+                250
+            ],
+            "condition": "Choisir une option risquée qui mène à la victoire",
+            "icon": "🎲"
+        },
+        {
+            "id": "protecteur",
+            "name": "Protecteur",
+            "category": "Gestion des joueurs",
+            "kind": "tiered",
+            "counter": "injuriesAvoided",
+            "thresholds": [
+                5,
+                25,
+                75,
+                200,
+                500
+            ],
+            "condition": "Éviter une blessure grâce à une décision",
+            "icon": "🩹"
+        },
+        {
+            "id": "discipline_tiered",
+            "name": "Discipliné",
+            "category": "Gestion des joueurs",
+            "kind": "tiered",
+            "counter": "redCardsAvoided",
+            "thresholds": [
+                5,
+                20,
+                50,
+                100,
+                250
+            ],
+            "condition": "Éviter un carton rouge grâce à une décision",
+            "icon": "🟨"
+        },
+        {
+            "id": "coaching_gagnant",
+            "name": "Coaching gagnant",
+            "category": "Gestion des joueurs",
+            "kind": "tiered",
+            "counter": "impactSubsTotal",
+            "thresholds": [
+                5,
+                25,
+                75,
+                150,
+                300
+            ],
+            "condition": "Un remplaçant devient décisif après votre changement",
+            "icon": "🔄"
+        },
+        {
+            "id": "gestionnaire",
+            "name": "Gestionnaire",
+            "category": "Gestion des joueurs",
+            "kind": "tiered",
+            "counter": "fatigueEventsHandled",
+            "thresholds": [
+                10,
+                50,
+                150,
+                300,
+                750
+            ],
+            "condition": "Réussir un événement de gestion de fatigue",
+            "icon": "🔋"
+        },
+        {
+            "id": "veteran_tiered",
+            "name": "Vétéran",
+            "category": "Carrière",
+            "kind": "tiered",
+            "counter": "matchesPlayed",
+            "thresholds": [
+                100,
+                500,
+                1000,
+                2500,
+                5000
+            ],
+            "condition": "Disputer des matchs",
+            "icon": "📅"
+        },
+        {
+            "id": "gagneur",
+            "name": "Gagneur",
+            "category": "Carrière",
+            "kind": "tiered",
+            "counter": "matchesWon",
+            "thresholds": [
+                25,
+                100,
+                250,
+                500,
+                1000
+            ],
+            "condition": "Remporter des matchs",
+            "icon": "🏆"
+        },
+        {
+            "id": "collectionneur",
+            "name": "Collectionneur",
+            "category": "Carrière",
+            "kind": "tiered",
+            "counter": "trophiesWon",
+            "thresholds": [
+                5,
+                15,
+                30,
+                60,
+                100
+            ],
+            "condition": "Remporter des trophées",
+            "icon": "🏅"
+        },
+        {
+            "id": "recruteur",
+            "name": "Recruteur",
+            "category": "Draft",
+            "kind": "tiered",
+            "counter": "draftPicksTotal",
+            "thresholds": [
+                100,
+                500,
+                1500,
+                3000,
+                5000
+            ],
+            "condition": "Effectuer des choix de draft",
+            "icon": "📝"
+        },
+        {
+            "id": "architecte",
+            "name": "Architecte",
+            "category": "Draft",
+            "kind": "tiered",
+            "counter": "completeSquadsBuilt",
+            "thresholds": [
+                10,
+                50,
+                150,
+                300,
+                500
+            ],
+            "condition": "Construire un effectif complet",
+            "icon": "🏗️"
+        },
+        {
+            "id": "oeil_de_lynx",
+            "name": "Œil de Lynx",
+            "category": "Draft",
+            "kind": "tiered",
+            "counter": "decisiveDraftPicks",
+            "thresholds": [
+                10,
+                50,
+                150,
+                300,
+                750
+            ],
+            "condition": "Réaliser un choix de draft qui devient décisif",
+            "icon": "👁️"
+        },
+        {
+            "id": "premieres_consignes",
+            "name": "Premières consignes",
+            "category": "Premiers pas",
+            "kind": "simple",
+            "grade": "Apprenti",
+            "condition": "Prendre votre première décision de coaching.",
+            "icon": "📋",
+            "hidden": false
+        },
+        {
+            "id": "premiere_victoire",
+            "name": "Première victoire",
+            "category": "Premiers pas",
+            "kind": "simple",
+            "grade": "Apprenti",
+            "condition": "Remporter votre premier match.",
+            "icon": "✅",
+            "hidden": false
+        },
+        {
+            "id": "premier_trophee",
+            "name": "Premier trophée",
+            "category": "Premiers pas",
+            "kind": "simple",
+            "grade": "Confirmé",
+            "condition": "Remporter votre premier titre.",
+            "icon": "🏆",
+            "hidden": false
+        },
+        {
+            "id": "premier_voyage_europeen",
+            "name": "Premier voyage européen",
+            "category": "Premiers pas",
+            "kind": "simple",
+            "grade": "Confirmé",
+            "condition": "Participer à votre première compétition européenne.",
+            "icon": "🌍",
+            "hidden": false
+        },
+        {
+            "id": "roi_deurope",
+            "name": "Roi d'Europe",
+            "category": "Premiers pas",
+            "kind": "simple",
+            "grade": "Élite",
+            "condition": "Remporter votre première compétition européenne.",
+            "icon": "👑",
+            "hidden": false
+        },
+        {
+            "id": "remontada",
+            "name": "Remontada",
+            "category": "Succès cachés",
+            "kind": "simple",
+            "grade": "Élite",
+            "condition": "Après une défaite d'au moins 4 buts à l'aller, remporter la manche retour d'au moins 5 buts d'écart pour renverser la qualification.",
+            "icon": "🔥",
+            "hidden": true
+        },
+        {
+            "id": "a_la_derniere_seconde",
+            "name": "À la dernière seconde",
+            "category": "Exploits de match",
+            "kind": "simple",
+            "grade": "Expert",
+            "condition": "Marquer le but de la victoire après la 90e minute.",
+            "icon": "⏰",
+            "hidden": false
+        },
+        {
+            "id": "ca_passe",
+            "name": "Ça passe !",
+            "category": "Exploits de match",
+            "kind": "simple",
+            "grade": "Expert",
+            "condition": "Remporter un match après avoir choisi trois options risquées durant la rencontre.",
+            "icon": "🎰",
+            "hidden": false
+        },
+        {
+            "id": "le_mur",
+            "name": "Le Mur",
+            "category": "Exploits de match",
+            "kind": "simple",
+            "grade": "Confirmé",
+            "condition": "Gagner un match sans concéder le moindre tir cadré.",
+            "icon": "🧱",
+            "hidden": false
+        },
+        {
+            "id": "festival_offensif",
+            "name": "Festival offensif",
+            "category": "Exploits de match",
+            "kind": "simple",
+            "grade": "Expert",
+            "condition": "Marquer au moins 6 buts dans un même match.",
+            "icon": "🎆",
+            "hidden": false
+        },
+        {
+            "id": "verrouille",
+            "name": "Verrouillé",
+            "category": "Exploits de match",
+            "kind": "simple",
+            "grade": "Apprenti",
+            "condition": "Ne concéder aucune occasion franche durant un match.",
+            "icon": "🔒",
+            "hidden": false
+        },
+        {
+            "id": "coaching_parfait",
+            "name": "Coaching parfait",
+            "category": "Exploits de match",
+            "kind": "simple",
+            "grade": "Élite",
+            "condition": "Réussir tous les événements de coaching d'un même match.",
+            "icon": "💯",
+            "hidden": false
+        },
+        {
+            "id": "fergie_time",
+            "name": "Fergie Time",
+            "category": "Exploits de match",
+            "kind": "simple",
+            "grade": "Élite",
+            "condition": "Marquer le but de la victoire sur une décision de coaching prise après la 90e minute.",
+            "icon": "🕰️",
+            "hidden": false
+        },
+        {
+            "id": "le_bus",
+            "name": "Le Bus",
+            "category": "Exploits de match",
+            "kind": "simple",
+            "grade": "Expert",
+            "condition": "Choisir une approche défensive dans les dernières minutes et conserver une victoire d'un but.",
+            "icon": "🚌",
+            "hidden": false
+        },
+        {
+            "id": "on_ferme",
+            "name": "On ferme !",
+            "category": "Exploits de match",
+            "kind": "simple",
+            "grade": "Confirmé",
+            "condition": "Choisir une approche défensive dans les dernières minutes et conserver votre avantage jusqu'au coup de sifflet final.",
+            "icon": "🚪",
+            "hidden": false
+        },
+        {
+            "id": "tout_pour_lattaque",
+            "name": "Tout pour l'attaque",
+            "category": "Exploits de match",
+            "kind": "simple",
+            "grade": "Expert",
+            "condition": "Choisir une approche offensive dans les dernières minutes et marquer le but de la victoire.",
+            "icon": "⚔️",
+            "hidden": false
+        },
+        {
+            "id": "le_hold_up",
+            "name": "Le Hold-up",
+            "category": "Exploits de match",
+            "kind": "simple",
+            "grade": "Élite",
+            "condition": "Choisir de fermer le jeu alors que l'adversaire domine fortement, et remporter le match.",
+            "icon": "🎩",
+            "hidden": false
+        },
+        {
+            "id": "catenaccio",
+            "name": "Catenaccio",
+            "category": "Exploits de match",
+            "kind": "simple",
+            "grade": "Élite",
+            "condition": "Enchaîner plusieurs décisions défensives consécutives et remporter le match sans encaisser.",
+            "icon": "⛓️",
+            "hidden": false
+        },
+        {
+            "id": "le_declic",
+            "name": "Le Déclic",
+            "category": "Exploits de match",
+            "kind": "simple",
+            "grade": "Expert",
+            "condition": "Changer d'approche à la mi-temps après avoir été mené ou tenu en échec, et remporter le match.",
+            "icon": "💡",
+            "hidden": false
+        },
+        {
+            "id": "le_12e_homme",
+            "name": "Le 12e homme",
+            "category": "Gestion des joueurs",
+            "kind": "simple",
+            "grade": "Expert",
+            "condition": "Prendre au moins trois décisions de coaching au net impact positif dans un même match.",
+            "icon": "🙌",
+            "hidden": false
+        },
+        {
+            "id": "invincible_simple",
+            "name": "Invincible",
+            "category": "Exploits de saison",
+            "kind": "simple",
+            "grade": "Élite",
+            "condition": "Terminer une saison sans défaite.",
+            "icon": "🛡️",
+            "hidden": false
+        },
+        {
+            "id": "aucun_regret",
+            "name": "Aucun regret",
+            "category": "Exploits de saison",
+            "kind": "simple",
+            "grade": "Expert",
+            "condition": "Terminer une saison sans blessure.",
+            "icon": "💚",
+            "hidden": false
+        },
+        {
+            "id": "discipline_parfaite",
+            "name": "Discipline parfaite",
+            "category": "Exploits de saison",
+            "kind": "simple",
+            "grade": "Confirmé",
+            "condition": "Terminer une saison sans carton rouge.",
+            "icon": "🟩",
+            "hidden": false
+        },
+        {
+            "id": "le_triple",
+            "name": "Le Triplé",
+            "category": "Exploits de saison",
+            "kind": "simple",
+            "grade": "Légendaire",
+            "condition": "Remporter le championnat, la coupe nationale et une compétition européenne la même saison.",
+            "icon": "🎖️",
+            "hidden": false
+        },
+        {
+            "id": "saison_parfaite",
+            "name": "Saison parfaite",
+            "category": "Exploits de saison",
+            "kind": "simple",
+            "grade": "Légendaire",
+            "condition": "Remporter tous les matchs de la saison.",
+            "icon": "🌟",
+            "hidden": false
+        },
+        {
+            "id": "jamais_deux_sans_trois",
+            "name": "Jamais deux sans trois",
+            "category": "Exploits de saison",
+            "kind": "simple",
+            "grade": "Élite",
+            "condition": "Remporter trois championnats consécutifs.",
+            "icon": "🥇",
+            "hidden": false
+        },
+        {
+            "id": "vainqueur_europa_league",
+            "name": "Vainqueur de l'Europa League",
+            "category": "Europe",
+            "kind": "simple",
+            "grade": "Élite",
+            "condition": "Remporter l'Europa League.",
+            "icon": "🔶",
+            "hidden": false
+        },
+        {
+            "id": "vainqueur_ligue_conference",
+            "name": "Vainqueur de la Ligue Conférence",
+            "category": "Europe",
+            "kind": "simple",
+            "grade": "Expert",
+            "condition": "Remporter la Ligue Conférence.",
+            "icon": "🟢",
+            "hidden": false
+        },
+        {
+            "id": "empereur_deurope",
+            "name": "Empereur d'Europe",
+            "category": "Europe",
+            "kind": "simple",
+            "grade": "Légendaire",
+            "condition": "Remporter les trois compétitions européennes au cours de votre carrière.",
+            "icon": "🌐",
+            "hidden": false
+        },
+        {
+            "id": "equipe_de_reve",
+            "name": "Équipe de rêve",
+            "category": "Draft",
+            "kind": "simple",
+            "grade": "Élite",
+            "condition": "Constituer un onze entièrement composé de joueurs notés 90+.",
+            "icon": "⭐",
+            "hidden": false
+        },
+        {
+            "id": "galactiques",
+            "name": "Galactiques",
+            "category": "Draft",
+            "kind": "simple",
+            "grade": "Expert",
+            "condition": "Aligner plusieurs Ballons d'Or dans la même équipe.",
+            "icon": "🌟",
+            "hidden": false
+        },
+        {
+            "id": "le_pari_payant",
+            "name": "Le Pari Payant",
+            "category": "Draft",
+            "kind": "simple",
+            "grade": "Expert",
+            "condition": "Sélectionner un joueur moins bien noté qui devient décisif en finale.",
+            "icon": "🃏",
+            "hidden": false
+        },
+        {
+            "id": "coach_total",
+            "name": "Coach Total",
+            "category": "Carrière",
+            "kind": "simple",
+            "grade": "Légendaire",
+            "condition": "Obtenir le rang Légendaire sur tous les badges.",
+            "icon": "👔",
+            "hidden": false
+        },
+        {
+            "id": "le_miracle",
+            "name": "Le Miracle",
+            "category": "Succès cachés",
+            "kind": "simple",
+            "grade": "Légendaire",
+            "condition": "Gagner un match après avoir été mené de trois buts.",
+            "icon": "✨",
+            "hidden": true
+        },
+        {
+            "id": "imprevisible",
+            "name": "Imprévisible",
+            "category": "Succès cachés",
+            "kind": "simple",
+            "grade": "Élite",
+            "condition": "Développer un profil de coach parfaitement équilibré.",
+            "icon": "🎭",
+            "hidden": true
+        },
+        {
+            "id": "jamais_panique",
+            "name": "Jamais paniqué",
+            "category": "Succès cachés",
+            "kind": "simple",
+            "grade": "Expert",
+            "condition": "Ne jamais modifier votre tactique pendant une saison entière.",
+            "icon": "🧘",
+            "hidden": true
+        },
+        {
+            "id": "le_destin",
+            "name": "Le Destin",
+            "category": "Succès cachés",
+            "kind": "simple",
+            "grade": "Légendaire",
+            "condition": "Marquer sur votre dernière action du dernier match de la saison pour décrocher un titre.",
+            "icon": "🎬",
+            "hidden": true
+        },
+        {
+            "id": "le_special_one",
+            "name": "Le Special One",
+            "category": "Succès cachés",
+            "kind": "simple",
+            "grade": "Légendaire",
+            "condition": "Débloquer tous les badges au rang Légendaire, obtenir tous les succès et remporter toutes les compétitions disponibles au moins une fois.",
+            "icon": "👑",
+            "hidden": true
+        },
+        {
+            "id": "do_brazil",
+            "name": "Do Brazil",
+            "category": "Succès cachés",
+            "kind": "simple",
+            "grade": "Légendaire",
+            "condition": "Remporter un match sur le score de 7-1.",
+            "icon": "🇧🇷",
+            "hidden": true
+        },
+        {
+            "id": "die_ohrfeige",
+            "name": "Die Ohrfeige",
+            "category": "Succès cachés",
+            "kind": "simple",
+            "grade": "Légendaire",
+            "condition": "Remporter un match 8-2 face à un club de niveau égal ou supérieur.",
+            "icon": "🖐️",
+            "hidden": true
+        }
+    ]
+}

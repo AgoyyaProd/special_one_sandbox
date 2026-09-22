@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 9.03 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.Ombre_x0020_portée{fill:none;}
+	.Arrondis_x0020_2 pt{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.Miroir_x0020_dynamique X{fill:none;}
+	.Biseau_x0020_adouci{fill:url(#SVGID_1_);}
+	.Crépuscule{fill:#FFFFFF;}
+	.Feuillage_GS{fill:#FFDD00;}
+	.Pompadour_GS{fill-rule:evenodd;clip-rule:evenodd;fill:#51AEE2;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0.7071" y2="0.7071">
+	<stop  offset="0" style="stop-color:#E6E6EB"/>
+	<stop  offset="0.1738" style="stop-color:#E2E2E6"/>
+	<stop  offset="0.352" style="stop-color:#D5D4D8"/>
+	<stop  offset="0.5323" style="stop-color:#C0BFC2"/>
+	<stop  offset="0.7139" style="stop-color:#A4A2A4"/>
+	<stop  offset="0.8949" style="stop-color:#828282"/>
+	<stop  offset="1" style="stop-color:#6B6E6E"/>
+</linearGradient>
+<g>
+	<path d="M142.1,0v717.01c0,47.7,25.49,91.77,66.87,115.62c96.81,55.79,193.61,111.58,290.42,167.37l291.64-168.08
+		C832.41,808.07,857.9,764,857.9,716.3V0H142.1z M823.03,696.2c0,47.7-25.49,91.77-66.87,115.62L499.39,959.8L243.85,812.53
+		c-41.38-23.85-66.87-67.92-66.87-115.62V34.82h646.05V696.2z"/>
+	<path d="M389.29,823.46l93.01,53.6V505.65l-93.01-53.59l-47.53-27.4V210h47.53v166.56h93.01V152.44
+		c0-19.48-15.82-35.28-35.34-35.28H284.1c-19.52,0-35.34,15.8-35.34,35.28v325.84l93.01,53.59l47.53,27.4v157.68l-47.53-27.39
+		v-82.46l-93.01-53.6v188.97l93.01,53.6L389.29,823.46z"/>
+	<path d="M663.32,796.77l93.01-53.6V152.44c0-19.48-15.82-35.28-35.34-35.28H558.13c-19.52,0-35.34,15.8-35.34,35.28v725.33
+		l93.01-53.6L663.32,796.77z M615.79,210h47.53v479.57l-47.53,27.39V210z"/>
+</g>
+</svg>

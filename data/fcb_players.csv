@@ -1,0 +1,459 @@
+Club,Saison,Numero,Joueur,Nom d'usage,Nationalite,Postes,Note
+FC Barcelone,2004-2005,1,Víctor Valdés,,Spain,G,84
+FC Barcelone,2004-2005,25,Rüştü Reçber,,Turkey,G,81
+FC Barcelone,2004-2005,13,Albert Jorquera,,Spain,G,72
+FC Barcelone,2004-2005,2,Juliano Belletti,,Brazil,DD|MD,82
+FC Barcelone,2004-2005,4,Rafael Márquez,,Mexico,DC|MDC|DD,85
+FC Barcelone,2004-2005,5,Carles Puyol,,Spain,DC|DD|DG,87
+FC Barcelone,2004-2005,12,Giovanni van Bronckhorst,,Netherlands,DG|MG|MC,82
+FC Barcelone,2004-2005,16,Sylvinho,,Brazil,DG|MG,80
+FC Barcelone,2004-2005,23,Oleguer Presas,Oleguer,Spain,DD|DC,77
+FC Barcelone,2004-2005,21,Fernando Navarro,,Spain,DG|DC,75
+FC Barcelone,2004-2005,6,Xavi,,Spain,MC|MDC|MOC,88
+FC Barcelone,2004-2005,20,Deco,,Portugal,MOC|MC|MG|MD,88
+FC Barcelone,2004-2005,15,Edmílson,,Brazil,MDC|MC|DC,82
+FC Barcelone,2004-2005,19,Thiago Motta,,Brazil,MDC|MC,78
+FC Barcelone,2004-2005,18,Gabri,,Spain,MC|MD|MDC,77
+FC Barcelone,2004-2005,24,Andrés Iniesta,,Spain,MC|MOC|MG,81
+FC Barcelone,2004-2005,10,Ronaldinho,,Brazil,AG|MOC|MG|AD,94
+FC Barcelone,2004-2005,9,Samuel Eto'o,,Cameroon,BU|AD|AG|MOC,89
+FC Barcelone,2004-2005,7,Ludovic Giuly,,France,AD|MD|MOC,84
+FC Barcelone,2004-2005,17,Henrik Larsson,,Sweden,BU|MOC|AG,83
+FC Barcelone,2004-2005,27,Maxi López,,Argentina,BU|MOC,74
+FC Barcelone,2005-2006,1,Víctor Valdés,,Spain,G,85
+FC Barcelone,2005-2006,25,Rüştü Reçber,,Turkey,G,79
+FC Barcelone,2005-2006,13,Albert Jorquera,,Spain,G,73
+FC Barcelone,2005-2006,2,Juliano Belletti,,Brazil,DD|MD,82
+FC Barcelone,2005-2006,4,Rafael Márquez,,Mexico,DC|MDC|DD,85
+FC Barcelone,2005-2006,5,Carles Puyol,,Spain,DC|DD|DG,88
+FC Barcelone,2005-2006,12,Giovanni van Bronckhorst,,Netherlands,DG|MG|MC,81
+FC Barcelone,2005-2006,16,Sylvinho,,Brazil,DG|MG,80
+FC Barcelone,2005-2006,21,Oleguer Presas,Oleguer,Spain,DD|DC,78
+FC Barcelone,2005-2006,6,Xavi,,Spain,MC|MDC|MOC,88
+FC Barcelone,2005-2006,20,Deco,,Portugal,MOC|MC|MG|MD,88
+FC Barcelone,2005-2006,15,Edmílson,,Brazil,MDC|MC|DC,82
+FC Barcelone,2005-2006,19,Thiago Motta,,Brazil,MDC|MC,78
+FC Barcelone,2005-2006,18,Gabri,,Spain,MC|MD|MDC,77
+FC Barcelone,2005-2006,24,Andrés Iniesta,,Spain,MC|MOC|MG,83
+FC Barcelone,2005-2006,10,Ronaldinho,,Brazil,AG|MOC|MG|AD,94
+FC Barcelone,2005-2006,9,Samuel Eto'o,,Cameroon,BU|AD|AG|MOC,90
+FC Barcelone,2005-2006,7,Ludovic Giuly,,France,AD|MD|MOC,83
+FC Barcelone,2005-2006,17,Henrik Larsson,,Sweden,BU|MOC|AG,82
+FC Barcelone,2005-2006,30,Lionel Messi,,Argentina,AD|MOC|BU|MD,80
+FC Barcelone,2005-2006,22,Santiago Ezquerro,,Spain,AG|BU|AD,76
+FC Barcelone,2005-2006,11,Maxi López,,Argentina,BU|MOC,75
+FC Barcelone,2006-2007,1,Víctor Valdés,,Spain,G,86
+FC Barcelone,2006-2007,13,Albert Jorquera,,Spain,G,74
+FC Barcelone,2006-2007,2,Juliano Belletti,,Brazil,DD|MD,81
+FC Barcelone,2006-2007,3,Lilian Thuram,,France,DC|DD,85
+FC Barcelone,2006-2007,4,Rafael Márquez,,Mexico,DC|MDC|DD,85
+FC Barcelone,2006-2007,5,Carles Puyol,,Spain,DC|DD|DG,88
+FC Barcelone,2006-2007,12,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,84
+FC Barcelone,2006-2007,16,Sylvinho,,Brazil,DG|MG,79
+FC Barcelone,2006-2007,21,Oleguer Presas,Oleguer,Spain,DD|DC,78
+FC Barcelone,2006-2007,6,Xavi,,Spain,MC|MDC|MOC,89
+FC Barcelone,2006-2007,20,Deco,,Portugal,MOC|MC|MG|MD,87
+FC Barcelone,2006-2007,15,Edmílson,,Brazil,MDC|MC|DC,81
+FC Barcelone,2006-2007,24,Thiago Motta,,Brazil,MDC|MC,78
+FC Barcelone,2006-2007,8,Andrés Iniesta,,Spain,MC|MOC|MG,85
+FC Barcelone,2006-2007,10,Ronaldinho,,Brazil,AG|MOC|MG|AD,92
+FC Barcelone,2006-2007,9,Samuel Eto'o,,Cameroon,BU|AD|AG|MOC,89
+FC Barcelone,2006-2007,7,Ludovic Giuly,,France,AD|MD|MOC,82
+FC Barcelone,2006-2007,11,Eiður Guðjohnsen,,Iceland,BU|MOC|AG,83
+FC Barcelone,2006-2007,19,Lionel Messi,,Argentina,AD|MOC|BU|MD,84
+FC Barcelone,2006-2007,22,Santiago Ezquerro,,Spain,AG|BU|AD,76
+FC Barcelone,2006-2007,14,Javier Saviola,,Argentina,BU|MOC|AG|AD,82
+FC Barcelone,2007-2008,1,Víctor Valdés,,Spain,G,86
+FC Barcelone,2007-2008,13,Albert Jorquera,,Spain,G,74
+FC Barcelone,2007-2008,2,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,83
+FC Barcelone,2007-2008,3,Lilian Thuram,,France,DC|DD,83
+FC Barcelone,2007-2008,4,Rafael Márquez,,Mexico,DC|MDC|DD,84
+FC Barcelone,2007-2008,5,Carles Puyol,,Spain,DC|DD|DG,88
+FC Barcelone,2007-2008,16,Sylvinho,,Brazil,DG|MG,78
+FC Barcelone,2007-2008,21,Oleguer Presas,Oleguer,Spain,DD|DC,77
+FC Barcelone,2007-2008,22,Éric Abidal,,France,DG|DC|MG,84
+FC Barcelone,2007-2008,25,Gabriel Milito,,Argentina,DC|DG,82
+FC Barcelone,2007-2008,6,Xavi,,Spain,MC|MDC|MOC,89
+FC Barcelone,2007-2008,20,Deco,,Portugal,MOC|MC|MG|MD,86
+FC Barcelone,2007-2008,24,Yaya Touré,,Ivory Coast,MDC|MC|DC|MOC,85
+FC Barcelone,2007-2008,8,Andrés Iniesta,,Spain,MC|MOC|MG,86
+FC Barcelone,2007-2008,15,Edmílson,,Brazil,MDC|MC|DC,80
+FC Barcelone,2007-2008,10,Ronaldinho,,Brazil,AG|MOC|MG|AD,89
+FC Barcelone,2007-2008,9,Samuel Eto'o,,Cameroon,BU|AD|AG|MOC,88
+FC Barcelone,2007-2008,14,Thierry Henry,,France,BU|AG|AD|MG,88
+FC Barcelone,2007-2008,11,Eiður Guðjohnsen,,Iceland,BU|MOC|AG,82
+FC Barcelone,2007-2008,19,Lionel Messi,,Argentina,AD|MOC|BU|MD,87
+FC Barcelone,2007-2008,27,Bojan Krkić,Bojan,Spain,BU|AG|MOC,77
+FC Barcelone,2007-2008,17,Giovani dos Santos,,Mexico,AG|AD|MOC|MG,77
+FC Barcelone,2008-2009,1,Víctor Valdés,,Spain,G,87
+FC Barcelone,2008-2009,13,José Manuel Pinto,,Spain,G,77
+FC Barcelone,2008-2009,2,Dani Alves,,Brazil,DD|MD|AD,86
+FC Barcelone,2008-2009,3,Gerard Piqué,,Spain,DC|DD|MDC,82
+FC Barcelone,2008-2009,4,Rafael Márquez,,Mexico,DC|MDC|DD,84
+FC Barcelone,2008-2009,5,Carles Puyol,,Spain,DC|DD|DG,88
+FC Barcelone,2008-2009,22,Éric Abidal,,France,DG|DC|MG,85
+FC Barcelone,2008-2009,23,Martín Cáceres,,Uruguay,DC|DD|DG,78
+FC Barcelone,2008-2009,19,Gabriel Milito,,Argentina,DC|DG,81
+FC Barcelone,2008-2009,12,Sylvinho,,Brazil,DG|MG,77
+FC Barcelone,2008-2009,6,Xavi,,Spain,MC|MDC|MOC,90
+FC Barcelone,2008-2009,24,Yaya Touré,,Ivory Coast,MDC|MC|DC|MOC,85
+FC Barcelone,2008-2009,8,Andrés Iniesta,,Spain,MC|MOC|MG,88
+FC Barcelone,2008-2009,15,Seydou Keita,,Mali,MC|MDC|MOC|MD,83
+FC Barcelone,2008-2009,16,Sergio Busquets,,Spain,MDC|MC|DC,78
+FC Barcelone,2008-2009,18,Aliaksandr Hleb,,Belarus,MOC|MD|MC|MG|AD,83
+FC Barcelone,2008-2009,10,Lionel Messi,,Argentina,AD|MOC|BU|MD,90
+FC Barcelone,2008-2009,9,Samuel Eto'o,,Cameroon,BU|AD|AG|MOC,89
+FC Barcelone,2008-2009,14,Thierry Henry,,France,BU|AG|AD|MG,87
+FC Barcelone,2008-2009,11,Bojan Krkić,Bojan,Spain,BU|AG|MOC,79
+FC Barcelone,2008-2009,17,Pedro Rodríguez,Pedro,Spain,AD|AG|BU|MD,75
+FC Barcelone,2009-2010,1,Víctor Valdés,,Spain,G,88
+FC Barcelone,2009-2010,13,José Manuel Pinto,,Spain,G,77
+FC Barcelone,2009-2010,2,Dani Alves,,Brazil,DD|MD|AD,87
+FC Barcelone,2009-2010,3,Gerard Piqué,,Spain,DC|DD|MDC,85
+FC Barcelone,2009-2010,4,Rafael Márquez,,Mexico,DC|MDC|DD,83
+FC Barcelone,2009-2010,5,Carles Puyol,,Spain,DC|DD|DG,87
+FC Barcelone,2009-2010,22,Éric Abidal,,France,DG|DC|MG,85
+FC Barcelone,2009-2010,19,Maxwell,,Brazil,DG|MG,82
+FC Barcelone,2009-2010,20,Dmytro Chyhrynskyi,,Ukraine,DC|DD,79
+FC Barcelone,2009-2010,21,Gabriel Milito,,Argentina,DC|DG,80
+FC Barcelone,2009-2010,6,Xavi,,Spain,MC|MDC|MOC,91
+FC Barcelone,2009-2010,24,Yaya Touré,,Ivory Coast,MDC|MC|DC|MOC,85
+FC Barcelone,2009-2010,8,Andrés Iniesta,,Spain,MC|MOC|MG,89
+FC Barcelone,2009-2010,15,Seydou Keita,,Mali,MC|MDC|MOC|MD,83
+FC Barcelone,2009-2010,16,Sergio Busquets,,Spain,MDC|MC|DC,82
+FC Barcelone,2009-2010,10,Lionel Messi,,Argentina,AD|MOC|BU|MD,92
+FC Barcelone,2009-2010,9,Zlatan Ibrahimović,,Sweden,BU|MOC|AG,88
+FC Barcelone,2009-2010,14,Thierry Henry,,France,BU|AG|AD|MG,85
+FC Barcelone,2009-2010,11,Bojan Krkić,Bojan,Spain,BU|AG|MOC,80
+FC Barcelone,2009-2010,17,Pedro Rodríguez,Pedro,Spain,AD|AG|BU|MD,80
+FC Barcelone,2009-2010,27,Jeffrén Suárez,Jeffrén,Spain,AD|AG|BU,74
+FC Barcelone,2010-2011,1,Víctor Valdés,,Spain,G,88
+FC Barcelone,2010-2011,13,José Manuel Pinto,,Spain,G,77
+FC Barcelone,2010-2011,2,Dani Alves,,Brazil,DD|MD|AD,87
+FC Barcelone,2010-2011,3,Gerard Piqué,,Spain,DC|DD|MDC,86
+FC Barcelone,2010-2011,5,Carles Puyol,,Spain,DC|DD|DG,86
+FC Barcelone,2010-2011,22,Éric Abidal,,France,DG|DC|MG,84
+FC Barcelone,2010-2011,19,Maxwell,,Brazil,DG|MG,82
+FC Barcelone,2010-2011,23,Gabriel Milito,,Argentina,DC|DG,79
+FC Barcelone,2010-2011,14,Javier Mascherano,,Argentina,MDC|MC|DC,85
+FC Barcelone,2010-2011,6,Xavi,,Spain,MC|MDC|MOC,91
+FC Barcelone,2010-2011,8,Andrés Iniesta,,Spain,MC|MOC|MG,90
+FC Barcelone,2010-2011,16,Sergio Busquets,,Spain,MDC|MC|DC,84
+FC Barcelone,2010-2011,15,Seydou Keita,,Mali,MC|MDC|MOC|MD,82
+FC Barcelone,2010-2011,10,Lionel Messi,,Argentina,AD|MOC|BU|MD,94
+FC Barcelone,2010-2011,9,Bojan Krkić,Bojan,Spain,BU|AG|MOC,80
+FC Barcelone,2010-2011,17,Pedro Rodríguez,Pedro,Spain,AD|AG|BU|MD,84
+FC Barcelone,2010-2011,11,David Villa,,Spain,BU|AG|MOC,88
+FC Barcelone,2010-2011,20,Ibrahim Afellay,,Netherlands,MG|AG|MOC|MD,80
+FC Barcelone,2010-2011,27,Jeffrén Suárez,Jeffrén,Spain,AD|AG|BU,75
+FC Barcelone,2010-2011,21,Adriano Correia,Adriano,Brazil,DG|MG|DD,80
+FC Barcelone,2011-2012,1,Víctor Valdés,,Spain,G,88
+FC Barcelone,2011-2012,13,José Manuel Pinto,,Spain,G,77
+FC Barcelone,2011-2012,2,Dani Alves,,Brazil,DD|MD|AD,87
+FC Barcelone,2011-2012,3,Gerard Piqué,,Spain,DC|DD|MDC,86
+FC Barcelone,2011-2012,5,Carles Puyol,,Spain,DC|DD|DG,85
+FC Barcelone,2011-2012,22,Éric Abidal,,France,DG|DC|MG,83
+FC Barcelone,2011-2012,21,Adriano Correia,Adriano,Brazil,DG|MG|DD,81
+FC Barcelone,2011-2012,14,Javier Mascherano,,Argentina,MDC|MC|DC,85
+FC Barcelone,2011-2012,6,Xavi,,Spain,MC|MDC|MOC,90
+FC Barcelone,2011-2012,8,Andrés Iniesta,,Spain,MC|MOC|MG,90
+FC Barcelone,2011-2012,16,Sergio Busquets,,Spain,MDC|MC|DC,85
+FC Barcelone,2011-2012,15,Seydou Keita,,Mali,MC|MDC|MOC|MD,81
+FC Barcelone,2011-2012,4,Cesc Fàbregas,,Spain,MOC|MC|MDC,88
+FC Barcelone,2011-2012,28,Thiago Alcântara,,Spain,MC|MOC|MDC,80
+FC Barcelone,2011-2012,10,Lionel Messi,,Argentina,AD|MOC|BU|MD,95
+FC Barcelone,2011-2012,7,David Villa,,Spain,BU|AG|MOC,88
+FC Barcelone,2011-2012,17,Pedro Rodríguez,Pedro,Spain,AD|AG|BU|MD,84
+FC Barcelone,2011-2012,9,Alexis Sánchez,,Chile,AD|AG|MD|BU,82
+FC Barcelone,2011-2012,11,Ibrahim Afellay,,Netherlands,MG|AG|MOC|MD,79
+FC Barcelone,2011-2012,19,Isaac Cuenca,,Spain,AG|AD|MG,75
+FC Barcelone,2011-2012,20,Cristian Tello,,Spain,AG|AD|BU,75
+FC Barcelone,2012-2013,1,Víctor Valdés,,Spain,G,87
+FC Barcelone,2012-2013,13,José Manuel Pinto,,Spain,G,76
+FC Barcelone,2012-2013,2,Dani Alves,,Brazil,DD|MD|AD,86
+FC Barcelone,2012-2013,3,Gerard Piqué,,Spain,DC|DD|MDC,86
+FC Barcelone,2012-2013,5,Carles Puyol,,Spain,DC|DD|DG,84
+FC Barcelone,2012-2013,22,Éric Abidal,,France,DG|DC|MG,81
+FC Barcelone,2012-2013,21,Adriano Correia,Adriano,Brazil,DG|MG|DD,81
+FC Barcelone,2012-2013,14,Javier Mascherano,,Argentina,MDC|MC|DC,85
+FC Barcelone,2012-2013,23,Marc Bartra,,Spain,DC|DD,78
+FC Barcelone,2012-2013,24,Jordi Alba,,Spain,DG|MG|AG,83
+FC Barcelone,2012-2013,6,Xavi,,Spain,MC|MDC|MOC,89
+FC Barcelone,2012-2013,8,Andrés Iniesta,,Spain,MC|MOC|MG,90
+FC Barcelone,2012-2013,16,Sergio Busquets,,Spain,MDC|MC|DC,86
+FC Barcelone,2012-2013,15,Seydou Keita,,Mali,MC|MDC|MOC|MD,80
+FC Barcelone,2012-2013,4,Cesc Fàbregas,,Spain,MOC|MC|MDC,87
+FC Barcelone,2012-2013,12,Thiago Alcântara,,Spain,MC|MOC|MDC,82
+FC Barcelone,2012-2013,10,Lionel Messi,,Argentina,AD|MOC|BU|MD,96
+FC Barcelone,2012-2013,7,David Villa,,Spain,BU|AG|MOC,86
+FC Barcelone,2012-2013,17,Pedro Rodríguez,Pedro,Spain,AD|AG|BU|MD,84
+FC Barcelone,2012-2013,9,Alexis Sánchez,,Chile,AD|AG|MD|BU,83
+FC Barcelone,2012-2013,20,Cristian Tello,,Spain,AG|AD|BU,77
+FC Barcelone,2013-2014,1,Víctor Valdés,,Spain,G,86
+FC Barcelone,2013-2014,13,José Manuel Pinto,,Spain,G,75
+FC Barcelone,2013-2014,2,Dani Alves,,Brazil,DD|MD|AD,85
+FC Barcelone,2013-2014,3,Gerard Piqué,,Spain,DC|DD|MDC,86
+FC Barcelone,2013-2014,5,Carles Puyol,,Spain,DC|DD|DG,82
+FC Barcelone,2013-2014,21,Adriano Correia,Adriano,Brazil,DG|MG|DD,80
+FC Barcelone,2013-2014,14,Javier Mascherano,,Argentina,MDC|MC|DC,85
+FC Barcelone,2013-2014,15,Marc Bartra,,Spain,DC|DD,79
+FC Barcelone,2013-2014,18,Jordi Alba,,Spain,DG|MG|AG,84
+FC Barcelone,2013-2014,6,Xavi,,Spain,MC|MDC|MOC,87
+FC Barcelone,2013-2014,8,Andrés Iniesta,,Spain,MC|MOC|MG,89
+FC Barcelone,2013-2014,16,Sergio Busquets,,Spain,MDC|MC|DC,86
+FC Barcelone,2013-2014,12,Rafinha,,Brazil,MC|MOC|MD,78
+FC Barcelone,2013-2014,4,Cesc Fàbregas,,Spain,MOC|MC|MDC,86
+FC Barcelone,2013-2014,22,Alex Song,,Cameroon,MDC|MC|DC|MOC,80
+FC Barcelone,2013-2014,10,Lionel Messi,,Argentina,AD|MOC|BU|MD,94
+FC Barcelone,2013-2014,9,Alexis Sánchez,,Chile,AD|AG|MD|BU,85
+FC Barcelone,2013-2014,7,Pedro Rodríguez,Pedro,Spain,AD|AG|BU|MD,84
+FC Barcelone,2013-2014,11,Neymar,,Brazil,AG|AD|BU|MOC,86
+FC Barcelone,2013-2014,17,Cristian Tello,,Spain,AG|AD|BU,77
+FC Barcelone,2014-2015,1,Marc-André ter Stegen,,Germany,G,83
+FC Barcelone,2014-2015,13,Claudio Bravo,,Chile,G,85
+FC Barcelone,2014-2015,2,Dani Alves,,Brazil,DD|MD|AD,84
+FC Barcelone,2014-2015,3,Gerard Piqué,,Spain,DC|DD|MDC,87
+FC Barcelone,2014-2015,5,Carles Puyol,,Spain,DC|DD|DG,80
+FC Barcelone,2014-2015,14,Javier Mascherano,,Argentina,MDC|MC|DC,85
+FC Barcelone,2014-2015,18,Jordi Alba,,Spain,DG|MG|AG,85
+FC Barcelone,2014-2015,21,Adriano Correia,Adriano,Brazil,DG|MG|DD,79
+FC Barcelone,2014-2015,15,Marc Bartra,,Spain,DC|DD,80
+FC Barcelone,2014-2015,24,Jérémy Mathieu,,France,DC|DG|MDC,82
+FC Barcelone,2014-2015,23,Thomas Vermaelen,,Belgium,DC|DG,82
+FC Barcelone,2014-2015,6,Xavi,,Spain,MC|MDC|MOC,85
+FC Barcelone,2014-2015,8,Andrés Iniesta,,Spain,MC|MOC|MG,88
+FC Barcelone,2014-2015,16,Sergio Busquets,,Spain,MDC|MC|DC,87
+FC Barcelone,2014-2015,12,Rafinha,,Brazil,MC|MOC|MD,79
+FC Barcelone,2014-2015,4,Ivan Rakitić,,Croatia,MC|MOC|MDC|MD,85
+FC Barcelone,2014-2015,20,Sergi Roberto,,Spain,MC|DD|MD|MDC,79
+FC Barcelone,2014-2015,10,Lionel Messi,,Argentina,AD|MOC|BU|MD,94
+FC Barcelone,2014-2015,9,Luis Suárez,,Uruguay,BU|MOC|AG|AD,88
+FC Barcelone,2014-2015,11,Neymar,,Brazil,AG|AD|BU|MOC,88
+FC Barcelone,2014-2015,17,Pedro Rodríguez,Pedro,Spain,AD|AG|BU|MD,83
+FC Barcelone,2014-2015,7,Munir El Haddadi,Munir,Spain,BU|AG|AD,74
+FC Barcelone,2015-2016,1,Marc-André ter Stegen,,Germany,G,85
+FC Barcelone,2015-2016,13,Claudio Bravo,,Chile,G,85
+FC Barcelone,2015-2016,22,Dani Alves,,Brazil,DD|MD|AD,84
+FC Barcelone,2015-2016,3,Gerard Piqué,,Spain,DC|DD|MDC,87
+FC Barcelone,2015-2016,14,Javier Mascherano,,Argentina,MDC|MC|DC,85
+FC Barcelone,2015-2016,18,Jordi Alba,,Spain,DG|MG|AG,85
+FC Barcelone,2015-2016,24,Jérémy Mathieu,,France,DC|DG|MDC,81
+FC Barcelone,2015-2016,23,Thomas Vermaelen,,Belgium,DC|DG,81
+FC Barcelone,2015-2016,21,Adriano Correia,Adriano,Brazil,DG|MG|DD,78
+FC Barcelone,2015-2016,2,Douglas Pereira,Douglas,Brazil,DD|MD,74
+FC Barcelone,2015-2016,8,Andrés Iniesta,,Spain,MC|MOC|MG,87
+FC Barcelone,2015-2016,5,Sergio Busquets,,Spain,MDC|MC|DC,87
+FC Barcelone,2015-2016,12,Rafinha,,Brazil,MC|MOC|MD,80
+FC Barcelone,2015-2016,4,Ivan Rakitić,,Croatia,MC|MOC|MDC|MD,86
+FC Barcelone,2015-2016,20,Sergi Roberto,,Spain,MC|DD|MD|MDC,81
+FC Barcelone,2015-2016,19,Arda Turan,,Turkey,MOC|MD|AD|MG,83
+FC Barcelone,2015-2016,10,Lionel Messi,,Argentina,AD|MOC|BU|MD,94
+FC Barcelone,2015-2016,9,Luis Suárez,,Uruguay,BU|MOC|AG|AD,90
+FC Barcelone,2015-2016,11,Neymar,,Brazil,AG|AD|BU|MOC,90
+FC Barcelone,2015-2016,17,Munir El Haddadi,Munir,Spain,BU|AG|AD,75
+FC Barcelone,2015-2016,7,Aleix Vidal,,Spain,DD|MD|AD,79
+FC Barcelone,2016-2017,1,Marc-André ter Stegen,,Germany,G,86
+FC Barcelone,2016-2017,13,Jasper Cillessen,,Netherlands,G,82
+FC Barcelone,2016-2017,3,Gerard Piqué,,Spain,DC|DD|MDC,87
+FC Barcelone,2016-2017,14,Javier Mascherano,,Argentina,MDC|MC|DC,84
+FC Barcelone,2016-2017,23,Samuel Umtiti,,France,DC|DG,82
+FC Barcelone,2016-2017,18,Jordi Alba,,Spain,DG|MG|AG,85
+FC Barcelone,2016-2017,19,Lucas Digne,,France,DG|MG,80
+FC Barcelone,2016-2017,24,Jérémy Mathieu,,France,DC|DG|MDC,79
+FC Barcelone,2016-2017,2,Thomas Vermaelen,,Belgium,DC|DG,80
+FC Barcelone,2016-2017,20,Sergi Roberto,,Spain,MC|DD|MD|MDC,83
+FC Barcelone,2016-2017,5,Sergio Busquets,,Spain,MDC|MC|DC,87
+FC Barcelone,2016-2017,8,Andrés Iniesta,,Spain,MC|MOC|MG,86
+FC Barcelone,2016-2017,4,Ivan Rakitić,,Croatia,MC|MOC|MDC|MD,86
+FC Barcelone,2016-2017,21,André Gomes,,Portugal,MC|MDC|MOC,81
+FC Barcelone,2016-2017,6,Denis Suárez,,Spain,MOC|MC|MD|AD,79
+FC Barcelone,2016-2017,12,Rafinha,,Brazil,MC|MOC|MD,80
+FC Barcelone,2016-2017,7,Arda Turan,,Turkey,MOC|MD|AD|MG,82
+FC Barcelone,2016-2017,10,Lionel Messi,,Argentina,AD|MOC|BU|MD,93
+FC Barcelone,2016-2017,9,Luis Suárez,,Uruguay,BU|MOC|AG|AD,92
+FC Barcelone,2016-2017,11,Neymar,,Brazil,AG|AD|BU|MOC,92
+FC Barcelone,2016-2017,17,Paco Alcácer,,Spain,BU|MOC,79
+FC Barcelone,2017-2018,1,Marc-André ter Stegen,,Germany,G,87
+FC Barcelone,2017-2018,13,Jasper Cillessen,,Netherlands,G,82
+FC Barcelone,2017-2018,3,Gerard Piqué,,Spain,DC|DD|MDC,87
+FC Barcelone,2017-2018,23,Samuel Umtiti,,France,DC|DG,84
+FC Barcelone,2017-2018,2,Nélson Semedo,,Portugal,DD|MD,80
+FC Barcelone,2017-2018,18,Jordi Alba,,Spain,DG|MG|AG,86
+FC Barcelone,2017-2018,25,Thomas Vermaelen,,Belgium,DC|DG,79
+FC Barcelone,2017-2018,24,Yerry Mina,,Colombia,DC|DD,78
+FC Barcelone,2017-2018,20,Sergi Roberto,,Spain,MC|DD|MD|MDC,83
+FC Barcelone,2017-2018,5,Sergio Busquets,,Spain,MDC|MC|DC,87
+FC Barcelone,2017-2018,8,Andrés Iniesta,,Spain,MC|MOC|MG,85
+FC Barcelone,2017-2018,4,Ivan Rakitić,,Croatia,MC|MOC|MDC|MD,86
+FC Barcelone,2017-2018,15,Paulinho,,Brazil,MC|MOC|MDC,82
+FC Barcelone,2017-2018,21,André Gomes,,Portugal,MC|MDC|MOC,80
+FC Barcelone,2017-2018,6,Denis Suárez,,Spain,MOC|MC|MD|AD,79
+FC Barcelone,2017-2018,14,Philippe Coutinho,,Brazil,MOC|MG|AG|MC,86
+FC Barcelone,2017-2018,10,Lionel Messi,,Argentina,AD|MOC|BU|MD,94
+FC Barcelone,2017-2018,9,Luis Suárez,,Uruguay,BU|MOC|AG|AD,91
+FC Barcelone,2017-2018,11,Ousmane Dembélé,,France,AD|AG|MD|MG,83
+FC Barcelone,2017-2018,17,Paco Alcácer,,Spain,BU|MOC,80
+FC Barcelone,2018-2019,1,Marc-André ter Stegen,,Germany,G,88
+FC Barcelone,2018-2019,13,Jasper Cillessen,,Netherlands,G,82
+FC Barcelone,2018-2019,3,Gerard Piqué,,Spain,DC|DD|MDC,88
+FC Barcelone,2018-2019,23,Samuel Umtiti,,France,DC|DG,84
+FC Barcelone,2018-2019,15,Clément Lenglet,,France,DC|DG|MDC,82
+FC Barcelone,2018-2019,2,Nélson Semedo,,Portugal,DD|MD,81
+FC Barcelone,2018-2019,18,Jordi Alba,,Spain,DG|MG|AG,86
+FC Barcelone,2018-2019,20,Sergi Roberto,,Spain,MC|DD|MD|MDC,83
+FC Barcelone,2018-2019,5,Sergio Busquets,,Spain,MDC|MC|DC,87
+FC Barcelone,2018-2019,8,Arthur Melo,Arthur,Brazil,MC|MDC|MOC,81
+FC Barcelone,2018-2019,4,Ivan Rakitić,,Croatia,MC|MOC|MDC|MD,87
+FC Barcelone,2018-2019,22,Arturo Vidal,,Chile,MC|MDC|MOC,85
+FC Barcelone,2018-2019,7,Philippe Coutinho,,Brazil,MOC|MG|AG|MC,86
+FC Barcelone,2018-2019,14,Malcom,,Brazil,AD|AG|MD,79
+FC Barcelone,2018-2019,10,Lionel Messi,,Argentina,AD|MOC|BU|MD,94
+FC Barcelone,2018-2019,9,Luis Suárez,,Uruguay,BU|MOC|AG|AD,90
+FC Barcelone,2018-2019,11,Ousmane Dembélé,,France,AD|AG|MD|MG,85
+FC Barcelone,2018-2019,19,Kevin-Prince Boateng,,Ghana,BU|MOC|MC,77
+FC Barcelone,2019-2020,1,Marc-André ter Stegen,,Germany,G,89
+FC Barcelone,2019-2020,13,Neto,,Brazil,G,81
+FC Barcelone,2019-2020,3,Gerard Piqué,,Spain,DC|DD|MDC,87
+FC Barcelone,2019-2020,23,Samuel Umtiti,,France,DC|DG,82
+FC Barcelone,2019-2020,15,Clément Lenglet,,France,DC|DG|MDC,84
+FC Barcelone,2019-2020,2,Nélson Semedo,,Portugal,DD|MD,81
+FC Barcelone,2019-2020,18,Jordi Alba,,Spain,DG|MG|AG,85
+FC Barcelone,2019-2020,24,Junior Firpo,,Spain,DG|MG,78
+FC Barcelone,2019-2020,20,Sergi Roberto,,Spain,MC|DD|MD|MDC,82
+FC Barcelone,2019-2020,5,Sergio Busquets,,Spain,MDC|MC|DC,86
+FC Barcelone,2019-2020,8,Arthur Melo,Arthur,Brazil,MC|MDC|MOC,82
+FC Barcelone,2019-2020,4,Ivan Rakitić,,Croatia,MC|MOC|MDC|MD,84
+FC Barcelone,2019-2020,22,Arturo Vidal,,Chile,MC|MDC|MOC,84
+FC Barcelone,2019-2020,21,Frenkie de Jong,,Netherlands,MC|MDC|MOC,85
+FC Barcelone,2019-2020,10,Lionel Messi,,Argentina,AD|MOC|BU|MD,94
+FC Barcelone,2019-2020,9,Luis Suárez,,Uruguay,BU|MOC|AG|AD,89
+FC Barcelone,2019-2020,17,Antoine Griezmann,,France,BU|MOC|AG,89
+FC Barcelone,2019-2020,11,Ousmane Dembélé,,France,AD|AG|MD|MG,83
+FC Barcelone,2019-2020,31,Ansu Fati,,Spain,AG|AD|BU|MOC,76
+FC Barcelone,2019-2020,19,Martin Braithwaite,,Denmark,BU|AD|AG,78
+FC Barcelone,2020-2021,1,Marc-André ter Stegen,,Germany,G,88
+FC Barcelone,2020-2021,13,Neto,,Brazil,G,81
+FC Barcelone,2020-2021,3,Gerard Piqué,,Spain,DC|DD|MDC,86
+FC Barcelone,2020-2021,15,Clément Lenglet,,France,DC|DG|MDC,84
+FC Barcelone,2020-2021,4,Ronald Araújo,,Uruguay,DC|DD|MDC,78
+FC Barcelone,2020-2021,2,Sergiño Dest,,United States,DD|MD|DG,78
+FC Barcelone,2020-2021,18,Jordi Alba,,Spain,DG|MG|AG,84
+FC Barcelone,2020-2021,24,Junior Firpo,,Spain,DG|MG,77
+FC Barcelone,2020-2021,22,Óscar Mingueza,,Spain,DC|DD,75
+FC Barcelone,2020-2021,20,Sergi Roberto,,Spain,MC|DD|MD|MDC,81
+FC Barcelone,2020-2021,5,Sergio Busquets,,Spain,MDC|MC|DC,85
+FC Barcelone,2020-2021,21,Frenkie de Jong,,Netherlands,MC|MDC|MOC,86
+FC Barcelone,2020-2021,8,Miralem Pjanić,,Bosnia and Herzegovina,MC|MDC|MOC,83
+FC Barcelone,2020-2021,16,Pedri,,Spain,MC|MOC|MG,77
+FC Barcelone,2020-2021,14,Philippe Coutinho,,Brazil,MOC|MG|AG|MC,83
+FC Barcelone,2020-2021,10,Lionel Messi,,Argentina,AD|MOC|BU|MD,93
+FC Barcelone,2020-2021,7,Antoine Griezmann,,France,BU|MOC|AG,87
+FC Barcelone,2020-2021,11,Ousmane Dembélé,,France,AD|AG|MD|MG,83
+FC Barcelone,2020-2021,9,Martin Braithwaite,,Denmark,BU|AD|AG,78
+FC Barcelone,2020-2021,17,Francisco Trincão,Trincão,Portugal,AD|AG|MOC,77
+FC Barcelone,2020-2021,31,Ansu Fati,,Spain,AG|AD|BU|MOC,78
+FC Barcelone,2021-2022,1,Marc-André ter Stegen,,Germany,G,87
+FC Barcelone,2021-2022,13,Neto,,Brazil,G,80
+FC Barcelone,2021-2022,3,Gerard Piqué,,Spain,DC|DD|MDC,84
+FC Barcelone,2021-2022,4,Ronald Araújo,,Uruguay,DC|DD|MDC,82
+FC Barcelone,2021-2022,15,Clément Lenglet,,France,DC|DG|MDC,81
+FC Barcelone,2021-2022,24,Eric García,,Spain,DC|DD|MDC,79
+FC Barcelone,2021-2022,18,Jordi Alba,,Spain,DG|MG|AG,83
+FC Barcelone,2021-2022,2,Sergiño Dest,,United States,DD|MD|DG,78
+FC Barcelone,2021-2022,22,Óscar Mingueza,,Spain,DC|DD,76
+FC Barcelone,2021-2022,20,Sergi Roberto,,Spain,MC|DD|MD|MDC,80
+FC Barcelone,2021-2022,5,Sergio Busquets,,Spain,MDC|MC|DC,84
+FC Barcelone,2021-2022,21,Frenkie de Jong,,Netherlands,MC|MDC|MOC,86
+FC Barcelone,2021-2022,16,Pedri,,Spain,MC|MOC|MG,81
+FC Barcelone,2021-2022,30,Gavi,,Spain,MC|MOC|MDC,77
+FC Barcelone,2021-2022,27,Nico González,,Spain,MC|MDC|MOC,76
+FC Barcelone,2021-2022,10,Ansu Fati,,Spain,AG|AD|BU|MOC,79
+FC Barcelone,2021-2022,7,Ousmane Dembélé,,France,AD|AG|MD|MG,83
+FC Barcelone,2021-2022,9,Memphis Depay,,Netherlands,BU|AG|MOC|AD,85
+FC Barcelone,2021-2022,25,Pierre-Emerick Aubameyang,,Gabon,BU|AD|AG|MG|MOC,84
+FC Barcelone,2021-2022,19,Ferran Torres,,Spain,AG|BU|MD|AD,82
+FC Barcelone,2021-2022,11,Adama Traoré,,Spain,AD|AG|MD,79
+FC Barcelone,2021-2022,17,Luuk de Jong,,Netherlands,BU|MOC,77
+FC Barcelone,2022-2023,1,Marc-André ter Stegen,,Germany,G,88
+FC Barcelone,2022-2023,13,Iñaki Peña,,Spain,G,77
+FC Barcelone,2022-2023,3,Gerard Piqué,,Spain,DC|DD|MDC,82
+FC Barcelone,2022-2023,4,Ronald Araújo,,Uruguay,DC|DD|MDC,84
+FC Barcelone,2022-2023,23,Jules Koundé,,France,DC|DD|MDC,85
+FC Barcelone,2022-2023,15,Andreas Christensen,,Denmark,DC|MDC|DD,84
+FC Barcelone,2022-2023,24,Eric García,,Spain,DC|DD|MDC,79
+FC Barcelone,2022-2023,18,Jordi Alba,,Spain,DG|MG|AG,82
+FC Barcelone,2022-2023,28,Alejandro Balde,,Spain,DG|MG|AG,78
+FC Barcelone,2022-2023,20,Sergi Roberto,,Spain,MC|DD|MD|MDC,79
+FC Barcelone,2022-2023,5,Sergio Busquets,,Spain,MDC|MC|DC,84
+FC Barcelone,2022-2023,21,Frenkie de Jong,,Netherlands,MC|MDC|MOC,87
+FC Barcelone,2022-2023,8,Pedri,,Spain,MC|MOC|MG,85
+FC Barcelone,2022-2023,30,Gavi,,Spain,MC|MOC|MDC,80
+FC Barcelone,2022-2023,19,Franck Kessié,,Ivory Coast,MC|MDC|MOC,83
+FC Barcelone,2022-2023,9,Robert Lewandowski,,Poland,BU|MOC,91
+FC Barcelone,2022-2023,22,Raphinha,,Brazil,AD|AG|MD|MOC,83
+FC Barcelone,2022-2023,11,Ferran Torres,,Spain,AG|BU|MD|AD,81
+FC Barcelone,2022-2023,10,Ansu Fati,,Spain,AG|AD|BU|MOC,79
+FC Barcelone,2022-2023,7,Ousmane Dembélé,,France,AD|AG|MD|MG,84
+FC Barcelone,2023-2024,1,Marc-André ter Stegen,,Germany,G,88
+FC Barcelone,2023-2024,13,Iñaki Peña,,Spain,G,78
+FC Barcelone,2023-2024,4,Ronald Araújo,,Uruguay,DC|DD|MDC,86
+FC Barcelone,2023-2024,23,Jules Koundé,,France,DC|DD|MDC,85
+FC Barcelone,2023-2024,15,Andreas Christensen,,Denmark,DC|MDC|DD,84
+FC Barcelone,2023-2024,5,Íñigo Martínez,,Spain,DC|DG|MDC,82
+FC Barcelone,2023-2024,33,Pau Cubarsí,,Spain,DC|DD,77
+FC Barcelone,2023-2024,3,Alejandro Balde,,Spain,DG|MG|AG,81
+FC Barcelone,2023-2024,2,João Cancelo,,Portugal,DD|DG|MD|MG,86
+FC Barcelone,2023-2024,20,Sergi Roberto,,Spain,MC|DD|MD|MDC,78
+FC Barcelone,2023-2024,22,İlkay Gündoğan,,Germany,MC|MOC|MDC,86
+FC Barcelone,2023-2024,21,Frenkie de Jong,,Netherlands,MC|MDC|MOC,86
+FC Barcelone,2023-2024,8,Pedri,,Spain,MC|MOC|MG,85
+FC Barcelone,2023-2024,6,Gavi,,Spain,MC|MOC|MDC,82
+FC Barcelone,2023-2024,16,Fermín López,,Spain,MC|MOC|MG,78
+FC Barcelone,2023-2024,9,Robert Lewandowski,,Poland,BU|MOC,89
+FC Barcelone,2023-2024,11,Raphinha,,Brazil,AD|AG|MD|MOC,84
+FC Barcelone,2023-2024,27,Lamine Yamal,,Spain,AD|MD|AG,79
+FC Barcelone,2023-2024,7,Ferran Torres,,Spain,AG|BU|MD|AD,80
+FC Barcelone,2023-2024,14,João Félix,,Portugal,BU|MOC|AG|AD,83
+FC Barcelone,2024-2025,25,Wojciech Szczęsny,,Poland,G,85
+FC Barcelone,2024-2025,13,Iñaki Peña,,Spain,G,79
+FC Barcelone,2024-2025,1,Marc-André ter Stegen,,Germany,G,88
+FC Barcelone,2024-2025,4,Ronald Araújo,,Uruguay,DC|DD|MDC,85
+FC Barcelone,2024-2025,23,Jules Koundé,,France,DC|DD|MDC,85
+FC Barcelone,2024-2025,2,Pau Cubarsí,,Spain,DC|DD,81
+FC Barcelone,2024-2025,5,Íñigo Martínez,,Spain,DC|DG|MDC,83
+FC Barcelone,2024-2025,15,Andreas Christensen,,Denmark,DC|MDC|DD,83
+FC Barcelone,2024-2025,3,Alejandro Balde,,Spain,DG|MG|AG,82
+FC Barcelone,2024-2025,24,Gerard Martín,,Spain,DG|MG|DC,77
+FC Barcelone,2024-2025,8,Pedri,,Spain,MC|MOC|MG,87
+FC Barcelone,2024-2025,21,Frenkie de Jong,,Netherlands,MC|MDC|MOC,85
+FC Barcelone,2024-2025,6,Gavi,,Spain,MC|MOC|MDC,82
+FC Barcelone,2024-2025,17,Marc Casadó,,Spain,MDC|MC,78
+FC Barcelone,2024-2025,16,Fermín López,,Spain,MC|MOC|MG,81
+FC Barcelone,2024-2025,20,Dani Olmo,,Spain,MOC|MC|AG|MG,86
+FC Barcelone,2024-2025,9,Robert Lewandowski,,Poland,BU|MOC,88
+FC Barcelone,2024-2025,11,Raphinha,,Brazil,AD|AG|MD|MOC,87
+FC Barcelone,2024-2025,19,Lamine Yamal,,Spain,AD|MD|AG,86
+FC Barcelone,2024-2025,7,Ferran Torres,,Spain,AG|BU|MD|AD,81
+FC Barcelone,2024-2025,18,Pau Víctor,,Spain,BU|MOC,75
+FC Barcelone,2025-2026,1,Joan García,,Spain,G,85
+FC Barcelone,2025-2026,25,Wojciech Szczęsny,,Poland,G,83
+FC Barcelone,2025-2026,4,Ronald Araújo,,Uruguay,DC|DD|MDC,85
+FC Barcelone,2025-2026,23,Jules Koundé,,France,DC|DD|MDC,85
+FC Barcelone,2025-2026,2,Pau Cubarsí,,Spain,DC|DD,84
+FC Barcelone,2025-2026,15,Andreas Christensen,,Denmark,DC|MDC|DD,82
+FC Barcelone,2025-2026,24,Eric García,,Spain,DC|DD|MDC,80
+FC Barcelone,2025-2026,3,Alejandro Balde,,Spain,DG|MG|AG,83
+FC Barcelone,2025-2026,18,Gerard Martín,,Spain,DG|MG|DC,79
+FC Barcelone,2025-2026,8,Pedri,,Spain,MC|MOC|MG,88
+FC Barcelone,2025-2026,21,Frenkie de Jong,,Netherlands,MC|MDC|MOC,85
+FC Barcelone,2025-2026,17,Marc Casadó,,Spain,MDC|MC,80
+FC Barcelone,2025-2026,6,Gavi,,Spain,MC|MOC|MDC,82
+FC Barcelone,2025-2026,16,Fermín López,,Spain,MC|MOC|MG,83
+FC Barcelone,2025-2026,20,Dani Olmo,,Spain,MOC|MC|AG|MG,86
+FC Barcelone,2025-2026,5,Marc Bernal,,Spain,MDC|MC,78
+FC Barcelone,2025-2026,9,Robert Lewandowski,,Poland,BU|MOC,86
+FC Barcelone,2025-2026,11,Raphinha,,Brazil,AD|AG|MD|MOC,88
+FC Barcelone,2025-2026,10,Lamine Yamal,,Spain,AD|MD|AG,89
+FC Barcelone,2025-2026,7,Ferran Torres,,Spain,AG|BU|MD|AD,82
+FC Barcelone,2025-2026,14,Marcus Rashford,,England,BU|MG|AG|AD|MD,83
+FC Barcelone,2025-2026,28,Roony Bardghji,,Sweden,AD|AG|MOC,76

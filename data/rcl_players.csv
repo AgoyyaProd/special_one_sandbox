@@ -1,0 +1,591 @@
+Club,Saison,Numero,Joueur,Nom d'usage,Nationalite,Postes,Note
+Lens,2007-2008,8,Bonaventure Kalou,,Cote d'Ivoire,MC|MOC|BU|AD,82
+Lens,2007-2008,27,Aruna Dindane,,Cote d'Ivoire,BU|AG|MOC,82
+Lens,2007-2008,3,Hilton,Hilton,Bresil,DC|DD,81
+Lens,2007-2008,18,Olivier Monterrubio,,France,AG|MG|MOC|BU,80
+Lens,2007-2008,11,Kanga Akale,,Cote d'Ivoire,AD|AG|MC|MG|MOC,80
+Lens,2007-2008,4,Adama Coulibaly,,Mali,DD|DG|DC,76
+Lens,2007-2008,28,Julien Sable,,France,MC|MDC,76
+Lens,2007-2008,1,Vedran Runje,,Croatie,G,75
+Lens,2007-2008,10,Eric Carriere,,France,MOC|MC|MDC|MG,75
+Lens,2007-2008,26,Yohan Demont,,France,DD|AD,75
+Lens,2007-2008,23,Nenad Kovacevic,,Serbie,MDC|MC,74
+Lens,2007-2008,16,Ronan Le Crom,,France,G,72
+Lens,2007-2008,15,Fabien Laurenti,,France,DD,71
+Lens,2007-2008,9,Luigi Pieroni,,Belgique,BU,71
+Lens,2007-2008,25,Milan Bisevac,,Serbie,DC,71
+Lens,2007-2008,21,Sidi Yaya Keita,,Mali,MC|MDC,68
+Lens,2007-2008,7,Razak Boukari,,France,BU,68
+Lens,2007-2008,19,Lucien Aubey,,Congo,DG,66
+Lens,2007-2008,35,Seid Khiter,,France,AD,66
+Lens,2007-2008,22,Jonathan Lacourt,,France,MC,66
+Lens,2007-2008,2,Marco Ramos,,Portugal,DG,65
+Lens,2007-2008,32,Mounir Diane,,Maroc,MC,64
+Lens,2007-2008,14,Kevin Monnet-Paquet,,France,AD|BU,61
+Lens,2007-2008,41,David Pollet,,Belgique,BU|AD,55
+Lens,2007-2008,20,Adil Hermach,,France,MC|MDC,50
+Lens,2006-2007,8,Seydou Keita,,Mali,MC|MDC|MOC|MD,80
+Lens,2006-2007,30,Charles Itandje,,France,G,80
+Lens,2006-2007,3,Hilton,Hilton,Bresil,DC|DD,80
+Lens,2006-2007,27,Aruna Dindane,,Cote d'Ivoire,BU|AG|MOC,78
+Lens,2006-2007,18,Olivier Thomert,,France,MG|MD|AD|AG,78
+Lens,2006-2007,9,Daniel Cousin,,Gabon,BU,78
+Lens,2006-2007,11,Jussie,Jussie,Bresil,MD|BU|AD|AG,78
+Lens,2006-2007,4,Adama Coulibaly,,Mali,DD|DG|DC,76
+Lens,2006-2007,10,Eric Carriere,,France,MOC|MC|MDC|MG,76
+Lens,2006-2007,26,Yohan Demont,,France,DD|AD,75
+Lens,2006-2007,24,Gregory Vignal,,France,DG,74
+Lens,2006-2007,21,Sidi Yaya Keita,,Mali,MC|MDC,74
+Lens,2006-2007,1,Sebastien Chabbert,,France,G,72
+Lens,2006-2007,5,Nicolas Gillet,,France,DC,72
+Lens,2006-2007,7,Razak Boukari,,France,BU,70
+Lens,2006-2007,22,Issam Jemaa,,Tunisie,BU,69
+Lens,2006-2007,34,Patrick Barul,,France,DC,68
+Lens,2006-2007,13,Jonathan Lacourt,,France,MC,66
+Lens,2006-2007,20,Mounir Diane,,Maroc,MC,63
+Lens,2006-2007,36,Daouda Jabi,,Guinee,DD,61
+Lens,2006-2007,32,Marco Ramos,,Portugal,DG,59
+Lens,2006-2007,25,Simon Feindouno,,Guinee,MC,58
+Lens,2006-2007,14,Kevin Monnet-Paquet,,France,AD|BU,52
+Lens,2005-2006,10,Eric Carriere,,France,MOC|MC|MDC|MG,82
+Lens,2005-2006,30,Charles Itandje,,France,G,81
+Lens,2005-2006,5,Nicolas Gillet,,France,DC,79
+Lens,2005-2006,8,Seydou Keita,,Mali,MC|MDC|MOC|MD,78
+Lens,2005-2006,18,Olivier Thomert,,France,MG|MD|AD|AG,78
+Lens,2005-2006,3,Hilton,Hilton,Bresil,DC|DD,77
+Lens,2005-2006,7,Jerome Leroy,,France,MC|MD|MOC|BU,75
+Lens,2005-2006,27,Aruna Dindane,,Cote d'Ivoire,BU|AG|MOC,75
+Lens,2005-2006,23,Alou Diarra,,France,MDC,73
+Lens,2005-2006,15,Yoann Lachor,,France,DG|DC,72
+Lens,2005-2006,9,Daniel Cousin,,Gabon,BU,72
+Lens,2005-2006,4,Adama Coulibaly,,Mali,DD|DG|DC,71
+Lens,2005-2006,13,Mounir Diane,,Maroc,MC,71
+Lens,2005-2006,32,Benoit Assou-Ekotto,,France,DG,70
+Lens,2005-2006,26,Yohan Demont,,France,DD|AD,69
+Lens,2005-2006,22,Issam Jemaa,,Tunisie,BU,68
+Lens,2005-2006,1,Sebastien Chabbert,,France,G,67
+Lens,2005-2006,34,Patrick Barul,,France,DC,67
+Lens,2005-2006,11,Jussie,Jussie,Bresil,MD|BU|AD|AG,65
+Lens,2005-2006,16,Niki Maenpaa,,Finlande,G,63
+Lens,2005-2006,33,Mathieu Bucher,,France,BU,62
+Lens,2005-2006,36,Martin Ekani,,France,DC,61
+Lens,2005-2006,14,Jonathan Martins Pereira,,France,DC,60
+Lens,2004-2005,10,Eric Carriere,,France,MOC|MC|MDC|MG,84
+Lens,2004-2005,30,Charles Itandje,,France,G,82
+Lens,2004-2005,5,Nicolas Gillet,,France,DC,79
+Lens,2004-2005,8,Seydou Keita,,Mali,MC|MDC|MOC|MD,78
+Lens,2004-2005,7,Jerome Leroy,,France,MC|MD|MOC|BU,77
+Lens,2004-2005,18,Olivier Thomert,,France,MG|MD|AD|AG,77
+Lens,2004-2005,3,Hilton,Hilton,Bresil,DC|DD,77
+Lens,2004-2005,6,Jacek Bak,,Pologne,DC|MDC,76
+Lens,2004-2005,9,Daniel Cousin,,Gabon,BU,75
+Lens,2004-2005,15,Yoann Lachor,,France,DG|DC,74
+Lens,2004-2005,21,John Utaka,,Nigeria,BU|AD|AG,74
+Lens,2004-2005,23,Alou Diarra,,France,MDC,71
+Lens,2004-2005,4,Adama Coulibaly,,Mali,DD|DG|DC,70
+Lens,2004-2005,11,Pape Sarr,,Senegal,MDC,69
+Lens,2004-2005,20,Dagui Bakari,,Cote d'Ivoire,BU,68
+Lens,2004-2005,14,Eric Cubilier,,France,DD,68
+Lens,2004-2005,1,Sebastien Chabbert,,France,G,67
+Lens,2004-2005,34,Patrick Barul,,France,DC,66
+Lens,2004-2005,13,Mounir Diane,,Maroc,MC,66
+Lens,2004-2005,16,Niki Maenpaa,,Finlande,G,63
+Lens,2004-2005,27,Daouda Jabi,,Guinee,DD,62
+Lens,2004-2005,32,Bouabid Bouden,,Maroc,BU,62
+Lens,2004-2005,29,Benoit Assou-Ekotto,,France,DG,60
+Lens,2004-2005,31,Matar Coly,,Senegal,BU,59
+Lens,2004-2005,22,Yazid Kaissi,,France,MOC,49
+Lens,2008-2009,27,Aruna Dindane,,Cote d'Ivoire,BU|AG|MOC,77
+Lens,2008-2009,23,Nenad Kovacevic,,Serbie,MDC|MC,75
+Lens,2008-2009,1,Vedran Runje,,Croatie,G,73
+Lens,2008-2009,9,Toifilou Maoulida,,France,AD,72
+Lens,2008-2009,25,Julien Sable,,France,MC|MDC,72
+Lens,2008-2009,24,Eric Chelle,,Mali,DD|DG,69
+Lens,2008-2009,18,Sebastien Roudet,,France,MC|AG|MG,68
+Lens,2008-2009,26,Yohan Demont,,France,DD|AD,68
+Lens,2008-2009,12,Alaeddine Yahia,,Tunisie,DD|DC,67
+Lens,2008-2009,4,Romain Sartre,,France,DD|DC,67
+Lens,2008-2009,8,Geoffrey Doumeng,,France,MC|MOC,67
+Lens,2008-2009,21,Sidi Yaya Keita,,Mali,MC|MDC,66
+Lens,2008-2009,22,Issam Jemaa,,Tunisie,BU,66
+Lens,2008-2009,3,Gregory Vignal,,France,DG,65
+Lens,2008-2009,15,Fabien Laurenti,,France,DD,65
+Lens,2008-2009,7,Razak Boukari,,France,BU,65
+Lens,2008-2009,14,Kevin Monnet-Paquet,,France,AD|BU,64
+Lens,2008-2009,2,Marco Ramos,,Portugal,DG,63
+Lens,2008-2009,10,Dejan Milovanovic,,Serbie,MDC,63
+Lens,2008-2009,20,Adil Hermach,,Maroc,MC|MDC,59
+Lens,2008-2009,30,Kevin Goeman,,Belgique,G,57
+Lens,2008-2009,16,Arnaud Brocard,,France,G,55
+Lens,2008-2009,28,Nolan Roux,,France,BU,54
+Lens,2008-2009,31,Dalibor Veselinovic,,Serbie,BU,54
+Lens,2008-2009,35,Samuel Camille,,France,BU,51
+Lens,2008-2009,32,Steven Joseph-Monrose,,France,AD|BU,50
+Lens,2008-2009,37,Jeremy Blanc,,France,DC,48
+Lens,2009-2010,1,Vedran Runje,,Croatie,G,75
+Lens,2009-2010,23,Nenad Kovacevic,,Serbie,MDC|MC,75
+Lens,2009-2010,11,Eduardo,Eduardo,Bresil,BU,72
+Lens,2009-2010,5,Alaeddine Yahia,,Tunisie,DD|DC,71
+Lens,2009-2010,26,Yohan Demont,,France,DD|AD,71
+Lens,2009-2010,9,Toifilou Maoulida,,France,AD,70
+Lens,2009-2010,24,Eric Chelle,,Mali,DD|DG,70
+Lens,2009-2010,7,Abdoulrazak Boukari,,France,AG,70
+Lens,2009-2010,12,Kanga Akale,,Cote d'Ivoire,AD|AG|MC|MG|MOC,69
+Lens,2009-2010,22,Issam Jemaa,,Tunisie,BU,69
+Lens,2009-2010,10,Dejan Milovanovic,,Serbie,MDC,69
+Lens,2009-2010,18,Sebastien Roudet,,France,MC|AG|MG,68
+Lens,2009-2010,20,Adil Hermach,,Maroc,MC|MDC,68
+Lens,2009-2010,19,Romain Sartre,,France,DD|DC,67
+Lens,2009-2010,2,Marco Ramos,,Portugal,DG,67
+Lens,2009-2010,16,Hamdi Kasraoui,,Tunisie,G,67
+Lens,2009-2010,14,Kevin Monnet-Paquet,,France,AD|BU,67
+Lens,2009-2010,8,Geoffrey Doumeng,,France,MC|MOC,66
+Lens,2009-2010,15,Fabien Laurenti,,France,DD,65
+Lens,2009-2010,4,Issam El Adoua,,Maroc,DC,63
+Lens,2009-2010,30,Samuel Atrous,,France,G,58
+Lens,2009-2010,25,Steven Joseph-Monrose,,France,AD|BU,54
+Lens,2009-2010,27,Samba Sow,,Mali,MDC|MC,50
+Lens,2009-2010,29,William Remy,,France,DC,49
+Lens,2009-2010,28,Benjamin Leclerc,,France,MC,49
+Lens,2009-2010,34,Alexandre Coeff,,France,MD|MC,48
+Lens,2009-2010,36,Darnel Situ,,France,DC,45
+Lens,2009-2010,35,Mehdi Abeid,,France,MOC,40
+Lens,2010-2011,1,Vedran Runje,,Croatie,G,75
+Lens,2010-2011,18,Sebastien Roudet,,France,MC|AG|MG,73
+Lens,2010-2011,5,Alaeddine Yahia,,Tunisie,DD|DC,72
+Lens,2010-2011,11,Eduardo,Eduardo,Bresil,BU,72
+Lens,2010-2011,23,Nenad Kovacevic,,Serbie,MDC|MC,72
+Lens,2010-2011,9,Toifilou Maoulida,,France,AD,71
+Lens,2010-2011,26,Yohan Demont,,France,DD|AD,71
+Lens,2010-2011,20,Adil Hermach,,Maroc,MC|MDC,71
+Lens,2010-2011,6,Henri Bedimo,,Cameroun,DG,70
+Lens,2010-2011,21,Sidi Yaya Keita,,Mali,MC|MDC,70
+Lens,2010-2011,7,Abdoulrazak Boukari,,France,AG,70
+Lens,2010-2011,24,Eric Chelle,,Mali,DD|DG,69
+Lens,2010-2011,28,Kanga Akale,,Cote d'Ivoire,AD|AG|MC|MG|MOC,69
+Lens,2010-2011,22,Issam Jemaa,,Tunisie,BU,69
+Lens,2010-2011,10,Gregory Sertic,,France,MC,68
+Lens,2010-2011,2,Marco Ramos,,Portugal,DG,67
+Lens,2010-2011,16,Hamdi Kasraoui,,Tunisie,G,67
+Lens,2010-2011,27,Samba Sow,,Mali,MDC|MC,67
+Lens,2010-2011,8,Geoffrey Doumeng,,France,MC|MOC,66
+Lens,2010-2011,29,David Pollet,,Belgique,BU|AD,61
+Lens,2010-2011,15,Steven Joseph-Monrose,,France,AD|BU,60
+Lens,2010-2011,30,Samuel Atrous,,France,G,58
+Lens,2010-2011,3,Serge Aurier,,France,DD,57
+Lens,2010-2011,40,Kevin Goeman,,Belgique,G,56
+Lens,2010-2011,35,Bilal Hamdi,,France,BU,55
+Lens,2010-2011,34,Alassane Toure,,France,DD,52
+Lens,2010-2011,33,Alexandre Coeff,,France,MD|MC,47
+Lens,2010-2011,25,Darnel Situ,,France,DC,45
+Lens,2011-2012,7,Chaouki Ben Saada,,Tunisie,MD,70
+Lens,2011-2012,6,Pascal Berenguer,,France,MC,70
+Lens,2011-2012,5,Gabriel Cichero,,Venezuela,DG,70
+Lens,2011-2012,11,Alexandre Cuvillier,,France,MG,70
+Lens,2011-2012,9,Eduardo,Eduardo,Bresil,BU,69
+Lens,2011-2012,4,Alaeddine Yahia,,Tunisie,DD|DC,68
+Lens,2011-2012,8,Pierre Ducasse,,France,MDC|MC,68
+Lens,2011-2012,24,Ludovic Baal,,France,DG|MC,68
+Lens,2011-2012,26,Yohan Demont,,France,DD|AD,67
+Lens,2011-2012,1,Hamdi Kasraoui,,Tunisie,G,67
+Lens,2011-2012,20,Jean-Eudes Maurice,,France,BU,66
+Lens,2011-2012,3,Serge Aurier,,Cote d'Ivoire,DD,65
+Lens,2011-2012,27,Samba Sow,,Mali,MDC|MC,64
+Lens,2011-2012,17,Franck Queudrue,,France,DG,63
+Lens,2011-2012,16,Michael Fabre,,France,G,63
+Lens,2011-2012,10,Julien Toudic,,France,AG,63
+Lens,2011-2012,15,Fode Koita,,France,BU,63
+Lens,2011-2012,29,David Pollet,,Belgique,BU|AD,62
+Lens,2011-2012,14,Ali-Azouz Mathlouthi,,France,BU,58
+Lens,2011-2012,40,Samuel Atrous,,France,G,58
+Lens,2011-2012,31,Alexandre Coeff,,France,MD|MC,56
+Lens,2011-2012,23,Alassane Toure,,France,DD,56
+Lens,2011-2012,19,Geoffrey Kondogbia,,France,MDC,56
+Lens,2011-2012,22,Thorgan Hazard,,Belgique,MOC,56
+Lens,2011-2012,21,Marco Rosenfelder,,France,MOC,55
+Lens,2011-2012,30,Nicolas Caraux,,France,G,54
+Lens,2011-2012,2,Zakarya Bergdich,,France,DG,52
+Lens,2011-2012,18,William Remy,,France,DC,49
+Lens,2012-2013,5,Alaeddine Yahia,,Tunisie,DD|DC,68
+Lens,2012-2013,8,Pierre Ducasse,,France,MDC|MC,68
+Lens,2012-2013,9,David Pollet,,Belgique,BU|AD,68
+Lens,2012-2013,2,Zakarya Bergdich,,Maroc,DG,68
+Lens,2012-2013,24,Ludovic Baal,,France,DG|MC,65
+Lens,2012-2013,1,Rudy Riou,,France,G,64
+Lens,2012-2013,26,Yohan Demont,,France,DD|AD,63
+Lens,2012-2013,16,Hamdi Kasraoui,,Tunisie,G,63
+Lens,2012-2013,18,Pierrick Valdivia,,France,MC|MDC,63
+Lens,2012-2013,7,Yoann Touzghar,,France,BU|AG,63
+Lens,2012-2013,29,Alexandre Coeff,,France,MD|MC,62
+Lens,2012-2013,20,Lalaina Nomenjanahary,,Madagascar,MG|DG|AG,61
+Lens,2012-2013,30,Samuel Atrous,,France,G,61
+Lens,2012-2013,11,Deme N'Diaye,,Senegal,AG|MG,60
+Lens,2012-2013,13,Alassane Toure,,France,DD,60
+Lens,2012-2013,6,Jerome Lemoigne,,France,MC,59
+Lens,2012-2013,27,Samba Sow,,Mali,MDC|MC,59
+Lens,2012-2013,19,Ange-Freddy Plumain,,France,AD,58
+Lens,2012-2013,22,Jeremy Bela,,France,MOC,57
+Lens,2012-2013,28,Nicolas Saint-Ruf,,France,DC|DD,56
+Lens,2012-2013,36,Baptiste Guillaume,,Belgique,BU,56
+Lens,2012-2013,34,Anthony Rogie,,France,MC,55
+Lens,2012-2013,21,Marco Rosenfelder,,France,MOC,55
+Lens,2012-2013,35,Patrick Fradj,,France,DD|DC,54
+Lens,2012-2013,3,Remy Bonne,,France,DG,53
+Lens,2012-2013,33,Julien Leghait,,France,BU,53
+Lens,2012-2013,34,Adama Diakite,,France,MOC,52
+Lens,2012-2013,23,Wylan Cyprien,,France,MDC|MC,52
+Lens,2012-2013,40,Christoffer Mafoumbi,,France,G,50
+Lens,2013-2014,4,Ahmed Kantari,,Maroc,DC,72
+Lens,2013-2014,16,Alphonse Areola,,France,G,72
+Lens,2013-2014,28,Danijel Ljuboja,,Serbie,BU,70
+Lens,2013-2014,9,Adamo Coulibaly,,France,AD|BU,70
+Lens,2013-2014,11,Pablo Chavarria,,Argentine,BU|MD|MG,70
+Lens,2013-2014,5,Alaeddine Yahia,,Tunisie,DD|DC,69
+Lens,2013-2014,24,Ludovic Baal,,France,DG|MC,68
+Lens,2013-2014,7,Yoann Touzghar,,France,BU|AG,68
+Lens,2013-2014,10,Edgar Salli,,Cameroun,MG,68
+Lens,2013-2014,8,Pierre Ducasse,,France,MDC|MC,67
+Lens,2013-2014,21,Alharbi El Jadeyaoui,,Maroc,MG,66
+Lens,2013-2014,18,Pierrick Valdivia,,France,MC|MDC,65
+Lens,2013-2014,1,Rudy Riou,,France,G,64
+Lens,2013-2014,22,Loick Landre,,France,DD|DC,64
+Lens,2013-2014,32,Marcel Tisserand,,RD Congo,DD,63
+Lens,2013-2014,14,Deme N'Diaye,,Senegal,AG|MG,62
+Lens,2013-2014,23,Wylan Cyprien,,France,MDC|MC,62
+Lens,2013-2014,25,Jean-Philippe Gbamin,,France,MDC|DD|DG,62
+Lens,2013-2014,13,Alassane Toure,,France,DD,61
+Lens,2013-2014,20,Lalaina Nomenjanahary,,Madagascar,MG|DG|AG,61
+Lens,2013-2014,6,Jerome Le Moigne,,France,MDC,60
+Lens,2013-2014,22,Jeremie Bela,,France,AD,60
+Lens,2013-2014,30,Samuel Atrous,,France,G,59
+Lens,2013-2014,29,Benjamin Bourigeaud,,France,MC,59
+Lens,2013-2014,2,Nicolas Saint-Ruf,,France,DC|DD,58
+Lens,2013-2014,37,Dimitri Cavare,,France,DD,57
+Lens,2013-2014,33,Benjamin Boulenger,,France,DG|MG,56
+Lens,2013-2014,19,Baptiste Guillaume,,Belgique,BU,56
+Lens,2013-2014,35,Julien Leghait,,France,BU,55
+Lens,2013-2014,15,Patrick Fradj,,France,DD|DC,55
+Lens,2013-2014,3,Remy Bonne,,France,DG,53
+Lens,2013-2014,40,Christoffer Mafoumbi,,France,G,50
+Lens,2014-2015,4,Ahmed Kantari,,Maroc,DC,71
+Lens,2014-2015,11,Pablo Chavarria,,Argentine,BU|MD|MG,71
+Lens,2014-2015,7,Yoann Touzghar,,Tunisie,BU|AG,71
+Lens,2014-2015,1,Rudy Riou,,France,G,70
+Lens,2014-2015,24,Ludovic Baal,,France,DG|MC,70
+Lens,2014-2015,20,Lalaina Nomenjanahary,,Madagascar,MG|DG|AG,70
+Lens,2014-2015,5,Alaeddine Yahia,,Tunisie,DD|DC,69
+Lens,2014-2015,21,Alharbi El Jadeyaoui,,Maroc,MG,69
+Lens,2014-2015,9,Adamo Coulibaly,,France,AD|BU,69
+Lens,2014-2015,18,Pierrick Valdivia,,France,MC|MDC,68
+Lens,2014-2015,22,Loick Landre,,France,DD|DC,68
+Lens,2014-2015,6,Jerome Le Moigne,,France,MDC,67
+Lens,2014-2015,23,Wylan Cyprien,,France,MDC|MC,66
+Lens,2014-2015,3,Dimitri Cavare,,France,DD,66
+Lens,2014-2015,25,Jean-Philippe Gbamin,,France,MDC|DD|DG,65
+Lens,2014-2015,14,Deme N'Diaye,,Senegal,AG|MG,64
+Lens,2014-2015,27,Benjamin Boulenger,,France,DG|MG,64
+Lens,2014-2015,29,Benjamin Bourigeaud,,France,MC,64
+Lens,2014-2015,19,Baptiste Guillaume,,Belgique,BU,63
+Lens,2014-2015,5,Abdoul Ba,,Mauritanie,DG|DC,63
+Lens,2014-2015,13,Alassane Toure,,France,DD,61
+Lens,2014-2015,40,Valentin Belon,,France,G,61
+Lens,2014-2015,15,Patrick Fradj,,France,DD|DC,60
+Lens,2014-2015,16,Samuel Atrous,,France,G,59
+Lens,2014-2015,33,Boubacar Sylla,,Mali,DD,58
+Lens,2014-2015,34,Julien Leghait,,France,BU,58
+Lens,2014-2015,34,Quentin Lecoeuche,,France,DG,57
+Lens,2014-2015,8,Aristote Madiani,,France,BU|MD,57
+Lens,2014-2015,35,Taylor Moore,,Angleterre,DC|DD,57
+Lens,2014-2015,37,Malick Seck,,Senegal,BU,57
+Lens,2014-2015,42,Paulo Henriques de Pinho,,France,G,56
+Lens,2014-2015,38,Christoffer Mafoumbi,,France,G,55
+Lens,2014-2015,38,Jeff Reine-Adelaide,,France,MOC,55
+Lens,2015-2016,11,Pablo Chavarria,,Argentine,BU|MD|MG,73
+Lens,2015-2016,20,Lalaina Nomenjanahary,,Madagascar,MG|DG|AG,71
+Lens,2015-2016,1,Joris Delle,,France,G,70
+Lens,2015-2016,22,Loick Landre,,France,DD|DC,70
+Lens,2015-2016,9,Christian Bekamenga,,Cameroun,BU,69
+Lens,2015-2016,18,Pierrick Valdivia,,France,MC|MDC,69
+Lens,2015-2016,19,Mathias Autret,,France,MOC|MD,69
+Lens,2015-2016,3,Dusan Cvetinovic,,Serbie,DG,67
+Lens,2015-2016,23,Wylan Cyprien,,France,MDC|MC,67
+Lens,2015-2016,25,Jean-Philippe Gbamin,,France,MDC|DD|DG,67
+Lens,2015-2016,8,Guirane N'Daw,,Senegal,MDC,66
+Lens,2015-2016,21,Anthony Scaramozzino,,France,DG,66
+Lens,2015-2016,27,Kenny Lala,,France,DG|DD,66
+Lens,2015-2016,2,Jordan Ikoko,,RD Congo,DD,66
+Lens,2015-2016,14,Deme N'Diaye,,Senegal,AG|MG,65
+Lens,2015-2016,29,Benjamin Bourigeaud,,France,MC,65
+Lens,2015-2016,5,Abdoul Ba,,Mauritanie,DG|DC,64
+Lens,2015-2016,15,Stephane Besle,,France,DC,62
+Lens,2015-2016,10,Patrick Olsen,,Danemark,MC,62
+Lens,2015-2016,16,Valentin Belon,,France,G,61
+Lens,2015-2016,24,Simon Banza,,France,BU,61
+Lens,2015-2016,28,Jonathan Nanizayamo,,France,BU,60
+Lens,2015-2016,31,Nadjib Baouia,,Algerie,MD,60
+Lens,2015-2016,7,Aristote Madiani,,France,BU|MD,59
+Lens,2015-2016,6,Taylor Moore,,Angleterre,DC|DD,59
+Lens,2015-2016,35,Hugo Robert,,France,DG,59
+Lens,2015-2016,32,Milos Zukanovic,,Serbie,BU,58
+Lens,2015-2016,40,Jeremy Vachoux,,France,G,57
+Lens,2015-2016,36,Valentin Wojtkowiak,,France,DC,56
+Lens,2015-2016,36,Akim Zedadka,,France,DD,55
+Lens,2015-2016,34,Jean-Kevin Duverne,,France,DD|DC,54
+Lens,2016-2017,1,Nicolas Douchez,,France,G,75
+Lens,2016-2017,24,Daniel Opare,,Ghana,DD,72
+Lens,2016-2017,10,Habib Habibou,,Rep. centrafricaine,AD,71
+Lens,2016-2017,15,John Bostock,,Trinite-et-Tobago,MDC|MC,71
+Lens,2016-2017,8,Kermit Erasmus,,Afrique du Sud,BU,70
+Lens,2016-2017,9,Teddy Chevalier,,France,BU,70
+Lens,2016-2017,22,Loick Landre,,France,DD|DC,70
+Lens,2016-2017,19,Mathias Autret,,France,MOC|MD,68
+Lens,2016-2017,3,Dusan Cvetinovic,,Serbie,DG,68
+Lens,2016-2017,26,Viktor Klonaridis,,Grece,MD,68
+Lens,2016-2017,29,Benjamin Bourigeaud,,France,MC,68
+Lens,2016-2017,26,Cristian Lopez Santamaria,,Espagne,BU|AG,68
+Lens,2016-2017,14,Mohamed Fofana,,Mali,DC,67
+Lens,2016-2017,13,Kevin Fortune,,France,AG|BU,67
+Lens,2016-2017,8,Guirane N'Daw,,Senegal,MDC,66
+Lens,2016-2017,27,Kenny Lala,,France,DG|DD,66
+Lens,2016-2017,11,Abdellah Zoubir,,France,AG|MG,66
+Lens,2016-2017,20,Rafik Gerard,,France,MD,66
+Lens,2016-2017,2,Jean-Kevin Duverne,,France,DD|DC,66
+Lens,2016-2017,21,Anthony Scaramozzino,,France,DG,65
+Lens,2016-2017,23,Karim Hafez,,Egypte,DG,65
+Lens,2016-2017,30,Jeremy Vachoux,,France,G,65
+Lens,2016-2017,4,Djiman Koukou,,Benin,MDC,64
+Lens,2016-2017,7,Adama Guira,,Burkina Faso,MC,64
+Lens,2016-2017,10,Patrick Olsen,,Danemark,MC,63
+Lens,2016-2017,5,Abdoul Ba,,Mauritanie,DG|DC,63
+Lens,2016-2017,6,Jean-Ricner Bellegarde,,France,MDC|MC|MD,63
+Lens,2016-2017,36,Nadjib Baouia,,Algerie,MD,61
+Lens,2016-2017,16,Valentin Belon,,France,G,61
+Lens,2016-2017,34,Hugo Robert,,France,DG,61
+Lens,2016-2017,24,Simon Banza,,France,BU,61
+Lens,2016-2017,18,Akim Zedadka,,France,DD,60
+Lens,2016-2017,32,Mounir Chouiar,,France,MG|MOC,60
+Lens,2017-2018,29,Clement Chantome,,France,MDC,72
+Lens,2017-2018,26,Brice Dja Djedje,,Cote d'Ivoire,DD,71
+Lens,2017-2018,9,Cristian Lopez Santamaria,,Espagne,BU|AG,71
+Lens,2017-2018,8,John Bostock,,Trinite-et-Tobago,MDC|MC,70
+Lens,2017-2018,3,Dusan Cvetinovic,,Serbie,DG,70
+Lens,2017-2018,5,Dankler,Dankler,Bresil,DD,70
+Lens,2017-2018,25,Moussa Maazou,,Niger,BU|MD,69
+Lens,2017-2018,1,Nicolas Douchez,,France,G,68
+Lens,2017-2018,7,Walid Mesloub,,Algerie,MOC|MC,68
+Lens,2017-2018,7,Alvaro Lemos Collazo,,Espagne,DD,68
+Lens,2017-2018,2,Jean-Kevin Duverne,,France,DD|DC,68
+Lens,2017-2018,13,Kevin Fortune,,France,AG|BU,68
+Lens,2017-2018,10,Abdellah Zoubir,,France,AG|MG,67
+Lens,2017-2018,30,Jeremy Vachoux,,France,G,67
+Lens,2017-2018,22,Filip Markovic,,Serbie,MD,66
+Lens,2017-2018,23,Karim Hafez,,Egypte,DG,66
+Lens,2017-2018,18,Souleymane Diarra,,Mali,MDC|MD,66
+Lens,2017-2018,19,Frederic Duplus,,France,DG,65
+Lens,2017-2018,24,Ivan Lendric,,Croatie,BU,65
+Lens,2017-2018,5,Alex Gersbach,,Australie,DG,65
+Lens,2017-2018,20,Abdelrafik Gerard,,France,MD,65
+Lens,2017-2018,21,Christos Tasoulis,,Grece,DG,65
+Lens,2017-2018,6,Jean-Ricner Bellegarde,,France,MDC|MC|MD,65
+Lens,2017-2018,31,Cyrille Bayala,,Burkina Faso,MD|AD,65
+Lens,2017-2018,14,Mohamed Fofana,,Mali,DC,63
+Lens,2017-2018,4,Djiman Koukou,,Benin,MDC,63
+Lens,2017-2018,28,Thomas Ephestion,,France,MC,63
+Lens,2017-2018,16,Valentin Belon,,France,G,62
+Lens,2017-2018,37,Akim Zedadka,,France,DD,61
+Lens,2017-2018,36,Hugo Robert,,France,DG,61
+Lens,2017-2018,33,Mounir Chouiar,,France,MG|MOC,60
+Lens,2017-2018,21,William Bianda,,France,DC,60
+Lens,2017-2018,32,Cheick Doucoure,,Mali,MDC|MC|MDD|DC,53
+Lens,2018-2019,16,Jean-Louis Leca,,France,G,73
+Lens,2018-2019,27,Guillaume Gillet,,Belgique,MDG|MC,71
+Lens,2018-2019,10,Walid Mesloub,,Algerie,MOC|MC,71
+Lens,2018-2019,5,Mehdi Tahrat,,Algerie,DD,70
+Lens,2018-2019,14,Yannick Gomis,,Senegal,BU,69
+Lens,2018-2019,13,Kevin Fortune,,France,AG|BU,69
+Lens,2018-2019,15,Steven Fortes,,Cap-Vert,DC|DG,68
+Lens,2018-2019,29,Grejohn Kyei,,France,BU,68
+Lens,2018-2019,18,Fabien Centonze,,France,DD,68
+Lens,2018-2019,21,Massadio Haidara,,Mali,DG|DC|MG,67
+Lens,2018-2019,7,El-Hadji Ba,,France,MDC,67
+Lens,2018-2019,9,Thierry Ambrose,,France,MG,67
+Lens,2018-2019,30,Jeremy Vachoux,,France,G,67
+Lens,2018-2019,2,Jean-Kevin Duverne,,France,DD|DC,67
+Lens,2018-2019,20,Achraf Bencharki,,Maroc,MG,67
+Lens,2018-2019,28,Cheick Doucoure,,Mali,MDC|MC|MDD|DC,67
+Lens,2018-2019,26,Aleksandar Radovanovic,,Serbie,DG|DC,67
+Lens,2018-2019,25,Moussa Maazou,,Niger,BU|MD,66
+Lens,2018-2019,8,Souleymane Diarra,,Mali,MDC|MD,66
+Lens,2018-2019,31,Cyrille Bayala,,Burkina Faso,MD|AD,65
+Lens,2018-2019,6,Jean-Ricner Bellegarde,,France,MDC|MC|MD,64
+Lens,2018-2019,28,Thomas Ephestion,,France,MC,64
+Lens,2018-2019,25,Mounir Chouiar,,France,MG|MOC,64
+Lens,2018-2019,22,Filip Markovic,,Serbie,MD,63
+Lens,2018-2019,3,Modibo Sagnan,,France,DC,63
+Lens,2018-2019,11,Mouaad Madri,,France,BU,62
+Lens,2018-2019,40,Valentin Belon,,France,G,62
+Lens,2018-2019,41,Simon Banza,,France,BU,61
+Lens,2018-2019,4,Saif Tka,,Tunisie,DC,61
+Lens,2018-2019,19,Arial Mendy,,Senegal,DG,60
+Lens,2019-2020,16,Jean-Louis Leca,,France,G,73
+Lens,2019-2020,7,Florian Sotoca,,France,AD|BU|AG|MD|MC|MOC,72
+Lens,2019-2020,25,Mounir Chouiar,,France,MG|MOC,72
+Lens,2019-2020,27,Guillaume Gillet,,Belgique,MDG|MC,71
+Lens,2019-2020,8,Benjamin Moukandjo,,Cameroun,BU,71
+Lens,2019-2020,25,Corentin Jean,,France,MD|BU,71
+Lens,2019-2020,24,Jonathan Gradit,,France,DC|DD,71
+Lens,2019-2020,14,Yannick Gomis,,Senegal,BU,71
+Lens,2019-2020,18,Yannick Cahuzac,,France,MDC,70
+Lens,2019-2020,10,Walid Mesloub,,Algerie,MOC|MC,70
+Lens,2019-2020,13,Clement Michelin,,France,DD,70
+Lens,2019-2020,20,Cheick Traore,,Mali,DD,70
+Lens,2019-2020,15,Steven Fortes,,Cap-Vert,DC|DG,69
+Lens,2019-2020,22,Tony Mauricio,,France,MOC|MD,69
+Lens,2019-2020,9,Gaetan Robail,,France,MG,69
+Lens,2019-2020,26,Aleksandar Radovanovic,,Serbie,DG|DC,69
+Lens,2019-2020,5,Zakaria Diallo,,France,DC,68
+Lens,2019-2020,21,Massadio Haidara,,Mali,DG|DC|MG,68
+Lens,2019-2020,6,Manuel Perez,,France,MDC,68
+Lens,2019-2020,2,Jean-Kevin Duverne,,France,DD|DC,68
+Lens,2019-2020,28,Cheick Doucoure,,Mali,MDC|MC|MDD|DC,67
+Lens,2019-2020,14,Jules Keita,,Guinee,AG,67
+Lens,2019-2020,7,El-Hadji Ba,,France,MDC,66
+Lens,2019-2020,23,Simon Banza,,France,BU,66
+Lens,2019-2020,29,Vitor Costa de Brito,,Bresil,DG,66
+Lens,2019-2020,19,Arial Mendy,,Senegal,DG,65
+Lens,2020-2021,10,Gael Kakuta,,RD Congo,MOC|MG|AG|MD,78
+Lens,2020-2021,8,Seko Fofana,,Cote d'Ivoire,MC|MDC,76
+Lens,2020-2021,11,Jonathan Clauss,,France,DD|MD,76
+Lens,2020-2021,16,Jean-Louis Leca,,France,G,75
+Lens,2020-2021,18,Yannick Cahuzac,,France,MDC,74
+Lens,2020-2021,24,Jonathan Gradit,,France,DC|DD,74
+Lens,2020-2021,7,Florian Sotoca,,France,AD|BU|AG|MD|MC|MOC,74
+Lens,2020-2021,30,Wuilker Farinez,,Venezuela,G,74
+Lens,2020-2021,14,Facundo Medina,,Argentine,DC|DG,74
+Lens,2020-2021,13,Clement Michelin,,France,DD,73
+Lens,2020-2021,9,Ignatius Ganago,,Cameroun,AD|BU,73
+Lens,2020-2021,28,Cheick Doucoure,,Mali,MDC|MC|MDD|DC,73
+Lens,2020-2021,21,Massadio Haidara,,Mali,DG|DC|MG,72
+Lens,2020-2021,20,Cheick Traore,,Mali,DD,72
+Lens,2020-2021,3,Issiaga Sylla,,Guinee,DG,71
+Lens,2020-2021,23,Simon Banza,,France,BU,71
+Lens,2020-2021,29,Arnaud Kalimuendo,,France,BU|MOC|MG,71
+Lens,2020-2021,4,Loic Bade,,France,DC,71
+Lens,2020-2021,25,Corentin Jean,,France,MD|BU,70
+Lens,2020-2021,22,Tony Mauricio,,France,MOC|MD,70
+Lens,2020-2021,15,Steven Fortes,,Cap-Vert,DC|DG,69
+Lens,2020-2021,9,Gaetan Robail,,France,MG,69
+Lens,2020-2021,6,Manuel Perez,,France,MDC,68
+Lens,2020-2021,31,Cyrille Bayala,,Burkina Faso,MD|AD,68
+Lens,2020-2021,26,Aleksandar Radovanovic,,Serbie,DG|DC,68
+Lens,2021-2022,8,Seko Fofana,,Cote d'Ivoire,MC|MDC,80
+Lens,2021-2022,11,Jonathan Clauss,,France,DD|MD,79
+Lens,2021-2022,15,Arnaud Kalimuendo,,France,BU|MOC|MG,76
+Lens,2021-2022,24,Jonathan Gradit,,France,DC|DD,75
+Lens,2021-2022,7,Florian Sotoca,,France,AD|BU|AG|MD|MC|MOC,75
+Lens,2021-2022,14,Facundo Medina,,Argentine,DC|DG,75
+Lens,2021-2022,4,Kevin Danso,,Autriche,DC,75
+Lens,2021-2022,28,Cheick Doucoure,,Mali,MDC|MC|MDD|DC,75
+Lens,2021-2022,21,Massadio Haidara,,Mali,DG|DC|MG,74
+Lens,2021-2022,1,Wuilker Farinez,,Venezuela,G,73
+Lens,2021-2022,20,David Pereira Da Costa,,Portugal,BU|MOC|AG|MG,72
+Lens,2021-2022,10,Gael Kakuta,,RD Congo,MOC|MG|AG|MD,76
+Lens,2021-2022,16,Jean-Louis Leca,,France,G,75
+Lens,2021-2022,29,Przemyslaw Frankowski,,Pologne,DD|DG|MD|MG,75
+Lens,2021-2022,6,Patrick Berg,,Norvege,MDC|MC,74
+Lens,2021-2022,22,Wesley Said,,France,AG|BU|AD|MG|MD|MOC,73
+Lens,2021-2022,9,Ignatius Ganago,,Cameroun,AD|BU,73
+Lens,2021-2022,3,Deiver Machado,,Colombie,DG|MG,72
+Lens,2021-2022,5,Christopher Wooh,,Cameroun,DC,68
+Lens,2021-2022,36,Samba Sow,,Mali,MDC|MC,66
+Lens,2021-2022,37,Jules Keita,,Guinee,AG,65
+Lens,2021-2022,18,Yannick Cahuzac,,France,MDC,72
+Lens,2021-2022,25,Corentin Jean,,France,MD|BU,71
+Lens,2021-2022,19,Ismael Boura,,France,DG,67
+Lens,2021-2022,27,Charles Boli,,France,MD,65
+Lens,2022-2023,8,Seko Fofana,,Cote d'Ivoire,MC|MDC,81
+Lens,2022-2023,30,Brice Samba,,France,G,80
+Lens,2022-2023,11,Lois Openda,,Belgique,BU|AG|MG,79
+Lens,2022-2023,29,Przemyslaw Frankowski,,Pologne,DD|DG|MD|MG,78
+Lens,2022-2023,14,Facundo Medina,,Argentine,DC|DG,78
+Lens,2022-2023,4,Kevin Danso,,Autriche,DC,78
+Lens,2022-2023,24,Jonathan Gradit,,France,DC|DD,77
+Lens,2022-2023,7,Florian Sotoca,,France,AD|BU|AG|MD|MC|MOC,77
+Lens,2022-2023,26,Salis Abdul Samed,,Ghana,MDC,77
+Lens,2022-2023,28,Adrien Thomasson,,France,MC|MOC|BU|AG|MDC,76
+Lens,2022-2023,3,Deiver Machado,,Colombie,DG|MG,76
+Lens,2022-2023,20,Angelo Fulgini,,France,AG|MOC|MG|MD|BU,76
+Lens,2022-2023,21,Massadio Haidara,,Mali,DG|DC|MG,75
+Lens,2022-2023,18,Alexis Claude-Maurice,,France,MC|MOC|AD|AG,74
+Lens,2022-2023,6,Jean Onana,,Cameroun,MC|MDC,74
+Lens,2022-2023,10,David Pereira Da Costa,,Portugal,BU|MOC|AG|MG,74
+Lens,2022-2023,16,Jean-Louis Leca,,France,G,73
+Lens,2022-2023,22,Wesley Said,,France,AG|BU|AD|MG|MD|MOC,73
+Lens,2022-2023,9,Adam Buksa,,Pologne,BU,73
+Lens,2022-2023,10,Gael Kakuta,,RD Congo,MOC|MG|AG|MD,76
+Lens,2022-2023,6,Patrick Berg,,Norvege,MDC|MC,75
+Lens,2022-2023,9,Ignatius Ganago,,Cameroun,AD|BU,72
+Lens,2022-2023,5,Christopher Wooh,,Cameroun,DC,70
+Lens,2022-2023,19,Jimmy Cabot,,France,MD|AD|DD,74
+Lens,2023-2024,30,Brice Samba,,France,G,82
+Lens,2023-2024,14,Facundo Medina,,Argentine,DC|DG,80
+Lens,2023-2024,4,Kevin Danso,,Autriche,DC,80
+Lens,2023-2024,29,Przemyslaw Frankowski,,Pologne,DD|DG|MD|MG,78
+Lens,2023-2024,24,Jonathan Gradit,,France,DC|DD,78
+Lens,2023-2024,7,Florian Sotoca,,France,AD|BU|AG|MD|MC|MOC,77
+Lens,2023-2024,9,Elye Wahi,,France,BU|MG|AG,77
+Lens,2023-2024,3,Deiver Machado,,Colombie,DG|MG,76
+Lens,2023-2024,26,Nampalys Mendy,,Senegal,MDC|MC,75
+Lens,2023-2024,11,Angelo Fulgini,,France,AG|MOC|MG|MD|BU,75
+Lens,2023-2024,23,Neil El Aynaoui,,Maroc,MDC|MC,75
+Lens,2023-2024,2,Ruben Aguilar,,France,DD|DG|MD,77
+Lens,2023-2024,28,Adrien Thomasson,,France,MC|MOC|BU|AG|MDC,76
+Lens,2023-2024,6,Salis Abdul Samed,,Ghana,MDC,76
+Lens,2023-2024,10,David Pereira Da Costa,,Portugal,BU|MOC|AG|MG,75
+Lens,2023-2024,21,Massadio Haidara,,Mali,DG|DC|MG,74
+Lens,2023-2024,22,Wesley Said,,France,AG|BU|AD|MG|MD|MOC,74
+Lens,2023-2024,18,Andy Diouf,,France,MC,74
+Lens,2023-2024,27,Morgan Guilavogui,,Guinee,BU,72
+Lens,2023-2024,13,Jhoanner Chavez,,Equateur,DG,72
+Lens,2023-2024,25,Abdukodir Khusanov,,Ouzbekistan,DC,70
+Lens,2024-2025,14,Facundo Medina,,Argentine,DC|DG,79
+Lens,2024-2025,30,Mathew Ryan,,Australie,G,78
+Lens,2024-2025,28,Adrien Thomasson,,France,MC|MOC|BU|AG|MDC,77
+Lens,2024-2025,24,Jonathan Gradit,,France,DC|DD,77
+Lens,2024-2025,3,Deiver Machado,,Colombie,DG|MG,76
+Lens,2024-2025,2,Ruben Aguilar,,France,DD|DG|MD,76
+Lens,2024-2025,7,Florian Sotoca,,France,AD|BU|AG|MD|MC|MOC,76
+Lens,2024-2025,23,Neil El Aynaoui,,Maroc,MDC|MC,76
+Lens,2024-2025,18,Andy Diouf,,France,MC,75
+Lens,2024-2025,19,Goduine Koyalipou,,Rep. centrafricaine,AG,73
+Lens,2024-2025,27,Abdulai Juma Bah,,Sierra Leone,DC,71
+Lens,2024-2025,22,Wesley Said,,France,AG|BU|AD|MG|MD|MOC,75
+Lens,2024-2025,8,M'Bala Nzola,,Angola,BU,75
+Lens,2024-2025,11,Angelo Fulgini,,France,AG|MOC|MG|MD|BU,74
+Lens,2024-2025,21,Anass Zaroury,,Maroc,MG|MOC|AG|BU,74
+Lens,2024-2025,9,Martin Satriano,,Uruguay,BU,74
+Lens,2024-2025,26,Nampalys Mendy,,Senegal,MDC|MC,73
+Lens,2024-2025,20,Malang Sarr,,France,DG|DC,73
+Lens,2024-2025,16,Herve Koffi,,Burkina Faso,G,73
+Lens,2024-2025,13,Jhoanner Chavez,,Equateur,DG,72
+Lens,2024-2025,36,Remy Labeau Lascary,,France,BU,72
+Lens,2025-2026,10,Florian Thauvin,,France,AD|MD,81
+Lens,2025-2026,28,Adrien Thomasson,,France,MC|MOC|BU|AG|MDC,80
+Lens,2025-2026,14,Matthieu Udol,,France,MG|DG|DC,80
+Lens,2025-2026,8,Mamadou Sangare,,Mali,MDC|MC|MOC|MD,80
+Lens,2025-2026,20,Malang Sarr,,France,DG|DC,78
+Lens,2025-2026,40,Robin Risser,,France,G,78
+Lens,2025-2026,22,Wesley Said,,France,AG|BU|AD|MG|MD|MOC,77
+Lens,2025-2026,11,Odsonne Edouard,,France,BU|AG|MG|MOC,77
+Lens,2025-2026,23,Saud Abdulhamid,,Arabie saoudite,MD|DD,76
+Lens,2025-2026,6,Samson Baidoo,,Autriche,DC,76
+Lens,2025-2026,25,Ismaelo Ganiou,,France,DD|DC,75
+Lens,2025-2026,9,Allan Saint-Maximin,,France,AG|AD|MG|MD|BU,77
+Lens,2025-2026,2,Ruben Aguilar,,France,DD|DG|MD,77
+Lens,2025-2026,21,Amadou Haidara,,Mali,MC|MG|MD|MDC,75
+Lens,2025-2026,7,Florian Sotoca,,France,AD|BU|AG|MD|MC|MOC,74
+Lens,2025-2026,19,Abdallah Sima,,Senegal,AG,73
+Lens,2025-2026,38,Rayan Fofana,,France,BU,72
+Lens,2025-2026,5,Andrija Bulatovic,,Montenegro,MC,71
+Lens,2025-2026,24,Jonathan Gradit,,France,DC|DD,77
+Lens,2025-2026,27,Arthur Masuaku,,RD Congo,DG|MG,75

@@ -1,0 +1,417 @@
+Club,Saison,Numero,Joueur,Nom d'usage,Nationalite,Postes,Note
+Liverpool,2004-2005,8,Steven Gerrard,,England,MC|MD|MOC|BU|MDC,93
+Liverpool,2004-2005,9,Djibril Cisse,,France,BU|AD|AG|MOC,90
+Liverpool,2004-2005,5,Milan Baros,,Czechia,BU|MOC|AD,87
+Liverpool,2004-2005,7,Harry Kewell,,Australia,MG|AG|BU|MOC,86
+Liverpool,2004-2005,4,Sami Hyypia,,Finland,DC|DD|MDC,86
+Liverpool,2004-2005,16,Dietmar Hamann,,Germany,MDC|MC|DC,85
+Liverpool,2004-2005,14,Xabi Alonso,,Spain,MC|MDC|MOC,85
+Liverpool,2004-2005,23,Jamie Carragher,,England,DC|DD|DG|MDC,84
+Liverpool,2004-2005,11,Vladimir Smicer,,Czechia,MOC|MD|MC|AD,83
+Liverpool,2004-2005,1,Jerzy Dudek,,Poland,G,83
+Liverpool,2004-2005,2,Stephane Henchoz,,Switzerland,DC|DD|MDC,82
+Liverpool,2004-2005,6,John Arne Riise,,Norway,DG|MG,82
+Liverpool,2004-2005,22,Chris Kirkland,,England,G,81
+Liverpool,2004-2005,10,Luis Garcia,,Spain,MD|BU|MOC|AD|AG,80
+Liverpool,2004-2005,17,Josemi,Josemi,Spain,DD|MD|DC,78
+Liverpool,2004-2005,3,Steve Finnan,,Republic of Ireland,DD|MD|DG,77
+Liverpool,2004-2005,25,Igor Biscan,,Croatia,MDC,76
+Liverpool,2004-2005,24,Florent Sinama-Pongolle,,France,BU,75
+Liverpool,2004-2005,12,Darwin Nunez,Nunez,Spain,BU|MD|AG|MOC,75
+Liverpool,2004-2005,15,Salif Diao,,Senegal,MDC,74
+Liverpool,2004-2005,21,Djimi Traore,,France,DG|DC|MG|MDC,74
+Liverpool,2004-2005,28,Stephen Warnock,,England,DG,71
+Liverpool,2005-2006,19,Fernando Morientes,,Spain,BU|MOC|AG,91
+Liverpool,2005-2006,8,Steven Gerrard,,England,MC|MD|MOC|BU|MDC,91
+Liverpool,2005-2006,9,Djibril Cisse,,France,BU|AD|AG|MOC,89
+Liverpool,2005-2006,1,Jerzy Dudek,,Poland,G,88
+Liverpool,2005-2006,14,Xabi Alonso,,Spain,MC|MDC|MOC,86
+Liverpool,2005-2006,10,Luis Garcia,,Spain,MD|BU|MOC|AD|AG,86
+Liverpool,2005-2006,7,Harry Kewell,,Australia,MG|AG|BU|MOC,85
+Liverpool,2005-2006,23,Jamie Carragher,,England,DC|DD|DG|MDC,85
+Liverpool,2005-2006,6,John Arne Riise,,Norway,DG|MG,85
+Liverpool,2005-2006,25,Pepe Reina,Reina,Spain,G,85
+Liverpool,2005-2006,16,Dietmar Hamann,,Germany,MDC|MC|DC,84
+Liverpool,2005-2006,30,Boudewijn Zenden,,Netherlands,MG|AG|MOC|MD,83
+Liverpool,2005-2006,4,Sami Hyypia,,Finland,DC|DD|MDC,83
+Liverpool,2005-2006,3,Steve Finnan,,Republic of Ireland,DD|MD|DG,81
+Liverpool,2005-2006,21,Djimi Traore,,Mali,DG|DC|MG|MDC,78
+Liverpool,2005-2006,33,Neil Mellor,,England,BU|MOC,78
+Liverpool,2005-2006,24,Florent Sinama-Pongolle,,France,BU,77
+Liverpool,2005-2006,17,Josemi,Josemi,Spain,DD|MD|DC,77
+Liverpool,2005-2006,20,Scott Carson,,England,G,75
+Liverpool,2005-2006,28,Stephen Warnock,,England,DG,74
+Liverpool,2005-2006,15,Peter Crouch,,England,BU|MOC,73
+Liverpool,2006-2007,8,Steven Gerrard,,England,MC|MD|MOC|BU|MDC,87
+Liverpool,2006-2007,23,Jamie Carragher,,England,DC|DD|DG|MDC,85
+Liverpool,2006-2007,25,Pepe Reina,Reina,Spain,G,84
+Liverpool,2006-2007,14,Xabi Alonso,,Spain,MC|MDC|MOC,84
+Liverpool,2006-2007,10,Luis Garcia,,Spain,MD|BU|MOC|AD|AG,84
+Liverpool,2006-2007,7,Harry Kewell,,Australia,MG|AG|BU|MOC,83
+Liverpool,2006-2007,4,Sami Hyypia,,Finland,DC|DD|MDC,83
+Liverpool,2006-2007,18,Dirk Kuyt,,Netherlands,BU|MD|MOC|AD,82
+Liverpool,2006-2007,17,Craig Bellamy,,Wales,BU|AG|AD|MOC,81
+Liverpool,2006-2007,1,Jerzy Dudek,,Poland,G,81
+Liverpool,2006-2007,22,Mohamed Sissoko,,Mali,MC|MDC|DC,80
+Liverpool,2006-2007,6,John Arne Riise,,Norway,DG|MG,79
+Liverpool,2006-2007,3,Steve Finnan,,Republic of Ireland,DD|MD|DG,78
+Liverpool,2006-2007,15,Peter Crouch,,England,BU|MOC,78
+Liverpool,2006-2007,9,Robbie Fowler,,England,BU,77
+Liverpool,2006-2007,32,Boudewijn Zenden,,Netherlands,MG|AG|MOC|MD,77
+Liverpool,2006-2007,12,Fabio Aurelio,,Brazil,DG|MG|MC,77
+Liverpool,2006-2007,16,Jermaine Pennant,,England,MD|AD|MG,77
+Liverpool,2007-2008,8,Steven Gerrard,,England,MC|MD|MOC|BU|MDC,88
+Liverpool,2007-2008,23,Jamie Carragher,,England,DC|DD|DG|MDC,87
+Liverpool,2007-2008,9,Fernando Torres,,Spain,BU|MOC|AG,86
+Liverpool,2007-2008,18,Dirk Kuyt,,Netherlands,BU|MD|MOC|AD,84
+Liverpool,2007-2008,25,Pepe Reina,Reina,Spain,G,84
+Liverpool,2007-2008,14,Xabi Alonso,,Spain,MC|MDC|MOC,84
+Liverpool,2007-2008,6,John Arne Riise,,Norway,DG|MG,82
+Liverpool,2007-2008,5,Daniel Agger,,Denmark,DC|DG|MDC,82
+Liverpool,2007-2008,16,Jermaine Pennant,,England,MD|AD|MG,81
+Liverpool,2007-2008,19,Ryan Babel,,Netherlands,MG|AG|BU|AD|MD,81
+Liverpool,2007-2008,11,Yossi Benayoun,,Israel,MOC|MD|MG|MC,80
+Liverpool,2007-2008,10,Andriy Voronin,,Ukraine,BU|MOC|AG|AD,80
+Liverpool,2007-2008,3,Steve Finnan,,Republic of Ireland,DD|MD|DG,79
+Liverpool,2007-2008,20,Javier Mascherano,,Argentina,MDC|MC|DC,79
+Liverpool,2007-2008,4,Sami Hyypia,,Finland,DC|DD|MDC,78
+Liverpool,2007-2008,30,Charles Itandje,,France,G,78
+Liverpool,2007-2008,22,Mohamed Sissoko,,Mali,MC|MDC|DC,78
+Liverpool,2007-2008,7,Harry Kewell,,Australia,MG|AG|BU|MOC,76
+Liverpool,2008-2009,8,Steven Gerrard,,England,MC|MD|MOC|BU|MDC,88
+Liverpool,2008-2009,9,Fernando Torres,,Spain,BU|MOC|AG,88
+Liverpool,2008-2009,23,Jamie Carragher,,England,DC|DD|DG|MDC,85
+Liverpool,2008-2009,20,Javier Mascherano,,Argentina,MDC|MC|DC,85
+Liverpool,2008-2009,25,Pepe Reina,Reina,Spain,G,84
+Liverpool,2008-2009,7,Robbie Keane,,Republic of Ireland,BU|MOC|AG,83
+Liverpool,2008-2009,14,Xabi Alonso,,Spain,MC|MDC|MOC,82
+Liverpool,2008-2009,5,Daniel Agger,,Denmark,DC|DG|MDC,82
+Liverpool,2008-2009,19,Ryan Babel,,Netherlands,MG|AG|BU|AD|MD,81
+Liverpool,2008-2009,18,Dirk Kuyt,,Netherlands,BU|MD|MOC|AD,80
+Liverpool,2008-2009,37,Martin Skrtel,,Slovakia,DC|DD|MDC,80
+Liverpool,2008-2009,11,Riera,Riera,Spain,MG|AG|MOC,79
+Liverpool,2008-2009,15,Yossi Benayoun,,Israel,MOC|MD|MG|MC,78
+Liverpool,2008-2009,2,Andrea Dossena,,Italy,DG|MG|DC,78
+Liverpool,2008-2009,4,Sami Hyypia,,Finland,DC|DD|MDC,77
+Liverpool,2008-2009,17,Arbeloa,Arbeloa,Spain,DD,77
+Liverpool,2008-2009,12,Fabio Aurelio,,Brazil,DG|MG|MC,76
+Liverpool,2008-2009,10,Andriy Voronin,,Ukraine,BU|MOC|AG|AD,76
+Liverpool,2008-2009,16,Jermaine Pennant,,England,MD|AD|MG,76
+Liverpool,2008-2009,21,Lucas,Lucas,Brazil,MC|MDC,76
+Liverpool,2008-2009,27,Philipp Degen,,Switzerland,DD,75
+Liverpool,2008-2009,1,Diego Cavalieri,,Brazil,G,75
+Liverpool,2009-2010,8,Steven Gerrard,,England,MC|MD|MOC|BU|MDC,88
+Liverpool,2009-2010,9,Fernando Torres,,Spain,BU|MOC|AG,88
+Liverpool,2009-2010,23,Jamie Carragher,,England,DC|DD|DG|MDC,85
+Liverpool,2009-2010,20,Javier Mascherano,,Argentina,MDC|MC|DC,85
+Liverpool,2009-2010,25,Pepe Reina,Reina,Spain,G,84
+Liverpool,2009-2010,18,Dirk Kuyt,,Netherlands,BU|MD|MOC|AD,83
+Liverpool,2009-2010,4,Alberto Aquilani,,Italy,MC|MOC|MDC,82
+Liverpool,2009-2010,11,Riera,Riera,Spain,MG|AG|MOC,82
+Liverpool,2009-2010,37,Martin Skrtel,,Slovakia,DC|DD|MDC,82
+Liverpool,2009-2010,5,Daniel Agger,,Denmark,DC|DG|MDC,81
+Liverpool,2009-2010,15,Yossi Benayoun,,Israel,MOC|MD|MG|MC,80
+Liverpool,2009-2010,10,Andriy Voronin,,Ukraine,BU|MOC|AG|AD,80
+Liverpool,2009-2010,2,Glen Johnson,,England,DD|MD|DG|DC,80
+Liverpool,2009-2010,19,Ryan Babel,,Netherlands,MG|AG|BU|AD|MD,80
+Liverpool,2009-2010,12,Fabio Aurelio,,Brazil,DG|MG|MC,78
+Liverpool,2009-2010,16,Sotirios Kyrgiakos,,Greece,DC|DD|MDC,78
+Liverpool,2009-2010,21,Lucas,Lucas,Brazil,MC|MDC,78
+Liverpool,2010-2011,8,Steven Gerrard,,England,MC|MD|MOC|BU|MDC,86
+Liverpool,2010-2011,9,Fernando Torres,,Spain,BU|MOC|AG,86
+Liverpool,2010-2011,25,Pepe Reina,Reina,Spain,G,85
+Liverpool,2010-2011,23,Jamie Carragher,,England,DC|DD|DG|MDC,82
+Liverpool,2010-2011,5,Daniel Agger,,Denmark,DC|DG|MDC,82
+Liverpool,2010-2011,18,Dirk Kuyt,,Netherlands,BU|MD|MOC|AD,81
+Liverpool,2010-2011,10,Joe Cole,,England,BU|MOC|AG|AD|MG|MD,80
+Liverpool,2010-2011,2,Glen Johnson,,England,DD|MD|DG|DC,80
+Liverpool,2010-2011,14,Milan Jovanovic,,Serbia,MOC|AG|AD|BU,80
+Liverpool,2010-2011,4,Raul Meireles,,Portugal,MC|MDC|MOC|MD,80
+Liverpool,2010-2011,37,Martin Skrtel,,Slovakia,DC|DD|MDC,80
+Liverpool,2010-2011,16,Sotirios Kyrgiakos,,Greece,DC|DD|MDC,79
+Liverpool,2010-2011,17,Maxi Rodriguez,,Argentina,MD|AD|AG|MG|MOC,79
+Liverpool,2010-2011,21,Lucas,Lucas,Brazil,MC|MDC,78
+Liverpool,2010-2011,28,Christian Poulsen,,Denmark,MDC,77
+Liverpool,2010-2011,19,Ryan Babel,,Netherlands,MG|AG|BU|AD|MD,77
+Liverpool,2011-2012,8,Steven Gerrard,,England,MC|MD|MOC|BU|MDC,86
+Liverpool,2011-2012,7,Luis Suarez,,Uruguay,BU|MOC|AG|AD,86
+Liverpool,2011-2012,25,Pepe Reina,Reina,Spain,G,85
+Liverpool,2011-2012,5,Daniel Agger,,Denmark,DC|DG|MDC,83
+Liverpool,2011-2012,19,Stewart Downing,,England,MG|AD|AG|MD|MOC,82
+Liverpool,2011-2012,39,Craig Bellamy,,Wales,BU|AG|AD|MOC,80
+Liverpool,2011-2012,2,Glen Johnson,,England,DD|MD|DG|DC,80
+Liverpool,2011-2012,26,Charlie Adam,,Scotland,MC|MDC|MOC,80
+Liverpool,2011-2012,37,Martin Skrtel,,Slovakia,DC|DD|MDC,80
+Liverpool,2011-2012,3,Jose Enrique,,Spain,DG|MG|DC,80
+Liverpool,2011-2012,21,Lucas,Lucas,Brazil,MC|MDC,80
+Liverpool,2011-2012,23,Jamie Carragher,,England,DC|DD|DG|MDC,78
+Liverpool,2011-2012,18,Dirk Kuyt,,Netherlands,BU|MD|MOC|AD,78
+Liverpool,2011-2012,9,Andy Carroll,,England,BU|MOC,78
+Liverpool,2011-2012,11,Maxi Rodriguez,,Argentina,MD|AD|AG|MG|MOC,77
+Liverpool,2011-2012,14,Jordan Henderson,,England,MD|MC|MDC,77
+Liverpool,2011-2012,34,Martin Kelly,,England,DD,77
+Liverpool,2012-2013,7,Luis Suarez,,Uruguay,BU|MOC|AG|AD,86
+Liverpool,2012-2013,8,Steven Gerrard,,England,MC|MD|MOC|BU|MDC,83
+Liverpool,2012-2013,25,Pepe Reina,Reina,Spain,G,83
+Liverpool,2012-2013,5,Daniel Agger,,Denmark,DC|DG|MDC,83
+Liverpool,2012-2013,37,Martin Skrtel,,Slovakia,DC|DD|MDC,82
+Liverpool,2012-2013,4,Nuri Sahin,,Turkey,MC|MDC|MOC,81
+Liverpool,2012-2013,21,Lucas,Lucas,Brazil,MC|MDC,81
+Liverpool,2012-2013,15,Daniel Sturridge,,England,BU|AD|MOC|AG,80
+Liverpool,2012-2013,2,Glen Johnson,,England,DD|MD|DG|DC,79
+Liverpool,2012-2013,3,Jose Enrique,,Spain,DG|MG|DC,79
+Liverpool,2012-2013,19,Stewart Downing,,England,MG|AD|AG|MD|MOC,78
+Liverpool,2012-2013,10,Philippe Coutinho,,Brazil,MG|MOC|AG|MC,78
+Liverpool,2012-2013,10,Joe Cole,,England,BU|MOC|AG|AD|MG|MD,77
+Liverpool,2012-2013,24,Joe Allen,,Wales,MC,77
+Liverpool,2012-2013,23,Jamie Carragher,,England,DC|DD|DG|MDC,76
+Liverpool,2012-2013,34,Martin Kelly,,England,DD,76
+Liverpool,2012-2013,11,Oussama Assaidi,,Morocco,AG,76
+Liverpool,2012-2013,31,Raheem Sterling,,England,AG|BU|AD|MG|MD|MOC,76
+Liverpool,2012-2013,29,Fabio Borini,,Italy,AG,75
+Liverpool,2013-2014,7,Luis Suarez,,Uruguay,BU|MOC|AG|AD,89
+Liverpool,2013-2014,8,Steven Gerrard,,England,MC|MD|MOC|BU|MDC,83
+Liverpool,2013-2014,15,Daniel Sturridge,,England,BU|AD|MOC|AG,83
+Liverpool,2013-2014,22,Simon Mignolet,,Belgium,G,82
+Liverpool,2013-2014,5,Daniel Agger,,Denmark,DC|DG|MDC,81
+Liverpool,2013-2014,37,Martin Skrtel,,Slovakia,DC|DD|MDC,81
+Liverpool,2013-2014,17,Mamadou Sakho,,France,DC|DG|MDC,81
+Liverpool,2013-2014,10,Philippe Coutinho,,Brazil,MG|MOC|AG|MC,81
+Liverpool,2013-2014,21,Lucas,Lucas,Brazil,MC|MDC,80
+Liverpool,2013-2014,4,Kolo Toure,,Ivory Coast,DC|DD|DG|MDC,79
+Liverpool,2013-2014,3,Jose Enrique,,Spain,DG|MG|DC,79
+Liverpool,2013-2014,31,Raheem Sterling,,England,AG|BU|AD|MG|MD|MOC,79
+Liverpool,2013-2014,2,Glen Johnson,,England,DD|MD|DG|DC,78
+Liverpool,2013-2014,14,Jordan Henderson,,England,MD|MC|MDC,78
+Liverpool,2013-2014,24,Joe Allen,,Wales,MC,77
+Liverpool,2013-2014,9,Iago Aspas,,Spain,BU,76
+Liverpool,2013-2014,12,Victor Moses,,Nigeria,MD,75
+Liverpool,2014-2015,15,Daniel Sturridge,,England,BU|AD|MOC|AG,83
+Liverpool,2014-2015,10,Philippe Coutinho,,Brazil,MG|MOC|AG|MC,82
+Liverpool,2014-2015,8,Steven Gerrard,,England,MC|MD|MOC|BU|MDC,81
+Liverpool,2014-2015,5,Daniel Agger,,Denmark,DC|DG|MDC,80
+Liverpool,2014-2015,37,Martin Skrtel,,Slovakia,DC|DD|MDC,80
+Liverpool,2014-2015,22,Simon Mignolet,,Belgium,G,80
+Liverpool,2014-2015,20,Adam Lallana,,England,AD|MD|MC,80
+Liverpool,2014-2015,17,Mamadou Sakho,,France,DC|DG|MDC,80
+Liverpool,2014-2015,45,Mario Balotelli,,Italy,BU|AG|MOC,80
+Liverpool,2014-2015,31,Raheem Sterling,,England,AG|BU|AD|MG|MD|MOC,80
+Liverpool,2014-2015,21,Lucas,Lucas,Brazil,MC|MDC,79
+Liverpool,2014-2015,14,Jordan Henderson,,England,MD|MC|MDC,79
+Liverpool,2014-2015,6,Dejan Lovren,,Croatia,DC|DD|MDC,79
+Liverpool,2014-2015,18,Alberto Moreno,,Spain,DG|MG|DC,79
+Liverpool,2014-2015,50,Lazar Markovic,,Serbia,MD|AD|AG|MG,78
+Liverpool,2014-2015,4,Kolo Toure,,Ivory Coast,DC|DD|DG|MDC,77
+Liverpool,2014-2015,9,Rickie Lambert,,England,BU,76
+Liverpool,2014-2015,24,Joe Allen,,Wales,MC,76
+Liverpool,2015-2016,10,Philippe Coutinho,,Brazil,MG|MOC|AG|MC,84
+Liverpool,2015-2016,15,Daniel Sturridge,,England,BU|AD|MOC|AG,83
+Liverpool,2015-2016,11,Roberto Firmino,,Brazil,MOC|AD|BU,82
+Liverpool,2015-2016,37,Martin Skrtel,,Slovakia,DC|DD|MDC,81
+Liverpool,2015-2016,17,Mamadou Sakho,,France,DC|DG|MDC,81
+Liverpool,2015-2016,7,James Milner,,England,MDC|DG|MC|MG|DD|MOC,80
+Liverpool,2015-2016,20,Adam Lallana,,England,AD|MD|MC,80
+Liverpool,2015-2016,9,Christian Benteke,,Belgium,BU|MOC|AG,80
+Liverpool,2015-2016,2,Nathaniel Clyne,,England,DD|MD|DG,80
+Liverpool,2015-2016,21,Lucas,Lucas,Brazil,MC|MDC,79
+Liverpool,2015-2016,14,Jordan Henderson,,England,MD|MC|MDC,79
+Liverpool,2015-2016,6,Dejan Lovren,,Croatia,DC|DD|MDC,79
+Liverpool,2015-2016,4,Kolo Toure,,Ivory Coast,DC|DD|DG|MDC,78
+Liverpool,2015-2016,22,Simon Mignolet,,Belgium,G,78
+Liverpool,2015-2016,18,Alberto Moreno,,Spain,DG|MG|DC,77
+Liverpool,2015-2016,50,Lazar Markovic,,Serbia,MD|AD|AG|MG,77
+Liverpool,2015-2016,24,Joe Allen,,Wales,MC,76
+Liverpool,2015-2016,19,Steven Caulker,,England,DC,76
+Liverpool,2015-2016,28,Danny Ings,,England,BU,76
+Liverpool,2015-2016,27,Divock Origi,,Belgium,BU|AG|MOC,76
+Liverpool,2016-2017,10,Philippe Coutinho,,Brazil,MG|MOC|AG|MC,86
+Liverpool,2016-2017,15,Daniel Sturridge,,England,BU|AD|MOC|AG,83
+Liverpool,2016-2017,20,Adam Lallana,,England,AD|MD|MC,83
+Liverpool,2016-2017,32,Joel Matip,,Cameroon,DC|DD|MDC,83
+Liverpool,2016-2017,11,Roberto Firmino,,Brazil,MOC|AD|BU,83
+Liverpool,2016-2017,3,Mamadou Sakho,,France,DC|DG|MDC,82
+Liverpool,2016-2017,14,Jordan Henderson,,England,MD|MC|MDC,82
+Liverpool,2016-2017,2,Nathaniel Clyne,,England,DD|MD|DG,82
+Liverpool,2016-2017,1,Loris Karius,,Germany,G,82
+Liverpool,2016-2017,19,Sadio Mane,,Senegal,AD|AG|BU|MG|MD,82
+Liverpool,2016-2017,5,Georginio Wijnaldum,,Netherlands,MC|MDC|MOC|MG,81
+Liverpool,2016-2017,45,Mario Balotelli,,Italy,BU|AG|MOC,81
+Liverpool,2016-2017,6,Dejan Lovren,,Croatia,DC|DD|MDC,81
+Liverpool,2016-2017,7,James Milner,,England,MDC|DG|MC|MG|DD|MOC,80
+Liverpool,2016-2017,22,Simon Mignolet,,Belgium,G,80
+Liverpool,2016-2017,21,Lucas,Lucas,Brazil,MC|MDC,80
+Liverpool,2016-2017,23,Emre Can,,Germany,MC|MDC|DC|DD,79
+Liverpool,2016-2017,27,Divock Origi,,Belgium,BU|AG|MOC,79
+Liverpool,2016-2017,17,Ragnar Klavan,,Estonia,DC|DG|MDC,78
+Liverpool,2017-2018,10,Philippe Coutinho,,Brazil,MG|MOC|AG|MC,87
+Liverpool,2017-2018,11,Mohamed Salah,,Egypt,AD|MD|AG|BU|MOC,87
+Liverpool,2017-2018,9,Roberto Firmino,,Brazil,MOC|AD|BU,85
+Liverpool,2017-2018,4,Virgil van Dijk,,Netherlands,DC|DD|MDC,84
+Liverpool,2017-2018,19,Sadio Mane,,Senegal,AD|AG|BU|MG|MD,84
+Liverpool,2017-2018,20,Adam Lallana,,England,AD|MD|MC,82
+Liverpool,2017-2018,5,Georginio Wijnaldum,,Netherlands,MC|MDC|MOC|MG,82
+Liverpool,2017-2018,32,Joel Matip,,Cameroon,DC|DD|MDC,82
+Liverpool,2017-2018,15,Daniel Sturridge,,England,BU|AD|MOC|AG,81
+Liverpool,2017-2018,14,Jordan Henderson,,England,MD|MC|MDC,81
+Liverpool,2017-2018,2,Nathaniel Clyne,,England,DD|MD|DG,81
+Liverpool,2017-2018,21,Alex Oxlade-Chamberlain,,England,MD|MC,81
+Liverpool,2017-2018,7,James Milner,,England,MDC|DG|MC|MG|DD|MOC,80
+Liverpool,2017-2018,22,Simon Mignolet,,Belgium,G,80
+Liverpool,2017-2018,3,Mamadou Sakho,,France,DC|DG|MDC,80
+Liverpool,2017-2018,6,Dejan Lovren,,Croatia,DC|DD|MDC,80
+Liverpool,2017-2018,1,Loris Karius,,Germany,G,80
+Liverpool,2017-2018,23,Emre Can,,Germany,MC|MDC|DC|DD,80
+Liverpool,2017-2018,26,Andrew Robertson,,Scotland,DG|MG|DC,79
+Liverpool,2018-2019,4,Virgil van Dijk,,Netherlands,DC|DD|MDC,89
+Liverpool,2018-2019,11,Mohamed Salah,,Egypt,AD|MD|AG|BU|MOC,89
+Liverpool,2018-2019,10,Sadio Mane,,Senegal,AD|AG|BU|MG|MD,87
+Liverpool,2018-2019,13,Alisson,Alisson,Brazil,G,87
+Liverpool,2018-2019,9,Roberto Firmino,,Brazil,MOC|AD|BU,86
+Liverpool,2018-2019,3,Fabinho,Fabinho,Brazil,MDC|MC|DC|DD,85
+Liverpool,2018-2019,5,Georginio Wijnaldum,,Netherlands,MC|MDC|MOC|MG,83
+Liverpool,2018-2019,26,Andrew Robertson,,Scotland,DG|MG|DC,83
+Liverpool,2018-2019,8,Naby Keita,,Guinea,MC|MDC|MOC,83
+Liverpool,2018-2019,14,Jordan Henderson,,England,MD|MC|MDC,82
+Liverpool,2018-2019,23,Xherdan Shaqiri,,Switzerland,AD|MOC|MD|AG,82
+Liverpool,2018-2019,7,James Milner,,England,MDC|DG|MC|MG|DD|MOC,81
+Liverpool,2018-2019,6,Dejan Lovren,,Croatia,DC|DD|MDC,81
+Liverpool,2018-2019,32,Joel Matip,,Cameroon,DC|DD|MDC,81
+Liverpool,2018-2019,21,Alex Oxlade-Chamberlain,,England,MD|MC,80
+Liverpool,2018-2019,66,Trent Alexander-Arnold,,England,DD|MD|MC,80
+Liverpool,2018-2019,15,Daniel Sturridge,,England,BU|AD|MOC|AG,79
+Liverpool,2018-2019,20,Adam Lallana,,England,AD|MD|MC,79
+Liverpool,2018-2019,12,Joe Gomez,,England,DC|DD|DG,78
+Liverpool,2019-2020,4,Virgil van Dijk,,Netherlands,DC|DD|MDC,91
+Liverpool,2019-2020,10,Sadio Mane,,Senegal,AD|AG|BU|MG|MD,90
+Liverpool,2019-2020,11,Mohamed Salah,,Egypt,AD|MD|AG|BU|MOC,90
+Liverpool,2019-2020,1,Alisson,Alisson,Brazil,G,90
+Liverpool,2019-2020,9,Roberto Firmino,,Brazil,MOC|AD|BU,88
+Liverpool,2019-2020,3,Fabinho,Fabinho,Brazil,MDC|MC|DC|DD,86
+Liverpool,2019-2020,26,Andrew Robertson,,Scotland,DG|MG|DC,86
+Liverpool,2019-2020,5,Georginio Wijnaldum,,Netherlands,MC|MDC|MOC|MG,85
+Liverpool,2019-2020,14,Jordan Henderson,,England,MD|MC|MDC,85
+Liverpool,2019-2020,66,Trent Alexander-Arnold,,England,DD|MD|MC,85
+Liverpool,2019-2020,32,Joel Matip,,Cameroon,DC|DD|MDC,83
+Liverpool,2019-2020,8,Naby Keita,,Guinea,MC|MDC|MOC,82
+Liverpool,2019-2020,12,Joe Gomez,,England,DC|DD|DG,82
+Liverpool,2019-2020,7,James Milner,,England,MDC|DG|MC|MG|DD|MOC,81
+Liverpool,2019-2020,23,Xherdan Shaqiri,,Switzerland,AD|MOC|MD|AG,81
+Liverpool,2019-2020,6,Dejan Lovren,,Croatia,DC|DD|MDC,80
+Liverpool,2019-2020,15,Alex Oxlade-Chamberlain,,England,MD|MC,80
+Liverpool,2019-2020,20,Adam Lallana,,England,AD|MD|MC,78
+Liverpool,2019-2020,27,Divock Origi,,Belgium,BU|AG|MOC,78
+Liverpool,2019-2020,18,Takumi Minamino,,Japan,MD,77
+Liverpool,2020-2021,4,Virgil van Dijk,,Netherlands,DC|DD|MDC,90
+Liverpool,2020-2021,11,Mohamed Salah,,Egypt,AD|MD|AG|BU|MOC,90
+Liverpool,2020-2021,1,Alisson,Alisson,Brazil,G,89
+Liverpool,2020-2021,10,Sadio Mane,,Senegal,AD|AG|BU|MG|MD,88
+Liverpool,2020-2021,3,Fabinho,Fabinho,Brazil,MDC|MC|DC|DD,87
+Liverpool,2020-2021,26,Andrew Robertson,,Scotland,DG|MG|DC,87
+Liverpool,2020-2021,14,Jordan Henderson,,England,MD|MC|MDC,86
+Liverpool,2020-2021,66,Trent Alexander-Arnold,,England,DD|MD|MC,86
+Liverpool,2020-2021,6,Thiago Alcantara,,Spain,MC|MDC|MOC,85
+Liverpool,2020-2021,9,Roberto Firmino,,Brazil,MOC|AD|BU,85
+Liverpool,2020-2021,5,Georginio Wijnaldum,,Netherlands,MC|MDC|MOC|MG,84
+Liverpool,2020-2021,32,Joel Matip,,Cameroon,DC|DD|MDC,83
+Liverpool,2020-2021,12,Joe Gomez,,England,DC|DD|DG,83
+Liverpool,2020-2021,20,Diogo Jota,,Portugal,AG|BU|AD|MG|MOC,82
+Liverpool,2020-2021,8,Naby Keita,,Guinea,MC|MDC|MOC,80
+Liverpool,2020-2021,7,James Milner,,England,MDC|DG|MC|MG|DD|MOC,79
+Liverpool,2020-2021,23,Xherdan Shaqiri,,Switzerland,AD|MOC|MD|AG,79
+Liverpool,2020-2021,15,Alex Oxlade-Chamberlain,,England,MD|MC,78
+Liverpool,2020-2021,27,Divock Origi,,Belgium,BU|AG|MOC,76
+Liverpool,2021-2022,11,Mohamed Salah,,Egypt,AD|MD|AG|BU|MOC,91
+Liverpool,2021-2022,4,Virgil van Dijk,,Netherlands,DC|DD|MDC,90
+Liverpool,2021-2022,10,Sadio Mane,,Senegal,AD|AG|BU|MG|MD,89
+Liverpool,2021-2022,1,Alisson,Alisson,Brazil,G,89
+Liverpool,2021-2022,3,Fabinho,Fabinho,Brazil,MDC|MC|DC|DD,87
+Liverpool,2021-2022,26,Andrew Robertson,,Scotland,DG|MG|DC,87
+Liverpool,2021-2022,66,Trent Alexander-Arnold,,England,DD|MD|MC,87
+Liverpool,2021-2022,6,Thiago Alcantara,,Spain,MC|MDC|MOC,86
+Liverpool,2021-2022,20,Diogo Jota,,Portugal,AG|BU|AD|MG|MOC,85
+Liverpool,2021-2022,32,Joel Matip,,Cameroon,DC|DD|MDC,84
+Liverpool,2021-2022,14,Jordan Henderson,,England,MD|MC|MDC,83
+Liverpool,2021-2022,9,Roberto Firmino,,Brazil,MOC|AD|BU,85
+Liverpool,2021-2022,23,Luis Diaz,,Colombia,AG|BU|AD|MG,84
+Liverpool,2021-2022,12,Joe Gomez,,England,DC|DD|DG,81
+Liverpool,2021-2022,8,Naby Keita,,Guinea,MC|MDC|MOC,80
+Liverpool,2021-2022,5,Ibrahima Konate,,France,DC|DD|MDC,80
+Liverpool,2021-2022,7,James Milner,,England,MDC|DG|MC|MG|DD|MOC,78
+Liverpool,2021-2022,15,Alex Oxlade-Chamberlain,,England,MD|MC,78
+Liverpool,2021-2022,21,Konstantinos Tsimikas,,Greece,DG|MG|DC,77
+Liverpool,2022-2023,11,Mohamed Salah,,Egypt,AD|MD|AG|BU|MOC,89
+Liverpool,2022-2023,1,Alisson,Alisson,Brazil,G,89
+Liverpool,2022-2023,4,Virgil van Dijk,,Netherlands,DC|DD|MDC,88
+Liverpool,2022-2023,26,Andrew Robertson,,Scotland,DG|MG|DC,86
+Liverpool,2022-2023,3,Fabinho,Fabinho,Brazil,MDC|MC|DC|DD,85
+Liverpool,2022-2023,66,Trent Alexander-Arnold,,England,DD|MD|MC,85
+Liverpool,2022-2023,20,Diogo Jota,,Portugal,AG|BU|AD|MG|MOC,84
+Liverpool,2022-2023,18,Cody Gakpo,,Netherlands,BU|MG|AG|AD|MOC,83
+Liverpool,2022-2023,5,Ibrahima Konate,,France,DC|DD|MDC,81
+Liverpool,2022-2023,14,Jordan Henderson,,England,MD|MC|MDC,80
+Liverpool,2022-2023,17,Curtis Jones,,England,MC|MOC,77
+Liverpool,2022-2023,6,Thiago Alcantara,,Spain,MC|MDC|MOC,85
+Liverpool,2022-2023,23,Luis Diaz,,Colombia,AG|BU|AD|MG,84
+Liverpool,2022-2023,9,Roberto Firmino,,Brazil,MOC|AD|BU,83
+Liverpool,2022-2023,27,Darwin Nunez,Nunez,Uruguay,BU|MD|AG|MOC,82
+Liverpool,2022-2023,32,Joel Matip,,Cameroon,DC|DD|MDC,81
+Liverpool,2022-2023,2,Joe Gomez,,England,DC|DD|DG,79
+Liverpool,2022-2023,7,James Milner,,England,MDC|DG|MC|MG|DD|MOC,78
+Liverpool,2022-2023,15,Alex Oxlade-Chamberlain,,England,MD|MC,77
+Liverpool,2023-2024,4,Virgil van Dijk,,Netherlands,DC|DD|MDC,89
+Liverpool,2023-2024,11,Mohamed Salah,,Egypt,AD|MD|AG|BU|MOC,89
+Liverpool,2023-2024,1,Alisson,Alisson,Brazil,G,89
+Liverpool,2023-2024,26,Andrew Robertson,,Scotland,DG|MG|DC,86
+Liverpool,2023-2024,66,Trent Alexander-Arnold,,England,DD|MD|MC,86
+Liverpool,2023-2024,10,Alexis Mac Allister,,Argentina,MC|MDC,84
+Liverpool,2023-2024,7,Luis Diaz,,Colombia,AG|BU|AD|MG,84
+Liverpool,2023-2024,18,Cody Gakpo,,Netherlands,BU|MG|AG|AD|MOC,82
+Liverpool,2023-2024,3,Wataru Endo,,Japan,MDC|MC|DC,80
+Liverpool,2023-2024,19,Harvey Elliott,,England,MC|MOC|MD|AD|MG,77
+Liverpool,2023-2024,20,Diogo Jota,,Portugal,AG|BU|AD|MG|MOC,85
+Liverpool,2023-2024,5,Ibrahima Konate,,France,DC|DD|MDC,83
+Liverpool,2023-2024,9,Darwin Nunez,Nunez,Uruguay,BU|MD|AG|MOC,83
+Liverpool,2023-2024,8,Dominik Szoboszlai,,Hungary,MOC|DD|MC|MD|MG,81
+Liverpool,2023-2024,2,Joe Gomez,,England,DC|DD|DG,80
+Liverpool,2023-2024,17,Curtis Jones,,England,MC|MOC,79
+Liverpool,2023-2024,38,Ryan Gravenberch,,Netherlands,MC|MDC,79
+Liverpool,2023-2024,21,Konstantinos Tsimikas,,Greece,DG|MG|DC,77
+Liverpool,2023-2024,32,Joel Matip,,Cameroon,DC|DD|MDC,80
+Liverpool,2024-2025,11,Mohamed Salah,,Egypt,AD|MD|AG|BU|MOC,91
+Liverpool,2024-2025,4,Virgil van Dijk,,Netherlands,DC|DD|MDC,90
+Liverpool,2024-2025,1,Alisson,Alisson,Brazil,G,89
+Liverpool,2024-2025,66,Trent Alexander-Arnold,,England,DD|MD|MC,86
+Liverpool,2024-2025,10,Alexis Mac Allister,,Argentina,MC|MDC,86
+Liverpool,2024-2025,5,Ibrahima Konate,,France,DC|DD|MDC,85
+Liverpool,2024-2025,7,Luis Diaz,,Colombia,AG|BU|AD|MG,85
+Liverpool,2024-2025,18,Cody Gakpo,,Netherlands,BU|MG|AG|AD|MOC,84
+Liverpool,2024-2025,38,Ryan Gravenberch,,Netherlands,MC|MDC,84
+Liverpool,2024-2025,26,Andrew Robertson,,Scotland,DG|MG|DC,82
+Liverpool,2024-2025,8,Dominik Szoboszlai,,Hungary,MOC|DD|MC|MD|MG,82
+Liverpool,2024-2025,14,Federico Chiesa,,Italy,MD|AD|AG|BU,82
+Liverpool,2024-2025,17,Curtis Jones,,England,MC|MOC,80
+Liverpool,2024-2025,9,Darwin Nunez,Nunez,Uruguay,BU|MD|AG|MOC,80
+Liverpool,2024-2025,3,Wataru Endo,,Japan,MDC|MC|DC,79
+Liverpool,2024-2025,62,Caoimhin Kelleher,,Republic of Ireland,G,79
+Liverpool,2024-2025,21,Konstantinos Tsimikas,,Greece,DG|MG|DC,78
+Liverpool,2024-2025,19,Harvey Elliott,,England,MC|MOC|MD|AD|MG,78
+Liverpool,2024-2025,2,Joe Gomez,,England,DC|DD|DG,80
+Liverpool,2025-2026,11,Mohamed Salah,,Egypt,AD|MD|AG|BU|MOC,89
+Liverpool,2025-2026,4,Virgil van Dijk,,Netherlands,DC|DD|MDC,88
+Liverpool,2025-2026,1,Alisson,Alisson,Brazil,G,88
+Liverpool,2025-2026,9,Alexander Isak,,Sweden,BU|AG|MOC,87
+Liverpool,2025-2026,7,Florian Wirtz,,Germany,MOC|MC|MG|AG,87
+Liverpool,2025-2026,8,Dominik Szoboszlai,,Hungary,MOC|DD|MC|MD|MG,86
+Liverpool,2025-2026,38,Ryan Gravenberch,,Netherlands,MC|MDC,86
+Liverpool,2025-2026,10,Alexis Mac Allister,,Argentina,MC|MDC,85
+Liverpool,2025-2026,5,Ibrahima Konate,,France,DC|DD|MDC,84
+Liverpool,2025-2026,18,Cody Gakpo,,Netherlands,BU|MG|AG|AD|MOC,83
+Liverpool,2025-2026,26,Andrew Robertson,,Scotland,DG|MG|DC,81
+Liverpool,2025-2026,25,Giorgi Mamardashvili,,Georgia,G,83
+Liverpool,2025-2026,30,Jeremie Frimpong,,Netherlands,DD|MD|AD,82
+Liverpool,2025-2026,6,Milos Kerkez,,Hungary,DG|MG|DC,81
+Liverpool,2025-2026,14,Federico Chiesa,,Italy,MD|AD|AG|BU,80
+Liverpool,2025-2026,17,Curtis Jones,,England,MC|MOC,80
+Liverpool,2025-2026,2,Joe Gomez,,England,DC|DD|DG,79
+Liverpool,2025-2026,22,Hugo Ekitike,,France,BU|AG|MOC,85
+Liverpool,2025-2026,3,Wataru Endo,,Japan,MDC|MC|DC,79

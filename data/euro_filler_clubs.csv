@@ -1,0 +1,96 @@
+Id,Nom,Force
+eu_ajax,Amsterdam,82
+eu_psv,Eindhoven,83
+eu_feyenoord,Rotterdam,79
+eu_az,Alkmaar,76
+eu_twente,Twente Enschede,70
+eu_utrecht,Utrecht,64
+eu_benfica,Lisbon Red,83
+eu_porto,Porto,82
+eu_sporting,Lisbon Green,81
+eu_braga,Braga,75
+eu_vitoria,Guimaraes,68
+eu_brugge,Bruges,78
+eu_unionsg,Saint-Gilles,76
+eu_anderlecht,Anderlecht,73
+eu_genk,Genk,71
+eu_sinttruiden,Sint-Truiden,61
+eu_slaviaprague,Prague Vrsovice,78
+eu_sparta_praha,Sparta Letna,75
+eu_plzen,Plzen,71
+eu_karvina,Karvina,57
+eu_galatasaray,Istanbul Yellow,83
+eu_fenerbahce,Istanbul Navy,79
+eu_besiktas,Istanbul Black,75
+eu_trabzonspor,Trabzon,73
+eu_basaksehir,Istanbul Orange,66
+eu_bodo_glimt,Bodo,79
+eu_molde,Molde,65
+eu_lillestrom,Lillestrom,60
+eu_olympiacos,Piraeus Red,82
+eu_paok,Thessaloniki FC,78
+eu_aek,Athens Yellow,74
+eu_panathinaikos,Athens Green,73
+eu_ofi_crete,Heraklion OFI,57
+eu_salzburg,Salzburg,80
+eu_sturm,Graz,73
+eu_lask,Linz ASK,64
+eu_youngboys,Bern FC,74
+eu_basel,Basel,73
+eu_servette,Geneva,61
+eu_zurich,Zurich,65
+eu_thun,Thun,58
+eu_redstar,Belgrade Red,76
+eu_partizan,Belgrade Black,70
+eu_vojvodina,Novi Sad,56
+eu_dinamozagreb,Zagreb Dynamic,77
+eu_hajduk,Split,63
+eu_pafos,Paphos,76
+eu_apoel,Nicosia Blue,65
+eu_omonia,Nicosia Green,64
+eu_rangers,Glasgow Blue,77
+eu_celtic,Glasgow Green,75
+eu_hearts,Edinburgh,64
+eu_aberdeen,Aberdeen,61
+eu_stmirren,Paisley,54
+eu_shakhtar,Donetsk,79
+eu_dinamokyiv,Kyiv,70
+eu_lechpoznan,Poznan,64
+eu_jagiellonia,Bialystok,62
+eu_rakow,Czestochowa,63
+eu_gornikzabrze,Zabrze,57
+eu_fck,Copenhagen,72
+eu_midtjylland,Herning,70
+eu_agf,Aarhus,59
+eu_malmo,Malmo,64
+eu_mjallby,Mjallby,58
+eu_qarabag,Agdam,75
+eu_sabah,Baku North,56
+eu_sabail,Baku South,51
+eu_fcsb,Bucharest,63
+eu_universitatea,Craiova,59
+eu_ferencvaros,Budapest,70
+eu_debrecen,Debrecen,53
+eu_slovanbratislava,Bratislava,65
+eu_zilina,Zilina,57
+eu_trnava,Trnava,55
+eu_ludogorets,Razgrad,71
+eu_levski,Sofia,57
+eu_kairat,Almaty,68
+eu_zalgiris,Vilnius,54
+eu_valur,Reykjavik,55
+eu_breidablik,Kopavogur,50
+eu_floratallinn,Tallinn,54
+eu_shamrock,Tallaght,60
+eu_stpatricks,Inchicore,57
+eu_linfield,Belfast,49
+eu_larne,Larne,51
+eu_rioave,Vila do Conde,59
+eu_koper,Koper,55
+eu_pyunik,Yerevan,53
+eu_sutjeska,Niksic,52
+eu_hjk,Helsinki,59
+eu_kups,Kuopio,51
+eu_lincolnredimps,Gibraltar Red,51
+eu_dnipro,Dnipro,57
+eu_shelbourne,Drumcondra,47

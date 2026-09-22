@@ -1,0 +1,570 @@
+Club,Saison,Numero,Joueur,Nationalite,Postes,Note
+Nice,2015-2016,9,Hatem Ben Arfa,France,MOC|MD|AD,82
+Nice,2015-2016,28,Valere Germain,France,AG,78
+Nice,2015-2016,24,Mathieu Bodmer,France,DC,77
+Nice,2015-2016,22,Nampalys Mendy,France,MDC,77
+Nice,2015-2016,6,Jean Michael Seri,Cote d'Ivoire,MC,76
+Nice,2015-2016,4,Paul Baysse,France,DC,75
+Nice,2015-2016,14,Alassane Plea,France,BU|AG,75
+Nice,2015-2016,29,Jeremy Pied,France,DG,74
+Nice,2015-2016,20,Maxime Le Marchand,France,DC,74
+Nice,2015-2016,23,Ricardo Pereira,Portugal,DD,74
+Nice,2015-2016,25,Romain Genevois,France,DD,72
+Nice,2015-2016,8,Mahamane Traore,Mali,MOC,72
+Nice,2015-2016,13,Niklas Hult,Suede,MG,72
+Nice,2015-2016,26,Vincent Koziello,France,MDC,72
+Nice,2015-2016,10,Mickael Le Bihan,France,BU,71
+Nice,2015-2016,1,Mouez Hassen,France,G,71
+Nice,2015-2016,19,Wallyson Teixeira Mallmann,Bresil,MC,71
+Nice,2015-2016,30,Yoan Cardinale,France,G,70
+Nice,2015-2016,5,Kevin Gomis,France,DC,69
+Nice,2015-2016,33,Olivier Boscagli,France,DC,69
+Nice,2015-2016,18,Remi Walter,France,MC,68
+Nice,2015-2016,16,Simon Pouplin,France,G,67
+Nice,2015-2016,11,Said Benrahma,Algerie,MD,67
+Nice,2015-2016,15,Alexandre Mendy,France,BU,66
+Nice,2015-2016,7,Julien Vercauteren,Belgique,MG,65
+Nice,2015-2016,38,Dorian Caddy,France,BU,64
+Nice,2015-2016,3,Gautier Lloris,France,DC,63
+Nice,2015-2016,12,Albert Rafetraniaina,France,MDC,62
+Nice,2015-2016,36,Franck Honorat,France,BU,61
+Nice,2015-2016,39,Romain Perraud,France,MC,60
+Nice,2007-2008,12,Bakari Kone,Cote d'Ivoire,BU,79
+Nice,2007-2008,14,Florent Balmont,France,MD,76
+Nice,2007-2008,1,Hugo Lloris,France,G,75
+Nice,2007-2008,11,Joseph-Desire Job,Cameroun,BU,74
+Nice,2007-2008,8,David Hellebuyck,France,MG,74
+Nice,2007-2008,4,Vincent Hognon,France,DC,74
+Nice,2007-2008,22,Habib Bamogo,France,BU,73
+Nice,2007-2008,13,Jacques Abardonado,France,DC,73
+Nice,2007-2008,5,Cedric Kante,Mali,DG,72
+Nice,2007-2008,10,Ederson,Bresil,MOC,72
+Nice,2007-2008,9,Lilian Laslandes,France,BU,70
+Nice,2007-2008,26,Cyril Rool,France,MG,68
+Nice,2007-2008,2,Patrick Barul,France,DD,68
+Nice,2007-2008,6,Olivier Echouafni,France,MDC,67
+Nice,2007-2008,25,Onyekachi Apam,Nigeria,DC,66
+Nice,2007-2008,16,Lionel Letizi,France,G,64
+Nice,2007-2008,21,Mohamed Yahaya,Ghana,DC,63
+Nice,2007-2008,30,Jeremie Moreau,France,G,60
+Nice,2007-2008,15,Anthony Modeste,France,AD,59
+Nice,2007-2008,32,Clement Dragon,France,MG,58
+Nice,2007-2008,28,Mahamane Traore,Mali,MOC,57
+Nice,2007-2008,33,Anthony Scaramozzino,France,DG,56
+Nice,2007-2008,23,Drissa Diakite,Mali,MDC,55
+Nice,2007-2008,18,Ismael Gace,France,DC,54
+Nice,2007-2008,7,Derek Asamoah,Ghana,AD,50
+Nice,2008-2009,8,David Hellebuyck,France,MC,75
+Nice,2008-2009,27,Cyril Jeunechamp,France,DD,73
+Nice,2008-2009,26,Cyril Rool,France,DG,72
+Nice,2008-2009,7,Loic Remy,France,AD,72
+Nice,2008-2009,15,Anthony Modeste,France,AD,72
+Nice,2008-2009,14,Matt Moussilou,France,BU,71
+Nice,2008-2009,4,Vincent Hognon,France,DC,71
+Nice,2008-2009,22,Habib Bamogo,France,BU,70
+Nice,2008-2009,24,Gerald Cid,France,DC,70
+Nice,2008-2009,16,Lionel Letizi,France,G,69
+Nice,2008-2009,5,Cedric Kante,Mali,DC,69
+Nice,2008-2009,17,Emerse Fae,Cote d'Ivoire,MC,69
+Nice,2008-2009,1,David Ospina,Colombie,G,69
+Nice,2008-2009,6,Olivier Echouafni,France,MC,67
+Nice,2008-2009,19,Joseph-Desire Job,Cameroun,BU,66
+Nice,2008-2009,2,Patrick Barul,France,DD,66
+Nice,2008-2009,25,Onyekachi Apam,Nigeria,DC,66
+Nice,2008-2009,21,Chaouki Ben Saada,Tunisie,BU,65
+Nice,2008-2009,13,Kafoumba Coulibaly,Cote d'Ivoire,MDC,63
+Nice,2008-2009,11,Eric Mouloungui,Gabon,AG,62
+Nice,2008-2009,18,Ismael Gace,France,DC,59
+Nice,2008-2009,28,Mahamane Traore,Mali,MOC,57
+Nice,2008-2009,30,Jeremie Moreau,France,G,55
+Nice,2008-2009,23,Drissa Diakite,Mali,MDC,55
+Nice,2010-2011,1,David Ospina,Colombie,G,76
+Nice,2010-2011,28,Danijel Ljuboja,Serbie,BU,75
+Nice,2010-2011,8,David Hellebuyck,France,MDG,74
+Nice,2010-2011,26,Anthony Mounier,France,AG|MG,74
+Nice,2010-2011,10,Mamadou Bagayoko,Mali,BU,73
+Nice,2010-2011,21,Habib Bamogo,Burkina Faso,BU,73
+Nice,2010-2011,14,Emerse Fae,Cote d'Ivoire,BU,73
+Nice,2010-2011,16,Lionel Letizi,France,G,72
+Nice,2010-2011,17,Chaouki Ben Saada,Tunisie,AD,72
+Nice,2010-2011,27,Julien Sable,France,MDD,72
+Nice,2010-2011,2,Renato Civelli,Argentine,DC|DD,72
+Nice,2010-2011,6,Didier Digard,France,MDC,71
+Nice,2010-2011,4,Nemanja Pejcinovic,Serbie,DC|DG,71
+Nice,2010-2011,5,Gregory Paisley,France,DG,69
+Nice,2010-2011,23,Drissa Diakite,Mali,DD,69
+Nice,2010-2011,22,Adeilson Pereira de Mello,Bresil,BU,69
+Nice,2010-2011,11,Eric Mouloungui,Gabon,AG,68
+Nice,2010-2011,18,Ismael Gace,France,DC,68
+Nice,2010-2011,20,Abdou Traore,Mali,MD,67
+Nice,2010-2011,9,Mickael Pote,Benin,BU,66
+Nice,2010-2011,19,Larrys Mabiala,RD Congo,DC,65
+Nice,2010-2011,15,Kafoumba Coulibaly,Cote d'Ivoire,MDC,65
+Nice,2010-2011,3,Alain Cantareil,France,DG,64
+Nice,2010-2011,32,Jonathan Quartey,Ghana,DC,64
+Nice,2010-2011,31,Loic Gagnon,Togo,BU,63
+Nice,2010-2011,30,Lucas Veronese,France,G,63
+Nice,2010-2011,12,Abeiku Quansah,Ghana,BU,60
+Nice,2010-2011,33,Serge Nyuiadzi,France,BU,59
+Nice,2010-2011,34,Romain Soler,France,DG,55
+Nice,2010-2011,9,Mickael Le Bihan,France,BU,60
+Nice,2009-2010,7,Loic Remy,France,AD,77
+Nice,2009-2010,1,David Ospina,Colombie,G,76
+Nice,2009-2010,8,David Hellebuyck,France,MC,75
+Nice,2009-2010,21,Habib Bamogo,France,BU,74
+Nice,2009-2010,14,Emerse Fae,Cote d'Ivoire,MDC,74
+Nice,2009-2010,4,Onyekachi Apam,Nigeria,DC,74
+Nice,2009-2010,13,Anthony Mounier,France,MG,73
+Nice,2009-2010,16,Lionel Letizi,France,G,72
+Nice,2009-2010,27,Julien Sable,France,MC,72
+Nice,2009-2010,20,Mamadou Bagayoko,Mali,BU,71
+Nice,2009-2010,6,Olivier Echouafni,France,MC,71
+Nice,2009-2010,17,Chaouki Ben Saada,Tunisie,BU,70
+Nice,2009-2010,24,Gerald Cid,France,DC,70
+Nice,2009-2010,15,Kafoumba Coulibaly,Cote d'Ivoire,MDC,69
+Nice,2009-2010,10,Mahamane Traore,Mali,MOC,68
+Nice,2009-2010,28,Gregory Paisley,France,DG,67
+Nice,2009-2010,11,Eric Mouloungui,Gabon,AG,67
+Nice,2009-2010,23,Drissa Diakite,Mali,DD,67
+Nice,2009-2010,18,Ismael Gace,France,DC,65
+Nice,2009-2010,5,Larrys Mabiala,RD Congo,DG,65
+Nice,2009-2010,9,Mickael Pote,Benin,BU,65
+Nice,2009-2010,19,Jonathan Quartey,Ghana,DC,65
+Nice,2009-2010,3,Alain Cantareil,France,DG,62
+Nice,2009-2010,12,Abeiku Quansah,Ghana,BU,59
+Nice,2009-2010,30,Jeremie Moreau,France,G,55
+Nice,2011-2012,26,Anthony Mounier,France,AG,78
+Nice,2011-2012,1,David Ospina,Colombie,G,77
+Nice,2011-2012,17,Kevin Anin,France,MDC,75
+Nice,2011-2012,4,Nemanja Pejcinovic,Serbie,DG,75
+Nice,2011-2012,29,Francois Clerc,France,DD,74
+Nice,2011-2012,10,Camel Meriem,France,MOC,73
+Nice,2011-2012,11,Eric Mouloungui,Gabon,BU,73
+Nice,2011-2012,14,Emerse Fae,Cote d'Ivoire,MC,73
+Nice,2011-2012,23,Drissa Diakite,Mali,DD,73
+Nice,2011-2012,15,Kafoumba Coulibaly,Cote d'Ivoire,MDC,73
+Nice,2011-2012,16,Raul Fernandez,Perou,G,73
+Nice,2011-2012,2,Renato Civelli,Argentine,DD,72
+Nice,2011-2012,9,Xavier Pentecote,France,BU,72
+Nice,2011-2012,18,Luciano Fabian Monzon,Argentine,DG,72
+Nice,2011-2012,7,Fabrice Abriel,France,MC,71
+Nice,2011-2012,6,Didier Digard,France,MC,71
+Nice,2011-2012,8,David Hellebuyck,France,MC,70
+Nice,2011-2012,27,Julien Sable,France,MC,70
+Nice,2011-2012,20,Abraham Gnieki Guie Guie,Cote d'Ivoire,BU,70
+Nice,2011-2012,12,Elliot Grandin,France,AD,68
+Nice,2011-2012,19,Franck Dja Djedje,France,AD,65
+Nice,2011-2012,25,Larrys Mabiala,RD Congo,DC,65
+Nice,2011-2012,24,Esmael Rui Goncalves,Portugal,BU,65
+Nice,2011-2012,5,Kevin Gomis,France,DC,64
+Nice,2012-2013,1,David Ospina,Colombie,G,78
+Nice,2012-2013,12,Dario Cvitanich,Argentine,BU,75
+Nice,2012-2013,11,Eric Bautheac,France,AG,75
+Nice,2012-2013,2,Renato Civelli,Argentine,DD,74
+Nice,2012-2013,6,Didier Digard,France,MDC,74
+Nice,2012-2013,17,Kevin Anin,France,MC,74
+Nice,2012-2013,4,Nemanja Pejcinovic,Serbie,DG,74
+Nice,2012-2013,13,Valentin Eysseric,France,MOC,73
+Nice,2012-2013,14,Jeremy Pied,France,AD,72
+Nice,2012-2013,30,Joris Delle,France,G,72
+Nice,2012-2013,10,Camel Meriem,France,MOC,71
+Nice,2012-2013,7,Fabrice Abriel,France,MDC,71
+Nice,2012-2013,9,Xavier Pentecote,France,BU,71
+Nice,2012-2013,8,Mahamane Traore,Mali,MC,71
+Nice,2012-2013,3,Timothee Kolodziejczak,France,DG,70
+Nice,2012-2013,16,Raul Fernandez,Perou,G,69
+Nice,2012-2013,25,Romain Genevois,France,DD,68
+Nice,2012-2013,20,Luigi Bruins,Pays-Bas,MOC,67
+Nice,2012-2013,19,Kevin Diaz,France,MOC,64
+Nice,2012-2013,5,Kevin Gomis,France,DC,64
+Nice,2012-2013,21,Lloyd Palun,Gabon,DD,64
+Nice,2012-2013,23,Alexy Bosetti,France,BU,64
+Nice,2012-2013,18,Neal Maupay,France,BU,63
+Nice,2012-2013,27,Cyril Hennion,France,MOC,62
+Nice,2012-2013,22,Julien Berthomier,France,DC,60
+Nice,2012-2013,29,Stephane Bahoken,France,BU,60
+Nice,2012-2013,40,Mouez Hassen,France,G,57
+Nice,2013-2014,6,Didier Digard,France,MDG,76
+Nice,2013-2014,1,David Ospina,Colombie,G,76
+Nice,2013-2014,12,Dario Cvitanich,Argentine,BU,75
+Nice,2013-2014,4,Nemanja Pejcinovic,Serbie,DG,75
+Nice,2013-2014,11,Eric Bautheac,France,MG,75
+Nice,2013-2014,24,Mathieu Bodmer,France,DD,74
+Nice,2013-2014,17,Kevin Anin,France,MDC,74
+Nice,2013-2014,13,Valentin Eysseric,France,MOC,73
+Nice,2013-2014,14,Jeremy Pied,France,MD,72
+Nice,2013-2014,3,Timothee Kolodziejczak,France,DG,72
+Nice,2013-2014,7,Fabrice Abriel,France,MC,71
+Nice,2013-2014,10,Christian Bruls,Belgique,AG,71
+Nice,2013-2014,8,Mahamane Traore,Mali,MDC,71
+Nice,2013-2014,22,Nampalys Mendy,France,MDD,70
+Nice,2013-2014,25,Romain Genevois,France,DC,69
+Nice,2013-2014,20,Luigi Bruins,Pays-Bas,MOC,67
+Nice,2013-2014,9,Xavier Pentecote,France,BU,67
+Nice,2013-2014,21,Lloyd Palun,Gabon,DD,66
+Nice,2013-2014,5,Kevin Gomis,France,DC,65
+Nice,2013-2014,23,Alexy Bosetti,France,AD,65
+Nice,2013-2014,18,Neal Maupay,France,BU,64
+Nice,2013-2014,33,Jordan Amavi,France,DG,60
+Nice,2013-2014,34,Franck Honorat,France,BU,57
+Nice,2013-2014,36,Said Benrahma,Algerie,BU,54
+Nice,2014-2015,6,Didier Digard,France,DC,75
+Nice,2014-2015,24,Mathieu Bodmer,France,DG,74
+Nice,2014-2015,12,Dario Cvitanich,Argentine,BU,74
+Nice,2014-2015,11,Eric Bautheac,France,MG,74
+Nice,2014-2015,20,Souleymane Diawara,Senegal,DC,73
+Nice,2014-2015,3,Carlos Eduardo,Bresil,MOC,73
+Nice,2014-2015,10,Valentin Eysseric,France,MOC,73
+Nice,2014-2015,16,Simon Pouplin,France,G,72
+Nice,2014-2015,25,Romain Genevois,France,DC,72
+Nice,2014-2015,3,Thimothee Kolodziejczak,France,DC,72
+Nice,2014-2015,19,Jordan Amavi,France,DG,72
+Nice,2014-2015,8,Mahamane Traore,Mali,MDC,71
+Nice,2014-2015,22,Nampalys Mendy,France,MDC,71
+Nice,2014-2015,23,Alexy Bosetti,France,AD,71
+Nice,2014-2015,1,Mouez Hassen,France,G,71
+Nice,2014-2015,30,Joris Delle,France,G,69
+Nice,2014-2015,5,Kevin Gomis,France,DC,69
+Nice,2014-2015,13,Niklas Hult,Suede,MG,68
+Nice,2014-2015,21,Lloyd Palun,Gabon,DD,68
+Nice,2014-2015,14,Alassane Plea,France,MD,68
+Nice,2014-2015,9,Xavier Pentecote,France,BU,65
+Nice,2014-2015,18,Neal Maupay,France,BU,64
+Nice,2014-2015,15,Gregoire Puel,France,DD,64
+Nice,2014-2015,7,Julien Vercauteren,Belgique,AG,62
+Nice,2014-2015,39,Vincent Koziello,France,MDG,58
+Nice,2014-2015,41,Sada Thioub,France,BU,58
+Nice,2014-2015,31,Papa Moussa M'Bow,Senegal,DC,57
+Nice,2014-2015,34,Olivier Boscagli,France,DG,55
+Nice,2016-2017,31,Dante,Bresil,DC,82
+Nice,2016-2017,9,Mario Balotelli,Italie,BU,81
+Nice,2016-2017,6,Jean Michael Seri,Cote d'Ivoire,MDC|MC,81
+Nice,2016-2017,5,Younes Belhanda,Maroc,MOC|MC,80
+Nice,2016-2017,14,Alassane Plea,France,BU|AG,79
+Nice,2016-2017,21,Ricardo Pereira,Portugal,MD,79
+Nice,2016-2017,4,Paul Baysse,France,DD,78
+Nice,2016-2017,13,Valentin Eysseric,France,MG,78
+Nice,2016-2017,25,Wylan Cyprien,France,MC|MDC|MOC,78
+Nice,2016-2017,30,Yoan Cardinale,France,G,78
+Nice,2016-2017,26,Vincent Koziello,France,MDD,78
+Nice,2016-2017,24,Mathieu Bodmer,France,MDC,77
+Nice,2016-2017,29,Dalbert,Bresil,DG,77
+Nice,2016-2017,24,Mounir Obbadi,Maroc,MC,76
+Nice,2016-2017,20,Maxime Le Marchand,France,DC,76
+Nice,2016-2017,2,Arnaud Souquet,France,DD,76
+Nice,2016-2017,18,Remi Walter,France,MC,74
+Nice,2016-2017,32,Malang Sarr,France,DC,74
+Nice,2016-2017,10,Mickael Le Bihan,France,BU,72
+Nice,2016-2017,8,Arnaud Lusamba,France,MOC,71
+Nice,2016-2017,40,Walter Benitez,Argentine,G,70
+Nice,2016-2017,28,Olivier Boscagli,France,DC,70
+Nice,2016-2017,22,Anastasios Donis,Grece,BU,70
+Nice,2016-2017,23,Alexy Bosetti,France,BU,69
+Nice,2016-2017,1,Mouez Hassen,France,G,69
+Nice,2016-2017,16,Simon Pouplin,France,G,68
+Nice,2016-2017,11,Said Benrahma,Algerie,MD,68
+Nice,2016-2017,7,Julien Vercauteren,Belgique,AG,67
+Nice,2017-2018,10,Wesley Sneijder,Pays-Bas,MOC,83
+Nice,2017-2018,9,Mario Balotelli,Italie,BU,83
+Nice,2017-2018,6,Jean Michael Seri,Cote d'Ivoire,MDC|MC,82
+Nice,2017-2018,31,Dante,Bresil,DC,80
+Nice,2017-2018,14,Alassane Plea,France,BU|AG,80
+Nice,2017-2018,25,Wylan Cyprien,France,MC|MDC,78
+Nice,2017-2018,20,Maxime Le Marchand,France,DG,77
+Nice,2017-2018,7,Allan Saint-Maximin,France,AD|AG|MG|MD,77
+Nice,2017-2018,30,Yoan Cardinale,France,G,77
+Nice,2017-2018,26,Vincent Koziello,France,MC,77
+Nice,2017-2018,24,Christophe Jallet,France,DD,76
+Nice,2017-2018,2,Arnaud Souquet,France,DD,76
+Nice,2017-2018,40,Walter Benitez,Argentine,G,76
+Nice,2017-2018,8,Pierre Lees-Melou,France,MDD,76
+Nice,2017-2018,21,Nampalys Mendy,France,MDC,75
+Nice,2017-2018,23,Malang Sarr,France,DC,75
+Nice,2017-2018,18,Remi Walter,France,MC,73
+Nice,2017-2018,4,Marlon da Silva Barbosa,Bresil,DD,73
+Nice,2017-2018,10,Mickael Le Bihan,France,BU,72
+Nice,2017-2018,5,Adrien Tameze,France,MDC,72
+Nice,2017-2018,22,Arnaud Lusamba,France,MOC,70
+Nice,2017-2018,28,Olivier Boscagli,France,DG,70
+Nice,2017-2018,11,Bassem Srarfi,Tunisie,AD,70
+Nice,2017-2018,12,Racine Coly,Senegal,DG,68
+Nice,2017-2018,19,Vincent Marcel,France,MC,68
+Nice,2017-2018,15,Patrick Burner,France,DD,68
+Nice,2017-2018,16,Simon Pouplin,France,G,66
+Nice,2018-2019,9,Mario Balotelli,Italie,BU,82
+Nice,2018-2019,31,Dante,Bresil,DC|DG,80
+Nice,2018-2019,40,Walter Benitez,Argentine,G,79
+Nice,2018-2019,7,Allan Saint-Maximin,France,AD|AG|BU,79
+Nice,2018-2019,25,Wylan Cyprien,France,MC|MDC,78
+Nice,2018-2019,8,Pierre Lees-Melou,France,MC,78
+Nice,2018-2019,29,Christophe Herelle,France,DC,77
+Nice,2018-2019,20,Youcef Atal,Algerie,AD|DD,76
+Nice,2018-2019,21,Danilo Barbosa da Silva,Bresil,MC,75
+Nice,2018-2019,23,Malang Sarr,France,DG,75
+Nice,2018-2019,24,Christophe Jallet,France,DD,74
+Nice,2018-2019,5,Adrien Tameze,France,MDC,74
+Nice,2018-2019,30,Yoan Cardinale,France,G,74
+Nice,2018-2019,2,Arnaud Souquet,France,DD,73
+Nice,2018-2019,6,Remi Walter,France,MC,73
+Nice,2018-2019,11,Bassem Srarfi,Tunisie,AD,72
+Nice,2018-2019,10,Mickael Le Bihan,France,BU,71
+Nice,2018-2019,1,Mouez Hassen,Tunisie,G,71
+Nice,2018-2019,28,Olivier Boscagli,France,DG,71
+Nice,2018-2019,26,Myziane Maolida,France,BU,71
+Nice,2018-2019,18,Ihsan Sacko,France,BU,71
+Nice,2018-2019,15,Patrick Burner,France,DD,71
+Nice,2018-2019,12,Racine Coly,Senegal,DG,70
+Nice,2018-2019,22,Arnaud Lusamba,France,MC,70
+Nice,2018-2019,27,Jean-Victor Makengo,France,MC,70
+Nice,2018-2019,22,Romain Perraud,France,DG,70
+Nice,2018-2019,14,Ignatius Ganago,Cameroun,BU,69
+Nice,2019-2020,40,Walter Benitez,Argentine,G,80
+Nice,2019-2020,9,Kasper Dolberg,Danemark,BU,79
+Nice,2019-2020,8,Pierre Lees-Melou,France,MC,79
+Nice,2019-2020,4,Dante,Bresil,DC|DG,78
+Nice,2019-2020,25,Wylan Cyprien,France,MDC|MC,78
+Nice,2019-2020,20,Youcef Atal,Algerie,AD|DD,78
+Nice,2019-2020,29,Christophe Herelle,France,DC,77
+Nice,2019-2020,23,Malang Sarr,France,DG,75
+Nice,2019-2020,27,Riza Durmisi,Danemark,DG,74
+Nice,2019-2020,5,Adrien Tameze,France,MC,74
+Nice,2019-2020,21,Danilo Barbosa da Silva,Bresil,DD,74
+Nice,2019-2020,10,Adam Ounas,Algerie,AD,74
+Nice,2019-2020,18,Alexis Claude-Maurice,France,AG,74
+Nice,2019-2020,22,Arnaud Lusamba,France,MC,73
+Nice,2019-2020,6,Remi Walter,France,MC,72
+Nice,2019-2020,12,Racine Coly,Senegal,DG,72
+Nice,2019-2020,15,Patrick Burner,France,DD,72
+Nice,2019-2020,14,Ignatius Ganago,Cameroun,BU,72
+Nice,2019-2020,10,Mickael Le Bihan,France,BU,71
+Nice,2019-2020,7,Myziane Maolida,France,BU,71
+Nice,2019-2020,6,Moussa Wague,Senegal,DD,71
+Nice,2019-2020,30,Yoan Cardinale,France,G,70
+Nice,2019-2020,18,Ihsan Sacko,France,BU,70
+Nice,2019-2020,11,Bassem Srarfi,Tunisie,AD,70
+Nice,2019-2020,2,Stanley Nsoki,France,DG,70
+Nice,2019-2020,28,Hicham Boudaoui,Algerie,MC,70
+Nice,2019-2020,19,Khephren Thuram,France,MDC,67
+Nice,2020-2021,40,Walter Benitez,Argentine,G,81
+Nice,2020-2021,9,Kasper Dolberg,Danemark,BU,78
+Nice,2020-2021,22,Marcos Lopes,Portugal,AD,77
+Nice,2020-2021,13,Hassane Kamara,France,DG,77
+Nice,2020-2021,8,Pierre Lees-Melou,France,MC,77
+Nice,2020-2021,10,Alexis Claude-Maurice,France,MC,77
+Nice,2020-2021,11,Amine Gouiri,France,AG|BU,77
+Nice,2020-2021,4,Dante,Bresil,DC|DG,76
+Nice,2020-2021,6,Morgan Schneiderlin,France,MDC,76
+Nice,2020-2021,20,Youcef Atal,Algerie,DD|AD,76
+Nice,2020-2021,25,Jean-Clair Todibo,France,DD|DC,76
+Nice,2020-2021,29,Jeff Reine-Adelaide,France,MC,75
+Nice,2020-2021,18,William Saliba,France,DG,75
+Nice,2020-2021,25,Wylan Cyprien,France,MC,73
+Nice,2020-2021,23,Jordan Lotomba,Suisse,DG,73
+Nice,2020-2021,19,Khephren Thuram,France,MDD,73
+Nice,2020-2021,28,Hicham Boudaoui,Algerie,MC|MDC|MD,73
+Nice,2020-2021,21,Danilo Barbosa da Silva,Bresil,MC,72
+Nice,2020-2021,15,Patrick Burner,France,DD,72
+Nice,2020-2021,7,Myziane Maolida,France,AG,71
+Nice,2020-2021,31,Jean-Victor Makengo,France,MC,70
+Nice,2020-2021,2,Stanley Nsoki,France,DC,70
+Nice,2020-2021,5,Flavius Daniliuc,Autriche,DC,70
+Nice,2020-2021,3,Robson Alves de Barros,Bresil,DC,70
+Nice,2020-2021,24,Andy Pelmard,France,DC,69
+Nice,2020-2021,14,Dan Ndoye,Suisse,AD,69
+Nice,2020-2021,30,Yoan Cardinale,France,G,68
+Nice,2020-2021,12,Racine Coly,Senegal,DG,68
+Nice,2020-2021,18,Ihsan Sacko,France,BU,68
+Nice,2021-2022,7,Andy Delort,Algerie,BU|AG,80
+Nice,2021-2022,40,Walter Benitez,Argentine,G,80
+Nice,2021-2022,11,Amine Gouiri,France,AG|BU,79
+Nice,2021-2022,4,Dante,Bresil,DG,78
+Nice,2021-2022,8,Pablo Rosario,Pays-Bas,MDC|MC,78
+Nice,2021-2022,25,Jean-Clair Todibo,France,DD|DC,78
+Nice,2021-2022,23,Jordan Lotomba,Suisse,DD,76
+Nice,2021-2022,21,Justin Kluivert,Pays-Bas,MG,76
+Nice,2021-2022,19,Khephren Thuram,France,MC|MDC,76
+Nice,2021-2022,28,Hicham Boudaoui,Algerie,MD|MC,76
+Nice,2021-2022,26,Melvin Bard,France,DG,75
+Nice,2021-2022,9,Kasper Dolberg,Danemark,BU,77
+Nice,2021-2022,18,Mario Lemina,Gabon,MC,75
+Nice,2021-2022,6,Morgan Schneiderlin,France,MDC,74
+Nice,2021-2022,12,Jordan Amavi,France,DG,74
+Nice,2021-2022,22,Calvin Stengs,Pays-Bas,MD,73
+Nice,2021-2022,5,Flavius Daniliuc,Autriche,DC,73
+Nice,2021-2022,20,Youcef Atal,Algerie,DD|MD,75
+Nice,2021-2022,15,Danilo Barbosa da Silva,Bresil,DC,72
+Nice,2021-2022,1,Marcin Bulka,Pologne,G,70
+Nice,2021-2022,24,Evann Guessand,France,BU,69
+Nice,2021-2022,14,Billal Brahimi,France,MG,68
+Nice,2021-2022,10,Alexis Claude-Maurice,France,MC,72
+Nice,2021-2022,13,Hassane Kamara,Cote d'Ivoire,DG,76
+Nice,2021-2022,29,Lucas Da Cunha,France,MD,72
+Nice,2021-2022,3,Robson Alves de Barros,Bresil,DC,69
+Nice,2022-2023,1,Kasper Schmeichel,Danemark,G,82
+Nice,2022-2023,24,Gaetan Laborde,France,AG|BU,81
+Nice,2022-2023,25,Jean-Clair Todibo,France,DD|DC,79
+Nice,2022-2023,19,Khephren Thuram,France,MC|MDC,79
+Nice,2022-2023,4,Dante,Bresil,DC,78
+Nice,2022-2023,9,Terem Moffi,Nigeria,BU,77
+Nice,2022-2023,16,Aaron Ramsey,Pays de Galles,MDC|MC,75
+Nice,2022-2023,23,Jordan Lotomba,Suisse,DG,75
+Nice,2022-2023,28,Hicham Boudaoui,Algerie,MDC|MC,75
+Nice,2022-2023,20,Youcef Atal,Algerie,DD,74
+Nice,2022-2023,35,Badredine Bouanani,Algerie,AD,67
+Nice,2022-2023,29,Nicolas Pepe,Cote d'Ivoire,MD|AD,79
+Nice,2022-2023,10,Sofiane Diop,France,MG,77
+Nice,2022-2023,8,Pablo Rosario,Pays-Bas,MDC|MC,75
+Nice,2022-2023,55,Youssouf Ndayishimiye,Burundi,DC,75
+Nice,2022-2023,11,Ross Barkley,Angleterre,MOC,74
+Nice,2022-2023,26,Melvin Bard,France,DG,74
+Nice,2022-2023,90,Marcin Bulka,Pologne,G,73
+Nice,2022-2023,42,Mattia Viti,Italie,DC,72
+Nice,2022-2023,15,Joe Bryan,Angleterre,DG,71
+Nice,2022-2023,14,Billal Brahimi,France,MG,71
+Nice,2022-2023,11,Amine Gouiri,France,AG|BU|MOC,79
+Nice,2022-2023,7,Andy Delort,Algerie,BU|AG,78
+Nice,2022-2023,99,Mario Lemina,Gabon,MDC,77
+Nice,2022-2023,9,Kasper Dolberg,Danemark,BU,77
+Nice,2022-2023,10,Alexis Claude-Maurice,France,MC,74
+Nice,2022-2023,5,Flavius Daniliuc,Autriche,DC,74
+Nice,2022-2023,22,Calvin Stengs,Pays-Bas,AD,73
+Nice,2023-2024,6,Jean-Clair Todibo,France,DD|DC,80
+Nice,2023-2024,4,Dante,Bresil,DC,79
+Nice,2023-2024,1,Marcin Bulka,Pologne,G,78
+Nice,2023-2024,19,Khephren Thuram,France,MC|MDC,78
+Nice,2023-2024,7,Jeremie Boga,Cote d'Ivoire,AG,77
+Nice,2023-2024,26,Melvin Bard,France,DG,77
+Nice,2023-2024,9,Terem Moffi,Nigeria,BU,77
+Nice,2023-2024,11,Morgan Sanson,France,MDC|MC,76
+Nice,2023-2024,55,Youssouf Ndayishimiye,Burundi,MDC,76
+Nice,2023-2024,23,Jordan Lotomba,Suisse,DD,75
+Nice,2023-2024,25,Mohamed-Ali Cho,France,AD,74
+Nice,2023-2024,24,Gaetan Laborde,France,AD|BU,78
+Nice,2023-2024,10,Sofiane Diop,Maroc,AG,76
+Nice,2023-2024,28,Hicham Boudaoui,Algerie,MC|MDC,76
+Nice,2023-2024,31,Maxime Dupe,France,G,75
+Nice,2023-2024,2,Valentin Rosier,France,DD,75
+Nice,2023-2024,8,Pablo Rosario,Pays-Bas,MDC|MC,75
+Nice,2023-2024,15,Romain Perraud,France,DG,74
+Nice,2023-2024,18,Alexis Claude-Maurice,France,MC,74
+Nice,2023-2024,29,Evann Guessand,France,BU,73
+Nice,2023-2024,33,Antoine Mendy,France,DD,68
+Nice,2024-2025,92,Jonathan Clauss,France,MD|DD,80
+Nice,2024-2025,4,Dante,Bresil,DG,79
+Nice,2024-2025,1,Marcin Bulka,Pologne,G,79
+Nice,2024-2025,24,Gaetan Laborde,France,BU|AG,78
+Nice,2024-2025,26,Melvin Bard,France,MG,78
+Nice,2024-2025,29,Evann Guessand,Cote d'Ivoire,AG,78
+Nice,2024-2025,6,Hicham Boudaoui,Algerie,MDC|MC,77
+Nice,2024-2025,11,Morgan Sanson,France,MC|MDC,76
+Nice,2024-2025,64,Moise Bombito,Canada,DC,75
+Nice,2024-2025,19,Badredine Bouanani,Algerie,AD,71
+Nice,2024-2025,33,Antoine Mendy,Senegal,DD,70
+Nice,2024-2025,7,Jeremie Boga,Cote d'Ivoire,AG,77
+Nice,2024-2025,10,Sofiane Diop,Maroc,AG,77
+Nice,2024-2025,28,Baptiste Santamaria,France,MDC,76
+Nice,2024-2025,9,Terem Moffi,Nigeria,BU,76
+Nice,2024-2025,8,Pablo Rosario,Pays-Bas,MDC|MC,75
+Nice,2024-2025,22,Tanguy Ndombele,France,MC|MDC,75
+Nice,2024-2025,25,Mohamed-Ali Cho,France,AG,75
+Nice,2024-2025,31,Maxime Dupe,France,G,74
+Nice,2024-2025,15,Youssoufa Moukoko,Allemagne,BU,74
+Nice,2024-2025,2,Ali Abdi,Tunisie,DG,74
+Nice,2024-2025,20,Tom Louchet,France,MD,71
+Nice,2024-2025,55,Youssouf Ndayishimiye,Burundi,DC,76
+Nice,2024-2025,5,Mohamed Abdelmonem,Egypte,DC,74
+Nice,2025-2026,92,Jonathan Clauss,France,DD|MD,78
+Nice,2025-2026,80,Yehvann Diouf,Senegal,G,77
+Nice,2025-2026,24,Charles Vanhoutte,Belgique,MC,77
+Nice,2025-2026,26,Melvin Bard,France,DG,77
+Nice,2025-2026,8,Morgan Sanson,France,MDC|MC,76
+Nice,2025-2026,10,Sofiane Diop,Maroc,MG,76
+Nice,2025-2026,25,Mohamed-Ali Cho,France,MD,75
+Nice,2025-2026,11,Elye Wahi,Cote d'Ivoire,BU,74
+Nice,2025-2026,28,Abdulai Juma Bah,Sierra Leone,DC,73
+Nice,2025-2026,33,Antoine Mendy,Senegal,DD,72
+Nice,2025-2026,37,Kojo Peprah Oppong,Ghana,DG,72
+Nice,2025-2026,6,Hicham Boudaoui,Algerie,MC|MDC,76
+Nice,2025-2026,55,Youssouf Ndayishimiye,Burundi,DC,76
+Nice,2025-2026,4,Dante,Bresil,DC,75
+Nice,2025-2026,31,Maxime Dupe,France,G,75
+Nice,2025-2026,2,Ali Abdi,Tunisie,DG,75
+Nice,2025-2026,22,Tanguy Ndombele,France,MC,73
+Nice,2025-2026,47,Tiago Gouveia,Portugal,AD,73
+Nice,2025-2026,20,Tom Louchet,France,MD,73
+Nice,2025-2026,99,Salis Abdul Samed,Ghana,MDC,72
+Nice,2025-2026,90,Kevin Carlos,Espagne,BU,71
+Nice,2025-2026,21,Isak Jansson,Suede,AG,71
+Nice,2025-2026,64,Moise Bombito,Canada,DC,75
+Nice,2025-2026,5,Mohamed Abdelmonem,Egypte,DC,73
+Nice,2005-2006,12,Bakari Kone,Cote d'Ivoire,BU,79
+Nice,2005-2006,3,Bill Tchato,Cameroun,DG,78
+Nice,2005-2006,17,Sammy Traore,Mali,DD,78
+Nice,2005-2006,16,Damien Gregorini,France,G,77
+Nice,2005-2006,14,Florent Balmont,France,MC,76
+Nice,2005-2006,21,Anther Yahia,Algerie,DC,75
+Nice,2005-2006,19,Marama Vahirua,France,BU,74
+Nice,2005-2006,11,Mamadou Bagayoko,Mali,BU,74
+Nice,2005-2006,2,Cedric Varrault,France,DD,73
+Nice,2005-2006,7,Roberto Bisconti,Belgique,MDD,73
+Nice,2005-2006,27,Yoann Bigne,France,MD,71
+Nice,2005-2006,13,Jacques Abardonado,France,DC,70
+Nice,2005-2006,5,Francois Grenet,France,DD,69
+Nice,2005-2006,6,Olivier Echouafni,France,MC,69
+Nice,2005-2006,8,Sebastien Roudet,France,MG,69
+Nice,2005-2006,15,Florian Jarjat,France,DG,67
+Nice,2005-2006,26,Cyril Rool,France,MC,65
+Nice,2005-2006,24,Rod Fanni,France,DC,65
+Nice,2005-2006,22,Kamel Larbi,France,BU,64
+Nice,2005-2006,10,Ederson,Bresil,MC,62
+Nice,2005-2006,20,Franco Dolci,Argentine,MD,60
+Nice,2005-2006,1,Hugo Lloris,France,G,55
+Nice,2005-2006,28,Fabien Lamatina,France,MC,53
+Nice,2004-2005,19,Marama Vahirua,France,BU,78
+Nice,2004-2005,1,Damien Gregorini,France,G,77
+Nice,2004-2005,13,Jacques Abardonado,France,DD,73
+Nice,2004-2005,40,Florent Balmont,France,MC,72
+Nice,2004-2005,8,Roberto Bisconti,Belgique,MDC,72
+Nice,2004-2005,6,Olivier Echouafni,France,MC,71
+Nice,2004-2005,24,Victor Agali,Nigeria,BU,71
+Nice,2004-2005,3,Jose Cobos,France,DG,71
+Nice,2004-2005,11,Edgaras Jankauskas,Lituanie,BU,69
+Nice,2004-2005,27,Yoann Bigne,France,MD,69
+Nice,2004-2005,2,Cedric Varrault,France,MG,69
+Nice,2004-2005,25,Christophe Meslin,France,BU,69
+Nice,2004-2005,10,Serge Die,Cote d'Ivoire,MDC,68
+Nice,2004-2005,23,Thibault Scotto,France,MC,67
+Nice,2004-2005,7,Franck Padovani,France,BU,67
+Nice,2004-2005,5,Francois Grenet,France,DD,65
+Nice,2004-2005,26,Serge Ayeli,Cote d'Ivoire,BU,65
+Nice,2004-2005,17,Sammy Traore,Mali,DG,65
+Nice,2004-2005,16,Bruno Valencony,France,G,64
+Nice,2004-2005,15,Florian Jarjat,France,DG,62
+Nice,2004-2005,4,Jean-Paul Kamudimba,RD Congo,MOC,61
+Nice,2004-2005,9,Roland Linz,Autriche,BU,58
+Nice,2004-2005,18,Sebastien Roudet,France,MG,58
+Nice,2004-2005,32,Sebastien Gimenez,France,DG,57
+Nice,2004-2005,37,Mathieu Esposito,France,DD,55
+Nice,2006-2007,13,Jacques Abardonado,France,DC,78
+Nice,2006-2007,14,Florent Balmont,France,MDC,77
+Nice,2006-2007,12,Bakari Kone,Cote d'Ivoire,BU,77
+Nice,2006-2007,2,Cedric Varrault,France,DG,76
+Nice,2006-2007,16,Damien Gregorini,France,G,75
+Nice,2006-2007,21,Anther Yahia,Algerie,DC,75
+Nice,2006-2007,11,Matt Moussilou,France,BU,75
+Nice,2006-2007,19,Marama Vahirua,France,BU,74
+Nice,2006-2007,6,Olivier Echouafni,France,MC,72
+Nice,2006-2007,5,Cedric Kante,Mali,DD,72
+Nice,2006-2007,7,David Bellion,France,BU,71
+Nice,2006-2007,9,Souleymane Camara,Senegal,BU,70
+Nice,2006-2007,20,Thibault Scotto,France,MD,69
+Nice,2006-2007,26,Cyril Rool,France,MC,68
+Nice,2006-2007,24,Rod Fanni,France,DD,68
+Nice,2006-2007,1,Hugo Lloris,France,G,68
+Nice,2006-2007,10,Ederson,Bresil,MC,67
+Nice,2006-2007,22,Kamel Larbi,France,BU,64
+Nice,2006-2007,3,Olivier Veigneau,France,DG,64
+Nice,2006-2007,30,Jeremie Moreau,France,G,62
+Nice,2006-2007,25,Onyekachi Apam,Nigeria,DC,60
+Nice,2006-2007,23,Drissa Diakite,Mali,MC,57
+Nice,2006-2007,15,Ibrahim Toure,Cote d'Ivoire,BU,57

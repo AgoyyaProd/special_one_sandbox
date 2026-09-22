@@ -1,0 +1,472 @@
+Club,Saison,Numero,Joueur,Nom d'usage,Nationalite,Postes,Note
+Lyon,2007-2008,3,Cris,Cris,Bresil,DC,88
+Lyon,2007-2008,1,Gregory Coupet,,France,G,84
+Lyon,2007-2008,8,Juninho,Juninho,Bresil,MOC|MC|MD|AD,83
+Lyon,2007-2008,9,Fred,Fred,Bresil,BU,83
+Lyon,2007-2008,6,Kim Kallstrom,,Suede,MOC|MC|MDC,82
+Lyon,2007-2008,29,Sebastien Squillaci,,France,DC,82
+Lyon,2007-2008,5,Mathieu Bodmer,,France,MC|MDC|DC,81
+Lyon,2007-2008,11,Fabio Grosso,,Italie,DG|MDC|MG,80
+Lyon,2007-2008,7,Milan Baros,,Tchequie,BU,80
+Lyon,2007-2008,28,Jeremy Toulalan,,France,MDC|MDG|DC|MC,80
+Lyon,2007-2008,23,Abdul Kader Keita,,Cote d'Ivoire,MD|AD|BU|AG,80
+Lyon,2007-2008,10,Karim Benzema,,France,BU,80
+Lyon,2007-2008,14,Sidney Govou,,France,AD|MOC|BU|MD,79
+Lyon,2007-2008,20,Anthony Reveillere,,France,DD,78
+Lyon,2007-2008,2,Francois Clerc,,France,DD,78
+Lyon,2007-2008,4,Patrick Muller,,Suisse,DC,76
+Lyon,2007-2008,19,Anderson,Anderson,Bresil,DC,76
+Lyon,2007-2008,18,Hatem Ben Arfa,,France,BU|MD|MOC|AD|AG,76
+Lyon,2007-2008,30,Remi Vercoutre,,France,G,73
+Lyon,2007-2008,21,Nadir Belhadj,,Algerie,DG|MG,73
+Lyon,2007-2008,26,Fabio Santos,,Bresil,MDC|MC,71
+Lyon,2007-2008,12,Loic Remy,,France,AD,66
+Lyon,2007-2008,40,Frederic Roux,,France,G,64
+Lyon,2007-2008,27,Anthony Mounier,,France,AG|MG|AD,61
+Lyon,2007-2008,32,Sandy Paillot,,France,DC,61
+Lyon,2008-2009,10,Karim Benzema,,France,BU,85
+Lyon,2008-2009,14,Sidney Govou,,France,AD|MOC|BU|MD,83
+Lyon,2008-2009,28,Jeremy Toulalan,,France,MDC|MDG|DC|MC,83
+Lyon,2008-2009,8,Juninho,Juninho,Bresil,MOC|MC|MD|AD,82
+Lyon,2008-2009,17,Jean II Makoun,,Cameroun,MDC|MC,82
+Lyon,2008-2009,3,Cris,Cris,Bresil,DC,82
+Lyon,2008-2009,1,Hugo Lloris,,France,G,81
+Lyon,2008-2009,6,Kim Kallstrom,,Suede,MOC|MC|MDC,80
+Lyon,2008-2009,12,John Mensah,,Ghana,DC,80
+Lyon,2008-2009,7,Ederson,Ederson,Bresil,AG|MOC,79
+Lyon,2008-2009,23,Abdul Kader Keita,,Cote d'Ivoire,MD|AD|BU|AG,79
+Lyon,2008-2009,11,Fabio Grosso,,Italie,DG|MDC|MG,78
+Lyon,2008-2009,5,Mathieu Bodmer,,France,MC|MDC|DC,78
+Lyon,2008-2009,9,Fred,Fred,Bresil,BU,78
+Lyon,2008-2009,2,Francois Clerc,,France,DD,78
+Lyon,2008-2009,20,Anthony Reveillere,,France,DD,77
+Lyon,2008-2009,19,Cesar Delgado,,Argentine,AD|BU|MOC,77
+Lyon,2008-2009,4,Jean-Alain Boumsong,,France,DC,76
+Lyon,2008-2009,39,Frederic Piquionne,,France,BU,75
+Lyon,2008-2009,30,Remi Vercoutre,,France,G,74
+Lyon,2008-2009,26,Fabio Santos,,Bresil,MDC|MC,74
+Lyon,2008-2009,18,Miralem Pjanic,,Bosnie-Herzegovine,MOC|MC|MDC,74
+Lyon,2008-2009,31,Clement Grenier,,France,MOC|MC|MDC,64
+Lyon,2008-2009,27,Anthony Mounier,,France,AG|MG|AD,63
+Lyon,2008-2009,25,Johan Hartock,,France,G,62
+Lyon,2008-2009,15,Timothee Kolodziejczak,,France,DG,62
+Lyon,2008-2009,32,Lamine Gassama,,France,DD,60
+Lyon,2008-2009,33,Mickael Charvet,,France,DC,59
+Lyon,2008-2009,34,Yanis Tafer,,France,BU,59
+Lyon,2008-2009,36,Jeremy Pied,,France,AD,57
+Lyon,2008-2009,29,Sebastien Faure,,France,DC,57
+Lyon,2008-2009,37,Pierrick Valdivia,,France,MDC,55
+Lyon,2008-2009,35,Said Mehamha,,France,MDC,51
+Lyon,2009-2010,28,Jeremy Toulalan,,France,MDC|MDG|DC|MC,83
+Lyon,2009-2010,9,Lisandro Lopez,,Argentine,BU|AG|AD|MOC,83
+Lyon,2009-2010,1,Hugo Lloris,,France,G,83
+Lyon,2009-2010,7,Michel Bastos,,Bresil,MG|MOC|AG,82
+Lyon,2009-2010,14,Sidney Govou,,France,AD|MOC|BU|MD,81
+Lyon,2009-2010,6,Kim Kallstrom,,Suede,MOC|MC|MDC,80
+Lyon,2009-2010,3,Cris,Cris,Bresil,DC,80
+Lyon,2009-2010,5,Mathieu Bodmer,,France,MC|MDC|DC,79
+Lyon,2009-2010,17,Jean II Makoun,,Cameroun,MDC|MC,79
+Lyon,2009-2010,13,Anthony Reveillere,,France,DD,79
+Lyon,2009-2010,10,Ederson,Ederson,Bresil,AG|MOC,79
+Lyon,2009-2010,18,Bafetimbi Gomis,,France,AD|BU,78
+Lyon,2009-2010,2,Francois Clerc,,France,DD,78
+Lyon,2009-2010,20,Aly Cissokho,,France,DG,77
+Lyon,2009-2010,4,Jean-Alain Boumsong,,France,DC,76
+Lyon,2009-2010,19,Cesar Delgado,,Argentine,AD|BU|MOC,76
+Lyon,2009-2010,8,Miralem Pjanic,,Bosnie-Herzegovine,MOC|MC|MDC,75
+Lyon,2009-2010,23,Anderson,Anderson,Bresil,DC,73
+Lyon,2009-2010,30,Remi Vercoutre,,France,G,72
+Lyon,2010-2011,9,Lisandro Lopez,,Argentine,BU|AG|AD|MOC,85
+Lyon,2010-2011,1,Hugo Lloris,,France,G,84
+Lyon,2010-2011,28,Jeremy Toulalan,,France,MDC|MDG|DC|MC,83
+Lyon,2010-2011,29,Yoann Gourcuff,,France,MC|MOC,83
+Lyon,2010-2011,11,Michel Bastos,,Bresil,MG|MOC|AG,82
+Lyon,2010-2011,7,Jimmy Briand,,France,AD|MD|MOC|BU,81
+Lyon,2010-2011,6,Kim Kallstrom,,Suede,MOC|MC|MDC,80
+Lyon,2010-2011,17,Jean II Makoun,,Cameroun,MDC|MC,80
+Lyon,2010-2011,13,Anthony Reveillere,,France,DD,80
+Lyon,2010-2011,3,Cris,Cris,Bresil,DC,79
+Lyon,2010-2011,8,Miralem Pjanic,,Bosnie-Herzegovine,MOC|MC|MDC,79
+Lyon,2010-2011,20,Aly Cissokho,,France,DG,78
+Lyon,2010-2011,21,Maxime Gonalons,,France,MDC|MC|DC,78
+Lyon,2010-2011,10,Ederson,Ederson,Bresil,AG|MOC,77
+Lyon,2010-2011,18,Bafetimbi Gomis,,France,AD|BU,77
+Lyon,2010-2011,30,Remi Vercoutre,,France,G,76
+Lyon,2010-2011,19,Cesar Delgado,,Argentine,AD|BU|MOC,76
+Lyon,2010-2011,5,Dejan Lovren,,Croatie,DC|DD|DG,76
+Lyon,2011-2012,1,Hugo Lloris,,France,G,86
+Lyon,2011-2012,11,Michel Bastos,,Bresil,MG|MOC|AG,84
+Lyon,2011-2012,9,Lisandro Lopez,,Argentine,BU|AG|AD|MOC,83
+Lyon,2011-2012,18,Bafetimbi Gomis,,France,AD|BU,81
+Lyon,2011-2012,6,Kim Kallstrom,,Suede,MOC|MC|MDC,79
+Lyon,2011-2012,13,Anthony Reveillere,,France,DD,79
+Lyon,2011-2012,8,Yoann Gourcuff,,France,MC|MOC,79
+Lyon,2011-2012,5,Dejan Lovren,,Croatie,DC|DD|DG,79
+Lyon,2011-2012,19,Jimmy Briand,,France,AD|MD|MOC|BU,78
+Lyon,2011-2012,21,Maxime Gonalons,,France,MDC|MC|DC,78
+Lyon,2011-2012,4,Bakary Kone,,Burkina Faso,DC,77
+Lyon,2011-2012,10,Ederson,Ederson,Bresil,AG|MOC,76
+Lyon,2011-2012,20,Aly Cissokho,,France,DG,76
+Lyon,2011-2012,26,John Mensah,,Ghana,DC,75
+Lyon,2011-2012,30,Remy Vercoutre,,France,G,74
+Lyon,2011-2012,3,Cris,Cris,Bresil,DC,73
+Lyon,2011-2012,24,Jeremy Pied,,France,AD,73
+Lyon,2011-2012,7,Clement Grenier,,France,MOC|MC|MDC,73
+Lyon,2011-2012,17,Alexandre Lacazette,,France,BU|AD|AG,73
+Lyon,2012-2013,11,Michel Bastos,,Bresil,MG|MOC|AG,81
+Lyon,2012-2013,18,Bafetimbi Gomis,,France,AD|BU,81
+Lyon,2012-2013,9,Lisandro Lopez,,Argentine,BU|AG|AD|MOC,80
+Lyon,2012-2013,8,Yoann Gourcuff,,France,MC|MOC,79
+Lyon,2012-2013,15,Milan Bisevac,,Serbie,DC|DD|DG|MDC,79
+Lyon,2012-2013,21,Maxime Gonalons,,France,MDC|MC|DC,78
+Lyon,2012-2013,5,Dejan Lovren,,Croatie,DC|DD|DG,78
+Lyon,2012-2013,13,Anthony Reveillere,,France,DD,77
+Lyon,2012-2013,7,Clement Grenier,,France,MOC|MC|MDC,77
+Lyon,2012-2013,17,Steed Malbranque,,France,MC|MOC|MDC|MD,76
+Lyon,2012-2013,19,Jimmy Briand,,France,AD|MD|MOC|BU,75
+Lyon,2012-2013,10,Alexandre Lacazette,,France,BU|AD|AG,75
+Lyon,2012-2013,30,Remy Vercoutre,,France,G,74
+Lyon,2012-2013,28,Arnold Mvuemba,,France,MDC|MC,74
+Lyon,2012-2013,4,Bakary Kone,,Burkina Faso,DC,74
+Lyon,2012-2013,20,Luciano Monzon,,Argentine,DG,74
+Lyon,2012-2013,23,Samuel Umtiti,,France,DC,74
+Lyon,2013-2014,8,Yoann Gourcuff,,France,MC|MOC,79
+Lyon,2013-2014,21,Maxime Gonalons,,France,MDC|MC|DC,79
+Lyon,2013-2014,18,Bafetimbi Gomis,,France,AD|BU,78
+Lyon,2013-2014,7,Clement Grenier,,France,MOC|MC|MDC,78
+Lyon,2013-2014,10,Alexandre Lacazette,,France,BU|AD|AG,78
+Lyon,2013-2014,5,Milan Bisevac,,Serbie,DC|DD|DG|MDC,77
+Lyon,2013-2014,3,Henri Bedimo,,Cameroun,DG,76
+Lyon,2013-2014,19,Jimmy Briand,,France,AD|MD|MOC|BU,75
+Lyon,2013-2014,16,Anthony Lopes,,Portugal,G,75
+Lyon,2013-2014,23,Samuel Umtiti,,France,DC,75
+Lyon,2013-2014,28,Arnold Mvuemba,,France,MDC|MC,74
+Lyon,2013-2014,4,Bakary Kone,,Burkina Faso,DC,73
+Lyon,2013-2014,6,Gueida Fofana,,France,MC|MDC|DC,73
+Lyon,2013-2014,12,Jordan Ferri,,France,MC|MDC,71
+Lyon,2013-2014,11,Rachid Ghezzal,,France,AD|AG|MD|MOC,69
+Lyon,2014-2015,10,Alexandre Lacazette,,France,BU|AD|AG,82
+Lyon,2014-2015,21,Maxime Gonalons,,France,MDC|MC|DC,81
+Lyon,2014-2015,1,Anthony Lopes,,Portugal,G,80
+Lyon,2014-2015,8,Yoann Gourcuff,,France,MC|MOC,79
+Lyon,2014-2015,18,Nabil Fekir,,France,MOC|AG|BU|AD|MD,79
+Lyon,2014-2015,13,Christophe Jallet,,France,DD|DG,78
+Lyon,2014-2015,7,Clement Grenier,,France,MOC|MC|MDC,78
+Lyon,2014-2015,5,Milan Bisevac,,Serbie,DC|DD|DG|MDC,77
+Lyon,2014-2015,23,Samuel Umtiti,,France,DC,77
+Lyon,2014-2015,3,Henri Bedimo,,Cameroun,DG,75
+Lyon,2014-2015,6,Gueida Fofana,,France,MC|MDC|DC,75
+Lyon,2014-2015,12,Jordan Ferri,,France,MC|MDC,74
+Lyon,2014-2015,28,Arnold Mvuemba,,France,MDC|MC,73
+Lyon,2014-2015,24,Corentin Tolisso,,France,MC|MDC|DG|DD,73
+Lyon,2014-2015,4,Bakary Kone,,Burkina Faso,DC,72
+Lyon,2014-2015,22,Lindsay Rose,,France,DC|DD|DG,72
+Lyon,2015-2016,10,Alexandre Lacazette,,France,BU|AD|AG,83
+Lyon,2015-2016,1,Anthony Lopes,,Portugal,G,82
+Lyon,2015-2016,19,Mathieu Valbuena,,France,AG|MOC|MG,80
+Lyon,2015-2016,21,Maxime Gonalons,,France,MDC|MC|DC,80
+Lyon,2015-2016,23,Samuel Umtiti,,France,DC,80
+Lyon,2015-2016,18,Nabil Fekir,,France,MOC|AG|BU|AD|MD,79
+Lyon,2015-2016,13,Christophe Jallet,,France,DD|DG,78
+Lyon,2015-2016,2,Mapou Yanga-Mbiwa,,France,DC,78
+Lyon,2015-2016,5,Milan Bisevac,,Serbie,DC|DD|DG|MDC,77
+Lyon,2015-2016,9,Claudio Beauvue,,France,BU|AD,77
+Lyon,2015-2016,20,Rafael Pereira da Silva,,Bresil,DD,77
+Lyon,2015-2016,3,Henri Bedimo,,Cameroun,DG,76
+Lyon,2015-2016,7,Clement Grenier,,France,MOC|MC|MDC,76
+Lyon,2015-2016,14,Sergi Darder,,Espagne,MC|MDC,76
+Lyon,2015-2016,12,Jordan Ferri,,France,MC|MDC,76
+Lyon,2015-2016,8,Corentin Tolisso,,France,MC|MDC|DG|DD,76
+Lyon,2015-2016,15,Jeremy Morel,,France,DC|DG|MG,75
+Lyon,2015-2016,6,Gueida Fofana,,France,MC|MDC|DC,75
+Lyon,2015-2016,11,Rachid Ghezzal,,Algerie,AD|AG|MD|MOC,74
+Lyon,2015-2016,4,Bakary Kone,,Burkina Faso,DC,73
+Lyon,2015-2016,22,Lindsay Rose,,France,DC|DD|DG,73
+Lyon,2015-2016,28,Arnold Mvuemba,,RD Congo,MDC|MC,72
+Lyon,2015-2016,27,Maxwel Cornet,,France,AD|AG|DG|BU|MD|MG,72
+Lyon,2016-2017,10,Alexandre Lacazette,,France,BU|AD|AG,85
+Lyon,2016-2017,1,Anthony Lopes,,Portugal,G,83
+Lyon,2016-2017,28,Mathieu Valbuena,,France,AG|MOC|MG,81
+Lyon,2016-2017,8,Corentin Tolisso,,France,MC|MDC|DG|DD,81
+Lyon,2016-2017,21,Maxime Gonalons,,France,MDC|MC|DC,80
+Lyon,2016-2017,18,Nabil Fekir,,France,MOC|AG|BU|AD|MD,80
+Lyon,2016-2017,20,Rafael,Rafael,Bresil,DD,79
+Lyon,2016-2017,9,Memphis Depay,,Pays-Bas,BU|AG|MOC,79
+Lyon,2016-2017,3,Nicolas Nkoulou,,Cameroun,DC,78
+Lyon,2016-2017,14,Sergi Darder,,Espagne,MC|MDC,78
+Lyon,2016-2017,13,Christophe Jallet,,France,DD|DG,77
+Lyon,2016-2017,2,Mapou Yanga-Mbiwa,,France,DC,77
+Lyon,2016-2017,12,Jordan Ferri,,France,MC|MDC,76
+Lyon,2016-2017,11,Rachid Ghezzal,,Algerie,AD|AG|MD|MOC,76
+Lyon,2016-2017,29,Lucas Tousart,,France,MDC|MC,76
+Lyon,2016-2017,15,Jeremy Morel,,France,DC|DG|MG,75
+Lyon,2016-2017,7,Clement Grenier,,France,MOC|MC|MDC,75
+Lyon,2016-2017,4,Emanuel Mammana,,Argentine,DC,75
+Lyon,2016-2017,5,Mouctar Diakhaby,,France,DC,75
+Lyon,2016-2017,27,Maxwel Cornet,,Cote d'Ivoire,AD|AG|DG|BU|MD|MG,74
+Lyon,2016-2017,31,Maciej Rybus,,Pologne,DG|DD|MG,73
+Lyon,2016-2017,6,Gueida Fofana,,France,MC|MDC|DC,73
+Lyon,2017-2018,1,Anthony Lopes,,Portugal,G,84
+Lyon,2017-2018,18,Nabil Fekir,,France,MOC|AG|BU|AD|MD,84
+Lyon,2017-2018,6,Marcelo,Marcelo,Bresil,DC,81
+Lyon,2017-2018,11,Memphis Depay,,Pays-Bas,BU|AG|MOC,81
+Lyon,2017-2018,9,Mariano Diaz,,Rep. dominicaine,BU,80
+Lyon,2017-2018,14,Sergi Darder,,Espagne,MC|MDC,79
+Lyon,2017-2018,10,Bertrand Traore,,Burkina Faso,AD|BU|MD,79
+Lyon,2017-2018,4,Rafael,Rafael,Bresil,DD,78
+Lyon,2017-2018,23,Kenny Tete,,Pays-Bas,DD,78
+Lyon,2017-2018,29,Lucas Tousart,,France,MDC|MC,78
+Lyon,2017-2018,20,Fernando Marcal,,Bresil,DG|DC,77
+Lyon,2017-2018,28,Tanguy Ndombele,,France,MC|MDC,77
+Lyon,2017-2018,15,Jeremy Morel,,France,DC|DG|MG,76
+Lyon,2017-2018,22,Ferland Mendy,,France,DG,75
+Lyon,2017-2018,5,Mouctar Diakhaby,,France,DC,75
+Lyon,2017-2018,8,Houssem Aouar,,France,MC|MG|MOC,75
+Lyon,2017-2018,2,Mapou Yanga-Mbiwa,,France,DC,74
+Lyon,2017-2018,7,Clement Grenier,,France,MOC|MC|MDC,74
+Lyon,2017-2018,12,Jordan Ferri,,France,MC|MDC,74
+Lyon,2017-2018,27,Maxwel Cornet,,Cote d'Ivoire,AD|AG|DG|BU|MD|MG,74
+Lyon,2018-2019,1,Anthony Lopes,,Portugal,G,85
+Lyon,2018-2019,11,Memphis Depay,,Pays-Bas,BU|AG|MOC,84
+Lyon,2018-2019,18,Nabil Fekir,,France,MOC|AG|BU|AD|MD,84
+Lyon,2018-2019,8,Houssem Aouar,,France,MC|MG|MOC,81
+Lyon,2018-2019,28,Tanguy Ndombele,,France,MC|MDC,81
+Lyon,2018-2019,6,Marcelo,Marcelo,Bresil,DC,79
+Lyon,2018-2019,4,Rafael,Rafael,Bresil,DD,79
+Lyon,2018-2019,9,Moussa Dembele,,France,BU,79
+Lyon,2018-2019,5,Jason Denayer,,Belgique,DC|MDC|DD,79
+Lyon,2018-2019,29,Lucas Tousart,,France,MDC|MC,79
+Lyon,2018-2019,22,Ferland Mendy,,France,DG,79
+Lyon,2018-2019,10,Bertrand Traore,,Burkina Faso,AD|BU|MD,78
+Lyon,2018-2019,14,Leo Dubois,,France,DD|DG,78
+Lyon,2018-2019,20,Fernando Marcal,,Bresil,DG|DC,77
+Lyon,2018-2019,23,Kenny Tete,,Pays-Bas,DD,77
+Lyon,2018-2019,27,Maxwel Cornet,,Cote d'Ivoire,AD|AG|DG|BU|MD|MG,76
+Lyon,2018-2019,7,Martin Terrier,,France,AG|BU|MG,76
+Lyon,2018-2019,15,Jeremy Morel,,Madagascar,DC|DG|MG,75
+Lyon,2018-2019,12,Jordan Ferri,,France,MC|MDC,75
+Lyon,2018-2019,24,Pape Cheikh Diop,,Espagne,MC|MDC,74
+Lyon,2018-2019,2,Mapou Yanga-Mbiwa,,France,DC,73
+Lyon,2019-2020,1,Anthony Lopes,,Portugal,G,84
+Lyon,2019-2020,11,Memphis Depay,,Pays-Bas,BU|AG|MOC,84
+Lyon,2019-2020,9,Moussa Dembele,,France,BU,82
+Lyon,2019-2020,8,Houssem Aouar,,France,MC|MG|MOC,81
+Lyon,2019-2020,12,Thiago Mendes,,Bresil,MC|MDC|DC,80
+Lyon,2019-2020,5,Jason Denayer,,Belgique,DC|MDC|DD,80
+Lyon,2019-2020,21,Karl Toko Ekambi,,Cameroun,BU|AD|AG|MG,80
+Lyon,2019-2020,14,Leo Dubois,,France,DD|DG,78
+Lyon,2019-2020,6,Marcelo,Marcelo,Bresil,DC,77
+Lyon,2019-2020,4,Rafael,Rafael,Bresil,DD,77
+Lyon,2019-2020,10,Bertrand Traore,,Burkina Faso,AD|BU|MD,77
+Lyon,2019-2020,3,Joachim Andersen,,Danemark,DC,77
+Lyon,2019-2020,7,Martin Terrier,,France,AG|BU|MG,77
+Lyon,2019-2020,39,Bruno Guimaraes,,Bresil,MG|MDC|MC,77
+Lyon,2019-2020,20,Fernando Marcal,,Bresil,DG|DC,76
+Lyon,2019-2020,27,Maxwel Cornet,,Cote d'Ivoire,AD|AG|DG|BU|MD|MG,76
+Lyon,2019-2020,23,Kenny Tete,,Pays-Bas,DD,76
+Lyon,2019-2020,29,Lucas Tousart,,France,MDC|MC,76
+Lyon,2019-2020,28,Youssouf Kone,,Mali,DG|DC,75
+Lyon,2019-2020,17,Jeff Reine-Adelaide,,France,MC|MOC|AD|MD,75
+Lyon,2019-2020,25,Maxence Caqueret,,France,MC|MDC|MOC,73
+Lyon,2019-2020,22,Jean Lucas,,Bresil,MC|MDC,73
+Lyon,2019-2020,2,Mapou Yanga-Mbiwa,,France,DC,72
+Lyon,2020-2021,10,Memphis Depay,,Pays-Bas,BU|AG|MOC,84
+Lyon,2020-2021,1,Anthony Lopes,,Portugal,G,83
+Lyon,2020-2021,8,Houssem Aouar,,France,MC|MG|MOC,81
+Lyon,2020-2021,5,Jason Denayer,,Belgique,DC|MDC|DD,80
+Lyon,2020-2021,12,Lucas Paqueta,,Bresil,MC|MOC|MG,80
+Lyon,2020-2021,9,Moussa Dembele,,France,BU,79
+Lyon,2020-2021,23,Thiago Mendes,,Bresil,MC|MDC|DC,79
+Lyon,2020-2021,39,Bruno Guimaraes,,Bresil,MG|MDC|MC,79
+Lyon,2020-2021,6,Marcelo,Marcelo,Bresil,DC,78
+Lyon,2020-2021,14,Leo Dubois,,France,DD|DG,78
+Lyon,2020-2021,7,Karl Toko Ekambi,,Cameroun,BU|AD|AG|MG,78
+Lyon,2020-2021,25,Maxence Caqueret,,France,MC|MDC|MOC,78
+Lyon,2020-2021,10,Bertrand Traore,,Burkina Faso,AD|BU|MD,77
+Lyon,2020-2021,3,Joachim Andersen,,Danemark,DC,77
+Lyon,2020-2021,11,Tino Kadewere,,Zimbabwe,AD|BU|MD,77
+Lyon,2020-2021,4,Rafael,Rafael,Bresil,DD,76
+Lyon,2020-2021,22,Mattia De Sciglio,,Italie,DG|DD|MD,76
+Lyon,2020-2021,20,Fernando Marcal,,Bresil,DG|DC,76
+Lyon,2020-2021,20,Islam Slimani,,Algerie,BU,76
+Lyon,2020-2021,23,Kenny Tete,,Pays-Bas,DD,75
+Lyon,2020-2021,17,Jeff Reine-Adelaide,,France,MC|MOC|AD|MD,75
+Lyon,2020-2021,27,Maxwel Cornet,,Cote d'Ivoire,AD|AG|DG|BU|MD|MG,74
+Lyon,2021-2022,1,Anthony Lopes,,Portugal,G,82
+Lyon,2021-2022,10,Lucas Paqueta,,Bresil,MC|MOC|MG,81
+Lyon,2021-2022,27,Jerome Boateng,,Allemagne,DC|DD|DG|MDC,80
+Lyon,2021-2022,9,Moussa Dembele,,France,BU,79
+Lyon,2021-2022,8,Houssem Aouar,,France,MC|MG|MOC,79
+Lyon,2021-2022,7,Karl Toko Ekambi,,Cameroun,BU|AD|AG|MG,78
+Lyon,2021-2022,3,Emerson Palmieri,,Italie,DG,77
+Lyon,2021-2022,23,Thiago Mendes,,Bresil,MC|MDC|DC,76
+Lyon,2021-2022,20,Mateus Tete,,Bresil,AD|MD,76
+Lyon,2021-2022,4,Castello Lukeba,,France,DC,75
+Lyon,2021-2022,17,Malo Gusto,,France,DD,74
+Lyon,2021-2022,28,Tanguy Ndombele,,France,MC|MDC,79
+Lyon,2021-2022,5,Jason Denayer,,Belgique,DC|MDC|DD,78
+Lyon,2021-2022,15,Romain Faivre,,France,MD|MC|MOC,78
+Lyon,2021-2022,14,Leo Dubois,,France,DD|DG,76
+Lyon,2021-2022,21,Damien Da Silva,,France,DC,75
+Lyon,2021-2022,22,Jeff Reine-Adelaide,,France,MC|MOC|AD|MD,74
+Lyon,2021-2022,11,Tino Kadewere,,Zimbabwe,AD|BU|MD,73
+Lyon,2021-2022,25,Maxence Caqueret,,France,MC|MDC|MOC,79
+Lyon,2021-2022,18,Rayan Cherki,,France,MOC|MD|AG|AD,73
+Lyon,2021-2022,2,Sinaly Diomande,,Cote d'Ivoire,DC|DD,73
+Lyon,2021-2022,39,Bruno Guimaraes,,Bresil,MG|MDC|MC,80
+Lyon,2021-2022,29,Xherdan Shaqiri,,Suisse,MOC|MD,76
+Lyon,2021-2022,20,Islam Slimani,,Algerie,BU,75
+Lyon,2021-2022,6,Marcelo,Marcelo,Bresil,DC,74
+Lyon,2022-2023,10,Alexandre Lacazette,,France,BU|AD|AG,83
+Lyon,2022-2023,1,Anthony Lopes,,Portugal,G,82
+Lyon,2022-2023,3,Nicolas Tagliafico,,Argentine,DG,81
+Lyon,2022-2023,88,Corentin Tolisso,,France,MC|MDC|DG|DD,80
+Lyon,2022-2023,5,Dejan Lovren,,Croatie,DC|DD|DG,78
+Lyon,2022-2023,6,Maxence Caqueret,,France,MC|MDC|MOC,78
+Lyon,2022-2023,4,Castello Lukeba,,France,DC,77
+Lyon,2022-2023,18,Rayan Cherki,,France,MOC|MD|AG|AD,74
+Lyon,2022-2023,26,Bradley Barcola,,France,MD|AD|BU|AG,74
+Lyon,2022-2023,47,Jeffinho,Jeffinho,Bresil,MG|AG,74
+Lyon,2022-2023,20,Sael Kumbedi,,France,DD,70
+Lyon,2022-2023,9,Moussa Dembele,,France,BU,77
+Lyon,2022-2023,8,Houssem Aouar,,Algerie,MC|MG|MOC,77
+Lyon,2022-2023,23,Thiago Mendes,,Bresil,MC|MDC|DC,76
+Lyon,2022-2023,27,Malo Gusto,,France,DD,76
+Lyon,2022-2023,17,Jerome Boateng,,Allemagne,DC|DD|DG|MDC,75
+Lyon,2022-2023,12,Henrique Silva Milagres,,Bresil,DG,73
+Lyon,2022-2023,2,Sinaly Diomande,,Cote d'Ivoire,DC|DD,73
+Lyon,2022-2023,24,Johann Lepenant,,France,MDC|MC,73
+Lyon,2022-2023,10,Lucas Paqueta,,Bresil,MC|MOC|MG,81
+Lyon,2022-2023,15,Romain Faivre,,France,MD|MC|MOC,77
+Lyon,2022-2023,20,Mateus Tete,,Bresil,AD|MD,77
+Lyon,2022-2023,7,Karl Toko Ekambi,,Cameroun,BU|AD|AG|MG,76
+Lyon,2022-2023,22,Jeff Reine-Adelaide,,France,MC|MOC|AD|MD,74
+Lyon,2022-2023,21,Damien Da Silva,,France,DC,73
+Lyon,2022-2023,11,Tino Kadewere,,Zimbabwe,AD|BU|MD,73
+Lyon,2022-2023,19,Cenk Ozkacar,,Turquie,DC,71
+Lyon,2022-2023,28,Youssouf Kone,,Mali,DG|DC,69
+Lyon,2023-2024,10,Alexandre Lacazette,,France,BU|AD|AG,81
+Lyon,2023-2024,31,Nemanja Matic,,Serbie,MDC|MC,80
+Lyon,2023-2024,1,Anthony Lopes,,Portugal,G,80
+Lyon,2023-2024,3,Nicolas Tagliafico,,Argentine,DG,78
+Lyon,2023-2024,17,Said Benrahma,,Algerie,MG|MOC|AD|MD|BU,78
+Lyon,2023-2024,6,Maxence Caqueret,,France,MC|MDC|MOC,77
+Lyon,2023-2024,22,Clinton Mata,,Angola,DC|DD|MD,76
+Lyon,2023-2024,8,Corentin Tolisso,,France,MC|MDC|DG|DD,76
+Lyon,2023-2024,55,Duje Caleta-Car,,Croatie,DC,75
+Lyon,2023-2024,12,Jake O'Brien,,Rep. d'Irlande,DC|DD,74
+Lyon,2023-2024,37,Ernest Nuamah,,Ghana,AD|BU|AG,74
+Lyon,2023-2024,23,Lucas Perri,,Bresil,G,77
+Lyon,2023-2024,25,Orel Mangala,,Belgique,MC|MDC,76
+Lyon,2023-2024,5,Dejan Lovren,,Croatie,DC|DD|DG,74
+Lyon,2023-2024,18,Rayan Cherki,,France,MOC|MD|AG|AD,74
+Lyon,2023-2024,9,Gift Orban,,Nigeria,BU,74
+Lyon,2023-2024,11,Malick Fofana,,Belgique,AG|MD|BU|MG,71
+Lyon,2024-2025,1,Lucas Perri,,Bresil,G,81
+Lyon,2024-2025,10,Alexandre Lacazette,,France,BU|AD|AG,80
+Lyon,2024-2025,8,Corentin Tolisso,,France,MC|MDC|DG|DD,80
+Lyon,2024-2025,31,Nemanja Matic,,Serbie,MDC|MC,79
+Lyon,2024-2025,23,Thiago Almada,,Argentine,MOC|MC|AG|MD,79
+Lyon,2024-2025,18,Rayan Cherki,,France,MOC|MD|AG|AD,79
+Lyon,2024-2025,3,Nicolas Tagliafico,,Argentine,DG,78
+Lyon,2024-2025,22,Clinton Mata,,Angola,DC|DD|MD,77
+Lyon,2024-2025,98,Ainsley Maitland-Niles,,Angleterre,DD|MDC|DG|MD|MC,77
+Lyon,2024-2025,19,Moussa Niakhate,,Senegal,DC,77
+Lyon,2024-2025,11,Malick Fofana,,Belgique,AG|MD|BU|MG,76
+Lyon,2024-2025,7,Jordan Veretout,,France,MC|MDC,78
+Lyon,2024-2025,69,Georges Mikautadze,,Georgie,BU|MG|MOC|AD,77
+Lyon,2024-2025,55,Duje Caleta-Car,,Croatie,DC,75
+Lyon,2024-2025,15,Tanner Tessmann,,Etats-Unis,MDC|MC,74
+Lyon,2024-2025,16,Abner,Abner,Bresil,DG,74
+Lyon,2024-2025,37,Ernest Nuamah,,Ghana,AD|BU|AG,75
+Lyon,2025-2026,8,Corentin Tolisso,,France,MC|MDC|DG|DD,82
+Lyon,2025-2026,19,Moussa Niakhate,,Senegal,DC,80
+Lyon,2025-2026,1,Dominik Greif,,Slovaquie,G,80
+Lyon,2025-2026,23,Tyler Morton,,Angleterre,MC|MDC,79
+Lyon,2025-2026,9,Endrick,Endrick,Bresil,AD|BU,78
+Lyon,2025-2026,98,Ainsley Maitland-Niles,,Angleterre,DD|MDC|DG|MD|MC,77
+Lyon,2025-2026,22,Clinton Mata,,Angola,DC|DD|MD,76
+Lyon,2025-2026,77,Roman Yaremchuk,,Ukraine,BU|MG,75
+Lyon,2025-2026,16,Abner,Abner,Bresil,DG,75
+Lyon,2025-2026,17,Afonso Moreira,,Portugal,AG|AD,75
+Lyon,2025-2026,3,Nicolas Tagliafico,,Argentine,DG,78
+Lyon,2025-2026,10,Pavel Sulc,,Tchequie,MOC|MG|MD,78
+Lyon,2025-2026,11,Malick Fofana,,Belgique,AG|MD|BU|MG,78
+Lyon,2025-2026,5,Orel Mangala,,Belgique,MC|MDC,76
+Lyon,2025-2026,6,Tanner Tessmann,,Etats-Unis,MDC|MC,76
+Lyon,2025-2026,37,Ernest Nuamah,,Ghana,AD|BU|AG,75
+Lyon,2025-2026,21,Ruben Kluivert,,Pays-Bas,DC|DD|DG,74
+Lyon,2025-2026,18,Rachid Ghezzal,,Algerie,AD|AG|MD|MOC,72
+Lyon,2004-2005,8,Juninho,Juninho,Bresil,MOC|MC|MD|AD,87
+Lyon,2004-2005,9,Giovane Elber,,Bresil,BU,86
+Lyon,2004-2005,3,Cris,Cris,Bresil,DC,86
+Lyon,2004-2005,7,Mahamadou Diarra,,Mali,MDC|MC,85
+Lyon,2004-2005,1,Gregory Coupet,,France,G,83
+Lyon,2004-2005,4,Michael Essien,,Ghana,MD|MC|MDC,83
+Lyon,2004-2005,14,Sidney Govou,,France,AD|MOC|BU|MD,82
+Lyon,2004-2005,13,Pierre-Alain Frau,,France,BU|MD,81
+Lyon,2004-2005,5,Cacapa,Cacapa,Bresil,DC,78
+Lyon,2004-2005,20,Eric Abidal,,France,DG|DC,78
+Lyon,2004-2005,12,Anthony Reveillere,,France,DD,77
+Lyon,2004-2005,22,Sylvain Wiltord,,France,BU|AD|MD,76
+Lyon,2004-2005,10,Florent Malouda,,France,MG|AG|MOC,76
+Lyon,2004-2005,23,Jeremy Berthod,,France,DC|DG,75
+Lyon,2004-2005,24,Lamine Diatta,,Senegal,DD|DC,72
+Lyon,2004-2005,31,Bryan Bergougnoux,,France,BU,65
+Lyon,2004-2005,29,Yohan Gomez,,France,DG,64
+Lyon,2004-2005,34,Hatem Ben Arfa,,France,BU|MD|MOC|AD|AG,64
+Lyon,2004-2005,35,Kevin Jacmot,,France,MDC,62
+Lyon,2004-2005,19,Julien Viale,,France,BU,60
+Lyon,2004-2005,30,Nicolas Puydebois,,France,G,59
+Lyon,2004-2005,27,Johann Truchet,,France,DC|DD|DG,54
+Lyon,2004-2005,32,Sylvain Idangar,,France,MG,54
+Lyon,2004-2005,21,Yacine Hima,,France,MC,51
+Lyon,2004-2005,26,Jeremy Clement,,France,MC|MDC,50
+Lyon,2005-2006,8,Juninho,Juninho,Bresil,MOC|MC|MD|AD,91
+Lyon,2005-2006,1,Gregory Coupet,,France,G,90
+Lyon,2005-2006,7,Mahamadou Diarra,,Mali,MDC|MC,89
+Lyon,2005-2006,26,Benoit Pedretti,,France,MC|MDC|MOC,87
+Lyon,2005-2006,9,John Carew,,Norvege,BU,86
+Lyon,2005-2006,3,Cris,Cris,Bresil,DC,85
+Lyon,2005-2006,22,Sylvain Wiltord,,France,BU|AD|MD,84
+Lyon,2005-2006,14,Sidney Govou,,France,AD|MOC|BU|MD,83
+Lyon,2005-2006,12,Anthony Reveillere,,France,DD,83
+Lyon,2005-2006,5,Cacapa,Cacapa,Bresil,DC,82
+Lyon,2005-2006,10,Florent Malouda,,France,MG|AG|MOC,82
+Lyon,2005-2006,20,Eric Abidal,,France,DG|DC,81
+Lyon,2005-2006,13,Pierre-Alain Frau,,France,BU|MD,80
+Lyon,2005-2006,24,Sylvain Monsoreau,,France,DC|DG,79
+Lyon,2005-2006,23,Jeremy Berthod,,France,DC|DG,76
+Lyon,2005-2006,15,Lamine Diatta,,Senegal,DD|DC,73
+Lyon,2005-2006,30,Remi Vercoutre,,France,G,71
+Lyon,2005-2006,18,Hatem Ben Arfa,,France,BU|MD|MOC|AD|AG,69
+Lyon,2005-2006,6,Jeremy Clement,,France,MC|MDC,68
+Lyon,2005-2006,19,Julien Viale,,France,BU,60
+Lyon,2005-2006,27,Johann Truchet,,France,DC|DD|DG,60
+Lyon,2005-2006,28,Karim Benzema,,France,BU,60
+Lyon,2005-2006,25,Johan Hartock,,France,G,54
+Lyon,2006-2007,1,Gregory Coupet,,France,G,91
+Lyon,2006-2007,3,Cris,Cris,Bresil,DC,89
+Lyon,2006-2007,8,Juninho,Juninho,Bresil,MOC|MC|MD|AD,88
+Lyon,2006-2007,10,Florent Malouda,,France,MG|AG|MOC,83
+Lyon,2006-2007,20,Eric Abidal,,France,DG|DC,83
+Lyon,2006-2007,11,Fred,Fred,Bresil,BU,83
+Lyon,2006-2007,21,Tiago,Tiago,Portugal,MDC,82
+Lyon,2006-2007,27,Kim Kallstrom,,Suede,MOC|MC|MDC,82
+Lyon,2006-2007,22,Sylvain Wiltord,,France,BU|AD|MD,81
+Lyon,2006-2007,26,Benoit Pedretti,,France,MC|MDC|MOC,81
+Lyon,2006-2007,29,Sebastien Squillaci,,France,DC,81
+Lyon,2006-2007,28,Jeremy Toulalan,,France,MDC|MDG|DC|MC,81
+Lyon,2006-2007,12,Anthony Reveillere,,France,DD,81
+Lyon,2006-2007,5,Cacapa,Cacapa,Bresil,DC,80
+Lyon,2006-2007,9,John Carew,,Norvege,BU,79
+Lyon,2006-2007,4,Patrick Muller,,Suisse,DC,79
+Lyon,2006-2007,15,Alou Diarra,,France,MDC,78
+Lyon,2006-2007,31,Francois Clerc,,France,DD,78
+Lyon,2006-2007,18,Hatem Ben Arfa,,France,BU|MD|MOC|AD|AG,76
+Lyon,2006-2007,14,Sidney Govou,,France,AD|MOC|BU|MD,75
+Lyon,2006-2007,23,Jeremy Berthod,,France,DC|DG,75
+Lyon,2006-2007,19,Karim Benzema,,France,BU,75
+Lyon,2006-2007,30,Remi Vercoutre,,France,G,74
+Lyon,2006-2007,32,Yacine Hima,,France,MC,60
+Lyon,2006-2007,33,Sylvain Idangar,,France,MG,58

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>The Special One</title>
+<script>
+  // GitHub Pages sert uniquement des fichiers statiques - il n'existe pas
+  // de fichier réel à des chemins comme /season ou /info/faq, donc il
+  // atterrit ici. On redirige vers index.html en encodant le chemin
+  // d'origine dans un paramètre de requête ; index.html le restaure au
+  // démarrage (voir la redirection dans le script principal) pour que
+  // l'URL affichée redevienne propre plutôt que de rester bloquée sur "/".
+  // Le hash (#access_token=... pour une connexion Google en cours) est
+  // rajouté tel quel à la fin, sans y toucher.
+  var path = location.pathname + location.search;
+  location.replace('/?redirect=' + encodeURIComponent(path) + location.hash);
+</script>
+</head>
+<body></body>
+</html>
