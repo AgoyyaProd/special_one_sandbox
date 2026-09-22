@@ -7780,35 +7780,35 @@ function renderTransferGame(){
   const remaining = tr.maxPicks - tr.count;
 
   if(tr.phase === 'select'){
-    draftBtn.textContent = tr.selected.length ? `Lancer le mercato (${tr.selected.length})` : 'Sélectionnez des joueurs';
+    draftBtn.textContent = tr.selected.length ? tt(`Lancer le mercato (${tr.selected.length})`, `Start the transfer window (${tr.selected.length})`) : tt('Sélectionnez des joueurs','Select players');
     draftBtn.disabled = tr.selected.length === 0;
-    relanceBtn.textContent = 'Relancer la main';
+    relanceBtn.textContent = t('game.reroll');
     relanceBtn.disabled = true;
-    rerollCountEl.textContent = `${remaining} choix de mercato restant${remaining>1?'s':''}. Cliquez sur des joueurs (titulaires ou remplaçants) pour les mettre sur le marché.`;
+    rerollCountEl.textContent = tt(`${remaining} choix de mercato restant${remaining>1?'s':''}. Cliquez sur des joueurs (titulaires ou remplaçants) pour les mettre sur le marché.`, `${remaining} transfer pick${remaining>1?'s':''} left. Click players (starters or substitutes) to put them on the market.`);
   } else if(tr.phase === 'draft'){
     const slot = findSlot(tr.activeSlotId);
-    draftBtn.textContent = 'Choisissez un joueur ci-dessous…';
+    draftBtn.textContent = tt('Choisissez un joueur ci-dessous…','Choose a player below…');
     draftBtn.disabled = true;
     // Aucune relance possible pendant un mercato (contrairement à la draft
     // initiale) - les 5 candidats proposés pour ce poste sont définitifs,
     // sans quoi il était possible de relancer à l'infini dès lors que des
     // relances de la draft initiale n'avaient pas toutes été utilisées.
     relanceBtn.disabled = true;
-    relanceBtn.textContent = 'Relance indisponible en mercato';
-    rerollCountEl.textContent = `Poste concerné : ${slot ? (isBenchSlot(tr.activeSlotId) ? 'Remplaçant ('+compatiblePositions(slot.player).join('/')+')' : slot.label) : ''} - conservez votre joueur ou remplacez-le.`;
+    relanceBtn.textContent = tt('Relance indisponible en mercato','Reroll unavailable during transfer window');
+    rerollCountEl.textContent = tt(`Poste concerné : ${slot ? (isBenchSlot(tr.activeSlotId) ? 'Remplaçant ('+compatiblePositions(slot.player).join('/')+')' : slot.label) : ''} - conservez votre joueur ou remplacez-le.`, `Position concerned: ${slot ? (isBenchSlot(tr.activeSlotId) ? 'Substitute ('+compatiblePositions(slot.player).join('/')+')' : slot.label) : ''} - keep your player or replace them.`);
   } else { // 'review'
     state.hand = [];
-    draftBtn.textContent = `Mercato terminé (${tr.maxPicks}/${tr.maxPicks} choix utilisés)`;
+    draftBtn.textContent = tt(`Mercato terminé (${tr.maxPicks}/${tr.maxPicks} choix utilisés)`, `Transfer window done (${tr.maxPicks}/${tr.maxPicks} picks used)`);
     draftBtn.disabled = true;
     relanceBtn.disabled = true;
-    relanceBtn.textContent = 'Relancer la main';
-    rerollCountEl.textContent = `Vos ${tr.maxPicks} choix de mercato sont faits. Réorganisez librement votre effectif si besoin (cliquez sur un joueur puis sur un autre pour les échanger, y compris avec les remplaçants), puis validez en bas à gauche.`;
+    relanceBtn.textContent = t('game.reroll');
+    rerollCountEl.textContent = tt(`Vos ${tr.maxPicks} choix de mercato sont faits. Réorganisez librement votre effectif si besoin (cliquez sur un joueur puis sur un autre pour les échanger, y compris avec les remplaçants), puis validez en bas à gauche.`, `Your ${tr.maxPicks} transfer picks are done. Freely reorganize your squad if needed (click a player then another to swap them, including substitutes), then confirm at the bottom left.`);
   }
 
   document.getElementById('btn-end-transfer-window').disabled = false;
   document.getElementById('btn-end-transfer-window').textContent = tr.phase === 'review'
-    ? (tr.midSeason ? "Valider l'effectif → Retour à la saison" : "Valider l'effectif → Saison suivante")
-    : 'Terminer le mercato';
+    ? (tr.midSeason ? tt("Valider l'effectif → Retour à la saison","Confirm squad → Back to season") : tt("Valider l'effectif → Saison suivante","Confirm squad → Next season"))
+    : t('game.end-mercato');
 
   renderHand();
   requestAnimationFrame(sizePitch);
@@ -14283,7 +14283,7 @@ function commitLiveEuroKnockoutLegResult(){
       // instantanément (cumul/prolongation/tirs au but compris pour elles).
       ties.forEach(t=>{ if(t !== tie && !t.leg2) playKnockoutLeg2(euro, [t]); });
       euro.resultsByRound.push({
-        label:`${stageLabel(EURO_KNOCKOUT_STAGE_LABEL[stage])} - Retour`,
+        label:`${stageLabel(EURO_KNOCKOUT_STAGE_LABEL[stage])} - ${stageLabel('Retour')}`,
         matches: ties.map(t=>({ ...t.leg2, aggHome:t.aggB, aggAway:t.aggA, wentToPenalties:t.wentToPenalties, penaltyScore:flipScorePair(t.penaltyScore), extraTimeScore:flipScorePair(t.extraTimeScore) })),
         roundIdx: state.season.currentRound-1
       });
@@ -14598,7 +14598,7 @@ function renderLeaguePanels(){
         const isLeg1 = euro.legPending === 'leg1';
         // Le retour se joue chez l'équipe B : on inverse domicile/extérieur.
         const matches = ties.map(t => isLeg1 ? { home:t.teamA, away:t.teamB } : { home:t.teamB, away:t.teamA });
-        timeline.push({ type:`euro-${euro.tier}`, roundIdx:anchors[isLeg1?0:1], label:`${euroCupLabel(EURO_LABELS[euro.tier])} - ${stageLabel(EURO_STAGE_LABEL[euro.stage])} - ${isLeg1?'Aller':'Retour'}`, matches, upcoming:true });
+        timeline.push({ type:`euro-${euro.tier}`, roundIdx:anchors[isLeg1?0:1], label:`${euroCupLabel(EURO_LABELS[euro.tier])} - ${stageLabel(EURO_STAGE_LABEL[euro.stage])} - ${stageLabel(isLeg1?'Aller':'Retour')}`, matches, upcoming:true });
       }
       if(euro.stage === 'final' && euro.finalFixture && euro.finalFixture.home && euro.finalFixture.away && !euro.finalFixture.played){
         timeline.push({ type:`euro-${euro.tier}`, roundIdx:(euro.tier==='el' ? sch.elFinal : Number.MAX_SAFE_INTEGER), label:`${euroCupLabel(EURO_LABELS[euro.tier])} - Finale`, matches:[euro.finalFixture], upcoming:true });
