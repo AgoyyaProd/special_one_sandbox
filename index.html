@@ -10152,20 +10152,20 @@ const LIVE_DECISION_BUILDERS = [
     if(Math.abs(lm.hg - lm.ag) > 1) return null;
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Moment clé',
-      text:'Score serré, le match peut basculer. Quelle consigne transmettre à l\'équipe ?',
+      title:tt('Moment clé','Key moment'),
+      text:tt('Score serré, le match peut basculer. Quelle consigne transmettre à l\'équipe ?','The score is tight and the match could swing either way. What instructions do you give the team?'),
       options:[
-        { key:'attack', label:'Attaquer', risky:true, apply(){
+        { key:'attack', label:tt('Attaquer','Attack'), risky:true, apply(){
           lm[myModKey(lm)] += 7; lm[oppModKey(lm)] += 2;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous demandez à votre équipe de prendre le jeu à son compte.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous demandez à votre équipe de prendre le jeu à son compte.','You ask your team to take control of the game.'), mySide);
         }},
-        { key:'balance', label:'Équilibrer', apply(){
+        { key:'balance', label:tt('Équilibrer','Balance it out'), apply(){
           lm[myModKey(lm)] += 1;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous demandez à votre équipe de rester équilibrée.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous demandez à votre équipe de rester équilibrée.','You ask your team to stay balanced.'), mySide);
         }},
-        { key:'defend', label:'Défendre', apply(){
+        { key:'defend', label:tt('Défendre','Defend'), apply(){
           lm[myModKey(lm)] -= 3; lm[oppModKey(lm)] -= 6;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous consignez à votre équipe de resserrer les lignes.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous consignez à votre équipe de resserrer les lignes.','You order your team to tighten the lines.'), mySide);
         }}
       ]
     };
@@ -10174,68 +10174,68 @@ const LIVE_DECISION_BUILDERS = [
     if(lm.minute < 75) return null;
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Money Time',
-      text:'La 75e minute est passée. Quelle consigne donner pour la fin de match ?',
+      title:tt('Money Time','Money Time'),
+      text:tt('La 75e minute est passée. Quelle consigne donner pour la fin de match ?','The 75th minute has passed. What instructions do you give for the rest of the match?'),
       options:[
-        { key:'push', label:'Tout pour gagner', risky:true, apply(){
+        { key:'push', label:tt('Tout pour gagner','All-out to win'), risky:true, apply(){
           lm[myModKey(lm)] += 8; lm[oppModKey(lm)] += 4;
-          pushLiveEvent(lm, lm.minute, 'decision', "Vous envoyez tout le monde à l'attaque.", mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt("Vous envoyez tout le monde à l'attaque.","You send everyone forward in attack."), mySide);
         }},
-        { key:'manage', label:'Gérer', apply(){
+        { key:'manage', label:tt('Gérer','Manage the game'), apply(){
           lm[oppModKey(lm)] -= 2;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous demandez à votre équipe de gérer la fin de match.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous demandez à votre équipe de gérer la fin de match.','You ask your team to manage the closing stages.'), mySide);
         }},
-        { key:'secure', label:'Tenir le score', apply(){
+        { key:'secure', label:tt('Tenir le score','Hold the score'), apply(){
           lm[myModKey(lm)] -= 4; lm[oppModKey(lm)] -= 7;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous consignez à votre équipe de sécuriser le résultat.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous consignez à votre équipe de sécuriser le résultat.','You order your team to secure the result.'), mySide);
         }}
       ]
     };
   },
   function injuryDecision(lm){
     const player = randomStarterPlayer();
-    const name = player ? player.nom : 'Votre joueur';
+    const name = player ? player.nom : tt('Votre joueur','Your player');
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Coup dur',
-      text:`${name} ressent une douleur sur une action anodine. Quelle décision prendre ?`,
+      title:tt('Coup dur','Bad blow'),
+      text:tt(`${name} ressent une douleur sur une action anodine. Quelle décision prendre ?`,`${name} feels a knock after a routine passage of play. What do you decide?`),
       options:[
-        { key:'continue', label:'Continuer', apply(){
+        { key:'continue', label:tt('Continuer','Continue'), apply(){
           if(player) lm.injuredPlayers.push(player);
           if(Math.random() < 0.5){
             lm[myModKey(lm)] -= 8;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} force sur la douleur et perd en efficacité.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} force sur la douleur et perd en efficacité.`,`${name} plays through the pain and loses effectiveness.`), mySide);
             if(player && Math.random() < 0.55){
               const matches = 2 + Math.floor(Math.random()*4);
               setPlayerUnavailable(player, matches, 'injury', lm.roundIdx);
-              pushLiveEvent(lm, lm.minute, 'injury', `Diagnostic inquiétant : ${name} manquera ${matches} matchs.`, mySide);
+              pushLiveEvent(lm, lm.minute, 'injury', tt(`Diagnostic inquiétant : ${name} manquera ${matches} matchs.`,`Worrying diagnosis: ${name} will miss ${matches} matches.`), mySide);
             }
           } else {
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} serre les dents et repart au combat.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} serre les dents et repart au combat.`,`${name} grits his teeth and gets back into the game.`), mySide);
           }
         }},
-        { key:'treat', label:'Soigner', apply(){
+        { key:'treat', label:tt('Soigner','Treat him'), apply(){
           if(player) lm.injuredPlayers.push(player);
           lm[myModKey(lm)] -= 4;
-          pushLiveEvent(lm, lm.minute, 'decision', `${name} est soigné sur le bord du terrain avant de reprendre.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} est soigné sur le bord du terrain avant de reprendre.`,`${name} is treated on the touchline before continuing.`), mySide);
           if(player && Math.random() < 0.2){
             const matches = 1 + Math.floor(Math.random()*2);
             setPlayerUnavailable(player, matches, 'injury', lm.roundIdx);
-            pushLiveEvent(lm, lm.minute, 'injury', `Examen d'après-match : ${name} sera absent ${matches} match${matches>1?'s':''}.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'injury', tt(`Examen d'après-match : ${name} sera absent ${matches} match${matches>1?'s':''}.`,`Post-match examination: ${name} will be out for ${matches} match${matches>1?'es':''}.`), mySide);
           }
         }},
-        { key:'sub', label:'Remplacer', apply(){
+        { key:'sub', label:tt('Remplacer','Substitute'), apply(){
           const incoming = performLiveSubstitution(lm, player);
           if(incoming){
             lm[myModKey(lm)] -= 1;
-            pushLiveEvent(lm, lm.minute, 'sub', `Changement : ${incoming.nom} remplace ${name}, sorti par précaution.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'sub', tt(`Changement : ${incoming.nom} remplace ${name}, sorti par précaution.`,`Substitution: ${incoming.nom} replaces ${name}, withdrawn as a precaution.`), mySide);
           } else {
             lm[myModKey(lm)] -= 2;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} cède sa place par précaution, mais aucun remplaçant n'est disponible.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} cède sa place par précaution, mais aucun remplaçant n'est disponible.`,`${name} is forced off as a precaution, but no substitute is available.`), mySide);
           }
           if(player && Math.random() < 0.1){
             setPlayerUnavailable(player, 1, 'injury', lm.roundIdx);
-            pushLiveEvent(lm, lm.minute, 'injury', `Examen d'après-match : ${name} sera absent 1 match.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'injury', tt(`Examen d'après-match : ${name} sera absent 1 match.`,`Post-match examination: ${name} will be out for 1 match.`), mySide);
           } else if(incoming){
             lm._injuryAvoided = true;
           }
@@ -10253,44 +10253,44 @@ const LIVE_DECISION_BUILDERS = [
     const name = player.nom;
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Sur le fil',
-      text:`${name} est déjà averti. Comment gérer le risque de carton rouge ?`,
+      title:tt('Sur le fil','Walking a tightrope'),
+      text:tt(`${name} est déjà averti. Comment gérer le risque de carton rouge ?`,`${name} is already on a yellow card. How do you manage the risk of a red?`),
       options:[
-        { key:'risk', label:'Le laisser', risky:true, apply(){
+        { key:'risk', label:tt('Le laisser','Leave him on'), risky:true, apply(){
           if(Math.random() < 0.28){
             lm[myModKey(lm)] -= 10;
-            pushLiveEvent(lm, lm.minute, 'red', `Deuxième carton jaune pour ${name} ! Votre équipe termine à dix.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'red', tt(`Deuxième carton jaune pour ${name} ! Votre équipe termine à dix.`,`Second yellow card for ${name}! Your team finishes with ten men.`), mySide);
             if(player){
               lm.sentOffPlayers.push(player);
               setPlayerUnavailable(player, 1, 'suspension', lm.roundIdx);
-              pushLiveEvent(lm, lm.minute, 'suspension', `${name} sera suspendu pour le prochain match.`, mySide);
+              pushLiveEvent(lm, lm.minute, 'suspension', tt(`${name} sera suspendu pour le prochain match.`,`${name} will be suspended for the next match.`), mySide);
             }
           } else {
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} négocie parfaitement le reste de la rencontre.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} négocie parfaitement le reste de la rencontre.`,`${name} handles the rest of the match perfectly.`), mySide);
           }
         }},
-        { key:'calm', label:'Le calmer', apply(){
+        { key:'calm', label:tt('Le calmer','Calm him down'), apply(){
           lm[myModKey(lm)] -= 1;
           if(Math.random() < 0.1){
             lm[myModKey(lm)] -= 10;
-            pushLiveEvent(lm, lm.minute, 'red', `Deuxième carton jaune pour ${name} malgré les consignes ! Votre équipe termine à dix.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'red', tt(`Deuxième carton jaune pour ${name} malgré les consignes ! Votre équipe termine à dix.`,`Second yellow card for ${name} despite your instructions! Your team finishes with ten men.`), mySide);
             if(player){
               lm.sentOffPlayers.push(player);
               setPlayerUnavailable(player, 1, 'suspension', lm.roundIdx);
-              pushLiveEvent(lm, lm.minute, 'suspension', `${name} sera suspendu pour le prochain match.`, mySide);
+              pushLiveEvent(lm, lm.minute, 'suspension', tt(`${name} sera suspendu pour le prochain match.`,`${name} will be suspended for the next match.`), mySide);
             }
           } else {
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} est recadré et se montre plus prudent.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} est recadré et se montre plus prudent.`,`${name} takes the message on board and plays more cautiously.`), mySide);
           }
         }},
-        { key:'sub', label:'Le remplacer', apply(){
+        { key:'sub', label:tt('Le remplacer','Substitute him'), apply(){
           const incoming = performLiveSubstitution(lm, player);
           if(incoming){
-            pushLiveEvent(lm, lm.minute, 'sub', `Changement : ${incoming.nom} remplace ${name}, préservé d'un carton.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'sub', tt(`Changement : ${incoming.nom} remplace ${name}, préservé d'un carton.`,`Substitution: ${incoming.nom} replaces ${name}, spared a possible card.`), mySide);
             lm._redCardAvoided = true;
           } else {
             lm[myModKey(lm)] -= 2;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} est préservé mais aucun remplaçant n'est disponible.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} est préservé mais aucun remplaçant n'est disponible.`,`${name} is protected but no substitute is available.`), mySide);
           }
         }}
       ]
@@ -10300,24 +10300,24 @@ const LIVE_DECISION_BUILDERS = [
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     const oppName = isMyTeamHome(lm) ? lm.awayName : lm.homeName;
     return {
-      title:'Adaptation adverse',
-      text:`${oppName} change de système. Comment répondre ?`,
+      title:tt('Adaptation adverse','Opposition adjustment'),
+      text:tt(`${oppName} change de système. Comment répondre ?`,`${oppName} change their system. How do you respond?`),
       options:[
-        { key:'adapt', label:'Adapter', apply(){
+        { key:'adapt', label:tt('Adapter','Adapt'), apply(){
           lm[oppModKey(lm)] -= 4;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous ajustez votre système pour neutraliser le changement adverse.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous ajustez votre système pour neutraliser le changement adverse.','You adjust your system to neutralize the opposition\'s change.'), mySide);
         }},
-        { key:'continue', label:'Continuer', apply(){
+        { key:'continue', label:tt('Continuer','Stay the course'), apply(){
           if(Math.random() < 0.4){
             lm[oppModKey(lm)] += 5;
-            pushLiveEvent(lm, lm.minute, 'decision', `${oppName} profite de son changement de système, non contesté.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${oppName} profite de son changement de système, non contesté.`,`${oppName} capitalize on their system change, unopposed.`), mySide);
           } else {
-            pushLiveEvent(lm, lm.minute, 'decision', 'Vous ne changez rien, le changement adverse ne fait pas de dégâts.', mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt('Vous ne changez rien, le changement adverse ne fait pas de dégâts.','You change nothing, and the opposition\'s switch does no damage.'), mySide);
           }
         }},
-        { key:'intensify', label:'Intensifier', apply(){
+        { key:'intensify', label:tt('Intensifier','Intensify'), apply(){
           lm[myModKey(lm)] += 5; lm[oppModKey(lm)] += 2;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous répondez en intensifiant votre propre jeu.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous répondez en intensifiant votre propre jeu.','You respond by ramping up your own game.'), mySide);
         }}
       ]
     };
@@ -10328,24 +10328,24 @@ const LIVE_DECISION_BUILDERS = [
     const name = player.nom;
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Joueur en feu',
-      text:`${name} domine son adversaire direct. Comment exploiter ça ?`,
+      title:tt('Joueur en feu','Player on fire'),
+      text:tt(`${name} domine son adversaire direct. Comment exploiter ça ?`,`${name} is dominating his direct opponent. How do you exploit it?`),
       options:[
-        { key:'feed', label:'Jouer sur lui', apply(){
+        { key:'feed', label:tt('Jouer sur lui','Play through him'), apply(){
           lm[myModKey(lm)] += 6;
-          pushLiveEvent(lm, lm.minute, 'decision', `Vous faites passer le jeu par ${name}, en grande forme.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`Vous faites passer le jeu par ${name}, en grande forme.`,`You funnel play through ${name}, who's in great form.`), mySide);
         }},
-        { key:'balance', label:'Équilibrer', apply(){
+        { key:'balance', label:tt('Équilibrer','Balance it out'), apply(){
           lm[myModKey(lm)] += 2;
-          pushLiveEvent(lm, lm.minute, 'decision', `Vous impliquez ${name} sans en faire le seul point de mire.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`Vous impliquez ${name} sans en faire le seul point de mire.`,`You involve ${name} without making him the sole focal point.`), mySide);
         }},
-        { key:'free', label:'Liberté totale', apply(){
+        { key:'free', label:tt('Liberté totale','Total freedom'), apply(){
           if(Math.random() < 0.5){
             lm[myModKey(lm)] += 10;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} prend feu, libre de ses mouvements !`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} prend feu, libre de ses mouvements !`,`${name} is on fire, given free rein!`), mySide);
           } else {
             lm[myModKey(lm)] -= 2;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name}, livré à lui-même, perd en efficacité collective.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name}, livré à lui-même, perd en efficacité collective.`,`${name}, left to his own devices, hurts the team's collective efficiency.`), mySide);
           }
         }}
       ]
@@ -10354,25 +10354,25 @@ const LIVE_DECISION_BUILDERS = [
   function opponentPressDecision(lm){
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Pressing adverse',
-      text:"L'adversaire presse très haut. Comment relancer ?",
+      title:tt('Pressing adverse','Opposition press'),
+      text:tt("L'adversaire presse très haut. Comment relancer ?","The opposition presses very high. How do you build out?"),
       options:[
-        { key:'short', label:'Relance courte', apply(){
+        { key:'short', label:tt('Relance courte','Short build-up'), apply(){
           if(Math.random() < 0.3){
             lm[oppModKey(lm)] += 5;
-            pushLiveEvent(lm, lm.minute, 'decision', 'Votre relance courte est prise à défaut par le pressing.', mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt('Votre relance courte est prise à défaut par le pressing.','Your short build-up is caught out by the press.'), mySide);
           } else {
             lm[myModKey(lm)] += 3;
-            pushLiveEvent(lm, lm.minute, 'decision', 'Votre relance courte déjoue le pressing adverse.', mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt('Votre relance courte déjoue le pressing adverse.','Your short build-up beats the opposition press.'), mySide);
           }
         }},
-        { key:'long', label:'Jeu long', apply(){
+        { key:'long', label:tt('Jeu long','Long ball'), apply(){
           lm[myModKey(lm)] += 2;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous passez par-dessus le pressing avec du jeu long.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous passez par-dessus le pressing avec du jeu long.','You go over the press with long balls.'), mySide);
         }},
-        { key:'slow', label:'Calmer le rythme', apply(){
+        { key:'slow', label:tt('Calmer le rythme','Slow the tempo'), apply(){
           lm[myModKey(lm)] -= 1; lm[oppModKey(lm)] -= 3;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous ralentissez le rythme pour essouffler le pressing adverse.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous ralentissez le rythme pour essouffler le pressing adverse.',"You slow the tempo down to tire out the opposition's press."), mySide);
         }}
       ]
     };
@@ -10380,20 +10380,20 @@ const LIVE_DECISION_BUILDERS = [
   function lowBlockDecision(lm){
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Bloc très bas',
-      text:"L'adversaire défend très bas. Quel type d'occasions rechercher ?",
+      title:tt('Bloc très bas','Very deep block'),
+      text:tt("L'adversaire défend très bas. Quel type d'occasions rechercher ?","The opposition are defending very deep. What kind of chances do you look for?"),
       options:[
-        { key:'crosses', label:'Centres', apply(){
+        { key:'crosses', label:tt('Centres','Crosses'), apply(){
           lm[myModKey(lm)] += 4;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous multipliez les centres pour trouver la faille dans le bloc bas.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous multipliez les centres pour trouver la faille dans le bloc bas.','You pile in crosses to find a gap in the low block.'), mySide);
         }},
-        { key:'longshots', label:'Tirs lointains', apply(){
+        { key:'longshots', label:tt('Tirs lointains','Long-range shots'), apply(){
           lm[myModKey(lm)] += 3;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous demandez à tenter davantage de tirs lointains.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous demandez à tenter davantage de tirs lointains.','You ask for more shots from distance.'), mySide);
         }},
-        { key:'patience', label:'Patience', apply(){
+        { key:'patience', label:tt('Patience','Patience'), apply(){
           lm[myModKey(lm)] += 5;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous faites preuve de patience pour déplacer le bloc adverse.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous faites preuve de patience pour déplacer le bloc adverse.',"You show patience to shift the opposition's block."), mySide);
         }}
       ]
     };
@@ -10401,24 +10401,24 @@ const LIVE_DECISION_BUILDERS = [
   function lowMomentDecision(lm){
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Temps faible',
-      text:'Votre équipe subit en ce moment. Comment réagir ?',
+      title:tt('Temps faible','Rough patch'),
+      text:tt('Votre équipe subit en ce moment. Comment réagir ?','Your team is under pressure right now. How do you react?'),
       options:[
-        { key:'close', label:'Fermer le jeu', apply(){
+        { key:'close', label:tt('Fermer le jeu','Shut up shop'), apply(){
           lm[myModKey(lm)] -= 1; lm[oppModKey(lm)] -= 4;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous demandez à votre équipe de fermer le jeu pour passer ce temps faible.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous demandez à votre équipe de fermer le jeu pour passer ce temps faible.','You ask your team to shut up shop to get through this rough patch.'), mySide);
         }},
-        { key:'press', label:'Presser', apply(){
+        { key:'press', label:tt('Presser','Press'), apply(){
           if(Math.random() < 0.25){
             lm[myModKey(lm)] -= 5;
-            pushLiveEvent(lm, lm.minute, 'decision', 'Le pressing demandé se retourne contre votre équipe.', mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt('Le pressing demandé se retourne contre votre équipe.','The press you called for backfires on your team.'), mySide);
           } else {
             lm[myModKey(lm)] += 3; lm[oppModKey(lm)] -= 2;
-            pushLiveEvent(lm, lm.minute, 'decision', 'Le pressing demandé permet de reprendre le contrôle du match.', mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt('Le pressing demandé permet de reprendre le contrôle du match.','The press you called for lets you regain control of the match.'), mySide);
           }
         }},
-        { key:'system', label:'Changer le système', apply(){
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous changez de système pour redonner un plan à votre équipe.', mySide);
+        { key:'system', label:tt('Changer le système','Change the system'), apply(){
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous changez de système pour redonner un plan à votre équipe.','You change the system to give your team a fresh gameplan.'), mySide);
         }}
       ]
     };
@@ -10427,76 +10427,76 @@ const LIVE_DECISION_BUILDERS = [
     if(lm.minute < 80) return null;
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Dernier coup de pied arrêté',
-      text:'Corner ou coup franc en fin de match. Quelle consigne donner ?',
+      title:tt('Dernier coup de pied arrêté','Late set piece'),
+      text:tt('Corner ou coup franc en fin de match. Quelle consigne donner ?','A corner or free kick late in the match. What instructions do you give?'),
       options:[
-        { key:'allup', label:'Faire monter tout le monde', apply(){
+        { key:'allup', label:tt('Faire monter tout le monde','Send everyone forward'), apply(){
           if(Math.random() < 0.35){
             lm[myModKey(lm)] += 10;
-            pushLiveEvent(lm, lm.minute, 'decision', 'Tout le monde monte sur ce coup de pied arrêté, occasion décisive !', mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt('Tout le monde monte sur ce coup de pied arrêté, occasion décisive !','Everyone piles forward for this set piece, a decisive chance!'), mySide);
           } else {
             lm[oppModKey(lm)] += 3;
-            pushLiveEvent(lm, lm.minute, 'decision', "Le coup de pied arrêté est repoussé, l'adversaire récupère le contre.", mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt("Le coup de pied arrêté est repoussé, l'adversaire récupère le contre.","The set piece is cleared, and the opposition breaks forward."), mySide);
           }
         }},
-        { key:'balance', label:'Assurer l\'équilibre', apply(){
+        { key:'balance', label:tt('Assurer l\'équilibre','Keep it balanced'), apply(){
           lm[myModKey(lm)] += 2;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous montez sur le corner tout en assurant l\'équilibre défensif.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous montez sur le corner tout en assurant l\'équilibre défensif.','You go up for the corner while keeping your defensive balance.'), mySide);
         }}
       ]
     };
   },
   function unstoppableWingerDecision(lm){
     const player = randomPlayerByLine('ATT'); // un ailier précisément (ligne ATT : AD/AG/BU), pas n'importe quel non-gardien
-    const name = player ? player.nom : 'Votre ailier';
+    const name = player ? player.nom : tt('Votre ailier','Your winger');
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Ailier intenable',
-      text:`${name} fait constamment la différence sur son côté. Comment l'exploiter ?`,
+      title:tt('Ailier intenable','Unplayable winger'),
+      text:tt(`${name} fait constamment la différence sur son côté. Comment l'exploiter ?`,`${name} keeps making the difference on his flank. How do you exploit it?`),
       options:[
-        { key:'insist', label:'Insister sur son côté', apply(){
+        { key:'insist', label:tt('Insister sur son côté','Keep going down his side'), apply(){
           lm[myModKey(lm)] += 6;
-          pushLiveEvent(lm, lm.minute, 'decision', `Vous insistez sur le côté de ${name}, intenable.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`Vous insistez sur le côté de ${name}, intenable.`,`You keep attacking down ${name}'s side, unplayable tonight.`), mySide);
         }},
-        { key:'alternate', label:'Alterner', apply(){
+        { key:'alternate', label:tt('Alterner','Switch play'), apply(){
           lm[myModKey(lm)] += 3;
-          pushLiveEvent(lm, lm.minute, 'decision', `Vous alternez les côtés sans délaisser ${name}.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`Vous alternez les côtés sans délaisser ${name}.`,`You switch play from side to side without abandoning ${name}.`), mySide);
         }},
-        { key:'recenter', label:'Le recentrer', apply(){
+        { key:'recenter', label:tt('Le recentrer','Bring him inside'), apply(){
           lm[myModKey(lm)] += 4;
-          pushLiveEvent(lm, lm.minute, 'decision', `Vous recentrez ${name} pour varier les angles d'attaque.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`Vous recentrez ${name} pour varier les angles d'attaque.`,`You bring ${name} inside to vary the angles of attack.`), mySide);
         }}
       ]
     };
   },
   function strugglingDefenderDecision(lm){
     const player = randomPlayerByLine('DEF'); // un défenseur précisément, pas n'importe quel non-gardien
-    const name = player ? player.nom : 'Votre défenseur';
+    const name = player ? player.nom : tt('Votre défenseur','Your defender');
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Défenseur en difficulté',
-      text:`${name} perd ses duels. Comment réagir ?`,
+      title:tt('Défenseur en difficulté','Struggling defender'),
+      text:tt(`${name} perd ses duels. Comment réagir ?`,`${name} is losing his duels. How do you react?`),
       options:[
-        { key:'cover', label:'Le couvrir', apply(){
+        { key:'cover', label:tt('Le couvrir','Cover him'), apply(){
           lm[oppModKey(lm)] -= 3;
-          pushLiveEvent(lm, lm.minute, 'decision', `Vous demandez à l'équipe de couvrir ${name} dans ses duels.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`Vous demandez à l'équipe de couvrir ${name} dans ses duels.`,`You ask the team to cover for ${name} in his duels.`), mySide);
         }},
-        { key:'sub', label:'Le remplacer', apply(){
+        { key:'sub', label:tt('Le remplacer','Substitute him'), apply(){
           const incoming = performLiveSubstitution(lm, player);
           if(incoming){
             lm[oppModKey(lm)] -= 2;
-            pushLiveEvent(lm, lm.minute, 'sub', `Changement : ${incoming.nom} remplace ${name}, en délicatesse dans ses duels.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'sub', tt(`Changement : ${incoming.nom} remplace ${name}, en délicatesse dans ses duels.`,`Substitution: ${incoming.nom} replaces ${name}, who was struggling in his duels.`), mySide);
           } else {
             lm[myModKey(lm)] -= 1;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} reste en difficulté, aucun remplaçant disponible.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} reste en difficulté, aucun remplaçant disponible.`,`${name} continues to struggle, no substitute available.`), mySide);
           }
         }},
-        { key:'continue', label:'Continuer', apply(){
+        { key:'continue', label:tt('Continuer','Continue'), apply(){
           if(Math.random() < 0.35){
             lm[oppModKey(lm)] += 6;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} continue de souffrir dans ses duels, sans réponse de votre part.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} continue de souffrir dans ses duels, sans réponse de votre part.`,`${name} keeps suffering in his duels, with no response from you.`), mySide);
           } else {
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} se reprend et solidifie sa performance.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} se reprend et solidifie sa performance.`,`${name} pulls himself together and steadies his performance.`), mySide);
           }
         }}
       ]
@@ -10504,31 +10504,31 @@ const LIVE_DECISION_BUILDERS = [
   },
   function frustratedStrikerDecision(lm){
     const player = randomPlayerByLine('ATT'); // un attaquant précisément, pas n'importe quel non-gardien
-    const name = player ? player.nom : 'Votre buteur';
+    const name = player ? player.nom : tt('Votre buteur','Your striker');
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Buteur frustré',
-      text:`${name} multiplie les occasions manquées. Comment gérer ça ?`,
+      title:tt('Buteur frustré','Frustrated striker'),
+      text:tt(`${name} multiplie les occasions manquées. Comment gérer ça ?`,`${name} keeps missing chances. How do you handle it?`),
       options:[
-        { key:'keepfeed', label:'Continuer à le servir', apply(){
+        { key:'keepfeed', label:tt('Continuer à le servir','Keep feeding him'), apply(){
           if(Math.random() < 0.4){
             lm[myModKey(lm)] += 8;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} est enfin récompensé de sa persévérance !`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} est enfin récompensé de sa persévérance !`,`${name} is finally rewarded for his persistence!`), mySide);
           } else {
             lm[myModKey(lm)] -= 2;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} continue d'être servi mais reste muselé.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} continue d'être servi mais reste muselé.`,`${name} keeps getting service but remains shackled.`), mySide);
           }
         }},
-        { key:'change', label:'Changer le jeu', apply(){
+        { key:'change', label:tt('Changer le jeu','Change the game plan'), apply(){
           lm[myModKey(lm)] += 3;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous faites transiter le jeu par d\'autres joueurs.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous faites transiter le jeu par d\'autres joueurs.','You route the play through other players.'), mySide);
         }},
-        { key:'sub', label:'Le sortir', apply(){
+        { key:'sub', label:tt('Le sortir','Take him off'), apply(){
           const incoming = performLiveSubstitution(lm, player);
           if(incoming){
-            pushLiveEvent(lm, lm.minute, 'sub', `Changement : ${incoming.nom} remplace ${name}, muet ce soir.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'sub', tt(`Changement : ${incoming.nom} remplace ${name}, muet ce soir.`,`Substitution: ${incoming.nom} replaces ${name}, quiet tonight.`), mySide);
           } else {
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} termine la rencontre malgré une soirée frustrante, aucun remplaçant disponible.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} termine la rencontre malgré une soirée frustrante, aucun remplaçant disponible.`,`${name} finishes the match despite a frustrating evening, no substitute available.`), mySide);
           }
         }}
       ]
@@ -10539,60 +10539,60 @@ const LIVE_DECISION_BUILDERS = [
     // (un défenseur précis, jamais un gardien ni un joueur d'une autre
     // ligne), mais côté relance plutôt que côté duels perdus.
     const player = randomPlayerByLine('DEF');
-    const name = player ? player.nom : 'Votre défenseur';
+    const name = player ? player.nom : tt('Votre défenseur','Your defender');
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Défenseur en confiance',
-      text:`${name} déborde de confiance dans la relance. Comment l'utiliser ?`,
+      title:tt('Défenseur en confiance','Confident defender'),
+      text:tt(`${name} déborde de confiance dans la relance. Comment l'utiliser ?`,`${name} is brimming with confidence in possession. How do you use him?`),
       options:[
-        { key:'short', label:'Relance courte', apply(){
+        { key:'short', label:tt('Relance courte','Short pass'), apply(){
           lm[myModKey(lm)] += 3;
-          pushLiveEvent(lm, lm.minute, 'decision', `Vous demandez à ${name} de relancer court, en sécurité.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`Vous demandez à ${name} de relancer court, en sécurité.`,`You ask ${name} to play it short and safe.`), mySide);
         }},
-        { key:'long', label:'Relance longue', apply(){
+        { key:'long', label:tt('Relance longue','Long pass'), apply(){
           if(Math.random() < 0.4){
             lm[myModKey(lm)] += 7;
-            pushLiveEvent(lm, lm.minute, 'decision', `La relance longue de ${name} trouve directement un partenaire !`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`La relance longue de ${name} trouve directement un partenaire !`,`${name}'s long pass finds a teammate directly!`), mySide);
           } else {
             lm[oppModKey(lm)] += 2;
-            pushLiveEvent(lm, lm.minute, 'decision', `La relance longue de ${name} est coupée par l'adversaire.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`La relance longue de ${name} est coupée par l'adversaire.`,`${name}'s long pass is cut out by the opposition.`), mySide);
           }
         }},
-        { key:'safe', label:'Jeu prudent', apply(){
+        { key:'safe', label:tt('Jeu prudent','Play it safe'), apply(){
           lm[myModKey(lm)] += 1; lm[oppModKey(lm)] -= 2;
-          pushLiveEvent(lm, lm.minute, 'decision', `Vous demandez à ${name} de ne prendre aucun risque.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`Vous demandez à ${name} de ne prendre aucun risque.`,`You ask ${name} to take no risks at all.`), mySide);
         }}
       ]
     };
   },
   function dominantMidfielderDecision(lm){
     const player = randomPlayerByLine('MID');
-    const name = player ? player.nom : 'Votre milieu';
+    const name = player ? player.nom : tt('Votre milieu','Your midfielder');
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Milieu dominateur',
-      text:`${name} contrôle le milieu de terrain. Comment l'utiliser ?`,
+      title:tt('Milieu dominateur','Dominant midfielder'),
+      text:tt(`${name} contrôle le milieu de terrain. Comment l'utiliser ?`,`${name} controls the midfield. How do you use him?`),
       options:[
-        { key:'tempo', label:'Contrôler le tempo', apply(){
+        { key:'tempo', label:tt('Contrôler le tempo','Control the tempo'), apply(){
           lm[myModKey(lm)] += 4; lm[oppModKey(lm)] -= 3;
-          pushLiveEvent(lm, lm.minute, 'decision', `${name} impose le rythme du match.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} impose le rythme du match.`,`${name} dictates the pace of the match.`), mySide);
         }},
-        { key:'push', label:'Le pousser vers l\'attaque', apply(){
+        { key:'push', label:tt('Le pousser vers l\'attaque','Push him forward'), apply(){
           // Option la plus tranchée des trois - conséquence directe sur une
           // action de but plutôt qu'un simple bonus de momentum, comme
           // demandé : soit ${name} se crée une vraie occasion, soit le
           // milieu se retrouve dépeuplé et l'adversaire en profite.
           if(Math.random() < 0.35){
             lm[myModKey(lm)] += 9;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} monte et se crée une occasion nette !`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} monte et se crée une occasion nette !`,`${name} pushes forward and creates a clear-cut chance!`), mySide);
           } else {
             lm[oppModKey(lm)] += 4;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} monte, mais laisse un vide exploité par l'adversaire.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} monte, mais laisse un vide exploité par l'adversaire.`,`${name} pushes forward, but leaves a gap the opposition exploit.`), mySide);
           }
         }},
-        { key:'balance', label:'Garder l\'équilibre', apply(){
+        { key:'balance', label:tt('Garder l\'équilibre','Keep the balance'), apply(){
           lm[myModKey(lm)] += 2;
-          pushLiveEvent(lm, lm.minute, 'decision', `Vous demandez à ${name} de garder l'équilibre entre les lignes.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`Vous demandez à ${name} de garder l'équilibre entre les lignes.`,`You ask ${name} to keep the balance between the lines.`), mySide);
         }}
       ]
     };
@@ -10601,32 +10601,32 @@ const LIVE_DECISION_BUILDERS = [
     // Pendant négatif de "Milieu dominateur" - même structure que
     // "Défenseur en difficulté" (couvrir / remplacer / continuer).
     const player = randomPlayerByLine('MID');
-    const name = player ? player.nom : 'Votre milieu';
+    const name = player ? player.nom : tt('Votre milieu','Your midfielder');
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Milieu débordé',
-      text:`${name} est débordé au milieu de terrain. Comment réagir ?`,
+      title:tt('Milieu débordé','Overrun midfielder'),
+      text:tt(`${name} est débordé au milieu de terrain. Comment réagir ?`,`${name} is being overrun in midfield. How do you react?`),
       options:[
-        { key:'cover', label:'Le couvrir', apply(){
+        { key:'cover', label:tt('Le couvrir','Cover him'), apply(){
           lm[oppModKey(lm)] -= 3;
-          pushLiveEvent(lm, lm.minute, 'decision', `Vous demandez à l'équipe de venir en soutien de ${name}.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`Vous demandez à l'équipe de venir en soutien de ${name}.`,`You ask the team to support ${name}.`), mySide);
         }},
-        { key:'sub', label:'Le remplacer', apply(){
+        { key:'sub', label:tt('Le remplacer','Substitute him'), apply(){
           const incoming = performLiveSubstitution(lm, player);
           if(incoming){
             lm[oppModKey(lm)] -= 2;
-            pushLiveEvent(lm, lm.minute, 'sub', `Changement : ${incoming.nom} remplace ${name}, débordé au milieu.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'sub', tt(`Changement : ${incoming.nom} remplace ${name}, débordé au milieu.`,`Substitution: ${incoming.nom} replaces ${name}, overrun in midfield.`), mySide);
           } else {
             lm[myModKey(lm)] -= 1;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} reste en difficulté, aucun remplaçant disponible.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} reste en difficulté, aucun remplaçant disponible.`,`${name} continues to struggle, no substitute available.`), mySide);
           }
         }},
-        { key:'continue', label:'Continuer', apply(){
+        { key:'continue', label:tt('Continuer','Continue'), apply(){
           if(Math.random() < 0.35){
             lm[oppModKey(lm)] += 6;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} continue de subir le milieu de terrain.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} continue de subir le milieu de terrain.`,`${name} keeps struggling to control the midfield.`), mySide);
           } else {
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} se reprend et retrouve le contrôle.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} se reprend et retrouve le contrôle.`,`${name} pulls things together and regains control.`), mySide);
           }
         }}
       ]
@@ -10637,28 +10637,28 @@ const LIVE_DECISION_BUILDERS = [
     // d'attaque/but comme demandé : l'option la plus offensive a une vraie
     // chance de se traduire directement par une occasion nette.
     const player = randomPlayerByLine('ATT');
-    const name = player ? player.nom : 'Votre attaquant';
+    const name = player ? player.nom : tt('Votre attaquant','Your forward');
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Buteur affûté',
-      text:`${name} sent le but à chaque ballon. Comment l'exploiter ?`,
+      title:tt('Buteur affûté','Sharp striker'),
+      text:tt(`${name} sent le but à chaque ballon. Comment l'exploiter ?`,`${name} senses a goal on every ball. How do you exploit it?`),
       options:[
-        { key:'feed', label:'Le servir en priorité', apply(){
+        { key:'feed', label:tt('Le servir en priorité','Prioritize feeding him'), apply(){
           if(Math.random() < 0.45){
             lm[myModKey(lm)] += 9;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} est trouvé en position idéale, énorme occasion !`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} est trouvé en position idéale, énorme occasion !`,`${name} is picked out in the perfect position, huge chance!`), mySide);
           } else {
             lm[myModKey(lm)] += 2;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} est bien servi mais l'occasion ne se présente pas.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} est bien servi mais l'occasion ne se présente pas.`,`${name} is well served but the chance doesn't materialize.`), mySide);
           }
         }},
-        { key:'crosses', label:'Multiplier les centres', apply(){
+        { key:'crosses', label:tt('Multiplier les centres','Pile in crosses'), apply(){
           lm[myModKey(lm)] += 5;
-          pushLiveEvent(lm, lm.minute, 'decision', `Vous demandez à l'équipe de centrer davantage vers ${name}.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`Vous demandez à l'équipe de centrer davantage vers ${name}.`,`You ask the team to cross more towards ${name}.`), mySide);
         }},
-        { key:'direct', label:'Jeu direct', apply(){
+        { key:'direct', label:tt('Jeu direct','Direct play'), apply(){
           lm[myModKey(lm)] += 3; lm[oppModKey(lm)] += 1;
-          pushLiveEvent(lm, lm.minute, 'decision', `Vous jouez plus directement pour trouver ${name} au plus vite.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`Vous jouez plus directement pour trouver ${name} au plus vite.`,`You play more directly to find ${name} as quickly as possible.`), mySide);
         }}
       ]
     };
@@ -10666,24 +10666,24 @@ const LIVE_DECISION_BUILDERS = [
   function counterAttackDecision(lm){
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Contre à jouer',
-      text:'Récupération dangereuse dans votre camp. Que décider ?',
+      title:tt('Contre à jouer','Counter on'),
+      text:tt('Récupération dangereuse dans votre camp. Que décider ?','A dangerous turnover in your own half. What do you decide?'),
       options:[
-        { key:'quick', label:'Contre rapide', apply(){
+        { key:'quick', label:tt('Contre rapide','Quick counter'), apply(){
           if(Math.random() < 0.45){
             lm[myModKey(lm)] += 10;
-            pushLiveEvent(lm, lm.minute, 'decision', 'Le contre rapide est parfaitement mené, occasion en or !', mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt('Le contre rapide est parfaitement mené, occasion en or !','The quick counter is perfectly executed, a golden chance!'), mySide);
           } else {
             lm[oppModKey(lm)] += 2;
-            pushLiveEvent(lm, lm.minute, 'decision', 'Le contre rapide est perdu, l\'adversaire récupère le ballon.', mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt('Le contre rapide est perdu, l\'adversaire récupère le ballon.','The quick counter breaks down, the opposition regains the ball.'), mySide);
           }
         }},
-        { key:'build', label:'Construire', apply(){
+        { key:'build', label:tt('Construire','Build up'), apply(){
           lm[myModKey(lm)] += 3;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous préférez construire posément plutôt que de précipiter le contre.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous préférez construire posément plutôt que de précipiter le contre.','You prefer to build calmly rather than rush the counter.'), mySide);
         }},
-        { key:'keep', label:'Conserver', apply(){
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous choisissez de conserver le ballon sans prendre de risque.', mySide);
+        { key:'keep', label:tt('Conserver','Keep possession'), apply(){
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous choisissez de conserver le ballon sans prendre de risque.','You choose to keep the ball without taking any risks.'), mySide);
         }}
       ]
     };
@@ -10691,10 +10691,10 @@ const LIVE_DECISION_BUILDERS = [
   function permissiveRefDecision(lm){
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Arbitre permissif',
-      text:"L'arbitre laisse beaucoup jouer. Comment adapter l'intensité ?",
+      title:tt('Arbitre permissif','Lenient referee'),
+      text:tt("L'arbitre laisse beaucoup jouer. Comment adapter l'intensité ?","The referee is letting a lot go. How do you adjust your intensity?"),
       options:[
-        { key:'intensify', label:'Intensifier les duels', apply(){
+        { key:'intensify', label:tt('Intensifier les duels','Ramp up the duels'), apply(){
           lm[myModKey(lm)] += 5; lm[oppModKey(lm)] += 2;
           if(Math.random() < 0.2){
             const player = randomStarterPlayer();
@@ -10702,51 +10702,51 @@ const LIVE_DECISION_BUILDERS = [
               lm.cardedPlayers = lm.cardedPlayers || [];
               if(!lm.cardedPlayers.includes(player)) lm.cardedPlayers.push(player);
             }
-            pushLiveEvent(lm, lm.minute, 'card', `Carton jaune pour ${player ? player.nom : 'un de vos joueurs'} après un duel appuyé.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'card', tt(`Carton jaune pour ${player ? player.nom : 'un de vos joueurs'} après un duel appuyé.`,`Yellow card for ${player ? player.nom : 'one of your players'} after a heavy challenge.`), mySide);
           } else {
-            pushLiveEvent(lm, lm.minute, 'decision', 'Vous intensifiez les duels, l\'arbitre laisse jouer.', mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt('Vous intensifiez les duels, l\'arbitre laisse jouer.','You ramp up the physical duels, the referee lets it go.'), mySide);
           }
         }},
-        { key:'continue', label:'Continuer', apply(){
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous ne changez rien à l\'intensité du match.', mySide);
+        { key:'continue', label:tt('Continuer','Continue'), apply(){
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous ne changez rien à l\'intensité du match.',"You don't change the intensity of the match."), mySide);
         }},
-        { key:'calm', label:'Calmer', apply(){
+        { key:'calm', label:tt('Calmer','Calm it down'), apply(){
           lm[myModKey(lm)] -= 2; lm[oppModKey(lm)] -= 4;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous demandez à votre équipe de baisser l\'intensité physique.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous demandez à votre équipe de baisser l\'intensité physique.','You ask your team to dial down the physical intensity.'), mySide);
         }}
       ]
     };
   },
   function tiredLeaderDecision(lm){
     const player = randomStarterPlayer();
-    const name = player ? player.nom : 'Votre capitaine';
+    const name = player ? player.nom : tt('Votre capitaine','Your captain');
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Leader fatigué',
-      text:`${name} montre des signes de fatigue. Comment gérer votre leader ?`,
+      title:tt('Leader fatigué','Tired leader'),
+      text:tt(`${name} montre des signes de fatigue. Comment gérer votre leader ?`,`${name} is showing signs of fatigue. How do you manage your leader?`),
       options:[
-        { key:'keep', label:'Le laisser', apply(){
+        { key:'keep', label:tt('Le laisser','Leave him on'), apply(){
           lm[myModKey(lm)] += 3;
           if(Math.random() < 0.3){
             lm[myModKey(lm)] -= 6;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} finit par payer sa fatigue en fin de match.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} finit par payer sa fatigue en fin de match.`,`${name} eventually pays for his fatigue late in the match.`), mySide);
           } else {
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} reste sur le terrain et continue de guider l'équipe.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} reste sur le terrain et continue de guider l'équipe.`,`${name} stays on the pitch and keeps guiding the team.`), mySide);
           }
         }},
-        { key:'sub', label:'Le remplacer', apply(){
+        { key:'sub', label:tt('Le remplacer','Substitute him'), apply(){
           const incoming = performLiveSubstitution(lm, player);
           if(incoming){
             lm[myModKey(lm)] -= 1;
-            pushLiveEvent(lm, lm.minute, 'sub', `Changement : ${incoming.nom} remplace ${name}, l'équipe perd un peu de repères.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'sub', tt(`Changement : ${incoming.nom} remplace ${name}, l'équipe perd un peu de repères.`,`Substitution: ${incoming.nom} replaces ${name}, the team loses a bit of its bearings.`), mySide);
           } else {
             lm[myModKey(lm)] -= 2;
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} reste sur le terrain malgré la fatigue, aucun remplaçant disponible.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} reste sur le terrain malgré la fatigue, aucun remplaçant disponible.`,`${name} stays on despite the fatigue, no substitute available.`), mySide);
           }
         }},
-        { key:'role', label:'Modifier son rôle', apply(){
+        { key:'role', label:tt('Modifier son rôle','Adjust his role'), apply(){
           lm[myModKey(lm)] += 1;
-          pushLiveEvent(lm, lm.minute, 'decision', `Vous adaptez le rôle de ${name} pour économiser ses efforts.`, mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt(`Vous adaptez le rôle de ${name} pour économiser ses efforts.`,`You adapt ${name}'s role to conserve his energy.`), mySide);
         }}
       ]
     };
@@ -10757,25 +10757,25 @@ const LIVE_DECISION_BUILDERS = [
     const name = player.nom;
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Remplaçant prêt',
-      text:`${name} est en confiance sur le banc. Le faire entrer ?`,
+      title:tt('Remplaçant prêt','Substitute ready'),
+      text:tt(`${name} est en confiance sur le banc. Le faire entrer ?`,`${name} looks confident on the bench. Do you bring him on?`),
       options:[
-        { key:'in', label:'Le faire entrer', apply(){
+        { key:'in', label:tt('Le faire entrer','Bring him on'), apply(){
           const outgoing = performLiveSubstitutionBringIn(lm, player);
           if(outgoing){
             if(Math.random() < 0.2){
               lm[myModKey(lm)] -= 1;
-              pushLiveEvent(lm, lm.minute, 'sub', `Changement : ${name} remplace ${outgoing.nom} - entrée qui perturbe légèrement l'équilibre.`, mySide);
+              pushLiveEvent(lm, lm.minute, 'sub', tt(`Changement : ${name} remplace ${outgoing.nom} - entrée qui perturbe légèrement l'équilibre.`,`Substitution: ${name} replaces ${outgoing.nom} - his introduction slightly disrupts the balance.`), mySide);
             } else {
               lm[myModKey(lm)] += 5;
-              pushLiveEvent(lm, lm.minute, 'sub', `Changement : ${name} remplace ${outgoing.nom} et apporte un vrai plus.`, mySide);
+              pushLiveEvent(lm, lm.minute, 'sub', tt(`Changement : ${name} remplace ${outgoing.nom} et apporte un vrai plus.`,`Substitution: ${name} replaces ${outgoing.nom} and brings real quality.`), mySide);
             }
           } else {
-            pushLiveEvent(lm, lm.minute, 'decision', `${name} reste sur le banc, aucun changement possible pour le moment.`, mySide);
+            pushLiveEvent(lm, lm.minute, 'decision', tt(`${name} reste sur le banc, aucun changement possible pour le moment.`,`${name} stays on the bench, no change possible for now.`), mySide);
           }
         }},
-        { key:'wait', label:'Attendre', apply(){
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous préférez ne pas encore faire de changement.', mySide);
+        { key:'wait', label:tt('Attendre','Wait'), apply(){
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous préférez ne pas encore faire de changement.','You prefer not to make a change just yet.'), mySide);
         }}
       ]
     };
@@ -10788,20 +10788,20 @@ const LIVE_DECISION_BUILDERS = [
     if(!(lm.inSecondHalf && lm.minute > 90)) return null;
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Temps additionnel',
-      text:'Plusieurs minutes de temps additionnel sont annoncées. Quelle consigne donner ?',
+      title:tt('Temps additionnel','Stoppage time'),
+      text:tt('Plusieurs minutes de temps additionnel sont annoncées. Quelle consigne donner ?','Several minutes of stoppage time are announced. What instructions do you give?'),
       options:[
-        { key:'allin', label:'Tout tenter', apply(){
+        { key:'allin', label:tt('Tout tenter','Go for broke'), apply(){
           lm[myModKey(lm)] += 8; lm[oppModKey(lm)] += 5;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous tentez le tout pour le tout dans le temps additionnel.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous tentez le tout pour le tout dans le temps additionnel.','You go all-out in stoppage time.'), mySide);
         }},
-        { key:'manage', label:'Gérer', apply(){
+        { key:'manage', label:tt('Gérer','Manage it'), apply(){
           lm[myModKey(lm)] -= 2; lm[oppModKey(lm)] -= 4;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous gérez sereinement ce temps additionnel.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous gérez sereinement ce temps additionnel.','You calmly manage this stoppage time.'), mySide);
         }},
-        { key:'counter', label:'Jouer le contre', apply(){
+        { key:'counter', label:tt('Jouer le contre','Play on the counter'), apply(){
           lm[myModKey(lm)] += 4; lm[oppModKey(lm)] -= 1;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous vous repliez pour jouer sur le contre dans les dernières secondes.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous vous repliez pour jouer sur le contre dans les dernières secondes.','You drop back to play on the counter in the final seconds.'), mySide);
         }}
       ]
     };
@@ -10819,24 +10819,24 @@ const LIVE_DECISION_BUILDERS = [
     if((lm[oppModKey(lm)] - lm[myModKey(lm)]) < 7) return null;
     const mySide = isMyTeamHome(lm) ? 'home' : 'away';
     return {
-      title:'Siège adverse',
-      text:"L'adversaire domine fortement et votre équipe subit plusieurs vagues. Comment réagir ?",
+      title:tt('Siège adverse','Under siege'),
+      text:tt("L'adversaire domine fortement et votre équipe subit plusieurs vagues. Comment réagir ?","The opposition are dominating heavily and your team is under wave after wave of pressure. How do you react?"),
       options:[
-        { key:'shutdown', label:'Fermer le bloc', apply(){
+        { key:'shutdown', label:tt('Fermer le bloc','Shut the block down'), apply(){
           lm[oppModKey(lm)] -= 6;
           lm._chosenDefensiveUnderSiege = true;
           lm._consecutiveDefensiveChoices = (lm._consecutiveDefensiveChoices||0) + 1;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous resserrez complètement le bloc pour encaisser la pression.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous resserrez complètement le bloc pour encaisser la pression.','You tighten the block completely to absorb the pressure.'), mySide);
         }},
-        { key:'goforit', label:'Sortir jouer', risky:true, apply(){
+        { key:'goforit', label:tt('Sortir jouer','Come out and play'), risky:true, apply(){
           lm[myModKey(lm)] += 5; lm[oppModKey(lm)] += 3;
           lm._consecutiveDefensiveChoices = 0;
-          pushLiveEvent(lm, lm.minute, 'decision', "Vous demandez à votre équipe de sortir jouer malgré la pression.", mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt("Vous demandez à votre équipe de sortir jouer malgré la pression.","You ask your team to come out and play despite the pressure."), mySide);
         }},
-        { key:'counter', label:'Contre-attaquer', risky:true, apply(){
+        { key:'counter', label:tt('Contre-attaquer','Counter-attack'), risky:true, apply(){
           lm[myModKey(lm)] += 7; lm[oppModKey(lm)] -= 1;
           lm._consecutiveDefensiveChoices = 0;
-          pushLiveEvent(lm, lm.minute, 'decision', "Vous misez sur la contre-attaque pour punir l'adversaire.", mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt("Vous misez sur la contre-attaque pour punir l'adversaire.","You bank on the counter-attack to punish the opposition."), mySide);
         }}
       ]
     };
@@ -10850,25 +10850,25 @@ const LIVE_DECISION_BUILDERS = [
     const oppScore = mySide==='home' ? lm.ag : lm.hg;
     if(myScore - oppScore !== 1) return null;
     return {
-      title:'Dernières minutes',
-      text:"Votre équipe mène d'un but dans les dernières minutes. Quelle consigne donner ?",
+      title:tt('Dernières minutes','Final minutes'),
+      text:tt("Votre équipe mène d'un but dans les dernières minutes. Quelle consigne donner ?","Your team leads by one goal in the closing minutes. What instructions do you give?"),
       options:[
-        { key:'shutdown', label:'Fermer le jeu', apply(){
+        { key:'shutdown', label:tt('Fermer le jeu','Shut up shop'), apply(){
           lm[myModKey(lm)] -= 3; lm[oppModKey(lm)] -= 7;
           lm._lateDefensiveChoice = true;
           lm._consecutiveDefensiveChoices = (lm._consecutiveDefensiveChoices||0) + 1;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous demandez à votre équipe de fermer le jeu pour protéger son avantage.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous demandez à votre équipe de fermer le jeu pour protéger son avantage.','You ask your team to shut up shop to protect the lead.'), mySide);
         }},
-        { key:'continue', label:'Continuer à jouer', apply(){
+        { key:'continue', label:tt('Continuer à jouer','Keep playing your game'), apply(){
           lm[myModKey(lm)] += 2; lm[oppModKey(lm)] += 2;
           lm._consecutiveDefensiveChoices = 0;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous demandez à votre équipe de continuer à produire du jeu.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous demandez à votre équipe de continuer à produire du jeu.','You ask your team to keep producing good football.'), mySide);
         }},
-        { key:'second', label:'Chercher le deuxième but', risky:true, apply(){
+        { key:'second', label:tt('Chercher le deuxième but','Go for the second goal'), risky:true, apply(){
           lm[myModKey(lm)] += 8; lm[oppModKey(lm)] += 5;
           lm._lateAttackingChoice = true;
           lm._consecutiveDefensiveChoices = 0;
-          pushLiveEvent(lm, lm.minute, 'decision', 'Vous envoyez votre équipe chercher le but qui tuerait le match.', mySide);
+          pushLiveEvent(lm, lm.minute, 'decision', tt('Vous envoyez votre équipe chercher le but qui tuerait le match.','You send your team forward to find the goal that would kill the game off.'), mySide);
         }}
       ]
     };
@@ -10918,23 +10918,23 @@ const HALFTIME_EVENT_BUILDERS = [
     // (menée d'1 but "normale") ne suffit plus, il faut un vrai virage.
     if(!(diff <= -2 || (diff === -1 && dominated))) return null;
     return {
-      title:'Le tournant',
-      text:'À la mi-temps, votre équipe doit changer son approche pour inverser la dynamique. Quelle décision prendre ?',
+      title:tt('Le tournant','The turning point'),
+      text:tt('À la mi-temps, votre équipe doit changer son approche pour inverser la dynamique. Quelle décision prendre ?','At half-time, your team needs to change its approach to reverse the momentum. What do you decide?'),
       isHalftime:true,
       options:[
-        { key:'system', label:'Changer le système', risky:true, apply(){
+        { key:'system', label:tt('Changer le système','Change the system'), risky:true, apply(){
           lm[myModKey(lm)] += 9; lm[oppModKey(lm)] += 2;
           lm._halftimeApproachChanged = true;
-          pushLiveEvent(lm, 45, 'decision', 'Vous changez complètement de système pour la 2e mi-temps.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous changez complètement de système pour la 2e mi-temps.','You completely change your system for the second half.'), mySide);
         }},
-        { key:'insist', label:'Accentuer le plan actuel', apply(){
+        { key:'insist', label:tt('Accentuer le plan actuel','Double down on the current plan'), apply(){
           lm[myModKey(lm)] += 2;
-          pushLiveEvent(lm, 45, 'decision', 'Vous demandez à votre équipe de persévérer dans le plan initial.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous demandez à votre équipe de persévérer dans le plan initial.','You ask your team to stick with the original plan.'), mySide);
         }},
-        { key:'rebalance', label:'Rééquilibrer', apply(){
+        { key:'rebalance', label:tt('Rééquilibrer','Rebalance'), apply(){
           lm[myModKey(lm)] += 5; lm[oppModKey(lm)] -= 3;
           lm._halftimeApproachChanged = true;
-          pushLiveEvent(lm, 45, 'decision', 'Vous rééquilibrez les lignes pour reprendre le contrôle.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous rééquilibrez les lignes pour reprendre le contrôle.','You rebalance the lines to regain control.'), mySide);
         }}
       ]
     };
@@ -10944,22 +10944,22 @@ const HALFTIME_EVENT_BUILDERS = [
     const myScore = mySide==='home'?lm.hg:lm.ag, oppScore = mySide==='home'?lm.ag:lm.hg;
     if(myScore - oppScore !== -1) return null; // "Le tournant" gère les cas plus graves
     return {
-      title:'Vestiaire sous tension',
-      text:'Votre équipe est menée à la mi-temps et le groupe doute. Comment réagir ?',
+      title:tt('Vestiaire sous tension','Tense dressing room'),
+      text:tt('Votre équipe est menée à la mi-temps et le groupe doute. Comment réagir ?','Your team is trailing at half-time and the squad is doubting itself. How do you react?'),
       isHalftime:true,
       options:[
-        { key:'remobilize', label:'Remobiliser', risky:true, apply(){
+        { key:'remobilize', label:tt('Remobiliser','Rally the troops'), risky:true, apply(){
           lm[myModKey(lm)] += 7;
-          pushLiveEvent(lm, 45, 'decision', 'Vous haussez le ton pour remobiliser le groupe.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous haussez le ton pour remobiliser le groupe.','You raise your voice to rally the squad.'), mySide);
         }},
-        { key:'calm', label:'Calmer les esprits', apply(){
+        { key:'calm', label:tt('Calmer les esprits','Calm things down'), apply(){
           lm[myModKey(lm)] += 3; lm[oppModKey(lm)] -= 1;
-          pushLiveEvent(lm, 45, 'decision', 'Vous apaisez le vestiaire avant la reprise.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous apaisez le vestiaire avant la reprise.','You calm the dressing room before the restart.'), mySide);
         }},
-        { key:'change', label:'Changer le plan', apply(){
+        { key:'change', label:tt('Changer le plan','Change the plan'), apply(){
           lm[myModKey(lm)] += 5; lm[oppModKey(lm)] += 2;
           lm._halftimeApproachChanged = true;
-          pushLiveEvent(lm, 45, 'decision', 'Vous demandez un changement de plan pour la 2e mi-temps.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous demandez un changement de plan pour la 2e mi-temps.','You call for a change of plan for the second half.'), mySide);
         }}
       ]
     };
@@ -10970,22 +10970,22 @@ const HALFTIME_EVENT_BUILDERS = [
     const dominated = (lm[oppModKey(lm)] - lm[myModKey(lm)]) >= 6;
     if(myScore !== oppScore || !dominated) return null;
     return {
-      title:'Plan B',
-      text:"Le plan de jeu ne fonctionne pas malgré une première mi-temps dominée par l'adversaire. Que faire ?",
+      title:tt('Plan B','Plan B'),
+      text:tt("Le plan de jeu ne fonctionne pas malgré une première mi-temps dominée par l'adversaire. Que faire ?","The game plan isn't working despite a first half dominated by the opposition. What do you do?"),
       isHalftime:true,
       options:[
-        { key:'system', label:'Changer le système', risky:true, apply(){
+        { key:'system', label:tt('Changer le système','Change the system'), risky:true, apply(){
           lm[myModKey(lm)] += 8; lm[oppModKey(lm)] += 1;
           lm._halftimeApproachChanged = true;
-          pushLiveEvent(lm, 45, 'decision', 'Vous changez de système pour retrouver le contrôle du jeu.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous changez de système pour retrouver le contrôle du jeu.','You change the system to regain control of the game.'), mySide);
         }},
-        { key:'tweak', label:'Modifier les consignes', apply(){
+        { key:'tweak', label:tt('Modifier les consignes','Tweak the instructions'), apply(){
           lm[myModKey(lm)] += 4; lm[oppModKey(lm)] -= 2;
           lm._halftimeApproachChanged = true;
-          pushLiveEvent(lm, 45, 'decision', 'Vous ajustez les consignes sans tout bouleverser.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous ajustez les consignes sans tout bouleverser.','You tweak the instructions without overhauling everything.'), mySide);
         }},
-        { key:'stay', label:'Ne rien changer', apply(){
-          pushLiveEvent(lm, 45, 'decision', 'Vous faites confiance au plan initial malgré la domination adverse.', mySide);
+        { key:'stay', label:tt('Ne rien changer','Change nothing'), apply(){
+          pushLiveEvent(lm, 45, 'decision', tt('Vous faites confiance au plan initial malgré la domination adverse.',"You trust the original plan despite the opposition's dominance."), mySide);
         }}
       ]
     };
@@ -10995,21 +10995,21 @@ const HALFTIME_EVENT_BUILDERS = [
     const myScore = mySide==='home'?lm.hg:lm.ag, oppScore = mySide==='home'?lm.ag:lm.hg;
     if(myScore - oppScore !== 1) return null;
     return {
-      title:'Avantage fragile',
-      text:"Votre équipe mène d'un but à la mi-temps. Quelle orientation donner pour la 2e mi-temps ?",
+      title:tt('Avantage fragile','Fragile lead'),
+      text:tt("Votre équipe mène d'un but à la mi-temps. Quelle orientation donner pour la 2e mi-temps ?",'Your team leads by one goal at half-time. What direction do you give for the second half?'),
       isHalftime:true,
       options:[
-        { key:'push', label:"Continuer d'attaquer", risky:true, apply(){
+        { key:'push', label:tt("Continuer d'attaquer",'Keep attacking'), risky:true, apply(){
           lm[myModKey(lm)] += 6; lm[oppModKey(lm)] += 4;
-          pushLiveEvent(lm, 45, 'decision', "Vous demandez à votre équipe de continuer à prendre des risques offensifs.", mySide);
+          pushLiveEvent(lm, 45, 'decision', tt("Vous demandez à votre équipe de continuer à prendre des risques offensifs.","You ask your team to keep taking attacking risks."), mySide);
         }},
-        { key:'balance', label:'Équilibrer', apply(){
+        { key:'balance', label:tt('Équilibrer','Balance it out'), apply(){
           lm[myModKey(lm)] += 2;
-          pushLiveEvent(lm, 45, 'decision', 'Vous demandez un jeu plus équilibré pour la reprise.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous demandez un jeu plus équilibré pour la reprise.','You ask for a more balanced approach for the restart.'), mySide);
         }},
-        { key:'manage', label:"Gérer l'avantage", apply(){
+        { key:'manage', label:tt("Gérer l'avantage",'Manage the lead'), apply(){
           lm[myModKey(lm)] -= 2; lm[oppModKey(lm)] -= 5;
-          pushLiveEvent(lm, 45, 'decision', 'Vous demandez à votre équipe de gérer son avantage.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous demandez à votre équipe de gérer son avantage.','You ask your team to manage its lead.'), mySide);
         }}
       ]
     };
@@ -11020,20 +11020,20 @@ const HALFTIME_EVENT_BUILDERS = [
     const dominated = (lm[oppModKey(lm)] - lm[myModKey(lm)]) >= 6;
     if(myScore !== oppScore || dominated) return null; // "Plan B" couvre le nul + dominé
     return {
-      title:'Tout reste à faire',
-      text:'Le score est nul à la mi-temps dans un match à enjeu. Quel rythme donner à la 2e mi-temps ?',
+      title:tt('Tout reste à faire','Everything to play for'),
+      text:tt('Le score est nul à la mi-temps dans un match à enjeu. Quel rythme donner à la 2e mi-temps ?','The score is level at half-time in a high-stakes match. What tempo do you set for the second half?'),
       isHalftime:true,
       options:[
-        { key:'accelerate', label:'Accélérer', risky:true, apply(){
+        { key:'accelerate', label:tt('Accélérer','Speed things up'), risky:true, apply(){
           lm[myModKey(lm)] += 6; lm[oppModKey(lm)] += 3;
-          pushLiveEvent(lm, 45, 'decision', "Vous demandez à votre équipe d'accélérer le rythme dès la reprise.", mySide);
+          pushLiveEvent(lm, 45, 'decision', tt("Vous demandez à votre équipe d'accélérer le rythme dès la reprise.","You ask your team to up the tempo right from the restart."), mySide);
         }},
-        { key:'wait', label:'Patienter', apply(){
-          pushLiveEvent(lm, 45, 'decision', 'Vous demandez à votre équipe de rester patiente.', mySide);
+        { key:'wait', label:tt('Patienter','Be patient'), apply(){
+          pushLiveEvent(lm, 45, 'decision', tt('Vous demandez à votre équipe de rester patiente.','You ask your team to stay patient.'), mySide);
         }},
-        { key:'secure', label:'Sécuriser', apply(){
+        { key:'secure', label:tt('Sécuriser','Play it safe'), apply(){
           lm[oppModKey(lm)] -= 4;
-          pushLiveEvent(lm, 45, 'decision', "Vous préférez sécuriser le point du match nul avant tout.", mySide);
+          pushLiveEvent(lm, 45, 'decision', tt("Vous préférez sécuriser le point du match nul avant tout.","You prefer to secure the draw above all else."), mySide);
         }}
       ]
     };
@@ -11050,21 +11050,21 @@ const HALFTIME_EVENT_BUILDERS = [
     const involved = (lm.scorers||[]).some(s=>s.minute<=45 && s.scorer===attacker.nom);
     if(involved) return null;
     return {
-      title:'Le réveil du buteur',
-      text:`${attacker.nom} a été peu en vue en première période. Comment relancer son influence ?`,
+      title:tt('Le réveil du buteur',"The striker's wake-up call"),
+      text:tt(`${attacker.nom} a été peu en vue en première période. Comment relancer son influence ?`,`${attacker.nom} was barely involved in the first half. How do you get him going?`),
       isHalftime:true,
       options:[
-        { key:'keep', label:'Continuer à le servir', apply(){
+        { key:'keep', label:tt('Continuer à le servir','Keep feeding him'), apply(){
           lm[myModKey(lm)] += 3;
-          pushLiveEvent(lm, 45, 'decision', `Vous demandez à l'équipe de continuer à chercher ${attacker.nom}.`, mySide);
+          pushLiveEvent(lm, 45, 'decision', tt(`Vous demandez à l'équipe de continuer à chercher ${attacker.nom}.`,`You ask the team to keep looking for ${attacker.nom}.`), mySide);
         }},
-        { key:'change', label:"Changer de point d'appui", risky:true, apply(){
+        { key:'change', label:tt("Changer de point d'appui",'Change your focal point'), risky:true, apply(){
           lm[myModKey(lm)] += 5;
-          pushLiveEvent(lm, 45, 'decision', "Vous changez de point d'appui offensif pour la 2e mi-temps.", mySide);
+          pushLiveEvent(lm, 45, 'decision', tt("Vous changez de point d'appui offensif pour la 2e mi-temps.","You change your attacking focal point for the second half."), mySide);
         }},
-        { key:'reposition', label:'Le repositionner', apply(){
+        { key:'reposition', label:tt('Le repositionner','Reposition him'), apply(){
           lm[myModKey(lm)] += 4;
-          pushLiveEvent(lm, 45, 'decision', `Vous repositionnez ${attacker.nom} pour mieux l'impliquer.`, mySide);
+          pushLiveEvent(lm, 45, 'decision', tt(`Vous repositionnez ${attacker.nom} pour mieux l'impliquer.`,`You reposition ${attacker.nom} to get him more involved.`), mySide);
         }}
       ]
     };
@@ -11075,22 +11075,22 @@ const HALFTIME_EVENT_BUILDERS = [
     const oppThreats = (lm.events||[]).filter(e=>e.minute<=45 && (e.type==='chance'||e.type==='goal') && e.side===oppSide).length;
     if(oppThreats < 3) return null;
     return {
-      title:'Faiblesse identifiée',
-      text:'Une zone de votre équipe a été ciblée à plusieurs reprises en première période. Comment réagir ?',
+      title:tt('Faiblesse identifiée','Weakness identified'),
+      text:tt('Une zone de votre équipe a été ciblée à plusieurs reprises en première période. Comment réagir ?','An area of your team was targeted repeatedly in the first half. How do you react?'),
       isHalftime:true,
       options:[
-        { key:'reinforce', label:'Renforcer la zone', apply(){
+        { key:'reinforce', label:tt('Renforcer la zone','Reinforce that area'), apply(){
           lm[oppModKey(lm)] -= 6;
-          pushLiveEvent(lm, 45, 'decision', 'Vous renforcez la zone visée par vos consignes.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous renforcez la zone visée par vos consignes.','You reinforce the targeted area with your instructions.'), mySide);
         }},
-        { key:'system', label:'Changer de système', risky:true, apply(){
+        { key:'system', label:tt('Changer de système','Change the system'), risky:true, apply(){
           lm[myModKey(lm)] += 4; lm[oppModKey(lm)] -= 3;
           lm._halftimeApproachChanged = true;
-          pushLiveEvent(lm, 45, 'decision', 'Vous changez de système pour corriger cette faiblesse.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous changez de système pour corriger cette faiblesse.','You change the system to fix this weakness.'), mySide);
         }},
-        { key:'assume', label:'Prendre le risque d\'assumer', risky:true, apply(){
+        { key:'assume', label:tt('Prendre le risque d\'assumer','Accept the risk'), risky:true, apply(){
           lm[myModKey(lm)] += 6; lm[oppModKey(lm)] += 3;
-          pushLiveEvent(lm, 45, 'decision', "Vous assumez le risque plutôt que de sacrifier l'équilibre offensif.", mySide);
+          pushLiveEvent(lm, 45, 'decision', tt("Vous assumez le risque plutôt que de sacrifier l'équilibre offensif.","You accept the risk rather than sacrifice your attacking balance."), mySide);
         }}
       ]
     };
@@ -11103,20 +11103,20 @@ const HALFTIME_EVENT_BUILDERS = [
     const dominating = (lm[myModKey(lm)] - lm[oppModKey(lm)]) >= 6;
     if(!(myScore - oppScore >= 2 || dominating)) return null;
     return {
-      title:'Lecture du match',
-      text:'Les statistiques et le scénario de la première période indiquent une opportunité tactique. Quelle décision prendre ?',
+      title:tt('Lecture du match','Reading the game'),
+      text:tt('Les statistiques et le scénario de la première période indiquent une opportunité tactique. Quelle décision prendre ?','The stats and the story of the first half point to a tactical opportunity. What do you decide?'),
       isHalftime:true,
       options:[
-        { key:'exploit', label:'Exploiter la faille', risky:true, apply(){
+        { key:'exploit', label:tt('Exploiter la faille','Exploit the gap'), risky:true, apply(){
           lm[myModKey(lm)] += 7;
-          pushLiveEvent(lm, 45, 'decision', 'Vous demandez à votre équipe d\'exploiter la faille identifiée.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous demandez à votre équipe d\'exploiter la faille identifiée.',"You ask your team to exploit the gap you've spotted."), mySide);
         }},
-        { key:'stay', label:'Rester fidèle au plan', apply(){
-          pushLiveEvent(lm, 45, 'decision', 'Vous restez fidèle au plan qui fonctionne.', mySide);
+        { key:'stay', label:tt('Rester fidèle au plan','Stick with the plan'), apply(){
+          pushLiveEvent(lm, 45, 'decision', tt('Vous restez fidèle au plan qui fonctionne.',"You stick with the plan that's working."), mySide);
         }},
-        { key:'reduce', label:'Réduire les risques', apply(){
+        { key:'reduce', label:tt('Réduire les risques','Reduce the risks'), apply(){
           lm[oppModKey(lm)] -= 4;
-          pushLiveEvent(lm, 45, 'decision', 'Vous préférez réduire les risques pour la 2e mi-temps.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous préférez réduire les risques pour la 2e mi-temps.','You prefer to reduce the risks for the second half.'), mySide);
         }}
       ]
     };
@@ -11128,21 +11128,21 @@ const HALFTIME_EVENT_BUILDERS = [
     // but d'écart), pour ne jamais laisser une mi-temps sans décision.
     if(Math.abs(myScore - oppScore) > 1) return null;
     return {
-      title:'Dernier mot du coach',
-      text:'Moment clé de la mi-temps dans un match très serré. Quelle orientation générale donner à la 2e mi-temps ?',
+      title:tt('Dernier mot du coach',"Coach's final word"),
+      text:tt('Moment clé de la mi-temps dans un match très serré. Quelle orientation générale donner à la 2e mi-temps ?','A key half-time moment in a very tight match. What overall direction do you give for the second half?'),
       isHalftime:true,
       options:[
-        { key:'offensive', label:'Offensif', risky:true, apply(){
+        { key:'offensive', label:tt('Offensif','Attacking'), risky:true, apply(){
           lm[myModKey(lm)] += 7; lm[oppModKey(lm)] += 4;
-          pushLiveEvent(lm, 45, 'decision', 'Vous donnez une orientation offensive pour la 2e mi-temps.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous donnez une orientation offensive pour la 2e mi-temps.','You set an attacking approach for the second half.'), mySide);
         }},
-        { key:'balanced', label:'Équilibré', apply(){
+        { key:'balanced', label:tt('Équilibré','Balanced'), apply(){
           lm[myModKey(lm)] += 2;
-          pushLiveEvent(lm, 45, 'decision', 'Vous donnez une orientation équilibrée pour la 2e mi-temps.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous donnez une orientation équilibrée pour la 2e mi-temps.','You set a balanced approach for the second half.'), mySide);
         }},
-        { key:'defensive', label:'Défensif', apply(){
+        { key:'defensive', label:tt('Défensif','Defensive'), apply(){
           lm[oppModKey(lm)] -= 5;
-          pushLiveEvent(lm, 45, 'decision', 'Vous donnez une orientation défensive pour la 2e mi-temps.', mySide);
+          pushLiveEvent(lm, 45, 'decision', tt('Vous donnez une orientation défensive pour la 2e mi-temps.','You set a defensive approach for the second half.'), mySide);
         }}
       ]
     };
@@ -11245,17 +11245,17 @@ const SEASON_EVENT_BUILDERS = [
     if(roundIdx < 3) return null;
     if(myClubOutOfEuro() || state.euro.currentRound < 1) return null;
     return {
-      title:'Calendrier infernal',
+      title:tt('Calendrier infernal','Hellish schedule'),
       contextRoundIdx: roundIdx+1,
-      text:'Plusieurs gros matchs rapprochés attendent votre équipe. Comment prioriser ?',
+      text:tt('Plusieurs gros matchs rapprochés attendent votre équipe. Comment prioriser ?','Several big matches are coming up close together for your team. How do you prioritize?'),
       options:[
-        { key:'league', label:'Priorité championnat', apply(){
+        { key:'league', label:tt('Priorité championnat','Prioritize the league'), apply(){
           addSeasonModifier(3, roundIdx+3, 'Calendrier infernal - priorité championnat');
         }},
-        { key:'europe', label:'Europe', apply(){
+        { key:'europe', label:tt('Europe','Europe'), apply(){
           addSeasonModifier(-1, roundIdx+3, 'Calendrier infernal - priorité Europe');
         }},
-        { key:'balance', label:'Équilibrer', apply(){
+        { key:'balance', label:tt('Équilibrer','Balance it out'), apply(){
           addSeasonModifier(1, roundIdx+2, 'Calendrier infernal - répartition équilibrée');
         }}
       ]
@@ -11264,17 +11264,17 @@ const SEASON_EVENT_BUILDERS = [
   function winStreakEvent(roundIdx){
     if(state.winStreak < 4) return null;
     return {
-      title:'Série de victoires',
-      text:`${state.winStreak} victoires d'affilée. Comment gérer cette dynamique ?`,
+      title:tt('Série de victoires','Winning streak'),
+      text:tt(`${state.winStreak} victoires d'affilée. Comment gérer cette dynamique ?`,`${state.winStreak} wins in a row. How do you manage this momentum?`),
       options:[
-        { key:'continue', label:'Continuer', apply(){
+        { key:'continue', label:tt('Continuer','Continue'), apply(){
           addSeasonModifier(3, roundIdx+3, 'Série de victoires - même onze');
         }},
-        { key:'rotate', label:'Faire tourner', apply(){
+        { key:'rotate', label:tt('Faire tourner','Rotate the squad'), apply(){
           addSeasonModifier(1, roundIdx+4, 'Série de victoires - effectif préservé');
           state.fatigueLevel = Math.max(0, state.fatigueLevel - 3);
         }},
-        { key:'test', label:'Tester', apply(){
+        { key:'test', label:tt('Tester','Experiment'), apply(){
           if(Math.random() < 0.5){ addSeasonModifier(4, roundIdx+2, 'Test payant, le groupe répond bien'); }
           else { addSeasonModifier(-2, roundIdx+2, 'Test qui perturbe les automatismes'); }
         }}
@@ -11284,17 +11284,17 @@ const SEASON_EVENT_BUILDERS = [
   function lossStreakEvent(roundIdx){
     if(state.lossStreak < 3) return null;
     return {
-      title:'Série négative',
-      text:`${state.lossStreak} défaites d'affilée. Quelle réponse apporter ?`,
+      title:tt('Série négative','Losing streak'),
+      text:tt(`${state.lossStreak} défaites d'affilée. Quelle réponse apporter ?`,`${state.lossStreak} losses in a row. How do you respond?`),
       options:[
-        { key:'stay', label:'Garder le cap', apply(){
+        { key:'stay', label:tt('Garder le cap','Stay the course'), apply(){
           if(Math.random() < 0.5){ addSeasonModifier(2, roundIdx+3, 'Série négative - le cap paie'); }
           else { addSeasonModifier(-2, roundIdx+2, 'Série négative - la crise continue'); }
         }},
-        { key:'tactics', label:'Changer la tactique', apply(){
+        { key:'tactics', label:tt('Changer la tactique','Change the tactics'), apply(){
           addSeasonModifier(1, roundIdx+3, 'Série négative - nouvelle tactique');
         }},
-        { key:'lineup', label:'Modifier le onze', apply(){
+        { key:'lineup', label:tt('Modifier le onze','Change the lineup'), apply(){
           addSeasonModifier(2, roundIdx+2, 'Série négative - onze remanié');
         }}
       ]
@@ -11304,20 +11304,20 @@ const SEASON_EVENT_BUILDERS = [
     const oppStr = nextOpponentStrength(roundIdx);
     if(oppStr === null || oppStr < averageLeagueStrength() + 6) return null;
     const opp = nextOpponentClub(roundIdx);
-    const oppName = opp ? opp.name : 'un adversaire coriace';
+    const oppName = opp ? opp.name : tt('un adversaire coriace','a tough opponent');
     return {
-      title:'Préparation du choc',
+      title:tt('Préparation du choc','Preparing for the big clash'),
       immediate:true,
       contextRoundIdx: roundIdx+1,
-      text:`${oppName} approche à la prochaine journée, un morceau nettement au-dessus de la moyenne. Comment préparer l'échéance ?`,
+      text:tt(`${oppName} approche à la prochaine journée, un morceau nettement au-dessus de la moyenne. Comment préparer l'échéance ?`,`${oppName} is coming up next matchday, a side clearly above average. How do you prepare for it?`),
       options:[
-        { key:'specific', label:'Préparation spécifique', apply(){
+        { key:'specific', label:tt('Préparation spécifique','Specific preparation'), apply(){
           addSeasonModifier(4, roundIdx+2, `Préparation spécifique avant ${oppName}`);
         }},
-        { key:'normal', label:'Normale', apply(){
+        { key:'normal', label:tt('Normale','Normal'), apply(){
           addSeasonModifier(0, roundIdx+1, 'Préparation normale');
         }},
-        { key:'rotation', label:'Rotation', apply(){
+        { key:'rotation', label:tt('Rotation','Rotation'), apply(){
           addSeasonModifier(-1, roundIdx+2, `Rotation avant ${oppName}`);
           state.fatigueLevel = Math.max(0, state.fatigueLevel - 2);
         }}
@@ -11327,14 +11327,14 @@ const SEASON_EVENT_BUILDERS = [
   function collectiveFatigueEvent(roundIdx){
     if(state.fatigueLevel < 6) return null;
     return {
-      title:'Coup de fatigue collectif',
-      text:'L\'effectif accumule la fatigue. Comment gérer les organismes ?',
+      title:tt('Coup de fatigue collectif','Collective fatigue'),
+      text:tt('L\'effectif accumule la fatigue. Comment gérer les organismes ?',"The squad is building up fatigue. How do you manage the players' bodies?"),
       options:[
-        { key:'rest', label:'Repos', apply(){
+        { key:'rest', label:tt('Repos','Rest'), apply(){
           state.fatigueLevel = Math.max(0, state.fatigueLevel - 5);
           addSeasonModifier(-1, roundIdx+1, 'Repos collectif');
         }},
-        { key:'continue', label:'Continuer', apply(){
+        { key:'continue', label:tt('Continuer','Continue'), apply(){
           if(Math.random() < 0.3){
             const player = randomStarterPlayer();
             if(player){
@@ -11343,7 +11343,7 @@ const SEASON_EVENT_BUILDERS = [
             addSeasonModifier(-3, roundIdx+2, 'Fatigue ignorée - coup dur');
           }
         }},
-        { key:'intensify', label:'Intensifier', apply(){
+        { key:'intensify', label:tt('Intensifier','Intensify'), apply(){
           if(Math.random() < 0.45){
             const player = randomStarterPlayer();
             if(player){
@@ -11362,11 +11362,11 @@ const SEASON_EVENT_BUILDERS = [
     if(!player) return null;
     const name = player.nom;
     return {
-      title:'Retour d\'un cadre',
+      title:tt('Retour d\'un cadre','A key player returns'),
       immediate:true,
-      text:`${name} revient de blessure/suspension. Comment le réintégrer ?`,
+      text:tt(`${name} revient de blessure/suspension. Comment le réintégrer ?`,`${name} is back from injury/suspension. How do you bring him back in?`),
       options:[
-        { key:'starter', label:'Titulaire', apply(){
+        { key:'starter', label:tt('Titulaire','Starting XI'), apply(){
           if(Math.random() < 0.25){
             setPlayerUnavailable(player, 1 + Math.floor(Math.random()*2), 'injury', roundIdx);
             addSeasonModifier(-2, roundIdx+2, `${name} - rechute`);
@@ -11374,10 +11374,10 @@ const SEASON_EVENT_BUILDERS = [
             addSeasonModifier(3, roundIdx+2, `${name} - retour réussi`);
           }
         }},
-        { key:'progressive', label:'Reprise progressive', apply(){
+        { key:'progressive', label:tt('Reprise progressive','Gradual return'), apply(){
           addSeasonModifier(1, roundIdx+3, `${name} - reprise progressive`);
         }},
-        { key:'bench', label:'Banc', apply(){
+        { key:'bench', label:tt('Banc','Bench'), apply(){
           addSeasonModifier(0, roundIdx+1, `${name} - sur le banc`);
         }}
       ]
@@ -11386,18 +11386,18 @@ const SEASON_EVENT_BUILDERS = [
   function trophyPriorityEvent(roundIdx){
     if(myClubOutOfEuro() || state.euro.currentRound < 1) return null;
     return {
-      title:'Tout pour un trophée',
-      text:'Deux compétitions deviennent prioritaires. Où mettre l\'accent ?',
+      title:tt('Tout pour un trophée','All in for a trophy'),
+      text:tt('Deux compétitions deviennent prioritaires. Où mettre l\'accent ?','Two competitions are now a priority. Where do you focus your efforts?'),
       options:[
-        { key:'league', label:'Miser sur le championnat', apply(){
+        { key:'league', label:tt('Miser sur le championnat','Bet on the league'), apply(){
           addSeasonModifier(3, roundIdx+3, 'Priorité championnat', 'league');
           addSeasonModifier(-2, roundIdx+3, 'Moins de temps consacré à l\'Europe', 'euro');
         }},
-        { key:'europe', label:'L\'Europe', apply(){
+        { key:'europe', label:tt('L\'Europe','Europe'), apply(){
           addSeasonModifier(3, roundIdx+3, 'Priorité Europe', 'euro');
           addSeasonModifier(-2, roundIdx+3, 'Moins de temps consacré au championnat', 'league');
         }},
-        { key:'balance', label:'Équilibrer', apply(){
+        { key:'balance', label:tt('Équilibrer','Balance it out'), apply(){
           addSeasonModifier(1, roundIdx+3, 'Répartition équilibrée entre compétitions', 'league');
           addSeasonModifier(1, roundIdx+3, 'Répartition équilibrée entre compétitions', 'euro');
         }}
@@ -11407,16 +11407,16 @@ const SEASON_EVENT_BUILDERS = [
   function staffCrisisEvent(roundIdx){
     if(state.lossStreak < 2) return null;
     return {
-      title:'Crise du staff',
-      text:'Les résultats deviennent inquiétants et le staff s\'inquiète. Quelle attitude adopter ?',
+      title:tt('Crise du staff','Staff crisis'),
+      text:tt('Les résultats deviennent inquiétants et le staff s\'inquiète. Quelle attitude adopter ?','The results are becoming worrying and the staff are concerned. What attitude do you take?'),
       options:[
-        { key:'listen', label:'Écouter le staff', apply(){
+        { key:'listen', label:tt('Écouter le staff','Listen to the staff'), apply(){
           addSeasonModifier(2, roundIdx+2, 'Conseils du staff suivis');
         }},
-        { key:'adapt', label:'Adapter', apply(){
+        { key:'adapt', label:tt('Adapter','Adapt'), apply(){
           addSeasonModifier(1, roundIdx+2, 'Ajustements partiels');
         }},
-        { key:'refuse', label:'Refuser', apply(){
+        { key:'refuse', label:tt('Refuser','Refuse'), apply(){
           if(Math.random() < 0.5){ addSeasonModifier(2, roundIdx+2, 'Confiance maintenue - ça paie'); }
           else { addSeasonModifier(-3, roundIdx+2, 'Tensions internes persistantes'); }
         }}
@@ -11425,18 +11425,18 @@ const SEASON_EVENT_BUILDERS = [
   },
   function videoAnalysisEvent(roundIdx){
     return {
-      title:'Analyse vidéo',
+      title:tt('Analyse vidéo','Video analysis'),
       immediate:true,
       contextRoundIdx: roundIdx+1,
-      text:'Le staff détecte une faiblesse récurrente chez l\'adversaire. Comment réagir ?',
+      text:tt('Le staff détecte une faiblesse récurrente chez l\'adversaire. Comment réagir ?','The staff spot a recurring weakness in the opposition. How do you react?'),
       options:[
-        { key:'fix', label:'Corriger', apply(){
+        { key:'fix', label:tt('Corriger','Fix it'), apply(){
           addSeasonModifier(2, roundIdx+1, 'Faiblesse corrigée après analyse vidéo');
         }},
-        { key:'ignore', label:'Ignorer', apply(){
+        { key:'ignore', label:tt('Ignorer','Ignore it'), apply(){
           addSeasonModifier(0, roundIdx+1, 'Analyse vidéo ignorée');
         }},
-        { key:'system', label:'Changer de système', apply(){
+        { key:'system', label:tt('Changer de système','Change the system'), apply(){
           addSeasonModifier(1, roundIdx+2, 'Système ajusté après analyse vidéo');
           state.seasonFormationChanged = true;
         }}
@@ -11457,18 +11457,18 @@ const SEASON_EVENT_BUILDERS = [
     const isWeak = oppRow && (season.strengths[oppId]||70) < averageLeagueStrength() - 4;
     if(!oppRow || !isTopHalf || !isWeak) return null;
     return {
-      title:'Équipe surprise',
+      title:tt('Équipe surprise','Surprise team'),
       immediate:true,
       contextRoundIdx: roundIdx+1,
-      text:`${oppRow.name} réalise une excellente saison au vu de son effectif. Comment aborder la confrontation ?`,
+      text:tt(`${oppRow.name} réalise une excellente saison au vu de son effectif. Comment aborder la confrontation ?`,`${oppRow.name} are having an excellent season given the quality of their squad. How do you approach the match?`),
       options:[
-        { key:'cautious', label:'Rester sur ses gardes', apply(){
+        { key:'cautious', label:tt('Rester sur ses gardes','Stay on your guard'), apply(){
           addSeasonModifier(2, roundIdx+1, 'Adversaire pris au sérieux malgré son effectif modeste');
         }},
-        { key:'scout', label:'Étudier leurs forces', apply(){
+        { key:'scout', label:tt('Étudier leurs forces','Study their strengths'), apply(){
           addSeasonModifier(3, roundIdx+1, 'Analyse spécifique de l\'équipe surprise');
         }},
-        { key:'underestimate', label:'Sous-estimer l\'adversaire', apply(){
+        { key:'underestimate', label:tt('Sous-estimer l\'adversaire','Underestimate the opponent'), apply(){
           if(Math.random() < 0.4){ addSeasonModifier(-4, roundIdx+1, 'Sous-estimation de l\'équipe surprise'); }
         }}
       ]
@@ -11477,16 +11477,16 @@ const SEASON_EVENT_BUILDERS = [
   function internationalBreakEvent(roundIdx){
     if(![7,16,25].includes(roundIdx)) return null;
     return {
-      title:'Trêve internationale',
-      text:'Le championnat s\'arrête le temps de la trêve internationale. Comment occuper cette coupure ?',
+      title:tt('Trêve internationale','International break'),
+      text:tt('Le championnat s\'arrête le temps de la trêve internationale. Comment occuper cette coupure ?','The league pauses for the international break. How do you use this time off?'),
       options:[
-        { key:'rest', label:'Repos', apply(){
+        { key:'rest', label:tt('Repos','Rest'), apply(){
           state.fatigueLevel = Math.max(0, state.fatigueLevel - 4);
         }},
-        { key:'tactical', label:'Travail tactique', apply(){
+        { key:'tactical', label:tt('Travail tactique','Tactical work'), apply(){
           addSeasonModifier(2, roundIdx+3, 'Travail tactique pendant la trêve');
         }},
-        { key:'physical', label:'Préparation physique', apply(){
+        { key:'physical', label:tt('Préparation physique','Physical conditioning'), apply(){
           state.fatigueLevel = Math.max(0, state.fatigueLevel - 2);
           addSeasonModifier(1, roundIdx+3, 'Préparation physique pendant la trêve');
         }}
@@ -11501,18 +11501,18 @@ const SEASON_EVENT_BUILDERS = [
     // vient - pas si la saison est en fait quasi (ou totalement) terminée.
     if(season.calendar.length - (roundIdx+1) < 2) return null;
     return {
-      title:'Mois décisif',
+      title:tt('Mois décisif','Decisive month'),
       contextRoundIdx: roundIdx+1,
-      text:'Plusieurs matchs à enjeu arrivent dans les prochaines semaines. Comment gérer l\'effectif ?',
+      text:tt('Plusieurs matchs à enjeu arrivent dans les prochaines semaines. Comment gérer l\'effectif ?','Several high-stakes matches are coming up in the next few weeks. How do you manage the squad?'),
       options:[
-        { key:'rotate', label:'Rotation', apply(){
+        { key:'rotate', label:tt('Rotation','Rotation'), apply(){
           state.fatigueLevel = Math.max(0, state.fatigueLevel - 3);
           addSeasonModifier(0, roundIdx+3, 'Rotation pendant le mois décisif');
         }},
-        { key:'allin', label:'Tout donner', apply(){
+        { key:'allin', label:tt('Tout donner','Give everything'), apply(){
           addSeasonModifier(3, roundIdx+3, 'Tout donner pendant le mois décisif');
         }},
-        { key:'manage', label:'Gestion équilibrée', apply(){
+        { key:'manage', label:tt('Gestion équilibrée','Balanced management'), apply(){
           addSeasonModifier(1, roundIdx+3, 'Gestion équilibrée pendant le mois décisif');
         }}
       ]
@@ -11527,14 +11527,14 @@ const SEASON_EVENT_BUILDERS = [
       rare:true,
       immediate:true,
       contextRoundIdx: roundIdx+1,
-      title:'Le pari du staff',
-      text:'Votre adjoint propose une évolution tactique importante. Tenter le coup ?',
+      title:tt('Le pari du staff',"The staff's gamble"),
+      text:tt('Votre adjoint propose une évolution tactique importante. Tenter le coup ?','Your assistant proposes a major tactical change. Do you go for it?'),
       options:[
-        { key:'accept', label:'Accepter', apply(){
+        { key:'accept', label:tt('Accepter','Accept'), apply(){
           if(Math.random() < 0.5){ addSeasonModifier(6, roundIdx+3, 'Nouveau système payant'); }
           else { addSeasonModifier(-4, roundIdx+3, 'Nouveau système qui déstabilise l\'équipe'); }
         }},
-        { key:'refuse', label:'Refuser', apply(){
+        { key:'refuse', label:tt('Refuser','Refuse'), apply(){
           addSeasonModifier(0, roundIdx+1, 'Statu quo tactique');
         }}
       ]
@@ -11545,18 +11545,18 @@ const SEASON_EVENT_BUILDERS = [
     return {
       rare:true,
       contextRoundIdx: roundIdx+1,
-      title:'La finale avant l\'heure',
-      text:'Deux matchs cruciaux se suivent dans le calendrier. Comment répartir les efforts ?',
+      title:tt('La finale avant l\'heure','An early final'),
+      text:tt('Deux matchs cruciaux se suivent dans le calendrier. Comment répartir les efforts ?','Two crucial matches come one after another in the schedule. How do you split your efforts?'),
       options:[
-        { key:'first', label:'Prioriser le premier', apply(){
+        { key:'first', label:tt('Prioriser le premier','Prioritize the first'), apply(){
           addSeasonModifier(3, roundIdx+1, 'Priorité au premier des deux rendez-vous');
           addSeasonModifier(-2, roundIdx+2, 'Contrecoup sur le second rendez-vous');
         }},
-        { key:'second', label:'Le second', apply(){
+        { key:'second', label:tt('Le second','The second'), apply(){
           addSeasonModifier(-2, roundIdx+1, 'Contrecoup sur le premier rendez-vous');
           addSeasonModifier(3, roundIdx+2, 'Priorité au second rendez-vous');
         }},
-        { key:'split', label:'Répartir les efforts', apply(){
+        { key:'split', label:tt('Répartir les efforts','Split the effort'), apply(){
           addSeasonModifier(1, roundIdx+2, 'Efforts répartis sur les deux rendez-vous');
         }}
       ]
@@ -11571,14 +11571,14 @@ const SEASON_EVENT_BUILDERS = [
       rare:true,
       immediate:true,
       contextRoundIdx: roundIdx+1,
-      title:'L\'effet de surprise',
-      text:'Vous avez l\'occasion de préparer un système inédit pour surprendre l\'adversaire. Tenter le changement ?',
+      title:tt('L\'effet de surprise','The element of surprise'),
+      text:tt('Vous avez l\'occasion de préparer un système inédit pour surprendre l\'adversaire. Tenter le changement ?','You have a chance to prepare a brand-new system to surprise the opposition. Do you make the change?'),
       options:[
-        { key:'change', label:'Changer', apply(){
+        { key:'change', label:tt('Changer','Change'), apply(){
           if(Math.random() < 0.5){ addSeasonModifier(5, roundIdx+1, 'Nouveau système qui surprend l\'adversaire'); }
           else { addSeasonModifier(-3, roundIdx+1, 'Nouveau système pas encore rodé'); }
         }},
-        { key:'keep', label:'Conserver', apply(){
+        { key:'keep', label:tt('Conserver','Keep it'), apply(){
           addSeasonModifier(0, roundIdx+1, 'Système habituel conservé');
         }}
       ]
