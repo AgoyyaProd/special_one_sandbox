@@ -3364,6 +3364,18 @@ button{ font-family:inherit; cursor:pointer; }
   color:var(--text-faint);
   margin-top:2px;
 }
+.pantheon-breakdown{
+  font-family:var(--sans);
+  font-size:10.5px;
+  color:var(--text-faint);
+  opacity:.8;
+  margin-top:3px;
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.pantheon-breakdown span{ white-space:nowrap; }
+.pantheon-breakdown b{ color:var(--text-dim); font-weight:700; }
 .pantheon-score{
   font-family:var(--bn-bold);
   font-size:20px;
@@ -15967,6 +15979,23 @@ function countTrophies(history){
   return history.reduce((n,r)=> n + (r.is_champion?1:0) + (r.cup_won?1:0) + (r.domestic_super_cup_won?1:0) + (r.euro_result && r.euro_result.won?1:0) + (r.euro_result && r.euro_result.superCupWon?1:0), 0);
 }
 
+// Ligne de détail "Championnat X · Coupe Y · Europe Z" affichée sous chaque
+// entrée du Panthéon, pour expliquer la composition du score total (même
+// principe que le détail déjà affiché dans le Palmarès personnel). Accepte
+// aussi bien un objet score brut ({league,cup,euro}) qu'une entrée agrégée
+// du classement "Carrière" (mêmes clés, sommées sur toutes les saisons).
+function pantheonScoreBreakdownHtml(score){
+  if(!score) return '';
+  const league = Number(score.league) || 0;
+  const cup = Number(score.cup) || 0;
+  const euro = Number(score.euro) || 0;
+  return `<div class="pantheon-breakdown">
+    <span>Championnat <b>${league}</b></span>
+    <span>Coupe <b>${cup}</b></span>
+    <span>Europe <b>${euro}</b></span>
+  </div>`;
+}
+
 async function renderPantheonScreen(){
   document.querySelectorAll('#pantheon-tabs .pantheon-nav-item[data-view]').forEach(btn=>{
     btn.classList.toggle('active', btn.dataset.view === state.pantheonView);
@@ -16011,6 +16040,7 @@ async function renderPantheonScreen(){
         <div>
           <div class="pantheon-name">${r.player_name || 'Manager anonyme'}</div>
           <div class="pantheon-sub">${r.club} (${r.league}) - Saison ${r.season_number}</div>
+          ${pantheonScoreBreakdownHtml(r.score)}
         </div>
         <div class="pantheon-score">${r.score.total}<span class="l">pts</span></div>
       </div>
@@ -16018,8 +16048,11 @@ async function renderPantheonScreen(){
   } else {
     const byUser = {};
     rows.forEach(r=>{
-      const entry = byUser[r.user_id] || (byUser[r.user_id] = { user_id:r.user_id, player_name:r.player_name, total:0, seasons:0 });
+      const entry = byUser[r.user_id] || (byUser[r.user_id] = { user_id:r.user_id, player_name:r.player_name, total:0, league:0, cup:0, euro:0, seasons:0 });
       entry.total += r.score.total;
+      entry.league += Number(r.score.league) || 0;
+      entry.cup += Number(r.score.cup) || 0;
+      entry.euro += Number(r.score.euro) || 0;
       entry.seasons += 1;
       if(r.player_name) entry.player_name = r.player_name;
     });
@@ -16030,6 +16063,7 @@ async function renderPantheonScreen(){
         <div>
           <div class="pantheon-name">${r.player_name || 'Manager anonyme'}</div>
           <div class="pantheon-sub">${r.seasons} saison${r.seasons>1?'s':''} jouée${r.seasons>1?'s':''}</div>
+          ${pantheonScoreBreakdownHtml(r)}
         </div>
         <div class="pantheon-score">${r.total}<span class="l">pts</span></div>
       </div>
