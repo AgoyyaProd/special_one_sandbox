@@ -519,25 +519,43 @@ button{ font-family:inherit; cursor:pointer; }
 }
 .gm-logo-text{ white-space:nowrap; }
 .gm-logo:hover{ opacity:.8; }
+/* Même famille visuelle que .gm-btn-primary/secondary (typo condensée,
+   coin en écusson) mais en version compacte pour la barre d'en-tête -
+   remplace la pilule fine générique par quelque chose de cohérent avec
+   le reste du jeu. */
 .gm-account-btn{
   display:inline-flex;
   align-items:center;
-  font-family:var(--sans);
-  font-size:14px;
-  font-weight:600;
+  font-family:var(--card-font-bold);
+  font-size:12.5px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  font-weight:400;
   color:var(--text-dim);
   background:transparent;
-  border:1px solid var(--border-2);
-  padding:11px 24px;
-  border-radius:999px;
-  transition:transform .18s ease, border-color .3s ease, color .15s ease, background .15s ease;
+  border:1.5px solid var(--border-2);
+  padding:10px 20px;
+  border-radius:4px;
+  position:relative;
+  overflow:hidden;
+  transition:transform .2s cubic-bezier(.22,.85,.32,1.2), border-color .3s ease, color .15s ease, background .15s ease;
+}
+.gm-account-btn::before{
+  content:'';
+  position:absolute;
+  top:-1.5px; right:-1.5px;
+  border-style:solid;
+  border-width:0 11px 11px 0;
+  border-color:transparent var(--border-2) transparent transparent;
+  transition:border-color .3s ease;
 }
 .gm-account-btn:hover{
-  color:#111;
+  color:#0a0d13;
   background:#fff;
   border-color:#fff;
   transform:translateY(-2px);
 }
+.gm-account-btn:hover::before{ border-color:transparent var(--club-accent) transparent transparent; }
 .gm-account-menu{ position:relative; }
 .gm-header-actions{ display:flex; align-items:center; gap:10px; min-width:0; flex-shrink:1; }
 .gm-account-menu .gm-account-btn{ max-width:180px; }
@@ -2807,6 +2825,7 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
 
   .gm-header-inner{ padding:0; }
   .gm-account-btn{ font-size:11px; padding:7px 12px; white-space:nowrap; flex-shrink:0; }
+  .gm-account-btn::before{ border-width:0 8px 8px 0; }
   /* Filet de sécurité pour les téléphones les plus étroits (~320-360px) où
      même le logo réduit à sa seule icône + les 3 boutons compactés ne
      tiennent pas tout à fait : un défilement horizontal discret plutôt
