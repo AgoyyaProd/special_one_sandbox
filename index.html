@@ -657,6 +657,12 @@ button{ font-family:inherit; cursor:pointer; }
   background:var(--text);
 }
 .landing-cta-row{ display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
+/* Version anglaise : "Build the / ultimate / club." est plus compact que
+   le texte français, ce qui laisse le bloc de texte (titre, sous-titre,
+   boutons) paraître moins à gauche qu'en français. On le décale pour
+   compenser - scopé à html[lang="en"] et neutralisé dès que .hero repasse
+   en 1 colonne centrée (breakpoint tablette/mobile, cf. RESPONSIVE). */
+html[lang="en"] .hero-copy{ margin-left:-48px; }
 .landing-cta-row > button{
   /* Sans ça, le bouton "Continuer" refuse de se réduire en dessous de la
      largeur de sa sous-ligne (ex: "Stade Rennais - Draft en cours") - même
@@ -2644,6 +2650,7 @@ button{ font-family:inherit; cursor:pointer; }
   .col-center{ height:62vh; min-height:420px; }
   .hero{ grid-template-columns:1fr; text-align:center; }
   .hero-copy p{ margin-left:auto; margin-right:auto; }
+  html[lang="en"] .hero-copy{ margin-left:0; }
   .landing-cta-row{ justify-content:center; }
   .hero-cards-wrap{ padding:8px 0 0; }
   .club-grid{ grid-template-columns:repeat(3,1fr); }
