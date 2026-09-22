@@ -858,13 +858,15 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
 }
 #btn-end-career{
   font-size:16px;
-  font-weight:700;
-  padding:16px 36px;
+  padding:16px 40px 16px 32px;
   color:#f87171;
+  background:transparent;
   border:1.5px solid #f87171;
-  border-radius:999px;
+  border-radius:4px;
 }
+#btn-end-career::before{ border-color:transparent #f87171 transparent transparent; }
 #btn-end-career:hover{ color:#0a0d13; background:#f87171; border-color:#f87171; }
+#btn-end-career:hover::before{ border-color:transparent #0a0d13 transparent transparent; }
 
 /* ============================= FOOTER ============================= */
 .site-footer{
@@ -903,21 +905,34 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
   align-items:center;
   gap:8px;
   margin-top:18px;
-  padding:10px 20px;
-  border-radius:999px;
+  padding:10px 22px 10px 18px;
+  border-radius:4px;
   border:1px solid var(--border-2);
-  font-family:var(--sans);
-  font-size:14px;
-  font-weight:600;
+  font-family:var(--card-font-bold);
+  font-size:13px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
   color:var(--text-dim);
   text-decoration:none;
+  position:relative;
+  overflow:hidden;
   transition:color .15s, border-color .15s, background .15s;
+}
+.site-footer-kofi::before{
+  content:'';
+  position:absolute;
+  top:-1px; right:-1px;
+  border-style:solid;
+  border-width:0 12px 12px 0;
+  border-color:transparent var(--border-2) transparent transparent;
+  transition:border-color .3s ease;
 }
 .site-footer-kofi:hover{
   color:var(--text);
   border-color:#FF5E5B;
   background:rgba(255,94,91,.08);
 }
+.site-footer-kofi:hover::before{ border-color:transparent #FF5E5B transparent transparent; }
 /* Logo Ko-fi officiel (SVG inliné) remplaçant l'emoji tasse de café -
    dimensionné à la hauteur du texte du bouton qui le contient, quel que
    soit ce bouton (footer ou popup de soutien). */
@@ -1166,16 +1181,30 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
   flex-direction:column;
   align-items:center;
   gap:12px;
-  font-family:var(--bn-regular);
-  font-size:14px;
-  letter-spacing:1px;
+  font-family:var(--card-font-bold);
+  font-size:13px;
+  letter-spacing:.05em;
+  text-transform:uppercase;
   padding:22px 12px;
   border-radius:var(--r-lg);
   border:1px solid var(--border);
   background:var(--surface-2);
   color:var(--text-dim);
+  position:relative;
+  overflow:hidden;
   transition:all .18s ease;
 }
+.league-pill::before{
+  content:'';
+  position:absolute;
+  top:0; right:0;
+  border-style:solid;
+  border-width:0 16px 16px 0;
+  border-color:transparent var(--border-2) transparent transparent;
+  transition:border-color .3s ease;
+}
+.league-pill:hover::before{ border-color:transparent var(--club-primary) transparent transparent; }
+.league-pill.is-active::before{ border-color:transparent var(--club-primary) transparent transparent; }
 .league-logo-wrap{
   width:64px; height:64px;
   display:flex; align-items:center; justify-content:center;
@@ -1721,16 +1750,21 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
   margin-bottom:12px;
   flex-shrink:0;
 }
+/* Onglets "championnats" et "coupes d'Europe" de l'écran de saison :
+   même famille typographique condensée que les autres boutons, radius
+   resserré plutôt que pilule. Reste un sélecteur à état actif (pas de
+   petit écusson de coin, qui alourdirait ces onglets nombreux et
+   serrés). */
 .league-switch-btn{
-  font-family:var(--sans);
+  font-family:var(--card-font-bold);
   font-size:10.5px;
-  font-weight:600;
-  letter-spacing:.2px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
   color:var(--text-faint);
   background:rgba(255,255,255,.04);
   border:1px solid var(--border-2);
-  padding:6px 10px;
-  border-radius:999px;
+  padding:7px 12px;
+  border-radius:4px;
   transition:all .15s ease;
   white-space:nowrap;
 }
@@ -1739,7 +1773,6 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
   color:#0a0d13;
   background:var(--club-accent);
   border-color:var(--club-accent);
-  font-weight:700;
 }
 .season-panel > .standings-table, .season-panel > .results-list{ overflow-y:auto; min-height:0; }
 
