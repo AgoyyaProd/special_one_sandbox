@@ -16264,6 +16264,14 @@ let achievementDefsLoading = true;
 
 function getAchievementDef(id){ return ACHIEVEMENT_DEFS.find(a=>a.id===id); }
 
+// achievements.json porte désormais des champs *_en (name_en, category_en,
+// condition_en) à côté des champs fr d'origine - ces accesseurs choisissent
+// la bonne version selon state.lang, avec repli sur le fr si jamais un
+// succès n'a pas (encore) sa traduction anglaise.
+function achName(def){ return ((typeof state !== 'undefined' && state.lang === 'en') ? (def.name_en || def.name) : def.name); }
+function achCategory(def){ return ((typeof state !== 'undefined' && state.lang === 'en') ? (def.category_en || def.category) : def.category); }
+function achCondition(def){ return ((typeof state !== 'undefined' && state.lang === 'en') ? (def.condition_en || def.condition) : def.condition); }
+
 // Succès simples : un seul déblocage, tout ou rien.
 // Affiche un succès obtenu directement sur l'écran de jeu, avec la même
 // carte que sur la page dédiée (icône, dégradé du palier, condition) -
@@ -16476,7 +16484,7 @@ function renderAchievementsGrid(){
     const visible = ACHIEVEMENT_DEFS.filter(a => a.category===cat && !(a.hidden && !isAchievementMaxed(a)));
     if(!visible.length) return '';
     return `
-      <div class="achv-cat-label">${cat}</div>
+      <div class="achv-cat-label">${achCategory(visible[0])}</div>
       <div class="achv-cat-row">
         ${visible.map(a=>renderAchievementCardHTML(a)).join('')}
       </div>
@@ -16497,27 +16505,27 @@ function renderAchievementCardHTML(def){
       ? `${value}/${nextThreshold}`
       : `${value} (maximum atteint)`;
     return `
-      <div class="achv-card ${started?'is-unlocked':'is-locked'}" ${bgUrl?`style="background-image:url('${bgUrl}')"`:''} title="${def.condition}">
+      <div class="achv-card ${started?'is-unlocked':'is-locked'}" ${bgUrl?`style="background-image:url('${bgUrl}')"`:''} title="${achCondition(def)}">
         <div class="achv-icon">${started ? def.icon : '🔒'}</div>
         <div class="achv-body">
-          <div class="achv-name">${started ? def.name : '???'}</div>
-          <div class="achv-sub">${def.category}${started ? ' - Palier ' + tierName : ''}</div>
+          <div class="achv-name">${started ? achName(def) : '???'}</div>
+          <div class="achv-sub">${achCategory(def)}${started ? ' - ' + tt('Palier','Tier') + ' ' + tierName : ''}</div>
         </div>
         <div class="achv-divider"></div>
-        <div class="achv-condition">${started ? def.condition + ` (${progressLabel})` : tt('Succès verrouillé','Achievement locked')}</div>
+        <div class="achv-condition">${started ? achCondition(def) + ` (${progressLabel})` : tt('Succès verrouillé','Achievement locked')}</div>
       </div>
     `;
   }
   const unlocked = !!prog.unlocked;
   const bgUrl = unlocked ? ACHIEVEMENT_TIER_ASSETS[def.grade] : null;
-  const dateLabel = unlocked ? new Date(prog.unlockedAt).toLocaleDateString('fr-FR') : '';
+  const dateLabel = unlocked ? new Date(prog.unlockedAt).toLocaleDateString(state.lang === 'en' ? 'en-GB' : 'fr-FR') : '';
   if(def.hidden && !unlocked){
     return `
       <div class="achv-card is-locked is-hidden" title="${tt('Succès caché','Hidden achievement')}">
         <div class="achv-icon">🔒</div>
         <div class="achv-body">
           <div class="achv-name">???</div>
-          <div class="achv-sub">${def.category}</div>
+          <div class="achv-sub">${achCategory(def)}</div>
         </div>
         <div class="achv-divider"></div>
         <div class="achv-condition">${tt('Succès caché','Hidden achievement')}</div>
@@ -16525,14 +16533,14 @@ function renderAchievementCardHTML(def){
     `;
   }
   return `
-    <div class="achv-card ${unlocked?'is-unlocked':'is-locked'}" ${bgUrl?`style="background-image:url('${bgUrl}')"`:''} title="${def.condition}">
+    <div class="achv-card ${unlocked?'is-unlocked':'is-locked'}" ${bgUrl?`style="background-image:url('${bgUrl}')"`:''} title="${achCondition(def)}">
       <div class="achv-icon">${unlocked ? def.icon : '🔒'}</div>
       <div class="achv-body">
-        <div class="achv-name">${unlocked ? def.name : '???'}</div>
-        <div class="achv-sub">${def.category}${unlocked ? ' - ' + dateLabel : ''}</div>
+        <div class="achv-name">${unlocked ? achName(def) : '???'}</div>
+        <div class="achv-sub">${achCategory(def)}${unlocked ? ' - ' + dateLabel : ''}</div>
       </div>
       <div class="achv-divider"></div>
-      <div class="achv-condition">${unlocked ? def.condition : tt('Succès verrouillé','Achievement locked')}</div>
+      <div class="achv-condition">${unlocked ? achCondition(def) : tt('Succès verrouillé','Achievement locked')}</div>
     </div>
   `;
 }
@@ -16783,13 +16791,13 @@ async function renderAccountScreen(){
 async function renderCareersSummary(){
   const el = document.getElementById('careers-summary');
   if(!el || !sbClient || !state.session) return;
-  el.innerHTML = `<div class="hand-empty">Chargement…</div>`;
+  el.innerHTML = `<div class="hand-empty">${tt('Chargement…','Loading…')}</div>`;
   const { data: history, error } = await sbClient
     .from('career_history')
     .select('career_number, season_number, club, is_champion, cup_won, domestic_super_cup_won, euro_result, wins, draws, losses')
     .eq('user_id', state.session.user.id);
   if(error || !history || !history.length){
-    el.innerHTML = `<p class="profile-field-hint" style="margin:0">Aucune carrière terminée pour l'instant.</p>`;
+    el.innerHTML = `<p class="profile-field-hint" style="margin:0">${tt("Aucune carrière terminée pour l'instant.","No career completed yet.")}</p>`;
     return;
   }
   // La page Mon compte est un point d'entrée courant qui n'ouvre pas
@@ -16811,11 +16819,11 @@ async function renderCareersSummary(){
     const trophies = countTrophies(rows);
     return `
       <div class="career-tile">
-        <div class="career-tile-title">Carrière ${cn}</div>
+        <div class="career-tile-title">${tt(`Carrière ${cn}`, `Career ${cn}`)}</div>
         <div class="career-tile-stats">
-          <span>${rows.length} saison${rows.length>1?'s':''}</span>
-          <span>${clubs.size} club${clubs.size>1?'s':''}</span>
-          <span>${trophies} trophée${trophies>1?'s':''}</span>
+          <span>${rows.length} ${tt(`saison${rows.length>1?'s':''}`, `season${rows.length>1?'s':''}`)}</span>
+          <span>${clubs.size} ${tt(`club${clubs.size>1?'s':''}`, `club${clubs.size>1?'s':''}`)}</span>
+          <span>${trophies} ${tt(`trophée${trophies>1?'s':''}`, `troph${trophies>1?'ies':'y'}`)}</span>
         </div>
       </div>
     `;
