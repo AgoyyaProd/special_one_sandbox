@@ -640,22 +640,49 @@ button{ font-family:inherit; cursor:pointer; }
   max-width:440px;
   margin:0 0 40px;
 }
+/* Boutons "maillot" : typo condensée des cartes joueurs (déjà utilisée
+   pour les numéros/postes), coin en écusson plutôt que pilule
+   arrondie générique, et bascule franche vers la couleur du club au
+   survol plutôt qu'un simple assombrissement - pour que les CTA
+   ressemblent à une pièce du jeu plutôt qu'à un bouton d'appli
+   quelconque. */
 .gm-btn-primary{
-  font-family:var(--bn-regular);
-  font-size:clamp(15px, 2vw, 22px);
-  letter-spacing:0;
+  font-family:var(--card-font-bold);
+  font-size:clamp(15px, 1.8vw, 21px);
+  letter-spacing:.05em;
+  text-transform:uppercase;
   color:#0a0d13;
   background:var(--text);
   border:none;
-  padding:clamp(14px,2vw,19px) clamp(26px,4vw,44px);
-  border-radius:var(--r-lg);
-  transition:transform .18s ease, background .3s ease;
+  padding:clamp(14px,2vw,19px) clamp(34px,4.6vw,54px) clamp(14px,2vw,19px) clamp(26px,4vw,44px);
+  border-radius:4px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 10px 26px -12px rgba(0,0,0,.6);
+  transition:transform .22s cubic-bezier(.22,.85,.32,1.2), box-shadow .25s ease, background .3s ease, color .2s ease;
 }
-.gm-btn-primary:hover{ transform:translateY(-2px); background:var(--club-accent); }
+.gm-btn-primary::before{
+  content:'';
+  position:absolute;
+  top:0; right:0;
+  border-style:solid;
+  border-width:0 22px 22px 0;
+  border-color:transparent var(--club-accent) transparent transparent;
+  transition:border-color .3s ease;
+}
+.gm-btn-primary:hover{
+  transform:translateY(-3px);
+  background:var(--club-accent);
+  color:#fff;
+  box-shadow:0 16px 34px -12px color-mix(in srgb, var(--club-accent) 55%, transparent);
+}
+.gm-btn-primary:hover::before{ border-color:transparent var(--text) transparent transparent; }
 .gm-btn-primary:disabled{
   opacity:.35; cursor:not-allowed; transform:none;
   background:var(--text);
+  box-shadow:none;
 }
+.gm-btn-primary:disabled::before{ display:none; }
 .landing-cta-row{ display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
 /* Version anglaise : "Build the / ultimate / club." est plus compact que
    le texte français, ce qui laisse le bloc de texte (titre, sous-titre,
@@ -673,18 +700,31 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
   min-width:0;
 }
 .gm-btn-secondary{
-  font-family:var(--bn-regular);
-  font-size:clamp(15px, 2vw, 22px);
-  letter-spacing:0;
+  font-family:var(--card-font-bold);
+  font-size:clamp(15px, 1.8vw, 21px);
+  letter-spacing:.05em;
+  text-transform:uppercase;
   color:var(--text);
   background:transparent;
-  border:1px solid var(--border-2);
-  padding:clamp(14px,2vw,19px) clamp(26px,4vw,44px);
-  border-radius:var(--r-lg);
-  transition:transform .18s ease, border-color .3s ease, background .15s ease, color .15s ease;
+  border:2px solid var(--border-2);
+  padding:clamp(13px,1.9vw,18px) clamp(33px,4.5vw,53px) clamp(13px,1.9vw,18px) clamp(25px,3.9vw,43px);
+  border-radius:4px;
+  position:relative;
+  overflow:hidden;
+  transition:transform .22s cubic-bezier(.22,.85,.32,1.2), border-color .3s ease, background .2s ease, color .2s ease;
 }
-.gm-btn-secondary:hover{ color:#111; background:#fff; border-color:#fff; transform:translateY(-2px); }
-#btn-resume-save-desc{ display:block; font-size:11px; opacity:.65; font-weight:400; margin-top:1px; line-height:1.2; }
+.gm-btn-secondary::before{
+  content:'';
+  position:absolute;
+  top:-2px; right:-2px;
+  border-style:solid;
+  border-width:0 20px 20px 0;
+  border-color:transparent var(--border-2) transparent transparent;
+  transition:border-color .3s ease;
+}
+.gm-btn-secondary:hover{ color:#0a0d13; background:#fff; border-color:#fff; transform:translateY(-3px); }
+.gm-btn-secondary:hover::before{ border-color:transparent var(--club-accent) transparent transparent; }
+#btn-resume-save-desc{ display:block; font-family:var(--bn-regular); font-size:11px; letter-spacing:0; text-transform:none; opacity:.65; font-weight:400; margin-top:1px; line-height:1.2; }
 #btn-resume-save{ padding-top:clamp(10px,1.4vw,13px); padding-bottom:clamp(10px,1.4vw,13px); }
 
 /* deux cartes espacées, entièrement visibles, jamais rognées */
