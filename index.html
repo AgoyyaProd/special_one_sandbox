@@ -10010,15 +10010,15 @@ function matchEventText(ev, homeName, awayName){
 function renderFixtureBlock(fx, homeName, awayName, extraClasses, homeClub, awayClub){
   const played = fx.played !== false && fx.hg !== undefined && fx.hg !== null;
   const hasAgg = fx.aggHome !== undefined && fx.aggAway !== undefined;
-  const aggSuffix = fx.wentToPenalties ? ` (agg ${fx.aggHome}-${fx.aggAway}, tab ${fx.penaltyScore})`
-    : fx.extraTimeScore ? ` (agg ${fx.aggHome}-${fx.aggAway}, a.p.)`
+  const aggSuffix = fx.wentToPenalties ? ` (agg ${fx.aggHome}-${fx.aggAway}, ${tt('tab','pens')} ${fx.penaltyScore})`
+    : fx.extraTimeScore ? ` (agg ${fx.aggHome}-${fx.aggAway}, ${tt('a.p.','AET')})`
     : ` (agg ${fx.aggHome}-${fx.aggAway})`;
   // Match unique (pas d'aller-retour) ayant eu besoin d'une prolongation
   // et/ou de tirs au but pour être départagé - même principe que le
   // suffixe "agg" ci-dessus, mais sans cumul puisqu'il n'y a qu'une seule
   // manche (coupe nationale, trophée d'ouverture, supercoupe d'Europe...).
-  const singleSuffix = fx.wentToPenalties ? ` (tab ${fx.penaltyScore})`
-    : fx.extraTimeScore ? ' (a.p.)'
+  const singleSuffix = fx.wentToPenalties ? ` (${tt('tab','pens')} ${fx.penaltyScore})`
+    : fx.extraTimeScore ? ` (${tt('a.p.','AET')})`
     : '';
   const rowInner = `
     <div class="fx-home">${homeName}</div>
@@ -11616,10 +11616,10 @@ function findInjuryOrRedAlert(fx){
 function showInjuryAlert(ev, fx, roundIdx){
   state._pendingInjuryAlert = { event: ev, roundIdx };
   const isRed = ev.type === 'red';
-  document.getElementById('injury-alert-title').textContent = isRed ? 'Carton rouge' : 'Blessure';
+  document.getElementById('injury-alert-title').textContent = isRed ? tt('Carton rouge','Red card') : tt('Blessure','Injury');
   document.getElementById('injury-alert-text').textContent = isRed
-    ? `${ev.player} a été exclu à la ${ev.minute}e minute. Il sera suspendu pour le prochain match.`
-    : `${ev.player} s'est blessé à la ${ev.minute}e minute et pourrait être indisponible pour les prochains matchs.`;
+    ? tt(`${ev.player} a été exclu à la ${ev.minute}e minute. Il sera suspendu pour le prochain match.`, `${ev.player} was sent off in the ${ev.minute}${nthSuffix(ev.minute)} minute. He will be suspended for the next match.`)
+    : tt(`${ev.player} s'est blessé à la ${ev.minute}e minute et pourrait être indisponible pour les prochains matchs.`, `${ev.player} was injured in the ${ev.minute}${nthSuffix(ev.minute)} minute and could be unavailable for the next few matches.`);
   const ctxEl = document.getElementById('injury-alert-context');
   if(fx && fx.hg !== undefined && fx.hg !== null){
     const homeName = clubNameById(fx.home);
@@ -12416,12 +12416,12 @@ function renderLiveMatch(){
   document.getElementById('live-home-name').textContent = lm.homeName;
   document.getElementById('live-away-name').textContent = lm.awayName;
   document.getElementById('live-score').textContent = lm.penaltyShootout
-    ? `${lm.hg} - ${lm.ag} (tab ${lm.penaltyShootout.homeScore}-${lm.penaltyShootout.awayScore})`
+    ? `${lm.hg} - ${lm.ag} (${tt('tab','pens')} ${lm.penaltyShootout.homeScore}-${lm.penaltyShootout.awayScore})`
     : `${lm.hg} - ${lm.ag}`;
   document.getElementById('live-minute').textContent = lm.finished
-    ? 'Terminé'
+    ? tt('Terminé','Full time')
     : lm.penaltyShootout
-      ? 'Tirs au but'
+      ? tt('Tirs au but','Penalty shoot-out')
       : lm.inExtraTime
         ? `${lm.minute}' (${tt('prolongation','extra time')})`
         : formatLiveMatchMinute(lm);
@@ -12966,7 +12966,8 @@ function finalizeQualifyingTie(tie, clubStr, oppStr, liveResult){
         aggClub:null, aggOpp:null, winner:null, won:null, resolved:false
       });
       if(tie.isMine){
-        toast(`Qualification LDC (${EURO_ENTRY_ROUND_LABEL[tie.stage]}) : victoire ${aggClub}-${aggOpp}${tie.wentToPenalties ? ` (tab ${tie.penaltyScore})` : ''} contre ${tie.opponentName} - direction le ${EURO_ENTRY_ROUND_LABEL[nextStage]} !`);
+        toast(tt(`Qualification LDC (${stageLabel(EURO_ENTRY_ROUND_LABEL[tie.stage])}) : victoire ${aggClub}-${aggOpp}${tie.wentToPenalties ? ` (${tt('tab','pens')} ${tie.penaltyScore})` : ''} contre ${tie.opponentName} - direction le ${stageLabel(EURO_ENTRY_ROUND_LABEL[nextStage])} !`,
+          `Champions Cup qualifying (${stageLabel(EURO_ENTRY_ROUND_LABEL[tie.stage])}): won ${aggClub}-${aggOpp}${tie.wentToPenalties ? ` (${tt('tab','pens')} ${tie.penaltyScore})` : ''} against ${tie.opponentName} - on to the ${stageLabel(EURO_ENTRY_ROUND_LABEL[nextStage])}!`));
       }
     }
   }
@@ -13959,15 +13960,15 @@ function appendKnockoutTiebreakEvents(events, result, homeName, awayName, homeId
   const minutes = etGoals.map(()=> 91 + Math.floor(Math.random()*29)).sort((a,b)=>a-b);
   etGoals.forEach((g,i)=>{
     const scorer = g.clubId ? pickWeightedPlayer(clubPlayerPool(g.clubId), 'scorer', null) : null;
-    const text = scorer ? `But de ${scorer.nom} (${g.name}).` : `But pour ${g.name}.`;
+    const text = scorer ? tt(`But de ${scorer.nom} (${g.name}).`, `Goal by ${scorer.nom} (${g.name}).`) : tt(`But pour ${g.name}.`, `Goal for ${g.name}.`);
     events.push({ minute:minutes[i], type:'goal', side:g.side, text });
   });
   if(result.wentToPenalties){
     const [scoreHome, scoreAway] = result.penaltyScore.split('-');
-    events.push({ minute:121, type:'decision', side:null, text:`Tirs au but : ${homeName} ${scoreHome} - ${scoreAway} ${awayName}.` });
+    events.push({ minute:121, type:'decision', side:null, text:tt(`Tirs au but : ${homeName} ${scoreHome} - ${scoreAway} ${awayName}.`, `Penalty shoot-out: ${homeName} ${scoreHome} - ${scoreAway} ${awayName}.`) });
   } else if(result.extraTimeScore){
     const winnerName = result.winner === 'A' ? homeName : awayName;
-    events.push({ minute:120, type:'decision', side:null, text:`Fin de la prolongation : qualification de ${winnerName}.` });
+    events.push({ minute:120, type:'decision', side:null, text:tt(`Fin de la prolongation : qualification de ${winnerName}.`, `End of extra time: ${winnerName} qualify.`) });
   }
 }
 
@@ -14044,9 +14045,9 @@ function playKnockoutLeg2(euro, ties){
         tie.leg2.ag += result.etA;
         const homeName = clubNameForAnyId(tie.leg2.home), awayName = clubNameForAnyId(tie.leg2.away);
         tie.leg2.events = tie.leg2.events || [];
-        tie.leg2.events.push({ side:null, type:'ft', minute:90, text:`Fin du temps réglementaire : ${homeName} ${tie.leg2.hg-result.etB} - ${tie.leg2.ag-result.etA} ${awayName}. Place à la prolongation !` });
-        for(let i=0;i<result.etB;i++) tie.leg2.events.push({ side:'home', type:'goal', minute:91+Math.floor(Math.random()*29), text:`BUT ! ${homeName} fait trembler les filets en prolongation.` });
-        for(let i=0;i<result.etA;i++) tie.leg2.events.push({ side:'away', type:'goal', minute:91+Math.floor(Math.random()*29), text:`BUT ! ${awayName} fait trembler les filets en prolongation.` });
+        tie.leg2.events.push({ side:null, type:'ft', minute:90, text:tt(`Fin du temps réglementaire : ${homeName} ${tie.leg2.hg-result.etB} - ${tie.leg2.ag-result.etA} ${awayName}. Place à la prolongation !`, `End of regular time: ${homeName} ${tie.leg2.hg-result.etB} - ${tie.leg2.ag-result.etA} ${awayName}. On to extra time!`) });
+        for(let i=0;i<result.etB;i++) tie.leg2.events.push({ side:'home', type:'goal', minute:91+Math.floor(Math.random()*29), text:tt(`BUT ! ${homeName} fait trembler les filets en prolongation.`, `GOAL! ${homeName} find the net in extra time.`) });
+        for(let i=0;i<result.etA;i++) tie.leg2.events.push({ side:'away', type:'goal', minute:91+Math.floor(Math.random()*29), text:tt(`BUT ! ${awayName} fait trembler les filets en prolongation.`, `GOAL! ${awayName} find the net in extra time.`) });
         tie.leg2.events.sort((a,b)=>a.minute-b.minute);
       }
     }
@@ -14322,7 +14323,7 @@ function playEuroMatchday(){
   if(!euro) return;
   const seasonOver = !state.season || state.season.currentRound >= state.season.calendar.length;
   if(euro.stage === 'final' && euro.tier !== 'el' && !seasonOver){
-    toast('La finale se jouera une fois le championnat terminé.');
+    toast(tt('La finale se jouera une fois le championnat terminé.','The final will be played once the league is over.'));
     return;
   }
   const nextStageOf = { playoff:'ro16', ro16:'qf', qf:'sf', sf:'final' };
@@ -14330,7 +14331,7 @@ function playEuroMatchday(){
   if(euro.stage === 'league'){
     simulateEuroLeagueRound(euro, euro.schedule.leaguePhase[euro.currentRound]);
   } else if(nextStageOf[euro.stage]){
-    simulateEuroKnockoutLeg(euro, euro.stage, nextStageOf[euro.stage], labelOf[euro.stage]);
+    simulateEuroKnockoutLeg(euro, euro.stage, nextStageOf[euro.stage], stageLabel(labelOf[euro.stage]));
   } else if(euro.stage === 'final'){
     simulateEuroFinalMatch(euro);
   }
@@ -14747,7 +14748,7 @@ function renderLeaguePanels(){
   if(!isOwnLeague){
     const lg = state.otherLeagues && state.otherLeagues[viewLeague];
     if(!lg){
-      resultsEl.innerHTML = `<div class="hand-empty">${viewLeague} n'est pas encore initialisé.</div>`;
+      resultsEl.innerHTML = `<div class="hand-empty">${tt(`${viewLeague} n'est pas encore initialisé.`, `${viewLeague} hasn't been initialized yet.`)}</div>`;
       return;
     }
     const timeline = [];
@@ -14765,7 +14766,7 @@ function renderLeaguePanels(){
       });
       const r16Played = lg.cup.results.some(cr=>cr.stage==='r16');
       if(!r16Played){
-        timeline.push({ type:'cup', roundIdx:lg.cup.matchdayFor.r16, label:CUP_STAGE_LABEL.r16, matches:lg.cup.bracket.r16, upcoming:true });
+        timeline.push({ type:'cup', roundIdx:lg.cup.matchdayFor.r16, label:stageLabel(CUP_STAGE_LABEL.r16), matches:lg.cup.bracket.r16, upcoming:true });
       }
     }
     euroEntriesForLeague(viewLeague).forEach(e=>timeline.push(e));
@@ -14792,7 +14793,7 @@ function renderLeaguePanels(){
     }
 
     if(!timeline.length){
-      resultsEl.innerHTML = `<div class="hand-empty">Aucun match joué pour le moment.</div>`;
+      resultsEl.innerHTML = `<div class="hand-empty">${tt('Aucun match joué pour le moment.','No match played yet.')}</div>`;
     } else {
       const renderEntry = entry => `
         <div class="rd-heading ${entry.type==='cup'?'rd-cup':''} ${entry.type==='supercup'?'rd-supercup':''} ${entry.type.startsWith('euro-')?entry.type+'-text':''}" data-upcoming="${entry.upcoming ? '1' : '0'}">${entry.label}${entry.upcoming ? ` <span class="rd-upcoming-tag">${tt('à venir','upcoming')}</span>` : ''}</div>
@@ -14906,7 +14907,7 @@ function renderLeaguePanels(){
   }
 
   if(!timeline.length){
-    resultsEl.innerHTML = `<div class="hand-empty">Aucun match joué. Lancez la première journée.</div>`;
+    resultsEl.innerHTML = `<div class="hand-empty">${tt('Aucun match joué. Lancez la première journée.','No match played yet. Start the first matchday.')}</div>`;
   } else {
     const renderEntry = entry => `
       <div class="rd-heading ${entry.type==='cup'?'rd-cup':''} ${entry.type==='supercup'?'rd-supercup':''} ${entry.type.startsWith('euro-')?entry.type+'-text':''}" data-upcoming="${entry.upcoming ? '1' : '0'}">${entry.label}${entry.upcoming ? ` <span class="rd-upcoming-tag">${tt('à venir','upcoming')}</span>` : ''}</div>
@@ -15048,7 +15049,7 @@ function renderEuroPanels(){
       roundCount = shadow.resultsByRound.length;
     } else {
       table.innerHTML = `<div class="hand-empty">${tt(`Vous ne disputez pas la ${euroCupLabel(EURO_LABELS[viewTier])} cette saison.`, `You're not playing in the ${euroCupLabel(EURO_LABELS[viewTier])} this season.`)}</div>`;
-      resultsEl.innerHTML = supercupResultHTML || `<div class="hand-empty">Compétition non disputée par votre club cette saison.</div>`;
+      resultsEl.innerHTML = supercupResultHTML || `<div class="hand-empty">${tt('Compétition non disputée par votre club cette saison.','Competition not played by your club this season.')}</div>`;
     }
   }
 
@@ -15087,11 +15088,11 @@ function renderUnavailabilityBanner(){
     document.getElementById('season-main').prepend(el);
   }
   el.innerHTML = `
-    <div class="unavailable-banner-title">Infirmerie &amp; suspensions</div>
+    <div class="unavailable-banner-title">${tt('Infirmerie &amp; suspensions','Injuries &amp; suspensions')}</div>
     ${activeEntries.map(rec=>{
       const remaining = rec.untilRound - season.currentRound;
-      const reasonLabel = rec.reason === 'suspension' ? 'Suspendu' : 'Blessé';
-      return `<div class="unavailable-row"><span class="unavailable-name">${rec.playerName}</span><span class="unavailable-reason">${reasonLabel} - encore ${remaining} match${remaining>1?'s':''}</span></div>`;
+      const reasonLabel = rec.reason === 'suspension' ? tt('Suspendu','Suspended') : tt('Blessé','Injured');
+      return `<div class="unavailable-row"><span class="unavailable-name">${rec.playerName}</span><span class="unavailable-reason">${tt(`${reasonLabel} - encore ${remaining} match${remaining>1?'s':''}`, `${reasonLabel} - ${remaining} more match${remaining>1?'es':''}`)}</span></div>`;
     }).join('')}
   `;
 }
@@ -16456,7 +16457,7 @@ function renderAchievementsGrid(){
     } else {
       grid.innerHTML = `<div class="achv-load-error">
         ⚠️ ${tt('Impossible de charger la liste des succès (achievements.json)','Could not load the achievements list (achievements.json)')}${achievementLoadError ? ' — ' + achievementLoadError : ''}.<br>
-        Vérifiez que <code>achievements.json</code> et le dossier <code>assets/tiers/</code> sont bien déposés au même endroit qu'<code>index.html</code>.
+        ${tt("Vérifiez que <code>achievements.json</code> et le dossier <code>assets/tiers/</code> sont bien déposés au même endroit qu'<code>index.html</code>.","Make sure <code>achievements.json</code> and the <code>assets/tiers/</code> folder are placed alongside <code>index.html</code>.")}
       </div>`;
     }
     return;
@@ -16666,8 +16667,8 @@ function pantheonScoreBreakdownHtml(score){
   const cup = Number(score.cup) || 0;
   const euro = Number(score.euro) || 0;
   return `<div class="pantheon-breakdown">
-    <span>Championnat <b>${league}</b></span>
-    <span>Coupe <b>${cup}</b></span>
+    <span>${tt('Championnat','League')} <b>${league}</b></span>
+    <span>${tt('Coupe','Cup')} <b>${cup}</b></span>
     <span>Europe <b>${euro}</b></span>
   </div>`;
 }
@@ -16676,7 +16677,7 @@ async function renderPantheonScreen(){
   document.querySelectorAll('#pantheon-tabs .pantheon-nav-item[data-view]').forEach(btn=>{
     btn.classList.toggle('active', btn.dataset.view === state.pantheonView);
   });
-  document.getElementById('pf-league-label').textContent = state.pantheonFilterLeague || 'Tous les championnats';
+  document.getElementById('pf-league-label').textContent = state.pantheonFilterLeague || t('pantheon.all-leagues');
   document.querySelectorAll('#pf-league-menu .pf-dropdown-option').forEach(o=>{
     o.classList.toggle('is-active', o.dataset.value === state.pantheonFilterLeague);
   });
@@ -16714,8 +16715,8 @@ async function renderPantheonScreen(){
       <div class="pantheon-row ${r.user_id===myId ? 'pantheon-me' : ''}">
         <div class="pantheon-rank">${i+1}</div>
         <div>
-          <div class="pantheon-name">${r.player_name || 'Manager anonyme'}</div>
-          <div class="pantheon-sub">${r.club} (${r.league}) - Saison ${r.season_number}</div>
+          <div class="pantheon-name">${r.player_name || tt('Manager anonyme','Anonymous manager')}</div>
+          <div class="pantheon-sub">${r.club} (${r.league}) - ${tt('Saison','Season')} ${r.season_number}</div>
           ${pantheonScoreBreakdownHtml(r.score)}
         </div>
         <div class="pantheon-score">${r.score.total}<span class="l">pts</span></div>
@@ -16743,8 +16744,8 @@ async function renderPantheonScreen(){
       <div class="pantheon-row ${r.user_id===myId ? 'pantheon-me' : ''}">
         <div class="pantheon-rank">${i+1}</div>
         <div>
-          <div class="pantheon-name">${r.player_name || 'Manager anonyme'}</div>
-          <div class="pantheon-sub">${clubs} club${clubs>1?'s':''} · ${seasons} saison${seasons>1?'s':''} jouée${seasons>1?'s':''} · ${trophies} trophée${trophies>1?'s':''}</div>
+          <div class="pantheon-name">${r.player_name || tt('Manager anonyme','Anonymous manager')}</div>
+          <div class="pantheon-sub">${clubs} club${clubs>1?'s':''} · ${tt(`${seasons} saison${seasons>1?'s':''} jouée${seasons>1?'s':''}`, `${seasons} season${seasons>1?'s':''} played`)} · ${tt(`${trophies} trophée${trophies>1?'s':''}`, `${trophies} troph${trophies>1?'ies':'y'}`)}</div>
           <div class="pantheon-path">${path.join(' <span class="pantheon-arrow">&#8594;</span> ')}</div>
         </div>
         <div class="pantheon-score">${r.total}<span class="l">pts</span></div>
@@ -16765,9 +16766,9 @@ function populatePantheonClubFilter(){
   const clubs = pool.filter(clubIsSelectable);
   const names = Array.from(new Set(clubs.map(c=>c.name))).sort((a,b)=>a.localeCompare(b, 'fr'));
   if(!names.includes(state.pantheonFilterClub)) state.pantheonFilterClub = '';
-  menu.innerHTML = `<button class="pf-dropdown-option ${!state.pantheonFilterClub?'is-active':''}" data-value="">Tous les clubs</button>`
+  menu.innerHTML = `<button class="pf-dropdown-option ${!state.pantheonFilterClub?'is-active':''}" data-value="">${t('pantheon.all-clubs')}</button>`
     + names.map(n=>`<button class="pf-dropdown-option ${state.pantheonFilterClub===n?'is-active':''}" data-value="${n}">${n}</button>`).join('');
-  document.getElementById('pf-club-label').textContent = state.pantheonFilterClub || 'Tous les clubs';
+  document.getElementById('pf-club-label').textContent = state.pantheonFilterClub || t('pantheon.all-clubs');
 }
 
 async function renderAccountScreen(){
@@ -16832,7 +16833,7 @@ async function renderCareersSummary(){
 
 async function renderPalmaresScreen(){
   if(!state.session){ showProfileModal(renderPalmaresScreen, 'viewPalmares'); return; }
-  document.getElementById('account-stats').innerHTML = `<div class="hand-empty">Chargement…</div>`;
+  document.getElementById('account-stats').innerHTML = `<div class="hand-empty">${tt('Chargement…','Loading…')}</div>`;
   document.getElementById('account-history').innerHTML = '';
 
   const { data: history, error } = await sbClient
@@ -16842,7 +16843,7 @@ async function renderPalmaresScreen(){
     .order('season_number', { ascending:true });
 
   if(error){
-    document.getElementById('account-stats').innerHTML = `<div class="hand-empty">Erreur de chargement de l'historique : ${error.message}</div>`;
+    document.getElementById('account-stats').innerHTML = `<div class="hand-empty">${tt(`Erreur de chargement de l'historique : ${error.message}`, `Error loading history: ${error.message}`)}</div>`;
     return;
   }
 
@@ -16852,14 +16853,14 @@ async function renderPalmaresScreen(){
   const totalScore = history.reduce((n,r)=> n + (r.score ? r.score.total : 0), 0);
 
   document.getElementById('account-stats').innerHTML = `
-    <div class="stat-tile"><div class="v">${history.length}</div><div class="l">Saison${history.length>1?'s':''} jouée${history.length>1?'s':''}</div></div>
-    <div class="stat-tile"><div class="v">${trophies}</div><div class="l">Trophée${trophies>1?'s':''}</div></div>
-    <div class="stat-tile"><div class="v">${totalScore}</div><div class="l">Score total de carrière</div></div>
+    <div class="stat-tile"><div class="v">${history.length}</div><div class="l">${tt(`Saison${history.length>1?'s':''} jouée${history.length>1?'s':''}`, `Season${history.length>1?'s':''} played`)}</div></div>
+    <div class="stat-tile"><div class="v">${trophies}</div><div class="l">${tt(`Trophée${trophies>1?'s':''}`, `Troph${trophies>1?'ies':'y'}`)}</div></div>
+    <div class="stat-tile"><div class="v">${totalScore}</div><div class="l">${tt('Score total de carrière','Total career score')}</div></div>
   `;
 
   const historyEl = document.getElementById('account-history');
   if(!history.length){
-    historyEl.innerHTML = `<div class="hand-empty">Aucune saison terminée pour l'instant.</div>`;
+    historyEl.innerHTML = `<div class="hand-empty">${tt("Aucune saison terminée pour l'instant.","No season completed yet.")}</div>`;
   } else {
     // Regroupe l'historique par carrière (career_number) - les lignes
     // enregistrées avant l'introduction de ce champ valent 1 par défaut
@@ -17212,19 +17213,19 @@ function renderSeasonStatsHTML(){
           <span class="stat-list-value">${p[valueKey]}${suffix}</span>
         </div>
       `).join('')
-    : `<div class="hand-empty">Aucun match joué pour l'instant.</div>`;
+    : `<div class="hand-empty">${tt("Aucun match joué pour l'instant.","No match played yet.")}</div>`;
 
   return `
     <div class="season-stats-grid">
-      <div class="stat-tile"><div class="v">${stats.myGoalsFor}</div><div class="l">Buts marqués</div></div>
-      <div class="stat-tile"><div class="v">${stats.myGoalsAgainst}</div><div class="l">Buts encaissés</div></div>
-      <div class="stat-tile"><div class="v">${stats.myYellow}</div><div class="l">Cartons jaunes</div></div>
-      <div class="stat-tile"><div class="v">${stats.myRed}</div><div class="l">Cartons rouges</div></div>
+      <div class="stat-tile"><div class="v">${stats.myGoalsFor}</div><div class="l">${tt('Buts marqués','Goals scored')}</div></div>
+      <div class="stat-tile"><div class="v">${stats.myGoalsAgainst}</div><div class="l">${tt('Buts encaissés','Goals conceded')}</div></div>
+      <div class="stat-tile"><div class="v">${stats.myYellow}</div><div class="l">${tt('Cartons jaunes','Yellow cards')}</div></div>
+      <div class="stat-tile"><div class="v">${stats.myRed}</div><div class="l">${tt('Cartons rouges','Red cards')}</div></div>
     </div>
-    <div class="section-label" style="margin-top:20px">Meilleurs buteurs</div>
-    <div class="stat-list">${listHTML(stats.topScorers, 'goals', ' buts')}</div>
-    <div class="section-label" style="margin-top:16px">Meilleurs passeurs</div>
-    <div class="stat-list">${listHTML(stats.topAssists, 'assists', ' passes')}</div>
+    <div class="section-label" style="margin-top:20px">${tt('Meilleurs buteurs','Top scorers')}</div>
+    <div class="stat-list">${listHTML(stats.topScorers, 'goals', tt(' buts',' goals'))}</div>
+    <div class="section-label" style="margin-top:16px">${tt('Meilleurs passeurs','Top assists')}</div>
+    <div class="stat-list">${listHTML(stats.topAssists, 'assists', tt(' passes',' assists'))}</div>
   `;
 }
 
@@ -17310,8 +17311,8 @@ document.querySelectorAll('.season-sidebar-item').forEach(btn=>{
       grid.style.display = 'none';
       placeholder.style.display = 'block';
       placeholder.innerHTML = section === 'stats'
-        ? `<div class="section-label">Statistiques de la saison</div>${renderSeasonStatsHTML()}`
-        : `<div class="section-label">Bilan de la saison</div>${renderSeasonTrophiesHTML()}`;
+        ? `<div class="section-label">${tt('Statistiques de la saison','Season statistics')}</div>${renderSeasonStatsHTML()}`
+        : `<div class="section-label">${tt('Bilan de la saison','Season summary')}</div>${renderSeasonTrophiesHTML()}`;
     } else {
       grid.style.display = '';
       placeholder.style.display = 'none';
