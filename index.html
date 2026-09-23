@@ -12034,6 +12034,13 @@ function checkBalancedProfile(){
   if(min > 0 && min/max >= 0.6) unlockAchievement('imprevisible');
 }
 
+// Classification par clé (et non par libellé traduit) du style d'une
+// option de décision en direct, pour le profil de coach "Imprévisible" -
+// voir chooseLiveDecision(). Une clé absente des deux ensembles est
+// considérée comme "balanced" par défaut.
+const DECISION_STYLE_AGGRESSIVE = new Set(['attack','push','allin','allup','goforit','intensify','press','accelerate','exploit','assume','counter','risk','offensive','direct','quick','crosses','longshots','free','in','insist','second','long']);
+const DECISION_STYLE_DEFENSIVE = new Set(['defend','secure','safe','shutdown','close','calm','treat','cover','reduce','patience','wait','stay','keep','manage','tempo','recenter','reposition','reinforce','slow','short','build','defensive','rebalance','remobilize']);
+
 function chooseLiveDecision(key){
   const lm = state.liveMatch;
   if(!lm || !lm.pendingDecision) return;
@@ -12053,11 +12060,13 @@ function chooseLiveDecision(key){
   if(positive) bumpTieredCounter('positiveImpactDecisions');
 
   // Profil de coach (Imprévisible) : classement grossier du style de la
-  // décision d'après le libellé choisi, pour repérer un usage équilibré
-  // des trois grandes familles de choix sur la durée.
-  const lbl = (opt && opt.label || '').toLowerCase();
-  const profileKey = /attaqu|press|risqu|tout pour|laisser|intensifi/.test(lbl) ? 'aggressive'
-    : /défend|tenir|calmer|prudent|gérer|remplacer|soigner/.test(lbl) ? 'defensive'
+  // décision d'après la clé de l'option choisie (indépendante de la langue -
+  // le libellé affiché passe par tt() et n'est donc plus fiable à parser
+  // une fois le jeu en anglais), pour repérer un usage équilibré des trois
+  // grandes familles de choix sur la durée.
+  const optKey = (opt && opt.key) || '';
+  const profileKey = DECISION_STYLE_AGGRESSIVE.has(optKey) ? 'aggressive'
+    : DECISION_STYLE_DEFENSIVE.has(optKey) ? 'defensive'
     : 'balanced';
   state.careerStats.profile = state.careerStats.profile || { aggressive:0, defensive:0, balanced:0 };
   state.careerStats.profile[profileKey]++;
