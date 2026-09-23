@@ -580,7 +580,7 @@ button{ font-family:inherit; cursor:pointer; }
   transition:border-color .3s ease, color .2s ease;
 }
 .lang-menu-btn:hover{ border-color:var(--club-accent); color:var(--text); }
-.lang-menu-globe{ font-size:15px; line-height:1; }
+.lang-menu-globe{ display:inline-flex; flex-shrink:0; }
 .lang-menu-current-flag{ font-size:14px; line-height:1; }
 .lang-menu-caret{ font-size:9px; color:var(--text-faint); transition:transform .2s ease; }
 .lang-menu.open .lang-menu-caret{ transform:rotate(180deg); }
@@ -3862,7 +3862,7 @@ select.modal-input option{ color:#111; background:#fff; }
     <div class="gm-header-actions">
       <div class="lang-menu" id="lang-menu">
         <button type="button" class="lang-menu-btn" id="btn-lang-menu-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Français / English">
-          <span class="lang-menu-globe" aria-hidden="true">&#127760;</span>
+          <span class="lang-menu-globe" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span>
           <span class="lang-menu-current-flag" id="lang-menu-current-flag" aria-hidden="true">&#127467;&#127479;</span>
           <span class="lang-menu-caret" aria-hidden="true">&#9662;</span>
         </button>
