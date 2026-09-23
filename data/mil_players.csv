@@ -6,7 +6,7 @@ AC Milan,2004-2005,3,Paolo Maldini,,Italy,DG|DC,92
 AC Milan,2004-2005,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,92
 AC Milan,2004-2005,20,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,90
 AC Milan,2004-2005,9,Filippo Inzaghi,,Italy,BU,90
-AC Milan,2004-2005,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD|MDD,90
+AC Milan,2004-2005,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD,90
 AC Milan,2004-2005,1,Nelson de Jesus Silva,Dida,Brazil,G,90
 AC Milan,2004-2005,21,Andrea Pirlo,,Italy,MDC|MC|MOC,89
 AC Milan,2004-2005,8,Gennaro Gattuso,,Italy,MDC|MC|MD,89
@@ -15,7 +15,7 @@ AC Milan,2004-2005,10,Manuel César Rui Costa,Rui Costa,Portugal,MOC|MC,89
 AC Milan,2004-2005,15,Jon Dahl Tomasson,,Denmark,BU,87
 AC Milan,2004-2005,17,Christian Abbiati,,Italy,G,83
 AC Milan,2004-2005,23,Massimo Ambrosini,,Italy,MDC|MC,82
-AC Milan,2004-2005,4,Kakhaber Kaladze,,Georgia,DG|DC|MDG,81
+AC Milan,2004-2005,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,81
 AC Milan,2004-2005,5,Alessandro Costacurta,,Italy,DC,80
 AC Milan,2004-2005,26,Giuseppe Pancaro,,Italy,DD,80
 AC Milan,2004-2005,24,Vikash Dhorasoo,,France,MOC|MC,79
@@ -35,11 +35,11 @@ AC Milan,2005-2006,32,Christian Vieri,,Italy,BU,89
 AC Milan,2005-2006,10,Manuel César Rui Costa,Rui Costa,Portugal,MOC|MC,89
 AC Milan,2005-2006,11,Alberto Gilardino,,Italy,BU,87
 AC Milan,2005-2006,8,Gennaro Gattuso,,Italy,MDC|MC|MD,87
-AC Milan,2005-2006,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD|MDD,87
+AC Milan,2005-2006,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD,87
 AC Milan,2005-2006,21,Andrea Pirlo,,Italy,MDC|MC|MOC,86
-AC Milan,2005-2006,29,Marek Jankulovski,,Czechia,DG|MG|MDG|AG,84
+AC Milan,2005-2006,29,Marek Jankulovski,,Czechia,DG|MG|AG,84
 AC Milan,2005-2006,23,Massimo Ambrosini,,Italy,MDC|MC,82
-AC Milan,2005-2006,4,Kakhaber Kaladze,,Georgia,DG|DC|MDG,81
+AC Milan,2005-2006,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,81
 AC Milan,2005-2006,5,Alessandro Costacurta,,Italy,DC,80
 AC Milan,2005-2006,14,Dario Šimić,,Croatia,DD|DC,77
 AC Milan,2005-2006,27,Sérgio Cláudio dos Santos,Serginho,Brazil,MG,72
@@ -49,14 +49,14 @@ AC Milan,2006-2007,1,Nelson de Jesus Silva,Dida,Brazil,G,88
 AC Milan,2006-2007,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,87
 AC Milan,2006-2007,21,Andrea Pirlo,,Italy,MDC|MC|MOC,86
 AC Milan,2006-2007,11,Alberto Gilardino,,Italy,BU,85
-AC Milan,2006-2007,4,Kakhaber Kaladze,,Georgia,DG|DC|MDG,85
+AC Milan,2006-2007,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,85
 AC Milan,2006-2007,25,Daniele Bonera,,Italy,DC|DD,83
-AC Milan,2006-2007,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD|MDD,83
+AC Milan,2006-2007,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD,83
 AC Milan,2006-2007,3,Paolo Maldini,,Italy,DG|DC,82
 AC Milan,2006-2007,9,Filippo Inzaghi,,Italy,BU,81
 AC Milan,2006-2007,8,Gennaro Gattuso,,Italy,MDC|MC|MD,81
 AC Milan,2006-2007,27,Sérgio Cláudio dos Santos,Serginho,Brazil,MG,81
-AC Milan,2006-2007,18,Marek Jankulovski,,Czechia,DG|MG|MDG|AG,80
+AC Milan,2006-2007,18,Marek Jankulovski,,Czechia,DG|MG|AG,80
 AC Milan,2006-2007,20,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,79
 AC Milan,2006-2007,23,Massimo Ambrosini,,Italy,MDC|MC,79
 AC Milan,2006-2007,5,Alessandro Costacurta,,Italy,DC,77
@@ -69,10 +69,10 @@ AC Milan,2007-2008,13,Alessandro Nesta,,Italy,DC,90
 AC Milan,2007-2008,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,90
 AC Milan,2007-2008,21,Andrea Pirlo,,Italy,MDC|MC|MOC,88
 AC Milan,2007-2008,11,Alberto Gilardino,,Italy,BU,85
-AC Milan,2007-2008,4,Kakhaber Kaladze,,Georgia,DG|DC|MDG,85
+AC Milan,2007-2008,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,85
 AC Milan,2007-2008,99,Ronaldo Luís Nazário de Lima,Ronaldo,Brazil,BU,84
 AC Milan,2007-2008,25,Daniele Bonera,,Italy,DC|DD,83
-AC Milan,2007-2008,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD|MDD,83
+AC Milan,2007-2008,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD,83
 AC Milan,2007-2008,1,Nelson de Jesus Silva,Dida,Brazil,G,83
 AC Milan,2007-2008,3,Paolo Maldini,,Italy,DG|DC,82
 AC Milan,2007-2008,38,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,81
@@ -80,24 +80,24 @@ AC Milan,2007-2008,5,Emerson Ferreira da Rosa,Emerson,Brazil,MDC|MC,81
 AC Milan,2007-2008,9,Filippo Inzaghi,,Italy,BU,81
 AC Milan,2007-2008,8,Gennaro Gattuso,,Italy,MDC|MC|MD,81
 AC Milan,2007-2008,27,Sérgio Cláudio dos Santos,Serginho,Brazil,MG,81
-AC Milan,2007-2008,18,Marek Jankulovski,,Czechia,DG|MG|MDG|AG,80
+AC Milan,2007-2008,18,Marek Jankulovski,,Czechia,DG|MG|AG,80
 AC Milan,2007-2008,10,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,79
 AC Milan,2007-2008,23,Massimo Ambrosini,,Italy,MDC|MC,79
-AC Milan,2007-2008,44,Massimo Oddo,,Italy,DD|MDD|DC|MD,79
+AC Milan,2007-2008,44,Massimo Oddo,,Italy,DD|MD|DC,79
 AC Milan,2007-2008,19,Giuseppe Favalli,,Italy,DG|DC,73
 AC Milan,2008-2009,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,90
 AC Milan,2008-2009,21,Andrea Pirlo,,Italy,MDC|MC|MOC,87
 AC Milan,2008-2009,10,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,83
-AC Milan,2008-2009,15,Gianluca Zambrotta,,Italy,DD|DG|MD|MG|MDD|MDG,83
+AC Milan,2008-2009,15,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,83
 AC Milan,2008-2009,23,Massimo Ambrosini,,Italy,MDC|MC,83
 AC Milan,2008-2009,8,Gennaro Gattuso,,Italy,MDC|MC|MD,82
 AC Milan,2008-2009,84,Mathieu Flamini,,France,MDC|MC,82
-AC Milan,2008-2009,4,Kakhaber Kaladze,,Georgia,DG|DC|MDG,81
+AC Milan,2008-2009,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,81
 AC Milan,2008-2009,76,Andriy Shevchenko,,Ukraine,BU|AG|AD,80
 AC Milan,2008-2009,25,Daniele Bonera,,Italy,DC|DD,80
 AC Milan,2008-2009,9,Filippo Inzaghi,,Italy,BU,80
 AC Milan,2008-2009,11,Marco Borriello,,Italy,BU,80
-AC Milan,2008-2009,18,Marek Jankulovski,,Czechia,DG|MG|MDG|AG,80
+AC Milan,2008-2009,18,Marek Jankulovski,,Czechia,DG|MG|AG,80
 AC Milan,2008-2009,7,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,79
 AC Milan,2008-2009,12,Christian Abbiati,,Italy,G,79
 AC Milan,2008-2009,5,Emerson Ferreira da Rosa,Emerson,Brazil,MDC|MC,77
@@ -114,19 +114,19 @@ AC Milan,2009-2010,12,Christian Abbiati,,Italy,G,82
 AC Milan,2009-2010,11,Klaas-Jan Huntelaar,,Netherlands,BU,82
 AC Milan,2009-2010,23,Massimo Ambrosini,,Italy,MDC|MC,82
 AC Milan,2009-2010,10,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,81
-AC Milan,2009-2010,15,Gianluca Zambrotta,,Italy,DD|DG|MD|MG|MDD|MDG,81
+AC Milan,2009-2010,15,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,81
 AC Milan,2009-2010,25,Daniele Bonera,,Italy,DC|DD,80
 AC Milan,2009-2010,22,Marco Borriello,,Italy,BU,80
 AC Milan,2009-2010,16,Mathieu Flamini,,France,MDC|MC,79
 AC Milan,2009-2010,33,Thiago Emiliano da Silva,Thiago Silva,Brazil,DC,79
 AC Milan,2009-2010,9,Filippo Inzaghi,,Italy,BU,78
-AC Milan,2009-2010,4,Kakhaber Kaladze,,Georgia,DG|DC|MDG,77
-AC Milan,2009-2010,18,Marek Jankulovski,,Czechia,DG|MG|MDG|AG,77
+AC Milan,2009-2010,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,77
+AC Milan,2009-2010,18,Marek Jankulovski,,Czechia,DG|MG|AG,77
 AC Milan,2009-2010,5,Oguchi Onyewu,,United States,DC,77
 AC Milan,2009-2010,19,Giuseppe Favalli,,Italy,DG|DC,76
 AC Milan,2009-2010,20,Ignazio Abate,,Italy,DD|MD,76
 AC Milan,2009-2010,1,Nelson de Jesus Silva,Dida,Brazil,G,74
-AC Milan,2009-2010,77,Luca Antonini,,Italy,DG|MDG|DC|DD|MOC,73
+AC Milan,2009-2010,77,Luca Antonini,,Italy,DG|MG|DC|DD|MOC,73
 AC Milan,2010-2011,11,Zlatan Ibrahimović,,Sweden,BU,85
 AC Milan,2010-2011,13,Alessandro Nesta,,Italy,DC,84
 AC Milan,2010-2011,7,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,83
@@ -140,16 +140,16 @@ AC Milan,2010-2011,32,Christian Abbiati,,Italy,G,79
 AC Milan,2010-2011,16,Mathieu Flamini,,France,MDC|MC,79
 AC Milan,2010-2011,25,Daniele Bonera,,Italy,DC|DD,78
 AC Milan,2010-2011,27,Kevin-Prince Boateng,,Ghana,MC|MOC|MDC|BU,78
-AC Milan,2010-2011,77,Luca Antonini,,Italy,DG|MDG|DC|DD|MOC,77
+AC Milan,2010-2011,77,Luca Antonini,,Italy,DG|MG|DC|DD|MOC,77
 AC Milan,2010-2011,1,Marco Amelia,,Italy,G,77
 AC Milan,2010-2011,76,Mario Alberto Yepes Díaz,Mario Yepes,Colombia,DC,77
 AC Milan,2010-2011,8,Gennaro Gattuso,,Italy,MDC|MC|MD,76
-AC Milan,2010-2011,19,Gianluca Zambrotta,,Italy,DD|DG|MD|MG|MDD|MDG,76
+AC Milan,2010-2011,19,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,76
 AC Milan,2010-2011,20,Ignazio Abate,,Italy,DD|MD,76
 AC Milan,2010-2011,9,Filippo Inzaghi,,Italy,BU,75
 AC Milan,2010-2011,5,Oguchi Onyewu,,United States,DC,75
-AC Milan,2010-2011,18,Marek Jankulovski,,Czechia,DG|MG|MDG|AG,74
-AC Milan,2010-2011,17,Massimo Oddo,,Italy,DD|MDD|DC|MD,73
+AC Milan,2010-2011,18,Marek Jankulovski,,Czechia,DG|MG|AG,74
+AC Milan,2010-2011,17,Massimo Oddo,,Italy,DD|MD|DC,73
 AC Milan,2011-2012,11,Zlatan Ibrahimović,,Sweden,BU,88
 AC Milan,2011-2012,33,Thiago Emiliano da Silva,Thiago Silva,Brazil,DC,87
 AC Milan,2011-2012,13,Alessandro Nesta,,Italy,DC,84
@@ -167,13 +167,13 @@ AC Milan,2011-2012,23,Massimo Ambrosini,,Italy,MDC|MC,79
 AC Milan,2011-2012,21,Maxi López,,Argentina,BU,78
 AC Milan,2011-2012,25,Daniele Bonera,,Italy,DC|DD,77
 AC Milan,2011-2012,8,Gennaro Gattuso,,Italy,MDC|MC|MD,77
-AC Milan,2011-2012,77,Luca Antonini,,Italy,DG|MDG|DC|DD|MOC,77
+AC Milan,2011-2012,77,Luca Antonini,,Italy,DG|MG|DC|DD|MOC,77
 AC Milan,2011-2012,1,Marco Amelia,,Italy,G,77
 AC Milan,2011-2012,76,Mario Alberto Yepes Díaz,Mario Yepes,Colombia,DC,77
 AC Milan,2011-2012,16,Mathieu Flamini,,France,MDC|MC,77
 AC Milan,2011-2012,14,Sulley Muntari,,Ghana,MDC|MC|MD|MG,77
-AC Milan,2011-2012,2,Taye Taiwo,,Nigeria,DG|MDG,77
-AC Milan,2011-2012,19,Gianluca Zambrotta,,Italy,DD|DG|MD|MG|MDD|MDG,76
+AC Milan,2011-2012,2,Taye Taiwo,,Nigeria,DG|MG,77
+AC Milan,2011-2012,19,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,76
 AC Milan,2011-2012,92,Stephan El Shaarawy,,Italy,AG|AD|BU|MG|MOC,75
 AC Milan,2011-2012,9,Filippo Inzaghi,,Italy,BU,73
 AC Milan,2012-2013,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,85
@@ -378,7 +378,7 @@ AC Milan,2020-2021,22,Mateo Musacchio,,Argentina,DC,77
 AC Milan,2020-2021,7,Samuel Castillejo Azuaga,Samu Castillejo,Spain,AD|MD,77
 AC Milan,2020-2021,8,Sandro Tonali,,Italy,MDC|MC,77
 AC Milan,2020-2021,56,Alexis Saelemaekers,,Belgium,AD|MD|DD,76
-AC Milan,2020-2021,20,José Diogo Dalot Teixeira,Diogo Dalot,Portugal,DD|MDD|DG,76
+AC Milan,2020-2021,20,José Diogo Dalot Teixeira,Diogo Dalot,Portugal,DD|MD|DG,76
 AC Milan,2020-2021,17,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,76
 AC Milan,2020-2021,38,Ricardo Rodríguez,,Switzerland,DG|DC,76
 AC Milan,2020-2021,33,Rade Krunić,,Bosnia and Herzegovina,MDC|MC|MOC,74
@@ -486,7 +486,7 @@ AC Milan,2025-2026,56,Alexis Saelemaekers,,Belgium,AD|MD|DD,77
 AC Milan,2025-2026,46,Matteo Gabbia,,Italy,DC,77
 AC Milan,2025-2026,4,Samuele Ricci,,Italy,MDC|MC,77
 AC Milan,2025-2026,30,Ardon Jashari,,Switzerland,MC|MDC,76
-AC Milan,2025-2026,5,Koni De Winter,,Belgium,DC|MDD,76
+AC Milan,2025-2026,5,Koni De Winter,,Belgium,DC|MD,76
 AC Milan,2025-2026,7,Santiago Giménez,,Mexico,BU,76
 AC Milan,2025-2026,31,Strahinja Pavlović,,Serbia,DC,76
 AC Milan,2025-2026,1,Pietro Terracciano,,Italy,G,74

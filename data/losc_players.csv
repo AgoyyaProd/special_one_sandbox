@@ -26,9 +26,9 @@ Lille,2007-2008,33,Elong Henri Ewane,,Cameroun,MDC,46
 Lille,2007-2008,4,Jeremy Taravel,,France,DC,46
 Lille,2008-2009,8,Michel Bastos,,Bresil,MG|DG|AG,80
 Lille,2008-2009,20,Gregory Tafforeau,,France,DG|MG|DC,78
-Lille,2008-2009,4,Florent Balmont,,France,MDC|MC|MDD,76
+Lille,2008-2009,4,Florent Balmont,,France,MDC|MC|MD,76
 Lille,2008-2009,10,Ludovic Obraniak,,France,MG|AD|MOC|AG|MD,76
-Lille,2008-2009,24,Rio Mavuba,,France,MDG|MC|MDC|MDD,76
+Lille,2008-2009,24,Rio Mavuba,,France,MG|MC|MDC|MD,76
 Lille,2008-2009,2,Mathieu Debuchy,,France,DD|AD|MC|MD,76
 Lille,2008-2009,23,Adil Rami,,France,DC,75
 Lille,2008-2009,17,Robert Vittek,,Slovaquie,AD|BU|AG,74
@@ -126,8 +126,8 @@ Lille,2009-2010,10,Ludovic Obraniak,,Pologne,MG|AD|MOC|AG|MD,77
 Lille,2009-2010,7,Yohan Cabaye,,France,MC|MDC|MOC,77
 Lille,2009-2010,27,Gervinho,Gervinho,Cote d'Ivoire,AD|AG|BU,77
 Lille,2009-2010,26,Eden Hazard,,Belgique,AG|MOC|MG|AD,77
-Lille,2009-2010,24,Rio Mavuba,,France,MDG|MC|MDC|MDD,76
-Lille,2009-2010,4,Florent Balmont,,France,MDC|MC|MDD,75
+Lille,2009-2010,24,Rio Mavuba,,France,MG|MC|MDC|MD,76
+Lille,2009-2010,4,Florent Balmont,,France,MDC|MC|MD,75
 Lille,2009-2010,14,Robert Vittek,,Slovaquie,AD|BU|AG,75
 Lille,2009-2010,9,Tulio de Melo,,Bresil,BU,74
 Lille,2009-2010,2,Mathieu Debuchy,,France,DD|AD|MC|MD,74
@@ -156,8 +156,8 @@ Lille,2010-2011,1,Mickael Landreau,,France,G,79
 Lille,2010-2011,23,Adil Rami,,France,DC,79
 Lille,2010-2011,10,Ludovic Obraniak,,Pologne,MG|AD|MOC|AG|MD,78
 Lille,2010-2011,7,Yohan Cabaye,,France,MC|MDC|MOC,78
-Lille,2010-2011,24,Rio Mavuba,,France,MDG|MC|MDC|MDD,77
-Lille,2010-2011,4,Florent Balmont,,France,MDC|MC|MDD,75
+Lille,2010-2011,24,Rio Mavuba,,France,MG|MC|MDC|MD,77
+Lille,2010-2011,4,Florent Balmont,,France,MDC|MC|MD,75
 Lille,2010-2011,9,Tulio de Melo,,Bresil,BU,75
 Lille,2010-2011,22,Aurelien Chedjou,,Cameroun,DC|MDC|DD,75
 Lille,2010-2011,18,Franck Beria,,France,DG|DC|MD|DD,74
@@ -183,9 +183,9 @@ Lille,2010-2011,33,Lucas Digne,,France,DG|DD|MG,44
 Lille,2011-2012,10,Eden Hazard,,Belgique,AG|MOC|MG|AD,85
 Lille,2011-2012,8,Moussa Sow,,France,BU,83
 Lille,2011-2012,26,Joe Cole,,Angleterre,AD|AG|MOC|MG|MD,81
-Lille,2011-2012,24,Rio Mavuba,,France,MDG|MC|MDC|MDD,81
+Lille,2011-2012,24,Rio Mavuba,,France,MG|MC|MDC|MD,81
 Lille,2011-2012,1,Mickael Landreau,,France,G,80
-Lille,2011-2012,4,Florent Balmont,,France,MDC|MC|MDD,79
+Lille,2011-2012,4,Florent Balmont,,France,MDC|MC|MD,79
 Lille,2011-2012,7,Dimitri Payet,,France,AG|MOC|AD|MG|MD,79
 Lille,2011-2012,22,Aurelien Chedjou,,Cameroun,DC|MDC|DD,79
 Lille,2011-2012,2,Mathieu Debuchy,,France,DD|AD|MC|MD,78
@@ -207,10 +207,10 @@ Lille,2011-2012,19,Gianni Bruno,,Belgique,BU,60
 Lille,2011-2012,6,Pape N'Diaye Souare,,Senegal,DG,60
 Lille,2011-2012,3,Lucas Digne,,France,DG|DD|MG,60
 Lille,2012-2013,1,Mickael Landreau,,France,G,82
-Lille,2012-2013,24,Rio Mavuba,,France,MDG|MC|MDC|MDD,82
+Lille,2012-2013,24,Rio Mavuba,,France,MG|MC|MDC|MD,82
 Lille,2012-2013,22,Aurelien Chedjou,,Cameroun,DC|MDC|DD,82
 Lille,2012-2013,7,Dimitri Payet,,France,AG|MOC|AD|MG|MD,81
-Lille,2012-2013,4,Florent Balmont,,France,MDC|MC|MDD,78
+Lille,2012-2013,4,Florent Balmont,,France,MDC|MC|MD,78
 Lille,2012-2013,8,Salomon Kalou,,Cote d'Ivoire,AD|AG|BU|MOC,78
 Lille,2012-2013,2,Mathieu Debuchy,,France,DD|AD|MC|MD,78
 Lille,2012-2013,25,Marko Basa,,Montenegro,DC,77
@@ -229,13 +229,13 @@ Lille,2012-2013,15,Djibril Sidibe,,France,DG|DD|MD|DC,67
 Lille,2012-2013,28,Viktor Klonaridis,,Belgique,MG,67
 Lille,2012-2013,33,Divock Origi,,Belgique,BU|MOC|AG,61
 Lille,2012-2013,13,Adama Soumaoro,,France,DC|DD,59
-Lille,2013-2014,24,Rio Mavuba,,France,MDG|MC|MDC|MDD,81
+Lille,2013-2014,24,Rio Mavuba,,France,MG|MC|MDC|MD,81
 Lille,2013-2014,1,Vincent Enyeama,,Nigeria,G,79
 Lille,2013-2014,14,Simon Kjaer,,Danemark,DC,79
 Lille,2013-2014,25,Marko Basa,,Montenegro,DC,79
 Lille,2013-2014,8,Salomon Kalou,,Cote d'Ivoire,AD|AG|BU|MOC,78
 Lille,2013-2014,17,Florian Thauvin,,France,MD|AD,77
-Lille,2013-2014,4,Florent Balmont,,France,MDC|MC|MDD,76
+Lille,2013-2014,4,Florent Balmont,,France,MDC|MC|MD,76
 Lille,2013-2014,5,Idrissa Gana Gueye,,Senegal,MC|MDC,76
 Lille,2013-2014,26,Nolan Roux,,France,BU|AD|AG|MOC,75
 Lille,2013-2014,10,Marvin Martin,,France,MOC|MC|MD|MDC,75
@@ -254,11 +254,11 @@ Lille,2013-2014,30,Barel Mouko,,Congo,G,66
 Lille,2013-2014,13,Adama Soumaoro,,France,DC|DD,61
 Lille,2013-2014,7,John Jairo Ruiz,,Costa Rica,BU,61
 Lille,2014-2015,1,Vincent Enyeama,,Nigeria,G,81
-Lille,2014-2015,24,Rio Mavuba,,France,MDG|MC|MDC|MDD,79
+Lille,2014-2015,24,Rio Mavuba,,France,MG|MC|MDC|MD,79
 Lille,2014-2015,14,Simon Kjaer,,Danemark,DC,79
 Lille,2014-2015,25,Marko Basa,,Montenegro,DC,79
 Lille,2014-2015,8,Salomon Kalou,,Cote d'Ivoire,AD|AG|BU|MOC,78
-Lille,2014-2015,4,Florent Balmont,,France,MDC|MC|MDD,76
+Lille,2014-2015,4,Florent Balmont,,France,MDC|MC|MD,76
 Lille,2014-2015,5,Idrissa Gana Gueye,,Senegal,MC|MDC,76
 Lille,2014-2015,2,Sebastien Corchia,,France,DD|MD|DG,75
 Lille,2014-2015,27,Divock Origi,,Belgique,BU|MOC|AG,75
@@ -283,11 +283,11 @@ Lille,2014-2015,13,Adama Soumaoro,,France,DC|DD,61
 Lille,2014-2015,34,Benjamin Pavard,,France,DD,59
 Lille,2015-2016,1,Vincent Enyeama,,Nigeria,G,81
 Lille,2015-2016,25,Marko Basa,,Montenegro,DC,80
-Lille,2015-2016,24,Rio Mavuba,,France,MDG|MC|MDC|MDD,79
+Lille,2015-2016,24,Rio Mavuba,,France,MG|MC|MDC|MD,79
 Lille,2015-2016,7,Sofiane Boufal,,Maroc,AG|MOC|AD|MG,78
 Lille,2015-2016,5,Renato Civelli,,Argentine,DC,76
 Lille,2015-2016,2,Sebastien Corchia,,France,DD|MD|DG,76
-Lille,2015-2016,4,Florent Balmont,,France,MDC|MC|MDD,75
+Lille,2015-2016,4,Florent Balmont,,France,MDC|MC|MD,75
 Lille,2015-2016,39,Eder,Eder,Portugal,BU,75
 Lille,2015-2016,11,Eric Bautheac,,France,MG|AG|AD|MOC|MD,75
 Lille,2015-2016,19,Djibril Sidibe,,France,DG|DD|MD|DC,75
@@ -305,7 +305,7 @@ Lille,2015-2016,26,Junior Tallo,,Cote d'Ivoire,BU,70
 Lille,2015-2016,17,Soualiho Meite,,France,MDC,70
 Lille,2015-2016,9,Yassine Benzia,,Algerie,MOC|BU|AG|AD|MG,69
 Lille,2015-2016,23,Adama Soumaoro,,France,DC|DD,68
-Lille,2015-2016,6,Ibrahim Amadou,,Cameroun,MDC|MDG|DG,68
+Lille,2015-2016,6,Ibrahim Amadou,,Cameroun,MDC|MG|DG,68
 Lille,2015-2016,27,Baptiste Guillaume,,Belgique,BU,68
 Lille,2015-2016,29,Michael Frey,,Suisse,BU,67
 Lille,2015-2016,12,Sehrou Guirassy,,France,BU,67
@@ -321,7 +321,7 @@ Lille,2016-2017,8,Mounir Obbadi,,Maroc,MC|MDC,76
 Lille,2016-2017,4,Younousse Sankhare,,Senegal,MC|MDC|MOC,76
 Lille,2016-2017,9,Yassine Benzia,,Algerie,MOC|BU|AG|AD|MG,76
 Lille,2016-2017,17,Marcos Lopes,,Portugal,MD|MOC|MC|AD|MG,76
-Lille,2016-2017,24,Rio Mavuba,,France,MDG|MC|MDC|MDD,75
+Lille,2016-2017,24,Rio Mavuba,,France,MG|MC|MDC|MD,75
 Lille,2016-2017,5,Renato Civelli,,Argentine,DC,75
 Lille,2016-2017,11,Eric Bautheac,,France,MG|AG|AD|MOC|MD,75
 Lille,2016-2017,10,Ricardo Kishna,,Pays-Bas,AG|AD|MG,75
@@ -331,14 +331,14 @@ Lille,2016-2017,7,Anwar El Ghazi,,Pays-Bas,AD|AG,74
 Lille,2016-2017,18,Franck Beria,,France,DG|DC|MD|DD,73
 Lille,2016-2017,23,Adama Soumaoro,,France,DC|DD,73
 Lille,2016-2017,27,Naim Sliti,,Tunisie,MG,73
-Lille,2016-2017,6,Ibrahim Amadou,,Cameroun,MDC|MDG|DG,73
+Lille,2016-2017,6,Ibrahim Amadou,,Cameroun,MDC|MG|DG,73
 Lille,2016-2017,13,Stoppila Sunzu,,Zambie,DC,72
 Lille,2016-2017,20,Ryan Mendes,,Cap-Vert,AG|MD,72
 Lille,2016-2017,28,Benjamin Pavard,,France,DD,71
 Lille,2016-2017,26,Fares Bahlouli,,France,MOC,70
 Lille,2016-2017,22,Junior Alonso,,Paraguay,DC,69
 Lille,2016-2017,14,Junior Tallo,,Cote d'Ivoire,BU,68
-Lille,2016-2017,21,Yves Bissouma,,Mali,MDD|MC,68
+Lille,2016-2017,21,Yves Bissouma,,Mali,MD|MC,68
 Lille,2016-2017,16,Mike Maignan,,France,G,67
 Lille,2016-2017,4,Gabriel Magalhaes,,Bresil,DC,67
 Lille,2017-2018,40,Vincent Enyeama,,Nigeria,G,78
@@ -346,8 +346,8 @@ Lille,2017-2018,35,Marko Basa,,Montenegro,DC,77
 Lille,2017-2018,12,Nicolas De Preville,,France,MG|BU|AG|AD|MOC,77
 Lille,2017-2018,36,Eder Macedo Lopes,,Portugal,BU,76
 Lille,2017-2018,10,Yassine Benzia,,Algerie,MOC|BU|AG|AD|MG,76
-Lille,2017-2018,6,Ibrahim Amadou,,Cameroun,MDC|MDG|DG,76
-Lille,2017-2018,23,Thiago Mendes,,Bresil,MDD|MDG|MC|MDC,76
+Lille,2017-2018,6,Ibrahim Amadou,,Cameroun,MDC|MG|DG,76
+Lille,2017-2018,23,Thiago Mendes,,Bresil,MD|MG|MC|MDC,76
 Lille,2017-2018,2,Kevin Malcuit,,France,DD|MD|DG,75
 Lille,2017-2018,16,Mike Maignan,,France,G,75
 Lille,2017-2018,20,Thiago Maia,,Bresil,MDC|MC,75
@@ -362,16 +362,16 @@ Lille,2017-2018,8,Xeka,Xeka,Portugal,MDC|MC,73
 Lille,2017-2018,38,Julian Palmieri,,France,DG,72
 Lille,2017-2018,40,Junior Tallo,,Cote d'Ivoire,BU,72
 Lille,2017-2018,9,Ezequiel Ponce,,Argentine,BU,72
-Lille,2017-2018,21,Yves Bissouma,,Mali,MDD|MC,72
+Lille,2017-2018,21,Yves Bissouma,,Mali,MD|MC,72
 Lille,2017-2018,45,Martin Terrier,,France,AG,70
 Lille,2017-2018,18,Lebo Mothiba,,Afrique du Sud,BU,70
 Lille,2017-2018,39,Lenny Nangis,,France,MG|MD,69
 Lille,2017-2018,26,Fares Bahlouli,,France,MOC,69
 Lille,2017-2018,25,Fode Ballo-Toure,,France,DG,69
-Lille,2017-2018,24,Boubakary Soumare,,France,MC|MDG|MDC|MG,63
+Lille,2017-2018,24,Boubakary Soumare,,France,MC|MG|MDC,63
 Lille,2018-2019,19,Nicolas Pepe,,Cote d'Ivoire,MD|AD|AG|MG|BU,82
 Lille,2018-2019,6,Jose Fonte,,Portugal,DC|DD,80
-Lille,2018-2019,23,Thiago Mendes,,Bresil,MDD|MDG|MC|MDC,80
+Lille,2018-2019,23,Thiago Mendes,,Bresil,MD|MG|MC|MDC,80
 Lille,2018-2019,16,Mike Maignan,,France,G,79
 Lille,2018-2019,5,Adama Soumaoro,,France,DC|DD,78
 Lille,2018-2019,14,Jonathan Bamba,,France,MG|AG|AD|MD,78
@@ -394,9 +394,9 @@ Lille,2018-2019,25,Fode Ballo-Toure,,France,DG,72
 Lille,2018-2019,3,Youssouf Kone,,Mali,DG,71
 Lille,2018-2019,31,Fares Bahlouli,,France,MOC,69
 Lille,2018-2019,28,Reinildo Isnard Mandava,,Mozambique,DG|DC|MG,69
-Lille,2018-2019,24,Boubakary Soumare,,France,MC|MDG|MDC|MG,69
+Lille,2018-2019,24,Boubakary Soumare,,France,MC|MG|MDC,69
 Lille,2019-2020,16,Mike Maignan,,France,G,82
-Lille,2019-2020,21,Benjamin Andre,,France,MC|MDC|MDG|MD|MDD,80
+Lille,2019-2020,21,Benjamin Andre,,France,MC|MDC|MG|MD,80
 Lille,2019-2020,6,Jose Fonte,,Portugal,DC|DD,79
 Lille,2019-2020,20,Nicolas Gaitan,,Argentine,MOC|AG|MG|AD,79
 Lille,2019-2020,10,Jonathan Ikone,,France,MD|MOC|AD|AG|MG,79
@@ -410,7 +410,7 @@ Lille,2019-2020,12,Yusuf Yazici,,Turquie,BU|MOC|MG|MD|AG,77
 Lille,2019-2020,17,Zeki Celik,,Turquie,DD|MD,76
 Lille,2019-2020,11,Luiz Araujo,,Bresil,MG|MD|AD|AG,76
 Lille,2019-2020,8,Xeka,Xeka,Portugal,MDC|MC,76
-Lille,2019-2020,24,Boubakary Soumare,,France,MC|MDG|MDC|MG,75
+Lille,2019-2020,24,Boubakary Soumare,,France,MC|MG|MDC,75
 Lille,2019-2020,20,Thiago Maia,,Bresil,MDC|MC,74
 Lille,2019-2020,26,Jeremy Pied,,France,DD,73
 Lille,2019-2020,28,Reinildo Isnard Mandava,,Mozambique,DG|DC|MG,73
@@ -421,7 +421,7 @@ Lille,2019-2020,30,Lucas Chevalier,,France,G,61
 Lille,2020-2021,16,Mike Maignan,,France,G,83
 Lille,2020-2021,17,Burak Yilmaz,,Turquie,BU|AG,80
 Lille,2020-2021,6,Jose Fonte,,Portugal,DC|DD,80
-Lille,2020-2021,21,Benjamin Andre,,France,MC|MDC|MDG|MD|MDD,80
+Lille,2020-2021,21,Benjamin Andre,,France,MC|MDC|MG|MD,80
 Lille,2020-2021,7,Jonathan Bamba,,France,MG|AG|AD|MD,80
 Lille,2020-2021,2,Zeki Celik,,Turquie,DD|MD,79
 Lille,2020-2021,18,Renato Sanches,,Portugal,MC|MDC|MOC,79
@@ -429,7 +429,7 @@ Lille,2020-2021,7,Victor Osimhen,,Nigeria,BU|AD,79
 Lille,2020-2021,4,Gabriel Magalhaes,,Bresil,DC,79
 Lille,2020-2021,10,Jonathan Ikone,,France,MD|MOC|AD|AG|MG,79
 Lille,2020-2021,12,Yusuf Yazici,,Turquie,BU|MOC|MG|MD|AG,78
-Lille,2020-2021,24,Boubakary Soumare,,France,MC|MDG|MDC|MG,78
+Lille,2020-2021,24,Boubakary Soumare,,France,MC|MG|MDC,78
 Lille,2020-2021,28,Reinildo Isnard Mandava,,Mozambique,DG|DC|MG,77
 Lille,2020-2021,8,Xeka,Xeka,Portugal,MDC|MC,77
 Lille,2020-2021,9,Jonathan David,,Canada,BU|MOC,77
@@ -444,7 +444,7 @@ Lille,2020-2021,3,Tiago Djalo,,Portugal,DC,72
 Lille,2020-2021,19,Isaac Lihadji,,France,MD,67
 Lille,2020-2021,30,Lucas Chevalier,,France,G,62
 Lille,2021-2022,6,Jose Fonte,,Portugal,DC|DD,80
-Lille,2021-2022,21,Benjamin Andre,,France,MC|MDC|MDG|MD|MDD,80
+Lille,2021-2022,21,Benjamin Andre,,France,MC|MDC|MG|MD,80
 Lille,2021-2022,10,Renato Sanches,,Portugal,MC|MDC|MOC,80
 Lille,2021-2022,9,Jonathan David,,Canada,BU|MOC,79
 Lille,2021-2022,4,Sven Botman,,Pays-Bas,DC,79
@@ -479,11 +479,11 @@ Lille,2020-2021,1,Leonardo Cesar Jardim,,Bresil,G,72
 Lille,2020-2021,31,Kouadio-Yves Dabila,,Cote d'Ivoire,DC,67
 Lille,2022-2023,9,Jonathan David,,Canada,BU|MOC,81
 Lille,2022-2023,6,Jose Fonte,,Portugal,DC|DD,80
-Lille,2022-2023,21,Benjamin Andre,,France,MC|MDC|MDG|MD|MDD,79
+Lille,2022-2023,21,Benjamin Andre,,France,MC|MDC|MG|MD,79
 Lille,2022-2023,31,Ismaily,Ismaily,Bresil,DG|MG,79
 Lille,2022-2023,10,Remy Cabella,,France,MOC|MG|AG|AD|MD,78
 Lille,2022-2023,30,Lucas Chevalier,,France,G,77
-Lille,2022-2023,28,Andre Gomes,,Portugal,MDG|MC|MDC,76
+Lille,2022-2023,28,Andre Gomes,,Portugal,MG|MC|MDC,76
 Lille,2022-2023,7,Jonathan Bamba,,France,MG|AG|AD|MD,76
 Lille,2022-2023,18,Bafode Diakite,,France,DC|DD,75
 Lille,2022-2023,23,Edon Zhegrova,,Kosovo,MD|AG|AD|MG,74
@@ -504,10 +504,10 @@ Lille,2022-2023,13,Akim Zedadka,,Algerie,DD|MD,74
 Lille,2022-2023,11,Yusuf Yazici,,Turquie,BU|MOC|MG|MD|AG,74
 Lille,2022-2023,19,Isaac Lihadji,,France,MD,67
 Lille,2023-2024,9,Jonathan David,,Canada,BU|MOC,80
-Lille,2023-2024,21,Benjamin Andre,,France,MC|MDC|MDG|MD|MDD,79
+Lille,2023-2024,21,Benjamin Andre,,France,MC|MDC|MG|MD,79
 Lille,2023-2024,30,Lucas Chevalier,,France,G,79
 Lille,2023-2024,31,Ismaily,Ismaily,Bresil,DG|MG,78
-Lille,2023-2024,6,Nabil Bentaleb,,Algerie,MDD|MDC|MC|MOC,78
+Lille,2023-2024,6,Nabil Bentaleb,,Algerie,MD|MDC|MC|MOC,78
 Lille,2023-2024,23,Edon Zhegrova,,Kosovo,MD|AG|AD|MG,78
 Lille,2023-2024,15,Leny Yoro,,France,DC,77
 Lille,2023-2024,8,Angel Gomes,,Angleterre,MOC|MG|MC,76
@@ -527,33 +527,33 @@ Lille,2023-2024,14,Samuel Umtiti,,France,DC,77
 Lille,2023-2024,11,Adam Ounas,,Algerie,MD|AD|AG|MOC,73
 Lille,2024-2025,9,Jonathan David,,Canada,BU|MOC,82
 Lille,2024-2025,30,Lucas Chevalier,,France,G,82
-Lille,2024-2025,21,Benjamin Andre,,France,MC|MDC|MDG|MD|MDD,80
+Lille,2024-2025,21,Benjamin Andre,,France,MC|MDC|MG|MD,80
 Lille,2024-2025,18,Bafode Diakite,,France,DC|DD,78
 Lille,2024-2025,4,Alexsandro,Alexsandro,Bresil,DC|DG,78
 Lille,2024-2025,5,Gabriel Gudmundsson,,Suede,DG|MG,77
 Lille,2024-2025,7,Hakon Arnar Haraldsson,,Islande,MOC|MG|MD,77
 Lille,2024-2025,12,Thomas Meunier,,Belgique,DD|MD|DC,76
 Lille,2024-2025,24,Chuba Akpom,,Angleterre,AG|BU|AD|MOC,76
-Lille,2024-2025,26,Andre Gomes,,Portugal,MDG|MC|MDC,75
+Lille,2024-2025,26,Andre Gomes,,Portugal,MG|MC|MDC,75
 Lille,2024-2025,19,Matias Fernandez-Pardo,,Espagne,BU|MG|AG|AD,74
 Lille,2024-2025,31,Ismaily,Ismaily,Bresil,DG|MG,77
-Lille,2024-2025,6,Nabil Bentaleb,,Algerie,MDD|MDC|MC|MOC,77
+Lille,2024-2025,6,Nabil Bentaleb,,Algerie,MD|MDC|MC|MOC,77
 Lille,2024-2025,8,Angel Gomes,,Angleterre,MOC|MG|MC,76
 Lille,2024-2025,11,Osame Sahraoui,,Maroc,MG|AG|AD|MOC,76
 Lille,2024-2025,10,Remy Cabella,,France,MOC|MG|AG|AD|MD,75
 Lille,2024-2025,2,Aissa Mandi,,Algerie,DC,75
 Lille,2024-2025,20,Mitchel Bakker,,Pays-Bas,DG|MG,75
 Lille,2024-2025,17,Ngal'ayel Mukau,,RD Congo,MD|MDC,73
-Lille,2024-2025,32,Ayyoub Bouaddi,,France,MDG|MC,73
+Lille,2024-2025,32,Ayyoub Bouaddi,,France,MG|MC,73
 Lille,2024-2025,1,Vito Mannone,,Italie,G,72
 Lille,2024-2025,23,Edon Zhegrova,,Kosovo,MD|AG|AD|MG,80
 Lille,2024-2025,22,Tiago Santos,,Portugal,DD|MD,77
 Lille,2024-2025,14,Samuel Umtiti,,France,DC,74
 Lille,2024-2025,29,Ethan Mbappe,,France,MD|MC,68
-Lille,2025-2026,21,Benjamin Andre,,France,MC|MDC|MDG|MD|MDD,80
+Lille,2025-2026,21,Benjamin Andre,,France,MC|MDC|MG|MD,80
 Lille,2025-2026,1,Berke Ozer,,Turquie,G,78
 Lille,2025-2026,10,Hakon Arnar Haraldsson,,Islande,MOC|MG|MD,78
-Lille,2025-2026,32,Ayyoub Bouaddi,,Maroc,MDG|MC,78
+Lille,2025-2026,32,Ayyoub Bouaddi,,Maroc,MG|MC,78
 Lille,2025-2026,23,Aissa Mandi,,Algerie,DC,77
 Lille,2025-2026,12,Thomas Meunier,,Belgique,DD|MD|DC,77
 Lille,2025-2026,15,Romain Perraud,,France,DG|MG,76
@@ -563,7 +563,7 @@ Lille,2025-2026,3,Nathan Ngoy,,Belgique,DC,75
 Lille,2025-2026,17,Ngal'ayel Mukau,,RD Congo,MD|MDC,74
 Lille,2025-2026,4,Alexsandro,Alexsandro,Bresil,DC|DG,79
 Lille,2025-2026,9,Olivier Giroud,,France,BU,78
-Lille,2025-2026,6,Nabil Bentaleb,,Algerie,MDD|MDC|MC|MOC,77
+Lille,2025-2026,6,Nabil Bentaleb,,Algerie,MD|MDC|MC|MOC,77
 Lille,2025-2026,28,Gaetan Perrin,,France,MD|MOC|MG|AG,77
 Lille,2025-2026,18,Chancel Mbemba,,RD Congo,DC|DD|MDC,75
 Lille,2025-2026,22,Tiago Santos,,Portugal,DD|MD,75

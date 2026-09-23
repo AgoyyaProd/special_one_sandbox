@@ -199,7 +199,7 @@ Marseille,2013-2014,14,Foued Kadir,,Algerie,MOC|MD,73
 Marseille,2013-2014,11,Jordan Ayew,,Ghana,BU|AG,73
 Marseille,2013-2014,29,Saber Khalifa,,Tunisie,BU,73
 Marseille,2013-2014,15,Jeremy Morel,,France,DG,72
-Marseille,2013-2014,25,Giannelli Imbula,,France,MDG|MDC,72
+Marseille,2013-2014,25,Giannelli Imbula,,France,MG|MDC,72
 Marseille,2013-2014,26,Brice Dja Djedje,,Cote d'Ivoire,DD,72
 Marseille,2013-2014,21,Souleymane Diawara,,Senegal,DC|DD,71
 Marseille,2013-2014,23,Benjamin Mendy,,France,DG,70
@@ -223,7 +223,7 @@ Marseille,2014-2015,9,Andre-Pierre Gignac,,France,BU,81
 Marseille,2014-2015,17,Dimitri Payet,,France,MG|MOC|AG|AD,81
 Marseille,2014-2015,10,Andre Ayew,,Ghana,BU|MOC|AG|MG|MD,79
 Marseille,2014-2015,3,Nicolas Nkoulou,,Cameroun,DC,79
-Marseille,2014-2015,25,Giannelli Imbula,,France,MDG|MDC,77
+Marseille,2014-2015,25,Giannelli Imbula,,France,MG|MDC,77
 Marseille,2014-2015,14,Florian Thauvin,,France,MD|AD,77
 Marseille,2014-2015,11,Romain Alessandrini,,France,MG|MD,76
 Marseille,2014-2015,22,Michy Batshuayi,,Belgique,BU|AD,76
@@ -288,13 +288,13 @@ Marseille,2015-2016,18,Bill Tuiloma,,Nouvelle-Zelande,MDC|DC,60
 Marseille,2015-2016,36,Maxime Lopez,,France,MC|MD|MDC,59
 Marseille,2015-2016,38,Jeremie Porsan-Clemente,,France,BU,59
 Marseille,2015-2016,40,Florian Escales,,France,G,58
-Marseille,2015-2016,29,Andre Franck Zambo Anguissa,,Cameroun,MDD|MC,57
+Marseille,2015-2016,29,Andre Franck Zambo Anguissa,,Cameroun,MD|MC,57
 Marseille,2015-2016,35,Eirik Haugan,,Norvege,DC,56
 Marseille,2015-2016,37,Julien Dacosta,,France,DD,55
 Marseille,2016-2017,11,Dimitri Payet,,France,MG|MOC|AG|AD,85
 Marseille,2016-2017,21,Patrice Evra,,France,DG,82
 Marseille,2016-2017,26,Florian Thauvin,,France,MD|AD,81
-Marseille,2016-2017,8,Morgan Sanson,,France,MC|MDC|MDG,81
+Marseille,2016-2017,8,Morgan Sanson,,France,MC|MDC|MG,81
 Marseille,2016-2017,18,Bafetimbi Gomis,,France,BU,79
 Marseille,2016-2017,10,Lassana Diarra,,France,MDC,79
 Marseille,2016-2017,19,William Vainqueur,,France,MDC,79
@@ -313,7 +313,7 @@ Marseille,2016-2017,27,Maxime Lopez,,France,MC|MD|MDC,74
 Marseille,2016-2017,4,Karim Rekik,,Pays-Bas,DC,73
 Marseille,2016-2017,14,Clinton Njie,,Cameroun,BU,73
 Marseille,2016-2017,5,Abou Diaby,,France,MDC,72
-Marseille,2016-2017,29,Andre Franck Zambo Anguissa,,Cameroun,MDD|MC,71
+Marseille,2016-2017,29,Andre Franck Zambo Anguissa,,Cameroun,MD|MC,71
 Marseille,2016-2017,17,Bouna Sarr,,France,DD|MD,70
 Marseille,2016-2017,23,Zinedine Machach,,France,MC,70
 Marseille,2016-2017,24,Baptiste Aloe,,France,DC,67
@@ -336,7 +336,7 @@ Marseille,2017-2018,26,Florian Thauvin,,France,MD|AD,83
 Marseille,2017-2018,30,Steve Mandanda,,France,G,82
 Marseille,2017-2018,19,Luiz Gustavo,,Bresil,DC|MC|MDC,82
 Marseille,2017-2018,23,Adil Rami,,France,DC,81
-Marseille,2017-2018,8,Morgan Sanson,,France,MC|MDC|MDG,81
+Marseille,2017-2018,8,Morgan Sanson,,France,MC|MDC|MG,81
 Marseille,2017-2018,28,Valere Germain,,France,BU|AD,79
 Marseille,2017-2018,11,Konstantinos Mitroglou,,Grece,BU,78
 Marseille,2017-2018,7,Remy Cabella,,France,MOC,77
@@ -347,7 +347,7 @@ Marseille,2017-2018,5,Lucas Ocampos,,Argentine,AD|MD|MG,76
 Marseille,2017-2018,18,Jordan Amavi,,France,DG,76
 Marseille,2017-2018,21,Patrice Evra,,France,DG,75
 Marseille,2017-2018,13,Aymen Abdennour,,Tunisie,DC,75
-Marseille,2017-2018,29,Andre Franck Zambo Anguissa,,Cameroun,MDD|MC,75
+Marseille,2017-2018,29,Andre Franck Zambo Anguissa,,Cameroun,MD|MC,75
 Marseille,2017-2018,16,Yohann Pele,,France,G,74
 Marseille,2017-2018,14,Clinton Njie,,Cameroun,BU,74
 Marseille,2017-2018,27,Maxime Lopez,,France,MC|MD|MDC,74
@@ -371,7 +371,7 @@ Marseille,2018-2019,19,Luiz Gustavo,,Bresil,DC|MC|MDC,82
 Marseille,2018-2019,9,Mario Balotelli,,Italie,AG|BU,82
 Marseille,2018-2019,12,Kevin Strootman,,Pays-Bas,MDC|MC,81
 Marseille,2018-2019,30,Steve Mandanda,,France,G,80
-Marseille,2018-2019,8,Morgan Sanson,,France,MC|MDC|MDG,80
+Marseille,2018-2019,8,Morgan Sanson,,France,MC|MDC|MG,80
 Marseille,2018-2019,23,Adil Rami,,France,DC,79
 Marseille,2018-2019,2,Hiroki Sakai,,Japon,DD|DG,78
 Marseille,2018-2019,11,Konstantinos Mitroglou,,Grece,BU,77
@@ -404,7 +404,7 @@ Marseille,2019-2020,26,Florian Thauvin,,France,MD|AD,83
 Marseille,2019-2020,10,Dimitri Payet,,France,MG|MOC|AG|AD,82
 Marseille,2019-2020,19,Luiz Gustavo,,Bresil,DC|MC|MDC,81
 Marseille,2019-2020,3,Alvaro Gonzalez,,Espagne,DC,80
-Marseille,2019-2020,8,Morgan Sanson,,France,MC|MDC|MDG,80
+Marseille,2019-2020,8,Morgan Sanson,,France,MC|MDC|MG,80
 Marseille,2019-2020,9,Dario Benedetto,,Argentine,BU,80
 Marseille,2019-2020,21,Valentin Rongier,,France,MC|MDC|DD|MD,80
 Marseille,2019-2020,12,Kevin Strootman,,Pays-Bas,MDC|MC,78
@@ -437,7 +437,7 @@ Marseille,2020-2021,3,Alvaro Gonzalez,,Espagne,DC,79
 Marseille,2020-2021,15,Duje Caleta-Car,,Croatie,DC,79
 Marseille,2020-2021,18,Jordan Amavi,,France,DG,78
 Marseille,2020-2021,21,Valentin Rongier,,France,MC|MDC|DD|MD,78
-Marseille,2020-2021,8,Morgan Sanson,,France,MC|MDC|MDG,77
+Marseille,2020-2021,8,Morgan Sanson,,France,MC|MDC|MG,77
 Marseille,2020-2021,6,Kevin Strootman,,Pays-Bas,MDC|MC,76
 Marseille,2020-2021,17,Bouna Sarr,,France,DD|MD,76
 Marseille,2020-2021,9,Dario Benedetto,,Argentine,BU,76
@@ -583,7 +583,7 @@ Marseille,2023-2024,34,Bilal Nadir,,Maroc,MC,63
 Marseille,2023-2024,66,Noam Mayoka-Tika,,Belgique,MC,62
 Marseille,2024-2025,25,Adrien Rabiot,,France,MOC|MC,83
 Marseille,2024-2025,10,Mason Greenwood,,Angleterre,MD,82
-Marseille,2024-2025,23,Pierre-Emile Hojbjerg,,Danemark,MDG,81
+Marseille,2024-2025,23,Pierre-Emile Hojbjerg,,Danemark,MG,81
 Marseille,2024-2025,1,Geronimo Rulli,,Argentine,G,81
 Marseille,2024-2025,5,Leonardo Balerdi,,Argentine,DC,80
 Marseille,2024-2025,19,Geoffrey Kondogbia,,Rep. centrafricaine,MDC|MC|DC|MD,79
@@ -613,7 +613,7 @@ Marseille,2024-2025,45,Yanis Sellami,,France,MC,59
 Marseille,2024-2025,43,Alexi Koum,,France,DG,58
 Marseille,2024-2025,47,Gael Lafont,,France,MC,58
 Marseille,2025-2026,10,Mason Greenwood,,Angleterre,MD,83
-Marseille,2025-2026,23,Pierre-Emile Hojbjerg,,Danemark,MDG,81
+Marseille,2025-2026,23,Pierre-Emile Hojbjerg,,Danemark,MG,81
 Marseille,2025-2026,1,Geronimo Rulli,,Argentine,G,81
 Marseille,2025-2026,5,Leonardo Balerdi,,Argentine,DC,80
 Marseille,2025-2026,27,Quinten Timber,,Pays-Bas,MOC,80

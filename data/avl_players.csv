@@ -168,7 +168,7 @@ Aston Villa,2010-2011,39,Darren Bent,,England,BU,82
 Aston Villa,2011-2012,1,Shay Given,,Republic of Ireland,G,82
 Aston Villa,2011-2012,22,Brad Guzan,,United States,G,75
 Aston Villa,2011-2012,33,Andy Marshall,,England,G,46
-Aston Villa,2011-2012,2,Alan Hutton,,Scotland,DD|MDD,76
+Aston Villa,2011-2012,2,Alan Hutton,,Scotland,DD|MD,76
 Aston Villa,2011-2012,3,Stephen Warnock,,England,DG,74
 Aston Villa,2011-2012,5,Richard Dunne,,Republic of Ireland,DC,78
 Aston Villa,2011-2012,6,James Collins,,Wales,DC,75
@@ -185,7 +185,7 @@ Aston Villa,2011-2012,16,Fabian Delph,,England,MC|MDC,73
 Aston Villa,2011-2012,17,Jean Makoun,,Cameroon,MDC,68
 Aston Villa,2011-2012,19,Stiliyan Petrov,,Bulgaria,MC|MOC,77
 Aston Villa,2011-2012,25,Barry Bannan,,Scotland,MOC,73
-Aston Villa,2011-2012,31,Chris Herd,,Australia,MDD,68
+Aston Villa,2011-2012,31,Chris Herd,,Australia,MD,68
 Aston Villa,2011-2012,35,Daniel Johnson,,Jamaica,MC,45
 Aston Villa,2011-2012,38,Gary Gardner,,England,MC,70
 Aston Villa,2011-2012,41,Jack Grealish,,England,MOC|AG,42
@@ -204,7 +204,7 @@ Aston Villa,2012-2013,34,Matthew Lowton,,England,DD,73
 Aston Villa,2012-2013,37,Enda Stevens,,Republic of Ireland,DG,62
 Aston Villa,2012-2013,6,Ciaran Clark,,Republic of Ireland,DC,74
 Aston Villa,2012-2013,16,Fabian Delph,,England,MC|MDC,71
-Aston Villa,2012-2013,17,Chris Herd,,Australia,MDD,66
+Aston Villa,2012-2013,17,Chris Herd,,Australia,MD,66
 Aston Villa,2012-2013,7,Stephen Ireland,,Republic of Ireland,MOC|MC,77
 Aston Villa,2012-2013,12,Marc Albrighton,,England,MD|AD,72
 Aston Villa,2012-2013,15,Ashley Westwood,,England,MC,70
@@ -228,15 +228,15 @@ Aston Villa,2013-2014,4,Ron Vlaar,,Netherlands,DC,78
 Aston Villa,2013-2014,6,Ciaran Clark,,Republic of Ireland,DC,73
 Aston Villa,2013-2014,34,Matthew Lowton,,England,DD,74
 Aston Villa,2013-2014,37,Enda Stevens,,Republic of Ireland,DG,45
-Aston Villa,2013-2014,7,Leandro Bacuna,,Curacao,MDD,66
+Aston Villa,2013-2014,7,Leandro Bacuna,,Curacao,MD,66
 Aston Villa,2013-2014,8,Karim El Ahmadi,,Morocco,MDC,74
 Aston Villa,2013-2014,15,Ashley Westwood,,England,MC,72
 Aston Villa,2013-2014,16,Fabian Delph,,England,MC|MDC,74
-Aston Villa,2013-2014,17,Chris Herd,,Australia,MDD,70
+Aston Villa,2013-2014,17,Chris Herd,,Australia,MD,70
 Aston Villa,2013-2014,18,Yacouba Sylla,,Mali,MDC,68
 Aston Villa,2013-2014,36,Charles N'Zogbia,,France,AG|MG,75
 Aston Villa,2013-2014,40,Stephen Ireland,,Republic of Ireland,MOC|MC,75
-Aston Villa,2013-2014,41,Alan Hutton,,Scotland,DD|MDD,71
+Aston Villa,2013-2014,41,Alan Hutton,,Scotland,DD|MD,71
 Aston Villa,2013-2014,42,Barry Bannan,,Scotland,MOC,70
 Aston Villa,2013-2014,22,Gary Gardner,,England,MC,68
 Aston Villa,2013-2014,9,Nicklas Helenius,,Denmark,BU,45
@@ -256,17 +256,17 @@ Aston Villa,2014-2015,4,Ron Vlaar,,Netherlands,DC,79
 Aston Villa,2014-2015,5,Jores Okore,,Denmark,DC|DD,75
 Aston Villa,2014-2015,6,Ciaran Clark,,Republic of Ireland,DC,74
 Aston Villa,2014-2015,14,Philippe Senderos,,Switzerland,DC,55
-Aston Villa,2014-2015,21,Alan Hutton,,Scotland,DD|MDD,72
+Aston Villa,2014-2015,21,Alan Hutton,,Scotland,DD|MD,72
 Aston Villa,2014-2015,23,Aly Cissokho,,France,DG,73
 Aston Villa,2014-2015,34,Matthew Lowton,,England,DD,73
 Aston Villa,2014-2015,35,Enda Stevens,,Republic of Ireland,DG,62
-Aston Villa,2014-2015,7,Leandro Bacuna,,Curacao,MDD,71
+Aston Villa,2014-2015,7,Leandro Bacuna,,Curacao,MD,71
 Aston Villa,2014-2015,8,Tom Cleverley,,England,MC|MOC,65
 Aston Villa,2014-2015,9,Scott Sinclair,,England,AG|MG,72
 Aston Villa,2014-2015,12,Joe Cole,,England,MOC|MG,55
 Aston Villa,2014-2015,15,Ashley Westwood,,England,MC,72
 Aston Villa,2014-2015,16,Fabian Delph,,England,MC|MDC,76
-Aston Villa,2014-2015,17,Chris Herd,,Australia,MDD,68
+Aston Villa,2014-2015,17,Chris Herd,,Australia,MD,68
 Aston Villa,2014-2015,18,Kieran Richardson,,England,MG,73
 Aston Villa,2014-2015,22,Gary Gardner,,England,MC,68
 Aston Villa,2014-2015,24,Carlos Sánchez,,Colombia,MDC|MC,76
@@ -286,11 +286,11 @@ Aston Villa,2015-2016,4,Micah Richards,,England,DD|DC,77
 Aston Villa,2015-2016,5,Jores Okore,,Denmark,DC|DD,77
 Aston Villa,2015-2016,6,Ciaran Clark,,Republic of Ireland,DC,76
 Aston Villa,2015-2016,16,Joleon Lescott,,England,DC,58
-Aston Villa,2015-2016,21,Alan Hutton,,Scotland,DD|MDD,73
+Aston Villa,2015-2016,21,Alan Hutton,,Scotland,DD|MD,73
 Aston Villa,2015-2016,23,Jordan Amavi,,France,DG,75
 Aston Villa,2015-2016,32,Janoi Donacien,,Saint Lucia,DD,40
 Aston Villa,2015-2016,43,Aly Cissokho,,France,DG,73
-Aston Villa,2015-2016,7,Leandro Bacuna,,Curacao,MDD,72
+Aston Villa,2015-2016,7,Leandro Bacuna,,Curacao,MD,72
 Aston Villa,2015-2016,8,Idrissa Gueye,,Senegal,MDC|MC,68
 Aston Villa,2015-2016,9,Scott Sinclair,,England,AG|MG,75
 Aston Villa,2015-2016,15,Ashley Westwood,,England,MC,74
@@ -316,15 +316,15 @@ Aston Villa,2016-2017,3,Neil Taylor,,Wales,DG,75
 Aston Villa,2016-2017,4,Micah Richards,,England,DD|DC,74
 Aston Villa,2016-2017,6,Tommy Elphick,,England,DC,72
 Aston Villa,2016-2017,12,James Chester,,Wales,DC,75
-Aston Villa,2016-2017,21,Alan Hutton,,Scotland,DD|MDD,72
+Aston Villa,2016-2017,21,Alan Hutton,,Scotland,DD|MD,72
 Aston Villa,2016-2017,23,Jordan Amavi,,France,DG,74
 Aston Villa,2016-2017,27,Ritchie De Laet,,Belgium,DD,55
 Aston Villa,2016-2017,28,Aly Cissokho,,France,DG,72
 Aston Villa,2016-2017,5,Henri Lansbury,,England,MC,73
-Aston Villa,2016-2017,7,Leandro Bacuna,,Curacao,MDD,73
+Aston Villa,2016-2017,7,Leandro Bacuna,,Curacao,MD,73
 Aston Villa,2016-2017,8,Aaron Tshibola,,England,MDC,42
 Aston Villa,2016-2017,14,Conor Hourihane,,Republic of Ireland,MC|MG,73
-Aston Villa,2016-2017,16,James Bree,,England,MDD,64
+Aston Villa,2016-2017,16,James Bree,,England,MD,64
 Aston Villa,2016-2017,20,Birkir Bjarnason,,Iceland,MG,74
 Aston Villa,2016-2017,22,Gary Gardner,,England,MC,70
 Aston Villa,2016-2017,25,Mile Jedinak,,Australia,MDC|MC,75
@@ -342,9 +342,9 @@ Aston Villa,2017-2018,31,Mark Bunn,,England,G,71
 Aston Villa,2017-2018,3,Neil Taylor,,Wales,DG,71
 Aston Villa,2017-2018,4,Christopher Samba,,Congo DR,DC,55
 Aston Villa,2017-2018,5,James Chester,,Wales,DC,75
-Aston Villa,2017-2018,16,James Bree,,England,MDD,64
+Aston Villa,2017-2018,16,James Bree,,England,MD,64
 Aston Villa,2017-2018,17,Micah Richards,,England,DD|DC,71
-Aston Villa,2017-2018,21,Alan Hutton,,Scotland,DD|MDD,71
+Aston Villa,2017-2018,21,Alan Hutton,,Scotland,DD|MD,71
 Aston Villa,2017-2018,26,John Terry,,England,DC,68
 Aston Villa,2017-2018,27,Ahmed Elmohamady,,Egypt,DD,72
 Aston Villa,2017-2018,28,Axel Tuanzebe,,England,DC,73
@@ -370,7 +370,7 @@ Aston Villa,2018-2019,31,Mark Bunn,,England,G,69
 Aston Villa,2018-2019,3,Neil Taylor,,Wales,DG,70
 Aston Villa,2018-2019,4,Axel Tuanzebe,,England,DC,72
 Aston Villa,2018-2019,5,James Chester,,Wales,DC,74
-Aston Villa,2018-2019,21,Alan Hutton,,Scotland,DD|MDD,69
+Aston Villa,2018-2019,21,Alan Hutton,,Scotland,DD|MD,69
 Aston Villa,2018-2019,24,Tommy Elphick,,England,DC,71
 Aston Villa,2018-2019,27,Ahmed Elmohamady,,Egypt,DD,70
 Aston Villa,2018-2019,30,Kortney Hause,,England,DC|DG,68
@@ -396,9 +396,9 @@ Aston Villa,2019-2020,29,Pepe Reina,,Spain,G,62
 Aston Villa,2019-2020,31,Matija Sarkic,,Montenegro,G,40
 Aston Villa,2019-2020,3,Neil Taylor,,Wales,DG,70
 Aston Villa,2019-2020,15,Ezri Konsa,,England,DC|DD,71
-Aston Villa,2019-2020,18,Matt Targett,,England,DG|MDG,75
+Aston Villa,2019-2020,18,Matt Targett,,England,DG|MG,75
 Aston Villa,2019-2020,22,Björn Engels,,Belgium,DC,75
-Aston Villa,2019-2020,24,Frédéric Guilbert,,France,DD|MDD,76
+Aston Villa,2019-2020,24,Frédéric Guilbert,,France,DD|MD,76
 Aston Villa,2019-2020,27,Ahmed Elmohamady,,Egypt,DD,70
 Aston Villa,2019-2020,30,Kortney Hause,,England,DC|DG,70
 Aston Villa,2019-2020,40,Tyrone Mings,,England,DC,75
@@ -420,13 +420,13 @@ Aston Villa,2020-2021,1,Tom Heaton,,England,G,76
 Aston Villa,2020-2021,26,Emiliano Martínez,,Argentina,G,83
 Aston Villa,2020-2021,12,Jed Steer,,England,G,72
 Aston Villa,2020-2021,28,Lovre Kalinić,,Croatia,G,73
-Aston Villa,2020-2021,2,Matty Cash,,England,DD|MDD,77
+Aston Villa,2020-2021,2,Matty Cash,,England,DD|MD,77
 Aston Villa,2020-2021,3,Neil Taylor,,Wales,DG,69
 Aston Villa,2020-2021,4,Ezri Konsa,,England,DC|DD,77
 Aston Villa,2020-2021,5,Tyrone Mings,,England,DC,78
-Aston Villa,2020-2021,18,Matt Targett,,England,DG|MDG,77
+Aston Villa,2020-2021,18,Matt Targett,,England,DG|MG,77
 Aston Villa,2020-2021,22,Björn Engels,,Belgium,DC,73
-Aston Villa,2020-2021,24,Frédéric Guilbert,,France,DD|MDD,75
+Aston Villa,2020-2021,24,Frédéric Guilbert,,France,DD|MD,75
 Aston Villa,2020-2021,27,Ahmed Elmohamady,,Egypt,DD,70
 Aston Villa,2020-2021,30,Kortney Hause,,England,DC|DG,74
 Aston Villa,2020-2021,6,Douglas Luiz,,Brazil,MC|MDC,76
@@ -446,13 +446,13 @@ Aston Villa,2021-2022,1,Emiliano Martínez,,Argentina,G,84
 Aston Villa,2021-2022,12,Jed Steer,,England,G,72
 Aston Villa,2021-2022,25,Robin Olsen,,Sweden,G,75
 Aston Villa,2021-2022,38,Viljami Sinisalo,,Finland,G,55
-Aston Villa,2021-2022,2,Matty Cash,,Poland,DD|MDD,79
-Aston Villa,2021-2022,3,Matt Targett,,England,DG|MDG,77
+Aston Villa,2021-2022,2,Matty Cash,,Poland,DD|MD,79
+Aston Villa,2021-2022,3,Matt Targett,,England,DG|MG,77
 Aston Villa,2021-2022,4,Ezri Konsa,,England,DC|DD,79
 Aston Villa,2021-2022,5,Tyrone Mings,,England,DC,78
 Aston Villa,2021-2022,16,Calum Chambers,,England,DC|DD,75
 Aston Villa,2021-2022,18,Ashley Young,,England,DD|DG|MD|AG|MG,68
-Aston Villa,2021-2022,24,Frédéric Guilbert,,France,DD|MDD,45
+Aston Villa,2021-2022,24,Frédéric Guilbert,,France,DD|MD,45
 Aston Villa,2021-2022,27,Lucas Digne,,France,DG,83
 Aston Villa,2021-2022,30,Kortney Hause,,England,DC|DG,75
 Aston Villa,2021-2022,6,Douglas Luiz,,Brazil,MC|MDC,77
@@ -473,7 +473,7 @@ Aston Villa,2022-2023,1,Emiliano Martínez,,Argentina,G,85
 Aston Villa,2022-2023,12,Jed Steer,,England,G,71
 Aston Villa,2022-2023,25,Robin Olsen,,Sweden,G,75
 Aston Villa,2022-2023,38,Viljami Sinisalo,,Finland,G,58
-Aston Villa,2022-2023,2,Matty Cash,,Poland,DD|MDD,79
+Aston Villa,2022-2023,2,Matty Cash,,Poland,DD|MD,79
 Aston Villa,2022-2023,3,Diego Carlos,,Brazil,DC,82
 Aston Villa,2022-2023,4,Ezri Konsa,,England,DC|DD,79
 Aston Villa,2022-2023,5,Tyrone Mings,,England,DC,79
@@ -499,7 +499,7 @@ Aston Villa,2022-2023,31,Leon Bailey,,Jamaica,AD|AG,80
 Aston Villa,2023-2024,1,Emiliano Martínez,,Argentina,G,86
 Aston Villa,2023-2024,18,Joe Gauci,,Australia,G,40
 Aston Villa,2023-2024,25,Robin Olsen,,Sweden,G,75
-Aston Villa,2023-2024,2,Matty Cash,,Poland,DD|MDD,79
+Aston Villa,2023-2024,2,Matty Cash,,Poland,DD|MD,79
 Aston Villa,2023-2024,3,Diego Carlos,,Brazil,DC,81
 Aston Villa,2023-2024,4,Ezri Konsa,,England,DC|DD,80
 Aston Villa,2023-2024,5,Tyrone Mings,,England,DC,79
@@ -529,14 +529,14 @@ Aston Villa,2023-2024,71,Omari Kellyman,,England,MOC|AG,42
 Aston Villa,2024-2025,23,Emiliano Martínez,,Argentina,G,86
 Aston Villa,2024-2025,25,Robin Olsen,,Sweden,G,74
 Aston Villa,2024-2025,48,Oliwier Zych,,Poland,G,40
-Aston Villa,2024-2025,2,Matty Cash,,Poland,DD|MDD,79
+Aston Villa,2024-2025,2,Matty Cash,,Poland,DD|MD,79
 Aston Villa,2024-2025,3,Axel Disasi,,France,DC,62
 Aston Villa,2024-2025,4,Ezri Konsa,,England,DC|DD,82
 Aston Villa,2024-2025,5,Tyrone Mings,,England,DC,78
 Aston Villa,2024-2025,12,Lucas Digne,,France,DG,80
 Aston Villa,2024-2025,14,Pau Torres,,Spain,DC,81
 Aston Villa,2024-2025,16,Andrés García,,Spain,DD,73
-Aston Villa,2024-2025,22,Ian Maatsen,,Netherlands,DG|MDG,79
+Aston Villa,2024-2025,22,Ian Maatsen,,Netherlands,DG|MG,79
 Aston Villa,2024-2025,30,Kortney Hause,,England,DC|DG,70
 Aston Villa,2024-2025,6,Ross Barkley,,England,MC|MOC,77
 Aston Villa,2024-2025,7,John McGinn,,Scotland,MC|MOC,81
@@ -553,14 +553,14 @@ Aston Villa,2024-2025,27,Morgan Rogers,,England,AG|MOC|BU,81
 Aston Villa,2024-2025,31,Leon Bailey,,Jamaica,AD|AG,80
 Aston Villa,2025-2026,23,Emiliano Martínez,,Argentina,G,85
 Aston Villa,2025-2026,40,Marco Bizot,,Netherlands,G,55
-Aston Villa,2025-2026,2,Matty Cash,,Poland,DD|MDD,81
+Aston Villa,2025-2026,2,Matty Cash,,Poland,DD|MD,81
 Aston Villa,2025-2026,3,Victor Lindelöf,,Sweden,DC,68
 Aston Villa,2025-2026,4,Ezri Konsa,,England,DC|DD,84
 Aston Villa,2025-2026,5,Tyrone Mings,,England,DC,78
 Aston Villa,2025-2026,12,Lucas Digne,,France,DG,80
 Aston Villa,2025-2026,14,Pau Torres,,Spain,DC,80
 Aston Villa,2025-2026,16,Andrés García,,Spain,DD,73
-Aston Villa,2025-2026,22,Ian Maatsen,,Netherlands,DG|MDG,79
+Aston Villa,2025-2026,22,Ian Maatsen,,Netherlands,DG|MG,79
 Aston Villa,2025-2026,59,Yeimar Mosquera,,Colombia,DC,50
 Aston Villa,2025-2026,6,Ross Barkley,,England,MC|MOC,77
 Aston Villa,2025-2026,7,John McGinn,,Scotland,MC|MOC,81

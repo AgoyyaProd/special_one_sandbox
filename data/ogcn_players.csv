@@ -80,14 +80,14 @@ Nice,2008-2009,30,Jeremie Moreau,France,G,55
 Nice,2008-2009,23,Drissa Diakite,Mali,MDC,55
 Nice,2010-2011,1,David Ospina,Colombie,G,76
 Nice,2010-2011,28,Danijel Ljuboja,Serbie,BU,75
-Nice,2010-2011,8,David Hellebuyck,France,MDG,74
+Nice,2010-2011,8,David Hellebuyck,France,MG,74
 Nice,2010-2011,26,Anthony Mounier,France,AG|MG,74
 Nice,2010-2011,10,Mamadou Bagayoko,Mali,BU,73
 Nice,2010-2011,21,Habib Bamogo,Burkina Faso,BU,73
 Nice,2010-2011,14,Emerse Fae,Cote d'Ivoire,BU,73
 Nice,2010-2011,16,Lionel Letizi,France,G,72
 Nice,2010-2011,17,Chaouki Ben Saada,Tunisie,AD,72
-Nice,2010-2011,27,Julien Sable,France,MDD,72
+Nice,2010-2011,27,Julien Sable,France,MD,72
 Nice,2010-2011,2,Renato Civelli,Argentine,DC|DD,72
 Nice,2010-2011,6,Didier Digard,France,MDC,71
 Nice,2010-2011,4,Nemanja Pejcinovic,Serbie,DC|DG,71
@@ -184,7 +184,7 @@ Nice,2012-2013,27,Cyril Hennion,France,MOC,62
 Nice,2012-2013,22,Julien Berthomier,France,DC,60
 Nice,2012-2013,29,Stephane Bahoken,France,BU,60
 Nice,2012-2013,40,Mouez Hassen,France,G,57
-Nice,2013-2014,6,Didier Digard,France,MDG,76
+Nice,2013-2014,6,Didier Digard,France,MG,76
 Nice,2013-2014,1,David Ospina,Colombie,G,76
 Nice,2013-2014,12,Dario Cvitanich,Argentine,BU,75
 Nice,2013-2014,4,Nemanja Pejcinovic,Serbie,DG,75
@@ -197,7 +197,7 @@ Nice,2013-2014,3,Timothee Kolodziejczak,France,DG,72
 Nice,2013-2014,7,Fabrice Abriel,France,MC,71
 Nice,2013-2014,10,Christian Bruls,Belgique,AG,71
 Nice,2013-2014,8,Mahamane Traore,Mali,MDC,71
-Nice,2013-2014,22,Nampalys Mendy,France,MDD,70
+Nice,2013-2014,22,Nampalys Mendy,France,MD,70
 Nice,2013-2014,25,Romain Genevois,France,DC,69
 Nice,2013-2014,20,Luigi Bruins,Pays-Bas,MOC,67
 Nice,2013-2014,9,Xavier Pentecote,France,BU,67
@@ -232,7 +232,7 @@ Nice,2014-2015,9,Xavier Pentecote,France,BU,65
 Nice,2014-2015,18,Neal Maupay,France,BU,64
 Nice,2014-2015,15,Gregoire Puel,France,DD,64
 Nice,2014-2015,7,Julien Vercauteren,Belgique,AG,62
-Nice,2014-2015,39,Vincent Koziello,France,MDG,58
+Nice,2014-2015,39,Vincent Koziello,France,MG,58
 Nice,2014-2015,41,Sada Thioub,France,BU,58
 Nice,2014-2015,31,Papa Moussa M'Bow,Senegal,DC,57
 Nice,2014-2015,34,Olivier Boscagli,France,DG,55
@@ -246,7 +246,7 @@ Nice,2016-2017,4,Paul Baysse,France,DD,78
 Nice,2016-2017,13,Valentin Eysseric,France,MG,78
 Nice,2016-2017,25,Wylan Cyprien,France,MC|MDC|MOC,78
 Nice,2016-2017,30,Yoan Cardinale,France,G,78
-Nice,2016-2017,26,Vincent Koziello,France,MDD,78
+Nice,2016-2017,26,Vincent Koziello,France,MD,78
 Nice,2016-2017,24,Mathieu Bodmer,France,MDC,77
 Nice,2016-2017,29,Dalbert,Bresil,DG,77
 Nice,2016-2017,24,Mounir Obbadi,Maroc,MC,76
@@ -277,7 +277,7 @@ Nice,2017-2018,26,Vincent Koziello,France,MC,77
 Nice,2017-2018,24,Christophe Jallet,France,DD,76
 Nice,2017-2018,2,Arnaud Souquet,France,DD,76
 Nice,2017-2018,40,Walter Benitez,Argentine,G,76
-Nice,2017-2018,8,Pierre Lees-Melou,France,MDD,76
+Nice,2017-2018,8,Pierre Lees-Melou,France,MD,76
 Nice,2017-2018,21,Nampalys Mendy,France,MDC,75
 Nice,2017-2018,23,Malang Sarr,France,DC,75
 Nice,2017-2018,18,Remi Walter,France,MC,73
@@ -360,7 +360,7 @@ Nice,2020-2021,29,Jeff Reine-Adelaide,France,MC,75
 Nice,2020-2021,18,William Saliba,France,DG,75
 Nice,2020-2021,25,Wylan Cyprien,France,MC,73
 Nice,2020-2021,23,Jordan Lotomba,Suisse,DG,73
-Nice,2020-2021,19,Khephren Thuram,France,MDD,73
+Nice,2020-2021,19,Khephren Thuram,France,MD,73
 Nice,2020-2021,28,Hicham Boudaoui,Algerie,MC|MDC|MD,73
 Nice,2020-2021,21,Danilo Barbosa da Silva,Bresil,MC,72
 Nice,2020-2021,15,Patrick Burner,France,DD,72
@@ -506,7 +506,7 @@ Nice,2005-2006,21,Anther Yahia,Algerie,DC,75
 Nice,2005-2006,19,Marama Vahirua,France,BU,74
 Nice,2005-2006,11,Mamadou Bagayoko,Mali,BU,74
 Nice,2005-2006,2,Cedric Varrault,France,DD,73
-Nice,2005-2006,7,Roberto Bisconti,Belgique,MDD,73
+Nice,2005-2006,7,Roberto Bisconti,Belgique,MD,73
 Nice,2005-2006,27,Yoann Bigne,France,MD,71
 Nice,2005-2006,13,Jacques Abardonado,France,DC,70
 Nice,2005-2006,5,Francois Grenet,France,DD,69

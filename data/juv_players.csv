@@ -35,7 +35,7 @@ Juventus,2005-2006,25,Marcelo Zalayeta,,Uruguay,BU,79
 Juventus,2005-2006,20,Manuele Blasi,,Italy,MC|MDC,78
 Juventus,2005-2006,3,Giorgio Chiellini,,Italy,DC|DG,76
 Juventus,2005-2006,23,Gianluca Pessotto,,Italy,DD|DG,75
-Juventus,2005-2006,27,Jonathan Zebina,,France,DD|DC|MDD,74
+Juventus,2005-2006,27,Jonathan Zebina,,France,DD|DC|MD,74
 Juventus,2005-2006,32,Giuliano Giannichedda,,Italy,MC,74
 Juventus,2006-2007,1,Gianluigi Buffon,,Italy,G,92
 Juventus,2006-2007,17,David Trezeguet,,France,BU,89
@@ -50,7 +50,7 @@ Juventus,2006-2007,15,Claudio Marchisio,,Italy,MC|MDC|MOC,69
 Juventus,2006-2007,9,Valeri Bojinov,,Bulgaria,BU,83
 Juventus,2006-2007,30,Nicola Legrottaglie,,Italy,DC,74
 Juventus,2006-2007,2,Alessandro Birindelli,,Italy,DD,74
-Juventus,2006-2007,27,Jonathan Zebina,,France,DD|DC|MDD,73
+Juventus,2006-2007,27,Jonathan Zebina,,France,DD|DC|MD,73
 Juventus,2006-2007,8,Giuliano Giannichedda,,Italy,MC,73
 Juventus,2006-2007,19,Matteo Paro,,Italy,MC,72
 Juventus,2006-2007,12,Antonio Mirante,,Italy,G,71
@@ -74,8 +74,8 @@ Juventus,2007-2008,18,Jean-Alain Boumsong,,France,DC,76
 Juventus,2007-2008,8,Cristiano Zanetti,,Italy,MDC|MC,75
 Juventus,2007-2008,20,Raffaele Palladino,,Italy,BU|AG,75
 Juventus,2007-2008,3,Giorgio Chiellini,,Italy,DC|DG,74
-Juventus,2007-2008,27,Jonathan Zebina,,France,DD|DC|MDD,73
-Juventus,2007-2008,30,Cristian Molinaro,,Italy,DG|DC|MDG|MG,59
+Juventus,2007-2008,27,Jonathan Zebina,,France,DD|DC|MD,73
+Juventus,2007-2008,30,Cristian Molinaro,,Italy,DG|DC|MG,59
 Juventus,2007-2008,15,Claudio Marchisio,,Italy,MC|MDC|MOC,71
 Juventus,2008-2009,1,Gianluigi Buffon,,Italy,G,90
 Juventus,2008-2009,10,Alessandro Del Piero,,Italy,BU|MOC|AG,87
@@ -95,8 +95,8 @@ Juventus,2008-2009,25,Sebastian Giovinco,,Italy,MOC|MC|BU,79
 Juventus,2008-2009,23,Tiago,,Portugal,MDC|MC,78
 Juventus,2008-2009,5,Jorge Andrade,,Portugal,DC,78
 Juventus,2008-2009,28,Olof Mellberg,,Sweden,DC,77
-Juventus,2008-2009,27,Jonathan Zebina,,France,DD|DC|MDD,76
-Juventus,2008-2009,30,Cristian Molinaro,,Italy,DG|DC|MDG|MG,76
+Juventus,2008-2009,27,Jonathan Zebina,,France,DD|DC|MD,76
+Juventus,2008-2009,30,Cristian Molinaro,,Italy,DG|DC|MG,76
 Juventus,2008-2009,15,Claudio Marchisio,,Italy,MC|MDC|MOC,74
 Juventus,2008-2009,7,Paolo De Ceglie,,Italy,DG,71
 Juventus,2009-2010,1,Gianluigi Buffon,,Italy,G,88
@@ -117,10 +117,10 @@ Juventus,2009-2010,23,Tiago,,Portugal,MDC|MC,78
 Juventus,2009-2010,2,Zdenek Grygera,,Czechia,DD|DC,78
 Juventus,2009-2010,4,Martin Caceres,,Uruguay,DD|DC,78
 Juventus,2009-2010,20,Hasan Salihamidzic,,Bosnia and Herzegovina,MG|MD|DD|DG|MC,77
-Juventus,2009-2010,26,Fabio Grosso,,Italy,DG|MDC|MDG|MG,77
+Juventus,2009-2010,26,Fabio Grosso,,Italy,DG|MDC|MG,77
 Juventus,2009-2010,18,Christian Poulsen,,Denmark,MDC,77
-Juventus,2009-2010,27,Jonathan Zebina,,France,DD|DC|MDD,76
-Juventus,2009-2010,33,Cristian Molinaro,,Italy,DG|DC|MDG|MG,75
+Juventus,2009-2010,27,Jonathan Zebina,,France,DD|DC|MD,76
+Juventus,2009-2010,33,Cristian Molinaro,,Italy,DG|DC|MG,75
 Juventus,2009-2010,7,Paolo De Ceglie,,Italy,DG,74
 Juventus,2010-2011,1,Gianluigi Buffon,,Italy,G,86
 Juventus,2010-2011,3,Giorgio Chiellini,,Italy,DC|DG,85
@@ -138,10 +138,10 @@ Juventus,2010-2011,19,Leonardo Bonucci,,Italy,DC,78
 Juventus,2010-2011,24,Nicola Legrottaglie,,Italy,DC,77
 Juventus,2010-2011,12,Marco Storari,,Italy,G,77
 Juventus,2010-2011,5,Jorge Martinez,,Uruguay,MC|MD|MG|BU,77
-Juventus,2010-2011,23,Marco Motta,,Italy,DD|MDD|MD,76
+Juventus,2010-2011,23,Marco Motta,,Italy,DD|MD,76
 Juventus,2010-2011,2,Zdenek Grygera,,Czechia,DD|DC,74
 Juventus,2010-2011,20,Hasan Salihamidzic,,Bosnia and Herzegovina,MG|MD|DD|DG|MC,73
-Juventus,2010-2011,26,Fabio Grosso,,Italy,DG|MDC|MDG|MG,73
+Juventus,2010-2011,26,Fabio Grosso,,Italy,DG|MDC|MG,73
 Juventus,2010-2011,7,Paolo De Ceglie,,Italy,DG,73
 Juventus,2011-2012,1,Gianluigi Buffon,,Italy,G,86
 Juventus,2011-2012,21,Andrea Pirlo,,Italy,MDC|MC,85
@@ -161,8 +161,8 @@ Juventus,2011-2012,4,Martin Caceres,,Uruguay,DD|DC,78
 Juventus,2011-2012,19,Leonardo Bonucci,,Italy,DC,78
 Juventus,2011-2012,9,Vincenzo Iaquinta,,Italy,BU,77
 Juventus,2011-2012,20,Simone Padoin,,Italy,MC|MG|MD|DG|DD,75
-Juventus,2011-2012,23,Marco Motta,,Italy,DD|MDD|MD,73
-Juventus,2011-2012,26,Fabio Grosso,,Italy,DG|MDC|MDG|MG,72
+Juventus,2011-2012,23,Marco Motta,,Italy,DD|MD,73
+Juventus,2011-2012,26,Fabio Grosso,,Italy,DG|MDC|MG,72
 Juventus,2012-2013,1,Gianluigi Buffon,,Italy,G,87
 Juventus,2012-2013,21,Andrea Pirlo,,Italy,MDC|MC,87
 Juventus,2012-2013,15,Andrea Barzagli,,Italy,DC|DD,85
@@ -219,7 +219,7 @@ Juventus,2014-2015,25,Sebastian Giovinco,,Italy,MOC|MC|BU,81
 Juventus,2014-2015,18,Fernando Llorente,,Spain,BU,80
 Juventus,2014-2015,4,Martin Caceres,,Uruguay,DD|DC,80
 Juventus,2014-2015,19,Leonardo Bonucci,,Italy,DC,80
-Juventus,2014-2015,33,Patrice Evra,,France,DG|MDG,79
+Juventus,2014-2015,33,Patrice Evra,,France,DG|MG,79
 Juventus,2014-2015,5,Kwadwo Asamoah,,Ghana,MG|MC|DG,79
 Juventus,2014-2015,17,Roberto Pereyra,,Argentina,MOC|MD|BU|MC|MG,79
 Juventus,2014-2015,27,Alvaro Morata,,Spain,BU,78
@@ -237,7 +237,7 @@ Juventus,2015-2016,8,Claudio Marchisio,,Italy,MC|MDC|MOC,83
 Juventus,2015-2016,26,Stephan Lichtsteiner,,Switzerland,DD|MD,80
 Juventus,2015-2016,6,Sami Khedira,,Germany,MDC|MC,85
 Juventus,2015-2016,10,Paul Pogba,,France,MC|MDC|MOC,87
-Juventus,2015-2016,33,Patrice Evra,,France,DG|MDG,82
+Juventus,2015-2016,33,Patrice Evra,,France,DG|MG,82
 Juventus,2015-2016,17,Mario Mandzukic,,Croatia,BU|AG|AD,82
 Juventus,2015-2016,21,Paulo Dybala,,Argentina,MOC|AG|AD|BU,79
 Juventus,2015-2016,20,Simone Padoin,,Italy,MC|MG|MD|DG|DD,74
@@ -267,7 +267,7 @@ Juventus,2016-2017,12,Alex Sandro,,Brazil,DG|MG,84
 Juventus,2016-2017,26,Stephan Lichtsteiner,,Switzerland,DD|MD,83
 Juventus,2016-2017,17,Mario Mandzukic,,Croatia,BU|AG|AD,83
 Juventus,2016-2017,16,Juan Cuadrado,,Colombia,AD|DD|MD,83
-Juventus,2016-2017,33,Patrice Evra,,France,DG|MDG,82
+Juventus,2016-2017,33,Patrice Evra,,France,DG|MG,82
 Juventus,2016-2017,15,Hernanes,,Brazil,MOC|MC|MDC,80
 Juventus,2016-2017,5,Kwadwo Asamoah,,Ghana,MG|MC|DG,80
 Juventus,2016-2017,25,Neto,,Brazil,G,80
@@ -321,7 +321,7 @@ Juventus,2018-2019,24,Daniele Rugani,,Italy,DC,82
 Juventus,2018-2019,33,Federico Bernardeschi,,Italy,AG|AD|MOC|MG,82
 Juventus,2018-2019,23,Emre Can,,Germany,MDC|DC|MC,80
 Juventus,2018-2019,4,Martin Caceres,,Uruguay,DD|DC,78
-Juventus,2018-2019,21,Leonardo Spinazzola,,Italy,DG|AG|MD|MG|MDG,78
+Juventus,2018-2019,21,Leonardo Spinazzola,,Italy,DG|AG|MD|MG,78
 Juventus,2018-2019,2,Mattia De Sciglio,,Italy,DD|DG|DC,78
 Juventus,2018-2019,30,Rodrigo Bentancur,,Uruguay,MDC|MC,78
 Juventus,2018-2019,18,Moise Kean,,Italy,BU|AG|AD,73
@@ -460,7 +460,7 @@ Juventus,2024-2025,11,Nico Gonzalez,,Argentina,AD|AG|MD,79
 Juventus,2024-2025,27,Andrea Cambiaso,,Italy,DG|MG|DD,79
 Juventus,2024-2025,4,Federico Gatti,,Italy,DC|DD,79
 Juventus,2024-2025,10,Kenan Yildiz,,Turkey,AG|AD|MOC,76
-Juventus,2024-2025,6,Lloyd Kelly,,England,DC|MDD|DG,75
+Juventus,2024-2025,6,Lloyd Kelly,,England,DC|MD|DG,75
 Juventus,2024-2025,12,Renato Veiga,,Portugal,DC,74
 Juventus,2024-2025,9,Dusan Vlahovic,,Serbia,BU,83
 Juventus,2024-2025,26,Douglas Luiz,,Brazil,MC|MDC,82
@@ -481,7 +481,7 @@ Juventus,2025-2026,15,Pierre Kalulu,,France,DD|DC,80
 Juventus,2025-2026,27,Andrea Cambiaso,,Italy,DG|MG|DD,80
 Juventus,2025-2026,22,Weston McKennie,,USA,MC|MDC|MOC|DD,79
 Juventus,2025-2026,7,Francisco Conceicao,,Portugal,AD|MD|MOC,79
-Juventus,2025-2026,6,Lloyd Kelly,,England,DC|MDD|DG,78
+Juventus,2025-2026,6,Lloyd Kelly,,England,DC|MD|DG,78
 Juventus,2025-2026,20,Loic Openda,,Belgium,BU|MOC|MG|AG,82
 Juventus,2025-2026,9,Dusan Vlahovic,,Serbia,BU,81
 Juventus,2025-2026,18,Filip Kostic,,Serbia,MG|AG,80

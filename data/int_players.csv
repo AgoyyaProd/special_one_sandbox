@@ -53,17 +53,17 @@ Inter Milan,2006-2007,12,Julio Cesar,,Brazil,G,79
 Inter Milan,2006-2007,17,Julio Cruz,,Argentina,BU,83
 Inter Milan,2006-2007,19,Cristiano Zanetti,,Italy,MC,70
 Inter Milan,2006-2007,20,Zlatan Ibrahimovic,,Sweden,BU,86
-Inter Milan,2006-2007,21,Fabio Grosso,,Italy,DG|MDG|MG,80
+Inter Milan,2006-2007,21,Fabio Grosso,,Italy,DG|MG,80
 Inter Milan,2006-2007,22,Dejan Stankovic,,Serbia,MG|MD|MOC|MC|MDC,80
 Inter Milan,2006-2007,23,Marco Materazzi,,Italy,DC|DG,78
 Inter Milan,2006-2007,26,Walter Samuel,,Argentina,DC,85
-Inter Milan,2006-2007,28,Maicon,Maicon,Brazil,DD|MDD|MD,79
+Inter Milan,2006-2007,28,Maicon,Maicon,Brazil,DD|MD,79
 Inter Milan,2006-2007,32,Santiago Solari,,Argentina,MG,83
-Inter Milan,2006-2007,33,Maxwell,Maxwell,Brazil,DG|MDG,79
+Inter Milan,2006-2007,33,Maxwell,Maxwell,Brazil,DG|MG,79
 Inter Milan,2006-2007,34,Olivier Dacourt,,France,MDC,72
 Inter Milan,2006-2007,14,Nicolas Burdisso,,Argentina,DC,71
 Inter Milan,2007-2008,1,Julio Cesar,,Brazil,G,79
-Inter Milan,2007-2008,2,Maicon,Maicon,Brazil,DD|MDD|MD,78
+Inter Milan,2007-2008,2,Maicon,Maicon,Brazil,DD|MD,78
 Inter Milan,2007-2008,4,Javier Zanetti,,Argentina,DD|DG|MD|MC|MDC,86
 Inter Milan,2007-2008,5,Esteban Cambiasso,,Argentina,MC|MDC,83
 Inter Milan,2007-2008,7,Luis Figo,Figo,Portugal,MD|MOC,86
@@ -80,10 +80,10 @@ Inter Milan,2007-2008,26,Walter Samuel,,Argentina,DC,85
 Inter Milan,2007-2008,29,Olivier Dacourt,,France,MDC,72
 Inter Milan,2007-2008,30,Nelson Rivas,,Colombia,DC,68
 Inter Milan,2007-2008,32,Santiago Solari,,Argentina,MG,83
-Inter Milan,2007-2008,33,Maxwell,Maxwell,Brazil,DG|MDG,79
+Inter Milan,2007-2008,33,Maxwell,Maxwell,Brazil,DG|MG,79
 Inter Milan,2007-2008,34,Aparecido Cesar,Cesar,Brazil,MG,81
 Inter Milan,2008-2009,1,Julio Cesar,,Brazil,G,87
-Inter Milan,2008-2009,2,Maicon,Maicon,Brazil,DD|MDD|MD,84
+Inter Milan,2008-2009,2,Maicon,Maicon,Brazil,DD|MD,84
 Inter Milan,2008-2009,4,Javier Zanetti,,Argentina,DD|DG|MD|MC|MDC,86
 Inter Milan,2008-2009,5,Esteban Cambiasso,,Argentina,MC|MDC,86
 Inter Milan,2008-2009,7,Luis Figo,Figo,Portugal,MD|MOC,79
@@ -100,11 +100,11 @@ Inter Milan,2008-2009,26,Walter Samuel,,Argentina,DC,83
 Inter Milan,2008-2009,18,Sulley Muntari,,Ghana,MDC|MC|MOC|MD|MG,82
 Inter Milan,2008-2009,30,Nelson Rivas,,Colombia,DC,76
 Inter Milan,2008-2009,32,Ivan Cordoba,,Colombia,DC|DG,83
-Inter Milan,2008-2009,33,Maxwell,Maxwell,Brazil,DG|MDG,80
+Inter Milan,2008-2009,33,Maxwell,Maxwell,Brazil,DG|MG,80
 Inter Milan,2008-2009,77,Mario Balotelli,,Italy,BU,78
 Inter Milan,2008-2009,95,Quaresma,Quaresma,Portugal,MD|AD,85
 Inter Milan,2009-2010,1,Julio Cesar,,Brazil,G,89
-Inter Milan,2009-2010,2,Maicon,Maicon,Brazil,DD|MDD|MD,86
+Inter Milan,2009-2010,2,Maicon,Maicon,Brazil,DD|MD,86
 Inter Milan,2009-2010,4,Javier Zanetti,,Argentina,DD|DG|MD|MC|MDC,84
 Inter Milan,2009-2010,5,Dejan Stankovic,,Serbia,MG|MD|MOC|MC|MDC,82
 Inter Milan,2009-2010,7,Goran Pandev,,North Macedonia,MOC|AD,81
@@ -119,12 +119,12 @@ Inter Milan,2009-2010,25,Lucio,Lucio,Brazil,DC,85
 Inter Milan,2009-2010,26,Walter Samuel,,Argentina,DC,85
 Inter Milan,2009-2010,28,David Suazo,,Honduras,BU,79
 Inter Milan,2009-2010,33,Marco Materazzi,,Italy,DC|DG,79
-Inter Milan,2009-2010,36,Davide Santon,,Italy,DD|MDD,78
+Inter Milan,2009-2010,36,Davide Santon,,Italy,DD|MD,78
 Inter Milan,2009-2010,45,Mario Balotelli,,Italy,BU,81
 Inter Milan,2009-2010,99,Ricardo Quaresma,Quaresma,Portugal,MD|AD,80
 Inter Milan,2009-2010,14,Mancini,Mancini,Brazil,MD|MG|AG,80
 Inter Milan,2010-2011,1,Julio Cesar,,Brazil,G,89
-Inter Milan,2010-2011,2,Maicon,Maicon,Brazil,DD|MDD|MD,86
+Inter Milan,2010-2011,2,Maicon,Maicon,Brazil,DD|MD,86
 Inter Milan,2010-2011,4,Javier Zanetti,,Argentina,DD|DG|MD|MC|MDC,82
 Inter Milan,2010-2011,5,Dejan Stankovic,,Serbia,MG|MD|MOC|MC|MDC,80
 Inter Milan,2010-2011,7,Goran Pandev,,North Macedonia,MOC|AD,81
@@ -139,7 +139,7 @@ Inter Milan,2010-2011,25,Lucio,Lucio,Brazil,DC,85
 Inter Milan,2010-2011,26,Walter Samuel,,Argentina,DC,85
 Inter Milan,2010-2011,28,David Suazo,,Honduras,BU,76
 Inter Milan,2010-2011,33,Marco Materazzi,,Italy,DC|DG,77
-Inter Milan,2010-2011,36,Davide Santon,,Italy,DD|MDD,77
+Inter Milan,2010-2011,36,Davide Santon,,Italy,DD|MD,77
 Inter Milan,2010-2011,45,Andrea Ranocchia,,Italy,DC,76
 Inter Milan,2010-2011,99,Jonathan Biabiany,,France,MD|AD|AG|BU,77
 Inter Milan,2010-2011,17,Philippe Coutinho,,Brazil,MOC|MC,74
@@ -147,11 +147,11 @@ Inter Milan,2011-2012,1,Julio Cesar,,Brazil,G,85
 Inter Milan,2011-2012,2,Cristian Chivu,,Romania,DG|DC,79
 Inter Milan,2011-2012,4,Javier Zanetti,,Argentina,DD|DG|MD|MC|MDC,81
 Inter Milan,2011-2012,5,Andrea Ranocchia,,Italy,DC,79
-Inter Milan,2011-2012,7,Yuto Nagatomo,,Japan,DG|MDG|DD,77
+Inter Milan,2011-2012,7,Yuto Nagatomo,,Japan,DG|MG|DD,77
 Inter Milan,2011-2012,8,Thiago Motta,,Italy,MC|MDC,81
 Inter Milan,2011-2012,9,Diego Forlan,,Uruguay,BU,83
 Inter Milan,2011-2012,10,Wesley Sneijder,,Netherlands,MOC|MC|MG|MD,87
-Inter Milan,2011-2012,13,Maicon,Maicon,Brazil,DD|MDD|MD,85
+Inter Milan,2011-2012,13,Maicon,Maicon,Brazil,DD|MD,85
 Inter Milan,2011-2012,18,Freddy Guarin,,Colombia,MC|MDC,80
 Inter Milan,2011-2012,19,Esteban Cambiasso,,Argentina,MC|MDC,84
 Inter Milan,2011-2012,22,Diego Milito,,Argentina,BU,82
@@ -166,7 +166,7 @@ Inter Milan,2012-2013,1,Samir Handanovic,,Slovenia,G,83
 Inter Milan,2012-2013,4,Javier Zanetti,,Argentina,DD|DG|MD|MC|MDC,78
 Inter Milan,2012-2013,5,Andrea Ranocchia,,Italy,DC,81
 Inter Milan,2012-2013,6,Cristian Chivu,,Romania,DG|DC,80
-Inter Milan,2012-2013,7,Yuto Nagatomo,,Japan,DG|MDG|DD,78
+Inter Milan,2012-2013,7,Yuto Nagatomo,,Japan,DG|MG|DD,78
 Inter Milan,2012-2013,10,Wesley Sneijder,,Netherlands,MOC|MC|MG|MD,86
 Inter Milan,2012-2013,13,Walter Samuel,,Argentina,DC,83
 Inter Milan,2012-2013,18,Freddy Guarin,,Colombia,MC|MDC,82
@@ -184,7 +184,7 @@ Inter Milan,2013-2014,1,Samir Handanovic,,Slovenia,G,82
 Inter Milan,2013-2014,4,Javier Zanetti,,Argentina,DD|DG|MD|MC|MDC,77
 Inter Milan,2013-2014,5,Andrea Ranocchia,,Italy,DC,78
 Inter Milan,2013-2014,6,Cristian Chivu,,Romania,DG|DC,78
-Inter Milan,2013-2014,7,Yuto Nagatomo,,Japan,DG|MDG|DD,77
+Inter Milan,2013-2014,7,Yuto Nagatomo,,Japan,DG|MG|DD,77
 Inter Milan,2013-2014,8,Hernanes,Hernanes,Brazil,MDC|MC|MOC,83
 Inter Milan,2013-2014,10,Rodrigo Palacio,,Argentina,BU|AD|MOC,82
 Inter Milan,2013-2014,13,Walter Samuel,,Argentina,DC,80
@@ -209,12 +209,12 @@ Inter Milan,2014-2015,13,Hugo Campagnaro,,Argentina,DC|DD|BU,74
 Inter Milan,2014-2015,18,Freddy Guarin,,Colombia,MC|MDC,79
 Inter Milan,2014-2015,19,Juan Jesus,,Brazil,DC|DG,77
 Inter Milan,2014-2015,23,Gary Medel,,Chile,MC|MDC|DC,80
-Inter Milan,2014-2015,25,Danilo D'Ambrosio,,Italy,DC|DD|DG|MG|MDD,73
+Inter Milan,2014-2015,25,Danilo D'Ambrosio,,Italy,DC|DD|DG|MG|MD,73
 Inter Milan,2014-2015,28,Yann M'Vila,,France,MDC|MC,78
 Inter Milan,2014-2015,29,Lukas Podolski,,Germany,MOC|MD|MG|AD|AG|BU,77
 Inter Milan,2014-2015,44,Mateo Kovacic,,Croatia,MDC|MC|MOC,76
 Inter Milan,2014-2015,55,Jose Rodolfo (Jonathan),Jonathan,Brazil,MG|MD,74
-Inter Milan,2014-2015,30,Davide Santon,,Italy,DD|MDD,75
+Inter Milan,2014-2015,30,Davide Santon,,Italy,DD|MD,75
 Inter Milan,2014-2015,77,Ricardo Alvarez,,Argentina,MC|MOC|MD|MG|BU,77
 Inter Milan,2014-2015,91,Pablo Osvaldo,,Italy,BU,77
 Inter Milan,2015-2016,1,Samir Handanovic,,Slovenia,G,84
@@ -230,8 +230,8 @@ Inter Milan,2015-2016,18,Freddy Guarin,,Colombia,MC|MDC,80
 Inter Milan,2015-2016,14,Felipe Melo,,Brazil,DC|MDC|MC|MOC,79
 Inter Milan,2015-2016,23,Marcelo Brozovic,,Croatia,MC|MOC|MDC,78
 Inter Milan,2015-2016,44,Ivan Perisic,,Croatia,MOC|MD|MG|AD|AG,81
-Inter Milan,2015-2016,26,Yuto Nagatomo,,Japan,DG|MDG|DD,74
-Inter Milan,2015-2016,30,Davide Santon,,Italy,DD|MDD,75
+Inter Milan,2015-2016,26,Yuto Nagatomo,,Japan,DG|MG|DD,74
+Inter Milan,2015-2016,30,Davide Santon,,Italy,DD|MD,75
 Inter Milan,2015-2016,5,Roberto Gagliardini,,Italy,MDC|MC,77
 Inter Milan,2015-2016,7,Eder,Eder,Italy,BU|AG,79
 Inter Milan,2015-2016,77,Jonathan Biabiany,,France,MD|AD|AG|BU,77
@@ -243,16 +243,16 @@ Inter Milan,2016-2017,7,Antonio Candreva,,Italy,MC|MOC|MD|MG|AD|BU,81
 Inter Milan,2016-2017,9,Mauro Icardi,,Argentina,BU,84
 Inter Milan,2016-2017,10,Joao Mario,,Portugal,MC|MOC,83
 Inter Milan,2016-2017,14,Felipe Melo,,Brazil,DC|MDC|MC|MOC,78
-Inter Milan,2016-2017,18,Cristian Ansaldi,,Argentina,DG|MG|MDG,79
+Inter Milan,2016-2017,18,Cristian Ansaldi,,Argentina,DG|MG,79
 Inter Milan,2016-2017,20,Ever Banega,,Argentina,MDC|MC|MOC,84
 Inter Milan,2016-2017,22,Gary Medel,,Chile,MC|MDC|DC,82
 Inter Milan,2016-2017,23,Marcelo Brozovic,,Croatia,MC|MOC|MDC,81
 Inter Milan,2016-2017,44,Ivan Perisic,,Croatia,MOC|MD|MG|AD|AG,84
-Inter Milan,2016-2017,30,Davide Santon,,Italy,DD|MDD,76
+Inter Milan,2016-2017,30,Davide Santon,,Italy,DD|MD,76
 Inter Milan,2016-2017,77,Jonathan Biabiany,,France,MD|AD|AG|BU,76
 Inter Milan,2016-2017,8,Rodrigo Palacio,,Argentina,BU|AD|MOC,78
 Inter Milan,2016-2017,11,Stevan Jovetic,,Montenegro,BU|MOC,80
-Inter Milan,2016-2017,33,Danilo D'Ambrosio,,Italy,DC|DD|DG|MG|MDD,75
+Inter Milan,2016-2017,33,Danilo D'Ambrosio,,Italy,DC|DD|DG|MG|MD,75
 Inter Milan,2016-2017,29,Eder,Eder,Italy,BU|AG,80
 Inter Milan,2017-2018,1,Samir Handanovic,,Slovenia,G,88
 Inter Milan,2017-2018,4,Joao Miranda,,Brazil,DC,85
@@ -265,11 +265,11 @@ Inter Milan,2017-2018,10,Joao Mario,,Portugal,MC|MOC,81
 Inter Milan,2017-2018,37,Milan Skriniar,,Slovakia,DC,81
 Inter Milan,2017-2018,29,Eder,Eder,Italy,BU|AG,80
 Inter Milan,2017-2018,11,Stevan Jovetic,,Montenegro,BU|MOC,80
-Inter Milan,2017-2018,18,Cristian Ansaldi,,Argentina,DG|MG|MDG,79
+Inter Milan,2017-2018,18,Cristian Ansaldi,,Argentina,DG|MG,79
 Inter Milan,2017-2018,13,Jeison Murillo,,Colombia,DC,79
 Inter Milan,2017-2018,8,Rodrigo Palacio,,Argentina,BU|AD|MOC,78
 Inter Milan,2017-2018,5,Roberto Gagliardini,,Italy,MDC|MC,78
-Inter Milan,2017-2018,30,Danilo D'Ambrosio,,Italy,DC|DD|DG|MG|MDD,76
+Inter Milan,2017-2018,30,Danilo D'Ambrosio,,Italy,DC|DD|DG|MG|MD,76
 Inter Milan,2017-2018,77,Marcelo Brozovic,,Croatia,MC|MOC|MDC,80
 Inter Milan,2017-2018,99,Gabigol,Gabigol,Brazil,BU|AD,76
 Inter Milan,2018-2019,1,Samir Handanovic,,Slovenia,G,88
@@ -280,7 +280,7 @@ Inter Milan,2018-2019,44,Ivan Perisic,,Croatia,MOC|MD|MG|AD|AG,85
 Inter Milan,2018-2019,4,Joao Miranda,,Brazil,DC,84
 Inter Milan,2018-2019,6,Stefan de Vrij,,Netherlands,DC,84
 Inter Milan,2018-2019,16,Matteo Politano,,Italy,MD|AD|AG,82
-Inter Milan,2018-2019,2,Sime Vrsaljko,,Croatia,DD|MD|MDD,81
+Inter Milan,2018-2019,2,Sime Vrsaljko,,Croatia,DD|MD,81
 Inter Milan,2018-2019,10,Joao Mario,,Portugal,MC|MOC,81
 Inter Milan,2018-2019,77,Marcelo Brozovic,,Croatia,MC|MOC|MDC,81
 Inter Milan,2018-2019,11,Borja Valero,,Spain,MDC|MC|MOC,80
@@ -288,7 +288,7 @@ Inter Milan,2018-2019,7,Antonio Candreva,,Italy,MC|MOC|MD|MG|AD|BU,80
 Inter Milan,2018-2019,30,Keita Balde,,Senegal,MOC|MD|AD|AG|BU,80
 Inter Milan,2018-2019,32,Matias Vecino,,Uruguay,MDC|MC,80
 Inter Milan,2018-2019,23,Lautaro Martinez,,Argentina,BU,80
-Inter Milan,2018-2019,22,Kwadwo Asamoah,,Ghana,DG|MC|MG|MDG,79
+Inter Milan,2018-2019,22,Kwadwo Asamoah,,Ghana,DG|MC|MG,79
 Inter Milan,2018-2019,5,Roberto Gagliardini,,Italy,MDC|MC,78
 Inter Milan,2019-2020,1,Samir Handanovic,,Slovenia,G,88
 Inter Milan,2019-2020,15,Diego Godin,,Uruguay,DC,87
@@ -302,10 +302,10 @@ Inter Milan,2019-2020,16,Matteo Politano,,Italy,MD|AD|AG,82
 Inter Milan,2019-2020,7,Alexis Sanchez,,Chile,MC|MOC|AG|BU,81
 Inter Milan,2019-2020,21,Nicolo Barella,,Italy,MC|MOC|MDC,80
 Inter Milan,2019-2020,32,Matias Vecino,,Uruguay,MDC|MC,80
-Inter Milan,2019-2020,12,Victor Moses,,Nigeria,DD|MD|MG|MDD|AD|BU,78
-Inter Milan,2019-2020,22,Kwadwo Asamoah,,Ghana,DG|MC|MG|MDG,78
+Inter Milan,2019-2020,12,Victor Moses,,Nigeria,DD|MD|MG|AD|BU,78
+Inter Milan,2019-2020,22,Kwadwo Asamoah,,Ghana,DG|MC|MG,78
 Inter Milan,2019-2020,5,Roberto Gagliardini,,Italy,MDC|MC,78
-Inter Milan,2019-2020,13,Danilo D'Ambrosio,,Italy,DC|DD|DG|MG|MDD,77
+Inter Milan,2019-2020,13,Danilo D'Ambrosio,,Italy,DC|DD|DG|MG|MD,77
 Inter Milan,2019-2020,11,Stefano Sensi,,Italy,MDC|MC|MOC,79
 Inter Milan,2020-2021,1,Samir Handanovic,,Slovenia,G,87
 Inter Milan,2020-2021,9,Romelu Lukaku,,Belgium,BU,86
@@ -321,10 +321,10 @@ Inter Milan,2020-2021,95,Alessandro Bastoni,,Italy,DC,78
 Inter Milan,2020-2021,23,Nicolo Barella,,Italy,MC|MOC|MDC,82
 Inter Milan,2020-2021,22,Alexis Sanchez,,Chile,MC|MOC|AG|BU,80
 Inter Milan,2020-2021,20,Borja Valero,,Spain,MDC|MC|MOC,76
-Inter Milan,2020-2021,13,Danilo D'Ambrosio,,Italy,DC|DD|DG|MG|MDD,77
+Inter Milan,2020-2021,13,Danilo D'Ambrosio,,Italy,DC|DD|DG|MG|MD,77
 Inter Milan,2020-2021,11,Matias Vecino,,Uruguay,MDC|MC,79
-Inter Milan,2020-2021,17,Victor Moses,,Nigeria,DD|MD|MG|MDD|AD|BU,78
-Inter Milan,2020-2021,21,Aleksandar Kolarov,,Serbia,DG|MDG,79
+Inter Milan,2020-2021,17,Victor Moses,,Nigeria,DD|MD|MG|AD|BU,78
+Inter Milan,2020-2021,21,Aleksandar Kolarov,,Serbia,DG|MG,79
 Inter Milan,2021-2022,1,Samir Handanovic,,Slovenia,G,85
 Inter Milan,2021-2022,37,Milan Skriniar,,Slovakia,DC,86
 Inter Milan,2021-2022,23,Nicolo Barella,,Italy,MC|MOC|MDC,85
@@ -335,13 +335,13 @@ Inter Milan,2021-2022,77,Marcelo Brozovic,,Croatia,MC|MOC|MDC,84
 Inter Milan,2021-2022,95,Alessandro Bastoni,,Italy,DC,83
 Inter Milan,2021-2022,4,Ivan Perisic,,Croatia,MOC|MD|MG|AD|AG,82
 Inter Milan,2021-2022,20,Hakan Calhanoglu,,Turkey,MDC|MC|MOC|MG|AG,82
-Inter Milan,2021-2022,2,Denzel Dumfries,,Netherlands,DD|MD|MDD,81
+Inter Milan,2021-2022,2,Denzel Dumfries,,Netherlands,DD|MD,81
 Inter Milan,2021-2022,22,Arturo Vidal,,Chile,MC|MDC,81
 Inter Milan,2021-2022,5,Roberto Gagliardini,,Italy,MDC|MC,78
-Inter Milan,2021-2022,3,Matteo Darmian,,Italy,DC|DD|DG|MDC|MD|MDD,79
-Inter Milan,2021-2022,30,Danilo D'Ambrosio,,Italy,DC|DD|DG|MG|MDD,78
+Inter Milan,2021-2022,3,Matteo Darmian,,Italy,DC|DD|DG|MDC|MD,79
+Inter Milan,2021-2022,30,Danilo D'Ambrosio,,Italy,DC|DD|DG|MG|MD,78
 Inter Milan,2021-2022,11,Matias Vecino,,Uruguay,MDC|MC,79
-Inter Milan,2021-2022,32,Federico Dimarco,,Italy,DG|MDG|MG,77
+Inter Milan,2021-2022,32,Federico Dimarco,,Italy,DG|MG,77
 Inter Milan,2021-2022,14,Joaquin Correa,,Argentina,MOC|MG|AG|BU,81
 Inter Milan,2021-2022,7,Alexis Sanchez,,Chile,MC|MOC|AG|BU,80
 Inter Milan,2022-2023,24,Andre Onana,,Cameroon,G,83
@@ -353,11 +353,11 @@ Inter Milan,2022-2023,20,Hakan Calhanoglu,,Turkey,MDC|MC|MOC|MG|AG,84
 Inter Milan,2022-2023,77,Marcelo Brozovic,,Croatia,MC|MOC|MDC,84
 Inter Milan,2022-2023,95,Alessandro Bastoni,,Italy,DC,84
 Inter Milan,2022-2023,15,Francesco Acerbi,,Italy,DC,82
-Inter Milan,2022-2023,2,Denzel Dumfries,,Netherlands,DD|MD|MDD,81
-Inter Milan,2022-2023,36,Matteo Darmian,,Italy,DC|DD|DG|MDC|MD|MDD,80
-Inter Milan,2022-2023,32,Federico Dimarco,,Italy,DG|MDG|MG,80
+Inter Milan,2022-2023,2,Denzel Dumfries,,Netherlands,DD|MD,81
+Inter Milan,2022-2023,36,Matteo Darmian,,Italy,DC|DD|DG|MDC|MD,80
+Inter Milan,2022-2023,32,Federico Dimarco,,Italy,DG|MG,80
 Inter Milan,2022-2023,22,Henrikh Mkhitaryan,,Armenia,MC|MOC|MD|AG|BU,81
-Inter Milan,2022-2023,8,Robin Gosens,,Germany,DG|MG|MDG|AG,80
+Inter Milan,2022-2023,8,Robin Gosens,,Germany,DG|MG|AG,80
 Inter Milan,2022-2023,13,Stefan de Vrij,,Netherlands,DC,83
 Inter Milan,2022-2023,1,Samir Handanovic,,Slovenia,G,82
 Inter Milan,2022-2023,11,Joaquin Correa,,Argentina,MOC|MG|AG|BU,77
@@ -369,35 +369,35 @@ Inter Milan,2023-2024,20,Hakan Calhanoglu,,Turkey,MDC|MC|MOC|MG|AG,86
 Inter Milan,2023-2024,23,Nicolo Barella,,Italy,MC|MOC|MDC,86
 Inter Milan,2023-2024,95,Alessandro Bastoni,,Italy,DC,85
 Inter Milan,2023-2024,15,Francesco Acerbi,,Italy,DC,83
-Inter Milan,2023-2024,32,Federico Dimarco,,Italy,DG|MDG|MG,83
+Inter Milan,2023-2024,32,Federico Dimarco,,Italy,DG|MG,83
 Inter Milan,2023-2024,28,Benjamin Pavard,,France,DC|DD,83
 Inter Milan,2023-2024,22,Henrikh Mkhitaryan,,Armenia,MC|MOC|MD|AG|BU,82
-Inter Milan,2023-2024,36,Matteo Darmian,,Italy,DC|DD|DG|MDC|MD|MDD,81
+Inter Milan,2023-2024,36,Matteo Darmian,,Italy,DC|DD|DG|MDC|MD,81
 Inter Milan,2023-2024,9,Marcus Thuram,,France,MG|AG|BU,81
 Inter Milan,2023-2024,6,Stefan de Vrij,,Netherlands,DC,82
-Inter Milan,2023-2024,2,Denzel Dumfries,,Netherlands,DD|MD|MDD,81
+Inter Milan,2023-2024,2,Denzel Dumfries,,Netherlands,DD|MD,81
 Inter Milan,2023-2024,16,Davide Frattesi,,Italy,MDC|MC|MOC,81
 Inter Milan,2023-2024,8,Marko Arnautovic,,Austria,BU,80
 Inter Milan,2023-2024,7,Alexis Sanchez,,Chile,MC|MOC|AG|BU,80
-Inter Milan,2023-2024,30,Carlos Augusto,,Brazil,DC|DG|MG|MDG,79
-Inter Milan,2023-2024,77,Juan Cuadrado,,Colombia,DD|MD|MDD|AD,79
+Inter Milan,2023-2024,30,Carlos Augusto,,Brazil,DC|DG|MG,79
+Inter Milan,2023-2024,77,Juan Cuadrado,,Colombia,DD|MD|AD,79
 Inter Milan,2023-2024,18,Kristjan Asllani,,Albania,MDC|MC,74
 Inter Milan,2024-2025,10,Lautaro Martinez,,Argentina,BU,88
 Inter Milan,2024-2025,1,Yann Sommer,,Switzerland,G,87
 Inter Milan,2024-2025,23,Nicolo Barella,,Italy,MC|MOC|MDC,87
 Inter Milan,2024-2025,95,Alessandro Bastoni,,Italy,DC,87
 Inter Milan,2024-2025,20,Hakan Calhanoglu,,Turkey,MDC|MC|MOC|MG|AG,86
-Inter Milan,2024-2025,32,Federico Dimarco,,Italy,DG|MDG|MG,85
+Inter Milan,2024-2025,32,Federico Dimarco,,Italy,DG|MG,85
 Inter Milan,2024-2025,15,Francesco Acerbi,,Italy,DC,84
 Inter Milan,2024-2025,28,Benjamin Pavard,,France,DC|DD,84
 Inter Milan,2024-2025,9,Marcus Thuram,,France,MG|AG|BU,84
 Inter Milan,2024-2025,22,Henrikh Mkhitaryan,,Armenia,MC|MOC|MD|AG|BU,83
-Inter Milan,2024-2025,2,Denzel Dumfries,,Netherlands,DD|MD|MDD,83
+Inter Milan,2024-2025,2,Denzel Dumfries,,Netherlands,DD|MD,83
 Inter Milan,2024-2025,6,Stefan de Vrij,,Netherlands,DC,83
 Inter Milan,2024-2025,11,Piotr Zielinski,,Poland,MC|MOC|MDC,82
 Inter Milan,2024-2025,16,Davide Frattesi,,Italy,MDC|MC|MOC,82
-Inter Milan,2024-2025,36,Matteo Darmian,,Italy,DC|DD|DG|MDC|MD|MDD,81
-Inter Milan,2024-2025,30,Carlos Augusto,,Brazil,DC|DG|MG|MDG,80
+Inter Milan,2024-2025,36,Matteo Darmian,,Italy,DC|DD|DG|MDC|MD,81
+Inter Milan,2024-2025,30,Carlos Augusto,,Brazil,DC|DG|MG,80
 Inter Milan,2024-2025,8,Marko Arnautovic,,Austria,BU,79
 Inter Milan,2024-2025,31,Yann Aurel Bisseck,,Germany,DC|DD,76
 Inter Milan,2024-2025,18,Kristjan Asllani,,Albania,MDC|MC,75
@@ -406,20 +406,20 @@ Inter Milan,2025-2026,23,Nicolo Barella,,Italy,MC|MOC|MDC,88
 Inter Milan,2025-2026,10,Lautaro Martinez,,Argentina,BU,88
 Inter Milan,2025-2026,95,Alessandro Bastoni,,Italy,DC,87
 Inter Milan,2025-2026,1,Yann Sommer,,Switzerland,G,86
-Inter Milan,2025-2026,32,Federico Dimarco,,Italy,DG|MDG|MG,86
+Inter Milan,2025-2026,32,Federico Dimarco,,Italy,DG|MG,86
 Inter Milan,2025-2026,9,Marcus Thuram,,France,MG|AG|BU,85
-Inter Milan,2025-2026,2,Denzel Dumfries,,Netherlands,DD|MD|MDD,84
+Inter Milan,2025-2026,2,Denzel Dumfries,,Netherlands,DD|MD,84
 Inter Milan,2025-2026,25,Manuel Akanji,,Switzerland,DC,83
 Inter Milan,2025-2026,20,Hakan Calhanoglu,,Turkey,MDC|MC|MOC|MG|AG,86
 Inter Milan,2025-2026,22,Henrikh Mkhitaryan,,Armenia,MC|MOC|MD|AG|BU,83
 Inter Milan,2025-2026,6,Stefan de Vrij,,Netherlands,DC,83
 Inter Milan,2025-2026,15,Francesco Acerbi,,Italy,DC,83
-Inter Milan,2025-2026,30,Carlos Augusto,,Brazil,DC|DG|MG|MDG,81
+Inter Milan,2025-2026,30,Carlos Augusto,,Brazil,DC|DG|MG,81
 Inter Milan,2025-2026,17,Piotr Zielinski,,Poland,MC|MOC|MDC,81
 Inter Milan,2025-2026,18,Petar Sucic,,Croatia,MDC|MC,77
 Inter Milan,2025-2026,31,Yann Aurel Bisseck,,Germany,DC|DD,76
 Inter Milan,2025-2026,16,Davide Frattesi,,Italy,MDC|MC|MOC,81
 Inter Milan,2025-2026,37,Luis Henrique,,Brazil,DD|MD|MG|AD|AG,78
 Inter Milan,2025-2026,11,Yoan Bonny,,France,BU,78
-Inter Milan,2025-2026,36,Matteo Darmian,,Italy,DC|DD|DG|MDC|MD|MDD,78
+Inter Milan,2025-2026,36,Matteo Darmian,,Italy,DC|DD|DG|MDC|MD,78
 Inter Milan,2025-2026,94,Francesco Pio Esposito,,Italy,BU,76
