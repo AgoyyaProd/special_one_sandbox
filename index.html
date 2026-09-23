@@ -9988,18 +9988,18 @@ function matchEventText(ev, homeName, awayName){
   const teamName = ev.side === 'home' ? homeName : awayName;
   switch(ev.type){
     case 'goal':
-      if(!ev.scorer) return `But pour ${teamName}.`;
-      return ev.assist ? `But de ${ev.scorer} (${teamName}), passe de ${ev.assist}.` : `But de ${ev.scorer} (${teamName}).`;
+      if(!ev.scorer) return tt(`But pour ${teamName}.`,`Goal for ${teamName}.`);
+      return ev.assist ? tt(`But de ${ev.scorer} (${teamName}), passe de ${ev.assist}.`,`Goal by ${ev.scorer} (${teamName}), assist by ${ev.assist}.`) : tt(`But de ${ev.scorer} (${teamName}).`,`Goal by ${ev.scorer} (${teamName}).`);
     case 'var':
-      return ev.player ? `But annulé pour ${teamName} (${ev.player}) après revue vidéo.` : `But annulé pour ${teamName} après revue vidéo.`;
+      return ev.player ? tt(`But annulé pour ${teamName} (${ev.player}) après revue vidéo.`,`Goal disallowed for ${teamName} (${ev.player}) after video review.`) : tt(`But annulé pour ${teamName} après revue vidéo.`,`Goal disallowed for ${teamName} after video review.`);
     case 'yellow':
-      return ev.player ? `Carton jaune pour ${ev.player} (${teamName}).` : `Carton jaune pour ${teamName}.`;
+      return ev.player ? tt(`Carton jaune pour ${ev.player} (${teamName}).`,`Yellow card for ${ev.player} (${teamName}).`) : tt(`Carton jaune pour ${teamName}.`,`Yellow card for ${teamName}.`);
     case 'red':
-      return ev.player ? `Carton rouge pour ${ev.player} (${teamName}) !` : `Carton rouge pour ${teamName} !`;
+      return ev.player ? tt(`Carton rouge pour ${ev.player} (${teamName}) !`,`Red card for ${ev.player} (${teamName})!`) : tt(`Carton rouge pour ${teamName} !`,`Red card for ${teamName}!`);
     case 'injury':
-      return ev.player ? `${ev.player} (${teamName}) touché, sort sur blessure.` : `Blessure côté ${teamName}.`;
+      return ev.player ? tt(`${ev.player} (${teamName}) touché, sort sur blessure.`,`${ev.player} (${teamName}) injured, forced off.`) : tt(`Blessure côté ${teamName}.`,`Injury for ${teamName}.`);
     case 'sub':
-      return (ev.in && ev.out) ? `Changement (${teamName}) : ${ev.in} remplace ${ev.out}.` : `Changement chez ${teamName}.`;
+      return (ev.in && ev.out) ? tt(`Changement (${teamName}) : ${ev.in} remplace ${ev.out}.`,`Substitution (${teamName}): ${ev.in} replaces ${ev.out}.`) : tt(`Changement chez ${teamName}.`,`Substitution for ${teamName}.`);
     default:
       return '';
   }
@@ -12428,7 +12428,7 @@ function renderLiveMatch(){
   document.getElementById('live-competition-label').textContent = lm.isQualifying
     ? `${lm.euroTier==='cl' ? `${euroCupLabel('Coupe des Champions')} - ${stageLabel(EURO_ENTRY_ROUND_LABEL[lm.qualifyingTie.stage])}` : tt('Barrage Coupe Conférence','Conference Cup play-off')} - ${lm.qualifyingLeg === 'leg1' ? stageLabel('Aller') : stageLabel('Retour')}`
     : lm.isDomesticSuperCup
-      ? `${state.domesticSuperCup.name}${lm.domesticSuperCupStage === 'semis' ? ' - ' + stageLabel('Demi-finales') : ' - ' + stageLabel('Finale')}`
+      ? `${superCupName(state.league)}${lm.domesticSuperCupStage === 'semis' ? ' - ' + stageLabel('Demi-finales') : ' - ' + stageLabel('Finale')}`
       : lm.isUefaSuperCup
         ? tt("Supercoupe Continentale","Continental Super Cup")
         : lm.isCup
@@ -12441,13 +12441,13 @@ function renderLiveMatch(){
 
   const subsBtn = document.getElementById('btn-live-subs');
   const remaining = 5 - (lm.subsUsed || 0);
-  subsBtn.textContent = `Changement (${Math.max(0,remaining)})`;
+  subsBtn.textContent = tt(`Changement (${Math.max(0,remaining)})`,`Substitute (${Math.max(0,remaining)})`);
   subsBtn.disabled = lm.finished || remaining <= 0 || !state.subs.some(s=>s.player);
 
   const statusEl = document.getElementById('live-squad-status');
   const statusItems = [];
-  (lm.sentOffPlayers||[]).forEach(p=>statusItems.push(`<span class="live-squad-status-item is-red">🟥 ${p.nom} - expulsé</span>`));
-  (lm.injuredPlayers||[]).filter(p=>!(lm.sentOffPlayers||[]).includes(p)).forEach(p=>statusItems.push(`<span class="live-squad-status-item">🩹 ${p.nom} - touché</span>`));
+  (lm.sentOffPlayers||[]).forEach(p=>statusItems.push(`<span class="live-squad-status-item is-red">🟥 ${tt(`${p.nom} - expulsé`,`${p.nom} - sent off`)}</span>`));
+  (lm.injuredPlayers||[]).filter(p=>!(lm.sentOffPlayers||[]).includes(p)).forEach(p=>statusItems.push(`<span class="live-squad-status-item">🩹 ${tt(`${p.nom} - touché`,`${p.nom} - injured`)}</span>`));
   if(statusItems.length){
     statusEl.innerHTML = statusItems.join('');
     statusEl.style.display = 'flex';
@@ -12488,9 +12488,9 @@ function renderLiveMatch(){
     if(!lm.scorers.length){
       scorersEl.innerHTML = '';
     } else {
-      scorersEl.innerHTML = `<div class="live-scorers-title">Buteurs</div>` + lm.scorers.map(s=>`
+      scorersEl.innerHTML = `<div class="live-scorers-title">${tt('Buteurs','Goalscorers')}</div>` + lm.scorers.map(s=>`
         <div class="live-scorer-row">
-          <span><span class="l-minute">${s.minute}'</span>${s.scorer || s.team}${s.assist ? ` <span class="l-assist">(passe : ${s.assist})</span>` : ''}</span>
+          <span><span class="l-minute">${s.minute}'</span>${s.scorer || s.team}${s.assist ? ` <span class="l-assist">${tt(`(passe : ${s.assist})`,`(assist: ${s.assist})`)}</span>` : ''}</span>
           <span class="l-assist">${s.team}</span>
         </div>
       `).join('');
@@ -14619,10 +14619,10 @@ function euroTrophyBadgesHtml(clubId, euroFullyDone){
   const w = state.currentSeasonEuroWinners;
   if(!w) return '';
   let html = '';
-  if(w.cl === clubId) html += ` <span class="st-badge st-badge-c1" title="Vainqueur de la Coupe des Champions">C1</span>`;
-  if(w.el === clubId) html += ` <span class="st-badge st-badge-c3" title="Vainqueur de la Coupe d'Europe">C3</span>`;
-  if(w.ecl === clubId) html += ` <span class="st-badge st-badge-c4" title="Vainqueur de la Coupe Conférence">C4</span>`;
-  if(w.superCupWinner === clubId) html += ` <span class="st-badge st-badge-sc" title="Vainqueur de la Supercoupe Continentale">SC</span>`;
+  if(w.cl === clubId) html += ` <span class="st-badge st-badge-c1" title="${tt('Vainqueur de la Coupe des Champions','Champions Cup winner')}">C1</span>`;
+  if(w.el === clubId) html += ` <span class="st-badge st-badge-c3" title="${tt("Vainqueur de la Coupe d'Europe","Europe Cup winner")}">C3</span>`;
+  if(w.ecl === clubId) html += ` <span class="st-badge st-badge-c4" title="${tt('Vainqueur de la Coupe Conférence','Conference Cup winner')}">C4</span>`;
+  if(w.superCupWinner === clubId) html += ` <span class="st-badge st-badge-sc" title="${tt('Vainqueur de la Supercoupe Continentale','Continental Super Cup winner')}">SC</span>`;
   return html;
 }
 
@@ -14711,7 +14711,7 @@ function renderLeaguePanels(){
   const rows = standingArr.map((s,i)=>`
     <div class="st-row ${(isOwnLeague && s.id===state.club.id)?'st-me':''} ${zoneMap[s.id]||''}">
       <div class="st-pos">${i+1}</div>
-      <div class="st-name">${s.name}${i===0 && (isOwnLeague ? seasonDone : true) ? ' <span class="st-badge st-badge-champ" title="Champion">C</span>' : ''}${viewedCupChampion===s.id ? ' <span class="st-badge st-badge-cup" title="Vainqueur de la Coupe Nationale">CN</span>' : ''}${viewedSuperCup && viewedSuperCup.champion===s.id ? ` <span class="st-badge st-badge-tc" title="Vainqueur du ${viewedSuperCup.name}">${viewedSuperCup.badge || DOMESTIC_SUPER_CUP_BADGE[viewLeague] || 'TC'}</span>` : ''}${euroTrophyBadgesHtml(s.id, euroFullyDone)}</div>
+      <div class="st-name">${s.name}${i===0 && (isOwnLeague ? seasonDone : true) ? ` <span class="st-badge st-badge-champ" title="${tt('Champion','Champion')}">C</span>` : ''}${viewedCupChampion===s.id ? ` <span class="st-badge st-badge-cup" title="${tt('Vainqueur de la Coupe Nationale','National Cup winner')}">CN</span>` : ''}${viewedSuperCup && viewedSuperCup.champion===s.id ? ` <span class="st-badge st-badge-tc" title="${tt(`Vainqueur du ${viewedSuperCup.name}`,`${superCupName(viewLeague)} winner`)}">${viewedSuperCup.badge || DOMESTIC_SUPER_CUP_BADGE[viewLeague] || 'TC'}</span>` : ''}${euroTrophyBadgesHtml(s.id, euroFullyDone)}</div>
       <div class="st-num">${s.p}</div>
       <div class="st-num">${s.w}</div>
       <div class="st-num">${s.d}</div>
@@ -14723,23 +14723,23 @@ function renderLeaguePanels(){
   const hasQualiSlot = Object.values(zoneMap).includes('st-cl-quali');
   table.innerHTML = `
     <div class="st-row st-head">
-      <div>#</div><div>Club</div><div>J</div><div>V</div><div>N</div><div>D</div><div>Diff</div><div>Pts</div>
+      <div>#</div><div>${tt('Club','Club')}</div><div>${tt('J','P')}</div><div>${tt('V','W')}</div><div>${tt('N','D')}</div><div>${tt('D','L')}</div><div>${tt('Diff','GD')}</div><div>${tt('Pts','Pts')}</div>
     </div>
   ` + rows + `
     <div class="st-legend">
-      <span class="st-legend-item"><i class="st-dot st-cl"></i>Coupe des Champions</span>
-      ${hasQualiSlot ? `<span class="st-legend-item"><i class="st-dot st-cl-quali"></i>LDC - Tour de qualification</span>` : ''}
-      <span class="st-legend-item"><i class="st-dot st-el"></i>Coupe d'Europe</span>
-      <span class="st-legend-item"><i class="st-dot st-ecl"></i>Coupe Conférence</span>
+      <span class="st-legend-item"><i class="st-dot st-cl"></i>${euroCupLabel('Coupe des Champions')}</span>
+      ${hasQualiSlot ? `<span class="st-legend-item"><i class="st-dot st-cl-quali"></i>${tt('LDC - Tour de qualification','CL - Qualifying round')}</span>` : ''}
+      <span class="st-legend-item"><i class="st-dot st-el"></i>${euroCupLabel("Coupe d'Europe")}</span>
+      <span class="st-legend-item"><i class="st-dot st-ecl"></i>${euroCupLabel('Coupe Conférence')}</span>
     </div>
     <div class="st-legend">
-      <span class="st-legend-item"><span class="st-badge st-badge-champ">C</span>Championnat</span>
-      <span class="st-legend-item"><span class="st-badge st-badge-cup">CN</span>Coupe Nationale</span>
-      <span class="st-legend-item"><span class="st-badge st-badge-c1">C1</span>Coupe des Champions</span>
-      <span class="st-legend-item"><span class="st-badge st-badge-c3">C3</span>Coupe d'Europe</span>
-      <span class="st-legend-item"><span class="st-badge st-badge-c4">C4</span>Coupe Conférence</span>
-      <span class="st-legend-item"><span class="st-badge st-badge-sc">SC</span>Supercoupe Continentale</span>
-      ${viewedSuperCup ? `<span class="st-legend-item"><span class="st-badge st-badge-tc">${viewedSuperCup.badge || DOMESTIC_SUPER_CUP_BADGE[viewLeague] || 'TC'}</span>${viewedSuperCup.name}</span>` : ''}
+      <span class="st-legend-item"><span class="st-badge st-badge-champ">C</span>${tt('Championnat','League')}</span>
+      <span class="st-legend-item"><span class="st-badge st-badge-cup">CN</span>${tt('Coupe Nationale','National Cup')}</span>
+      <span class="st-legend-item"><span class="st-badge st-badge-c1">C1</span>${euroCupLabel('Coupe des Champions')}</span>
+      <span class="st-legend-item"><span class="st-badge st-badge-c3">C3</span>${euroCupLabel("Coupe d'Europe")}</span>
+      <span class="st-legend-item"><span class="st-badge st-badge-c4">C4</span>${euroCupLabel('Coupe Conférence')}</span>
+      <span class="st-legend-item"><span class="st-badge st-badge-sc">SC</span>${tt('Supercoupe Continentale','Continental Super Cup')}</span>
+      ${viewedSuperCup ? `<span class="st-legend-item"><span class="st-badge st-badge-tc">${viewedSuperCup.badge || DOMESTIC_SUPER_CUP_BADGE[viewLeague] || 'TC'}</span>${superCupName(viewLeague)}</span>` : ''}
     </div>
   `;
 
@@ -14795,7 +14795,7 @@ function renderLeaguePanels(){
       resultsEl.innerHTML = `<div class="hand-empty">Aucun match joué pour le moment.</div>`;
     } else {
       const renderEntry = entry => `
-        <div class="rd-heading ${entry.type==='cup'?'rd-cup':''} ${entry.type==='supercup'?'rd-supercup':''} ${entry.type.startsWith('euro-')?entry.type+'-text':''}" data-upcoming="${entry.upcoming ? '1' : '0'}">${entry.label}${entry.upcoming ? ' <span class="rd-upcoming-tag">à venir</span>' : ''}</div>
+        <div class="rd-heading ${entry.type==='cup'?'rd-cup':''} ${entry.type==='supercup'?'rd-supercup':''} ${entry.type.startsWith('euro-')?entry.type+'-text':''}" data-upcoming="${entry.upcoming ? '1' : '0'}">${entry.label}${entry.upcoming ? ` <span class="rd-upcoming-tag">${tt('à venir','upcoming')}</span>` : ''}</div>
         ${entry.matches.map(fx=>{
           const home = resolveOtherClub(fx.home);
           const away = resolveOtherClub(fx.away);
@@ -14909,7 +14909,7 @@ function renderLeaguePanels(){
     resultsEl.innerHTML = `<div class="hand-empty">Aucun match joué. Lancez la première journée.</div>`;
   } else {
     const renderEntry = entry => `
-      <div class="rd-heading ${entry.type==='cup'?'rd-cup':''} ${entry.type==='supercup'?'rd-supercup':''} ${entry.type.startsWith('euro-')?entry.type+'-text':''}" data-upcoming="${entry.upcoming ? '1' : '0'}">${entry.label}${entry.upcoming ? ' <span class="rd-upcoming-tag">à venir</span>' : ''}</div>
+      <div class="rd-heading ${entry.type==='cup'?'rd-cup':''} ${entry.type==='supercup'?'rd-supercup':''} ${entry.type.startsWith('euro-')?entry.type+'-text':''}" data-upcoming="${entry.upcoming ? '1' : '0'}">${entry.label}${entry.upcoming ? ` <span class="rd-upcoming-tag">${tt('à venir','upcoming')}</span>` : ''}</div>
       ${entry.matches.map(fx=>{
         // fx.homeName/awayName (posés à la clôture de la saison précédente,
         // voir finalizeSeasonEuroWinners) priment sur resolveClub() - la
@@ -14969,7 +14969,7 @@ function renderEuroCompetitionBlock(euro, tierClass, isPlayed){
   `).join('');
   table.innerHTML += `
     <div class="st-row st-head">
-      <div>#</div><div>Club</div><div>J</div><div>V</div><div>N</div><div>D</div><div>Diff</div><div>Pts</div>
+      <div>#</div><div>${tt('Club','Club')}</div><div>${tt('J','P')}</div><div>${tt('V','W')}</div><div>${tt('N','D')}</div><div>${tt('D','L')}</div><div>${tt('Diff','GD')}</div><div>${tt('Pts','Pts')}</div>
     </div>
   ` + rows + `
     <div class="st-legend">
@@ -14981,16 +14981,16 @@ function renderEuroCompetitionBlock(euro, tierClass, isPlayed){
   const upcomingLeagueRounds = [];
   if(euro.stage === 'league'){
     for(let ri = euro.currentRound; ri < euro.calendar.length; ri++){
-      upcomingLeagueRounds.push({ label:`Phase de ligue - J${ri+1}`, matches:euro.calendar[ri], upcoming:true });
+      upcomingLeagueRounds.push({ label:`${stageLabel('Phase de ligue')} - J${ri+1}`, matches:euro.calendar[ri], upcoming:true });
     }
   }
 
   if(!euro.resultsByRound.length && !upcomingLeagueRounds.length){
-    resultsEl.innerHTML += `<div class="hand-empty">Compétition pas encore programmée.</div>`;
+    resultsEl.innerHTML += `<div class="hand-empty">${tt('Compétition pas encore programmée.','Competition not scheduled yet.')}</div>`;
   } else {
     const allEntries = euro.resultsByRound.concat(upcomingLeagueRounds);
     resultsEl.innerHTML += allEntries.map(entry=>`
-      <div class="rd-heading ${tierClass}-text" data-upcoming="${entry.upcoming ? '1' : '0'}">${entry.label}${entry.upcoming ? ' <span class="rd-upcoming-tag">à venir</span>' : ''}</div>
+      <div class="rd-heading ${tierClass}-text" data-upcoming="${entry.upcoming ? '1' : '0'}">${entry.label}${entry.upcoming ? ` <span class="rd-upcoming-tag">${tt('à venir','upcoming')}</span>` : ''}</div>
       ${entry.matches.map(fx=>{
         const home = euro.clubsById[fx.home];
         const away = euro.clubsById[fx.away];
@@ -15196,8 +15196,8 @@ function renderSeason(){
     nextBtn.textContent = compTxt;
     liveBtn.textContent = `${tt('Jouer en direct','Play live')} (${compTxt})`;
   } else {
-    nextBtn.textContent = seasonDone ? 'Saison terminée' : `Match suivant (${season.currentRound+1}/${season.calendar.length})`;
-    liveBtn.textContent = 'Jouer en direct';
+    nextBtn.textContent = seasonDone ? tt('Saison terminée','Season over') : tt(`Match suivant (${season.currentRound+1}/${season.calendar.length})`,`Next match (${season.currentRound+1}/${season.calendar.length})`);
+    liveBtn.textContent = tt('Jouer en direct','Play live');
   }
 
   // Toutes les compétitions européennes (la mienne + les 2 fantômes) - pas
