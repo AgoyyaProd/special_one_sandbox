@@ -10117,7 +10117,7 @@ function performManualLiveSubstitution(lm, outSlotId, inSlotId){
   movePlayer(inSlot.id, outSlot.id);
   lm.subsUsed++;
   lm.substitutedOffPlayers.push(outgoing);
-  pushLiveEvent(lm, lm.minute, 'sub', `Changement : ${incoming.nom} remplace ${outgoing.nom}.`, mySide);
+  pushLiveEvent(lm, lm.minute, 'sub', tt(`Changement : ${incoming.nom} remplace ${outgoing.nom}.`,`Substitution: ${incoming.nom} replaces ${outgoing.nom}.`), mySide);
   return true;
 }
 
@@ -11178,11 +11178,11 @@ function triggerHalftimeDecision(lm){
     // événement éligible) : passe directement à la 2e mi-temps.
     lm.inSecondHalf = true;
     lm.minute = 45;
-    pushLiveEvent(lm, 45, 'ft', 'Fin de la première mi-temps.');
+    pushLiveEvent(lm, 45, 'ft', tt('Fin de la première mi-temps.','End of the first half.'));
     return;
   }
   lm.pendingDecision = decision;
-  pushLiveEvent(lm, 45, 'decision', `Mi-temps : ${decision.title}.`);
+  pushLiveEvent(lm, 45, 'decision', tt(`Mi-temps : ${decision.title}.`,`Half-time: ${decision.title}.`));
 }
 
 // ============================================================
@@ -11777,8 +11777,8 @@ function advancePenaltyKick(lm){
   else { ps.awayKicks.push(scored); if(scored) ps.awayScore++; }
 
   const text = kicker
-    ? `${scored ? 'But' : 'Manqué'} ! ${kicker.nom} (${kickerName}) ${scored ? 'transforme son tir au but' : 'échoue son tir au but'}.`
-    : `${scored ? 'But' : 'Manqué'} au tir au but pour ${kickerName}.`;
+    ? tt(`${scored ? 'But' : 'Manqué'} ! ${kicker.nom} (${kickerName}) ${scored ? 'transforme son tir au but' : 'échoue son tir au but'}.`,`${scored ? 'Scored' : 'Missed'}! ${kicker.nom} (${kickerName}) ${scored ? 'converts his penalty' : 'misses his penalty'}.`)
+    : tt(`${scored ? 'But' : 'Manqué'} au tir au but pour ${kickerName}.`,`Penalty ${scored ? 'scored' : 'missed'} for ${kickerName}.`);
   pushLiveEvent(lm, 120, 'decision', text, kickerSide);
 
   if(isHomeTurn) ps.turn = 'away'; else ps.turn = 'home';
@@ -11790,7 +11790,7 @@ function advancePenaltyKick(lm){
     lm.penaltyScore = `${ps.homeScore}-${ps.awayScore}`;
     lm.penaltyWinnerId = winnerId;
     const winnerName = winnerId === lm.homeId ? lm.homeName : lm.awayName;
-    pushLiveEvent(lm, 121, 'decision', `Tirs au but : ${lm.homeName} ${ps.homeScore} - ${ps.awayScore} ${lm.awayName}. ${winnerName} se qualifie !`);
+    pushLiveEvent(lm, 121, 'decision', tt(`Tirs au but : ${lm.homeName} ${ps.homeScore} - ${ps.awayScore} ${lm.awayName}. ${winnerName} se qualifie !`,`Penalty shootout: ${lm.homeName} ${ps.homeScore} - ${ps.awayScore} ${lm.awayName}. ${winnerName} go through!`));
     lm.finished = true;
   }
 }
@@ -11866,15 +11866,15 @@ function advanceLiveMoment(lm){
       if(!lm.inExtraTime){
         lm.inExtraTime = true;
         lm.minute = 91;
-        pushLiveEvent(lm, lm.minute, 'ft', `Fin du temps réglementaire : ${lm.homeName} ${lm.hg} - ${lm.ag} ${lm.awayName}. Place à la prolongation !`);
+        pushLiveEvent(lm, lm.minute, 'ft', tt(`Fin du temps réglementaire : ${lm.homeName} ${lm.hg} - ${lm.ag} ${lm.awayName}. Place à la prolongation !`,`End of regular time: ${lm.homeName} ${lm.hg} - ${lm.ag} ${lm.awayName}. On to extra time!`));
         return;
       }
-      pushLiveEvent(lm, 120, 'ft', `Fin de la prolongation : ${lm.homeName} ${lm.hg} - ${lm.ag} ${lm.awayName}. Direction les tirs au but !`);
+      pushLiveEvent(lm, 120, 'ft', tt(`Fin de la prolongation : ${lm.homeName} ${lm.hg} - ${lm.ag} ${lm.awayName}. Direction les tirs au but !`,`End of extra time: ${lm.homeName} ${lm.hg} - ${lm.ag} ${lm.awayName}. Off to a penalty shootout!`));
       startPenaltyShootout(lm);
       return;
     }
     lm.finished = true;
-    const label = lm.inExtraTime ? 'Coup de sifflet final (après prolongation)' : 'Coup de sifflet final';
+    const label = tt(lm.inExtraTime ? 'Coup de sifflet final (après prolongation)' : 'Coup de sifflet final', lm.inExtraTime ? 'Final whistle (after extra time)' : 'Final whistle');
     pushLiveEvent(lm, lm.inExtraTime ? 120 : lm.minute, 'ft', `${label} : ${lm.homeName} ${lm.hg} - ${lm.ag} ${lm.awayName}.`);
     return;
   }
@@ -11889,7 +11889,7 @@ function advanceLiveMoment(lm){
     if(decision){
       lm.decisionsUsed++;
       lm.pendingDecision = decision;
-      pushLiveEvent(lm, lm.minute, 'decision', 'Moment clé : votre banc de touche doit réagir.');
+      pushLiveEvent(lm, lm.minute, 'decision', tt('Moment clé : votre banc de touche doit réagir.','Key moment: your bench needs to react.'));
       return;
     }
   }
@@ -11898,14 +11898,14 @@ function advanceLiveMoment(lm){
   if(roll < 0.006){
     const homeAtFault = Math.random() < 0.5;
     if(homeAtFault) lm.modHome -= 10; else lm.modAway -= 10;
-    pushLiveEvent(lm, lm.minute, 'red', `Carton rouge pour ${homeAtFault ? lm.homeName : lm.awayName} ! L'équipe termine en infériorité numérique.`, homeAtFault?'home':'away');
+    pushLiveEvent(lm, lm.minute, 'red', tt(`Carton rouge pour ${homeAtFault ? lm.homeName : lm.awayName} ! L'équipe termine en infériorité numérique.`,`Red card for ${homeAtFault ? lm.homeName : lm.awayName}! The team finishes with ten men.`), homeAtFault?'home':'away');
     const myTeamAtFault = (homeAtFault && lm.homeId === state.club.id) || (!homeAtFault && lm.awayId === state.club.id);
     if(myTeamAtFault){
       const player = randomStarterPlayer();
       if(player){
         lm.sentOffPlayers.push(player);
         setPlayerUnavailable(player, 1, 'suspension', lm.roundIdx);
-        pushLiveEvent(lm, lm.minute, 'suspension', `${player.nom} sera suspendu pour le prochain match.`, homeAtFault?'home':'away');
+        pushLiveEvent(lm, lm.minute, 'suspension', tt(`${player.nom} sera suspendu pour le prochain match.`,`${player.nom} will be suspended for the next match.`), homeAtFault?'home':'away');
       }
     }
     return;
@@ -11919,11 +11919,11 @@ function advanceLiveMoment(lm){
       if(player){
         lm.cardedPlayers = lm.cardedPlayers || [];
         if(!lm.cardedPlayers.includes(player)) lm.cardedPlayers.push(player);
-        pushLiveEvent(lm, lm.minute, 'card', `Carton jaune pour ${player.nom} (${homeCarded ? lm.homeName : lm.awayName}).`, cardedSide);
+        pushLiveEvent(lm, lm.minute, 'card', tt(`Carton jaune pour ${player.nom} (${homeCarded ? lm.homeName : lm.awayName}).`,`Yellow card for ${player.nom} (${homeCarded ? lm.homeName : lm.awayName}).`), cardedSide);
         return;
       }
     }
-    pushLiveEvent(lm, lm.minute, 'card', `Carton jaune pour ${homeCarded ? lm.homeName : lm.awayName}.`, cardedSide);
+    pushLiveEvent(lm, lm.minute, 'card', tt(`Carton jaune pour ${homeCarded ? lm.homeName : lm.awayName}.`,`Yellow card for ${homeCarded ? lm.homeName : lm.awayName}.`), cardedSide);
     return;
   }
 
@@ -11950,17 +11950,17 @@ function advanceLiveMoment(lm){
     let text;
     if(scorer){
       text = assist
-        ? `BUT ! ${scorer.nom} (${teamName}) marque sur un service de ${assist.nom} (${lm.hg} - ${lm.ag}).`
-        : `BUT ! ${scorer.nom} (${teamName}) fait trembler les filets (${lm.hg} - ${lm.ag}).`;
+        ? tt(`BUT ! ${scorer.nom} (${teamName}) marque sur un service de ${assist.nom} (${lm.hg} - ${lm.ag}).`,`GOAL! ${scorer.nom} (${teamName}) scores from an assist by ${assist.nom} (${lm.hg} - ${lm.ag}).`)
+        : tt(`BUT ! ${scorer.nom} (${teamName}) fait trembler les filets (${lm.hg} - ${lm.ag}).`,`GOAL! ${scorer.nom} (${teamName}) finds the net (${lm.hg} - ${lm.ag}).`);
       lm.scorers.push({ minute: lm.minute, team: teamName, scorer: scorer.nom, assist: assist ? assist.nom : null });
     } else {
-      text = `BUT ! ${teamName} fait trembler les filets (${lm.hg} - ${lm.ag}).`;
+      text = tt(`BUT ! ${teamName} fait trembler les filets (${lm.hg} - ${lm.ag}).`,`GOAL! ${teamName} finds the net (${lm.hg} - ${lm.ag}).`);
       lm.scorers.push({ minute: lm.minute, team: teamName, scorer: null, assist: null });
     }
     pushLiveEvent(lm, lm.minute, 'goal', text, chanceSide);
   } else {
-    const flavor = Math.random() < 0.5 ? 'tir repoussé par le gardien' : 'occasion manquée de peu';
-    pushLiveEvent(lm, lm.minute, 'chance', `${teamName} se procure une occasion, ${flavor}.`, chanceSide);
+    const flavor = Math.random() < 0.5 ? tt('tir repoussé par le gardien','shot saved by the goalkeeper') : tt('occasion manquée de peu','chance narrowly missed');
+    pushLiveEvent(lm, lm.minute, 'chance', tt(`${teamName} se procure une occasion, ${flavor}.`,`${teamName} create a chance, ${flavor}.`), chanceSide);
   }
 }
 
@@ -12073,7 +12073,7 @@ function chooseLiveDecision(key){
   if(decision.isHalftime){
     lm.inSecondHalf = true;
     lm.minute = 45;
-    pushLiveEvent(lm, 45, 'ft', 'Coup d\'envoi de la 2e mi-temps.');
+    pushLiveEvent(lm, 45, 'ft', tt('Coup d\'envoi de la 2e mi-temps.','Kick-off for the second half.'));
   }
 
   renderLiveMatch();
