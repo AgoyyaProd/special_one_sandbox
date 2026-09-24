@@ -4907,7 +4907,7 @@ function renderPlayerCard(club, player){
       <div class="pc-number">${player.numero}</div>
       <div class="pc-trigram"><span>${club.trigram}</span></div>
 
-      <div class="pc-position" data-poste="${player.poste}"><span>${player.poste}</span></div>
+      <div class="pc-position" data-poste="${posLabelMulti(player.poste)}"><span>${posLabelMulti(player.poste)}</span></div>
       <div class="pc-rating">${player.note}</div>
     </div>
   `;
@@ -5734,6 +5734,26 @@ const STAGE_LABEL_EN = {
 function stageLabel(fr){
   if(!fr) return fr;
   return ((typeof state !== 'undefined' && state.lang === 'en')) ? (STAGE_LABEL_EN[fr] || fr) : fr;
+}
+// Abréviations de poste (G, DC, MOC...) : codes internes conservés tels
+// quels (FORMATIONS, canPlaceInSlot, CSV Postes...) - seul l'affichage
+// bascule sur les abréviations anglaises usuelles côté scouting/FIFA.
+const POSITION_ABBR_EN = {
+  'G':'GK', 'DC':'CB', 'DD':'RB', 'DG':'LB',
+  'MDC':'CDM', 'MC':'CM', 'MD':'RM', 'MG':'LM', 'MOC':'CAM',
+  'BU':'ST', 'AG':'LW', 'AD':'RW'
+};
+function posLabel(code){
+  if(!code) return code;
+  return ((typeof state !== 'undefined' && state.lang === 'en')) ? (POSITION_ABBR_EN[code] || code) : code;
+}
+// Même principe que posLabel() mais pour une chaîne multi-postes déjà
+// assemblée façon "DC - DD" (format de player.poste, cf. parsing CSV) -
+// traduit chaque poste pris individuellement puis rejoint à l'identique.
+function posLabelMulti(poste){
+  if(!poste) return poste;
+  if(!(typeof state !== 'undefined' && state.lang === 'en')) return poste;
+  return poste.split('-').map(p=>p.trim()).map(p=>POSITION_ABBR_EN[p] || p).join(' - ');
 }
 function matchday(n){ return tt(`Journée ${n}`, `Matchday ${n}`); }
 // Suffixe ordinal anglais (1st/2nd/3rd/4th...) - la version française
@@ -7777,7 +7797,7 @@ function renderMatchsheetHTML(){
     </div>
   `;
   return header
-    + state.slots.map(s=>row(s.label, s)).join('')
+    + state.slots.map(s=>row(posLabel(s.label), s)).join('')
     + `<div class="ms-subhead">${tt('Remplaçants','Substitutes')}</div>`
     + state.subs.map((s,i)=>row('R'+(i+1), s)).join('');
 }
@@ -7943,7 +7963,7 @@ function renderSlotHTML(slot, isOpen){
         <svg class="jersey-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
           <polygon points="35,0 50,12 65,0 82,11 100,27 84,39 84,100 16,100 16,39 0,27 18,11"></polygon>
         </svg>
-        <div class="slot-label">${filled?'':slot.label}</div>
+        <div class="slot-label">${filled?'':posLabel(slot.label)}</div>
         <div class="slot-number">${filled?slot.player.numero:''}</div>
       </div>
       <div class="slot-name">${filled?slot.player.nom:''}</div>
@@ -8030,10 +8050,10 @@ function resolveTransferPick(uid){
   const card = state.hand.find(c=>c.uid===uid);
   if(!card || !tr) return;
   const slot = findSlot(tr.activeSlotId);
-  const posLabel = isBenchSlot(tr.activeSlotId) ? tt('Remplaçant','Substitute') : slot.label;
+  const posLabelTxt = isBenchSlot(tr.activeSlotId) ? tt('Remplaçant','Substitute') : posLabel(slot.label);
   if(card.player !== slot.player){
     state.usedNames.add(playerKey(card.player));
-    toast(tt(`${card.player.prenom} ${card.player.nom} rejoint l'effectif (${posLabel}) !`, `${card.player.prenom} ${card.player.nom} joins the squad (${posLabel})!`));
+    toast(tt(`${card.player.prenom} ${card.player.nom} rejoint l'effectif (${posLabelTxt}) !`, `${card.player.prenom} ${card.player.nom} joins the squad (${posLabelTxt})!`));
     slot.player = card.player;
   } else {
     toast(tt(`${card.player.prenom} ${card.player.nom} reste dans l'effectif.`, `${card.player.prenom} ${card.player.nom} stays in the squad.`));
@@ -8120,7 +8140,7 @@ function renderTransferGame(){
     // relances de la draft initiale n'avaient pas toutes été utilisées.
     relanceBtn.disabled = true;
     relanceBtn.textContent = tt('Relance indisponible en mercato','Reroll unavailable during transfer window');
-    rerollCountEl.textContent = tt(`Poste concerné : ${slot ? (isBenchSlot(tr.activeSlotId) ? 'Remplaçant ('+compatiblePositions(slot.player).join('/')+')' : slot.label) : ''} - conservez votre joueur ou remplacez-le.`, `Position concerned: ${slot ? (isBenchSlot(tr.activeSlotId) ? 'Substitute ('+compatiblePositions(slot.player).join('/')+')' : slot.label) : ''} - keep your player or replace them.`);
+    rerollCountEl.textContent = tt(`Poste concerné : ${slot ? (isBenchSlot(tr.activeSlotId) ? 'Remplaçant ('+compatiblePositions(slot.player).join('/')+')' : slot.label) : ''} - conservez votre joueur ou remplacez-le.`, `Position concerned: ${slot ? (isBenchSlot(tr.activeSlotId) ? 'Substitute ('+compatiblePositions(slot.player).map(posLabel).join('/')+')' : posLabel(slot.label)) : ''} - keep your player or replace them.`);
   } else { // 'review'
     state.hand = [];
     draftBtn.textContent = tt(`Mercato terminé (${tr.maxPicks}/${tr.maxPicks} choix utilisés)`, `Transfer window done (${tr.maxPicks}/${tr.maxPicks} picks used)`);
@@ -12430,7 +12450,7 @@ function renderLiveSubsPanel(){
       : tt(`Vous avez utilisé vos 5 changements pour ce match.`, `You've used all 5 substitutions for this match.`);
     listEl.innerHTML = state.slots.filter(s=>s.player && !lm.sentOffPlayers.includes(s.player)).map(s=>{
       const hurt = lm.injuredPlayers.includes(s.player);
-      return `<div class="live-subs-row ${remaining<=0?'is-disabled':''}" data-slot="${s.id}"><span><span class="pos">${s.label}</span>${s.player.nom}${hurt ? ` <span class="live-subs-flag" title="${tt('Joue avec une gêne physique','Playing carrying a knock')}">🩹</span>` : ''}</span><span>&#8594;</span></div>`;
+      return `<div class="live-subs-row ${remaining<=0?'is-disabled':''}" data-slot="${s.id}"><span><span class="pos">${posLabel(s.label)}</span>${s.player.nom}${hurt ? ` <span class="live-subs-flag" title="${tt('Joue avec une gêne physique','Playing carrying a knock')}">🩹</span>` : ''}</span><span>&#8594;</span></div>`;
     }).join('');
     listEl.querySelectorAll('.live-subs-row[data-slot]').forEach(row=>{
       row.addEventListener('click', ()=>{
@@ -12444,7 +12464,7 @@ function renderLiveSubsPanel(){
     subtitleEl.textContent = outSlot && outSlot.player ? tt(`${outSlot.player.nom} sort. Choisissez son remplaçant.`, `${outSlot.player.nom} is coming off. Choose their replacement.`) : t('live.subs-subtitle');
     const backRow = `<div class="live-subs-row" id="live-subs-back"><span>&#8592; ${tt('Retour','Back')}</span></div>`;
     listEl.innerHTML = (benchSlots.length
-      ? benchSlots.map(s=>`<div class="live-subs-row" data-slot="${s.id}"><span><span class="pos">${s.player.poste||''}</span>${s.player.nom}</span><span>&#8594;</span></div>`).join('')
+      ? benchSlots.map(s=>`<div class="live-subs-row" data-slot="${s.id}"><span><span class="pos">${posLabelMulti(s.player.poste)||''}</span>${s.player.nom}</span><span>&#8594;</span></div>`).join('')
       : `<div class="hand-empty">${tt('Aucun remplaçant disponible sur le banc.','No substitute available on the bench.')}</div>`
     ) + backRow;
     listEl.querySelectorAll('.live-subs-row[data-slot]').forEach(row=>{
