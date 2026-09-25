@@ -16588,8 +16588,15 @@ function renderAchievementCardHTML(def){
   if(def.kind === 'tiered'){
     const tier = prog.tier || 0;
     const started = tier > 0;
-    const tierName = started ? tierLabel(ACHIEVEMENT_TIERS[tier-1]) : null;
-    const bgUrl = started ? ACHIEVEMENT_TIER_ASSETS[tierName] : null;
+    // ACHIEVEMENT_TIER_ASSETS (achievements.json) est indexé par le nom de
+    // palier FRANÇAIS ("Apprenti"...) - tierLabel() le traduit pour
+    // l'affichage ("Apprentice"...), donc chercher l'image avec le libellé
+    // déjà traduit ne trouvait plus rien dès qu'on jouait en anglais (fond
+    // dégradé plat par défaut à la place de l'illustration du palier). On
+    // garde le nom brut pour la clé, le libellé traduit pour le texte.
+    const tierRaw = started ? ACHIEVEMENT_TIERS[tier-1] : null;
+    const tierName = started ? tierLabel(tierRaw) : null;
+    const bgUrl = started ? ACHIEVEMENT_TIER_ASSETS[tierRaw] : null;
     const nextThreshold = def.thresholds[tier] !== undefined ? def.thresholds[tier] : null;
     const value = state.careerStats[def.counter] || 0;
     const progressLabel = nextThreshold !== null
