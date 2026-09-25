@@ -201,7 +201,18 @@ h1{ font-size:22px; margin:0 0 4px; font-family:var(--sans); }
    où le recolorage seul peut se confondre de loin avec un club aux
    couleurs proches (jaune/or). */
 .pc-card.is-ballon-or{
-  box-shadow:0 25px 60px rgba(0,0,0,.5), 0 0 26px rgba(212,175,55,.55);
+  /* Les ratios standard (34%/46%/82% de couleur mélangée à du quasi-noir,
+     voir --card-bg/--card-mid/--card-stripe ci-dessus) sont pensés pour
+     rester lisibles avec N'IMPORTE QUELLE couleur de club, y compris des
+     couleurs déjà claires - ils assombrissent donc BEAUCOUP, ce qui rendait
+     la palette dorée méconnaissable (juste "un peu plus jaune que marron").
+     On lève ces ratios spécifiquement ici pour laisser le doré dominer
+     réellement le fond, quitte à perdre la lisibilité universelle : cette
+     carte a une seule palette fixe, connue et testée. */
+  --card-bg: color-mix(in srgb, var(--primary) 62%, #05070c 38%);
+  --card-mid: color-mix(in srgb, var(--primary) 72%, var(--card-bg) 28%);
+  --card-stripe: color-mix(in srgb, var(--secondary) 96%, #000 4%);
+  box-shadow:0 25px 60px rgba(0,0,0,.5), 0 0 26px rgba(255,213,79,.6);
 }
 
 .pc-card::after{
@@ -4892,7 +4903,7 @@ function formatSaisonShort(saison){
 // badge discret, est le même principe que les cartes spéciales des jeux de
 // foot (TOTY/Icônes) : ça se reconnaît d'un coup d'oeil dans la main ou
 // sur le terrain, sans avoir à lire le texte de la carte.
-const BALLON_OR_PALETTE = { primary:'#8a6d23', secondary:'#d4af37', accent:'#f5f1e6' };
+const BALLON_OR_PALETTE = { primary:'#c9962b', secondary:'#ffd54f', accent:'#fff6dc' };
 
 function renderPlayerCard(club, player){
   const uid = ++cardUid;
