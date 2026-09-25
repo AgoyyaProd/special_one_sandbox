@@ -5279,9 +5279,13 @@ async function loadClubRosterCsv(clubId){
       const joueur = cols[iJoueur] || '';
       // Le nom d'usage prime sur le nom complet dès qu'il est renseigné
       // (ex: "Fábio Tavares de Oliveira" -> affiché "Fabinho") ; sinon on
-      // retombe sur Prénom/Nom déduits de la colonne "Joueur".
+      // retombe sur Prénom/Nom déduits de la colonne "Joueur". Un nom d'usage
+      // n'est JAMAIS re-scindé en prénom/nom (contrairement au nom complet) :
+      // "Vinícius Jr" ou "Neymar Jr" doivent rester un seul bloc affiché sur
+      // une seule ligne sur la carte, pas "Vinícius" en petit + "JR" en gros
+      // sur la ligne du dessous comme s'il s'agissait d'un nom de famille.
       const usage = iUsage >= 0 ? (cols[iUsage] || '').trim() : '';
-      const { prenom, nom } = usage ? splitPlayerName(usage) : splitPlayerName(joueur);
+      const { prenom, nom } = usage ? { prenom: '', nom: usage } : splitPlayerName(joueur);
       return {
         prenom,
         nom,
@@ -7609,6 +7613,10 @@ function onSlotClick(slotId){
 }
 
 function playerKey(p){ return p.prenom + '|' + p.nom; }
+// Nom affiché "prénom + nom" en un seul bloc - trim() évite l'espace en tête
+// quand prenom est vide (cas d'un nom d'usage du type "Vinícius Jr", jamais
+// re-scindé en prénom/nom, voir loadClubRosterCsv).
+function playerFullName(p){ return (p.prenom + ' ' + p.nom).trim(); }
 
 // Un joueur peut être mis hors service pour plusieurs journées suite à une
 // décision prise en match en direct (blessure aggravée, carton rouge...).
@@ -7824,7 +7832,7 @@ function renderMatchsheetHTML(){
   const row = (label, s) => `
     <div class="ms-row ${s.player?'':'empty'}">
       <div class="ms-pos">${label}</div>
-      <div class="ms-name">${s.player ? (s.player.prenom+' '+s.player.nom) : '-'}</div>
+      <div class="ms-name">${s.player ? playerFullName(s.player) : '-'}</div>
       <div class="ms-note">${s.player ? s.player.note : '-'}</div>
     </div>
   `;
@@ -8092,10 +8100,10 @@ function resolveTransferPick(uid){
   const posLabelTxt = isBenchSlot(tr.activeSlotId) ? tt('Remplaçant','Substitute') : posLabel(slot.label);
   if(card.player !== slot.player){
     state.usedNames.add(playerKey(card.player));
-    toast(tt(`${card.player.prenom} ${card.player.nom} rejoint l'effectif (${posLabelTxt}) !`, `${card.player.prenom} ${card.player.nom} joins the squad (${posLabelTxt})!`));
+    toast(tt(`${playerFullName(card.player)} rejoint l'effectif (${posLabelTxt}) !`, `${playerFullName(card.player)} joins the squad (${posLabelTxt})!`));
     slot.player = card.player;
   } else {
-    toast(tt(`${card.player.prenom} ${card.player.nom} reste dans l'effectif.`, `${card.player.prenom} ${card.player.nom} stays in the squad.`));
+    toast(tt(`${playerFullName(card.player)} reste dans l'effectif.`, `${playerFullName(card.player)} stays in the squad.`));
   }
   tr.count++;
   state.hand = [];
