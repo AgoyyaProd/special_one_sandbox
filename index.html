@@ -14774,16 +14774,28 @@ function renderLeaguePanels(){
   let standingArr, zoneMap;
   if(isOwnLeague){
     standingArr = sortedStandings();
-    zoneMap = zoneClassMap();
+    // Avant la 1re journée, le classement n'est encore que l'ordre initial
+    // (aucun match joué) - le surligner comme s'il s'agissait de vraies
+    // places européennes (avec, en plus, la place EPS le cas échéant)
+    // donnait l'impression trompeuse que 5 places LDC étaient déjà
+    // attribuées dès le début de saison. Le bénéficiaire de l'EPS est de
+    // toute façon déjà annoncé nommément à la fin de la saison précédente
+    // (showEuropeRecapPopup/buildCoefficientsRecapHTML) - inutile de le
+    // réafficher ici tant que le classement n'a pas de sens.
+    zoneMap = season.currentRound > 0 ? zoneClassMap() : {};
   } else {
     standingArr = getOtherLeagueStandings(viewLeague);
     const lg = state.otherLeagues && state.otherLeagues[viewLeague];
-    const cupWinnerId = lg && lg.cup ? lg.cup.champion : null;
-    const euroWinners = euroFullyDoneNow() ? state.currentSeasonEuroWinners : null;
-    const hasEps = (state.epsLeagues||[]).includes(viewLeague);
-    const map = computeEuropeanQualifications(viewLeague, standingArr, cupWinnerId, euroWinners, hasEps);
-    zoneMap = {};
-    Object.keys(map).forEach(id=>{ zoneMap[id] = zoneClassForQualification(map[id]); });
+    if(lg && lg.currentRound > 0){
+      const cupWinnerId = lg.cup ? lg.cup.champion : null;
+      const euroWinners = euroFullyDoneNow() ? state.currentSeasonEuroWinners : null;
+      const hasEps = (state.epsLeagues||[]).includes(viewLeague);
+      const map = computeEuropeanQualifications(viewLeague, standingArr, cupWinnerId, euroWinners, hasEps);
+      zoneMap = {};
+      Object.keys(map).forEach(id=>{ zoneMap[id] = zoneClassForQualification(map[id]); });
+    } else {
+      zoneMap = {};
+    }
   }
 
   const table = document.getElementById('standings-table');
