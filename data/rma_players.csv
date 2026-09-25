@@ -321,7 +321,7 @@ Real Madrid,2018-2019,24,Dani Ceballos,,Spain,MC|MOC|MDC,80,0
 Real Madrid,2018-2019,11,Gareth Bale,,Wales,AD|AG|BU|MD,88,0
 Real Madrid,2018-2019,9,Karim Benzema,,France,BU|MOC,86,0
 Real Madrid,2018-2019,7,Mariano Díaz,,Dominican Republic,BU|AD,79,0
-Real Madrid,2018-2019,28,Vinícius Júnior,,Brazil,AG|AD|BU,77,0
+Real Madrid,2018-2019,28,Vinícius Júnior,Vinícius Jr,Brazil,AG|AD|BU,77,0
 Real Madrid,2018-2019,16,Brahim Díaz,,Spain,MOC|AD|AG,75,0
 Real Madrid,2019-2020,1,Thibaut Courtois,,Belgium,G,89,0
 Real Madrid,2019-2020,13,Andriy Lunin,,Ukraine,G,75,0
@@ -343,7 +343,7 @@ Real Madrid,2019-2020,20,Marco Asensio,,Spain,AG|MG|MOC|AD,84,0
 Real Madrid,2019-2020,21,Brahim Díaz,,Spain,MOC|AD|AG,76,0
 Real Madrid,2019-2020,9,Karim Benzema,,France,BU|MOC,87,0
 Real Madrid,2019-2020,11,Gareth Bale,,Wales,AD|AG|BU|MD,85,0
-Real Madrid,2019-2020,25,Vinícius Júnior,,Brazil,AG|AD|BU,79,0
+Real Madrid,2019-2020,25,Vinícius Júnior,Vinícius Jr,Brazil,AG|AD|BU,79,0
 Real Madrid,2019-2020,7,Eden Hazard,,Belgium,AG|MG|MOC|AD,88,0
 Real Madrid,2019-2020,16,James Rodríguez,,Colombia,MOC|MG|AG|MC,82,0
 Real Madrid,2020-2021,1,Thibaut Courtois,,Belgium,G,89,0
@@ -365,7 +365,7 @@ Real Madrid,2020-2021,17,Lucas Vázquez,,Spain,AD|MD|DD,81,0
 Real Madrid,2020-2021,11,Marco Asensio,,Spain,AG|MG|MOC|AD,83,0
 Real Madrid,2020-2021,24,Martin Ødegaard,,Norway,MOC|MC|AD|MD,82,0
 Real Madrid,2020-2021,9,Karim Benzema,,France,BU|MOC,89,0
-Real Madrid,2020-2021,20,Vinícius Júnior,,Brazil,AG|AD|BU,80,0
+Real Madrid,2020-2021,20,Vinícius Júnior,Vinícius Jr,Brazil,AG|AD|BU,80,0
 Real Madrid,2020-2021,7,Eden Hazard,,Belgium,AG|MG|MOC|AD,85,0
 Real Madrid,2020-2021,18,Luka Jović,,Serbia,BU|MOC,78,0
 Real Madrid,2020-2021,25,Rodrygo,,Brazil,AD|AG|BU,80,0
@@ -386,7 +386,7 @@ Real Madrid,2021-2022,18,Eduardo Camavinga,,France,MC|MDC|MG,78,0
 Real Madrid,2021-2022,22,Isco,,Spain,MOC|MC|MG|AG,80,0
 Real Madrid,2021-2022,11,Marco Asensio,,Spain,AG|MG|MOC|AD,83,0
 Real Madrid,2021-2022,9,Karim Benzema,,France,BU|MOC,91,1
-Real Madrid,2021-2022,20,Vinícius Júnior,,Brazil,AG|AD|BU,86,0
+Real Madrid,2021-2022,20,Vinícius Júnior,Vinícius Jr,Brazil,AG|AD|BU,86,0
 Real Madrid,2021-2022,7,Eden Hazard,,Belgium,AG|MG|MOC|AD,82,0
 Real Madrid,2021-2022,21,Rodrygo,,Brazil,AD|AG|BU,81,0
 Real Madrid,2021-2022,16,Luka Jović,,Serbia,BU|MOC,77,0
@@ -406,7 +406,7 @@ Real Madrid,2022-2023,18,Aurélien Tchouaméni,,France,MDC|MC,84,0
 Real Madrid,2022-2023,17,Lucas Vázquez,,Spain,AD|MD|DD,81,0
 Real Madrid,2022-2023,11,Marco Asensio,,Spain,AG|MG|MOC|AD,83,0
 Real Madrid,2022-2023,9,Karim Benzema,,France,BU|MOC,91,0
-Real Madrid,2022-2023,20,Vinícius Júnior,,Brazil,AG|AD|BU,89,0
+Real Madrid,2022-2023,20,Vinícius Júnior,Vinícius Jr,Brazil,AG|AD|BU,89,0
 Real Madrid,2022-2023,21,Rodrygo,,Brazil,AD|AG|BU,84,0
 Real Madrid,2022-2023,7,Eden Hazard,,Belgium,AG|MG|MOC|AD,79,0
 Real Madrid,2022-2023,24,Mariano Díaz,,Dominican Republic,BU|AD,75,0
@@ -427,7 +427,7 @@ Real Madrid,2023-2024,18,Aurélien Tchouaméni,,France,MDC|MC,84,0
 Real Madrid,2023-2024,17,Lucas Vázquez,,Spain,AD|MD|DD,80,0
 Real Madrid,2023-2024,5,Jude Bellingham,,England,MC|MOC|MDC,87,0
 Real Madrid,2023-2024,19,Dani Ceballos,,Spain,MC|MOC|MDC,81,0
-Real Madrid,2023-2024,7,Vinícius Júnior,,Brazil,AG|AD|BU,90,0
+Real Madrid,2023-2024,7,Vinícius Júnior,Vinícius Jr,Brazil,AG|AD|BU,90,0
 Real Madrid,2023-2024,11,Rodrygo,,Brazil,AD|AG|BU,85,0
 Real Madrid,2023-2024,14,Joselu,,Spain,BU|MOC,80,0
 Real Madrid,2023-2024,21,Brahim Díaz,,Spain,MOC|AD|AG,81,0
@@ -451,7 +451,7 @@ Real Madrid,2024-2025,15,Arda Güler,,Turkey,MOC|AD|MD,79,0
 Real Madrid,2024-2025,5,Jude Bellingham,,England,MC|MOC|MDC,89,0
 Real Madrid,2024-2025,19,Dani Ceballos,,Spain,MC|MOC|MDC,81,0
 Real Madrid,2024-2025,9,Kylian Mbappé,,France,BU|AG|AD|MOC,91,0
-Real Madrid,2024-2025,7,Vinícius Júnior,,Brazil,AG|AD|BU,90,0
+Real Madrid,2024-2025,7,Vinícius Júnior,Vinícius Jr,Brazil,AG|AD|BU,90,0
 Real Madrid,2024-2025,11,Rodrygo,,Brazil,AD|AG|BU,86,0
 Real Madrid,2024-2025,21,Brahim Díaz,,Spain,MOC|AD|AG,82,0
 Real Madrid,2024-2025,14,Endrick,,Brazil,BU|AD,78,0
@@ -475,7 +475,7 @@ Real Madrid,2025-2026,5,Jude Bellingham,,England,MC|MOC|MDC,89,0
 Real Madrid,2025-2026,19,Dani Ceballos,,Spain,MC|MOC|MDC,80,0
 Real Madrid,2025-2026,17,Franco Mastantuono,,Argentina,MOC|AD|MD,79,0
 Real Madrid,2025-2026,10,Kylian Mbappé,,France,BU|AG|AD|MOC,92,0
-Real Madrid,2025-2026,7,Vinícius Júnior,,Brazil,AG|AD|BU,89,0
+Real Madrid,2025-2026,7,Vinícius Júnior,Vinícius Jr,Brazil,AG|AD|BU,89,0
 Real Madrid,2025-2026,11,Rodrygo,,Brazil,AD|AG|BU,85,0
 Real Madrid,2025-2026,16,Gonzalo García,,Spain,BU|MOC,77,0
 Real Madrid,2025-2026,9,Endrick,,Brazil,BU|AD,79,0
