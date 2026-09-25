@@ -196,6 +196,14 @@ h1{ font-size:22px; margin:0 0 4px; font-family:var(--sans); }
   container-type: inline-size;
 }
 
+/* Léger halo doré en plus de l'ombre standard - dernier repère visuel
+   pour une carte Ballon d'Or, y compris à petite taille (main de draft)
+   où le recolorage seul peut se confondre de loin avec un club aux
+   couleurs proches (jaune/or). */
+.pc-card.is-ballon-or{
+  box-shadow:0 25px 60px rgba(0,0,0,.5), 0 0 26px rgba(212,175,55,.55);
+}
+
 .pc-card::after{
   content:"";
   position:absolute; inset:0;
@@ -4877,6 +4885,15 @@ function formatSaisonShort(saison){
   return parts[0].slice(-2) + '/' + parts[1].slice(-2);
 }
 
+// Palette fixe "Ballon d'Or" - remplace entièrement les couleurs du club
+// (primary/secondary/accent) sur la carte du joueur qui l'a remporté cette
+// saison-là (voir player.ballonOr, lu depuis la colonne CSV du même nom).
+// Casser volontairement l'identité visuelle du club, plutôt qu'un simple
+// badge discret, est le même principe que les cartes spéciales des jeux de
+// foot (TOTY/Icônes) : ça se reconnaît d'un coup d'oeil dans la main ou
+// sur le terrain, sans avoir à lire le texte de la carte.
+const BALLON_OR_PALETTE = { primary:'#8a6d23', secondary:'#d4af37', accent:'#f5f1e6' };
+
 function renderPlayerCard(club, player){
   const uid = ++cardUid;
   const nat = normalizeNationality(player.nationalite);
@@ -4884,9 +4901,12 @@ function renderPlayerCard(club, player){
   const flagStyle = realFlag
     ? `background-image:url('${realFlag}');background-size:cover;background-position:center;`
     : `background:${flagGradients[nat] || "linear-gradient(90deg,#888,#ccc)"};`;
+  const isBallonOr = !!player.ballonOr;
+  const cardColors = isBallonOr ? BALLON_OR_PALETTE : club;
+  const ballonOrTitle = isBallonOr ? ` title="${tt('Ballon d’Or','Ballon d’Or')} ${player.saison}"` : '';
 
   return `
-    <div class="pc-card" style="--primary:${club.primary};--secondary:${club.secondary};--accent:${club.accent};">
+    <div class="pc-card ${isBallonOr?'is-ballon-or':''}" style="--primary:${cardColors.primary};--secondary:${cardColors.secondary};--accent:${cardColors.accent};"${ballonOrTitle}>
       <div class="pc-bg-mid"></div>
       <div class="pc-bg-stripe"></div>
       <div class="pc-illustration">${silhouetteMarkup(uid)}</div>
@@ -5237,6 +5257,13 @@ async function loadClubRosterCsv(clubId){
     const iNat = header.indexOf('Nationalite');
     const iPostes = header.indexOf('Postes');
     const iNote = header.indexOf('Note');
+    // Colonne optionnelle, absente de la plupart des CSV existants tant que
+    // le rétro-remplissage saison par saison n'a pas été fait - indexOf
+    // renvoie alors -1 et cols[-1] est undefined, donc ballonOr retombe sur
+    // false sans rien casser pour les clubs qui n'ont pas encore cette
+    // colonne. Une seule saison par joueur doit porter '1' (celle où il l'a
+    // réellement remporté), jamais les saisons précédentes/suivantes.
+    const iBallonOr = header.indexOf('BallonOr');
     return lines.slice(1).map(parseCsvLine).map(cols => {
       const joueur = cols[iJoueur] || '';
       // Le nom d'usage prime sur le nom complet dès qu'il est renseigné
@@ -5251,7 +5278,8 @@ async function loadClubRosterCsv(clubId){
         nationalite: cols[iNat] || '',
         saison: cols[iSaison] || '',
         note: parseInt(cols[iNote], 10) || 0,
-        numero: cols[iNumero] || ''
+        numero: cols[iNumero] || '',
+        ballonOr: iBallonOr >= 0 && (cols[iBallonOr] || '').trim() === '1'
       };
     });
   } catch(e){
