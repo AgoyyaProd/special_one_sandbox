@@ -1,496 +1,496 @@
-Club,Saison,Numero,Joueur,Nom d'usage,Nationalite,Postes,Note
-AC Milan,2004-2005,13,Alessandro Nesta,,Italy,DC,94
-AC Milan,2004-2005,7,Andriy Shevchenko,,Ukraine,BU|AG|AD,93
-AC Milan,2004-2005,31,Jacobus Stam,Jaap Stam,Netherlands,DC,93
-AC Milan,2004-2005,3,Paolo Maldini,,Italy,DG|DC,92
-AC Milan,2004-2005,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,92
-AC Milan,2004-2005,20,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,90
-AC Milan,2004-2005,9,Filippo Inzaghi,,Italy,BU,90
-AC Milan,2004-2005,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD,90
-AC Milan,2004-2005,1,Nelson de Jesus Silva,Dida,Brazil,G,90
-AC Milan,2004-2005,21,Andrea Pirlo,,Italy,MDC|MC|MOC,89
-AC Milan,2004-2005,8,Gennaro Gattuso,,Italy,MDC|MC|MD,89
-AC Milan,2004-2005,11,Hernán Jorge Crespo,,Argentina,BU,89
-AC Milan,2004-2005,10,Manuel César Rui Costa,Rui Costa,Portugal,MOC|MC,89
-AC Milan,2004-2005,15,Jon Dahl Tomasson,,Denmark,BU,87
-AC Milan,2004-2005,17,Christian Abbiati,,Italy,G,83
-AC Milan,2004-2005,23,Massimo Ambrosini,,Italy,MDC|MC,82
-AC Milan,2004-2005,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,81
-AC Milan,2004-2005,5,Alessandro Costacurta,,Italy,DC,80
-AC Milan,2004-2005,26,Giuseppe Pancaro,,Italy,DD,80
-AC Milan,2004-2005,24,Vikash Dhorasoo,,France,MOC|MC,79
-AC Milan,2004-2005,28,Fabricio Coloccini,,Argentina,DC,78
-AC Milan,2004-2005,14,Dario Šimić,,Croatia,DD|DC,77
-AC Milan,2004-2005,32,Cristian Brocchi,,Italy,MC|MDC|MD,72
-AC Milan,2004-2005,27,Sérgio Cláudio dos Santos,Serginho,Brazil,MG,72
-AC Milan,2005-2006,7,Andriy Shevchenko,,Ukraine,BU|AG|AD,93
-AC Milan,2005-2006,1,Nelson de Jesus Silva,Dida,Brazil,G,91
-AC Milan,2005-2006,3,Paolo Maldini,,Italy,DG|DC,91
-AC Milan,2005-2006,13,Alessandro Nesta,,Italy,DC,90
-AC Milan,2005-2006,20,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,90
-AC Milan,2005-2006,9,Filippo Inzaghi,,Italy,BU,90
-AC Milan,2005-2006,31,Jacobus Stam,Jaap Stam,Netherlands,DC,90
-AC Milan,2005-2006,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,90
-AC Milan,2005-2006,32,Christian Vieri,,Italy,BU,89
-AC Milan,2005-2006,10,Manuel César Rui Costa,Rui Costa,Portugal,MOC|MC,89
-AC Milan,2005-2006,11,Alberto Gilardino,,Italy,BU,87
-AC Milan,2005-2006,8,Gennaro Gattuso,,Italy,MDC|MC|MD,87
-AC Milan,2005-2006,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD,87
-AC Milan,2005-2006,21,Andrea Pirlo,,Italy,MDC|MC|MOC,86
-AC Milan,2005-2006,29,Marek Jankulovski,,Czechia,DG|MG|AG,84
-AC Milan,2005-2006,23,Massimo Ambrosini,,Italy,MDC|MC,82
-AC Milan,2005-2006,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,81
-AC Milan,2005-2006,5,Alessandro Costacurta,,Italy,DC,80
-AC Milan,2005-2006,14,Dario Šimić,,Croatia,DD|DC,77
-AC Milan,2005-2006,27,Sérgio Cláudio dos Santos,Serginho,Brazil,MG,72
-AC Milan,2005-2006,18,Zeljko Kalac,,Australia,G,71
-AC Milan,2006-2007,13,Alessandro Nesta,,Italy,DC,91
-AC Milan,2006-2007,1,Nelson de Jesus Silva,Dida,Brazil,G,88
-AC Milan,2006-2007,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,87
-AC Milan,2006-2007,21,Andrea Pirlo,,Italy,MDC|MC|MOC,86
-AC Milan,2006-2007,11,Alberto Gilardino,,Italy,BU,85
-AC Milan,2006-2007,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,85
-AC Milan,2006-2007,25,Daniele Bonera,,Italy,DC|DD,83
-AC Milan,2006-2007,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD,83
-AC Milan,2006-2007,3,Paolo Maldini,,Italy,DG|DC,82
-AC Milan,2006-2007,9,Filippo Inzaghi,,Italy,BU,81
-AC Milan,2006-2007,8,Gennaro Gattuso,,Italy,MDC|MC|MD,81
-AC Milan,2006-2007,27,Sérgio Cláudio dos Santos,Serginho,Brazil,MG,81
-AC Milan,2006-2007,18,Marek Jankulovski,,Czechia,DG|MG|AG,80
-AC Milan,2006-2007,20,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,79
-AC Milan,2006-2007,23,Massimo Ambrosini,,Italy,MDC|MC,79
-AC Milan,2006-2007,5,Alessandro Costacurta,,Italy,DC,77
-AC Milan,2006-2007,32,Cristian Brocchi,,Italy,MC|MDC|MD,76
-AC Milan,2006-2007,19,Giuseppe Favalli,,Italy,DG|DC,76
-AC Milan,2006-2007,14,Johann Vogel,,Switzerland,MDC|MC,73
-AC Milan,2006-2007,15,Marco Borriello,,Italy,BU,70
-AC Milan,2006-2007,16,Zeljko Kalac,,Australia,G,70
-AC Milan,2007-2008,13,Alessandro Nesta,,Italy,DC,90
-AC Milan,2007-2008,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,90
-AC Milan,2007-2008,21,Andrea Pirlo,,Italy,MDC|MC|MOC,88
-AC Milan,2007-2008,11,Alberto Gilardino,,Italy,BU,85
-AC Milan,2007-2008,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,85
-AC Milan,2007-2008,99,Ronaldo Luís Nazário de Lima,Ronaldo,Brazil,BU,84
-AC Milan,2007-2008,25,Daniele Bonera,,Italy,DC|DD,83
-AC Milan,2007-2008,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD,83
-AC Milan,2007-2008,1,Nelson de Jesus Silva,Dida,Brazil,G,83
-AC Milan,2007-2008,3,Paolo Maldini,,Italy,DG|DC,82
-AC Milan,2007-2008,38,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,81
-AC Milan,2007-2008,5,Emerson Ferreira da Rosa,Emerson,Brazil,MDC|MC,81
-AC Milan,2007-2008,9,Filippo Inzaghi,,Italy,BU,81
-AC Milan,2007-2008,8,Gennaro Gattuso,,Italy,MDC|MC|MD,81
-AC Milan,2007-2008,27,Sérgio Cláudio dos Santos,Serginho,Brazil,MG,81
-AC Milan,2007-2008,18,Marek Jankulovski,,Czechia,DG|MG|AG,80
-AC Milan,2007-2008,10,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,79
-AC Milan,2007-2008,23,Massimo Ambrosini,,Italy,MDC|MC,79
-AC Milan,2007-2008,44,Massimo Oddo,,Italy,DD|MD|DC,79
-AC Milan,2007-2008,19,Giuseppe Favalli,,Italy,DG|DC,73
-AC Milan,2008-2009,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,90
-AC Milan,2008-2009,21,Andrea Pirlo,,Italy,MDC|MC|MOC,87
-AC Milan,2008-2009,10,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,83
-AC Milan,2008-2009,15,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,83
-AC Milan,2008-2009,23,Massimo Ambrosini,,Italy,MDC|MC,83
-AC Milan,2008-2009,8,Gennaro Gattuso,,Italy,MDC|MC|MD,82
-AC Milan,2008-2009,84,Mathieu Flamini,,France,MDC|MC,82
-AC Milan,2008-2009,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,81
-AC Milan,2008-2009,76,Andriy Shevchenko,,Ukraine,BU|AG|AD,80
-AC Milan,2008-2009,25,Daniele Bonera,,Italy,DC|DD,80
-AC Milan,2008-2009,9,Filippo Inzaghi,,Italy,BU,80
-AC Milan,2008-2009,11,Marco Borriello,,Italy,BU,80
-AC Milan,2008-2009,18,Marek Jankulovski,,Czechia,DG|MG|AG,80
-AC Milan,2008-2009,7,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,79
-AC Milan,2008-2009,12,Christian Abbiati,,Italy,G,79
-AC Milan,2008-2009,5,Emerson Ferreira da Rosa,Emerson,Brazil,MDC|MC,77
-AC Milan,2008-2009,3,Paolo Maldini,,Italy,DG|DC,77
-AC Milan,2008-2009,1,Nelson de Jesus Silva,Dida,Brazil,G,76
-AC Milan,2008-2009,19,Giuseppe Favalli,,Italy,DG|DC,75
-AC Milan,2008-2009,24,Philippe Senderos,,Switzerland,DC,75
-AC Milan,2009-2010,21,Andrea Pirlo,,Italy,MDC|MC|MOC,85
-AC Milan,2009-2010,13,Alessandro Nesta,,Italy,DC,84
-AC Milan,2009-2010,7,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,84
-AC Milan,2009-2010,80,Ronaldo de Assis Moreira,Ronaldinho,Brazil,AG|MOC|BU|MG,84
-AC Milan,2009-2010,8,Gennaro Gattuso,,Italy,MDC|MC|MD,83
-AC Milan,2009-2010,12,Christian Abbiati,,Italy,G,82
-AC Milan,2009-2010,11,Klaas-Jan Huntelaar,,Netherlands,BU,82
-AC Milan,2009-2010,23,Massimo Ambrosini,,Italy,MDC|MC,82
-AC Milan,2009-2010,10,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,81
-AC Milan,2009-2010,15,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,81
-AC Milan,2009-2010,25,Daniele Bonera,,Italy,DC|DD,80
-AC Milan,2009-2010,22,Marco Borriello,,Italy,BU,80
-AC Milan,2009-2010,16,Mathieu Flamini,,France,MDC|MC,79
-AC Milan,2009-2010,33,Thiago Emiliano da Silva,Thiago Silva,Brazil,DC,79
-AC Milan,2009-2010,9,Filippo Inzaghi,,Italy,BU,78
-AC Milan,2009-2010,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,77
-AC Milan,2009-2010,18,Marek Jankulovski,,Czechia,DG|MG|AG,77
-AC Milan,2009-2010,5,Oguchi Onyewu,,United States,DC,77
-AC Milan,2009-2010,19,Giuseppe Favalli,,Italy,DG|DC,76
-AC Milan,2009-2010,20,Ignazio Abate,,Italy,DD|MD,76
-AC Milan,2009-2010,1,Nelson de Jesus Silva,Dida,Brazil,G,74
-AC Milan,2009-2010,77,Luca Antonini,,Italy,DG|MG|DC|DD|MOC,73
-AC Milan,2010-2011,11,Zlatan Ibrahimović,,Sweden,BU,85
-AC Milan,2010-2011,13,Alessandro Nesta,,Italy,DC,84
-AC Milan,2010-2011,7,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,83
-AC Milan,2010-2011,80,Ronaldo de Assis Moreira,Ronaldinho,Brazil,AG|MOC|BU|MG,83
-AC Milan,2010-2011,33,Thiago Emiliano da Silva,Thiago Silva,Brazil,DC,83
-AC Milan,2010-2011,21,Andrea Pirlo,,Italy,MDC|MC|MOC,82
-AC Milan,2010-2011,70,Robson de Souza,Robinho,Brazil,AG|AD|BU|MG|MOC,81
-AC Milan,2010-2011,10,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,80
-AC Milan,2010-2011,23,Massimo Ambrosini,,Italy,MDC|MC,80
-AC Milan,2010-2011,32,Christian Abbiati,,Italy,G,79
-AC Milan,2010-2011,16,Mathieu Flamini,,France,MDC|MC,79
-AC Milan,2010-2011,25,Daniele Bonera,,Italy,DC|DD,78
-AC Milan,2010-2011,27,Kevin-Prince Boateng,,Ghana,MC|MOC|MDC|BU,78
-AC Milan,2010-2011,77,Luca Antonini,,Italy,DG|MG|DC|DD|MOC,77
-AC Milan,2010-2011,1,Marco Amelia,,Italy,G,77
-AC Milan,2010-2011,76,Mario Alberto Yepes Díaz,Mario Yepes,Colombia,DC,77
-AC Milan,2010-2011,8,Gennaro Gattuso,,Italy,MDC|MC|MD,76
-AC Milan,2010-2011,19,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,76
-AC Milan,2010-2011,20,Ignazio Abate,,Italy,DD|MD,76
-AC Milan,2010-2011,9,Filippo Inzaghi,,Italy,BU,75
-AC Milan,2010-2011,5,Oguchi Onyewu,,United States,DC,75
-AC Milan,2010-2011,18,Marek Jankulovski,,Czechia,DG|MG|AG,74
-AC Milan,2010-2011,17,Massimo Oddo,,Italy,DD|MD|DC,73
-AC Milan,2011-2012,11,Zlatan Ibrahimović,,Sweden,BU,88
-AC Milan,2011-2012,33,Thiago Emiliano da Silva,Thiago Silva,Brazil,DC,87
-AC Milan,2011-2012,13,Alessandro Nesta,,Italy,DC,84
-AC Milan,2011-2012,7,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,84
-AC Milan,2011-2012,99,Antonio Cassano,,Italy,MOC|BU,84
-AC Milan,2011-2012,27,Kevin-Prince Boateng,,Ghana,MC|MOC|MDC|BU,83
-AC Milan,2011-2012,4,Mark van Bommel,,Netherlands,MDC|MC,82
-AC Milan,2011-2012,32,Christian Abbiati,,Italy,G,81
-AC Milan,2011-2012,20,Ignazio Abate,,Italy,DD|MD,81
-AC Milan,2011-2012,5,Philippe Mexès,,France,DC,81
-AC Milan,2011-2012,18,Alberto Aquilani,,Italy,MC|MOC|MDC,80
-AC Milan,2011-2012,22,Antonio Nocerino,,Italy,MC|MDC,80
-AC Milan,2011-2012,10,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,80
-AC Milan,2011-2012,23,Massimo Ambrosini,,Italy,MDC|MC,79
-AC Milan,2011-2012,21,Maxi López,,Argentina,BU,78
-AC Milan,2011-2012,25,Daniele Bonera,,Italy,DC|DD,77
-AC Milan,2011-2012,8,Gennaro Gattuso,,Italy,MDC|MC|MD,77
-AC Milan,2011-2012,77,Luca Antonini,,Italy,DG|MG|DC|DD|MOC,77
-AC Milan,2011-2012,1,Marco Amelia,,Italy,G,77
-AC Milan,2011-2012,76,Mario Alberto Yepes Díaz,Mario Yepes,Colombia,DC,77
-AC Milan,2011-2012,16,Mathieu Flamini,,France,MDC|MC,77
-AC Milan,2011-2012,14,Sulley Muntari,,Ghana,MDC|MC|MD|MG,77
-AC Milan,2011-2012,2,Taye Taiwo,,Nigeria,DG|MG,77
-AC Milan,2011-2012,19,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,76
-AC Milan,2011-2012,92,Stephan El Shaarawy,,Italy,AG|AD|BU|MG|MOC,75
-AC Milan,2011-2012,9,Filippo Inzaghi,,Italy,BU,73
-AC Milan,2012-2013,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,85
-AC Milan,2012-2013,10,Kevin-Prince Boateng,,Ghana,MC|MOC|MDC|BU,83
-AC Milan,2012-2013,45,Mario Balotelli,,Italy,BU|AG,83
-AC Milan,2012-2013,11,Giampaolo Pazzini,,Italy,BU,82
-AC Milan,2012-2013,92,Stephan El Shaarawy,,Italy,AG|AD|BU|MG|MOC,82
-AC Milan,2012-2013,32,Christian Abbiati,,Italy,G,81
-AC Milan,2012-2013,5,Philippe Mexès,,France,DC,81
-AC Milan,2012-2013,9,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,80
-AC Milan,2012-2013,28,Urby Emanuelson,,Netherlands,MG|MDC|DG|AG|MOC|MC,80
-AC Milan,2012-2013,8,Antonio Nocerino,,Italy,MC|MDC,79
-AC Milan,2012-2013,17,Cristian Zapata,,Colombia,DC,79
-AC Milan,2012-2013,20,Ignazio Abate,,Italy,DD|MD,79
-AC Milan,2012-2013,76,Mario Alberto Yepes Díaz,Mario Yepes,Colombia,DC,79
-AC Milan,2012-2013,7,Robson de Souza,Robinho,Brazil,AG|AD|BU|MG|MOC,79
-AC Milan,2012-2013,22,Bojan Krkić,,Spain,AG|BU|AD|MOC,78
-AC Milan,2012-2013,25,Daniele Bonera,,Italy,DC|DD,78
-AC Milan,2012-2013,21,Kévin Constant,,Guinea,DG|MOC|MDC|MC|AG,78
-AC Milan,2012-2013,19,M'Baye Niang,,France,AD|AG|BU,77
-AC Milan,2012-2013,23,Massimo Ambrosini,,Italy,MDC|MC,77
-AC Milan,2012-2013,2,Mattia De Sciglio,,Italy,DD|DG|DC,77
-AC Milan,2012-2013,4,Sulley Muntari,,Ghana,MDC|MC|MD|MG,77
-AC Milan,2012-2013,16,Mathieu Flamini,,France,MDC|MC,76
-AC Milan,2012-2013,13,Francesco Acerbi,,Italy,DC,75
-AC Milan,2012-2013,1,Marco Amelia,,Italy,G,75
-AC Milan,2013-2014,45,Mario Balotelli,,Italy,BU|AG,83
-AC Milan,2013-2014,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,83
-AC Milan,2013-2014,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,80
-AC Milan,2013-2014,92,Stephan El Shaarawy,,Italy,AG|AD|BU|MG|MOC,80
-AC Milan,2013-2014,10,Keisuke Honda,,Japan,MOC|AD|MD|MC,79
-AC Milan,2013-2014,17,Cristian Zapata,,Colombia,DC,78
-AC Milan,2013-2014,11,Giampaolo Pazzini,,Italy,BU,78
-AC Milan,2013-2014,34,Nigel de Jong,,Netherlands,MDC|DD|MC,78
-AC Milan,2013-2014,5,Philippe Mexès,,France,DC,78
-AC Milan,2013-2014,16,Andrea Poli,,Italy,MC|MOC|MDC,77
-AC Milan,2013-2014,20,Ignazio Abate,,Italy,DD|MD,77
-AC Milan,2013-2014,2,Mattia De Sciglio,,Italy,DD|DG|DC,77
-AC Milan,2013-2014,25,Daniele Bonera,,Italy,DC|DD,76
-AC Milan,2013-2014,15,Michael Essien,,Ghana,MDC|MC|MD,76
-AC Milan,2013-2014,7,Robson de Souza,Robinho,Brazil,AG|AD|BU|MG|MOC,76
-AC Milan,2013-2014,4,Sulley Muntari,,Ghana,MDC|MC|MD|MG,76
-AC Milan,2013-2014,9,Alessandro Matri,,Italy,BU,75
-AC Milan,2013-2014,23,Antonio Nocerino,,Italy,MC|MDC,75
-AC Milan,2013-2014,28,Urby Emanuelson,,Netherlands,MG|MDC|DG|AG|MOC|MC,74
-AC Milan,2013-2014,14,Valter Birsa,,Slovenia,MD,74
-AC Milan,2013-2014,21,Kévin Constant,,Guinea,DG|MOC|MDC|MC|AG,73
-AC Milan,2013-2014,1,Marco Amelia,,Italy,G,73
-AC Milan,2014-2015,23,Diego López Rodríguez,Diego López,Spain,G,81
-AC Milan,2014-2015,33,Alex Rodrigo Dias da Costa,Alex,Brazil,DC,80
-AC Milan,2014-2015,34,Nigel de Jong,,Netherlands,MDC|DD|MC,79
-AC Milan,2014-2015,22,Alessio Cerci,,Italy,AD|BU|MG|MD,78
-AC Milan,2014-2015,7,Jérémy Ménez,,France,AG|MOC|BU,78
-AC Milan,2014-2015,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,78
-AC Milan,2014-2015,92,Stephan El Shaarawy,,Italy,AG|AD|BU|MG|MOC,78
-AC Milan,2014-2015,13,Adil Rami,,France,DC,77
-AC Milan,2014-2015,29,Gabriel Paletta,,Argentina,DC,77
-AC Milan,2014-2015,28,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,77
-AC Milan,2014-2015,10,Keisuke Honda,,Japan,MOC|AD|MD|MC,77
-AC Milan,2014-2015,9,Mattia Destro,,Italy,BU,77
-AC Milan,2014-2015,17,Cristian Zapata,,Colombia,DC,76
-AC Milan,2014-2015,5,Philippe Mexès,,France,DC,76
-AC Milan,2014-2015,16,Andrea Poli,,Italy,MC|MOC|MDC,75
-AC Milan,2014-2015,11,Giampaolo Pazzini,,Italy,BU,75
-AC Milan,2014-2015,20,Ignazio Abate,,Italy,DD|MD,75
-AC Milan,2014-2015,1,Michael Agazzi,,Italy,G,75
-AC Milan,2014-2015,8,Jesús Joaquín Fernández Sáez,Suso,Spain,AD|MD|MOC,74
-AC Milan,2014-2015,19,Salvatore Bocchetti,,Italy,DC,74
-AC Milan,2014-2015,2,Mattia De Sciglio,,Italy,DD|DG|DC,73
-AC Milan,2014-2015,15,Michael Essien,,Ghana,MDC|MC|MD,73
-AC Milan,2014-2015,4,Sulley Muntari,,Ghana,MDC|MC|MD|MG,73
-AC Milan,2015-2016,70,Carlos Bacca,,Colombia,BU,82
-AC Milan,2015-2016,7,Jérémy Ménez,,France,AG|MOC|BU,81
-AC Milan,2015-2016,28,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,80
-AC Milan,2015-2016,33,Alex Rodrigo Dias da Costa,Alex,Brazil,DC,79
-AC Milan,2015-2016,1,Diego López Rodríguez,Diego López,Spain,G,79
-AC Milan,2015-2016,9,Luiz Adriano Souza da Silva,Luiz Adriano,Brazil,BU,79
-AC Milan,2015-2016,45,Mario Balotelli,,Italy,BU|AG,79
-AC Milan,2015-2016,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,79
-AC Milan,2015-2016,11,Alessio Cerci,,Italy,AD|BU|MG|MD,77
-AC Milan,2015-2016,20,Ignazio Abate,,Italy,DD|MD,77
-AC Milan,2015-2016,27,Juraj Kucka,,Slovakia,MC|MDC,77
-AC Milan,2015-2016,10,Keisuke Honda,,Japan,MOC|AD|MD|MC,77
-AC Milan,2015-2016,72,Kevin-Prince Boateng,,Ghana,MC|MOC|MDC|BU,77
-AC Milan,2015-2016,31,Luca Antonelli,,Italy,DG,77
-AC Milan,2015-2016,34,Nigel de Jong,,Netherlands,MDC|DD|MC,77
-AC Milan,2015-2016,5,Philippe Mexès,,France,DC,77
-AC Milan,2015-2016,13,Alessio Romagnoli,,Italy,DC,76
-AC Milan,2015-2016,17,Cristian Zapata,,Colombia,DC,76
-AC Milan,2015-2016,16,Andrea Poli,,Italy,MC|MOC|MDC,75
-AC Milan,2015-2016,32,Christian Abbiati,,Italy,G,75
-AC Milan,2015-2016,8,Jesús Joaquín Fernández Sáez,Suso,Spain,AD|MD|MOC,75
-AC Milan,2015-2016,19,M'Baye Niang,,France,AD|AG|BU,75
-AC Milan,2015-2016,2,Mattia De Sciglio,,Italy,DD|DG|DC,75
-AC Milan,2016-2017,70,Carlos Bacca,,Colombia,BU,83
-AC Milan,2016-2017,5,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,83
-AC Milan,2016-2017,1,Diego López Rodríguez,Diego López,Spain,G,82
-AC Milan,2016-2017,7,Gerard Deulofeu,,Spain,AD|AG|MOC,81
-AC Milan,2016-2017,8,Jesús Joaquín Fernández Sáez,Suso,Spain,AD|MD|MOC,81
-AC Milan,2016-2017,29,Gabriel Paletta,,Argentina,DC,80
-AC Milan,2016-2017,13,Alessio Romagnoli,,Italy,DC,79
-AC Milan,2016-2017,33,Juraj Kucka,,Slovakia,MC|MDC,79
-AC Milan,2016-2017,17,Cristian Zapata,,Colombia,DC,78
-AC Milan,2016-2017,20,Ignazio Abate,,Italy,DD|MD,78
-AC Milan,2016-2017,23,José Sosa,,Argentina,MC|MOC,78
-AC Milan,2016-2017,10,Keisuke Honda,,Japan,MOC|AD|MD|MC,78
-AC Milan,2016-2017,9,Luiz Adriano Souza da Silva,Luiz Adriano,Brazil,BU,78
-AC Milan,2016-2017,11,M'Baye Niang,,France,AD|AG|BU,78
-AC Milan,2016-2017,14,Matías Fernández,,Chile,MOC|MC,78
-AC Milan,2016-2017,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,78
-AC Milan,2016-2017,91,Andrea Bertolacci,,Italy,MC|MDC,77
-AC Milan,2016-2017,31,Luca Antonelli,,Italy,DG,77
-AC Milan,2016-2017,16,Andrea Poli,,Italy,MC|MOC|MDC,76
-AC Milan,2016-2017,30,Marco Storari,,Italy,G,76
-AC Milan,2016-2017,80,Mario Pašalić,,Croatia,MC|MOC,76
-AC Milan,2016-2017,2,Mattia De Sciglio,,Italy,DD|DG|DC,76
-AC Milan,2016-2017,21,Leonel Vangioni,,Argentina,DG,75
-AC Milan,2016-2017,96,Davide Calabria,,Italy,DD|MC,71
-AC Milan,2017-2018,19,Leonardo Bonucci,,Italy,DC,86
-AC Milan,2017-2018,5,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,82
-AC Milan,2017-2018,99,Gianluigi Donnarumma,,Italy,G,82
-AC Milan,2017-2018,8,Jesús Joaquín Fernández Sáez,Suso,Spain,AD|MD|MOC,82
-AC Milan,2017-2018,21,Lucas Biglia,,Argentina,MDC|MC,82
-AC Milan,2017-2018,13,Alessio Romagnoli,,Italy,DC,80
-AC Milan,2017-2018,10,Hakan Çalhanoğlu,,Turkey,MOC|AG|MG|MC|MDC,80
-AC Milan,2017-2018,22,Mateo Musacchio,,Argentina,DC,80
-AC Milan,2017-2018,68,Ricardo Rodríguez,,Switzerland,DG|DC,80
-AC Milan,2017-2018,29,Gabriel Paletta,,Argentina,DC,79
-AC Milan,2017-2018,7,Nikola Kalinić,,Croatia,BU,79
-AC Milan,2017-2018,17,Cristian Zapata,,Colombia,DC,78
-AC Milan,2017-2018,20,Ignazio Abate,,Italy,DD|MD,78
-AC Milan,2017-2018,23,José Sosa,,Argentina,MC|MOC,78
-AC Milan,2017-2018,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,78
-AC Milan,2017-2018,9,André Miguel Valente da Silva,André Silva,Portugal,BU,77
-AC Milan,2017-2018,79,Franck Yannick Kessié,,Ivory Coast,MDC|MC,77
-AC Milan,2017-2018,94,M'Baye Niang,,France,AD|AG|BU,77
-AC Milan,2017-2018,11,Fabio Borini,,Italy,AG|MG|BU,76
-AC Milan,2017-2018,31,Luca Antonelli,,Italy,DG,76
-AC Milan,2017-2018,12,Andrea Conti,,Italy,DD,75
-AC Milan,2017-2018,2,Davide Calabria,,Italy,DD|MC,75
-AC Milan,2017-2018,63,Patrick Cutrone,,Italy,BU,74
-AC Milan,2018-2019,9,Gonzalo Higuaín,,Argentina,BU,87
-AC Milan,2018-2019,13,Alessio Romagnoli,,Italy,DC,83
-AC Milan,2018-2019,99,Gianluigi Donnarumma,,Italy,G,83
-AC Milan,2018-2019,8,Jesús Joaquín Fernández Sáez,Suso,Spain,AD|MD|MOC,83
-AC Milan,2018-2019,5,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,82
-AC Milan,2018-2019,21,Lucas Biglia,,Argentina,MDC|MC,82
-AC Milan,2018-2019,7,Samuel Castillejo Azuaga,Samu Castillejo,Spain,AD|MD,81
-AC Milan,2018-2019,14,Tiémoué Bakayoko,,France,MDC|MC,81
-AC Milan,2018-2019,10,Hakan Çalhanoğlu,,Turkey,MOC|AG|MG|MC|MDC,80
-AC Milan,2018-2019,22,Mateo Musacchio,,Argentina,DC,80
-AC Milan,2018-2019,68,Ricardo Rodríguez,,Switzerland,DG|DC,80
-AC Milan,2018-2019,79,Franck Yannick Kessié,,Ivory Coast,MDC|MC,79
-AC Milan,2018-2019,39,Lucas Tolentino Coelho de Lima,Lucas Paquetá,Brazil,MC|MOC,79
-AC Milan,2018-2019,17,Cristian Zapata,,Colombia,DC,78
-AC Milan,2018-2019,2,Davide Calabria,,Italy,DD|MC,78
-AC Milan,2018-2019,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,78
-AC Milan,2018-2019,16,Andrea Bertolacci,,Italy,MC|MDC,77
-AC Milan,2018-2019,20,Ignazio Abate,,Italy,DD|MD,77
-AC Milan,2018-2019,63,Patrick Cutrone,,Italy,BU,77
-AC Milan,2018-2019,11,Fabio Borini,,Italy,AG|MG|BU,76
-AC Milan,2018-2019,12,Andrea Conti,,Italy,DD,75
-AC Milan,2019-2020,99,Gianluigi Donnarumma,,Italy,G,85
-AC Milan,2019-2020,21,Zlatan Ibrahimović,,Sweden,BU,85
-AC Milan,2019-2020,13,Alessio Romagnoli,,Italy,DC,83
-AC Milan,2019-2020,5,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,81
-AC Milan,2019-2020,8,Jesús Joaquín Fernández Sáez,Suso,Spain,AD|MD|MOC,81
-AC Milan,2019-2020,24,Simon Kjær,,Denmark,DC,81
-AC Milan,2019-2020,10,Hakan Çalhanoğlu,,Turkey,MOC|AG|MG|MC|MDC,80
-AC Milan,2019-2020,25,José Manuel Reina Páez,Pepe Reina,Spain,G,80
-AC Milan,2019-2020,18,Ante Rebić,,Croatia,AG|MG|MOC|BU,79
-AC Milan,2019-2020,9,Krzysztof Piątek,,Poland,BU,79
-AC Milan,2019-2020,20,Lucas Biglia,,Argentina,MDC|MC,79
-AC Milan,2019-2020,22,Mateo Musacchio,,Argentina,DC,79
-AC Milan,2019-2020,7,Samuel Castillejo Azuaga,Samu Castillejo,Spain,AD|MD,79
-AC Milan,2019-2020,79,Franck Yannick Kessié,,Ivory Coast,MDC|MC,78
-AC Milan,2019-2020,68,Ricardo Rodríguez,,Switzerland,DG|DC,78
-AC Milan,2019-2020,93,Diego Laxalt,,Uruguay,MG|DG,77
-AC Milan,2019-2020,39,Lucas Tolentino Coelho de Lima,Lucas Paquetá,Brazil,MC|MOC,77
-AC Milan,2019-2020,19,Theo Hernández,,France,DG|MG,77
-AC Milan,2019-2020,2,Davide Calabria,,Italy,DD|MC,76
-AC Milan,2019-2020,17,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,75
-AC Milan,2019-2020,4,Ismaël Bennacer,,Algeria,MDC|MC,74
-AC Milan,2019-2020,33,Rade Krunić,,Bosnia and Herzegovina,MDC|MC|MOC,74
-AC Milan,2020-2021,99,Gianluigi Donnarumma,,Italy,G,86
-AC Milan,2020-2021,11,Zlatan Ibrahimović,,Sweden,BU,84
-AC Milan,2020-2021,13,Alessio Romagnoli,,Italy,DC,82
-AC Milan,2020-2021,24,Simon Kjær,,Denmark,DC,82
-AC Milan,2020-2021,19,Theo Hernández,,France,DG|MG,82
-AC Milan,2020-2021,79,Franck Yannick Kessié,,Ivory Coast,MDC|MC,81
-AC Milan,2020-2021,10,Hakan Çalhanoğlu,,Turkey,MOC|AG|MG|MC|MDC,81
-AC Milan,2020-2021,42,José Manuel Reina Páez,Pepe Reina,Spain,G,80
-AC Milan,2020-2021,39,Lucas Tolentino Coelho de Lima,Lucas Paquetá,Brazil,MC|MOC,80
-AC Milan,2020-2021,12,Ante Rebić,,Croatia,AG|MG|MOC|BU,79
-AC Milan,2020-2021,5,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,79
-AC Milan,2020-2021,2,Davide Calabria,,Italy,DD|MC,78
-AC Milan,2020-2021,4,Ismaël Bennacer,,Algeria,MDC|MC,78
-AC Milan,2020-2021,9,Mario Mandžukić,,Croatia,BU|AG,78
-AC Milan,2020-2021,23,Fikayo Tomori,,England,DC|DD,77
-AC Milan,2020-2021,21,Lucas Biglia,,Argentina,MDC|MC,77
-AC Milan,2020-2021,22,Mateo Musacchio,,Argentina,DC,77
-AC Milan,2020-2021,7,Samuel Castillejo Azuaga,Samu Castillejo,Spain,AD|MD,77
-AC Milan,2020-2021,8,Sandro Tonali,,Italy,MDC|MC,77
-AC Milan,2020-2021,56,Alexis Saelemaekers,,Belgium,AD|MD|DD,76
-AC Milan,2020-2021,20,José Diogo Dalot Teixeira,Diogo Dalot,Portugal,DD|MD|DG,76
-AC Milan,2020-2021,17,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,76
-AC Milan,2020-2021,38,Ricardo Rodríguez,,Switzerland,DG|DC,76
-AC Milan,2020-2021,33,Rade Krunić,,Bosnia and Herzegovina,MDC|MC|MOC,74
-AC Milan,2021-2022,16,Mike Maignan,,France,G,85
-AC Milan,2021-2022,79,Franck Yannick Kessié,,Ivory Coast,MDC|MC,84
-AC Milan,2021-2022,19,Theo Hernández,,France,DG|MG,84
-AC Milan,2021-2022,24,Simon Kjær,,Denmark,DC,83
-AC Milan,2021-2022,23,Fikayo Tomori,,England,DC|DD,82
-AC Milan,2021-2022,17,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,82
-AC Milan,2021-2022,8,Sandro Tonali,,Italy,MDC|MC,82
-AC Milan,2021-2022,13,Alessio Romagnoli,,Italy,DC,81
-AC Milan,2021-2022,12,Ante Rebić,,Croatia,AG|MG|MOC|BU,81
-AC Milan,2021-2022,4,Ismaël Bennacer,,Algeria,MDC|MC,81
-AC Milan,2021-2022,9,Olivier Giroud,,France,BU,81
-AC Milan,2021-2022,25,Alessandro Florenzi,,Italy,DD|MD|DG|MC|AD,79
-AC Milan,2021-2022,2,Davide Calabria,,Italy,DD|MC,79
-AC Milan,2021-2022,10,Brahim Díaz,,Spain,MOC|AG|AD|MD|MG|BU,78
-AC Milan,2021-2022,30,Junior Messias,,Brazil,AD|MD|MOC,78
-AC Milan,2021-2022,56,Alexis Saelemaekers,,Belgium,AD|MD|DD,77
-AC Milan,2021-2022,1,Ciprian Tătărușanu,,Romania,G,76
-AC Milan,2021-2022,41,Tiémoué Bakayoko,,France,MDC|MC,76
-AC Milan,2021-2022,20,Pierre Kalulu,,France,DC|DD,75
-AC Milan,2021-2022,33,Rade Krunić,,Bosnia and Herzegovina,MDC|MC|MOC,75
-AC Milan,2021-2022,7,Samuel Castillejo Azuaga,Samu Castillejo,Spain,AD|MD,75
-AC Milan,2021-2022,5,Fodé Ballo-Touré,,Senegal,DG,72
-AC Milan,2022-2023,16,Mike Maignan,,France,G,87
-AC Milan,2022-2023,19,Theo Hernández,,France,DG|MG,85
-AC Milan,2022-2023,23,Fikayo Tomori,,England,DC|DD,84
-AC Milan,2022-2023,17,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,84
-AC Milan,2022-2023,8,Sandro Tonali,,Italy,MDC|MC,84
-AC Milan,2022-2023,4,Ismaël Bennacer,,Algeria,MDC|MC,83
-AC Milan,2022-2023,9,Olivier Giroud,,France,BU,83
-AC Milan,2022-2023,24,Simon Kjær,,Denmark,DC,81
-AC Milan,2022-2023,2,Davide Calabria,,Italy,DD|MC,80
-AC Milan,2022-2023,11,Zlatan Ibrahimović,,Sweden,BU,80
-AC Milan,2022-2023,12,Ante Rebić,,Croatia,AG|MG|MOC|BU,79
-AC Milan,2022-2023,10,Brahim Díaz,,Spain,MOC|AG|AD|MD|MG|BU,79
-AC Milan,2022-2023,20,Pierre Kalulu,,France,DC|DD,79
-AC Milan,2022-2023,33,Rade Krunić,,Bosnia and Herzegovina,MDC|MC|MOC,79
-AC Milan,2022-2023,25,Alessandro Florenzi,,Italy,DD|MD|DG|MC|AD,78
-AC Milan,2022-2023,56,Alexis Saelemaekers,,Belgium,AD|MD|DD,78
-AC Milan,2022-2023,30,Junior Messias,,Brazil,AD|MD|MOC,78
-AC Milan,2022-2023,28,Malick Thiaw,,Germany,DC,77
-AC Milan,2022-2023,90,Charles De Ketelaere,,Belgium,MOC|BU,76
-AC Milan,2022-2023,32,Tommaso Pobega,,Italy,MC|MDC,76
-AC Milan,2022-2023,1,Ciprian Tătărușanu,,Romania,G,75
-AC Milan,2022-2023,27,Divock Origi,,Belgium,BU|AG,75
-AC Milan,2022-2023,46,Matteo Gabbia,,Italy,DC,73
-AC Milan,2022-2023,7,Yacine Adli,,France,MOC|MC,73
-AC Milan,2022-2023,5,Fodé Ballo-Touré,,Senegal,DG,72
-AC Milan,2023-2024,16,Mike Maignan,,France,G,87
-AC Milan,2023-2024,10,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,86
-AC Milan,2023-2024,19,Theo Hernández,,France,DG|MG,85
-AC Milan,2023-2024,23,Fikayo Tomori,,England,DC|DD,84
-AC Milan,2023-2024,4,Ismaël Bennacer,,Algeria,MDC|MC,84
-AC Milan,2023-2024,11,Christian Pulisic,,United States,AD|MD|MOC|BU,82
-AC Milan,2023-2024,8,Ruben Loftus-Cheek,,England,MOC|MC|MD|MG,81
-AC Milan,2023-2024,24,Simon Kjær,,Denmark,DC,81
-AC Milan,2023-2024,2,Davide Calabria,,Italy,DD|MC,80
-AC Milan,2023-2024,21,Samuel Chukwueze,,Nigeria,AD|MD|MG|AG,80
-AC Milan,2023-2024,14,Tijjani Reijnders,,Netherlands,MDC|MC|MOC,80
-AC Milan,2023-2024,15,Luka Jović,,Serbia,BU,78
-AC Milan,2023-2024,20,Pierre Kalulu,,France,DC|DD,78
-AC Milan,2023-2024,57,Marco Sportiello,,Italy,G,77
-AC Milan,2023-2024,17,Noah Okafor,,Switzerland,BU|AG|MG|MOC,77
-AC Milan,2023-2024,28,Malick Thiaw,,Germany,DC,76
-AC Milan,2023-2024,7,Yacine Adli,,France,MOC|MC,76
-AC Milan,2023-2024,42,Alessandro Florenzi,,Italy,DD|MD|DG|MC|AD,75
-AC Milan,2023-2024,46,Matteo Gabbia,,Italy,DC,75
-AC Milan,2023-2024,32,Tommaso Pobega,,Italy,MC|MDC,75
-AC Milan,2023-2024,80,Yunus Musah,,United States,MC|MDC|MOC|MD,75
-AC Milan,2024-2025,16,Mike Maignan,,France,G,86
-AC Milan,2024-2025,11,Christian Pulisic,,United States,AD|MD|MOC|BU,84
-AC Milan,2024-2025,10,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,84
-AC Milan,2024-2025,19,Théo Hernandez,,France,DG|MG,84
-AC Milan,2024-2025,23,Fikayo Tomori,,England,DC|DD,82
-AC Milan,2024-2025,14,Tijjani Reijnders,,Netherlands,MDC|MC|MOC,82
-AC Milan,2024-2025,79,João Félix,,Portugal,MOC|AG|BU,80
-AC Milan,2024-2025,29,Youssouf Fofana,,France,MDC|MC,80
-AC Milan,2024-2025,32,Kyle Walker,,England,DD|DC,79
-AC Milan,2024-2025,8,Ruben Loftus-Cheek,,England,MOC|MC|MD|MG,79
-AC Milan,2024-2025,28,Malick Thiaw,,Germany,DC,78
-AC Milan,2024-2025,9,Luka Jović,,Serbia,BU,77
-AC Milan,2024-2025,21,Samuel Chukwueze,,Nigeria,AD|MD|MG|AG,77
-AC Milan,2024-2025,7,Santiago Giménez,,Mexico,BU,77
-AC Milan,2024-2025,90,Tammy Abraham,,England,BU,77
-AC Milan,2024-2025,24,Alessandro Florenzi,,Italy,DD|MD|DG|MC|AD,76
-AC Milan,2024-2025,22,Emerson Royal,,Brazil,DD|MD|DC,76
-AC Milan,2024-2025,57,Marco Sportiello,,Italy,G,76
-AC Milan,2024-2025,46,Matteo Gabbia,,Italy,DC,76
-AC Milan,2024-2025,31,Strahinja Pavlović,,Serbia,DC,76
-AC Milan,2024-2025,80,Yunus Musah,,United States,MC|MDC|MOC|MD,75
-AC Milan,2024-2025,20,Álex Jiménez,,Spain,DD|DG|AD,72
-AC Milan,2025-2026,14,Luka Modrić,,Croatia,MC|MOC|MDC,87
-AC Milan,2025-2026,16,Mike Maignan,,France,G,86
-AC Milan,2025-2026,11,Christian Pulisic,,United States,AD|MD|MOC|BU,84
-AC Milan,2025-2026,10,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,84
-AC Milan,2025-2026,12,Adrien Rabiot,,France,MC|MDC,82
-AC Milan,2025-2026,23,Fikayo Tomori,,England,DC|DD,82
-AC Milan,2025-2026,18,Christopher Nkunku,,France,MOC|AG|AD|BU,80
-AC Milan,2025-2026,19,Youssouf Fofana,,France,MDC|MC,80
-AC Milan,2025-2026,2,Pervis Estupiñán,,Ecuador,DG|MG,79
-AC Milan,2025-2026,8,Ruben Loftus-Cheek,,England,MOC|MC|MD|MG,78
-AC Milan,2025-2026,56,Alexis Saelemaekers,,Belgium,AD|MD|DD,77
-AC Milan,2025-2026,46,Matteo Gabbia,,Italy,DC,77
-AC Milan,2025-2026,4,Samuele Ricci,,Italy,MDC|MC,77
-AC Milan,2025-2026,30,Ardon Jashari,,Switzerland,MC|MDC,76
-AC Milan,2025-2026,5,Koni De Winter,,Belgium,DC|MD,76
-AC Milan,2025-2026,7,Santiago Giménez,,Mexico,BU,76
-AC Milan,2025-2026,31,Strahinja Pavlović,,Serbia,DC,76
-AC Milan,2025-2026,1,Pietro Terracciano,,Italy,G,74
-AC Milan,2025-2026,33,Davide Bartesaghi,,Italy,DG,68
-AC Milan,2025-2026,24,Zachary Athekame,,Switzerland,DD,68
-AC Milan,2025-2026,27,David Odogu,,Germany,DC,66
-AC Milan,2025-2026,96,Lorenzo Torriani,,Italy,G,65
+Club,Saison,Numero,Joueur,Nom d'usage,Nationalite,Postes,Note,BallonOr
+AC Milan,2004-2005,13,Alessandro Nesta,,Italy,DC,94,0
+AC Milan,2004-2005,7,Andriy Shevchenko,,Ukraine,BU|AG|AD,93,1
+AC Milan,2004-2005,31,Jacobus Stam,Jaap Stam,Netherlands,DC,93,0
+AC Milan,2004-2005,3,Paolo Maldini,,Italy,DG|DC,92,0
+AC Milan,2004-2005,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,92,0
+AC Milan,2004-2005,20,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,90,0
+AC Milan,2004-2005,9,Filippo Inzaghi,,Italy,BU,90,0
+AC Milan,2004-2005,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD,90,0
+AC Milan,2004-2005,1,Nelson de Jesus Silva,Dida,Brazil,G,90,0
+AC Milan,2004-2005,21,Andrea Pirlo,,Italy,MDC|MC|MOC,89,0
+AC Milan,2004-2005,8,Gennaro Gattuso,,Italy,MDC|MC|MD,89,0
+AC Milan,2004-2005,11,Hernán Jorge Crespo,,Argentina,BU,89,0
+AC Milan,2004-2005,10,Manuel César Rui Costa,Rui Costa,Portugal,MOC|MC,89,0
+AC Milan,2004-2005,15,Jon Dahl Tomasson,,Denmark,BU,87,0
+AC Milan,2004-2005,17,Christian Abbiati,,Italy,G,83,0
+AC Milan,2004-2005,23,Massimo Ambrosini,,Italy,MDC|MC,82,0
+AC Milan,2004-2005,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,81,0
+AC Milan,2004-2005,5,Alessandro Costacurta,,Italy,DC,80,0
+AC Milan,2004-2005,26,Giuseppe Pancaro,,Italy,DD,80,0
+AC Milan,2004-2005,24,Vikash Dhorasoo,,France,MOC|MC,79,0
+AC Milan,2004-2005,28,Fabricio Coloccini,,Argentina,DC,78,0
+AC Milan,2004-2005,14,Dario Šimić,,Croatia,DD|DC,77,0
+AC Milan,2004-2005,32,Cristian Brocchi,,Italy,MC|MDC|MD,72,0
+AC Milan,2004-2005,27,Sérgio Cláudio dos Santos,Serginho,Brazil,MG,72,0
+AC Milan,2005-2006,7,Andriy Shevchenko,,Ukraine,BU|AG|AD,93,0
+AC Milan,2005-2006,1,Nelson de Jesus Silva,Dida,Brazil,G,91,0
+AC Milan,2005-2006,3,Paolo Maldini,,Italy,DG|DC,91,0
+AC Milan,2005-2006,13,Alessandro Nesta,,Italy,DC,90,0
+AC Milan,2005-2006,20,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,90,0
+AC Milan,2005-2006,9,Filippo Inzaghi,,Italy,BU,90,0
+AC Milan,2005-2006,31,Jacobus Stam,Jaap Stam,Netherlands,DC,90,0
+AC Milan,2005-2006,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,90,0
+AC Milan,2005-2006,32,Christian Vieri,,Italy,BU,89,0
+AC Milan,2005-2006,10,Manuel César Rui Costa,Rui Costa,Portugal,MOC|MC,89,0
+AC Milan,2005-2006,11,Alberto Gilardino,,Italy,BU,87,0
+AC Milan,2005-2006,8,Gennaro Gattuso,,Italy,MDC|MC|MD,87,0
+AC Milan,2005-2006,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD,87,0
+AC Milan,2005-2006,21,Andrea Pirlo,,Italy,MDC|MC|MOC,86,0
+AC Milan,2005-2006,29,Marek Jankulovski,,Czechia,DG|MG|AG,84,0
+AC Milan,2005-2006,23,Massimo Ambrosini,,Italy,MDC|MC,82,0
+AC Milan,2005-2006,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,81,0
+AC Milan,2005-2006,5,Alessandro Costacurta,,Italy,DC,80,0
+AC Milan,2005-2006,14,Dario Šimić,,Croatia,DD|DC,77,0
+AC Milan,2005-2006,27,Sérgio Cláudio dos Santos,Serginho,Brazil,MG,72,0
+AC Milan,2005-2006,18,Zeljko Kalac,,Australia,G,71,0
+AC Milan,2006-2007,13,Alessandro Nesta,,Italy,DC,91,0
+AC Milan,2006-2007,1,Nelson de Jesus Silva,Dida,Brazil,G,88,0
+AC Milan,2006-2007,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,87,1
+AC Milan,2006-2007,21,Andrea Pirlo,,Italy,MDC|MC|MOC,86,0
+AC Milan,2006-2007,11,Alberto Gilardino,,Italy,BU,85,0
+AC Milan,2006-2007,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,85,0
+AC Milan,2006-2007,25,Daniele Bonera,,Italy,DC|DD,83,0
+AC Milan,2006-2007,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD,83,0
+AC Milan,2006-2007,3,Paolo Maldini,,Italy,DG|DC,82,0
+AC Milan,2006-2007,9,Filippo Inzaghi,,Italy,BU,81,0
+AC Milan,2006-2007,8,Gennaro Gattuso,,Italy,MDC|MC|MD,81,0
+AC Milan,2006-2007,27,Sérgio Cláudio dos Santos,Serginho,Brazil,MG,81,0
+AC Milan,2006-2007,18,Marek Jankulovski,,Czechia,DG|MG|AG,80,0
+AC Milan,2006-2007,20,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,79,0
+AC Milan,2006-2007,23,Massimo Ambrosini,,Italy,MDC|MC,79,0
+AC Milan,2006-2007,5,Alessandro Costacurta,,Italy,DC,77,0
+AC Milan,2006-2007,32,Cristian Brocchi,,Italy,MC|MDC|MD,76,0
+AC Milan,2006-2007,19,Giuseppe Favalli,,Italy,DG|DC,76,0
+AC Milan,2006-2007,14,Johann Vogel,,Switzerland,MDC|MC,73,0
+AC Milan,2006-2007,15,Marco Borriello,,Italy,BU,70,0
+AC Milan,2006-2007,16,Zeljko Kalac,,Australia,G,70,0
+AC Milan,2007-2008,13,Alessandro Nesta,,Italy,DC,90,0
+AC Milan,2007-2008,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,90,0
+AC Milan,2007-2008,21,Andrea Pirlo,,Italy,MDC|MC|MOC,88,0
+AC Milan,2007-2008,11,Alberto Gilardino,,Italy,BU,85,0
+AC Milan,2007-2008,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,85,0
+AC Milan,2007-2008,99,Ronaldo Luís Nazário de Lima,Ronaldo,Brazil,BU,84,0
+AC Milan,2007-2008,25,Daniele Bonera,,Italy,DC|DD,83,0
+AC Milan,2007-2008,2,Marcos Evangelista de Moraes,Cafu,Brazil,DD|MD,83,0
+AC Milan,2007-2008,1,Nelson de Jesus Silva,Dida,Brazil,G,83,0
+AC Milan,2007-2008,3,Paolo Maldini,,Italy,DG|DC,82,0
+AC Milan,2007-2008,38,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,81,0
+AC Milan,2007-2008,5,Emerson Ferreira da Rosa,Emerson,Brazil,MDC|MC,81,0
+AC Milan,2007-2008,9,Filippo Inzaghi,,Italy,BU,81,0
+AC Milan,2007-2008,8,Gennaro Gattuso,,Italy,MDC|MC|MD,81,0
+AC Milan,2007-2008,27,Sérgio Cláudio dos Santos,Serginho,Brazil,MG,81,0
+AC Milan,2007-2008,18,Marek Jankulovski,,Czechia,DG|MG|AG,80,0
+AC Milan,2007-2008,10,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,79,0
+AC Milan,2007-2008,23,Massimo Ambrosini,,Italy,MDC|MC,79,0
+AC Milan,2007-2008,44,Massimo Oddo,,Italy,DD|MD|DC,79,0
+AC Milan,2007-2008,19,Giuseppe Favalli,,Italy,DG|DC,73,0
+AC Milan,2008-2009,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,90,0
+AC Milan,2008-2009,21,Andrea Pirlo,,Italy,MDC|MC|MOC,87,0
+AC Milan,2008-2009,10,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,83,0
+AC Milan,2008-2009,15,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,83,0
+AC Milan,2008-2009,23,Massimo Ambrosini,,Italy,MDC|MC,83,0
+AC Milan,2008-2009,8,Gennaro Gattuso,,Italy,MDC|MC|MD,82,0
+AC Milan,2008-2009,84,Mathieu Flamini,,France,MDC|MC,82,0
+AC Milan,2008-2009,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,81,0
+AC Milan,2008-2009,76,Andriy Shevchenko,,Ukraine,BU|AG|AD,80,0
+AC Milan,2008-2009,25,Daniele Bonera,,Italy,DC|DD,80,0
+AC Milan,2008-2009,9,Filippo Inzaghi,,Italy,BU,80,0
+AC Milan,2008-2009,11,Marco Borriello,,Italy,BU,80,0
+AC Milan,2008-2009,18,Marek Jankulovski,,Czechia,DG|MG|AG,80,0
+AC Milan,2008-2009,7,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,79,0
+AC Milan,2008-2009,12,Christian Abbiati,,Italy,G,79,0
+AC Milan,2008-2009,5,Emerson Ferreira da Rosa,Emerson,Brazil,MDC|MC,77,0
+AC Milan,2008-2009,3,Paolo Maldini,,Italy,DG|DC,77,0
+AC Milan,2008-2009,1,Nelson de Jesus Silva,Dida,Brazil,G,76,0
+AC Milan,2008-2009,19,Giuseppe Favalli,,Italy,DG|DC,75,0
+AC Milan,2008-2009,24,Philippe Senderos,,Switzerland,DC,75,0
+AC Milan,2009-2010,21,Andrea Pirlo,,Italy,MDC|MC|MOC,85,0
+AC Milan,2009-2010,13,Alessandro Nesta,,Italy,DC,84,0
+AC Milan,2009-2010,7,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,84,0
+AC Milan,2009-2010,80,Ronaldo de Assis Moreira,Ronaldinho,Brazil,AG|MOC|BU|MG,84,0
+AC Milan,2009-2010,8,Gennaro Gattuso,,Italy,MDC|MC|MD,83,0
+AC Milan,2009-2010,12,Christian Abbiati,,Italy,G,82,0
+AC Milan,2009-2010,11,Klaas-Jan Huntelaar,,Netherlands,BU,82,0
+AC Milan,2009-2010,23,Massimo Ambrosini,,Italy,MDC|MC,82,0
+AC Milan,2009-2010,10,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,81,0
+AC Milan,2009-2010,15,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,81,0
+AC Milan,2009-2010,25,Daniele Bonera,,Italy,DC|DD,80,0
+AC Milan,2009-2010,22,Marco Borriello,,Italy,BU,80,0
+AC Milan,2009-2010,16,Mathieu Flamini,,France,MDC|MC,79,0
+AC Milan,2009-2010,33,Thiago Emiliano da Silva,Thiago Silva,Brazil,DC,79,0
+AC Milan,2009-2010,9,Filippo Inzaghi,,Italy,BU,78,0
+AC Milan,2009-2010,4,Kakhaber Kaladze,,Georgia,DG|DC|MG,77,0
+AC Milan,2009-2010,18,Marek Jankulovski,,Czechia,DG|MG|AG,77,0
+AC Milan,2009-2010,5,Oguchi Onyewu,,United States,DC,77,0
+AC Milan,2009-2010,19,Giuseppe Favalli,,Italy,DG|DC,76,0
+AC Milan,2009-2010,20,Ignazio Abate,,Italy,DD|MD,76,0
+AC Milan,2009-2010,1,Nelson de Jesus Silva,Dida,Brazil,G,74,0
+AC Milan,2009-2010,77,Luca Antonini,,Italy,DG|MG|DC|DD|MOC,73,0
+AC Milan,2010-2011,11,Zlatan Ibrahimović,,Sweden,BU,85,0
+AC Milan,2010-2011,13,Alessandro Nesta,,Italy,DC,84,0
+AC Milan,2010-2011,7,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,83,0
+AC Milan,2010-2011,80,Ronaldo de Assis Moreira,Ronaldinho,Brazil,AG|MOC|BU|MG,83,0
+AC Milan,2010-2011,33,Thiago Emiliano da Silva,Thiago Silva,Brazil,DC,83,0
+AC Milan,2010-2011,21,Andrea Pirlo,,Italy,MDC|MC|MOC,82,0
+AC Milan,2010-2011,70,Robson de Souza,Robinho,Brazil,AG|AD|BU|MG|MOC,81,0
+AC Milan,2010-2011,10,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,80,0
+AC Milan,2010-2011,23,Massimo Ambrosini,,Italy,MDC|MC,80,0
+AC Milan,2010-2011,32,Christian Abbiati,,Italy,G,79,0
+AC Milan,2010-2011,16,Mathieu Flamini,,France,MDC|MC,79,0
+AC Milan,2010-2011,25,Daniele Bonera,,Italy,DC|DD,78,0
+AC Milan,2010-2011,27,Kevin-Prince Boateng,,Ghana,MC|MOC|MDC|BU,78,0
+AC Milan,2010-2011,77,Luca Antonini,,Italy,DG|MG|DC|DD|MOC,77,0
+AC Milan,2010-2011,1,Marco Amelia,,Italy,G,77,0
+AC Milan,2010-2011,76,Mario Alberto Yepes Díaz,Mario Yepes,Colombia,DC,77,0
+AC Milan,2010-2011,8,Gennaro Gattuso,,Italy,MDC|MC|MD,76,0
+AC Milan,2010-2011,19,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,76,0
+AC Milan,2010-2011,20,Ignazio Abate,,Italy,DD|MD,76,0
+AC Milan,2010-2011,9,Filippo Inzaghi,,Italy,BU,75,0
+AC Milan,2010-2011,5,Oguchi Onyewu,,United States,DC,75,0
+AC Milan,2010-2011,18,Marek Jankulovski,,Czechia,DG|MG|AG,74,0
+AC Milan,2010-2011,17,Massimo Oddo,,Italy,DD|MD|DC,73,0
+AC Milan,2011-2012,11,Zlatan Ibrahimović,,Sweden,BU,88,0
+AC Milan,2011-2012,33,Thiago Emiliano da Silva,Thiago Silva,Brazil,DC,87,0
+AC Milan,2011-2012,13,Alessandro Nesta,,Italy,DC,84,0
+AC Milan,2011-2012,7,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,84,0
+AC Milan,2011-2012,99,Antonio Cassano,,Italy,MOC|BU,84,0
+AC Milan,2011-2012,27,Kevin-Prince Boateng,,Ghana,MC|MOC|MDC|BU,83,0
+AC Milan,2011-2012,4,Mark van Bommel,,Netherlands,MDC|MC,82,0
+AC Milan,2011-2012,32,Christian Abbiati,,Italy,G,81,0
+AC Milan,2011-2012,20,Ignazio Abate,,Italy,DD|MD,81,0
+AC Milan,2011-2012,5,Philippe Mexès,,France,DC,81,0
+AC Milan,2011-2012,18,Alberto Aquilani,,Italy,MC|MOC|MDC,80,0
+AC Milan,2011-2012,22,Antonio Nocerino,,Italy,MC|MDC,80,0
+AC Milan,2011-2012,10,Clarence Seedorf,,Netherlands,MC|MOC|MG|MD,80,0
+AC Milan,2011-2012,23,Massimo Ambrosini,,Italy,MDC|MC,79,0
+AC Milan,2011-2012,21,Maxi López,,Argentina,BU,78,0
+AC Milan,2011-2012,25,Daniele Bonera,,Italy,DC|DD,77,0
+AC Milan,2011-2012,8,Gennaro Gattuso,,Italy,MDC|MC|MD,77,0
+AC Milan,2011-2012,77,Luca Antonini,,Italy,DG|MG|DC|DD|MOC,77,0
+AC Milan,2011-2012,1,Marco Amelia,,Italy,G,77,0
+AC Milan,2011-2012,76,Mario Alberto Yepes Díaz,Mario Yepes,Colombia,DC,77,0
+AC Milan,2011-2012,16,Mathieu Flamini,,France,MDC|MC,77,0
+AC Milan,2011-2012,14,Sulley Muntari,,Ghana,MDC|MC|MD|MG,77,0
+AC Milan,2011-2012,2,Taye Taiwo,,Nigeria,DG|MG,77,0
+AC Milan,2011-2012,19,Gianluca Zambrotta,,Italy,DD|DG|MD|MG,76,0
+AC Milan,2011-2012,92,Stephan El Shaarawy,,Italy,AG|AD|BU|MG|MOC,75,0
+AC Milan,2011-2012,9,Filippo Inzaghi,,Italy,BU,73,0
+AC Milan,2012-2013,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,85,0
+AC Milan,2012-2013,10,Kevin-Prince Boateng,,Ghana,MC|MOC|MDC|BU,83,0
+AC Milan,2012-2013,45,Mario Balotelli,,Italy,BU|AG,83,0
+AC Milan,2012-2013,11,Giampaolo Pazzini,,Italy,BU,82,0
+AC Milan,2012-2013,92,Stephan El Shaarawy,,Italy,AG|AD|BU|MG|MOC,82,0
+AC Milan,2012-2013,32,Christian Abbiati,,Italy,G,81,0
+AC Milan,2012-2013,5,Philippe Mexès,,France,DC,81,0
+AC Milan,2012-2013,9,Alexandre Rodrigues da Silva,Pato,Brazil,BU|AG|MD|MG,80,0
+AC Milan,2012-2013,28,Urby Emanuelson,,Netherlands,MG|MDC|DG|AG|MOC|MC,80,0
+AC Milan,2012-2013,8,Antonio Nocerino,,Italy,MC|MDC,79,0
+AC Milan,2012-2013,17,Cristian Zapata,,Colombia,DC,79,0
+AC Milan,2012-2013,20,Ignazio Abate,,Italy,DD|MD,79,0
+AC Milan,2012-2013,76,Mario Alberto Yepes Díaz,Mario Yepes,Colombia,DC,79,0
+AC Milan,2012-2013,7,Robson de Souza,Robinho,Brazil,AG|AD|BU|MG|MOC,79,0
+AC Milan,2012-2013,22,Bojan Krkić,,Spain,AG|BU|AD|MOC,78,0
+AC Milan,2012-2013,25,Daniele Bonera,,Italy,DC|DD,78,0
+AC Milan,2012-2013,21,Kévin Constant,,Guinea,DG|MOC|MDC|MC|AG,78,0
+AC Milan,2012-2013,19,M'Baye Niang,,France,AD|AG|BU,77,0
+AC Milan,2012-2013,23,Massimo Ambrosini,,Italy,MDC|MC,77,0
+AC Milan,2012-2013,2,Mattia De Sciglio,,Italy,DD|DG|DC,77,0
+AC Milan,2012-2013,4,Sulley Muntari,,Ghana,MDC|MC|MD|MG,77,0
+AC Milan,2012-2013,16,Mathieu Flamini,,France,MDC|MC,76,0
+AC Milan,2012-2013,13,Francesco Acerbi,,Italy,DC,75,0
+AC Milan,2012-2013,1,Marco Amelia,,Italy,G,75,0
+AC Milan,2013-2014,45,Mario Balotelli,,Italy,BU|AG,83,0
+AC Milan,2013-2014,22,Ricardo Izecson dos Santos Leite,Kaká,Brazil,MOC|MC,83,0
+AC Milan,2013-2014,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,80,0
+AC Milan,2013-2014,92,Stephan El Shaarawy,,Italy,AG|AD|BU|MG|MOC,80,0
+AC Milan,2013-2014,10,Keisuke Honda,,Japan,MOC|AD|MD|MC,79,0
+AC Milan,2013-2014,17,Cristian Zapata,,Colombia,DC,78,0
+AC Milan,2013-2014,11,Giampaolo Pazzini,,Italy,BU,78,0
+AC Milan,2013-2014,34,Nigel de Jong,,Netherlands,MDC|DD|MC,78,0
+AC Milan,2013-2014,5,Philippe Mexès,,France,DC,78,0
+AC Milan,2013-2014,16,Andrea Poli,,Italy,MC|MOC|MDC,77,0
+AC Milan,2013-2014,20,Ignazio Abate,,Italy,DD|MD,77,0
+AC Milan,2013-2014,2,Mattia De Sciglio,,Italy,DD|DG|DC,77,0
+AC Milan,2013-2014,25,Daniele Bonera,,Italy,DC|DD,76,0
+AC Milan,2013-2014,15,Michael Essien,,Ghana,MDC|MC|MD,76,0
+AC Milan,2013-2014,7,Robson de Souza,Robinho,Brazil,AG|AD|BU|MG|MOC,76,0
+AC Milan,2013-2014,4,Sulley Muntari,,Ghana,MDC|MC|MD|MG,76,0
+AC Milan,2013-2014,9,Alessandro Matri,,Italy,BU,75,0
+AC Milan,2013-2014,23,Antonio Nocerino,,Italy,MC|MDC,75,0
+AC Milan,2013-2014,28,Urby Emanuelson,,Netherlands,MG|MDC|DG|AG|MOC|MC,74,0
+AC Milan,2013-2014,14,Valter Birsa,,Slovenia,MD,74,0
+AC Milan,2013-2014,21,Kévin Constant,,Guinea,DG|MOC|MDC|MC|AG,73,0
+AC Milan,2013-2014,1,Marco Amelia,,Italy,G,73,0
+AC Milan,2014-2015,23,Diego López Rodríguez,Diego López,Spain,G,81,0
+AC Milan,2014-2015,33,Alex Rodrigo Dias da Costa,Alex,Brazil,DC,80,0
+AC Milan,2014-2015,34,Nigel de Jong,,Netherlands,MDC|DD|MC,79,0
+AC Milan,2014-2015,22,Alessio Cerci,,Italy,AD|BU|MG|MD,78,0
+AC Milan,2014-2015,7,Jérémy Ménez,,France,AG|MOC|BU,78,0
+AC Milan,2014-2015,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,78,0
+AC Milan,2014-2015,92,Stephan El Shaarawy,,Italy,AG|AD|BU|MG|MOC,78,0
+AC Milan,2014-2015,13,Adil Rami,,France,DC,77,0
+AC Milan,2014-2015,29,Gabriel Paletta,,Argentina,DC,77,0
+AC Milan,2014-2015,28,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,77,0
+AC Milan,2014-2015,10,Keisuke Honda,,Japan,MOC|AD|MD|MC,77,0
+AC Milan,2014-2015,9,Mattia Destro,,Italy,BU,77,0
+AC Milan,2014-2015,17,Cristian Zapata,,Colombia,DC,76,0
+AC Milan,2014-2015,5,Philippe Mexès,,France,DC,76,0
+AC Milan,2014-2015,16,Andrea Poli,,Italy,MC|MOC|MDC,75,0
+AC Milan,2014-2015,11,Giampaolo Pazzini,,Italy,BU,75,0
+AC Milan,2014-2015,20,Ignazio Abate,,Italy,DD|MD,75,0
+AC Milan,2014-2015,1,Michael Agazzi,,Italy,G,75,0
+AC Milan,2014-2015,8,Jesús Joaquín Fernández Sáez,Suso,Spain,AD|MD|MOC,74,0
+AC Milan,2014-2015,19,Salvatore Bocchetti,,Italy,DC,74,0
+AC Milan,2014-2015,2,Mattia De Sciglio,,Italy,DD|DG|DC,73,0
+AC Milan,2014-2015,15,Michael Essien,,Ghana,MDC|MC|MD,73,0
+AC Milan,2014-2015,4,Sulley Muntari,,Ghana,MDC|MC|MD|MG,73,0
+AC Milan,2015-2016,70,Carlos Bacca,,Colombia,BU,82,0
+AC Milan,2015-2016,7,Jérémy Ménez,,France,AG|MOC|BU,81,0
+AC Milan,2015-2016,28,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,80,0
+AC Milan,2015-2016,33,Alex Rodrigo Dias da Costa,Alex,Brazil,DC,79,0
+AC Milan,2015-2016,1,Diego López Rodríguez,Diego López,Spain,G,79,0
+AC Milan,2015-2016,9,Luiz Adriano Souza da Silva,Luiz Adriano,Brazil,BU,79,0
+AC Milan,2015-2016,45,Mario Balotelli,,Italy,BU|AG,79,0
+AC Milan,2015-2016,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,79,0
+AC Milan,2015-2016,11,Alessio Cerci,,Italy,AD|BU|MG|MD,77,0
+AC Milan,2015-2016,20,Ignazio Abate,,Italy,DD|MD,77,0
+AC Milan,2015-2016,27,Juraj Kucka,,Slovakia,MC|MDC,77,0
+AC Milan,2015-2016,10,Keisuke Honda,,Japan,MOC|AD|MD|MC,77,0
+AC Milan,2015-2016,72,Kevin-Prince Boateng,,Ghana,MC|MOC|MDC|BU,77,0
+AC Milan,2015-2016,31,Luca Antonelli,,Italy,DG,77,0
+AC Milan,2015-2016,34,Nigel de Jong,,Netherlands,MDC|DD|MC,77,0
+AC Milan,2015-2016,5,Philippe Mexès,,France,DC,77,0
+AC Milan,2015-2016,13,Alessio Romagnoli,,Italy,DC,76,0
+AC Milan,2015-2016,17,Cristian Zapata,,Colombia,DC,76,0
+AC Milan,2015-2016,16,Andrea Poli,,Italy,MC|MOC|MDC,75,0
+AC Milan,2015-2016,32,Christian Abbiati,,Italy,G,75,0
+AC Milan,2015-2016,8,Jesús Joaquín Fernández Sáez,Suso,Spain,AD|MD|MOC,75,0
+AC Milan,2015-2016,19,M'Baye Niang,,France,AD|AG|BU,75,0
+AC Milan,2015-2016,2,Mattia De Sciglio,,Italy,DD|DG|DC,75,0
+AC Milan,2016-2017,70,Carlos Bacca,,Colombia,BU,83,0
+AC Milan,2016-2017,5,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,83,0
+AC Milan,2016-2017,1,Diego López Rodríguez,Diego López,Spain,G,82,0
+AC Milan,2016-2017,7,Gerard Deulofeu,,Spain,AD|AG|MOC,81,0
+AC Milan,2016-2017,8,Jesús Joaquín Fernández Sáez,Suso,Spain,AD|MD|MOC,81,0
+AC Milan,2016-2017,29,Gabriel Paletta,,Argentina,DC,80,0
+AC Milan,2016-2017,13,Alessio Romagnoli,,Italy,DC,79,0
+AC Milan,2016-2017,33,Juraj Kucka,,Slovakia,MC|MDC,79,0
+AC Milan,2016-2017,17,Cristian Zapata,,Colombia,DC,78,0
+AC Milan,2016-2017,20,Ignazio Abate,,Italy,DD|MD,78,0
+AC Milan,2016-2017,23,José Sosa,,Argentina,MC|MOC,78,0
+AC Milan,2016-2017,10,Keisuke Honda,,Japan,MOC|AD|MD|MC,78,0
+AC Milan,2016-2017,9,Luiz Adriano Souza da Silva,Luiz Adriano,Brazil,BU,78,0
+AC Milan,2016-2017,11,M'Baye Niang,,France,AD|AG|BU,78,0
+AC Milan,2016-2017,14,Matías Fernández,,Chile,MOC|MC,78,0
+AC Milan,2016-2017,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,78,0
+AC Milan,2016-2017,91,Andrea Bertolacci,,Italy,MC|MDC,77,0
+AC Milan,2016-2017,31,Luca Antonelli,,Italy,DG,77,0
+AC Milan,2016-2017,16,Andrea Poli,,Italy,MC|MOC|MDC,76,0
+AC Milan,2016-2017,30,Marco Storari,,Italy,G,76,0
+AC Milan,2016-2017,80,Mario Pašalić,,Croatia,MC|MOC,76,0
+AC Milan,2016-2017,2,Mattia De Sciglio,,Italy,DD|DG|DC,76,0
+AC Milan,2016-2017,21,Leonel Vangioni,,Argentina,DG,75,0
+AC Milan,2016-2017,96,Davide Calabria,,Italy,DD|MC,71,0
+AC Milan,2017-2018,19,Leonardo Bonucci,,Italy,DC,86,0
+AC Milan,2017-2018,5,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,82,0
+AC Milan,2017-2018,99,Gianluigi Donnarumma,,Italy,G,82,0
+AC Milan,2017-2018,8,Jesús Joaquín Fernández Sáez,Suso,Spain,AD|MD|MOC,82,0
+AC Milan,2017-2018,21,Lucas Biglia,,Argentina,MDC|MC,82,0
+AC Milan,2017-2018,13,Alessio Romagnoli,,Italy,DC,80,0
+AC Milan,2017-2018,10,Hakan Çalhanoğlu,,Turkey,MOC|AG|MG|MC|MDC,80,0
+AC Milan,2017-2018,22,Mateo Musacchio,,Argentina,DC,80,0
+AC Milan,2017-2018,68,Ricardo Rodríguez,,Switzerland,DG|DC,80,0
+AC Milan,2017-2018,29,Gabriel Paletta,,Argentina,DC,79,0
+AC Milan,2017-2018,7,Nikola Kalinić,,Croatia,BU,79,0
+AC Milan,2017-2018,17,Cristian Zapata,,Colombia,DC,78,0
+AC Milan,2017-2018,20,Ignazio Abate,,Italy,DD|MD,78,0
+AC Milan,2017-2018,23,José Sosa,,Argentina,MC|MOC,78,0
+AC Milan,2017-2018,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,78,0
+AC Milan,2017-2018,9,André Miguel Valente da Silva,André Silva,Portugal,BU,77,0
+AC Milan,2017-2018,79,Franck Yannick Kessié,,Ivory Coast,MDC|MC,77,0
+AC Milan,2017-2018,94,M'Baye Niang,,France,AD|AG|BU,77,0
+AC Milan,2017-2018,11,Fabio Borini,,Italy,AG|MG|BU,76,0
+AC Milan,2017-2018,31,Luca Antonelli,,Italy,DG,76,0
+AC Milan,2017-2018,12,Andrea Conti,,Italy,DD,75,0
+AC Milan,2017-2018,2,Davide Calabria,,Italy,DD|MC,75,0
+AC Milan,2017-2018,63,Patrick Cutrone,,Italy,BU,74,0
+AC Milan,2018-2019,9,Gonzalo Higuaín,,Argentina,BU,87,0
+AC Milan,2018-2019,13,Alessio Romagnoli,,Italy,DC,83,0
+AC Milan,2018-2019,99,Gianluigi Donnarumma,,Italy,G,83,0
+AC Milan,2018-2019,8,Jesús Joaquín Fernández Sáez,Suso,Spain,AD|MD|MOC,83,0
+AC Milan,2018-2019,5,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,82,0
+AC Milan,2018-2019,21,Lucas Biglia,,Argentina,MDC|MC,82,0
+AC Milan,2018-2019,7,Samuel Castillejo Azuaga,Samu Castillejo,Spain,AD|MD,81,0
+AC Milan,2018-2019,14,Tiémoué Bakayoko,,France,MDC|MC,81,0
+AC Milan,2018-2019,10,Hakan Çalhanoğlu,,Turkey,MOC|AG|MG|MC|MDC,80,0
+AC Milan,2018-2019,22,Mateo Musacchio,,Argentina,DC,80,0
+AC Milan,2018-2019,68,Ricardo Rodríguez,,Switzerland,DG|DC,80,0
+AC Milan,2018-2019,79,Franck Yannick Kessié,,Ivory Coast,MDC|MC,79,0
+AC Milan,2018-2019,39,Lucas Tolentino Coelho de Lima,Lucas Paquetá,Brazil,MC|MOC,79,0
+AC Milan,2018-2019,17,Cristian Zapata,,Colombia,DC,78,0
+AC Milan,2018-2019,2,Davide Calabria,,Italy,DD|MC,78,0
+AC Milan,2018-2019,18,Riccardo Montolivo,,Italy,MDC|MC|MOC,78,0
+AC Milan,2018-2019,16,Andrea Bertolacci,,Italy,MC|MDC,77,0
+AC Milan,2018-2019,20,Ignazio Abate,,Italy,DD|MD,77,0
+AC Milan,2018-2019,63,Patrick Cutrone,,Italy,BU,77,0
+AC Milan,2018-2019,11,Fabio Borini,,Italy,AG|MG|BU,76,0
+AC Milan,2018-2019,12,Andrea Conti,,Italy,DD,75,0
+AC Milan,2019-2020,99,Gianluigi Donnarumma,,Italy,G,85,0
+AC Milan,2019-2020,21,Zlatan Ibrahimović,,Sweden,BU,85,0
+AC Milan,2019-2020,13,Alessio Romagnoli,,Italy,DC,83,0
+AC Milan,2019-2020,5,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,81,0
+AC Milan,2019-2020,8,Jesús Joaquín Fernández Sáez,Suso,Spain,AD|MD|MOC,81,0
+AC Milan,2019-2020,24,Simon Kjær,,Denmark,DC,81,0
+AC Milan,2019-2020,10,Hakan Çalhanoğlu,,Turkey,MOC|AG|MG|MC|MDC,80,0
+AC Milan,2019-2020,25,José Manuel Reina Páez,Pepe Reina,Spain,G,80,0
+AC Milan,2019-2020,18,Ante Rebić,,Croatia,AG|MG|MOC|BU,79,0
+AC Milan,2019-2020,9,Krzysztof Piątek,,Poland,BU,79,0
+AC Milan,2019-2020,20,Lucas Biglia,,Argentina,MDC|MC,79,0
+AC Milan,2019-2020,22,Mateo Musacchio,,Argentina,DC,79,0
+AC Milan,2019-2020,7,Samuel Castillejo Azuaga,Samu Castillejo,Spain,AD|MD,79,0
+AC Milan,2019-2020,79,Franck Yannick Kessié,,Ivory Coast,MDC|MC,78,0
+AC Milan,2019-2020,68,Ricardo Rodríguez,,Switzerland,DG|DC,78,0
+AC Milan,2019-2020,93,Diego Laxalt,,Uruguay,MG|DG,77,0
+AC Milan,2019-2020,39,Lucas Tolentino Coelho de Lima,Lucas Paquetá,Brazil,MC|MOC,77,0
+AC Milan,2019-2020,19,Theo Hernández,,France,DG|MG,77,0
+AC Milan,2019-2020,2,Davide Calabria,,Italy,DD|MC,76,0
+AC Milan,2019-2020,17,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,75,0
+AC Milan,2019-2020,4,Ismaël Bennacer,,Algeria,MDC|MC,74,0
+AC Milan,2019-2020,33,Rade Krunić,,Bosnia and Herzegovina,MDC|MC|MOC,74,0
+AC Milan,2020-2021,99,Gianluigi Donnarumma,,Italy,G,86,0
+AC Milan,2020-2021,11,Zlatan Ibrahimović,,Sweden,BU,84,0
+AC Milan,2020-2021,13,Alessio Romagnoli,,Italy,DC,82,0
+AC Milan,2020-2021,24,Simon Kjær,,Denmark,DC,82,0
+AC Milan,2020-2021,19,Theo Hernández,,France,DG|MG,82,0
+AC Milan,2020-2021,79,Franck Yannick Kessié,,Ivory Coast,MDC|MC,81,0
+AC Milan,2020-2021,10,Hakan Çalhanoğlu,,Turkey,MOC|AG|MG|MC|MDC,81,0
+AC Milan,2020-2021,42,José Manuel Reina Páez,Pepe Reina,Spain,G,80,0
+AC Milan,2020-2021,39,Lucas Tolentino Coelho de Lima,Lucas Paquetá,Brazil,MC|MOC,80,0
+AC Milan,2020-2021,12,Ante Rebić,,Croatia,AG|MG|MOC|BU,79,0
+AC Milan,2020-2021,5,Giacomo Bonaventura,,Italy,MC|MOC|AG|MG,79,0
+AC Milan,2020-2021,2,Davide Calabria,,Italy,DD|MC,78,0
+AC Milan,2020-2021,4,Ismaël Bennacer,,Algeria,MDC|MC,78,0
+AC Milan,2020-2021,9,Mario Mandžukić,,Croatia,BU|AG,78,0
+AC Milan,2020-2021,23,Fikayo Tomori,,England,DC|DD,77,0
+AC Milan,2020-2021,21,Lucas Biglia,,Argentina,MDC|MC,77,0
+AC Milan,2020-2021,22,Mateo Musacchio,,Argentina,DC,77,0
+AC Milan,2020-2021,7,Samuel Castillejo Azuaga,Samu Castillejo,Spain,AD|MD,77,0
+AC Milan,2020-2021,8,Sandro Tonali,,Italy,MDC|MC,77,0
+AC Milan,2020-2021,56,Alexis Saelemaekers,,Belgium,AD|MD|DD,76,0
+AC Milan,2020-2021,20,José Diogo Dalot Teixeira,Diogo Dalot,Portugal,DD|MD|DG,76,0
+AC Milan,2020-2021,17,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,76,0
+AC Milan,2020-2021,38,Ricardo Rodríguez,,Switzerland,DG|DC,76,0
+AC Milan,2020-2021,33,Rade Krunić,,Bosnia and Herzegovina,MDC|MC|MOC,74,0
+AC Milan,2021-2022,16,Mike Maignan,,France,G,85,0
+AC Milan,2021-2022,79,Franck Yannick Kessié,,Ivory Coast,MDC|MC,84,0
+AC Milan,2021-2022,19,Theo Hernández,,France,DG|MG,84,0
+AC Milan,2021-2022,24,Simon Kjær,,Denmark,DC,83,0
+AC Milan,2021-2022,23,Fikayo Tomori,,England,DC|DD,82,0
+AC Milan,2021-2022,17,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,82,0
+AC Milan,2021-2022,8,Sandro Tonali,,Italy,MDC|MC,82,0
+AC Milan,2021-2022,13,Alessio Romagnoli,,Italy,DC,81,0
+AC Milan,2021-2022,12,Ante Rebić,,Croatia,AG|MG|MOC|BU,81,0
+AC Milan,2021-2022,4,Ismaël Bennacer,,Algeria,MDC|MC,81,0
+AC Milan,2021-2022,9,Olivier Giroud,,France,BU,81,0
+AC Milan,2021-2022,25,Alessandro Florenzi,,Italy,DD|MD|DG|MC|AD,79,0
+AC Milan,2021-2022,2,Davide Calabria,,Italy,DD|MC,79,0
+AC Milan,2021-2022,10,Brahim Díaz,,Spain,MOC|AG|AD|MD|MG|BU,78,0
+AC Milan,2021-2022,30,Junior Messias,,Brazil,AD|MD|MOC,78,0
+AC Milan,2021-2022,56,Alexis Saelemaekers,,Belgium,AD|MD|DD,77,0
+AC Milan,2021-2022,1,Ciprian Tătărușanu,,Romania,G,76,0
+AC Milan,2021-2022,41,Tiémoué Bakayoko,,France,MDC|MC,76,0
+AC Milan,2021-2022,20,Pierre Kalulu,,France,DC|DD,75,0
+AC Milan,2021-2022,33,Rade Krunić,,Bosnia and Herzegovina,MDC|MC|MOC,75,0
+AC Milan,2021-2022,7,Samuel Castillejo Azuaga,Samu Castillejo,Spain,AD|MD,75,0
+AC Milan,2021-2022,5,Fodé Ballo-Touré,,Senegal,DG,72,0
+AC Milan,2022-2023,16,Mike Maignan,,France,G,87,0
+AC Milan,2022-2023,19,Theo Hernández,,France,DG|MG,85,0
+AC Milan,2022-2023,23,Fikayo Tomori,,England,DC|DD,84,0
+AC Milan,2022-2023,17,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,84,0
+AC Milan,2022-2023,8,Sandro Tonali,,Italy,MDC|MC,84,0
+AC Milan,2022-2023,4,Ismaël Bennacer,,Algeria,MDC|MC,83,0
+AC Milan,2022-2023,9,Olivier Giroud,,France,BU,83,0
+AC Milan,2022-2023,24,Simon Kjær,,Denmark,DC,81,0
+AC Milan,2022-2023,2,Davide Calabria,,Italy,DD|MC,80,0
+AC Milan,2022-2023,11,Zlatan Ibrahimović,,Sweden,BU,80,0
+AC Milan,2022-2023,12,Ante Rebić,,Croatia,AG|MG|MOC|BU,79,0
+AC Milan,2022-2023,10,Brahim Díaz,,Spain,MOC|AG|AD|MD|MG|BU,79,0
+AC Milan,2022-2023,20,Pierre Kalulu,,France,DC|DD,79,0
+AC Milan,2022-2023,33,Rade Krunić,,Bosnia and Herzegovina,MDC|MC|MOC,79,0
+AC Milan,2022-2023,25,Alessandro Florenzi,,Italy,DD|MD|DG|MC|AD,78,0
+AC Milan,2022-2023,56,Alexis Saelemaekers,,Belgium,AD|MD|DD,78,0
+AC Milan,2022-2023,30,Junior Messias,,Brazil,AD|MD|MOC,78,0
+AC Milan,2022-2023,28,Malick Thiaw,,Germany,DC,77,0
+AC Milan,2022-2023,90,Charles De Ketelaere,,Belgium,MOC|BU,76,0
+AC Milan,2022-2023,32,Tommaso Pobega,,Italy,MC|MDC,76,0
+AC Milan,2022-2023,1,Ciprian Tătărușanu,,Romania,G,75,0
+AC Milan,2022-2023,27,Divock Origi,,Belgium,BU|AG,75,0
+AC Milan,2022-2023,46,Matteo Gabbia,,Italy,DC,73,0
+AC Milan,2022-2023,7,Yacine Adli,,France,MOC|MC,73,0
+AC Milan,2022-2023,5,Fodé Ballo-Touré,,Senegal,DG,72,0
+AC Milan,2023-2024,16,Mike Maignan,,France,G,87,0
+AC Milan,2023-2024,10,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,86,0
+AC Milan,2023-2024,19,Theo Hernández,,France,DG|MG,85,0
+AC Milan,2023-2024,23,Fikayo Tomori,,England,DC|DD,84,0
+AC Milan,2023-2024,4,Ismaël Bennacer,,Algeria,MDC|MC,84,0
+AC Milan,2023-2024,11,Christian Pulisic,,United States,AD|MD|MOC|BU,82,0
+AC Milan,2023-2024,8,Ruben Loftus-Cheek,,England,MOC|MC|MD|MG,81,0
+AC Milan,2023-2024,24,Simon Kjær,,Denmark,DC,81,0
+AC Milan,2023-2024,2,Davide Calabria,,Italy,DD|MC,80,0
+AC Milan,2023-2024,21,Samuel Chukwueze,,Nigeria,AD|MD|MG|AG,80,0
+AC Milan,2023-2024,14,Tijjani Reijnders,,Netherlands,MDC|MC|MOC,80,0
+AC Milan,2023-2024,15,Luka Jović,,Serbia,BU,78,0
+AC Milan,2023-2024,20,Pierre Kalulu,,France,DC|DD,78,0
+AC Milan,2023-2024,57,Marco Sportiello,,Italy,G,77,0
+AC Milan,2023-2024,17,Noah Okafor,,Switzerland,BU|AG|MG|MOC,77,0
+AC Milan,2023-2024,28,Malick Thiaw,,Germany,DC,76,0
+AC Milan,2023-2024,7,Yacine Adli,,France,MOC|MC,76,0
+AC Milan,2023-2024,42,Alessandro Florenzi,,Italy,DD|MD|DG|MC|AD,75,0
+AC Milan,2023-2024,46,Matteo Gabbia,,Italy,DC,75,0
+AC Milan,2023-2024,32,Tommaso Pobega,,Italy,MC|MDC,75,0
+AC Milan,2023-2024,80,Yunus Musah,,United States,MC|MDC|MOC|MD,75,0
+AC Milan,2024-2025,16,Mike Maignan,,France,G,86,0
+AC Milan,2024-2025,11,Christian Pulisic,,United States,AD|MD|MOC|BU,84,0
+AC Milan,2024-2025,10,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,84,0
+AC Milan,2024-2025,19,Théo Hernandez,,France,DG|MG,84,0
+AC Milan,2024-2025,23,Fikayo Tomori,,England,DC|DD,82,0
+AC Milan,2024-2025,14,Tijjani Reijnders,,Netherlands,MDC|MC|MOC,82,0
+AC Milan,2024-2025,79,João Félix,,Portugal,MOC|AG|BU,80,0
+AC Milan,2024-2025,29,Youssouf Fofana,,France,MDC|MC,80,0
+AC Milan,2024-2025,32,Kyle Walker,,England,DD|DC,79,0
+AC Milan,2024-2025,8,Ruben Loftus-Cheek,,England,MOC|MC|MD|MG,79,0
+AC Milan,2024-2025,28,Malick Thiaw,,Germany,DC,78,0
+AC Milan,2024-2025,9,Luka Jović,,Serbia,BU,77,0
+AC Milan,2024-2025,21,Samuel Chukwueze,,Nigeria,AD|MD|MG|AG,77,0
+AC Milan,2024-2025,7,Santiago Giménez,,Mexico,BU,77,0
+AC Milan,2024-2025,90,Tammy Abraham,,England,BU,77,0
+AC Milan,2024-2025,24,Alessandro Florenzi,,Italy,DD|MD|DG|MC|AD,76,0
+AC Milan,2024-2025,22,Emerson Royal,,Brazil,DD|MD|DC,76,0
+AC Milan,2024-2025,57,Marco Sportiello,,Italy,G,76,0
+AC Milan,2024-2025,46,Matteo Gabbia,,Italy,DC,76,0
+AC Milan,2024-2025,31,Strahinja Pavlović,,Serbia,DC,76,0
+AC Milan,2024-2025,80,Yunus Musah,,United States,MC|MDC|MOC|MD,75,0
+AC Milan,2024-2025,20,Álex Jiménez,,Spain,DD|DG|AD,72,0
+AC Milan,2025-2026,14,Luka Modrić,,Croatia,MC|MOC|MDC,87,0
+AC Milan,2025-2026,16,Mike Maignan,,France,G,86,0
+AC Milan,2025-2026,11,Christian Pulisic,,United States,AD|MD|MOC|BU,84,0
+AC Milan,2025-2026,10,Rafael Alexandre da Conceição Leão,Rafael Leão,Portugal,BU|AG|AD|MG|MOC,84,0
+AC Milan,2025-2026,12,Adrien Rabiot,,France,MC|MDC,82,0
+AC Milan,2025-2026,23,Fikayo Tomori,,England,DC|DD,82,0
+AC Milan,2025-2026,18,Christopher Nkunku,,France,MOC|AG|AD|BU,80,0
+AC Milan,2025-2026,19,Youssouf Fofana,,France,MDC|MC,80,0
+AC Milan,2025-2026,2,Pervis Estupiñán,,Ecuador,DG|MG,79,0
+AC Milan,2025-2026,8,Ruben Loftus-Cheek,,England,MOC|MC|MD|MG,78,0
+AC Milan,2025-2026,56,Alexis Saelemaekers,,Belgium,AD|MD|DD,77,0
+AC Milan,2025-2026,46,Matteo Gabbia,,Italy,DC,77,0
+AC Milan,2025-2026,4,Samuele Ricci,,Italy,MDC|MC,77,0
+AC Milan,2025-2026,30,Ardon Jashari,,Switzerland,MC|MDC,76,0
+AC Milan,2025-2026,5,Koni De Winter,,Belgium,DC|MD,76,0
+AC Milan,2025-2026,7,Santiago Giménez,,Mexico,BU,76,0
+AC Milan,2025-2026,31,Strahinja Pavlović,,Serbia,DC,76,0
+AC Milan,2025-2026,1,Pietro Terracciano,,Italy,G,74,0
+AC Milan,2025-2026,33,Davide Bartesaghi,,Italy,DG,68,0
+AC Milan,2025-2026,24,Zachary Athekame,,Switzerland,DD,68,0
+AC Milan,2025-2026,27,David Odogu,,Germany,DC,66,0
+AC Milan,2025-2026,96,Lorenzo Torriani,,Italy,G,65,0
