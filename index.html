@@ -1251,6 +1251,31 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
 }
 .coach-profile-coaches{ font-family:var(--sans); font-size:13.5px; color:var(--text-dim); margin-bottom:14px; }
 
+/* Diagrammes de Kiviat (radar) du profil de coach - un pour le style de
+   jeu, un pour le management, réutilisés à la fois sur l'écran du
+   questionnaire (résultat juste après le test) et sur la page "Mon
+   compte" (résumé permanent, à côté du Palmarès et des Succès). */
+.coach-profile-radars, .coach-quiz-radars{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  margin:6px 0 18px;
+}
+.coach-profile-radar-block{
+  flex:1 1 200px;
+  max-width:240px;
+  text-align:center;
+}
+.coach-profile-radar-title{
+  font-family:var(--sans);
+  font-size:12px;
+  font-weight:700;
+  color:var(--text-dim);
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  margin-bottom:4px;
+}
+
 /* ============================= SELECT ============================= */
 .select-wrap{
   max-width:1100px;
@@ -3994,6 +4019,8 @@ select.modal-input option{ color:#111; background:#fff; }
           <hr class="coach-quiz-hr">
           <h2 id="coach-quiz-archetype"></h2>
           <p id="coach-quiz-intro"></p>
+
+          <div id="coach-quiz-radars" class="coach-quiz-radars"></div>
 
           <h3 data-i18n="coach-quiz.profile-h">Ton profil</h3>
           <div id="coach-quiz-scores" class="coach-quiz-grid"></div>
@@ -6877,6 +6904,48 @@ function coachSimilarity(profile, coach){
   return Math.max(0, Math.min(100, Math.round(100 - distance*1.45)));
 }
 
+// Diagramme de Kiviat (radar) en SVG pur pour un sous-ensemble de
+// dimensions du profil de coach (style de jeu ou management) - aucune
+// librairie externe, cohérent avec le reste du fichier auto-suffisant.
+function renderCoachRadarSVG(profile, dims, opts){
+  opts = opts || {};
+  const size = opts.size || 200;
+  const cx = size/2, cy = size/2, r = size/2 - 52;
+  const n = dims.length;
+  const angleFor = i => (Math.PI*2*i/n) - Math.PI/2;
+  const ringPts = f => dims.map((d,i)=>{
+    const a = angleFor(i);
+    return `${(cx+r*f*Math.cos(a)).toFixed(1)},${(cy+r*f*Math.sin(a)).toFixed(1)}`;
+  }).join(' ');
+  const rings = [0.25,0.5,0.75,1].map(f=>
+    `<polygon points="${ringPts(f)}" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"/>`
+  ).join('');
+  const axes = dims.map((d,i)=>{
+    const a = angleFor(i);
+    const x2 = (cx+r*Math.cos(a)).toFixed(1), y2 = (cy+r*Math.sin(a)).toFixed(1);
+    return `<line x1="${cx}" y1="${cy}" x2="${x2}" y2="${y2}" stroke="rgba(255,255,255,.12)" stroke-width="1"/>`;
+  }).join('');
+  const dataPts = dims.map((d,i)=>{
+    const a = angleFor(i);
+    const v = Math.max(0, Math.min(100, profile[d] ?? 50));
+    const rad = r * (v/100);
+    return `${(cx+rad*Math.cos(a)).toFixed(1)},${(cy+rad*Math.sin(a)).toFixed(1)}`;
+  }).join(' ');
+  const labels = dims.map((d,i)=>{
+    const a = angleFor(i);
+    const lx = cx + (r+16)*Math.cos(a), ly = cy + (r+16)*Math.sin(a);
+    const cos = Math.cos(a);
+    const anchor = cos > 0.25 ? 'start' : cos < -0.25 ? 'end' : 'middle';
+    return `<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" font-size="8.5" fill="var(--text-dim,#94a3b8)" text-anchor="${anchor}" dominant-baseline="middle">${quizLabel(d)}</text>`;
+  }).join('');
+  const accent = 'var(--club-accent, #38bdf8)';
+  return `<svg viewBox="0 0 ${size} ${size}" width="100%" style="max-width:${size}px;overflow:visible" class="coach-radar-svg">
+    ${rings}${axes}
+    <polygon points="${dataPts}" fill="${accent}" fill-opacity="0.28" stroke="${accent}" stroke-width="2"/>
+    ${labels}
+  </svg>`;
+}
+
 function renderCoachScoreBars(profile, dimensions){
   return dimensions
     .sort((a,b)=> profile[b]-profile[a])
@@ -6911,6 +6980,19 @@ function renderCoachQuizResultDOM(result){
   document.getElementById('coach-quiz-scores').innerHTML = renderCoachScoreBars(result.profile, [...COACH_QUIZ_DATA.dimensions]);
   document.getElementById('coach-quiz-style').innerHTML = renderCoachScoreBars(result.profile, [...coachQuizStyleDims]);
   document.getElementById('coach-quiz-management').innerHTML = renderCoachScoreBars(result.profile, [...coachQuizManagementDims]);
+  const quizRadars = document.getElementById('coach-quiz-radars');
+  if(quizRadars){
+    quizRadars.innerHTML = `
+      <div class="coach-profile-radar-block">
+        <div class="coach-profile-radar-title">${tt('Style de jeu','Playing style')}</div>
+        ${renderCoachRadarSVG(result.profile, coachQuizStyleDims, {size:200})}
+      </div>
+      <div class="coach-profile-radar-block">
+        <div class="coach-profile-radar-title">${tt('Management','Management')}</div>
+        ${renderCoachRadarSVG(result.profile, coachQuizManagementDims, {size:200})}
+      </div>
+    `;
+  }
   document.getElementById('coach-quiz-coaches').innerHTML = result.coaches
     .map(c => `<li><b>${c.name}</b> — ${c.score}% ${tt('de proximité','match')}</li>`).join('');
   document.getElementById('coach-quiz-result').hidden = false;
@@ -6960,6 +7042,16 @@ function renderCoachProfileSummary(){
     state.coachProfile = result;
     el.innerHTML = `
       <div class="coach-profile-archetype">${archetypeLabel(result.archetype)}</div>
+      <div class="coach-profile-radars">
+        <div class="coach-profile-radar-block">
+          <div class="coach-profile-radar-title">${tt('Style de jeu','Playing style')}</div>
+          ${renderCoachRadarSVG(result.profile, coachQuizStyleDims, {size:190})}
+        </div>
+        <div class="coach-profile-radar-block">
+          <div class="coach-profile-radar-title">${tt('Management','Management')}</div>
+          ${renderCoachRadarSVG(result.profile, coachQuizManagementDims, {size:190})}
+        </div>
+      </div>
       <div class="coach-profile-coaches">${result.coaches.slice(0,3).map(c=>`${c.name} (${c.score}%)`).join(' · ')}</div>
       <button class="season-btn season-btn-ghost" id="btn-goto-coach-quiz-from-account">${tt('Refaire le test','Retake the test')}</button>
     `;
@@ -12167,6 +12259,54 @@ function checkBalancedProfile(){
 const DECISION_STYLE_AGGRESSIVE = new Set(['attack','push','allin','allup','goforit','intensify','press','accelerate','exploit','assume','counter','risk','offensive','direct','quick','crosses','longshots','free','in','insist','second','long']);
 const DECISION_STYLE_DEFENSIVE = new Set(['defend','secure','safe','shutdown','close','calm','treat','cover','reduce','patience','wait','stay','keep','manage','tempo','recenter','reposition','reinforce','slow','short','build','defensive','rebalance','remobilize']);
 
+// ---------------------------------------------------------------
+// PROFIL DE COACH <-> DÉCISIONS DE MATCH (boucle à double sens)
+// ---------------------------------------------------------------
+// Le questionnaire (voir plus haut) reste la base du profil : tant qu'il
+// n'a jamais été passé, state.coachProfile est null et les décisions de
+// match n'ont aucun effet sur un profil qui n'existe pas encore. Une fois
+// un profil calculé, chaque décision en direct (chooseLiveDecision) :
+//  1. voit sa réussite légèrement influencée par l'alignement entre le
+//     style de l'option choisie et les dimensions correspondantes du
+//     profil (un coach "Risk-Taker" exécute mieux une option risquée) ;
+//  2. fait évoluer ces mêmes dimensions en retour, dans le sens du
+//     résultat obtenu - le profil dérive donc doucement au fil des
+//     saisons en fonction des choix réellement faits en carrière.
+const COACH_DECISION_STYLE_DIMS = {
+  aggressive: ['risk','verticality','ambition'],
+  defensive: ['pragmatism','discipline','defense'],
+  balanced: ['adaptability','game_management']
+};
+
+function coachProfileDecisionBonus(profileKey, risky){
+  const profile = state.coachProfile && state.coachProfile.profile;
+  const dims = COACH_DECISION_STYLE_DIMS[profileKey];
+  if(!profile || !dims) return 0;
+  const avg = dims.reduce((s,d)=>s+(profile[d] ?? 50), 0) / dims.length;
+  // Effet volontairement modeste (~±5 au max) pour ne faire que nuancer,
+  // jamais remplacer, l'aléatoire déjà présent dans chaque décision.
+  let bonus = (avg - 50) / 10;
+  if(risky) bonus *= 1.3;
+  return bonus;
+}
+
+function evolveCoachProfileFromDecision(profileKey, risky, positive){
+  if(!state.coachProfile || !state.coachProfile.profile) return;
+  const profile = state.coachProfile.profile;
+  const dims = COACH_DECISION_STYLE_DIMS[profileKey] || [];
+  const step = 0.35;
+  dims.forEach(d=>{
+    const delta = positive ? step : -step*0.5;
+    profile[d] = Math.max(0, Math.min(100, Math.round((profile[d] ?? 50) + delta)));
+  });
+  if(risky){
+    profile.risk = Math.max(0, Math.min(100, Math.round((profile.risk ?? 50) + (positive ? 0.5 : -0.3))));
+  }
+  const result = buildCoachQuizResult(profile);
+  state.coachProfile = result;
+  saveCoachQuizResult(result);
+}
+
 function chooseLiveDecision(key){
   const lm = state.liveMatch;
   if(!lm || !lm.pendingDecision) return;
@@ -12175,6 +12315,11 @@ function chooseLiveDecision(key){
   const myKey = myModKey(lm), oppKey = oppModKey(lm);
   const before = { my: lm[myKey], opp: lm[oppKey] };
   if(opt) opt.apply();
+  const cpOptKey = (opt && opt.key) || '';
+  const cpProfileKey = DECISION_STYLE_AGGRESSIVE.has(cpOptKey) ? 'aggressive'
+    : DECISION_STYLE_DEFENSIVE.has(cpOptKey) ? 'defensive' : 'balanced';
+  const cpBonus = coachProfileDecisionBonus(cpProfileKey, !!(opt && opt.risky));
+  if(cpBonus) lm[myKey] += cpBonus;
   const after = { my: lm[myKey], opp: lm[oppKey] };
   const netImpact = (after.my - before.my) - (after.opp - before.opp);
   const positive = netImpact >= 0;
@@ -12189,14 +12334,18 @@ function chooseLiveDecision(key){
   // décision d'après la clé de l'option choisie (indépendante de la langue -
   // le libellé affiché passe par tt() et n'est donc plus fiable à parser
   // une fois le jeu en anglais), pour repérer un usage équilibré des trois
-  // grandes familles de choix sur la durée.
-  const optKey = (opt && opt.key) || '';
-  const profileKey = DECISION_STYLE_AGGRESSIVE.has(optKey) ? 'aggressive'
-    : DECISION_STYLE_DEFENSIVE.has(optKey) ? 'defensive'
-    : 'balanced';
+  // grandes familles de choix sur la durée. Réutilise cpOptKey/cpProfileKey
+  // calculés plus haut pour le bonus de réussite, plutôt que de reclasser
+  // deux fois la même option.
   state.careerStats.profile = state.careerStats.profile || { aggressive:0, defensive:0, balanced:0 };
-  state.careerStats.profile[profileKey]++;
+  state.careerStats.profile[cpProfileKey]++;
   checkBalancedProfile();
+
+  // Boucle retour : la décision qu'on vient de prendre (et son issue,
+  // influencée elle-même par le profil ci-dessus) fait évoluer le profil
+  // de coach dimension par dimension - sans effet tant qu'aucun
+  // questionnaire n'a encore été passé (voir evolveCoachProfileFromDecision).
+  evolveCoachProfileFromDecision(cpProfileKey, !!(opt && opt.risky), positive);
 
   lm.pendingDecision = null;
   bumpTieredCounter('decisionsTotal');
