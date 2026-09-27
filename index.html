@@ -8148,7 +8148,7 @@ function drawRandomCompatible(refPositions, exclude){
 }
 
 function startTransferWindow(maxPicks, midSeason){
-  state.transfer = { phase:'select', selected:[], queue:[], activeSlotId:null, count:0, maxPicks: maxPicks || 3, midSeason: !!midSeason };
+  state.transfer = { phase:'select', selected:[], queue:[], activeSlotId:null, count:0, newRecruits:0, kept:0, maxPicks: maxPicks || 3, midSeason: !!midSeason };
   state.hand = [];
   state.selectedUid = null;
   showScreen('game');
@@ -8204,8 +8204,10 @@ function resolveTransferPick(uid){
     state.usedNames.add(playerKey(card.player));
     toast(tt(`${playerFullName(card.player)} rejoint l'effectif (${posLabelTxt}) !`, `${playerFullName(card.player)} joins the squad (${posLabelTxt})!`));
     slot.player = card.player;
+    tr.newRecruits = (tr.newRecruits || 0) + 1;
   } else {
     toast(tt(`${playerFullName(card.player)} reste dans l'effectif.`, `${playerFullName(card.player)} stays in the squad.`));
+    tr.kept = (tr.kept || 0) + 1;
   }
   tr.count++;
   state.hand = [];
@@ -8218,6 +8220,7 @@ function endTransferWindow(){
   const wasMidSeason = state.transfer && state.transfer.midSeason;
   state.careerStats.mercatoWindowsTotal++;
   if(swapsUsed > 0) bumpTieredCounter('draftPicksTotal', swapsUsed);
+  evolveCoachProfileFromMercato(state.transfer);
   state.transfer = null;
   state.hand = [];
   state.selectedUid = null;
@@ -11931,7 +11934,26 @@ function resolveSeasonEvent(optionKey){
   const pending = state.pendingSeasonEvent;
   if(!pending) return;
   const opt = pending.decision.options.find(o=>o.key===optionKey) || pending.decision.options[0];
+
+  // Profil de coach <-> événements de saison : même principe que pour les
+  // décisions en direct (chooseLiveDecision), mais l'effet net d'une
+  // option ne se lit pas via des clés de momentum fixes ici - on compare
+  // simplement les modificateurs de saison (addSeasonModifier) ajoutés
+  // pendant cet apply() pour en déduire si l'issue est positive ou non.
+  const modsBefore = state.seasonModifiers.length;
   opt.apply();
+  const cpOptKey = (opt && opt.key) || '';
+  const cpProfileKey = DECISION_STYLE_AGGRESSIVE.has(cpOptKey) ? 'aggressive'
+    : DECISION_STYLE_DEFENSIVE.has(cpOptKey) ? 'defensive' : 'balanced';
+  const cpNetImpact = state.seasonModifiers.slice(modsBefore).reduce((s,m)=>s+m.delta, 0);
+  const cpPositive = cpNetImpact >= 0;
+  const cpBonus = coachProfileDecisionBonus(cpProfileKey, false);
+  if(cpBonus){
+    const cpCtxRoundIdx = (pending.decision.contextRoundIdx !== undefined ? pending.decision.contextRoundIdx : pending.roundIdx+1);
+    addSeasonModifier(cpBonus, cpCtxRoundIdx+2, tt('Alignement du profil de coach','Coach profile alignment'));
+  }
+  evolveCoachProfileFromDecision(cpProfileKey, false, cpPositive);
+
   if(pending.decision.title === 'Coup de fatigue collectif') bumpTieredCounter('fatigueEventsHandled');
   if(pending.decision.immediate){
     const checkRoundIdx = pending.decision.contextRoundIdx !== undefined ? pending.decision.contextRoundIdx : pending.roundIdx+1;
@@ -12256,8 +12278,13 @@ function checkBalancedProfile(){
 // option de décision en direct, pour le profil de coach "Imprévisible" -
 // voir chooseLiveDecision(). Une clé absente des deux ensembles est
 // considérée comme "balanced" par défaut.
+// Étendu aux clés des événements de saison (SEASON_EVENT_BUILDERS) en plus
+// des décisions en direct - une clé absente reste 'balanced' par défaut,
+// ce qui convient très bien à la plupart des choix de gestion de saison
+// (repos, scouting, tactique...) qui ne sont ni franchement offensifs ni
+// franchement prudents.
 const DECISION_STYLE_AGGRESSIVE = new Set(['attack','push','allin','allup','goforit','intensify','press','accelerate','exploit','assume','counter','risk','offensive','direct','quick','crosses','longshots','free','in','insist','second','long']);
-const DECISION_STYLE_DEFENSIVE = new Set(['defend','secure','safe','shutdown','close','calm','treat','cover','reduce','patience','wait','stay','keep','manage','tempo','recenter','reposition','reinforce','slow','short','build','defensive','rebalance','remobilize']);
+const DECISION_STYLE_DEFENSIVE = new Set(['defend','secure','safe','shutdown','close','calm','treat','cover','reduce','patience','wait','stay','keep','manage','tempo','recenter','reposition','reinforce','slow','short','build','defensive','rebalance','remobilize','cautious','rest','bench','rotate','rotation']);
 
 // ---------------------------------------------------------------
 // PROFIL DE COACH <-> DÉCISIONS DE MATCH (boucle à double sens)
@@ -12302,6 +12329,32 @@ function evolveCoachProfileFromDecision(profileKey, risky, positive){
   if(risky){
     profile.risk = Math.max(0, Math.min(100, Math.round((profile.risk ?? 50) + (positive ? 0.5 : -0.3))));
   }
+  const result = buildCoachQuizResult(profile);
+  state.coachProfile = result;
+  saveCoachQuizResult(result);
+}
+
+// Le mercato influence aussi le profil, hors de toute décision à options :
+// une fenêtre où l'effectif est surtout conservé traduit la confiance dans
+// le groupe en place (identité, gestion humaine) ; une fenêtre où presque
+// tout est renouvelé traduit une volonté de tout changer (adaptabilité,
+// prise de risque) - proportionnel à la part de recrues sur l'ensemble des
+// choix de la fenêtre, pas à leur nombre brut (un petit ou un gros
+// effectif ne doit pas biaiser l'effet).
+function evolveCoachProfileFromMercato(tr){
+  if(!state.coachProfile || !state.coachProfile.profile || !tr) return;
+  const total = (tr.newRecruits||0) + (tr.kept||0);
+  if(!total) return;
+  const recruitRatio = (tr.newRecruits||0) / total; // 0 = tout gardé, 1 = tout changé
+  const profile = state.coachProfile.profile;
+  const step = 1.2; // effet plus marqué qu'une simple décision de match - un mercato ne survient qu'une ou deux fois par saison
+  const bias = (recruitRatio - 0.5) * 2 * step; // -step..+step
+  ['adaptability','risk'].forEach(d=>{
+    profile[d] = Math.max(0, Math.min(100, Math.round((profile[d] ?? 50) + bias)));
+  });
+  ['identity','man_management'].forEach(d=>{
+    profile[d] = Math.max(0, Math.min(100, Math.round((profile[d] ?? 50) - bias)));
+  });
   const result = buildCoachQuizResult(profile);
   state.coachProfile = result;
   saveCoachQuizResult(result);
