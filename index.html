@@ -1243,13 +1243,20 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
 
 /* Résumé du profil de coach sur la page "Mon compte" */
 .coach-profile-card{ margin-top:4px; }
+.coach-profile-header{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:6px 14px;
+  margin:4px 0 14px;
+}
 .coach-profile-archetype{
   font-family:var(--bn-bold);
   font-size:20px;
   color:var(--club-accent, var(--text));
-  margin:4px 0 10px;
+  margin:0;
 }
-.coach-profile-coaches{ font-family:var(--sans); font-size:13.5px; color:var(--text-dim); margin-bottom:14px; }
+.coach-profile-coaches{ font-family:var(--sans); font-size:13.5px; color:var(--text-dim); margin:0; }
 
 /* Diagrammes de Kiviat (radar) du profil de coach - un pour le style de
    jeu, un pour le management, réutilisés à la fois sur l'écran du
@@ -1262,8 +1269,8 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
   margin:6px 0 18px;
 }
 .coach-profile-radar-block{
-  flex:1 1 200px;
-  max-width:240px;
+  flex:1 1 240px;
+  max-width:290px;
   text-align:center;
 }
 .coach-profile-radar-title{
@@ -7041,18 +7048,20 @@ function renderCoachProfileSummary(){
   } else {
     state.coachProfile = result;
     el.innerHTML = `
-      <div class="coach-profile-archetype">${archetypeLabel(result.archetype)}</div>
+      <div class="coach-profile-header">
+        <div class="coach-profile-archetype">${archetypeLabel(result.archetype)}</div>
+        <div class="coach-profile-coaches">${result.coaches.slice(0,3).map(c=>`${c.name} (${c.score}%)`).join(' · ')}</div>
+      </div>
       <div class="coach-profile-radars">
         <div class="coach-profile-radar-block">
           <div class="coach-profile-radar-title">${tt('Style de jeu','Playing style')}</div>
-          ${renderCoachRadarSVG(result.profile, coachQuizStyleDims, {size:190})}
+          ${renderCoachRadarSVG(result.profile, coachQuizStyleDims, {size:240})}
         </div>
         <div class="coach-profile-radar-block">
           <div class="coach-profile-radar-title">${tt('Management','Management')}</div>
-          ${renderCoachRadarSVG(result.profile, coachQuizManagementDims, {size:190})}
+          ${renderCoachRadarSVG(result.profile, coachQuizManagementDims, {size:240})}
         </div>
       </div>
-      <div class="coach-profile-coaches">${result.coaches.slice(0,3).map(c=>`${c.name} (${c.score}%)`).join(' · ')}</div>
       <button class="season-btn season-btn-ghost" id="btn-goto-coach-quiz-from-account">${tt('Refaire le test','Retake the test')}</button>
     `;
   }
