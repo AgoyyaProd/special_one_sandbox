@@ -1140,6 +1140,34 @@ html[lang="en"] .hero-copy{ margin-left:-48px; }
   color:var(--text-faint);
   margin-bottom:32px;
 }
+.info-content table{
+  width:100%;
+  border-collapse:collapse;
+  margin:0 0 20px;
+  font-size:15px;
+}
+.info-content th, .info-content td{
+  text-align:left;
+  padding:10px 12px;
+  border-bottom:1px solid var(--border);
+  vertical-align:top;
+}
+.info-content th{
+  font-family:var(--sans);
+  font-weight:700;
+  color:var(--text);
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.02em;
+}
+.info-content table + p{ margin-top:-8px; }
+@media (max-width:650px){
+  .info-content table, .info-content thead, .info-content tbody, .info-content th, .info-content td, .info-content tr{ display:block; }
+  .info-content thead{ display:none; }
+  .info-content tr{ border-bottom:1px solid var(--border); padding:10px 0; }
+  .info-content td{ border:none; padding:4px 0; }
+  .info-content td::before{ content:attr(data-label); display:block; font-size:11px; text-transform:uppercase; letter-spacing:.02em; color:var(--text-faint); margin-bottom:2px; }
+}
 .contact-form{
   display:flex;
   flex-direction:column;
@@ -6511,6 +6539,26 @@ const INFO_PAGES = {
       <h3>Un autre club peut me recruter comme entraîneur ?</h3>
       <p>Oui, après plusieurs bonnes saisons consécutives, un club légèrement au-dessus du vôtre peut vous approcher avant le mercato. Si vous acceptez, vous héritez de son effectif réel puis disposez d'un mercato pour l'améliorer.</p>
 
+      <h3>Comment mon profil de coach évolue-t-il pendant la carrière ?</h3>
+      <p>Le questionnaire "Profil coach" donne votre point de départ (un score sur 21 dimensions, résumé par un archétype et un diagramme de Kiviat sur la page Mon compte). Ensuite, vos décisions en match, vos événements de saison et vos mercatos font doucement dériver ce profil - l'archétype affiché peut donc changer au fil d'une carrière. Tant que le questionnaire n'a jamais été passé, aucun profil n'existe et ces décisions n'ont aucun effet.</p>
+      <table>
+        <thead><tr><th>Type de décision</th><th>Dimensions concernées</th><th>Si ça tourne bien</th><th>Si ça tourne mal</th></tr></thead>
+        <tbody>
+          <tr><td data-label="Type de décision"><strong>Agressif</strong> (attaquer, presser, tout pour gagner...)</td><td data-label="Dimensions concernées">Prise de risque, Verticalité, Ambition</td><td data-label="Si ça tourne bien">+0,35 chacune</td><td data-label="Si ça tourne mal">−0,175 chacune</td></tr>
+          <tr><td data-label="Type de décision"><strong>Défensif</strong> (défendre, sécuriser, temporiser...)</td><td data-label="Dimensions concernées">Pragmatisme, Discipline tactique, Solidité défensive</td><td data-label="Si ça tourne bien">+0,35 chacune</td><td data-label="Si ça tourne mal">−0,175 chacune</td></tr>
+          <tr><td data-label="Type de décision"><strong>Équilibré</strong> (gérer, s'adapter, tester...)</td><td data-label="Dimensions concernées">Adaptabilité, Gestion du match</td><td data-label="Si ça tourne bien">+0,35 chacune</td><td data-label="Si ça tourne mal">−0,175 chacune</td></tr>
+        </tbody>
+      </table>
+      <p class="info-meta" style="margin-top:-8px">Une décision risquée fait en plus bouger un peu plus la "Prise de risque" (+0,5 / −0,3). Ce sont des variations volontairement petites - c'est leur répétition sur toute une carrière qui fait vraiment évoluer l'archétype.</p>
+      <table>
+        <thead><tr><th>Mercato</th><th>Dimensions qui montent</th><th>Dimensions qui baissent</th></tr></thead>
+        <tbody>
+          <tr><td data-label="Mercato">Effectif presque entièrement <strong>renouvelé</strong></td><td data-label="Dimensions qui montent">Adaptabilité, Prise de risque</td><td data-label="Dimensions qui baissent">Identité de jeu, Gestion humaine</td></tr>
+          <tr><td data-label="Mercato">Effectif presque entièrement <strong>conservé</strong></td><td data-label="Dimensions qui montent">Identité de jeu, Gestion humaine</td><td data-label="Dimensions qui baissent">Adaptabilité, Prise de risque</td></tr>
+        </tbody>
+      </table>
+      <p>Enfin, l'alignement entre votre profil actuel et la décision choisie influence aussi légèrement sa réussite : plus vous êtes déjà "du genre" à faire ce choix, mieux il a tendance à se dérouler.</p>
+
       <h3>Un bug ou une suggestion ?</h3>
       <p>Écrivez-nous via la page <a class="site-footer-link" style="display:inline;margin:0" href="/info/contact/" data-info="contact">Contact</a>.</p>
     `, en:`
@@ -6531,6 +6579,26 @@ const INFO_PAGES = {
 
       <h3>Can another club recruit me as a coach?</h3>
       <p>Yes, after several good consecutive seasons, a club slightly above yours may approach you before the transfer window. If you accept, you inherit its real squad and then get a transfer window to improve it.</p>
+
+      <h3>How does my coach profile evolve during a career?</h3>
+      <p>The "Coach profile" quiz gives you a starting point (a score across 21 dimensions, summed up as an archetype and a radar chart on the Account page). From there, your in-match decisions, season events and transfer windows slowly drift that profile - so the archetype shown can change over the course of a career. As long as the quiz has never been taken, no profile exists and these decisions have no effect.</p>
+      <table>
+        <thead><tr><th>Decision type</th><th>Dimensions affected</th><th>If it goes well</th><th>If it goes badly</th></tr></thead>
+        <tbody>
+          <tr><td data-label="Decision type"><strong>Aggressive</strong> (attack, press, go all-out...)</td><td data-label="Dimensions affected">Risk-taking, Verticality, Ambition</td><td data-label="If it goes well">+0.35 each</td><td data-label="If it goes badly">−0.175 each</td></tr>
+          <tr><td data-label="Decision type"><strong>Defensive</strong> (defend, secure, manage the game...)</td><td data-label="Dimensions affected">Pragmatism, Tactical discipline, Defensive solidity</td><td data-label="If it goes well">+0.35 each</td><td data-label="If it goes badly">−0.175 each</td></tr>
+          <tr><td data-label="Decision type"><strong>Balanced</strong> (manage, adapt, experiment...)</td><td data-label="Dimensions affected">Adaptability, Game management</td><td data-label="If it goes well">+0.35 each</td><td data-label="If it goes badly">−0.175 each</td></tr>
+        </tbody>
+      </table>
+      <p class="info-meta" style="margin-top:-8px">A risky decision also nudges "Risk-taking" a bit further (+0.5 / −0.3). These changes are deliberately small - it's their repetition over a whole career that really shifts the archetype.</p>
+      <table>
+        <thead><tr><th>Transfer window</th><th>Dimensions that rise</th><th>Dimensions that fall</th></tr></thead>
+        <tbody>
+          <tr><td data-label="Transfer window">Squad almost entirely <strong>rebuilt</strong></td><td data-label="Dimensions that rise">Adaptability, Risk-taking</td><td data-label="Dimensions that fall">Playing identity, Man-management</td></tr>
+          <tr><td data-label="Transfer window">Squad almost entirely <strong>kept</strong></td><td data-label="Dimensions that rise">Playing identity, Man-management</td><td data-label="Dimensions that fall">Adaptability, Risk-taking</td></tr>
+        </tbody>
+      </table>
+      <p>Finally, how well your current profile matches the decision you pick also slightly affects how well it plays out: the more it's already "like you" to make that choice, the better it tends to go.</p>
 
       <h3>Found a bug or have a suggestion?</h3>
       <p>Write to us via the <a class="site-footer-link" style="display:inline;margin:0" href="/info/contact/" data-info="contact">Contact</a> page.</p>
